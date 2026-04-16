@@ -36,9 +36,49 @@ def export_center(center: dict, result: dict, diff_report: dict) -> None:
     (DATA_DIR / "history").mkdir(exist_ok=True)
 
     analyses = _parse_analyses(center, result)
+
+    if not analyses:
+        _print_table_diagnostics(center, result)
+
     _write_analyses(center, analyses)
     _update_history(center, diff_report, analyses)
     _rebuild_centers_index()
+
+
+def _print_table_diagnostics(center: dict, result: dict) -> None:
+    """
+    Called when 0 analyses were parsed. Prints the raw table structure
+    so you can identify the correct column indices and update column_map
+    in centers.json.
+    """
+    tables = result.get("tables", [])
+    name   = center["name"]
+
+    if not tables:
+        print(f"  ⚠️  [{name}] No tables found in page. Possible causes:")
+        print(f"       - Page requires JavaScript (dynamic rendering)")
+        print(f"       - CSS selector '{center.get('selector', 'table')}' matched nothing")
+        print(f"       - Page structure changed since last audit")
+        return
+
+    print(f"  ⚠️  [{name}] {len(tables)} table(s) found but 0 analyses parsed.")
+    print(f"       Showing first 5 rows of each table to help fix column_map:\n")
+
+    for t_idx, table in enumerate(tables):
+        print(f"       ── Table {t_idx} ({len(table)} rows) ──")
+        for r_idx, row in enumerate(table[:5]):
+            cols = " | ".join(f"[{i}] {str(v)[:30]:<30}" for i, v in enumerate(row))
+            print(f"       Row {r_idx}: {cols}")
+        if len(table) > 5:
+            print(f"       ... ({len(table) - 5} more rows)")
+        print()
+
+    print(
+        f"       ➡  Update 'column_map' in config/centers.json for '{center['id']}':\n"
+        f"          Set 'name' to the column index containing the analysis name,\n"
+        f"          and 'price' to the column containing the price (TL amount).\n"
+        f"          Set other keys to null if that column doesn't exist.\n"
+    )
 
 
 # ── Analysis parsing ──────────────────────────────────────────────────────────
@@ -81,7 +121,7 @@ def _parse_analyses(center: dict, result: dict) -> list[dict]:
             while len(row) <= max(name_col, price_col):
                 row.append("")
 
-            name  = row[name_col].strip() if name_col < len(row) else ""
+            name      = row[name_col].strip()  if name_col  < len(row) else ""
             price_raw = row[price_col].strip() if price_col < len(row) else ""
 
             # Detect category section headers (full-width rows with no price)
@@ -200,13 +240,13 @@ def _parse_price(raw: str) -> float | None:
     Parse Turkish-formatted price strings.
 
     Handles:
-      "1.200,00 ₺"   → 1200.0
-      "800 TL"        → 800.0
-      "1.500"         → 1500.0
-      "500-750"       → 500.0  (takes lower bound of range)
-      "1.200,00 + KDV"→ 1200.0
-      ""              → None
-      "İstek üzerine" → None
+      "1.200,00 ₺"    → 1200.0
+      "800 TL"         → 800.0
+      "1.500"          → 1500.0
+      "500-750"        → 500.0  (takes lower bound of range)
+      "1.200,00 + KDV" → 1200.0
+      ""               → None
+      "İstek üzerine"  → None
     """
     if not raw:
         return None
@@ -226,13 +266,10 @@ def _parse_price(raw: str) -> float | None:
 
     # Turkish number formatting: 1.200,50 → 1200.50
     if "," in cleaned and "." in cleaned:
-        # thousands dot + decimal comma
         cleaned = cleaned.replace(".", "").replace(",", ".")
     elif "," in cleaned:
-        # decimal comma only
         cleaned = cleaned.replace(",", ".")
     elif re.match(r"^\d{1,3}\.\d{3}$", cleaned):
-        # thousands dot only (e.g. "1.200")
         cleaned = cleaned.replace(".", "")
 
     try:
@@ -242,7 +279,7 @@ def _parse_price(raw: str) -> float | None:
         return None
 
 
-# ── File writers ───────────────────────────────────────────────────────────────
+# ── File writers ──────────────────────────────────────────────────────────────
 
 def _write_analyses(center: dict, analyses: list[dict]) -> None:
     output = {
@@ -281,32 +318,4 @@ def _update_history(center: dict, diff_report: dict, analyses: list[dict]) -> No
 
 def _rebuild_centers_index() -> None:
     config_path = Path(__file__).parent / "config" / "centers.json"
-    centers_cfg = json.loads(config_path.read_text(encoding="utf-8"))
-
-    index = []
-    for c in centers_cfg:
-        analyses_path = DATA_DIR / "analyses" / f"{c['id']}.json"
-        analysis_count = 0
-        last_updated   = None
-
-        if analyses_path.exists():
-            data           = json.loads(analyses_path.read_text(encoding="utf-8"))
-            analysis_count = len(data.get("analyses", []))
-            last_updated   = data.get("last_updated")
-
-        index.append({
-            "id":             c["id"],
-            "name":           c["name"],
-            "university":     c["university"],
-            "city":           c["city"],
-            "url":            c["url"],
-            "pricing_url":    c.get("pricing_url"),
-            "active":         c.get("active", False),
-            "reference":      c.get("reference", False),
-            "analysis_count": analysis_count,
-            "last_updated":   last_updated,
-        })
-
-    out = DATA_DIR / "centers.json"
-    out.write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"📋 Merkez indeksi güncellendi → {out}")
+    centers_cfg = json.loads(config_path.r
