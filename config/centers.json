@@ -8,6 +8,7 @@
     "pricing_url": "https://tuam.aku.edu.tr/analiz-ucretleri/",
     "fetch_method": "html_then_pdf",
     "pdf_link_pattern": "FIYAT-LISTESI",
+    "fallback_pdf_url": "https://tuam.aku.edu.tr/wp-content/uploads/sites/50/2026/01/FIYAT-LISTESI-2026.pdf",
     "check_months": [12, 1, 2, 5, 6, 7],
     "active": true,
     "reference": true
@@ -21,6 +22,13 @@
     "pricing_url": "https://arum.ogu.edu.tr/Sayfa/Index/148/analiz-ucretleri/",
     "fetch_method": "html_table",
     "selector": "table",
+    "column_map": {
+      "name": 1,
+      "price": 2,
+      "category": null,
+      "unit": 3,
+      "notes": null
+    },
     "check_months": [12, 1, 2, 5, 6, 7],
     "active": true,
     "reference": false
@@ -33,7 +41,14 @@
     "url": "https://dpuiltem.com.tr",
     "pricing_url": "https://dpuiltem.com.tr/analiz-ucretleri/",
     "fetch_method": "html_table",
-    "selector": ".entry-content table",
+    "selector": "table",
+    "fallback_selectors": [
+      ".tablepress",
+      ".wp-block-table table",
+      ".entry-content table",
+      "#tablepress-1",
+      "div.tablepress-table table"
+    ],
     "check_months": [12, 1, 2, 5, 6, 7],
     "active": true,
     "reference": false
