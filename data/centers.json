@@ -8,8 +8,8 @@
     "pricing_url": "https://tuam.aku.edu.tr/analiz-ucretleri/",
     "active": true,
     "reference": true,
-    "analysis_count": 0,
-    "last_updated": null
+    "analysis_count": 40,
+    "last_updated": "2026-04-16"
   },
   {
     "id": "esogu_arum",
@@ -20,7 +20,7 @@
     "pricing_url": "https://arum.ogu.edu.tr/Sayfa/Index/148/analiz-ucretleri/",
     "active": true,
     "reference": false,
-    "analysis_count": 147,
+    "analysis_count": 0,
     "last_updated": "2026-04-16"
   },
   {

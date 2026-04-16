@@ -1,8 +1,367 @@
 {
   "center_id": "dpu_iltem",
   "url": "https://dpuiltem.com.tr/analiz-ucretleri/",
-  "tables": [],
+  "tables": [
+    [
+      [
+        "Analiz / Test",
+        "Fiyat (₺)/Birim"
+      ],
+      [
+        "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)",
+        "1570 / saat"
+      ],
+      [
+        "EBSD Nokta Analizi ve Haritalama",
+        "3125 / saat"
+      ],
+      [
+        "SEM-Katodolüminesans (SEM-CL)",
+        "3125 / saat"
+      ],
+      [
+        "SEM Altın (Au,Pd), Karbon Kaplama",
+        "250 / adet"
+      ],
+      [
+        "SEM/STEM/TEM Numune Hazırlama",
+        "Merkezimizden fiyat sorunuz."
+      ],
+      [
+        "SEM-EBIC Dedektörü",
+        "3125 / adet"
+      ]
+    ],
+    [
+      [
+        "Analiz / Test",
+        "Fiyat (₺)/Birim"
+      ],
+      [
+        "Kesme",
+        "320 / adet"
+      ],
+      [
+        "Zımparalama ve Parlatma",
+        "500 / adet"
+      ],
+      [
+        "Kimyasal Dağlama (Seramik Malzemeler)",
+        "320 / adet"
+      ],
+      [
+        "Termal Dağlama",
+        "1250 / kullanım"
+      ],
+      [
+        "Sıcak Kalıplama (Bakalit)",
+        "250 / adet"
+      ],
+      [
+        "Soğuk Kalıplama (Reçine)",
+        "250 / adet"
+      ],
+      [
+        "Metal Mikroskobu",
+        "320 / saat"
+      ],
+      [
+        "Mikro Sertlik Ölçümü (Vickers Yöntemi 3 – Indent)",
+        "375 / adet"
+      ],
+      [
+        "Mikro Sertlik Ölçümü (Vickers Yöntemi 5 – Indent)",
+        "440 / adet"
+      ]
+    ],
+    [
+      [
+        "Analiz / Test",
+        "Fiyat (₺)/Birim"
+      ],
+      [
+        "Standart X-Işını Kırınım Deseni (XRD)",
+        "625 / adet"
+      ],
+      [
+        "Standart XRD Çekimi + Kalitatif Analiz",
+        "940 / adet"
+      ],
+      [
+        "Yüksek Sıcaklık X-Işını Kırınım Deseni (HT-XRD)",
+        "Merkezimizden fiyat sorunuz."
+      ],
+      [
+        "Kesme",
+        "320 / adet"
+      ],
+      [
+        "Kırma, Öğütme",
+        "320 / adet"
+      ],
+      [
+        "Böbrek Taşı Analizi (XRD)",
+        "250 / adet"
+      ],
+      [
+        "GIXRD",
+        "Merkezimizden fiyat sorunuz."
+      ],
+      [
+        "Rietveld Analizi",
+        "5000 / adet"
+      ]
+    ],
+    [
+      [
+        "Analiz / Test",
+        "Fiyat (₺)/Birim"
+      ],
+      [
+        "Yarı Kantitatif Element Analizi",
+        "690 / adet"
+      ],
+      [
+        "İz Element Analizi (Pro-Trace Çekim Modu)",
+        "2750 / adet"
+      ],
+      [
+        "Kızdırma Kaybı",
+        "320 / adet"
+      ],
+      [
+        "Kesme",
+        "320 / adet"
+      ],
+      [
+        "Kırma, Öğütme",
+        "320 / adet"
+      ],
+      [
+        "Eritiş İle Numune Hazırlama",
+        "375 / adet"
+      ],
+      [
+        "Press İle Numune Hazırlama",
+        "320 / adet"
+      ],
+      [
+        "Alevli AAS ile ppm (mg/L) seviyesinde analiz (Tek Çekim)",
+        "500 / adet"
+      ],
+      [
+        "Alevli AAS ile ppm (mg/L) seviyesinde analiz (3 Tekrar Çekim)",
+        "1250 / adet"
+      ],
+      [
+        "Hidrür AAS ile ppb (mg/L) seviyesinde analiz",
+        "1250 / adet"
+      ],
+      [
+        "Grafit AAS ile ppb (mg/L) seviyesinde analiz",
+        "1250 / adet"
+      ],
+      [
+        "AAS Numune Hazırlama",
+        "375 / adet"
+      ],
+      [
+        "AAS Numune Hazırlama (3 Tekrar)",
+        "940 / adet"
+      ],
+      [
+        "Saf Su",
+        "20 / lt"
+      ],
+      [
+        "Ultra Saf Su",
+        "30 / lt"
+      ]
+    ],
+    [
+      [
+        "Analiz / Test",
+        "Fiyat (₺)/Birim"
+      ],
+      [
+        "TMA (Termo-Mekanik Analiz) Spektrumu",
+        "1500 / adet"
+      ],
+      [
+        "TG/DTA/DSC Spektrumu (Max. 1500 °C)",
+        "1250 / adet"
+      ],
+      [
+        "Isı Kapasitesi (C P ) Analizi",
+        "2500 / adet"
+      ],
+      [
+        "Alümina/Platin Kroze Hasar Bedeli *",
+        "6875 / adet"
+      ]
+    ],
+    [
+      [
+        "Analiz / Test",
+        "Fiyat (₺)/Birim"
+      ],
+      [
+        "ATR – FTIR Spektrumu",
+        "320 / Adet"
+      ],
+      [
+        "Kırma-Öğütme",
+        "320 / Adet"
+      ]
+    ],
+    [
+      [
+        "Analiz / Test",
+        "Fiyat (₺)/Birim"
+      ],
+      [
+        "LC/MS Analizi (Kalitatif)",
+        "570 / adet"
+      ],
+      [
+        "LC/MS Analizi (Kantitatif) 1",
+        "750 / adet"
+      ],
+      [
+        "LC/MS/MS",
+        "1070 / adet"
+      ],
+      [
+        "LC/MS QTOF (HRMS) Tam Kütle Tayini",
+        "1250 / adet"
+      ],
+      [
+        "HPLC (Kalitatif)",
+        "500 / adet"
+      ],
+      [
+        "HPLC (Kantitatif) 1",
+        "625 / adet"
+      ],
+      [
+        "Şeker Analizi (Tek Şeker)",
+        "750 / adet"
+      ],
+      [
+        "Şeker Analizi (Grup Şeker)",
+        "875 / adet"
+      ],
+      [
+        "Pestisit Analizi (Tek Pestisit)",
+        "750 / adet"
+      ],
+      [
+        "Pestisit Analizi (Grup Pestisit)",
+        "875 / adet"
+      ],
+      [
+        "GC/MS (Kalitatif)",
+        "565 / adet"
+      ],
+      [
+        "GC/MS (Kantitatif) 1",
+        "750 / adet"
+      ]
+    ],
+    [
+      [
+        "Analiz / Test",
+        "Fiyat (₺)/Birim"
+      ],
+      [
+        "Faz Kontrast-Fluoresan Ataçmanlı Mikroskop",
+        "625 / saat"
+      ],
+      [
+        "Stereo Zoom Mikroskop",
+        "250 / saat"
+      ]
+    ],
+    [
+      [
+        "İşlem",
+        "Fiyat (₺)/Birim"
+      ],
+      [
+        "3-Boyutlu Lazer Sinterleme Plastik Yazıcı",
+        "Merkezimizle iletişime geçilerek ürünün hacim ve yüksekliğine göre fiyatlandırma yapılır."
+      ],
+      [
+        "3-Boyutlu FDM Yazıcı"
+      ],
+      [
+        "3-Boyutlu Seramik Yazıcı"
+      ],
+      [
+        "3-Boyutlu Modelleme",
+        "625 / saat"
+      ],
+      [
+        "3-Boyutlu Optik Tarayıcı",
+        "625 / saat"
+      ]
+    ],
+    [
+      [
+        "Analiz / Test",
+        "Fiyat (₺)/Birim"
+      ],
+      [
+        "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Toz Formunda",
+        "1250 / adet"
+      ],
+      [
+        "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Sucuk Formunda",
+        "3125 / adet"
+      ],
+      [
+        "Tane Boyut Dağılımı (Lazer tekniği ile su ortamında) 1",
+        "750 / adet"
+      ],
+      [
+        "Tane Boyut Dağılımı (Yaş / Kuru elek analizi)",
+        "750 / adet"
+      ],
+      [
+        "Tane Boyut Dağılımı (2 mikron altı analizi)",
+        "3125 / adet"
+      ],
+      [
+        "Fırın Kullanımı (Kutu tipi, 1500 o C’ye kadar)",
+        "1500 / kullanım"
+      ],
+      [
+        "pH Ölçümü",
+        "125 / adet"
+      ],
+      [
+        "Rutubet (Nem) Tayini",
+        "125 / adet"
+      ],
+      [
+        "Etüv Kullanımı",
+        "375 / gün"
+      ],
+      [
+        "Sıvı Piknometre ile Tozlarda Kütle Yoğunluğu Tayini",
+        "250 / adet"
+      ],
+      [
+        "Kuru Öğütme",
+        "125 / adet"
+      ],
+      [
+        "Kuru Presleme",
+        "320 / adet"
+      ]
+    ]
+  ],
   "raw_text": "Analiz Ücretleri – İLTEM\nİçeriğe atla\nAnaliz Ücretleri\nKÜTAHYA DUMLUPINAR ÜNİVERSİTESİ İLERİ TEKNOLOJİLER TASARIM ARAŞTIRMA GELİŞTİRME VE UYGULAMA MERKEZİ (İLTEM)\n2026 YILI\nANALİZ / TEST LİSTESİ VE ÜCRETLENDİRME\nSİ\nÖNEMLİ BİLGİLENDİRME\n“Yükseköğretim Kurumları Döner Sermaye İşletmelerinin Kurulmasına İlişkin Yönetmelik” 18.06.2020 ve 31159 sayılı Resmi Gazetede yayınlanmıştır. Söz konusu yönetmeliğin fiyatların tespiti başlıklı 7. Maddesinin 2. Fıkrasında “….. Döner Sermaye İşletmesine bağlı birimler tarafından üretilen mal ve hizmet bedellerinde işletmecilik gereği ticari indirimler hariç herhangi bir kişi veya kuruma ücretsiz veya indirimli tarifi uygulanamaz” denilmektedir. Bu yönetmelik kapsamında, aşağıda verilen işletme gereği indirimler haricinde herhangi bir indirim uygulanmamaktadır.\n4736 sayılı Kanun’un 1’nci maddesinin birinci fıkrası hükmünden istisna kapsamında yararlanacakların tespitine dair yayımlanan 2002/3654 sayılı Bakanlar Kurulu Kararında aynen “Kamu kurum ve kuruluşlarının ürettikleri mal ve hizmetlerden ücretsiz veya indirimli olarak faydalanacakların tespitine ilişkin ekli Kararın yürürlüğe konulması; 8/1/2002 tarihli ve 4736 sayılı Kanunun 1’inci maddesine göre, Bakanlar Kurulu’nca 28/1/2002 tarihinde kararlaştırılmıştır.\nMadde 1 — Gaziler, şehit ve gazi, dul ve yetimleri, özürlüler ve 2022 sayılı 65 Yaşını Doldurmuş Muhtaç, Güçsüz ve Kimsesiz Türk Vatandaşlarına Aylık Bağlanması Hakkında Kanun kapsamındaki kişiler 8/1/2002 tarihli ve 4736 sayılı Kanunun 1’inci maddesinin birinci fıkrası hükmünden muaftır” maddesine istinaden ilgili kişilere geçerli belge ibraz etmek koşuluyla %50 indirim uygulanacaktır.\nBuna göre 2026 yılı analiz / test ücretlendirmesi aşağıda verilmiştir\n.\nAnaliz / test maliyetlerinin değişmesi halinde, Kütahya Dumlupınar Üniversitesi İleri Teknolojiler Tasarım Araştırma Geliştirme ve Uygulama Merkezi Müdürlüğü herhangi bir yayın yapmaksızın fiyatları değiştirebilir.\nFiyatlara KDV dahil değildir.\nTest ve analiz sonuçları ürün/numune için bir kalite sertifikası niteliği taşımamaktadır.\nAnaliz süreleri laboratuvar koşulları, iş yoğunluğu ve cihazların durumuna göre değişebilir.\nListede belirtilen ücretler merkezimizde rutin yapılan analizler için geçerlidir. Bunun haricinde yapılacak olan analizler için istenilen özelliklere göre ücretlendirme yapılır. Özel numuneler için laboratuvarımızla iletişime geçiniz.\nPosta / kargo giderleri analizi talep eden kurum/kişiye aittir.\nAnaliz / test sonuçlarının\nraporlaması\nhakkındaki fiyatlandırma için Müdürlüğümüz ile iletişime geçiniz.\nMerkezimize numunelerini tek seferde göndermek koşuluyla; analiz sahibinin numune sayısı 10 ve üzeri ise %10, 25 ve üzeri ise %20, 50 ve üzeri ise %30 indirim uygulanır.\nNOT:\nListede bulunmayan test talepleriniz için\niltem.analiz@dpu.edu.tr\ne-posta adresimizden iletişime geçebilirsiniz.\nELEKTRON MİKROSKOBU LABORATUVARI\nAnaliz / Test\nFiyat (₺)/Birim\nFE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)\n1570 / saat\nEBSD Nokta Analizi ve Haritalama\n3125 / saat\nSEM-Katodolüminesans (SEM-CL)\n3125 / saat\nSEM Altın (Au,Pd), Karbon Kaplama\n250 / adet\nSEM/STEM/TEM Numune Hazırlama\nMerkezimizden fiyat sorunuz.\nSEM-EBIC Dedektörü\n3125 / adet\nMETALOGRAFİ ve SERAMOGRAFİ LABORATUVARI\nAnaliz / Test\nFiyat (₺)/Birim\nKesme\n320 / adet\nZımparalama ve Parlatma\n500 / adet\nKimyasal Dağlama (Seramik Malzemeler)\n320 / adet\nTermal Dağlama\n1250 / kullanım\nSıcak Kalıplama (Bakalit)\n250 / adet\nSoğuk Kalıplama (Reçine)\n250 / adet\nMetal Mikroskobu\n320 / saat\nMikro Sertlik Ölçümü (Vickers Yöntemi 3 – Indent)\n375 / adet\nMikro Sertlik Ölçümü (Vickers Yöntemi 5 – Indent)\n440 / adet\nMİNERALOJİK ANALİZ LABORATUVARI\nAnaliz / Test\nFiyat (₺)/Birim\nStandart X-Işını Kırınım Deseni (XRD)\n625 / adet\nStandart XRD Çekimi + Kalitatif Analiz\n940 / adet\nYüksek Sıcaklık X-Işını Kırınım Deseni (HT-XRD)\nMerkezimizden fiyat sorunuz.\nKesme\n320 / adet\nKırma, Öğütme\n320 / adet\nBöbrek Taşı Analizi (XRD)\n250 / adet\nGIXRD\nMerkezimizden fiyat sorunuz.\nRietveld Analizi\n5000 / adet\nKİMYASAL ANALİZ LABORATUVARI\nAnaliz / Test\nFiyat (₺)/Birim\nX-Işınları Floresans Spektroskopisi (XRF)\nYarı Kantitatif Element Analizi\n690 / adet\nİz Element Analizi (Pro-Trace Çekim Modu)\n2750 / adet\nKızdırma Kaybı\n320 / adet\nKesme\n320 / adet\nKırma, Öğütme\n320 / adet\nEritiş İle Numune Hazırlama\n375 / adet\nPress İle Numune Hazırlama\n320 / adet\nAtomik Absorpsiyon Spektrofotometresi\nAlevli AAS ile ppm (mg/L) seviyesinde analiz (Tek Çekim)\n500 / adet\nAlevli AAS ile ppm (mg/L) seviyesinde analiz (3 Tekrar Çekim)\n1250 / adet\nHidrür AAS ile ppb (mg/L) seviyesinde analiz\n1250 / adet\nGrafit AAS ile ppb (mg/L) seviyesinde analiz\n1250 / adet\nAAS Numune Hazırlama\n375 / adet\nAAS Numune Hazırlama (3 Tekrar)\n940 / adet\nSaf Su\n20 / lt\nUltra Saf Su\n30 / lt\nTERMAL ANALİZ LABORATUVARI\nAnaliz / Test\nFiyat (₺)/Birim\nTMA (Termo-Mekanik Analiz) Spektrumu\n1500 / adet\nTG/DTA/DSC Spektrumu (Max. 1500 °C)\n1250 / adet\nIsı Kapasitesi (C\nP\n) Analizi\n2500 / adet\nAlümina/Platin Kroze Hasar Bedeli\n*\n6875 / adet\n*Alümina krozenin numuneden kaynaklı hasar görmesi durumunda analiz sahibinden tahsil\nedilecektir.\n*Platin krozeyle reaksiyona girme riski olmayan tüm numuneler için zorunlu haller dışında platin kroze kullanılmaktadır.\nSPEKTROSKOPİ LABORATUVARI\nAnaliz / Test\nFiyat (₺)/Birim\nATR – FTIR Spektrumu\n320 / Adet\nKırma-Öğütme\n320 / Adet\nKROMOTOGRAFİ ve KÜTLE SPEKTROMETRESİ LABORATUVARI\nAnaliz / Test\nFiyat (₺)/Birim\nYüksek Performanslı Sıvı Kromatografisi/Yüksek Çözünürlüklü Kütle Spektrometresi\nLC/MS Analizi (Kalitatif)\n570 / adet\nLC/MS Analizi (Kantitatif)\n1\n750 / adet\nLC/MS/MS\n1070 / adet\nLC/MS QTOF (HRMS) Tam Kütle Tayini\n1250 / adet\nYüksek Performans Sıvı Kromatografisi (HPLC)\nHPLC (Kalitatif)\n500 / adet\nHPLC (Kantitatif)\n1\n625 / adet\nŞeker Analizi (Tek Şeker)\n750 / adet\nŞeker Analizi (Grup Şeker)\n875 / adet\nPestisit Analizi (Tek Pestisit)\n750 / adet\nPestisit Analizi (Grup Pestisit)\n875 / adet\nGaz Kromatogr\nafisi – Kütle Spektrometresi (GC-MS)\nGC/MS (Kalitatif)\n565 / adet\nGC/MS (Kantitatif)\n1\n750 / adet\n1\nCihaz kullanımında gerekli olan sarf malzemeleri (Mobil faz, kolon, referans çözeltiler) araştırmacıya aittir. Analiz metodu belirtilmelidir.\n* Numuneler cihaza verilecek şekilde hazırlanarak gönderilmelidir. Numune hazırlama laboratuvarımızda yoktur.\n* Özel analizler için fiyatlar merkezimiz tarafından belirlenecektir.\nGÖRÜNTÜLEME LABORATUVARI\nAnaliz / Test\nFiyat (₺)/Birim\nFaz Kontrast-Fluoresan Ataçmanlı Mikroskop\n625 / saat\nStereo Zoom Mikroskop\n250 / saat\nTERSİNE MÜHENDİSLİK ve EKLEMELİ İMALAT LABORATUVARI\nİşlem\nFiyat (₺)/Birim\n3-Boyutlu Lazer Sinterleme Plastik Yazıcı\nMerkezimizle iletişime geçilerek ürünün hacim ve yüksekliğine göre fiyatlandırma yapılır.\n3-Boyutlu FDM Yazıcı\n3-Boyutlu Seramik Yazıcı\n3-Boyutlu Modelleme\n625 / saat\n3-Boyutlu Optik Tarayıcı\n625 / saat\nSİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI\nAnaliz / Test\nFiyat (₺)/Birim\nPlastisite Ölçümü (Pfefferkorn Yöntemi)-Toz Formunda\n1250 / adet\nPlastisite Ölçümü (Pfefferkorn Yöntemi)-Sucuk Formunda\n3125 / adet\nTane Boyut Dağılımı (Lazer tekniği ile su ortamında)\n1\n750 / adet\nTane Boyut Dağılımı (Yaş / Kuru elek analizi)\n750 / adet\nTane Boyut Dağılımı (2 mikron altı analizi)\n3125 / adet\nFırın Kullanımı (Kutu tipi, 1500\no\nC’ye kadar)\n1500 / kullanım\npH Ölçümü\n125 / adet\nRutubet (Nem) Tayini\n125 / adet\nEtüv Kullanımı\n375 / gün\nSıvı Piknometre ile Tozlarda Kütle Yoğunluğu Tayini\n250 / adet\nKuru Öğütme\n125 / adet\nKuru Presleme\n320 / adet\n1\nÖzel sıvıların (su hariç) kullanımı durumunda Merkezimizle iletişime geçiniz",
-  "snapshot_time": "2026-04-16T14:26:52.351197+00:00",
+  "snapshot_time": "2026-04-16T14:46:04.069307+00:00",
   "content_hash": "2d86a20978a46491646ff2817aa40da950422341f6fef112fb56b57018681574"
 }
