@@ -8,13 +8,6 @@
     "pricing_url": "https://tuam.aku.edu.tr/analiz-ucretleri/",
     "fetch_method": "html_then_pdf",
     "pdf_link_pattern": "FIYAT-LISTESI",
-    "column_map": {
-      "name": 0,
-      "price": 2,
-      "category": null,
-      "unit": 1,
-      "notes": 3
-    },
     "check_months": [12, 1, 2, 5, 6, 7],
     "active": true,
     "reference": true
@@ -25,16 +18,9 @@
     "university": "Eskişehir Osmangazi Üniversitesi",
     "city": "Eskişehir",
     "url": "https://arum.ogu.edu.tr",
-    "pricing_url": "https://arum.ogu.edu.tr/Sayfa/Index/148/analiz-ucretleri",
+    "pricing_url": "https://arum.ogu.edu.tr/Sayfa/Index/148/analiz-ucretleri/",
     "fetch_method": "html_table",
     "selector": "table",
-    "column_map": {
-      "name": 1,
-      "price": 2,
-      "category": null,
-      "unit": null,
-      "notes": 3
-    },
     "check_months": [12, 1, 2, 5, 6, 7],
     "active": true,
     "reference": false
@@ -48,13 +34,6 @@
     "pricing_url": "https://dpuiltem.com.tr/analiz-ucretleri/",
     "fetch_method": "html_table",
     "selector": ".entry-content table",
-    "column_map": {
-      "name": 0,
-      "price": 1,
-      "category": null,
-      "unit": null,
-      "notes": 2
-    },
     "check_months": [12, 1, 2, 5, 6, 7],
     "active": true,
     "reference": false
@@ -82,6 +61,19 @@
     "fetch_method": "html_dynamic",
     "notes": "JavaScript dropdown — requires headless browser.",
     "check_months": [12, 1, 2, 5, 6, 7],
+    "active": false,
+    "reference": false
+  },
+  {
+    "id": "aku_dal",
+    "name": "AKÜ DAL",
+    "university": "Afyon Kocatepe Üniversitesi",
+    "city": "Afyonkarahisar",
+    "url": "https://dal.aku.edu.tr",
+    "pricing_url": null,
+    "fetch_method": "manual",
+    "notes": "Herkese açık fiyat listesi yok. Kurumla iletişime geçilmesi gerekiyor.",
+    "check_months": [12, 5],
     "active": false,
     "reference": false
   }
