@@ -4,22 +4,19 @@ Loads the pricing page, extracts the current PDF link dynamically,
 downloads and parses the PDF.
 Used by: AKÜ TUAM, ESTÜ SAM
 
-Improvements over v1:
-  - Retry with backoff on both the HTML page and the PDF download
-  - Detects scanned (image-only) PDFs and warns clearly
-  - Falls back to raw text extraction if table extraction fails
-  - Resolves relative URLs correctly
-  - Verifies the PDF link before downloading
+If the HTML page is unreachable (e.g. GitHub Actions can't reach .edu.tr),
+falls back to `fallback_pdf_url` in the center config.
+Update `fallback_pdf_url` manually each year when the PDF URL changes.
 """
 
 import io
 import time
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin
 import requests
 import pdfplumber
 from bs4 import BeautifulSoup
 
-# ── Constants ────────────────────────────────────────────────────────────────
+# ── Constants ─────────────────────────────────────────────────────────────────
 
 HEADERS = {
     "User-Agent": (
@@ -41,44 +38,59 @@ PDF_HEADERS = {
 MAX_RETRIES   = 3
 RETRY_BACKOFF = 2
 TIMEOUT_HTML  = 25
-TIMEOUT_PDF   = 45   # PDFs can be large
+TIMEOUT_PDF   = 45
 
-# Minimum characters per page — below this threshold the PDF is likely scanned
 SCANNED_PDF_CHARS_THRESHOLD = 50
 
 
-# ── Public interface ─────────────────────────────────────────────────────────
+# ── Public interface ──────────────────────────────────────────────────────────
 
 def fetch(center: dict) -> dict:
     """
-    1. Fetch HTML pricing page
-    2. Find PDF link matching pdf_link_pattern
-    3. Download and extract PDF content
-
-    Returns:
-    {
-        "center_id": str,
-        "url":       str,    # HTML page URL
-        "pdf_url":   str,    # resolved PDF URL
-        "tables":    [...],
-        "raw_text":  str,
-        "is_scanned_pdf": bool   # True if OCR would be needed for full data
-    }
+    1. Try to fetch the HTML pricing page and find the PDF link dynamically.
+    2. If the HTML page is unreachable, fall back to `fallback_pdf_url` in config.
+    3. Download and extract the PDF.
     """
-    page_url = center["pricing_url"]
-    pattern  = center.get("pdf_link_pattern", "")
+    page_url         = center["pricing_url"]
+    pattern          = center.get("pdf_link_pattern", "")
+    fallback_pdf_url = center.get("fallback_pdf_url")
 
-    # Step 1 — fetch HTML page
-    html = _get_with_retry(page_url, TIMEOUT_HTML)
-    soup = BeautifulSoup(html, "html.parser")
+    pdf_url = None
 
-    # Step 2 — find PDF link
-    pdf_url = _find_pdf_link(soup, page_url, pattern)
+    # Step 1 — try to load the HTML page
+    try:
+        html = _get_with_retry(page_url, TIMEOUT_HTML)
+        soup = BeautifulSoup(html, "html.parser")
+        pdf_url = _find_pdf_link(soup, page_url, pattern)
+
+        if pdf_url:
+            print(f"  [{center['id']}] PDF linki bulundu: {pdf_url}")
+        else:
+            print(f"  [{center['id']}] Sayfada PDF linki bulunamadı.")
+
+    except Exception as e:
+        if fallback_pdf_url:
+            print(
+                f"  ⚠️  [{center['id']}] HTML sayfası erişilemez ({e.__class__.__name__}). "
+                f"Yedek PDF URL kullanılıyor: {fallback_pdf_url}"
+            )
+            pdf_url = fallback_pdf_url
+        else:
+            raise
+
+    # Step 2 — if HTML loaded but no PDF link found, try fallback
     if not pdf_url:
-        raise ValueError(
-            f"[{center['id']}] No PDF link matching '{pattern}' found on {page_url}\n"
-            f"  Links found: {[a['href'] for a in soup.find_all('a', href=True)][:10]}"
-        )
+        if fallback_pdf_url:
+            print(
+                f"  ⚠️  [{center['id']}] PDF linki bulunamadı. "
+                f"Yedek URL kullanılıyor: {fallback_pdf_url}"
+            )
+            pdf_url = fallback_pdf_url
+        else:
+            raise ValueError(
+                f"[{center['id']}] PDF linki bulunamadı ve yedek URL tanımlanmamış.\n"
+                f"  config/centers.json dosyasına 'fallback_pdf_url' ekleyin."
+            )
 
     # Step 3 — download PDF
     pdf_bytes = _download_pdf(pdf_url)
@@ -88,8 +100,8 @@ def fetch(center: dict) -> dict:
 
     if is_scanned:
         print(
-            f"  ⚠️  [{center['id']}] PDF appears to be scanned (image-based). "
-            "Text extraction is limited. Consider adding OCR support."
+            f"  ⚠️  [{center['id']}] PDF taranmış görünüyor (görüntü tabanlı). "
+            "Metin çıkarımı sınırlı olabilir."
         )
 
     return {
@@ -102,7 +114,7 @@ def fetch(center: dict) -> dict:
     }
 
 
-# ── HTTP helpers ─────────────────────────────────────────────────────────────
+# ── HTTP helpers ──────────────────────────────────────────────────────────────
 
 def _get_with_retry(url: str, timeout: int) -> str:
     session = requests.Session()
@@ -139,7 +151,7 @@ def _download_pdf(url: str) -> bytes:
             if "html" in content_type:
                 raise ValueError(
                     f"Expected PDF but got HTML from {url}. "
-                    "The PDF link may have changed."
+                    "The PDF link may have changed — update fallback_pdf_url in centers.json."
                 )
             return resp.content
         except requests.RequestException as exc:
@@ -155,22 +167,15 @@ def _download_pdf(url: str) -> bytes:
 # ── PDF link extraction ───────────────────────────────────────────────────────
 
 def _find_pdf_link(soup: BeautifulSoup, base_url: str, pattern: str) -> str | None:
-    """
-    Find first <a href> that:
-      - Contains the pattern (case-insensitive)
-      - Ends with .pdf
-      - Is a valid URL (absolute or relative)
-    """
+    """Find first <a href> matching the pattern that ends with .pdf."""
     for a in soup.find_all("a", href=True):
         href: str = a["href"].strip()
         if not href:
             continue
         if pattern.lower() in href.lower() and href.lower().endswith(".pdf"):
-            if href.startswith("http"):
-                return href
-            return urljoin(base_url, href)
+            return href if href.startswith("http") else urljoin(base_url, href)
 
-    # Second pass — look for any .pdf link if pattern not found
+    # Second pass — any .pdf link
     print(f"  Pattern '{pattern}' not matched, trying any .pdf link...")
     for a in soup.find_all("a", href=True):
         href = a["href"].strip()
@@ -183,20 +188,15 @@ def _find_pdf_link(soup: BeautifulSoup, base_url: str, pattern: str) -> str | No
 # ── PDF content extraction ────────────────────────────────────────────────────
 
 def _extract_pdf(pdf_bytes: bytes) -> tuple[list, str, bool]:
-    """
-    Extract tables and text from a PDF.
-    Returns (tables, raw_text, is_scanned).
-    """
-    tables: list       = []
-    text_parts: list   = []
-    total_chars        = 0
-    total_pages        = 0
+    tables: list     = []
+    text_parts: list = []
+    total_chars      = 0
+    total_pages      = 0
 
     with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
         total_pages = len(pdf.pages)
 
         for page in pdf.pages:
-            # ── Table extraction ──────────────────────────────────────────
             for raw_table in page.extract_tables():
                 if not raw_table:
                     continue
@@ -211,17 +211,13 @@ def _extract_pdf(pdf_bytes: bytes) -> tuple[list, str, bool]:
                 if len(cleaned) > 1:
                     tables.append(cleaned)
 
-            # ── Text extraction ───────────────────────────────────────────
             text = page.extract_text(x_tolerance=3, y_tolerance=3)
             if text:
                 text_parts.append(text)
                 total_chars += len(text.strip())
 
-    raw_text = "\n\n".join(text_parts)
-
-    # Detect scanned PDF: fewer than threshold chars per page on average
-    avg_chars = total_chars / max(total_pages, 1)
+    raw_text   = "\n\n".join(text_parts)
+    avg_chars  = total_chars / max(total_pages, 1)
     is_scanned = avg_chars < SCANNED_PDF_CHARS_THRESHOLD
 
-    # If scanned, tables will be empty but raw_text might still have partial OCR
     return tables, raw_text, is_scanned
