@@ -318,4 +318,32 @@ def _update_history(center: dict, diff_report: dict, analyses: list[dict]) -> No
 
 def _rebuild_centers_index() -> None:
     config_path = Path(__file__).parent / "config" / "centers.json"
-    centers_cfg = json.loads(config_path.r
+    centers_cfg = json.loads(config_path.read_text(encoding="utf-8"))
+
+    index = []
+    for c in centers_cfg:
+        analyses_path = DATA_DIR / "analyses" / f"{c['id']}.json"
+        analysis_count = 0
+        last_updated   = None
+
+        if analyses_path.exists():
+            data           = json.loads(analyses_path.read_text(encoding="utf-8"))
+            analysis_count = len(data.get("analyses", []))
+            last_updated   = data.get("last_updated")
+
+        index.append({
+            "id":             c["id"],
+            "name":           c["name"],
+            "university":     c["university"],
+            "city":           c["city"],
+            "url":            c["url"],
+            "pricing_url":    c.get("pricing_url"),
+            "active":         c.get("active", False),
+            "reference":      c.get("reference", False),
+            "analysis_count": analysis_count,
+            "last_updated":   last_updated,
+        })
+
+    out = DATA_DIR / "centers.json"
+    out.write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"📋 Merkez indeksi güncellendi → {out}")
