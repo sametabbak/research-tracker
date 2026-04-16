@@ -25,7 +25,7 @@
     "university": "Eskişehir Osmangazi Üniversitesi",
     "city": "Eskişehir",
     "url": "https://arum.ogu.edu.tr",
-    "pricing_url": "https://arum.ogu.edu.tr/Sayfa/Index/136/analiz-ucretleri/",
+    "pricing_url": "https://arum.ogu.edu.tr/Sayfa/Index/148/analiz-ucretleri",
     "fetch_method": "html_table",
     "selector": "table",
     "column_map": {
