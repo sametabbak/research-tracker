@@ -3,19 +3,17 @@ Fetcher: html_table
 Scrapes price tables directly from an HTML page.
 Used by: DPÜ İLTEM, ESOGÜ ARUM
 
-Improvements over v1:
-  - Session-based requests (handles cookies automatically)
-  - Retry with exponential backoff
-  - Encoding detection via chardet / apparent_encoding
-  - Detects maintenance/error pages before parsing
-  - Strips merged header rows that span all columns
+Supports `fallback_selectors` in center config: when the primary selector
+finds no tables, each fallback selector is tried in order.
+Useful for pages using TablePress, Gutenberg blocks, or other non-standard
+table markup.
 """
 
 import time
 import requests
 from bs4 import BeautifulSoup
 
-# ── Constants ────────────────────────────────────────────────────────────────
+# ── Constants ─────────────────────────────────────────────────────────────────
 
 HEADERS = {
     "User-Agent": (
@@ -27,45 +25,57 @@ HEADERS = {
     "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
     "Accept-Encoding": "gzip, deflate, br",
     "Connection":      "keep-alive",
-    "Upgrade-Insecure-Requests": "1",
     "Cache-Control":   "no-cache",
 }
 
 MAX_RETRIES   = 3
-RETRY_BACKOFF = 2   # seconds; doubles each attempt
-TIMEOUT       = 25  # seconds per request
+RETRY_BACKOFF = 2
+TIMEOUT       = 25
 
-# Phrases that indicate we got a maintenance/error page instead of real content
 ERROR_PHRASES = [
-    "bakım", "maintenance", "erişilemiyor", "bulunamadı", "404",
+    "bakım", "maintenance", "erişilemiyor", "bulunamadı",
     "forbidden", "503", "geçici olarak",
 ]
 
 
-# ── Public interface ─────────────────────────────────────────────────────────
+# ── Public interface ──────────────────────────────────────────────────────────
 
 def fetch(center: dict) -> dict:
     """
     Fetch and extract all price tables from the pricing page.
+    Tries the primary selector first, then each fallback selector in order.
 
     Returns:
     {
         "center_id": str,
         "url":       str,
-        "tables":    [ [ [cell,...], ... ], ... ],
+        "tables":    [ [ [row], ... ], ... ],
         "raw_text":  str
     }
-
-    Raises requests.HTTPError or ValueError on unrecoverable failure.
     """
-    url      = center["pricing_url"]
-    selector = center.get("selector", "table")
+    url               = center["pricing_url"]
+    primary_selector  = center.get("selector", "table")
+    fallback_selectors = center.get("fallback_selectors", [])
 
     html = _get_with_retry(url)
     _check_for_error_page(html, url)
 
     soup = BeautifulSoup(html, "html.parser")
-    tables   = _extract_tables(soup, selector)
+
+    # Try primary selector
+    tables = _extract_tables(soup, primary_selector)
+
+    if not tables:
+        print(f"  [{center['id']}] '{primary_selector}' ile tablo bulunamadı.")
+
+        # Try each fallback selector in order
+        for fallback in fallback_selectors:
+            print(f"  [{center['id']}] Yedek deneniyor: '{fallback}'")
+            tables = _extract_tables(soup, fallback)
+            if tables:
+                print(f"  [{center['id']}] ✅ '{fallback}' ile {len(tables)} tablo bulundu.")
+                break
+
     raw_text = _extract_text(soup)
 
     return {
@@ -76,13 +86,13 @@ def fetch(center: dict) -> dict:
     }
 
 
-# ── HTTP helpers ─────────────────────────────────────────────────────────────
+# ── HTTP helpers ──────────────────────────────────────────────────────────────
 
 def _get_with_retry(url: str) -> str:
     session = requests.Session()
     session.headers.update(HEADERS)
-
     last_exc = None
+
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             resp = session.get(url, timeout=TIMEOUT, allow_redirects=True)
@@ -108,7 +118,7 @@ def _check_for_error_page(html: str, url: str) -> None:
             )
 
 
-# ── Parsing helpers ──────────────────────────────────────────────────────────
+# ── Parsing helpers ───────────────────────────────────────────────────────────
 
 def _extract_tables(soup: BeautifulSoup, selector: str) -> list[list[list[str]]]:
     tables = []
@@ -119,14 +129,13 @@ def _extract_tables(soup: BeautifulSoup, selector: str) -> list[list[list[str]]]
                 td.get_text(separator=" ", strip=True)
                 for td in tr.find_all(["td", "th"])
             ]
-            # Skip completely empty rows
             if not any(cells):
                 continue
-            # Skip merged header rows (single cell spanning all columns via colspan)
+            # Skip merged header rows (single cell spanning all columns)
             if len(cells) == 1 and tr.find(attrs={"colspan": True}):
                 continue
             rows.append(cells)
-        if len(rows) > 1:   # need at least a header + one data row
+        if len(rows) > 1:
             tables.append(rows)
     return tables
 
