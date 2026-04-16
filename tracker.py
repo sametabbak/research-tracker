@@ -28,66 +28,49 @@ FETCHERS = {
     # "html_dynamic": html_dynamic.fetch,  # coming later (ODTÜ MERLAB)
 }
 
-CONFIG_PATH = Path(__file__).parent / "config" / "centers.json"
-CONNECT_TIMEOUT = 6  # seconds for the pre-check probe
+CONFIG_PATH    = Path(__file__).parent / "config" / "centers.json"
+PROBE_TIMEOUT  = 15  # generous timeout for the pre-check probe
 
 
-# ── Connectivity pre-check ────────────────────────────────────────────────────
+# ── Connectivity probe ────────────────────────────────────────────────────────
 
-def check_connectivity(centers: list[dict]) -> tuple[list[dict], list[dict]]:
-    """
-    Quick TCP probe to each center's host before scraping.
-    Returns (reachable, unreachable) lists.
-    Skips manual centers — they have no URL to probe.
-    """
-    reachable   = []
-    unreachable = []
-
-    for center in centers:
-        if center.get("fetch_method") == "manual":
-            reachable.append(center)
-            continue
-
-        url  = center.get("pricing_url") or center.get("url", "")
-        host = urlparse(url).hostname
-        if not host:
-            reachable.append(center)
-            continue
-
-        try:
-            sock = socket.create_connection((host, 443), timeout=CONNECT_TIMEOUT)
-            sock.close()
-            reachable.append(center)
-        except OSError:
-            unreachable.append(center)
-
-    return reachable, unreachable
+def probe(center: dict) -> bool:
+    """Return True if the center's host accepts a TCP connection."""
+    if center.get("fetch_method") == "manual":
+        return True
+    url  = center.get("pricing_url") or center.get("url", "")
+    host = urlparse(url).hostname
+    if not host:
+        return True
+    try:
+        sock = socket.create_connection((host, 443), timeout=PROBE_TIMEOUT)
+        sock.close()
+        return True
+    except OSError:
+        return False
 
 
 def print_connectivity_report(centers: list[dict]) -> None:
-    """Run --check mode: probe all active centers and report."""
+    """--check mode: probe every center and report, then exit."""
     print("🔌 Connectivity check\n")
-    reachable, unreachable = check_connectivity(centers)
-
-    for c in reachable:
+    all_ok = True
+    for c in centers:
         url = c.get("pricing_url") or c.get("url", "")
-        print(f"  ✅ {c['name']:<20}  {url}")
-
-    for c in unreachable:
-        url = c.get("pricing_url") or c.get("url", "")
-        print(f"  ❌ {c['name']:<20}  {url}")
-        print(f"       → Cannot reach from this network.")
-        print(f"         The GitHub Actions runner will likely reach it fine.")
-
+        ok  = probe(c)
+        icon = "✅" if ok else "❌"
+        print(f"  {icon} {c['name']:<22} {url}")
+        if not ok:
+            all_ok = False
+            print("       → Unreachable from this network.")
+            print("         GitHub Actions (Azure) will likely reach it fine.\n")
     print()
-    if unreachable:
-        print(
-            f"  ⚠️  {len(unreachable)} center(s) unreachable locally.\n"
-            "     Push to GitHub and use the Actions tab → 'Run workflow'\n"
-            "     to run the tracker on GitHub's infrastructure instead."
-        )
+    if all_ok:
+        print(f"  All {len(centers)} center(s) reachable. Safe to run locally.")
     else:
-        print(f"  All {len(reachable)} center(s) reachable. Safe to run locally.")
+        print(
+            "  ⚠️  One or more centers unreachable locally.\n"
+            "     Push to GitHub and use Actions → 'Run workflow' instead."
+        )
 
 
 # ── Centers loader ────────────────────────────────────────────────────────────
@@ -128,7 +111,7 @@ def run(center: dict) -> None:
 # ── Entry point ───────────────────────────────────────────────────────────────
 
 def main() -> None:
-    args      = sys.argv[1:]
+    args       = sys.argv[1:]
     check_only = "--check" in args
     target_id  = next((a for a in args if not a.startswith("--")), None)
 
@@ -142,24 +125,18 @@ def main() -> None:
         print_connectivity_report(centers)
         return
 
-    # ── Pre-check: skip unreachable centers rather than wasting retry time ──
-    reachable, unreachable = check_connectivity(centers)
-
-    if unreachable:
-        print("⚠️  Connectivity pre-check:\n")
-        for c in unreachable:
+    # Warn about unreachable centers but ALWAYS attempt every center.
+    # The fetcher has its own 25-second timeout + retry logic.
+    # A failed TCP probe (slow server, Azure routing) should not skip a center.
+    for c in centers:
+        if c.get("fetch_method") != "manual" and not probe(c):
             print(
-                f"  ❌ {c['name']} — unreachable from this network. Skipping.\n"
-                "     Run via GitHub Actions for reliable access to .edu.tr domains."
+                f"  ⚠️  [{c['name']}] Host unreachable in pre-check "
+                f"({PROBE_TIMEOUT}s). Attempting anyway...\n"
             )
-        print()
 
-    if not reachable:
-        print("No reachable centers. Exiting.")
-        return
-
-    print(f"Running tracker for {len(reachable)} center(s)...\n")
-    for center in reachable:
+    print(f"Running tracker for {len(centers)} center(s)...\n")
+    for center in centers:
         run(center)
 
 
