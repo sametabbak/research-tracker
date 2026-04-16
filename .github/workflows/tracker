@@ -1,0 +1,44 @@
+name: Research Center Price Tracker
+
+on:
+  schedule:
+    # ── December window ──────────────────────────────
+    - cron: '0 7 * 12 1'   # Every Monday in December
+    - cron: '0 7 * 1  1'   # Every Monday in January
+    - cron: '0 7 * 2  1'   # Every Monday in February
+    # ── May window ───────────────────────────────────
+    - cron: '0 7 * 5  1'   # Every Monday in May
+    - cron: '0 7 * 6  1'   # Every Monday in June
+    - cron: '0 7 * 7  1'   # Every Monday in July
+    # ── Pre-window reminders ─────────────────────────
+    - cron: '0 7 20 11 *'  # November 20 — "December window starts soon"
+    - cron: '0 7 20 4  *'  # April 20    — "May window starts soon"
+
+  workflow_dispatch:        # Manual trigger from GitHub UI anytime
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tracker
+        run: python tracker.py
+
+      - name: Commit updated snapshots
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add snapshots/
+          git diff --staged --quiet || git commit -m "chore: update snapshots $(date -u '+%Y-%m-%d')"
+          git push
