@@ -1,0 +1,88 @@
+[
+  {
+    "id": "aku_tuam",
+    "name": "AKÜ TUAM",
+    "university": "Afyon Kocatepe Üniversitesi",
+    "city": "Afyonkarahisar",
+    "url": "https://tuam.aku.edu.tr",
+    "pricing_url": "https://tuam.aku.edu.tr/analiz-ucretleri/",
+    "fetch_method": "html_then_pdf",
+    "pdf_link_pattern": "FIYAT-LISTESI",
+    "column_map": {
+      "name": 0,
+      "price": 2,
+      "category": null,
+      "unit": 1,
+      "notes": 3
+    },
+    "check_months": [12, 1, 2, 5, 6, 7],
+    "active": true,
+    "reference": true
+  },
+  {
+    "id": "esogu_arum",
+    "name": "ESOGÜ ARUM",
+    "university": "Eskişehir Osmangazi Üniversitesi",
+    "city": "Eskişehir",
+    "url": "https://arum.ogu.edu.tr",
+    "pricing_url": "https://arum.ogu.edu.tr/Sayfa/Index/136/analiz-ucretleri/",
+    "fetch_method": "html_table",
+    "selector": "table",
+    "column_map": {
+      "name": 1,
+      "price": 2,
+      "category": null,
+      "unit": null,
+      "notes": 3
+    },
+    "check_months": [12, 1, 2, 5, 6, 7],
+    "active": true,
+    "reference": false
+  },
+  {
+    "id": "dpu_iltem",
+    "name": "DPÜ İLTEM",
+    "university": "Kütahya Dumlupınar Üniversitesi",
+    "city": "Kütahya",
+    "url": "https://dpuiltem.com.tr",
+    "pricing_url": "https://dpuiltem.com.tr/analiz-ucretleri/",
+    "fetch_method": "html_table",
+    "selector": ".entry-content table",
+    "column_map": {
+      "name": 0,
+      "price": 1,
+      "category": null,
+      "unit": null,
+      "notes": 2
+    },
+    "check_months": [12, 1, 2, 5, 6, 7],
+    "active": true,
+    "reference": false
+  },
+  {
+    "id": "estu_sam",
+    "name": "ESTÜ SAM",
+    "university": "Seramik Araştırma Merkezi A.Ş.",
+    "city": "Eskişehir",
+    "url": "https://seramikarastirma.com.tr",
+    "pricing_url": "https://seramikarastirma.com.tr/hizmet-ucretleri/",
+    "fetch_method": "html_then_pdf",
+    "pdf_link_pattern": "Fiyat-Listesi",
+    "check_months": [11, 12, 1, 2, 4, 5, 6, 7],
+    "active": false,
+    "reference": false
+  },
+  {
+    "id": "odtu_merlab",
+    "name": "ODTÜ MERLAB",
+    "university": "Orta Doğu Teknik Üniversitesi",
+    "city": "Ankara",
+    "url": "https://merlab.metu.edu.tr",
+    "pricing_url": "https://merlab.metu.edu.tr/tr/hizmet-bedelleri",
+    "fetch_method": "html_dynamic",
+    "notes": "JavaScript dropdown — requires headless browser.",
+    "check_months": [12, 1, 2, 5, 6, 7],
+    "active": false,
+    "reference": false
+  }
+]
