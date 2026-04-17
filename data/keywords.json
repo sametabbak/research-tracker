@@ -1,0 +1,152 @@
+{
+  "XRD": [
+    "Toz Kırınım Deseni (Toz Numune)",
+    "Yüksek Sıcaklık Kırınım Deseni",
+    "XRD Temel Kullanıcı Eğitimi",
+    "1-XRD-Standart Patern İncelemesi",
+    "2-XRD-Kalitatif Analiz",
+    "3-XRD-Standart Patern İncelemesi - Kalitatif Analiz",
+    "4-XRD-Detay Kil Standart Patern Çekimi",
+    "5-XRD-Yüksek Sıcaklık Faz Analizi (25 oC – 800 °C)",
+    "6-XRD-Yüksek Sıcaklık Faz Analizi (800 oC– 1600 °C)"
+  ],
+  "SEM": [
+    "Biyolojik Dokulardan SEM İçin Numune Hazırlama",
+    "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
+    "SEM / EBSD Analizi**",
+    "SEM / STEM Analizi**",
+    "Biyolojik Dokulardan SEM İçin Numune Hazırlama Eğitimi***",
+    "SEM Cihaz Kullanımı Eğitimi****",
+    "Semi-Dry Blotlama",
+    "3-SEM Analizi (TL/Saat)",
+    "4-SEM + EDX Analizi (TL/Saat)"
+  ],
+  "SEM-EDX": [
+    "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
+    "4-SEM + EDX Analizi (TL/Saat)"
+  ],
+  "TEM": [
+    "SEM / STEM Analizi**",
+    "Biyolojik Dokulardan TEM İçin Numune Hazırlama",
+    "Biyolojik Dokulardan Kriyo-TEM İçin Numune Hazırlama*",
+    "Biyolojik Dokulardan TEM İçin Numune Hazırlama Eğitimi***",
+    "TEM Cihaz Kullanımı Eğitimi***",
+    "XRD Temel Kullanıcı Eğitimi",
+    "XRF Temel Kullanıcı Eğitimi**",
+    "Sıvı NMR Temel Kullanıcı Eğitimi",
+    "Katı NMR Temel Kullanıcı Eğitimi",
+    "Hücre Serisi Dondurulması (Temel Sarflar Dahil, 6 Ay Stoklama) ***",
+    "Jel Görüntüleme ve Dökümantasyon Sistemi Kullanımı (UV)**",
+    "Jel Görüntüleme ve Dökümantasyon Sistemi Kullanımı (Kemilüminesans)**",
+    "HPLC-Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
+    "1-AFM Temas (Contact) Modu (TL/Saat)",
+    "2-AFM Temassız (Non-Contact) Modu (TL/Saat)"
+  ],
+  "AFM": [
+    "1-AFM Temas (Contact) Modu (TL/Saat)",
+    "2-AFM Temassız (Non-Contact) Modu (TL/Saat)",
+    "3-Diğer AFM Modu (TL/Saat) (Bilgi alınız!)"
+  ],
+  "BET": [
+    "1-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (Tek Nokta)",
+    "2-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (5 Nokta)",
+    "3-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı + Gözenek Dağılımı"
+  ],
+  "DSC": [
+    "4-TG DSC Analizi 0-1 Saat (25 °C-1600 °C)",
+    "5-TG DSC Analizi 1-3 Saat (25 °C-1600 °C)",
+    "6-TG DSC Analizi 3-7 Saat (25 °C-1600 °C)"
+  ],
+  "DTA": [
+    "1-TG DTA Analizi 0-1 Saat (25 °C-1600 °C)",
+    "2-TG DTA Analizi 1-3 Saat (25 °C-1600 °C)",
+    "3-TG DTA Analizi 3-7 Saat (25 °C-1600 °C)"
+  ],
+  "Raman": [
+    "Raman Spektrumu Eldesi"
+  ],
+  "ICP-MS": [
+    "ICP-MS 1 Element Analizi",
+    "ICP-MS 2-5 Element Analizi",
+    "ICP-MS 6-10 Element Analizi",
+    "ICP-MS 11-15 Element Analizi",
+    "ICP-MS 16-20 Element Analizi",
+    "ICP-MS 21-30 Element Analizi",
+    "ICP-MS 31-40 Element Analizi",
+    "ICP-MS 41-50 Element Analizi",
+    "ICP-MS 51 ve üzeri element Analizi",
+    "ICP-MS 1 Nadir Toprak Elementi Analizi*",
+    "ICP-MS 2-10 Nadir Toprak Elementi Analizi*",
+    "ICP-MS 11-18 Nadir Toprak Elementi Analizi*"
+  ],
+  "ICP-OES": [
+    "1-Optik Emisyon Spektrometresi (OES)"
+  ],
+  "XRF": [
+    "XRF Analizi / Katı Numune",
+    "XRF Analizi / Sıvı Numune*",
+    "XRF Temel Kullanıcı Eğitimi**"
+  ],
+  "Porozimetre": [
+    "4-Cıvalı Porozimetre Analizi"
+  ],
+  "Mikrosertlik": [
+    "2-Mikrosertlik Ölçümü (5 iz/numune)"
+  ],
+  "OES": [
+    "NOESY NMR Analizi",
+    "1-Optik Emisyon Spektrometresi (OES)"
+  ],
+  "NMR": [
+    "1H (Proton) NMR Analizi",
+    "13C (Karbon) NMR Analizi",
+    "13C APT NMR Analizi",
+    "13C DEPT (45,90,135) NMR Analizi",
+    "COSY NMR Analizi",
+    "HETCOR NMR Analizi",
+    "HMBC NMR Analizi",
+    "HMQC NMR Analizi",
+    "NOESY NMR Analizi",
+    "31P NMR Analizi",
+    "19F NMR Analizi",
+    "11B NMR Analizi",
+    "TOCSY NMR Analizi",
+    "15N NMR Analizi",
+    "Si NMR Analizi",
+    "NOE NMR Analizi",
+    "Water-Gated NMR Analizi",
+    "HSQC NMR Analizi",
+    "INADEQUATE NMR Analizi",
+    "Sıvı NMR Temel Kullanıcı Eğitimi",
+    "Al NMR Analizi 4 Saat",
+    "Al NMR Analizi 8 Saat",
+    "Al NMR Analizi 16 Saat",
+    "Al NMR Analizi 27 Saat",
+    "13C CP MAS NMR Analizi 4 Saat",
+    "13C CP MAS NMR Analizi 8 Saat",
+    "13C CP MAS NMR Analizi 16 Saat",
+    "13C CP MAS NMR Analizi 27 Saat",
+    "1H NMR Analizi",
+    "11B NMR Analizi 4 Saat",
+    "11B NMR Analizi 8 Saat",
+    "11B NMR Analizi 16 Saat",
+    "11B NMR Analizi 27 Saat",
+    "15N NMR Analizi 4 Saat",
+    "15N NMR Analizi 8 Saat",
+    "15N NMR Analizi 16 Saat",
+    "15N NMR Analizi 27 Saat",
+    "HETCOR NMR Analizi 4 Saat",
+    "HETCOR NMR Analizi 8 Saat",
+    "HETCOR NMR Analizi 16 Saat",
+    "HETCOR NMR Analizi 27 Saat",
+    "31P NMR Analizi 4 Saat",
+    "31P NMR Analizi 8 Saat",
+    "31P NMR Analizi 16 Saat",
+    "31P NMR Analizi 27 Saat",
+    "Katı NMR Temel Kullanıcı Eğitimi",
+    "Si NMR Analizi 4 Saat",
+    "Si NMR Analizi 8 Saat",
+    "Si NMR Analizi 16 Saat",
+    "Si NMR Analizi 27 Saat"
+  ]
+}

@@ -20,8 +20,8 @@
     "pricing_url": "https://arum.ogu.edu.tr/Sayfa/Index/148/analiz-ucretleri/",
     "active": true,
     "reference": false,
-    "analysis_count": 0,
-    "last_updated": "2026-04-16"
+    "analysis_count": 184,
+    "last_updated": "2026-04-17"
   },
   {
     "id": "dpu_iltem",
@@ -33,42 +33,6 @@
     "active": true,
     "reference": false,
     "analysis_count": 0,
-    "last_updated": "2026-04-16"
-  },
-  {
-    "id": "estu_sam",
-    "name": "ESTÜ SAM",
-    "university": "Seramik Araştırma Merkezi A.Ş.",
-    "city": "Eskişehir",
-    "url": "https://seramikarastirma.com.tr",
-    "pricing_url": "https://seramikarastirma.com.tr/hizmet-ucretleri/",
-    "active": false,
-    "reference": false,
-    "analysis_count": 0,
-    "last_updated": null
-  },
-  {
-    "id": "odtu_merlab",
-    "name": "ODTÜ MERLAB",
-    "university": "Orta Doğu Teknik Üniversitesi",
-    "city": "Ankara",
-    "url": "https://merlab.metu.edu.tr",
-    "pricing_url": "https://merlab.metu.edu.tr/tr/hizmet-bedelleri",
-    "active": false,
-    "reference": false,
-    "analysis_count": 0,
-    "last_updated": null
-  },
-  {
-    "id": "aku_dal",
-    "name": "AKÜ DAL",
-    "university": "Afyon Kocatepe Üniversitesi",
-    "city": "Afyonkarahisar",
-    "url": "https://dal.aku.edu.tr",
-    "pricing_url": null,
-    "active": false,
-    "reference": false,
-    "analysis_count": 0,
-    "last_updated": null
+    "last_updated": "2026-04-17"
   }
 ]
