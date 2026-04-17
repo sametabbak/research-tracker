@@ -262,8 +262,8 @@ def _parse_price(raw: str) -> float | None:
     cleaned = re.sub(r"\(.*?\)", "", cleaned)
     cleaned = cleaned.strip()
 
-  if "/" in raw:
-        raw = raw.split("/")[0]
+    if not cleaned:
+        return None
 
     if "-" in cleaned:
         cleaned = cleaned.split("-")[0].strip()
