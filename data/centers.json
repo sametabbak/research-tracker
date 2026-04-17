@@ -12,6 +12,18 @@
     "last_updated": "2026-04-17"
   },
   {
+    "id": "atauni_daytam",
+    "name": "ATAÜNİ DAYTAM",
+    "university": "Atatürk Üniversitesi",
+    "city": "Erzurum",
+    "url": "https://daytam.atauni.edu.tr/",
+    "pricing_url": "https://daytam.atauni.edu.tr/hizmet-bedelleri/",
+    "active": true,
+    "reference": false,
+    "analysis_count": 3,
+    "last_updated": "2026-04-17"
+  },
+  {
     "id": "esogu_arum",
     "name": "ESOGÜ ARUM",
     "university": "Eskişehir Osmangazi Üniversitesi",
