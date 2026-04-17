@@ -14,6 +14,20 @@
     "reference": true
   },
   {
+  "id": "atauni_daytam",
+  "name": "ATAÜNİ DAYTAM",
+  "university": "Atatürk Üniversitesi",
+  "city": "Erzurum",
+  "url": "https://daytam.atauni.edu.tr/",
+  "pricing_url": "https://daytam.atauni.edu.tr/hizmet-bedelleri/",
+  "fetch_method": "html_then_pdf",
+  "pdf_link_pattern": "ANALİZ-ÜCRETLERİ",
+  "fallback_pdf_url": "https://daytam.atauni.edu.tr/wp-content/uploads/2025/12/2026-DAYTAM-ANALI%CC%87Z-U%CC%88CRETLERI%CC%87-GUNCEL_V1.pdf",
+  "check_months": [12, 1, 2, 5, 6, 7],
+  "active": true,
+  "reference": false
+},
+  {
     "id": "esogu_arum",
     "name": "ESOGÜ ARUM",
     "university": "Eskişehir Osmangazi Üniversitesi",
