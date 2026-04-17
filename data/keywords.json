@@ -8,10 +8,7 @@
     "3-XRD-Standart Patern İncelemesi - Kalitatif Analiz",
     "4-XRD-Detay Kil Standart Patern Çekimi",
     "5-XRD-Yüksek Sıcaklık Faz Analizi (25 oC – 800 °C)",
-    "6-XRD-Yüksek Sıcaklık Faz Analizi (800 oC– 1600 °C)",
-    "Standart X-Işını Kırınım Deseni (XRD)",
-    "Standart XRD Çekimi + Kalitatif Analiz",
-    "Böbrek Taşı Analizi (XRD)"
+    "6-XRD-Yüksek Sıcaklık Faz Analizi (800 oC– 1600 °C)"
   ],
   "SEM": [
     "Biyolojik Dokulardan SEM İçin Numune Hazırlama",
@@ -22,16 +19,18 @@
     "SEM Cihaz Kullanımı Eğitimi****",
     "Semi-Dry Blotlama",
     "3-SEM Analizi (TL/Saat)",
-    "4-SEM + EDX Analizi (TL/Saat)",
-    "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)",
-    "SEM-Katodolüminesans (SEM-CL)",
-    "SEM Altın (Au,Pd), Karbon Kaplama",
-    "SEM-EBIC Dedektörü"
+    "4-SEM + EDX Analizi (TL/Saat)"
   ],
   "SEM-EDX": [
     "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
-    "4-SEM + EDX Analizi (TL/Saat)",
-    "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)"
+    "4-SEM + EDX Analizi (TL/Saat)"
+  ],
+  "Kaplama": [
+    "Numune Kaplama (Altın/Paladyum & Karbon)*",
+    "Formwar/Karbon Grid Üzerine Çözeltiden Numune Hazırlama",
+    "13C (Karbon) NMR Analizi",
+    "1-Karbon Kaplama (4 adete kadar)",
+    "2-Altın Kaplama (4 adete kadar)"
   ],
   "TEM": [
     "SEM / STEM Analizi**",
@@ -48,11 +47,7 @@
     "Jel Görüntüleme ve Dökümantasyon Sistemi Kullanımı (Kemilüminesans)**",
     "HPLC-Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
     "1-AFM Temas (Contact) Modu (TL/Saat)",
-    "2-AFM Temassız (Non-Contact) Modu (TL/Saat)",
-    "Mikro Sertlik Ölçümü (Vickers Yöntemi 3 – Indent)",
-    "Mikro Sertlik Ölçümü (Vickers Yöntemi 5 – Indent)",
-    "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Toz Formunda",
-    "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Sucuk Formunda"
+    "2-AFM Temassız (Non-Contact) Modu (TL/Saat)"
   ],
   "AFM": [
     "1-AFM Temas (Contact) Modu (TL/Saat)",
@@ -62,23 +57,17 @@
   "BET": [
     "1-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (Tek Nokta)",
     "2-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (5 Nokta)",
-    "3-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı + Gözenek Dağılımı",
-    "Rutubet (Nem) Tayini"
+    "3-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı + Gözenek Dağılımı"
   ],
   "DSC": [
     "4-TG DSC Analizi 0-1 Saat (25 °C-1600 °C)",
     "5-TG DSC Analizi 1-3 Saat (25 °C-1600 °C)",
-    "6-TG DSC Analizi 3-7 Saat (25 °C-1600 °C)",
-    "TG/DTA/DSC Spektrumu (Max. 1500 °C)"
+    "6-TG DSC Analizi 3-7 Saat (25 °C-1600 °C)"
   ],
   "DTA": [
     "1-TG DTA Analizi 0-1 Saat (25 °C-1600 °C)",
     "2-TG DTA Analizi 1-3 Saat (25 °C-1600 °C)",
-    "3-TG DTA Analizi 3-7 Saat (25 °C-1600 °C)",
-    "TG/DTA/DSC Spektrumu (Max. 1500 °C)"
-  ],
-  "FTIR": [
-    "ATR – FTIR Spektrumu"
+    "3-TG DTA Analizi 3-7 Saat (25 °C-1600 °C)"
   ],
   "Raman": [
     "Raman Spektrumu Eldesi"
@@ -109,9 +98,7 @@
     "4-Cıvalı Porozimetre Analizi"
   ],
   "Mikrosertlik": [
-    "2-Mikrosertlik Ölçümü (5 iz/numune)",
-    "Mikro Sertlik Ölçümü (Vickers Yöntemi 3 – Indent)",
-    "Mikro Sertlik Ölçümü (Vickers Yöntemi 5 – Indent)"
+    "2-Mikrosertlik Ölçümü (5 iz/numune)"
   ],
   "OES": [
     "NOESY NMR Analizi",
