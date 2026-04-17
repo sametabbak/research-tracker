@@ -33,6 +33,14 @@
     "4-SEM + EDX Analizi (TL/Saat)",
     "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)"
   ],
+  "Kaplama":[
+    "Altın Kaplama",
+    "Karbon Kaplama",
+    "Altın",
+    "Karbon",
+    "Paladyum",
+    "Kaplama"
+  ]
   "TEM": [
     "SEM / STEM Analizi**",
     "Biyolojik Dokulardan TEM İçin Numune Hazırlama",
