@@ -257,6 +257,10 @@ def _parse_price(raw: str) -> float | None:
     if not raw:
         return None
 
+   # Handle "1570 / saat", "250 / adet" format
+    if "/" in raw:
+        raw = raw.split("/")[0]
+
     cleaned = re.sub(r"[₺TLtl€$\s]", "", raw)
     cleaned = re.sub(r"\+?kdv.*$", "", cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r"\(.*?\)", "", cleaned)
