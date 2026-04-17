@@ -1,0 +1,113 @@
+{
+  "center_id": "eu_taum",
+  "events": [
+    {
+      "date": "2026-04-17",
+      "type": "new",
+      "added_rows": [
+        [
+          "UYGULANAN İŞLEM/ANALİZ ADI",
+          "İŞLEM/ANALİZ FİYATI-2026"
+        ],
+        [
+          "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)  FE-SEM  FE-SEM-EDX Analizi  STEM  STEM Sıvı Numune Hazırlık  Mapping  Line Scan (TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
+          "2000 TL/Saat 400 TL/Adet 2200 TL/Saat 800 TL/Adet 600 TL/Adet 600 TL/Adet"
+        ],
+        [
+          "AAS (Atomik Absorpsiyon Spektrometresi)  Analiz (ilk element)  Sonraki Elementlerin Her Biri için",
+          "300 TL/Element 200 TL/Element"
+        ],
+        [
+          "Atomik Kuvvet Mikroskobu (AFM) Yüzey Analizi  Atomik Kuvvet Mikroskobu Yüzey Analizi",
+          "2000 TL/Saat"
+        ],
+        [
+          "X-Işını Toz Difraksiyonu (XRD)  X-Işını difraksiyon paterni çekimi (toz numune)  X-Işını difraksiyon paterni çekimi (toz numune)  X-Işını difraksiyon paterni çekimi (ince film)  Mineral analiz  Yüksek sıcaklık paterni çekimi  Rietveld analizi  Kalıntı gerilme analizi  XRR analizi",
+          "500 TL/Adet (max. 30 dak) 800 TL/Adet (max. 60 dak) 1200 TL/Adet (max. 60 dak) 1100 TL/Adet 5000 TL/Adet (max.60dak) 6000 TL/Adet 4000 TL/Adet 5300 TL/Adet"
+        ],
+        [
+          "X-Işını Floresans Spektrometresi (WD/XRF)  Yarı Kantitatif element analizi (Öğütülmüş Örnek)  Yarı Kantitatif element analizi (Maden Örnekleri)  Yarı Kantitatif element analizi (Metal, Alaşım vb.) (Rapor istenilen durumlarda ilave 1100 TL ücret alınacaktır.)",
+          "2550 TL/Adet 2900 TL/Adet 2000 TL/Adet"
+        ],
+        [
+          "TG/DTA – Analizleri  TG/DTA Spektrumu (Analiz süresi: 0 – 1 saat)  TG/DTA Spektrumu (Analiz süresi: 1 – 3 saat)  TG/DTA Spektrumu (Analiz süresi: 3 – 7 saat)",
+          "550 TL/Adet 750 TL/Adet 850 TL/Adet"
+        ],
+        [
+          "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)  Numune analizi 1-10 element için  İlave element analizi için  Mikrodalga Çözme İşlemi  Çoklu Asit İle Çözme İşlemi  Değerli Metaller 1-10 Element (Au, Pd, Pt, Ag, Rh vb.)",
+          "800 TL/Adet 150 TL/Element 550 TL/Adet 650 TL/Adet 1600 TL/Adet"
+        ],
+        [
+          "FT-IR Analizleri  FT-IR / FT-FIR Spektrumu  FT-IR Karakterizasyon (Spektrum + Kütüphane)",
+          "500 TL/Adet 900 TL/Adet"
+        ],
+        [
+          "Nükleer Manyetik Rezonans Spektrometresi (NMR)  1H (Proton) Spektrumu (Numune min. 20 mg)  D2O Değişimi  13C (Karbon)(Coupled, Decoupled) (Numune min. 50 mg)  1 D Spektrum: APT / DEPT (45, 90, 135)  2 D Spektrum: COSY/ NOESY/ HETCOR/ HMBC/ HMQC, 31P (Fosfor)  Çözücü (D2O, CHCI3)  Çözücü (DMSO, CD3OD)",
+          "425 TL/Adet 425 TL/Adet 850 TL/Adet 1000 TL/Adet 1000 TL/Saat 170 TL/Adet 255 TL/Adet"
+        ],
+        [
+          "BET Yüzey Alanı ve Porozite (Gözenek boyutu) Analizi  Tek noktalı BET  Çok noktalı BET Makro-Mezogözenek (2-50 nm) Analizi + Gözenek Boyutu  Çok noktalı BET Mikrogözenek (<2 nm) Analizi + Gözenek Boyutu",
+          "700 TL/Adet 1600 TL/Adet 2100 TL/Adet"
+        ],
+        [
+          "HPLC Analizleri  Fruktoz, Glukoz, Sakaroz, Maltoz analizi  Kafein, Naftalin, HMF analizi  Vitamin analizleri (her biri için)  Monomer analizi (BPA, UDMA, HEMA, TEGDMA vb.)  Diğer Özel bileşenler için analizler (standart ve metot getirilecek)  Kromatografik Yöntem Geliştirme Vitamin analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
+          "1000 TL / Tek bileşen 250 TL / İlave bileşen 7000 TL/Adet"
+        ],
+        [
+          "GC-MS Analizleri  Kalitatif Analiz Aroma Bileşikler (GC-MS kütüphane taraması)  Kalitatif Analiz Uçucu Bileşikler (GC-MS kütüphane taraması)  Kalitatif Analiz Fenolik Bileşikler(GC-MS kütüphane taraması)  Kalitatif Analiz Yağ asitleri (GC-MS kütüphane taraması)  Kalitatif Analiz Tam Spektrum Tarama (GC-MS kütüphane taraması)  Esansiyel yağ bileşenleri/Yağ asitleri Komp % bağıl (GC-FID) GC-MS analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
+          "1500 TL/Adet 1500 TL/Adet 1500 TL/Adet 1500 TL/Adet 4500 TL/Adet 2500 TL/Adet"
+        ],
+        [
+          "Çekme-Basma-Üç Nokta Eğme Testleri  Çekme, Basma, Üç Nokta Eğme (oda sıcaklığında)",
+          "450 TL/Adet"
+        ],
+        [
+          "Isıl Geçirgenlik Cihazı  Isıl Geçirgenlik Analizi",
+          "650 TL/Adet"
+        ],
+        [
+          "Hava Geçirgenlik Cihazı  Hava Geçirgenlik Analizi",
+          "650 TL/Adet"
+        ],
+        [
+          "Yoğunluk Tayini (Gaz Piknometresiyle) “ “ (Numune Hazırlığı Gerektiren malzemeler)",
+          "400 TL/Adet 500 TL/Adet"
+        ],
+        [
+          "Numune Hazırlama:  Kesme  Öğütme  Kriyojenik Öğütme ( Tek seferde max. 2 g numune öğütülmektedir.)  Presleme  Platin potada numune hazırlık  Bakalite alma  Parlatma  Altın veya karbon kaplama (Yalıtkan örnekler için) (50 bin büyütmeye kadar)  Yüksek Çözünürlüklü Platin Kaplama (50 bin ve üzeri büyütme için)  Kritik noktada kurutma  Kızdırma kaybı",
+          "350 TL/Adet 350 TL/Adet 600 TL/Adet 350 TL/Adet 900 TL/Adet 350 TL/Adet 350 TL/Adet 450 TL/15sn. 600 TL 700 TL/set (12li) 350 TL/Adet"
+        ],
+        [
+          "Metal Mikroskobu",
+          "450 TL/Saat"
+        ],
+        [
+          "Mikro Sertlik Ölçümü (Vickers, Knoop) Mikro sertlik Dağılımı (Vickers, Knoop)",
+          "400 TL/Adet 250 TL/Adet"
+        ],
+        [
+          "Liyofilizasyon (100 mL/24 saat)",
+          "1000 TL"
+        ],
+        [
+          "Titrimetrik Analizler (Tuz, Kuru madde vs.)",
+          "1500 TL/Adet"
+        ],
+        [
+          "Ultra Saf Su",
+          "50 TL /litre"
+        ],
+        [
+          "Sıvı Azot",
+          "60 TL/litre"
+        ],
+        [
+          "Akademik Raporlama İlk 10 sayfadan sonra her 50 sayfa için",
+          "1100 TL/Rapor 350 TL/50 Sayfa"
+        ]
+      ],
+      "removed_rows": [],
+      "analysis_count": 23
+    }
+  ]
+}

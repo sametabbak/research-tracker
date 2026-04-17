@@ -1,0 +1,521 @@
+{
+  "center_id": "cu_cutam",
+  "center_name": "CÜ CUTAM",
+  "last_updated": "2026-04-17",
+  "source_url": "https://cutam.cumhuriyet.edu.tr/16-analiz-fiyatlari",
+  "kdv_note": "Fiyatlara KDV dahil değildir.",
+  "analyses": [
+    {
+      "name": "pH Ölçümü",
+      "category": "FİZİKSEL/KİMYASAL TESTLER",
+      "price": 150.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Bulanıklık (türbidimetrik yöntem)",
+      "category": "FİZİKSEL/KİMYASAL TESTLER",
+      "price": 150.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Renk Tayini (spektrofotometrik)",
+      "category": "FİZİKSEL/KİMYASAL TESTLER",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Yoğunluk",
+      "category": "FİZİKSEL/KİMYASAL TESTLER",
+      "price": 200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Sıcaklık",
+      "category": "FİZİKSEL/KİMYASAL TESTLER",
+      "price": 100.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Çözünmüş Oksijen",
+      "category": "FİZİKSEL/KİMYASAL TESTLER",
+      "price": 125.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Toplam Çözünmüş Madde Miktarı (TDS)",
+      "category": "FİZİKSEL/KİMYASAL TESTLER",
+      "price": 125.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Elektriksel İletkenlik (EC)",
+      "category": "FİZİKSEL/KİMYASAL TESTLER",
+      "price": 125.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Tuzluluk",
+      "category": "FİZİKSEL/KİMYASAL TESTLER",
+      "price": 125.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Nem Tayini",
+      "category": "FİZİKSEL/KİMYASAL TESTLER",
+      "price": 250.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Toplam Sertlik (Ca+Mg)",
+      "category": "FİZİKSEL/KİMYASAL TESTLER",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Anyon Analizi (Cl-, F-, Br-, SO 2-, SO 2- H PO 3-, NO -, NO -) 4 3 2 4 3 2",
+      "category": "İYON KROMOTOGRAFİ (IC)",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kalitatif Analiz",
+      "category": "HPLC",
+      "price": 700.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kantitatif Analiz Tek Bileşen",
+      "category": "HPLC",
+      "price": 700.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kantitatif Analiz İlave Bileşen Başına",
+      "category": "HPLC",
+      "price": 300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Numune Hazırlama",
+      "category": "HPLC",
+      "price": 350.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Raporlama",
+      "category": "HPLC",
+      "price": 2500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GC-MS Kalitatif Analiz GC-FID Kalitatif Analiz",
+      "category": "GC-MS/GC-FID",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GC-MS Kantitatif Analiz Tek Bileşen/İlave Bileşen Başına GC-FID Kantitatif Analiz Tek Bileşen/İlave Bileşen Başına",
+      "category": "GC-MS/GC-FID",
+      "price": 900.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kütüphane Tarama",
+      "category": "GC-MS/GC-FID",
+      "price": 300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Yağ asitleri Kompozisyonu % bağıl miktar",
+      "category": "GC-MS/GC-FID",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Uçucu Yağ Analizi",
+      "category": "GC-MS/GC-FID",
+      "price": 700.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Aroma Analizi",
+      "category": "GC-MS/GC-FID",
+      "price": 700.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Numune Hazırlama",
+      "category": "GC-MS/GC-FID",
+      "price": 170.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Raporlama",
+      "category": "GC-MS/GC-FID",
+      "price": 1400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kalitatif Analiz",
+      "category": "Q-TOF LC-MS",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kantitatif Analiz Tek Bileşen",
+      "category": "Q-TOF LC-MS",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kantitatif Analiz İlave Bileşen Başına",
+      "category": "Q-TOF LC-MS",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Raporlama",
+      "category": "Q-TOF LC-MS",
+      "price": 2000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Analiz (ATR)",
+      "category": "FT-IR SPEKTRUMU",
+      "price": 300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Analiz (KBr Pellet)",
+      "category": "FT-IR SPEKTRUMU",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Tek Dalga Boyunda Ölçüm",
+      "category": "UV-Vis SPEKTROFOTOMETRE",
+      "price": 200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Spektrum Tarama",
+      "category": "UV-Vis SPEKTROFOTOMETRE",
+      "price": 200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Altın Kaplama (Yalıtkan Numuneler için, 1set=6 numune)",
+      "category": "SEM",
+      "price": 200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kritik Noktada Kurutma",
+      "category": "SEM",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "FE-SEM *EDX Analizi",
+      "category": "SEM",
+      "price": 1750.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "STEM sıvı numune hazırlık**",
+      "category": "SEM",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "STEM Dedektörü ile İnceleme",
+      "category": "SEM",
+      "price": 2000.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Raporlama",
+      "category": "SEM",
+      "price": 4000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Tek Numune",
+      "category": "ICP-MS",
+      "price": 100.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Özel elementler (Hg, Au, Ag, Al, Pt)",
+      "category": "ICP-MS",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "element",
+      "notes": ""
+    },
+    {
+      "name": "Element grubu (Ca, Mg, K, Na, Zn)",
+      "category": "ICP-MS",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "element",
+      "notes": ""
+    },
+    {
+      "name": "1-5 element",
+      "category": "ICP-MS",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "element",
+      "notes": ""
+    },
+    {
+      "name": "6-10 element",
+      "category": "ICP-MS",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "element",
+      "notes": ""
+    },
+    {
+      "name": "11-15 element",
+      "category": "ICP-MS",
+      "price": 700.0,
+      "currency": "TRY",
+      "unit": "element",
+      "notes": ""
+    },
+    {
+      "name": "16-20 element",
+      "category": "ICP-MS",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "element",
+      "notes": ""
+    },
+    {
+      "name": "Numune hazırlığı (asit ile mikro dalga yakma/yaş yakma)",
+      "category": "ICP-MS",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "0-1 saat",
+      "category": "DSC",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "1-2 saat",
+      "category": "DSC",
+      "price": 650.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": ">2 saat",
+      "category": "DSC",
+      "price": 150.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "1H-NMR",
+      "category": "NMR (400 MHz)",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "13C-NMR",
+      "category": "NMR (400 MHz)",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "D O Değişimi 2",
+      "category": "NMR (400 MHz)",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "APT",
+      "category": "NMR (400 MHz)",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "DEPT (45-90-135)",
+      "category": "NMR (400 MHz)",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "COSY",
+      "category": "NMR (400 MHz)",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "HMBC",
+      "category": "NMR (400 MHz)",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "HSQC",
+      "category": "NMR (400 MHz)",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "HMQC",
+      "category": "NMR (400 MHz)",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "19F-NMR",
+      "category": "NMR (400 MHz)",
+      "price": 900.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "15N-NMR",
+      "category": "NMR (400 MHz)",
+      "price": 900.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "31P-NMR",
+      "category": "NMR (400 MHz)",
+      "price": 900.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Analiz Çözeltisi Hazırlama",
+      "category": "NMR (400 MHz)",
+      "price": 200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Numune yakma, damıtma ve titrasyon",
+      "category": "AZOT -PROTEİN TAYİNİ (KJELDAHL YAKMA)",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    }
+  ]
+}

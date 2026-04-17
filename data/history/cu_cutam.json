@@ -1,0 +1,951 @@
+{
+  "center_id": "cu_cutam",
+  "events": [
+    {
+      "date": "2026-04-17",
+      "type": "new",
+      "added_rows": [
+        [
+          "FİZİKSEL/KİMYASAL TESTLER",
+          ""
+        ],
+        [
+          "pH Ölçümü",
+          "150 TL/Numune"
+        ],
+        [
+          "Bulanıklık (türbidimetrik yöntem)",
+          "150 TL/Numune"
+        ],
+        [
+          "Renk Tayini (spektrofotometrik)",
+          "400 TL/Numune"
+        ],
+        [
+          "Yoğunluk",
+          "200 TL/Numune"
+        ],
+        [
+          "Sıcaklık",
+          "100 TL/Numune"
+        ],
+        [
+          "Çözünmüş Oksijen",
+          "125 TL/Numune"
+        ],
+        [
+          "Toplam Çözünmüş Madde Miktarı (TDS)",
+          "125 TL/Numune"
+        ],
+        [
+          "Elektriksel İletkenlik (EC)",
+          "125 TL/Numune"
+        ],
+        [
+          "Tuzluluk",
+          "125 TL/Numune"
+        ],
+        [
+          "Nem Tayini",
+          "250 TL/Numune"
+        ],
+        [
+          "Toplam Sertlik (Ca+Mg)",
+          "400 TL/Numune"
+        ],
+        [
+          "Demiranalize/Hemodiyaliz suyun Kimyasal Analizi",
+          "4.500 TL."
+        ],
+        [
+          "İYON KROMOTOGRAFİ (IC)",
+          ""
+        ],
+        [
+          "Anyon Analizi (Cl-, F-, Br-, SO 2-, SO 2- H PO 3-, NO -, NO -) 4 3 2 4 3 2",
+          "600 TL/numune"
+        ],
+        [
+          "HPLC",
+          ""
+        ],
+        [
+          "Kalitatif Analiz",
+          "700 TL/numune"
+        ],
+        [
+          "Kantitatif Analiz Tek Bileşen",
+          "700 TL"
+        ],
+        [
+          "Kantitatif Analiz İlave Bileşen Başına",
+          "300 TL"
+        ],
+        [
+          "Kromatografik Yöntem Geliştirme",
+          "CÜTAM ile görüşülmelidir."
+        ],
+        [
+          "Numune Hazırlama",
+          "350 TL/numune"
+        ],
+        [
+          "Raporlama",
+          "2500 TL/numune"
+        ],
+        [
+          "* Kantitatif analizler için gerekli olan standart maddeler, analizi talep eden tarafından temin edilmelidir. * Talep edilen tüm analizler için; analiz talep formu eksiksiz doldurulmalı ve uygun metot verilmelidir. * Numune hazırlığı; seyreltme, çözme ve filtreleme işlemlerini kapsamaktadır. Bunların dışındaki türevlendirme, ekstraksiyon vb. ön hazırlık işlemleri analizi talep eden tarafından yapılmalıdır.",
+          ""
+        ],
+        [
+          "GC-MS/GC-FID",
+          ""
+        ],
+        [
+          "GC-MS Kalitatif Analiz GC-FID Kalitatif Analiz",
+          "800 TL/numune 850 TL/numune"
+        ],
+        [
+          "GC-MS Kantitatif Analiz Tek Bileşen/İlave Bileşen Başına GC-FID Kantitatif Analiz Tek Bileşen/İlave Bileşen Başına",
+          "900 TL/300 TL 1000 TL/300 TL"
+        ],
+        [
+          "Kütüphane Tarama",
+          "300 TL/numune"
+        ],
+        [
+          "Yağ asitleri Kompozisyonu % bağıl miktar",
+          "1000 TL/numune"
+        ],
+        [
+          "Uçucu Yağ Analizi",
+          "700 TL/numune"
+        ],
+        [
+          "Aroma Analizi",
+          "700 TL/numune"
+        ],
+        [
+          "Numune Hazırlama",
+          "170 TL/numune"
+        ],
+        [
+          "Raporlama",
+          "1400 TL/numune"
+        ],
+        [
+          "* Kantitatif analizler için gerekli olan standart maddeler, analizi talep eden tarafından temin edilmelidir. * Talep edilen tüm analizler için; analiz talep formu eksiksiz doldurulmalı ve uygun metot verilmelidir. * Numune hazırlığı; seyreltme, çözme ve filtreleme işlemlerini kapsamaktadır. Bunların dışındaki türevlendirme, ekstraksiyon vb. ön hazırlık işlemleri analizi talep eden tarafından yapılmalıdır.",
+          ""
+        ],
+        [
+          "Q-TOF LC-MS",
+          ""
+        ],
+        [
+          "Kalitatif Analiz",
+          "1000 TL/numune"
+        ],
+        [
+          "Kantitatif Analiz Tek Bileşen",
+          "1000 TL"
+        ],
+        [
+          "Kantitatif Analiz İlave Bileşen Başına",
+          "400 TL"
+        ],
+        [
+          "MALDI-TOF-MS",
+          "CÜTAM ile görüşülmelidir."
+        ],
+        [
+          "Kütüphane Tarama",
+          "300 TL/numune"
+        ],
+        [
+          "Yöntem Geliştirme",
+          "CÜTAM ile görüşülmelidir."
+        ],
+        [
+          "Numune Hazırlama",
+          "170 TL/numune"
+        ],
+        [
+          "Raporlama",
+          "2000 TL/numune"
+        ],
+        [
+          "*Kantitatif analizler için gerekli olan standart maddeler, analizi talep eden tarafından temin edilmelidir. *Talep edilen tüm analizler için; analiz talep formu eksiksiz doldurulmalı ve uygun metot verilmelidir. *Numune hazırlığı; seyreltme, çözme ve filtreleme işlemlerini kapsamaktadır. Bunların dışındaki türevlendirme, ekstraksiyon vb. ön hazırlık işlemleri analizi talep eden tarafından yapılmalıdır.",
+          ""
+        ],
+        [
+          "FT-IR SPEKTRUMU",
+          ""
+        ],
+        [
+          "Analiz (ATR)",
+          "300 TL/Adet"
+        ],
+        [
+          "Analiz (KBr Pellet)",
+          "400 TL/Adet"
+        ],
+        [
+          "UV-Vis SPEKTROFOTOMETRE",
+          "",
+          ""
+        ],
+        [
+          "Tek Dalga Boyunda Ölçüm",
+          "200 TL/numune",
+          ""
+        ],
+        [
+          "Spektrum Tarama",
+          "200 TL/ numune",
+          ""
+        ],
+        [
+          "FLORESANS SPEKTROFOTOMETRE",
+          "",
+          ""
+        ],
+        [
+          "Tek Dalga Boyunda Ölçüm",
+          "200 TL/numune",
+          ""
+        ],
+        [
+          "Spektrum Tarama",
+          "200 TL/ numune",
+          ""
+        ],
+        [
+          "SEM",
+          "",
+          ""
+        ],
+        [
+          "Altın Kaplama (Yalıtkan Numuneler için, 1set=6 numune)",
+          "200 TL/Adet 900 TL/Set",
+          ""
+        ],
+        [
+          "Kritik Noktada Kurutma",
+          "500 TL/Adet",
+          ""
+        ],
+        [
+          "FE-SEM *EDX Analizi",
+          "1750 TL/Saat",
+          ""
+        ],
+        [
+          "STEM sıvı numune hazırlık**",
+          "500 TL/Adet",
+          ""
+        ],
+        [
+          "STEM Dedektörü ile İnceleme",
+          "2000TL/Saat",
+          ""
+        ],
+        [
+          "Raporlama",
+          "4000 TL/Numune",
+          ""
+        ],
+        [
+          "* SEM analizleri 1 saat ve katları olarak hesaplanır. ** TEM Grid getirenlerden alınmaz",
+          "",
+          ""
+        ],
+        [
+          "ICP-MS",
+          "",
+          ""
+        ],
+        [
+          "Tek Numune",
+          "100 TL",
+          ""
+        ],
+        [
+          "Özel elementler (Hg, Au, Ag, Al, Pt)",
+          "1000 TL/element",
+          ""
+        ],
+        [
+          "Element grubu (Ca, Mg, K, Na, Zn)",
+          "500 TL /set",
+          ""
+        ],
+        [
+          "1-5 element",
+          "500 TL/Numune",
+          ""
+        ],
+        [
+          "6-10 element",
+          "600 TL/Numune",
+          ""
+        ],
+        [
+          "11-15 element",
+          "700 TL/Numune",
+          ""
+        ],
+        [
+          "16-20 element",
+          "800 TL/Numune",
+          ""
+        ],
+        [
+          "Numune hazırlığı (asit ile mikro dalga yakma/yaş yakma)",
+          "400 TL/Numune",
+          ""
+        ],
+        [
+          "NOT: Numunenin Partikül içermeyip ultra saf suda çözünmüş olması gerekir. Numune hazırlama işlemi ücrete tabidir (Mikrodalga parçalama sistemi ile çözeltiye alma işlemi.)",
+          "",
+          ""
+        ],
+        [
+          "DSC",
+          ""
+        ],
+        [
+          "0-1 saat",
+          "500 TL"
+        ],
+        [
+          "1-2 saat",
+          "650 TL"
+        ],
+        [
+          ">2 saat",
+          "150 TL/saat"
+        ],
+        [
+          "GPC (JEL GEÇİRGENLİK KROMATOGRAFİSİ)",
+          ""
+        ],
+        [
+          "700 TL/ numune (Numune hazırlık, filtrasyon dâhil)",
+          ""
+        ],
+        [
+          "NMR (400 MHz)",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Analiz",
+          "Dötero Çözücü CÜTAM’dan",
+          "",
+          "Dötero Çözücü Analizi Talep Eden Kişiden"
+        ],
+        [
+          "1H-NMR",
+          "400 TL",
+          "",
+          "300 TL"
+        ],
+        [
+          "13C-NMR",
+          "600 TL",
+          "",
+          "450 TL"
+        ],
+        [
+          "D O Değişimi 2",
+          "400 TL",
+          "",
+          "200 TL"
+        ],
+        [
+          "APT",
+          "800 TL",
+          "",
+          "650 TL"
+        ],
+        [
+          "DEPT (45-90-135)",
+          "800 TL",
+          "",
+          "650 TL"
+        ],
+        [
+          "COSY",
+          "800 TL",
+          "",
+          "650 TL"
+        ],
+        [
+          "HMBC",
+          "800 TL",
+          "",
+          "650 TL"
+        ],
+        [
+          "HSQC",
+          "800 TL",
+          "",
+          "650 TL"
+        ],
+        [
+          "HMQC",
+          "800 TL",
+          "",
+          "650 TL"
+        ],
+        [
+          "19F-NMR",
+          "900 TL",
+          "",
+          "800 TL"
+        ],
+        [
+          "15N-NMR",
+          "900 TL",
+          "",
+          "800 TL"
+        ],
+        [
+          "31P-NMR",
+          "900 TL",
+          "",
+          "800 TL"
+        ],
+        [
+          "Analiz Çözeltisi Hazırlama",
+          "200 TL",
+          "",
+          "200 TL"
+        ],
+        [
+          "*Yukarıda belirtilen tüm ölçümler oda sıcaklığının altındaki sıcaklıklarda da yapılmaktadır. Bu koşullar dışında ölçüm yaptırmak istenirse her numune için 200 TL ek ücret alınacaktır.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Çözücüsüz kabul edilen numunelerde, CDCl dışındaki 3 çözücülerle çalışıldığında her bir numune için yan tarafta çözücü türlerine göre belirtilen ek ücret alınacaktır.",
+          "",
+          "D O 2",
+          "300 TL"
+        ],
+        [
+          "",
+          "",
+          "DMSO-d 6",
+          "300 TL"
+        ],
+        [
+          "",
+          "",
+          "Aseton-d 6",
+          "500 TL"
+        ],
+        [
+          "",
+          "",
+          "*İki saati aşan analizlerde analiz ücretine ilave her saat için %20 ek ücret alınır.",
+          ""
+        ],
+        [
+          "",
+          "MASTERSIZER ( TANECİK BOYUT ÖLÇÜMÜ)",
+          "",
+          ""
+        ],
+        [
+          "Su ile analiz",
+          "",
+          "300 TL/numune",
+          ""
+        ],
+        [
+          "Ethanol ile analiz",
+          "",
+          "400 TL/numune",
+          ""
+        ],
+        [
+          "",
+          "POLARİMETRE",
+          "",
+          ""
+        ],
+        [
+          "Gıdalarda Şeker Tayini/ Optikçe aktiflik ölçümü",
+          "",
+          "300 TL/ analize hazır numune",
+          ""
+        ],
+        [
+          "Konsantrsyon Tayini",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Numune hazırlığı",
+          "",
+          "150 TL/Numune",
+          ""
+        ],
+        [
+          "AZOT -PROTEİN TAYİNİ (KJELDAHL YAKMA)",
+          ""
+        ],
+        [
+          "Numune yakma, damıtma ve titrasyon",
+          "750 TL/Numune"
+        ],
+        [
+          "",
+          "ELİSA TESTİ/MİKROPLAKA",
+          "",
+          ""
+        ],
+        [
+          "Manuel ELISA Testi (Kit Hariç)",
+          "",
+          "1500 TL/Kit (90 örnek)",
+          ""
+        ],
+        [
+          "Mikroplaka Okuyucu",
+          "",
+          "200 TL / (96 lık well plate/ 1 run)",
+          ""
+        ],
+        [
+          "",
+          "ANTİOKSİDAN AKTİVİTE TAYİNİ",
+          "",
+          ""
+        ],
+        [
+          "DPPH",
+          "",
+          "700 TL/numune",
+          ""
+        ],
+        [
+          "ABTS",
+          "",
+          "700 TL/numune",
+          ""
+        ],
+        [
+          "Toplam Flavonoit",
+          "",
+          "700 TL/numune",
+          ""
+        ],
+        [
+          "Toplam Fenol",
+          "",
+          "700 TL/numune",
+          ""
+        ],
+        [
+          "",
+          "MAGNETRON SÖKTÜRME CİHAZI",
+          "",
+          ""
+        ],
+        [
+          "Magnetron Söktürme İnce Film Uygulaması",
+          "",
+          "1200 TL/Saat (Target analizi talep eden kişi tarafından sağlandığı takdirde)",
+          ""
+        ],
+        [
+          "",
+          "HÜCRE KÜLTÜRÜ ANALİZLERİ",
+          "",
+          ""
+        ],
+        [
+          "Hücre kültürü laboratuvarı günlük kullanım. (Tüm sarf malzemeler araştırmacı tarafından sağlanacaktır. Hücre kültürü laboratuvarında bulunan, güvenlik kabini, inkübatör, mikroskop, spektrofotometrik plate okuma günlük kullanıma dâhildir. (Analiz işlemleri kullanıcıya aittir. Kullanım saatleri için personel ile iletişime geçiniz.)",
+          "",
+          "800 TL/gün",
+          ""
+        ],
+        [
+          "Hücre kültürü laboratuvarı saatlik kullanım (Aynı gün içinde en fazla 3 saat kullanım yapılabilir. Tüm sarf malzemeler araştırmacı tarafından sağlanacaktır)",
+          "",
+          "200 TL/saat",
+          ""
+        ],
+        [
+          "Sitotoksisite testi (MTT) 9 konsantrasyon+kontrol için 24 saatlik muamele (Sarf ve hücre dahil olup, madde/ilaç/ekstre vs araştırmacı tarafından sağlanmalıdır. Tek bir madde için)",
+          "",
+          "5000 TL",
+          ""
+        ],
+        [
+          "Sitotoksisite testi (MTT) 9 konsantrasyon+kontrol için 24, 48 saatlik muamele (Sarf ve hücre dahil olup, madde/ilaç/ekstre vs araştırmacı tarafından sağlanmalıdır. Tek bir madde için)",
+          "",
+          "5300 TL",
+          ""
+        ],
+        [
+          "Sitotoksisite testi (MTT) 9 konsantrasyon+kontrol için 24, 48, 72 saatlik muamele (Sarf ve hücre dahil olup, madde/ilaç/ekstre vs araştırmacı tarafından sağlanmalıdır. Tek bir madde için)",
+          "",
+          "5600 TL",
+          ""
+        ],
+        [
+          "Mikroplate okuma her run için",
+          "",
+          "180 TL/plate",
+          ""
+        ],
+        [
+          "İnverted mikroskop (1 saate kadar kullanım)",
+          "",
+          "220 TL",
+          ""
+        ],
+        [
+          "Güvenlik Kabini (1 saat için)",
+          "",
+          "150 TL",
+          ""
+        ],
+        [
+          "CO İnkübatör (1 saat için) 2",
+          "",
+          "360 TL",
+          ""
+        ],
+        [
+          "MOLEKÜLER BİYOLOJİ LABORATUVARIANALİZLERİ",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Metot/Deney Adı",
+          "Hizmet Tanımı",
+          "Analiz Ücreti",
+          ""
+        ],
+        [
+          "Total DNA izolasyonu",
+          "Kit ve Plastik/Kimyasal Sarf Malzeme Dahil",
+          "500 TL/numune",
+          ""
+        ],
+        [
+          "",
+          "Kit ve Plastik/Kimyasal Sarf Malzeme Hariç",
+          "200 TL/numune",
+          ""
+        ],
+        [
+          "Total RNA izolasyonu",
+          "Kit ve Plastik/Kimyasal Sarf Malzeme Dahil",
+          "700 TL/numune",
+          ""
+        ],
+        [
+          "",
+          "Kit ve Plastik/Kimyasal Sarf Malzeme Hariç",
+          "200 TL/numune",
+          ""
+        ],
+        [
+          "Klasik PCR",
+          "Cihaz Kullanımı",
+          "150 TL/run",
+          ""
+        ],
+        [
+          "Real Time PCR",
+          "Cihaz Kullanımı",
+          "350 TL/run",
+          ""
+        ],
+        [
+          "cDNA sentezi",
+          "Kit ve Sarf Malzeme Dahil",
+          "700 TL/numune",
+          ""
+        ],
+        [
+          "",
+          "Kit ve Sarf Malzeme Hariç",
+          "200 TL/numune",
+          ""
+        ],
+        [
+          "Western Blot",
+          "Cihaz Kullanımı",
+          "500 TL/run",
+          ""
+        ],
+        [
+          "Agaroz jel elektroforezi (jel ve görüntüleme dahil)",
+          "%1-3’lük tek jel",
+          "300 TL/run",
+          ""
+        ],
+        [
+          "Jel/membran fotoğraf alma",
+          "Görüntüleme cihazında jel/membran fotoğraf çekimi",
+          "90 TL/numune",
+          ""
+        ],
+        [
+          "YENİ NESİL DİZİLEME VE BİYOİNFORMATİK ANALİZLER",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Qubit Florometrik Ölçüm Cihazı",
+          "DNA (2 uL numune) Kit ve Sarf Malzeme Dahil",
+          "100 TL/numune",
+          ""
+        ],
+        [
+          "",
+          "RNA (2 uL numune) Kit ve Sarf Malzeme Dahil",
+          "100 TL/numune",
+          ""
+        ],
+        [
+          "",
+          "Protein (2 uL numune) Kit ve Sarf Malzeme Dahil",
+          "100 TL/numune",
+          ""
+        ],
+        [
+          "",
+          "cDNA (2 uL numune) Kit ve Sarf Malzeme Dahil",
+          "100 TL/numune",
+          ""
+        ],
+        [
+          "DNA/RNA miktar/saflık tayini",
+          "Nanodrop ölçümü (2 uL numune)",
+          "60 TL/numune",
+          ""
+        ],
+        [
+          "Fragment Uzunluk Analizi (Bioanalyzer Qsep100) (5-10 uL numune)",
+          "HS DNA kartuş Kit kullanılarak ölçüm",
+          "90 TL/numune",
+          ""
+        ],
+        [
+          "",
+          "S2 DNA Kartuş Kit kullanılarak ölçüm",
+          "80 TL/numune",
+          ""
+        ],
+        [
+          "",
+          "RNA Kartuş Kit kullanılarak ölçüm",
+          "100 TL/numune",
+          ""
+        ],
+        [
+          "Yeni Nesil Dizileme (Miseq) Analizleri",
+          "Bakteri Genomu Dizileme",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "16S rDNA (V3-V4) Amplikon Dizileme",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Bitki/Mantar/Maya Örneklerinden ITS (Amplikon) Dizileme",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Su/Toprak/Dışkı/Polen/Bal/Mikrobiyota örneklerinden Metabarkodlama Analizi",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Transkriptom Dizileme",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "eDNA Çalışmaları",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "ddRad-Seq",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Cihaz Kullanımı",
+          "250TL/Saat"
+        ],
+        [
+          "Yeni Nesil Dizileme (Nanopore) Uzun Okuma Analizleri",
+          "Bakteri Genomu Dizileme",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "16S rDNA Amplikon Dizileme",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Bitki/Mantar/Maya Örneklerinden ITS (Amplikon) Dizileme",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Su/Toprak/Dışkı/Polen/Bal/Mikrobiyota örneklerinden Metabarkodlama Analizi",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Transkriptom Dizileme",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "eDNA Çalışmaları",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "ddRad-Seq",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Cihaz Kullanımı",
+          "1500TL/örnek"
+        ],
+        [
+          "Biyoinformatik Analizler",
+          "Mikrosatellit Analizleri",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "SNP Taraması",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Bakteri Suş Tanımlama",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Filogenetik Analizler",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Tür Tanımlama",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Genom Karakterizasyonu",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Transkriptom Profilleme",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Metabarkodlama Analizleri",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "Metagenom Analizleri",
+          "Ücretlendirme örnek sayısına ve proje detaylarına göre değişmektedir."
+        ],
+        [
+          "",
+          "DİĞER HİZMET ALIMLARI",
+          "",
+          ""
+        ],
+        [
+          "Homojenizatör",
+          "",
+          "120 TL/saat",
+          ""
+        ],
+        [
+          "Ultrasonik Homojenizatör (sonikatör)",
+          "",
+          "120TL/saat",
+          ""
+        ],
+        [
+          "Saf su",
+          "",
+          "35 TL/litre",
+          ""
+        ],
+        [
+          "Ultra saf su",
+          "",
+          "50 TL/ litre",
+          ""
+        ],
+        [
+          "-86℃ derin dondurucu kullanımı (*13,5x13,5x5 cm)",
+          "",
+          "100 TL/storage box*/haftalık",
+          ""
+        ],
+        [
+          "Otoklav ile sterilizasyon",
+          "",
+          "150 TL/kullanım",
+          ""
+        ],
+        [
+          "İnkübatör Kullanımı",
+          "",
+          "450 TL/günlük",
+          ""
+        ],
+        [
+          "Mikroskop Kullanımı",
+          "",
+          "250 TL/günlük",
+          ""
+        ],
+        [
+          "*Fiyatlara %20 KDV dâhil değildir."
+        ],
+        [
+          "**Talep edilen tüm analizler için öncesinde CÜTAM ile görüşülmelidir."
+        ],
+        [
+          "*** CÜTAM analiz ücretlerini önceden haber vermeksizin değiştirme hakkına sahiptir."
+        ]
+      ],
+      "removed_rows": [],
+      "analysis_count": 64
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "center_id": "eu_taum",
+  "center_name": "Erciyes TAUM",
+  "last_updated": "2026-04-17",
+  "source_url": "https://taum.erciyes.edu.tr/tr/analiz-ucretleri",
+  "kdv_note": "Fiyatlara KDV dahil değildir.",
+  "analyses": [
+    {
+      "name": "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)  FE-SEM  FE-SEM-EDX Analizi  STEM  STEM Sıvı Numune Hazırlık  Mapping  Line Scan (TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
+      "category": "",
+      "price": 2000.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "AAS (Atomik Absorpsiyon Spektrometresi)  Analiz (ilk element)  Sonraki Elementlerin Her Biri için",
+      "category": "",
+      "price": 300.0,
+      "currency": "TRY",
+      "unit": "element",
+      "notes": ""
+    },
+    {
+      "name": "Atomik Kuvvet Mikroskobu (AFM) Yüzey Analizi  Atomik Kuvvet Mikroskobu Yüzey Analizi",
+      "category": "",
+      "price": 2000.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "X-Işını Toz Difraksiyonu (XRD)  X-Işını difraksiyon paterni çekimi (toz numune)  X-Işını difraksiyon paterni çekimi (toz numune)  X-Işını difraksiyon paterni çekimi (ince film)  Mineral analiz  Yüksek sıcaklık paterni çekimi  Rietveld analizi  Kalıntı gerilme analizi  XRR analizi",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "X-Işını Floresans Spektrometresi (WD/XRF)  Yarı Kantitatif element analizi (Öğütülmüş Örnek)  Yarı Kantitatif element analizi (Maden Örnekleri)  Yarı Kantitatif element analizi (Metal, Alaşım vb.) (Rapor istenilen durumlarda ilave 1100 TL ücret alınacaktır.)",
+      "category": "",
+      "price": 2550.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "TG/DTA – Analizleri  TG/DTA Spektrumu (Analiz süresi: 0 – 1 saat)  TG/DTA Spektrumu (Analiz süresi: 1 – 3 saat)  TG/DTA Spektrumu (Analiz süresi: 3 – 7 saat)",
+      "category": "",
+      "price": 550.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)  Numune analizi 1-10 element için  İlave element analizi için  Mikrodalga Çözme İşlemi  Çoklu Asit İle Çözme İşlemi  Değerli Metaller 1-10 Element (Au, Pd, Pt, Ag, Rh vb.)",
+      "category": "",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "FT-IR Analizleri  FT-IR / FT-FIR Spektrumu  FT-IR Karakterizasyon (Spektrum + Kütüphane)",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Nükleer Manyetik Rezonans Spektrometresi (NMR)  1H (Proton) Spektrumu (Numune min. 20 mg)  D2O Değişimi  13C (Karbon)(Coupled, Decoupled) (Numune min. 50 mg)  1 D Spektrum: APT / DEPT (45, 90, 135)  2 D Spektrum: COSY/ NOESY/ HETCOR/ HMBC/ HMQC, 31P (Fosfor)  Çözücü (D2O, CHCI3)  Çözücü (DMSO, CD3OD)",
+      "category": "",
+      "price": 425.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "HPLC Analizleri  Fruktoz, Glukoz, Sakaroz, Maltoz analizi  Kafein, Naftalin, HMF analizi  Vitamin analizleri (her biri için)  Monomer analizi (BPA, UDMA, HEMA, TEGDMA vb.)  Diğer Özel bileşenler için analizler (standart ve metot getirilecek)  Kromatografik Yöntem Geliştirme Vitamin analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
+      "category": "",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GC-MS Analizleri  Kalitatif Analiz Aroma Bileşikler (GC-MS kütüphane taraması)  Kalitatif Analiz Uçucu Bileşikler (GC-MS kütüphane taraması)  Kalitatif Analiz Fenolik Bileşikler(GC-MS kütüphane taraması)  Kalitatif Analiz Yağ asitleri (GC-MS kütüphane taraması)  Kalitatif Analiz Tam Spektrum Tarama (GC-MS kütüphane taraması)  Esansiyel yağ bileşenleri/Yağ asitleri Komp % bağıl (GC-FID) GC-MS analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
+      "category": "",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Çekme-Basma-Üç Nokta Eğme Testleri  Çekme, Basma, Üç Nokta Eğme (oda sıcaklığında)",
+      "category": "",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Isıl Geçirgenlik Cihazı  Isıl Geçirgenlik Analizi",
+      "category": "",
+      "price": 650.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Hava Geçirgenlik Cihazı  Hava Geçirgenlik Analizi",
+      "category": "",
+      "price": 650.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Yoğunluk Tayini (Gaz Piknometresiyle) “ “ (Numune Hazırlığı Gerektiren malzemeler)",
+      "category": "",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Numune Hazırlama:  Kesme  Öğütme  Kriyojenik Öğütme ( Tek seferde max. 2 g numune öğütülmektedir.)  Presleme  Platin potada numune hazırlık  Bakalite alma  Parlatma  Altın veya karbon kaplama (Yalıtkan örnekler için) (50 bin büyütmeye kadar)  Yüksek Çözünürlüklü Platin Kaplama (50 bin ve üzeri büyütme için)  Kritik noktada kurutma  Kızdırma kaybı",
+      "category": "",
+      "price": 350.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Metal Mikroskobu",
+      "category": "",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Mikro Sertlik Ölçümü (Vickers, Knoop) Mikro sertlik Dağılımı (Vickers, Knoop)",
+      "category": "",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Liyofilizasyon (100 mL/24 saat)",
+      "category": "",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Titrimetrik Analizler (Tuz, Kuru madde vs.)",
+      "category": "",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Ultra Saf Su",
+      "category": "",
+      "price": 50.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Sıvı Azot",
+      "category": "",
+      "price": 60.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Akademik Raporlama İlk 10 sayfadan sonra her 50 sayfa için",
+      "category": "",
+      "price": 1100.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    }
+  ]
+}

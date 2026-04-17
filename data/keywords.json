@@ -1,5 +1,9 @@
 {
   "XRD": [
+    "XRD01",
+    "XRD02",
+    "XRD03",
+    "XRD05",
     "Toz Kırınım Deseni (Toz Numune)",
     "Yüksek Sıcaklık Kırınım Deseni",
     "XRD Temel Kullanıcı Eğitimi",
@@ -9,11 +13,19 @@
     "4-XRD-Detay Kil Standart Patern Çekimi",
     "5-XRD-Yüksek Sıcaklık Faz Analizi (25 oC – 800 °C)",
     "6-XRD-Yüksek Sıcaklık Faz Analizi (800 oC– 1600 °C)",
+    "Toz ve Bulk Numune Kırınım Deseni",
+    "İnce Film Kırınım Deseni",
+    "XRD Numune Hazırlama",
+    "X-Işını Toz Difraksiyonu (XRD)  X-Işını difraksiyon paterni çekimi (toz numune)  X-Işını difraksiyon paterni çekimi (toz numune)  X-Işını difraksiyon paterni çekimi (ince film)  Mineral analiz  Yüksek sıcaklık paterni çekimi  Rietveld analizi  Kalıntı gerilme analizi  XRR analizi",
     "Standart X-Işını Kırınım Deseni (XRD)",
     "Standart XRD Çekimi + Kalitatif Analiz",
     "Böbrek Taşı Analizi (XRD)"
   ],
   "SEM": [
+    "FE-SEM *EDX Analizi",
+    "SEM 01",
+    "SEM 02",
+    "SEM 03",
     "Biyolojik Dokulardan SEM İçin Numune Hazırlama",
     "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
     "SEM / EBSD Analizi**",
@@ -23,25 +35,43 @@
     "Semi-Dry Blotlama",
     "3-SEM Analizi (TL/Saat)",
     "4-SEM + EDX Analizi (TL/Saat)",
+    "FE-SEM ile İnceleme",
+    "FE-SEM /EDS ile Yarı Kantitatif Analiz",
+    "FE-SEM /EDS ile Haritalama",
+    "FE-SEM /EDS ile Noktasal ve Çizgisel Analiz",
+    "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)  FE-SEM  FE-SEM-EDX Analizi  STEM  STEM Sıvı Numune Hazırlık  Mapping  Line Scan (TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
     "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)",
     "SEM-Katodolüminesans (SEM-CL)",
     "SEM Altın (Au,Pd), Karbon Kaplama",
     "SEM-EBIC Dedektörü"
   ],
   "SEM-EDX": [
+    "FE-SEM *EDX Analizi",
     "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
     "4-SEM + EDX Analizi (TL/Saat)",
+    "EDS modu ile Element Tayini",
+    "EDS modu ile Noktasal, Çizgisel ve Bölgesel Haritalama",
+    "FE-SEM /EDS ile Yarı Kantitatif Analiz",
+    "FE-SEM /EDS ile Haritalama",
+    "FE-SEM /EDS ile Noktasal ve Çizgisel Analiz",
+    "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)  FE-SEM  FE-SEM-EDX Analizi  STEM  STEM Sıvı Numune Hazırlık  Mapping  Line Scan (TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
     "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)"
   ],
   "Kaplama": [
+    "Altın Kaplama (Yalıtkan Numuneler için, 1set=6 numune)",
     "Numune Kaplama (Altın/Paladyum & Karbon)*",
     "Formwar/Karbon Grid Üzerine Çözeltiden Numune Hazırlama",
     "13C (Karbon) NMR Analizi",
     "1-Karbon Kaplama (4 adete kadar)",
     "2-Altın Kaplama (4 adete kadar)",
+    "Nükleer Manyetik Rezonans Spektrometresi (NMR)  1H (Proton) Spektrumu (Numune min. 20 mg)  D2O Değişimi  13C (Karbon)(Coupled, Decoupled) (Numune min. 50 mg)  1 D Spektrum: APT / DEPT (45, 90, 135)  2 D Spektrum: COSY/ NOESY/ HETCOR/ HMBC/ HMQC, 31P (Fosfor)  Çözücü (D2O, CHCI3)  Çözücü (DMSO, CD3OD)",
+    "Numune Hazırlama:  Kesme  Öğütme  Kriyojenik Öğütme ( Tek seferde max. 2 g numune öğütülmektedir.)  Presleme  Platin potada numune hazırlık  Bakalite alma  Parlatma  Altın veya karbon kaplama (Yalıtkan örnekler için) (50 bin büyütmeye kadar)  Yüksek Çözünürlüklü Platin Kaplama (50 bin ve üzeri büyütme için)  Kritik noktada kurutma  Kızdırma kaybı",
     "SEM Altın (Au,Pd), Karbon Kaplama"
   ],
   "TEM": [
+    "Bulanıklık (türbidimetrik yöntem)",
+    "STEM sıvı numune hazırlık**",
+    "STEM Dedektörü ile İnceleme",
     "SEM / STEM Analizi**",
     "Biyolojik Dokulardan TEM İçin Numune Hazırlama",
     "Biyolojik Dokulardan Kriyo-TEM İçin Numune Hazırlama*",
@@ -57,23 +87,52 @@
     "HPLC-Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
     "1-AFM Temas (Contact) Modu (TL/Saat)",
     "2-AFM Temassız (Non-Contact) Modu (TL/Saat)",
+    "STEM ile uygun numunelerde karanlık alan görüntülemesi (düşük",
+    "Temas Modunda Analiz",
+    "Temas Açısı Ölçümü",
+    "Temel Kullanıcı Eğitimi",
+    "Mikrodalga Sistemi İle Numune Hazırlama",
+    "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)  FE-SEM  FE-SEM-EDX Analizi  STEM  STEM Sıvı Numune Hazırlık  Mapping  Line Scan (TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
+    "HPLC Analizleri  Fruktoz, Glukoz, Sakaroz, Maltoz analizi  Kafein, Naftalin, HMF analizi  Vitamin analizleri (her biri için)  Monomer analizi (BPA, UDMA, HEMA, TEGDMA vb.)  Diğer Özel bileşenler için analizler (standart ve metot getirilecek)  Kromatografik Yöntem Geliştirme Vitamin analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
     "Mikro Sertlik Ölçümü (Vickers Yöntemi 3 – Indent)",
     "Mikro Sertlik Ölçümü (Vickers Yöntemi 5 – Indent)",
     "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Toz Formunda",
     "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Sucuk Formunda"
   ],
   "AFM": [
+    "AFM01",
+    "AFM02",
+    "AFM03",
+    "AFM04",
+    "AFM05",
+    "AFM06",
     "1-AFM Temas (Contact) Modu (TL/Saat)",
     "2-AFM Temassız (Non-Contact) Modu (TL/Saat)",
-    "3-Diğer AFM Modu (TL/Saat) (Bilgi alınız!)"
+    "3-Diğer AFM Modu (TL/Saat) (Bilgi alınız!)",
+    "AFM Numune İnceleme",
+    "Atomik Kuvvet Mikroskobu (AFM) Yüzey Analizi  Atomik Kuvvet Mikroskobu Yüzey Analizi"
   ],
   "BET": [
+    "BET01",
+    "BET02",
+    "BET03",
     "1-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (Tek Nokta)",
     "2-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (5 Nokta)",
     "3-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı + Gözenek Dağılımı",
+    "BET Yüzey Alanı (N adsorpsiyonu) Ölçümü",
     "Rutubet (Nem) Tayini"
   ],
+  "TGA": [
+    "TGA01",
+    "TGA02",
+    "TGA03",
+    "TGA04"
+  ],
   "DSC": [
+    "DSC01",
+    "DSC02",
+    "DSC03",
+    "DSC04",
     "4-TG DSC Analizi 0-1 Saat (25 °C-1600 °C)",
     "5-TG DSC Analizi 1-3 Saat (25 °C-1600 °C)",
     "6-TG DSC Analizi 3-7 Saat (25 °C-1600 °C)",
@@ -83,9 +142,11 @@
     "1-TG DTA Analizi 0-1 Saat (25 °C-1600 °C)",
     "2-TG DTA Analizi 1-3 Saat (25 °C-1600 °C)",
     "3-TG DTA Analizi 3-7 Saat (25 °C-1600 °C)",
+    "TG/DTA – Analizleri  TG/DTA Spektrumu (Analiz süresi: 0 – 1 saat)  TG/DTA Spektrumu (Analiz süresi: 1 – 3 saat)  TG/DTA Spektrumu (Analiz süresi: 3 – 7 saat)",
     "TG/DTA/DSC Spektrumu (Max. 1500 °C)"
   ],
   "FTIR": [
+    "FT-IR Analizleri  FT-IR / FT-FIR Spektrumu  FT-IR Karakterizasyon (Spektrum + Kütüphane)",
     "ATR – FTIR Spektrumu"
   ],
   "Raman": [
@@ -103,29 +164,74 @@
     "ICP-MS 51 ve üzeri element Analizi",
     "ICP-MS 1 Nadir Toprak Elementi Analizi*",
     "ICP-MS 2-10 Nadir Toprak Elementi Analizi*",
-    "ICP-MS 11-18 Nadir Toprak Elementi Analizi*"
+    "ICP-MS 11-18 Nadir Toprak Elementi Analizi*",
+    "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)  Numune analizi 1-10 element için  İlave element analizi için  Mikrodalga Çözme İşlemi  Çoklu Asit İle Çözme İşlemi  Değerli Metaller 1-10 Element (Au, Pd, Pt, Ag, Rh vb.)"
   ],
   "ICP-OES": [
     "1-Optik Emisyon Spektrometresi (OES)"
   ],
   "XRF": [
+    "XRF01",
+    "XRF02",
+    "XRF03",
     "XRF Analizi / Katı Numune",
     "XRF Analizi / Sıvı Numune*",
-    "XRF Temel Kullanıcı Eğitimi**"
+    "XRF Temel Kullanıcı Eğitimi**",
+    "X-Işını Floresans Spektrometresi (WD/XRF)  Yarı Kantitatif element analizi (Öğütülmüş Örnek)  Yarı Kantitatif element analizi (Maden Örnekleri)  Yarı Kantitatif element analizi (Metal, Alaşım vb.) (Rapor istenilen durumlarda ilave 1100 TL ücret alınacaktır.)"
   ],
   "Porozimetre": [
     "4-Cıvalı Porozimetre Analizi"
   ],
   "Mikrosertlik": [
     "2-Mikrosertlik Ölçümü (5 iz/numune)",
+    "Mikro Sertlik Ölçümü (Vickers, Knoop) Mikro sertlik Dağılımı (Vickers, Knoop)",
     "Mikro Sertlik Ölçümü (Vickers Yöntemi 3 – Indent)",
     "Mikro Sertlik Ölçümü (Vickers Yöntemi 5 – Indent)"
   ],
   "OES": [
     "NOESY NMR Analizi",
-    "1-Optik Emisyon Spektrometresi (OES)"
+    "1-Optik Emisyon Spektrometresi (OES)",
+    "Nükleer Manyetik Rezonans Spektrometresi (NMR)  1H (Proton) Spektrumu (Numune min. 20 mg)  D2O Değişimi  13C (Karbon)(Coupled, Decoupled) (Numune min. 50 mg)  1 D Spektrum: APT / DEPT (45, 90, 135)  2 D Spektrum: COSY/ NOESY/ HETCOR/ HMBC/ HMQC, 31P (Fosfor)  Çözücü (D2O, CHCI3)  Çözücü (DMSO, CD3OD)"
+  ],
+  "Eleman Analizi": [
+    "Yüzey Elementel Haritalama"
   ],
   "NMR": [
+    "1H-NMR",
+    "13C-NMR",
+    "19F-NMR",
+    "15N-NMR",
+    "31P-NMR",
+    "NMR01",
+    "NMR02",
+    "NMR03",
+    "NMR04",
+    "NMR05",
+    "NMR06",
+    "NMR07",
+    "NMR08",
+    "NMR09",
+    "NMR10",
+    "NMR11",
+    "NMR12",
+    "NMR13",
+    "NMR14",
+    "NMR15",
+    "NMR16",
+    "NMR17",
+    "NMR18",
+    "NMR19",
+    "NMR20",
+    "NMR21",
+    "NMR22",
+    "NMR23",
+    "NMR24",
+    "NMR25",
+    "NMR26",
+    "NMR27",
+    "NMR28",
+    "NMR29",
+    "NMR30",
     "1H (Proton) NMR Analizi",
     "13C (Karbon) NMR Analizi",
     "13C APT NMR Analizi",
@@ -175,6 +281,7 @@
     "Si NMR Analizi 4 Saat",
     "Si NMR Analizi 8 Saat",
     "Si NMR Analizi 16 Saat",
-    "Si NMR Analizi 27 Saat"
+    "Si NMR Analizi 27 Saat",
+    "Nükleer Manyetik Rezonans Spektrometresi (NMR)  1H (Proton) Spektrumu (Numune min. 20 mg)  D2O Değişimi  13C (Karbon)(Coupled, Decoupled) (Numune min. 50 mg)  1 D Spektrum: APT / DEPT (45, 90, 135)  2 D Spektrum: COSY/ NOESY/ HETCOR/ HMBC/ HMQC, 31P (Fosfor)  Çözücü (D2O, CHCI3)  Çözücü (DMSO, CD3OD)"
   ]
 }

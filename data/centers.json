@@ -12,18 +12,6 @@
     "last_updated": "2026-04-17"
   },
   {
-    "id": "atauni_daytam",
-    "name": "ATAÜNİ DAYTAM",
-    "university": "Atatürk Üniversitesi",
-    "city": "Erzurum",
-    "url": "https://daytam.atauni.edu.tr/",
-    "pricing_url": "https://daytam.atauni.edu.tr/hizmet-bedelleri/",
-    "active": true,
-    "reference": false,
-    "analysis_count": 3,
-    "last_updated": "2026-04-17"
-  },
-  {
     "id": "esogu_arum",
     "name": "ESOGÜ ARUM",
     "university": "Eskişehir Osmangazi Üniversitesi",
@@ -46,5 +34,77 @@
     "reference": false,
     "analysis_count": 66,
     "last_updated": "2026-04-17"
+  },
+  {
+    "id": "atauni_daytam",
+    "name": "ATAÜNİ DAYTAM",
+    "university": "Atatürk Üniversitesi",
+    "city": "Erzurum",
+    "url": "https://daytam.atauni.edu.tr",
+    "pricing_url": "https://daytam.atauni.edu.tr/hizmet-bedelleri/",
+    "active": true,
+    "reference": false,
+    "analysis_count": 132,
+    "last_updated": "2026-04-17"
+  },
+  {
+    "id": "eu_taum",
+    "name": "Erciyes TAUM",
+    "university": "Erciyes Üniversitesi",
+    "city": "Kayseri",
+    "url": "https://taum.erciyes.edu.tr",
+    "pricing_url": "https://taum.erciyes.edu.tr/tr/analiz-ucretleri",
+    "active": true,
+    "reference": false,
+    "analysis_count": 23,
+    "last_updated": "2026-04-17"
+  },
+  {
+    "id": "bseu_barum",
+    "name": "BŞEÜ BARUM",
+    "university": "Bilecik Şeyh Edebali Üniversitesi",
+    "city": "Bilecik",
+    "url": "https://bilecik.edu.tr/barum",
+    "pricing_url": "https://bilecik.edu.tr/barum/Icerik/Analiz_%C3%9Ccretleri_cb172",
+    "active": true,
+    "reference": false,
+    "analysis_count": 0,
+    "last_updated": "2026-04-17"
+  },
+  {
+    "id": "cu_cutam",
+    "name": "CÜ CUTAM",
+    "university": "Cumhuriyet Üniversitesi",
+    "city": "Sivas",
+    "url": "https://cutam.cumhuriyet.edu.tr",
+    "pricing_url": "https://cutam.cumhuriyet.edu.tr/16-analiz-fiyatlari",
+    "active": true,
+    "reference": false,
+    "analysis_count": 64,
+    "last_updated": "2026-04-17"
+  },
+  {
+    "id": "neu_bitam",
+    "name": "NEÜ BİTAM",
+    "university": "Necmettin Erbakan Üniversitesi",
+    "city": "Konya",
+    "url": "https://erbakan.edu.tr/tr/birim/bitam",
+    "pricing_url": "https://erbakan.edu.tr/tr/birim/bitam/sayfa/analiz-ucretleri",
+    "active": true,
+    "reference": false,
+    "analysis_count": 196,
+    "last_updated": "2026-04-17"
+  },
+  {
+    "id": "ikcu_merlab",
+    "name": "İKCÜ MERLAB",
+    "university": "İzmir Katip Çelebi Üniversitesi",
+    "city": "İzmir",
+    "url": "https://merkeziarastirmalab.ikcu.edu.tr",
+    "pricing_url": "https://merkeziarastirmalab.ikcu.edu.tr/S/15286/ucretlendirme",
+    "active": true,
+    "reference": false,
+    "analysis_count": 0,
+    "last_updated": null
   }
 ]

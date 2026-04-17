@@ -1,0 +1,1240 @@
+{
+  "center_id": "neu_bitam",
+  "events": [
+    {
+      "date": "2026-04-17",
+      "type": "new",
+      "added_rows": [
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "AFM01",
+          "Temassız Mod (10 μm x 10 μm 256 Piksel)",
+          "1600 ₺/numune"
+        ],
+        [
+          "AFM02",
+          "Temassız Mod (20 μm x 20 μm 256 Piksel)",
+          "1600 ₺/numune"
+        ],
+        [
+          "AFM03",
+          "Temaslı Mod (10 μm x 10 μm 512 Piksel)",
+          "1600 ₺/numune"
+        ],
+        [
+          "AFM04",
+          "Nanoindentasyon (Yumuşak yüzeyler)",
+          "2000 ₺/numune"
+        ],
+        [
+          "AFM05",
+          "Manyetik Kuvvet Ölçümü (MFM)",
+          "2000 ₺/numune"
+        ],
+        [
+          "AFM06",
+          "Kelvin Probe (KFM)",
+          "2500 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "SEM 01",
+          "SEM Görüntüleme",
+          "1200 ₺/saat"
+        ],
+        [
+          "SEM 02",
+          "SEM Görüntüleme + EDS Analizi",
+          "1500 ₺/saat"
+        ],
+        [
+          "SEM 03",
+          "Altın/Paladyum Kaplama",
+          "200 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "FSM 01",
+          "FE-SEM Görüntüleme",
+          "3600 ₺/saat"
+        ],
+        [
+          "FSM 02",
+          "FE-SEM Görüntüleme + EDS Analizi",
+          "3800 ₺/saat"
+        ],
+        [
+          "FSM 03",
+          "FE-SEM Görüntüleme + EBSD Analizi",
+          "6000 ₺/saat"
+        ],
+        [
+          "FSM 04",
+          "Elektro Parlatma Numune Hazırlama**",
+          "600 ₺/saat"
+        ],
+        [
+          "FSM 05",
+          "Hassas İridyum Kaplama",
+          "180 ₺/numune"
+        ],
+        [
+          "FSM 06",
+          "Kritik Nokta Kurutma (Biyolojik Numune)***",
+          "400 ₺/numune"
+        ],
+        [
+          "FSM 07",
+          "STEM Görüntüleme",
+          "3500 ₺/saat"
+        ],
+        [
+          "FSM 08",
+          "Görüntü Renklendirme",
+          "4200 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "RMN01",
+          "Raman Spektrumu (1 lazerle geniş alan tarama, 2 atım)",
+          "500 ₺/numune"
+        ],
+        [
+          "RMN02",
+          "Raman Spektrumu (1 lazerle geniş alan tarama,10 atım)",
+          "800 ₺/numune"
+        ],
+        [
+          "RMN03",
+          "Derinlik Profili (1 lazer)*",
+          "1500 ₺/saat"
+        ],
+        [
+          "RMN04",
+          "Haritalama (1 lazer)*",
+          "1500 ₺/saat"
+        ],
+        [
+          "RMN05",
+          "Hacim Tarama*",
+          "1500 ₺/saat"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "CNF01",
+          "Görüntüleme",
+          "900 ₺/saat"
+        ],
+        [
+          "CNF02",
+          "Görüntüleme (Maksimum 6 saat)",
+          "4500 ₺/gün"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "TRMN 01",
+          "Raman Spektrumu *",
+          "4000 ₺/gün"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "THC01",
+          "Termal Görüntü Çekimi*",
+          "1000 ₺/gün"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "OPP01",
+          "Üç Boyutlu Yüzey Profili (2 mm x 2 mm) (Tek Alan)",
+          "400 ₺/numune"
+        ],
+        [
+          "OPP02",
+          "Üç Boyutlu Yüzey Profili (2 mm x 2 mm) (İki Alan)",
+          "600 ₺/numune"
+        ],
+        [
+          "OPP03",
+          "Üç Boyutlu Yüzey Profili (2 mm x 2 mm) (Üç Alan)",
+          "650 ₺/numune"
+        ],
+        [
+          "OPP04",
+          "Geniş Alan Haritalama ve Görüntü Birleştirme İşlemi",
+          "400 ₺/saat"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "YPC01",
+          "Pürüzlülük Ölçümü",
+          "140 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "AnalizTanımı",
+          "Fiyat"
+        ],
+        [
+          "Nİ01",
+          "Nanoindentasyon (5 iz)",
+          "1200 ₺/numune"
+        ],
+        [
+          "Nİ02",
+          "Nanoindentasyon (10x10 matriks)*",
+          "1800 ₺/numune"
+        ],
+        [
+          "Nİ03",
+          "Nanoindentasyon (15x15 matriks)*",
+          "3000 ₺/numune"
+        ],
+        [
+          "Nİ04",
+          "Nanoindentasyon (20x20 matriks)*",
+          "4500 ₺/numune"
+        ],
+        [
+          "Nİ05",
+          "Metod Geliştirme**",
+          "5000 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "AnalizTanımı",
+          "Fiyat"
+        ],
+        [
+          "MKN01",
+          "Vickers-Brinell ve Rockwell Sertik Testi*",
+          "900 ₺/numune"
+        ],
+        [
+          "MKN02",
+          "Kompakt Ters Tip Metalurjik Mikroskop Analizi",
+          "600 ₺/saat"
+        ],
+        [
+          "MKN03",
+          "ÇekmeTesti (0-1 saat)",
+          "1000 ₺/numune"
+        ],
+        [
+          "MKN04",
+          "Çekme Testi (1-5 saat)",
+          "1200 ₺/numune"
+        ],
+        [
+          "MKN05",
+          "Çekme Testi (5 saat ve üzeri her ek saat)",
+          "250 ₺/saat"
+        ],
+        [
+          "MKN06",
+          "Basma Testi",
+          "1000 ₺/numune"
+        ],
+        [
+          "MKN07",
+          "Üç Nokta Eğme Testi",
+          "1000 ₺/numune"
+        ],
+        [
+          "MKN08",
+          "YorulmaTesti (0-1 saat)",
+          "1200 ₺/numune"
+        ],
+        [
+          "MKN09",
+          "Yorulma Testi (1- 5 saat)",
+          "3000 ₺/numune"
+        ],
+        [
+          "MKN10",
+          "Yorulma Testi (5 saat üzeri her ek saat)",
+          "500 ₺/saat"
+        ],
+        [
+          "MKN11",
+          "Metalografik Numune Hazırlama (Hassas Kesme, Parlatma veya Dağlama)**",
+          "250 ₺/numune"
+        ],
+        [
+          "MKN12",
+          "Metalografik Numune Hazırlama (Bakalite Alma)**",
+          "650 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı"
+        ],
+        [
+          "OES01",
+          "Metal ve Alaşım Analizi (Fe, Cu, Zn, Al, Ti, Ni)"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "AKR-01",
+          "Çekme Mukavemeti Tayini / TS EN ISO 6892-1",
+          "1800 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "AnalizTanımı",
+          "Fiyat"
+        ],
+        [
+          "DMA01",
+          "Dinamik Mekanik Analiz – (25 – 400 oC)",
+          "1200 ₺/numune"
+        ],
+        [
+          "DMA02",
+          "Dinamik Mekanik Analiz – (-100 – 400 oC)",
+          "1500 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı**,***",
+          "Fiyat"
+        ],
+        [
+          "TGA01",
+          "Termogravimetrik Analiz (TGA) (1 saat)",
+          "950 ₺/numune"
+        ],
+        [
+          "TGA02",
+          "TGA (1 – 3 saat)",
+          "1150 ₺/numune"
+        ],
+        [
+          "TGA03",
+          "TGA (3 – 7 saat)",
+          "1350 ₺/numune"
+        ],
+        [
+          "TGA04",
+          "TGA (7 – 15 saat)",
+          "1550 ₺/numune"
+        ],
+        [
+          "DSC01",
+          "TGA + Diferansiyel Taramalı Kalorimetri (DSC) (1 saat)",
+          "1150 ₺/numune"
+        ],
+        [
+          "DSC02",
+          "TGA + DSC (1 – 3 saat)",
+          "1350 ₺/numune"
+        ],
+        [
+          "DSC03",
+          "TGA + DSC (3 – 7 saat)",
+          "1550 ₺/numune"
+        ],
+        [
+          "DSC04",
+          "TGA + DSC (7 – 15 saat)",
+          "1750 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "PBA01",
+          "Boyut Analizi (Yaş)*",
+          "750 ₺/numune"
+        ],
+        [
+          "PBA02",
+          "Boyut Analizi (Kuru)",
+          "750 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "NNP01",
+          "Partikül Boyutu Analizi",
+          "750 ₺/numune"
+        ],
+        [
+          "NNP02",
+          "Zeta Potansiyel Ölçümü",
+          "750 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "CAM01",
+          "Yüzeylerde temas açısı ölçümü",
+          "400 ₺/numune"
+        ],
+        [
+          "CAM02",
+          "Yüzeylerde serbest yüzey enerjisi ölçümü*",
+          "800 ₺/numune"
+        ],
+        [
+          "CAM03",
+          "Sıvılarda yüzey gerilimi ölçümü",
+          "400 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "TFT01",
+          "İnce Film Kalınlık Ölçümü (1nm-60 um)*",
+          "800 ₺/saat"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "HEM01",
+          "Hall Etkisi (Oda Sıcaklığı)*",
+          "800 ₺/saat"
+        ],
+        [
+          "HEM02",
+          "Hall Etkisi (77K)*",
+          "1200 ₺/saat"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "PNM01",
+          "Yoğunluk Ölçümü",
+          "600 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "BET01",
+          "Tek noktalı BET Analizi",
+          "850 ₺/numune"
+        ],
+        [
+          "BET02",
+          "Çok noktalı BET Analizi",
+          "950 ₺/numune"
+        ],
+        [
+          "BET03",
+          "Çok noktalı BET Analizi + Gözenek Boyutu (N gaz 2 adsorbsiyonu)",
+          "1000 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "XRD01",
+          "Toz ve Yığın Analizi**",
+          "1200 ₺/numune"
+        ],
+        [
+          "XRD02",
+          "İnce Film Analizi",
+          "1500 ₺/numune"
+        ],
+        [
+          "XRD03",
+          "Rietveld Analizi",
+          "5000 ₺/numune"
+        ],
+        [
+          "XRD05",
+          "XRR Analizi (Roughness Ölçümü*** + Analiz)",
+          "7000 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "FTR01",
+          "FT-IR Spektrumu",
+          "300 ₺/numune"
+        ],
+        [
+          "FTR02",
+          "FT-IR Spektrumu + Database Taraması",
+          "450 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "UVN 01",
+          "UV-VIS-NIR Spektrumu (Sıvı Numune)",
+          "180 ₺/numune"
+        ],
+        [
+          "UVN 02",
+          "UV-VIS-NIR Spektrumu (Sıvı Numune)*",
+          "600 ₺/saat"
+        ],
+        [
+          "UVN 03",
+          "UV-VIS-NIR Spektrumu (Katı Numune)",
+          "250 ₺/numune"
+        ],
+        [
+          "UVN 04",
+          "UV-VIS-NIR Spektrumu (Katı Numune)*",
+          "750 ₺/saat"
+        ],
+        [
+          "UVN 05",
+          "Reflektans",
+          "400 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "FLR01",
+          "Floresans Ölçümü",
+          "250 ₺/numune"
+        ],
+        [
+          "FLR02",
+          "Floresans Ölçümü*",
+          "750 ₺/saat"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "XRF01",
+          "Elementel Analiz",
+          "750 ₺/numune"
+        ],
+        [
+          "XRF02",
+          "Eritiş Numune Hazırlama",
+          "600 ₺/numune"
+        ],
+        [
+          "XRF03",
+          "Mekanik Numune Hazırlama (Öğütme, presleme vb.)",
+          "400 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "ICP01",
+          "Genel Tarama",
+          "900 ₺/numune"
+        ],
+        [
+          "ICP02",
+          "1-5 Element",
+          "900 ₺/numune"
+        ],
+        [
+          "ICP03",
+          "6-10 Element",
+          "1000 ₺/numune"
+        ],
+        [
+          "ICP04",
+          "11-15 Element",
+          "1100 ₺/numune"
+        ],
+        [
+          "ICP05",
+          "16-20 Element",
+          "1200 ₺/numune"
+        ],
+        [
+          "ICP06",
+          "21-30 Element",
+          "1300 ₺/numune"
+        ],
+        [
+          "ICP07",
+          "31-40 Element",
+          "1400 ₺/numune"
+        ],
+        [
+          "ICP08",
+          "Mikrodalga ile Numune Hazırlama*",
+          "800 ₺/numune"
+        ],
+        [
+          "ICP09",
+          "Mekanik Numune Hazırlama* (Kırma, Öğütme vb.)",
+          "400 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "AnalizTanımı",
+          "Fiyat"
+        ],
+        [
+          "ASE01",
+          "ASE ile Ekstraksiyon**",
+          "1500 ₺/hücre"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "UHPLC01",
+          "Kantitatif: Her Bir Numunede Tek Bileşen",
+          "1200 ₺/enjeksiyon"
+        ],
+        [
+          "UHPLC02",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (1-9 bileşen)",
+          "550 ₺/enjeksiyon"
+        ],
+        [
+          "UHPLC03",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (10-19 bileşen)",
+          "500 ₺/enjeksiyon"
+        ],
+        [
+          "UHPLC04",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (20-29 bileşen)",
+          "500 ₺/enjeksiyon"
+        ],
+        [
+          "UHPLC05",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (30 ve daha fazla sayıda bileşen)",
+          "450 ₺/enjeksiyon"
+        ],
+        [
+          "UHPLC06",
+          "Kalitatif: Her Bir Numune İçin",
+          "1000 ₺/enjeksiyon"
+        ],
+        [
+          "UHPLC07",
+          "Metot geliştirme**",
+          "15.000 ₺/gün"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "LCMSMS01",
+          "Kantitatif: Her Bir Numunede Tek Bileşen",
+          "1200 ₺/enjeksiyon"
+        ],
+        [
+          "LCMSMS02",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (1-9 bileşen)",
+          "550 ₺/enjeksiyon"
+        ],
+        [
+          "LCMSMS03",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (10-19 bileşen)",
+          "500 ₺/enjeksiyon"
+        ],
+        [
+          "LCMSMS04",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (20-29 bileşen)",
+          "500 ₺/enjeksiyon"
+        ],
+        [
+          "LCMSMS05",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (30 ve daha fazla sayıda bileşen)",
+          "450 ₺/enjeksiyon"
+        ],
+        [
+          "LCMSMS06",
+          "Kalitatif: Her Bir Numune İçin",
+          "1000 ₺/enjeksiyon"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "LCTOF01",
+          "Numune Hazırlama",
+          "100 ₺/numune"
+        ],
+        [
+          "LCTOF02",
+          "Tam Kütle Tayini Tek Enjeksiyon (Kolonsuz saf numune analizi)",
+          "400 ₺/enjeksiyon"
+        ],
+        [
+          "LCTOF03",
+          "Tam Kütle Tayini (Kolon kullanılarak numune analizi)",
+          "3000 ₺/saat"
+        ],
+        [
+          "LCTOF04",
+          "Metot Geliştirme",
+          "15.000 ₺/gün"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "GC01",
+          "Kantitatif: Her Bir Numunede Tek Bileşen",
+          "1200 ₺/enjeksiyon"
+        ],
+        [
+          "GC02",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (1-9 bileşen)",
+          "550 ₺/enjeksiyon"
+        ],
+        [
+          "GC03",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (10-19 bileşen)",
+          "500 ₺/enjeksiyon"
+        ],
+        [
+          "GC04",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (20-29 bileşen)",
+          "500 ₺/enjeksiyon"
+        ],
+        [
+          "GC05",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (30 ve daha fazla sayıda bileşen)",
+          "450 ₺/enjeksiyon"
+        ],
+        [
+          "GC06",
+          "Kalitatif: Her Bir Numune İçin",
+          "1000 ₺/enjeksiyon"
+        ],
+        [
+          "GC07",
+          "Metot geliştirme**",
+          "15.000 ₺/gün"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "GCMS01",
+          "Kantitatif: Her Bir Numunede Tek Bileşen",
+          "1200 ₺/enjeksiyon"
+        ],
+        [
+          "GCMS02",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (1-9 bileşen)",
+          "550 ₺/enjeksiyon"
+        ],
+        [
+          "GCMS03",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (10-19 bileşen)",
+          "500 ₺/enjeksiyon"
+        ],
+        [
+          "GCMS04",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (20-29 bileşen)",
+          "500 ₺/enjeksiyon"
+        ],
+        [
+          "GCMS05",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (30 ve daha fazla sayıda bileşen)",
+          "450 ₺/enjeksiyon"
+        ],
+        [
+          "GCMS06",
+          "Kalitatif: Her Bir Numune İçin",
+          "1000 ₺/enjeksiyon"
+        ],
+        [
+          "GCMS07",
+          "Metot geliştirme*",
+          "15.000 ₺/gün"
+        ],
+        [
+          "GCMS-PY08",
+          "Mikroplastik Analiz Paketi (4’lü set)",
+          "8000₺/enjeksiyon"
+        ],
+        [
+          "GCMS-PY09",
+          "Mikroplastik Analiz Paketi (8’li set)",
+          "14000₺/enjeksiyon"
+        ],
+        [
+          "GCMS-PY10",
+          "Mikroplastik Analiz Paketi (Mikroplastik paket içeriğinin tamamı - 12’li)",
+          "18000₺/enjeksiyon"
+        ],
+        [
+          "GCMS-PY11",
+          "Piroliz İşlemli Analiz",
+          "3000 ₺/enjeksiyon"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "GCMSMS01",
+          "Kantitatif: Her Bir Numunede Tek Bileşen",
+          "1200 ₺/enjeksiyon"
+        ],
+        [
+          "GCMSMS02",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (1-9 bileşen)",
+          "550 ₺/enjeksiyon"
+        ],
+        [
+          "GCMSMS03",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (10-19 bileşen)",
+          "500 ₺/enjeksiyon"
+        ],
+        [
+          "GCMSMS04",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (20-29 bileşen)",
+          "500 ₺/enjeksiyon"
+        ],
+        [
+          "GCMSMS05",
+          "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (30 ve daha fazla sayıda bileşen)",
+          "450 ₺/enjeksiyon"
+        ],
+        [
+          "GCMSMS06",
+          "Kalitatif: Her Bir Numune İçin",
+          "1000 ₺/enjeksiyon"
+        ],
+        [
+          "GCMSMS07",
+          "Metot geliştirme**",
+          "15.000 ₺/gün"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "GPC01",
+          "GPC analizi (mobil faz THF)",
+          "1500 ₺/numune"
+        ],
+        [
+          "GPC02",
+          "GPC analizi numune hazırlama",
+          "300 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "BYT 01",
+          "Gerçek Zamanlı PCR Cihazı*",
+          "300 ₺/kullanım"
+        ],
+        [
+          "BYT 02",
+          "Hücre Akış Sitometrisi",
+          "600 ₺/numune"
+        ],
+        [
+          "BYT 03-1",
+          "Jel Görüntüleme ve Dökümentasyon Sistemi (UV)**",
+          "60 ₺/numune"
+        ],
+        [
+          "BYT 03-2",
+          "Jel Görüntüleme ve Dökümentasyon Sistemi (Kemilüminesans)",
+          "90 ₺/numune"
+        ],
+        [
+          "BYT 04-1",
+          "Mikroplate Okuyucu",
+          "240 ₺/plaka"
+        ],
+        [
+          "BYT 04-2",
+          "Mikroplate Okuyucu (Kinetik Çalışma)***",
+          "650 ₺/kullanım"
+        ],
+        [
+          "BYT 05-1",
+          "Nanodrop ile RNA/DNA miktar tayini (1 – 8 numune)",
+          "60 ₺"
+        ],
+        [
+          "BYT 05-2",
+          "Nanodrop ile RNA/DNA miktar tayini (8 – 16 numune)",
+          "70 ₺"
+        ],
+        [
+          "BYT 05-3",
+          "Nanodrop ile RNA/DNA miktar tayini (16 – 32 numune)",
+          "80 ₺"
+        ],
+        [
+          "BYT 06",
+          "Floresans Mikroskobu",
+          "450 ₺/saat"
+        ],
+        [
+          "Analiz Kodu",
+          "AnalizTanımı",
+          "Fiyat"
+        ],
+        [
+          "3D01",
+          "3 Boyutlu Ürün Üretimi (Polyjet)*",
+          "8000 ₺/saat"
+        ],
+        [
+          "3D02",
+          "3 Boyutlu Ürün Üretimi (FDM)*",
+          "4000 ₺/saat"
+        ],
+        [
+          "3D03",
+          "3 Boyutlu Tarama (Data Tarama/Yüzeylendirme)**",
+          "720 ₺/saat"
+        ],
+        [
+          "3D04",
+          "3 Boyutlu Tarama (CAD+YenidenTasarlama)",
+          "6000 ₺/numune"
+        ],
+        [
+          "3D05",
+          "3 Boyutlu Ürün Üretimi (DLP) 0-4 cm’ye kadar olan numunlerin kürlemesiz",
+          "1200 ₺/saat"
+        ],
+        [
+          "3D06",
+          "3 Boyutlu Ürün Üretimi (DLP) 0-4 cm’ye kadar olan numunlerin kürlemeli",
+          "1500 ₺/saat"
+        ],
+        [
+          "3D07",
+          "3 Boyutlu Ürün Üretimi (DLP) 4-12 cm’ye kadar olan numunlerin kürlemesiz",
+          "1800 ₺/saat"
+        ],
+        [
+          "3D08",
+          "3 Boyutlu Ürün Üretimi (DLP) 4-12 cm’ye kadar olan numunlerin kürlemeli",
+          "2100 ₺/saat"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "PLZ01",
+          "Soğuk Plazma (O gazı)** 2",
+          "200 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "PHM01",
+          "pH Tayini",
+          "80 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "LYF01",
+          "Liyofilizasyon Numune Kurutma",
+          "1500 ₺/gün"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "SAC01",
+          "Sıvı Azot",
+          "50 ₺/litre"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı"
+        ],
+        [
+          "TRMN01",
+          "Haritalama"
+        ],
+        [
+          "TRMN02",
+          "Haritalama"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı"
+        ],
+        [
+          "TXRF01",
+          "Elementel Tarama"
+        ],
+        [
+          "TXRF02",
+          "Elementel Tarama"
+        ],
+        [
+          "Analiz Kodu",
+          "AnalizTanımı",
+          "Fiyat*/**"
+        ],
+        [
+          "NMR01",
+          "1H-NMR (Ölçüme hazır gelen numune)",
+          "350 ₺/numune"
+        ],
+        [
+          "NMR02",
+          "13C-NMR (100 tarama)",
+          "400 ₺/numune"
+        ],
+        [
+          "NMR03",
+          "13C-NMR (1 saat)",
+          "450 ₺/numune"
+        ],
+        [
+          "NMR04",
+          "13C-NMR (3 saat)",
+          "550 ₺/numune"
+        ],
+        [
+          "NMR05",
+          "13C-NMR (gece)",
+          "900 ₺/numune"
+        ],
+        [
+          "NMR06",
+          "13C-NMR (coupled)",
+          "900 ₺/numune"
+        ],
+        [
+          "NMR07",
+          "D O Exchange 2",
+          "350 ₺/numune"
+        ],
+        [
+          "NMR08",
+          "Full Analiz Paketi (1H-NMR, 13C-NMR, APT, DEPT-90, DEPT-135, COSY, HMBC, HMQC, HSQC",
+          "3800 ₺/numune"
+        ],
+        [
+          "NMR09",
+          "APT",
+          "450 ₺/numune"
+        ],
+        [
+          "NMR10",
+          "DEPT-90",
+          "450 ₺/numune"
+        ],
+        [
+          "NMR11",
+          "DEPT-135",
+          "450 ₺/numune"
+        ],
+        [
+          "NMR12",
+          "COSY",
+          "500 ₺/numune"
+        ],
+        [
+          "NMR13",
+          "HMQC",
+          "500 ₺/numune"
+        ],
+        [
+          "NMR14",
+          "HSQC",
+          "500 ₺/numune"
+        ],
+        [
+          "NMR15",
+          "HMBC",
+          "500 ₺/numune"
+        ],
+        [
+          "NMR16",
+          "NOE",
+          "750 ₺/numune"
+        ],
+        [
+          "NMR17",
+          "NOESY",
+          "750 ₺/numune"
+        ],
+        [
+          "NMR18",
+          "ROESY",
+          "750 ₺/numune"
+        ],
+        [
+          "NMR19",
+          "TOCSY",
+          "750 ₺/numune"
+        ],
+        [
+          "NMR20",
+          "19F-NMR",
+          "600 ₺/numune"
+        ],
+        [
+          "NMR21",
+          "31P-NMR",
+          "600 ₺/numune"
+        ],
+        [
+          "NMR22",
+          "17O-NMR",
+          "600 ₺/numune"
+        ],
+        [
+          "NMR23",
+          "15N-NMR",
+          "600 ₺/numune"
+        ],
+        [
+          "NMR24",
+          "11B-NMR",
+          "600 ₺/numune"
+        ],
+        [
+          "NMR25",
+          "29Si-NMR",
+          "600 ₺/numune"
+        ],
+        [
+          "NMR26",
+          "Sıcaklık Deneyleri (0-4 sa.)",
+          "2000 ₺/numune"
+        ],
+        [
+          "NMR27",
+          "Çözücü Ücreti***/****: CDCl 3",
+          "120 ₺/numune"
+        ],
+        [
+          "NMR28",
+          "Çözücü Ücreti: DMSO-D6, D O, ACETONE-D6 2",
+          "240 ₺/numune"
+        ],
+        [
+          "NMR29",
+          "Çözücü Ücreti: MeOH-D4",
+          "600 ₺/numune"
+        ],
+        [
+          "NMR30",
+          "Numune Hazırlama",
+          "100 ₺/numune"
+        ],
+        [
+          "Analiz Kodu",
+          "Analiz Tanımı",
+          "Fiyat"
+        ],
+        [
+          "G001",
+          "Uzman Değerlendirmesi* (Genel)",
+          "10.000 ₺/saat"
+        ]
+      ],
+      "removed_rows": [],
+      "analysis_count": 196
+    }
+  ]
+}
