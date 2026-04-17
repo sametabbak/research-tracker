@@ -19,13 +19,21 @@ from diff_engine import diff, save_snapshot
 from notifier import notify, notify_manual, notify_error
 from json_exporter import export_center
 
-from fetchers import html_table, html_then_pdf, manual
+from fetchers import html_table, html_then_pdf, manual, taum, barum, cutam, bitam, daytam, ikcu_merlab
 
 FETCHERS = {
     "html_table":    html_table.fetch,
     "html_then_pdf": html_then_pdf.fetch,
     "manual":        manual.fetch,
     # "html_dynamic": html_dynamic.fetch,  # coming later (ODTÜ MERLAB)
+
+    # Center-specific fetchers
+    "taum":          taum.fetch,
+    "barum":         barum.fetch,
+    "cutam":         cutam.fetch,
+    "bitam":         bitam.fetch,
+    "daytam":        daytam.fetch,
+    "ikcu_merlab":   ikcu_merlab.fetch,
 }
 
 CONFIG_PATH    = Path(__file__).parent / "config" / "centers.json"
