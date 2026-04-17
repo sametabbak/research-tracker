@@ -264,9 +264,6 @@ def _parse_price(raw: str) -> float | None:
 
     if not cleaned:
         return None
-
-  if "/" in raw:
-        raw = raw.split("/")[0]
     
     if "-" in cleaned:
         cleaned = cleaned.split("-")[0].strip()
