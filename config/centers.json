@@ -8,26 +8,18 @@
     "pricing_url": "https://tuam.aku.edu.tr/analiz-ucretleri/",
     "fetch_method": "html_then_pdf",
     "pdf_link_pattern": "FIYAT-LISTESI",
-    "fallback_pdf_url": "https://tuam.aku.edu.tr/wp-content/uploads/sites/50/2026/01/FIYAT-LISTESI-2026.pdf",
-    "check_months": [12, 1, 2, 5, 6, 7],
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
     "active": true,
-    "reference": true
+    "reference": true,
+    "fallback_pdf_url": "https://tuam.aku.edu.tr/wp-content/uploads/sites/50/2026/01/FIYAT-LISTESI-2026.pdf"
   },
-  {
-  "id": "atauni_daytam",
-  "name": "ATAÜNİ DAYTAM",
-  "university": "Atatürk Üniversitesi",
-  "city": "Erzurum",
-  "url": "https://daytam.atauni.edu.tr/",
-  "pricing_url": "https://daytam.atauni.edu.tr/hizmet-bedelleri/",
-  "fetch_method": "html_then_pdf",
-  "pdf_link_pattern": "ANALİZ-ÜCRETLERİ",
-  "fallback_pdf_url": "https://daytam.atauni.edu.tr/wp-content/uploads/2025/12/2026-DAYTAM-ANALI%CC%87Z-U%CC%88CRETLERI%CC%87-GUNCEL_V1.pdf",
-  "pdf_text_fallback": true,
-  "check_months": [12, 1, 2, 5, 6, 7],
-  "active": true,
-  "reference": false
-},
   {
     "id": "esogu_arum",
     "name": "ESOGÜ ARUM",
@@ -37,16 +29,23 @@
     "pricing_url": "https://arum.ogu.edu.tr/Sayfa/Index/148/analiz-ucretleri/",
     "fetch_method": "html_table",
     "selector": "table",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "active": true,
+    "reference": false,
     "column_name_map": {
       "name": "işlem türü",
       "price": "ücret",
       "unit": "süre",
       "category": null,
       "notes": null
-    },
-    "check_months": [12, 1, 2, 5, 6, 7],
-    "active": true,
-    "reference": false
+    }
   },
   {
     "id": "dpu_iltem",
@@ -57,6 +56,16 @@
     "pricing_url": "https://dpuiltem.com.tr/analiz-ucretleri/",
     "fetch_method": "html_table",
     "selector": "table",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "active": true,
+    "reference": false,
     "fallback_selectors": [
       ".tablepress",
       ".wp-block-table table",
@@ -65,9 +74,145 @@
       ".tablepress-id-1",
       ".tablepress-id-2"
     ],
-    "html_text_fallback": true,
-    "check_months": [12, 1, 2, 5, 6, 7],
+    "html_text_fallback": true
+  },
+  {
+    "id": "atauni_daytam",
+    "name": "ATAÜNİ DAYTAM",
+    "university": "Atatürk Üniversitesi",
+    "city": "Erzurum",
+    "url": "https://daytam.atauni.edu.tr",
+    "pricing_url": "https://daytam.atauni.edu.tr/hizmet-bedelleri/",
+    "fetch_method": "daytam",
+    "fallback_pdf_url": "https://daytam.atauni.edu.tr/wp-content/uploads/2025/12/2026-DAYTAM-ANAL%C4%B0Z-U%CC%88CRETLER%C4%B0-GUNCEL_V1.pdf",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
     "active": true,
+    "reference": false
+  },
+  {
+    "id": "eu_taum",
+    "name": "Erciyes TAUM",
+    "university": "Erciyes Üniversitesi",
+    "city": "Kayseri",
+    "url": "https://taum.erciyes.edu.tr",
+    "pricing_url": "https://taum.erciyes.edu.tr/tr/analiz-ucretleri",
+    "fetch_method": "taum",
+    "fallback_pdf_url": "https://taum.erciyes.edu.tr/Dosya/MainContent/fiyat-listesi-2026.pdf",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "active": true,
+    "reference": false
+  },
+  {
+    "id": "bseu_barum",
+    "name": "BŞEÜ BARUM",
+    "university": "Bilecik Şeyh Edebali Üniversitesi",
+    "city": "Bilecik",
+    "url": "https://bilecik.edu.tr/barum",
+    "pricing_url": "https://bilecik.edu.tr/barum/Icerik/Analiz_%C3%9Ccretleri_cb172",
+    "fetch_method": "barum",
+    "fallback_pdf_url": "https://www.bilecik.edu.tr/dosya/18153_1212_BARUM%20Fiyat%20Listesi%202026.pdf",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "active": true,
+    "reference": false
+  },
+  {
+    "id": "cu_cutam",
+    "name": "CÜ CUTAM",
+    "university": "Cumhuriyet Üniversitesi",
+    "city": "Sivas",
+    "url": "https://cutam.cumhuriyet.edu.tr",
+    "pricing_url": "https://cutam.cumhuriyet.edu.tr/16-analiz-fiyatlari",
+    "fetch_method": "cutam",
+    "fallback_pdf_url": "https://cutam.cumhuriyet.edu.tr/userfiles/1/files/2026%20fiyat%20listesi-g%C3%BCncel.pdf",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "active": true,
+    "reference": false
+  },
+  {
+    "id": "neu_bitam",
+    "name": "NEÜ BİTAM",
+    "university": "Necmettin Erbakan Üniversitesi",
+    "city": "Konya",
+    "url": "https://erbakan.edu.tr/tr/birim/bitam",
+    "pricing_url": "https://erbakan.edu.tr/tr/birim/bitam/sayfa/analiz-ucretleri",
+    "fetch_method": "bitam",
+    "fallback_pdf_url": "https://erbakan.edu.tr/storage/departments/files/284527/2026_B%C4%B0TAM%20Analiz%20%C3%9Ccretleri(1).pdf",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "active": true,
+    "reference": false
+  },
+  {
+    "id": "ikcu_merlab",
+    "name": "İKCÜ MERLAB",
+    "university": "İzmir Katip Çelebi Üniversitesi",
+    "city": "İzmir",
+    "url": "https://merkeziarastirmalab.ikcu.edu.tr",
+    "pricing_url": "https://merkeziarastirmalab.ikcu.edu.tr/S/15286/ucretlendirme",
+    "fetch_method": "ikcu_merlab",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "active": true,
+    "reference": false
+  },
+  {
+    "id": "mu_meitam",
+    "name": "MEİTAM",
+    "university": "Mersin Üniversitesi",
+    "city": "Mersin",
+    "url": "https://meitamsis.mersin.edu.tr",
+    "pricing_url": "https://meitamsis.mersin.edu.tr/app/meitam/ana-sayfa-67ac5e916349423b13b51fa3",
+    "fetch_method": "manual",
+    "notes": "Fiyat listesi kimlik doğrulama gerektiren bir uygulama üzerinde. Manuel kontrol gerekli.",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "active": false,
     "reference": false
   },
   {
@@ -79,7 +224,16 @@
     "pricing_url": "https://seramikarastirma.com.tr/hizmet-ucretleri/",
     "fetch_method": "html_then_pdf",
     "pdf_link_pattern": "Fiyat-Listesi",
-    "check_months": [11, 12, 1, 2, 4, 5, 6, 7],
+    "check_months": [
+      11,
+      12,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
     "active": false,
     "reference": false
   },
@@ -92,7 +246,14 @@
     "pricing_url": "https://merlab.metu.edu.tr/tr/hizmet-bedelleri",
     "fetch_method": "html_dynamic",
     "notes": "JavaScript dropdown — requires headless browser.",
-    "check_months": [12, 1, 2, 5, 6, 7],
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
     "active": false,
     "reference": false
   },
@@ -105,7 +266,10 @@
     "pricing_url": null,
     "fetch_method": "manual",
     "notes": "Herkese açık fiyat listesi yok. Kurumla iletişime geçilmesi gerekiyor.",
-    "check_months": [12, 5],
+    "check_months": [
+      12,
+      5
+    ],
     "active": false,
     "reference": false
   }
