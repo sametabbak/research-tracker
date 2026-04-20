@@ -203,7 +203,7 @@ def _detect_columns(header_row: list[str]) -> dict:
     mapping = {}
     for i, cell in enumerate(header_row):
         c = cell.lower()
-        if any(k in c for k in ["analiz", "test", "hizmet", "ölçüm", "cihaz", "işlem"]):
+        if any(k in c for k in ["analiz", "test", "hizmet", "ölçüm", "cihaz", "işlem", "analiz tanımı"]):
             mapping.setdefault("name", i)
         elif any(k in c for k in ["ücret", "fiyat", "bedel", "tutar", "tl", "₺"]):
             mapping.setdefault("price", i)
