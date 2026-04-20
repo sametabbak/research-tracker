@@ -24,7 +24,7 @@ HEADERS = {
     "Accept": "text/html,application/xhtml+xml,*/*;q=0.8",
 }
 
-PDF_KEYWORDS = ["fiyat", "bitam", "analiz", "ucret", "liste"]
+PDF_KEYWORDS = ["fiyat", "bitam", "analiz tanimi", "ucret", "liste"]
 
 
 def _find_pdf_on_page(page_url: str) -> str | None:
