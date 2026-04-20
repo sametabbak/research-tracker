@@ -1,1 +1,1577 @@
-
+{
+  "center_id": "neu_bitam",
+  "center_name": "NEÜ BİTAM",
+  "last_updated": "2026-04-17",
+  "source_url": "https://erbakan.edu.tr/tr/birim/bitam/sayfa/analiz-ucretleri",
+  "kdv_note": "Fiyatlara KDV dahil değildir.",
+  "analyses": [
+    {
+      "name": "AFM01",
+      "category": "",
+      "price": 1600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "AFM02",
+      "category": "",
+      "price": 1600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "AFM03",
+      "category": "",
+      "price": 1600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "AFM04",
+      "category": "",
+      "price": 2000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "AFM05",
+      "category": "",
+      "price": 2000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "AFM06",
+      "category": "",
+      "price": 2500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "SEM 01",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "SEM 02",
+      "category": "",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "SEM 03",
+      "category": "",
+      "price": 200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "FSM 01",
+      "category": "",
+      "price": 3600.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "FSM 02",
+      "category": "",
+      "price": 3800.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "FSM 03",
+      "category": "",
+      "price": 6000.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "FSM 04",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "FSM 05",
+      "category": "",
+      "price": 180.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "FSM 06",
+      "category": "",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "FSM 07",
+      "category": "",
+      "price": 3500.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "FSM 08",
+      "category": "",
+      "price": 4200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "RMN01",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "RMN02",
+      "category": "",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "RMN03",
+      "category": "",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "RMN04",
+      "category": "",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "RMN05",
+      "category": "",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "CNF01",
+      "category": "",
+      "price": 900.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "CNF02",
+      "category": "",
+      "price": 4500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "TRMN 01",
+      "category": "",
+      "price": 4000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "THC01",
+      "category": "",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "OPP01",
+      "category": "",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "OPP02",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "OPP03",
+      "category": "",
+      "price": 650.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "OPP04",
+      "category": "",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "YPC01",
+      "category": "",
+      "price": 140.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Nİ01",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Nİ02",
+      "category": "",
+      "price": 1800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Nİ03",
+      "category": "",
+      "price": 3000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Nİ04",
+      "category": "",
+      "price": 4500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Nİ05",
+      "category": "",
+      "price": 5000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "MKN01",
+      "category": "",
+      "price": 900.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "MKN02",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "MKN03",
+      "category": "",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "MKN04",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "MKN05",
+      "category": "",
+      "price": 250.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "MKN06",
+      "category": "",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "MKN07",
+      "category": "",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "YorulmaTesti (0-1 saat)",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Yorulma Testi (1- 5 saat)",
+      "category": "",
+      "price": 3000.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Yorulma Testi (5 saat üzeri her ek saat)",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Metalografik Numune Hazırlama (Hassas Kesme, Parlatma veya Dağlama)**",
+      "category": "",
+      "price": 250.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Metalografik Numune Hazırlama (Bakalite Alma)**",
+      "category": "",
+      "price": 650.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "AKR-01",
+      "category": "",
+      "price": 1800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "DMA01",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "DMA02",
+      "category": "",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "TGA01",
+      "category": "",
+      "price": 950.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "TGA02",
+      "category": "",
+      "price": 1150.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "TGA03",
+      "category": "",
+      "price": 1350.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "TGA04",
+      "category": "",
+      "price": 1550.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "DSC01",
+      "category": "",
+      "price": 1150.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "DSC02",
+      "category": "",
+      "price": 1350.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "DSC03",
+      "category": "",
+      "price": 1550.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "DSC04",
+      "category": "",
+      "price": 1750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "PBA01",
+      "category": "",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "PBA02",
+      "category": "",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NNP01",
+      "category": "",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NNP02",
+      "category": "",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "CAM01",
+      "category": "",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "CAM02",
+      "category": "",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "CAM03",
+      "category": "",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "TFT01",
+      "category": "",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "HEM01",
+      "category": "",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "HEM02",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "PNM01",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "BET01",
+      "category": "",
+      "price": 850.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "BET02",
+      "category": "",
+      "price": 950.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "BET03",
+      "category": "",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "XRD01",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "XRD02",
+      "category": "",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "XRD03",
+      "category": "",
+      "price": 5000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "XRD05",
+      "category": "",
+      "price": 7000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "FTR01",
+      "category": "",
+      "price": 300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "FTR02",
+      "category": "",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "UVN 01",
+      "category": "",
+      "price": 180.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "UVN 02",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "UVN 03",
+      "category": "",
+      "price": 250.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "UVN 04",
+      "category": "",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "UVN 05",
+      "category": "",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "FLR01",
+      "category": "",
+      "price": 250.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "FLR02",
+      "category": "",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "XRF01",
+      "category": "",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "XRF02",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "XRF03",
+      "category": "",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "ICP01",
+      "category": "",
+      "price": 900.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "ICP02",
+      "category": "",
+      "price": 900.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "ICP03",
+      "category": "",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "ICP04",
+      "category": "",
+      "price": 1100.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "ICP05",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "ICP06",
+      "category": "",
+      "price": 1300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "ICP07",
+      "category": "",
+      "price": 1400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "ICP08",
+      "category": "",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "ICP09",
+      "category": "",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "ASE01",
+      "category": "",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "UHPLC01",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "UHPLC02",
+      "category": "",
+      "price": 550.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "UHPLC03",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "UHPLC04",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "UHPLC05",
+      "category": "",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "UHPLC06",
+      "category": "",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "UHPLC07",
+      "category": "",
+      "price": 15000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "LCMSMS01",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "LCMSMS02",
+      "category": "",
+      "price": 550.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "LCMSMS03",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "LCMSMS04",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "LCMSMS05",
+      "category": "",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "LCMSMS06",
+      "category": "",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "LCTOF01",
+      "category": "",
+      "price": 100.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "LCTOF02",
+      "category": "",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "LCTOF03",
+      "category": "",
+      "price": 3000.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "LCTOF04",
+      "category": "",
+      "price": 15000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GC01",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GC02",
+      "category": "",
+      "price": 550.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GC03",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GC04",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GC05",
+      "category": "",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GC06",
+      "category": "",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GC07",
+      "category": "",
+      "price": 15000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMS01",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMS02",
+      "category": "",
+      "price": 550.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMS03",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMS04",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMS05",
+      "category": "",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMS06",
+      "category": "",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMS07",
+      "category": "",
+      "price": 15000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMS-PY08",
+      "category": "",
+      "price": 8000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMS-PY09",
+      "category": "",
+      "price": 14000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMS-PY10",
+      "category": "",
+      "price": 18000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMS-PY11",
+      "category": "",
+      "price": 3000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMSMS01",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMSMS02",
+      "category": "",
+      "price": 550.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMSMS03",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMSMS04",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMSMS05",
+      "category": "",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMSMS06",
+      "category": "",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GCMSMS07",
+      "category": "",
+      "price": 15000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GPC01",
+      "category": "",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "GPC02",
+      "category": "",
+      "price": 300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "BYT 01",
+      "category": "",
+      "price": 300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "BYT 02",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "BYT 03-1",
+      "category": "",
+      "price": 60.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "BYT 03-2",
+      "category": "",
+      "price": 90.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "BYT 04-1",
+      "category": "",
+      "price": 240.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "BYT 04-2",
+      "category": "",
+      "price": 650.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "BYT 05-1",
+      "category": "",
+      "price": 60.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "BYT 05-2",
+      "category": "",
+      "price": 70.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "BYT 05-3",
+      "category": "",
+      "price": 80.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "BYT 06",
+      "category": "",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "3D01",
+      "category": "",
+      "price": 8000.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "3D02",
+      "category": "",
+      "price": 4000.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "3D03",
+      "category": "",
+      "price": 720.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "3D04",
+      "category": "",
+      "price": 6000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "3D05",
+      "category": "",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "3D06",
+      "category": "",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "3D07",
+      "category": "",
+      "price": 1800.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "3D08",
+      "category": "",
+      "price": 2100.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "PLZ01",
+      "category": "",
+      "price": 200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "PHM01",
+      "category": "",
+      "price": 80.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "LYF01",
+      "category": "",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "SAC01",
+      "category": "",
+      "price": 50.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR01",
+      "category": "",
+      "price": 350.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR02",
+      "category": "",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR03",
+      "category": "",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR04",
+      "category": "",
+      "price": 550.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR05",
+      "category": "",
+      "price": 900.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR06",
+      "category": "",
+      "price": 900.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR07",
+      "category": "",
+      "price": 350.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR08",
+      "category": "",
+      "price": 3800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR09",
+      "category": "",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR10",
+      "category": "",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR11",
+      "category": "",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR12",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR13",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR14",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR15",
+      "category": "",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR16",
+      "category": "",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR17",
+      "category": "",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR18",
+      "category": "",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR19",
+      "category": "",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR20",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR21",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR22",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR23",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR24",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR25",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR26",
+      "category": "",
+      "price": 2000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR27",
+      "category": "",
+      "price": 120.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR28",
+      "category": "",
+      "price": 240.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR29",
+      "category": "",
+      "price": 600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NMR30",
+      "category": "",
+      "price": 100.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "G001",
+      "category": "",
+      "price": 10000.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    }
+  ]
+}
