@@ -291,5 +291,25 @@
     ],
     "active": true,
     "reference": false
+  },
+  {
+    "id": "hacettepe_hunitek",
+    "name": "HÜNİTEK",
+    "university": "Hacettepe Üniversitesi",
+    "city": "Ankara",
+    "url": "https://hunitek.hacettepe.edu.tr/",
+    "pricing_url": "https://hunitek.hacettepe.edu.tr/hizmetbedelleri/",
+    "fetch_method": "html_then_pdf",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "active": true,
+    "reference": false,
+    "pdf_link_pattern": "HIZMET-BEDELLERI"
   }
 ]
