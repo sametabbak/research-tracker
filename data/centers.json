@@ -9,7 +9,7 @@
     "active": true,
     "reference": true,
     "analysis_count": 40,
-    "last_updated": "2026-04-20"
+    "last_updated": "2026-04-22"
   },
   {
     "id": "esogu_arum",
@@ -21,7 +21,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 184,
-    "last_updated": "2026-04-20"
+    "last_updated": "2026-04-22"
   },
   {
     "id": "dpu_iltem",
@@ -33,7 +33,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 66,
-    "last_updated": "2026-04-20"
+    "last_updated": "2026-04-22"
   },
   {
     "id": "atauni_daytam",
@@ -45,7 +45,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 132,
-    "last_updated": "2026-04-20"
+    "last_updated": "2026-04-22"
   },
   {
     "id": "eu_taum",
@@ -57,7 +57,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 23,
-    "last_updated": "2026-04-20"
+    "last_updated": "2026-04-22"
   },
   {
     "id": "bseu_barum",
@@ -69,7 +69,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 0,
-    "last_updated": "2026-04-20"
+    "last_updated": "2026-04-22"
   },
   {
     "id": "cu_cutam",
@@ -81,7 +81,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 64,
-    "last_updated": "2026-04-20"
+    "last_updated": "2026-04-22"
   },
   {
     "id": "neu_bitam",
@@ -93,7 +93,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 150,
-    "last_updated": "2026-04-20"
+    "last_updated": "2026-04-22"
   },
   {
     "id": "ikcu_merlab",
@@ -106,5 +106,17 @@
     "reference": false,
     "analysis_count": 0,
     "last_updated": null
+  },
+  {
+    "id": "gazi_gutmam",
+    "name": "GÜTMAM",
+    "university": "Gazi Üniversitesi",
+    "city": "Ankara",
+    "url": "https://tmbil.gazi.edu.tr/",
+    "pricing_url": "https://tmbil.gazi.edu.tr/view/page/287476/analiz-listesi-ucretlendirme",
+    "active": true,
+    "reference": false,
+    "analysis_count": 0,
+    "last_updated": "2026-04-22"
   }
 ]
