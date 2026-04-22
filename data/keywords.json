@@ -41,7 +41,8 @@
     "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)",
     "SEM-Katodolüminesans (SEM-CL)",
     "SEM Altın (Au,Pd), Karbon Kaplama",
-    "SEM-EBIC Dedektörü"
+    "SEM-EBIC Dedektörü",
+    "Yüzey görüntüsü alma (FE- SEM)"
   ],
   "SEM-EDX": [
     "FE-SEM *EDX Analizi",
@@ -109,7 +110,11 @@
     "2-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (5 Nokta)",
     "3-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı + Gözenek Dağılımı",
     "BET Yüzey Alanı (N adsorpsiyonu) Ölçümü",
-    "Rutubet (Nem) Tayini"
+    "Rutubet (Nem) Tayini",
+    "Hızlı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
+    "Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
+    "Mikrogözenek Analizi ve BET Yüzey Alanı Analizi",
+    "Mikrogözenek Analizi ve Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)"
   ],
   "TGA": [
     "Termogravimetrik Analiz (TGA) (1 saat)",

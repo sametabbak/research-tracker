@@ -4,5 +4,150 @@
   "last_updated": "2026-04-22",
   "source_url": "https://tmbil.gazi.edu.tr/view/page/287476/analiz-listesi-ucretlendirme",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
-  "analyses": []
+  "analyses": [
+    {
+      "name": "Yüzey görüntüsü alma (FE- SEM)",
+      "category": "",
+      "price": 3500.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "1 H (Proton)",
+      "category": "Grid Kullanımı",
+      "price": 700.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Sularda ve gıdalarda (Cs-137, Cs-134)",
+      "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI*",
+      "price": 6500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Yapı malzemeleri, sanayi ürünleri ve hammaddelerinde (Ra-226, Th-232, K-40, Ac- 228, Cs- 137)",
+      "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI*",
+      "price": 6500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Diğer numunelerde (Ra-226, Th-232, K-40, Ac- 228, Cs-137, Cs-134, Th- 228)",
+      "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI*",
+      "price": 6500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Toprak ve sedimentte Pb-210 ve Cs-137 tarihlendirme",
+      "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI*",
+      "price": 6500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Gama ışını Lineer Azalım Katsayısı (LAC) tespiti (Am-241, Mn-54, Co-57, Co- 60 ve Cs-137 kaynakları için)",
+      "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI*",
+      "price": 12000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Aynı numune için ilave analiz raporu",
+      "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI*",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Özel amaçlı radyoaktivite analizi**",
+      "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI*",
+      "price": 12000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Yapı malzemeleri için çevre ve insan sağlığı açısından doz değerlendirmesi",
+      "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI*",
+      "price": 12000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Hızlı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
+      "category": "ELEMENTEL ANALİZ LABORATUVARI",
+      "price": 1700.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
+      "category": "ELEMENTEL ANALİZ LABORATUVARI",
+      "price": 2000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Mikrogözenek Analizi ve BET Yüzey Alanı Analizi",
+      "category": "ELEMENTEL ANALİZ LABORATUVARI",
+      "price": 2500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Mikrogözenek Analizi ve Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
+      "category": "ELEMENTEL ANALİZ LABORATUVARI",
+      "price": 2500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Tek Element",
+      "category": "XRF analizi/Sıvı numune",
+      "price": 1700.0,
+      "currency": "TRY",
+      "unit": "element",
+      "notes": ""
+    },
+    {
+      "name": "Spektrum Taraması (Absorbans/Transmittans)",
+      "category": "UV-VIS Spektrofotometre",
+      "price": 350.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Genel Spektrum",
+      "category": "Konfokal Raman Spektrofotometre",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "0-1 saat",
+      "category": "Termal Analiz Laboratuvarı",
+      "price": 3000.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    }
+  ]
 }
