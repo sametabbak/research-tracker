@@ -1,6 +1,6 @@
 """
 Fetcher: HACETTEPE_HUNITEK
-Açıklama: Hacettepe Üniversitesi HÜNİTEK PDF Fiyat Listesi Çekici (Regex Destekli Akıllı Hücre Bölme ve Kategori Hafızası)
+Açıklama: Hacettepe Üniversitesi HÜNİTEK PDF (Deney -> Kategori, Tanım -> Analiz, Bedel -> Fiyat)
 """
 
 import io
@@ -32,7 +32,6 @@ def _get_with_retry(url: str, is_pdf=False):
     session = requests.Session()
     session.headers.update(HEADERS)
     
-    # Üniversite sitelerindeki SSL uyarılarını kapatıyoruz
     import urllib3
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     
@@ -52,16 +51,11 @@ def _get_with_retry(url: str, is_pdf=False):
     raise last_exc
 
 def split_cell(text):
-    """
-    pdfplumber'dan gelen karmaşık hücre metnini akıllıca böler.
-    Tekli \n (satır kayması) boşluğa çevrilir, çoklu \n (farklı analizler) listeye bölünür.
-    """
+    """Hücre içindeki alt alta yazılmış analizleri (PCR örneğindeki gibi) listeye böler."""
     if not text: return []
-    # Tekli \n karakterlerini (öncesinde ve sonrasında \n olmayanları) boşluğa çevir
+    # Tek enter'ları boşluk yap, 2 veya daha fazla enter'ı ayırma noktası kabul et
     text = re.sub(r'(?<!\n)\n(?!\n)', ' ', text)
-    # Geriye kalan \n (iki veya daha fazla) üzerinden listeye böl
-    lines = [line.strip() for line in re.split(r'\n+', text) if line.strip()]
-    return lines
+    return [line.strip() for line in re.split(r'\n{2,}', text) if line.strip()]
 
 def fetch(center: dict) -> dict:
     if pdfplumber is None:
@@ -83,7 +77,7 @@ def fetch(center: dict) -> dict:
 
     pdf_content = _get_with_retry(pdf_url, is_pdf=True)
     
-    # json_exporter'ın kusursuz okuması için standart başlıklar
+    # Sistemin ana kuralı: Çıktı kesinlikle bu 3 sütunlu düzende olacak
     perfect_rows = [["Kategori", "İşlem Türü", "Ücret"]] 
     raw_text = ""
     
@@ -101,51 +95,49 @@ def fetch(center: dict) -> dict:
                     if not row or not any(row):
                         continue
                         
-                    # Boş (None) hücreleri string yap
                     str_row = [str(cell) if cell is not None else "" for cell in row]
                     
-                    # 1. Fiyat sütununu tespit et (İçinde TL ve rakam olan son sütun)
-                    price_col_idx = -1
-                    for i, cell in enumerate(str_row):
-                        if "TL" in cell.upper() and any(c.isdigit() for c in cell):
-                            price_col_idx = i
-                            
-                    if price_col_idx == -1:
-                        if len(str_row) >= 2 and any(c.isdigit() for c in str_row[-1]):
-                            price_col_idx = len(str_row) - 1
-                        else:
+                    # PDF'teki tablo tam olarak 3 sütunlu mu kontrol et
+                    if len(str_row) >= 3:
+                        cat_raw = str_row[0].strip()
+                        tanim_raw = str_row[1].strip()
+                        fiyat_raw = str_row[-1].strip() # Son sütun her zaman fiyat
+                        
+                        # Eğer bu bir başlık satırıysa (Deney/Metot/Cihaz yazıyorsa) atla
+                        if "DENEY" in cat_raw.upper() or "METOT" in cat_raw.upper():
                             continue
                             
-                    # 2. Kategori Hafızası Güncellemesi (Her zaman İlk Sütun)
-                    if price_col_idx >= 2:
-                        cat_raw = str_row[0].strip()
-                        if cat_raw and "DENEY" not in cat_raw.upper():
-                            # Kategori adındaki gereksiz alt satıra geçmeleri boşlukla birleştirip tek isim yap
+                        # 1. SÜTUN: Deney/Metot/Cihaz (Kategori)
+                        if cat_raw:
+                            # Kategori hücresi doluysa, hafızayı güncelle
                             last_category = " ".join([line.strip() for line in cat_raw.split('\n') if line.strip()])
                             
-                    # 3. Tanım ve Fiyat verisini al
-                    tanim_raw = " ".join(str_row[1:price_col_idx]) if price_col_idx >= 2 else str_row[0]
-                    fiyat_raw = str_row[price_col_idx]
-                    
-                    # Regex tabanlı akıllı bölme işlemi
-                    tanim_lines = split_cell(tanim_raw)
-                    fiyat_lines = split_cell(fiyat_raw)
-                    
-                    # Eğer Tanım satır sayısı ile Fiyat satır sayısı tam eşleşiyorsa (örneğin 3 tanım, 3 fiyat)
-                    if len(tanim_lines) == len(fiyat_lines) and len(tanim_lines) > 0:
-                        for t, f in zip(tanim_lines, fiyat_lines):
-                            if len(t) > 2 and "TANIM" not in t.upper():
+                        # 2. ve 3. SÜTUN: Tanım ve Hizmet Bedeli
+                        tanim_lines = split_cell(tanim_raw)
+                        fiyat_lines = split_cell(fiyat_raw)
+                        
+                        # Hücre içinde birden fazla analiz alt alta yazılmışsa (PCR tablosu gibi)
+                        if len(tanim_lines) == len(fiyat_lines) and len(tanim_lines) > 0:
+                            for t, f in zip(tanim_lines, fiyat_lines):
+                                if any(c.isdigit() for c in f): # Fiyat sütununda rakam varsa ekle
+                                    perfect_rows.append([last_category, t, f])
+                        else:
+                            # Tek satırlık normal bir analizse
+                            t = " ".join(tanim_lines)
+                            f = " ".join(fiyat_lines)
+                            if len(t) > 2 and any(c.isdigit() for c in f):
                                 perfect_rows.append([last_category, t, f])
-                    else:
-                        # Eşleşmiyorsa veri kaybını önlemek için güvenli şekilde birleştirip tek satır yap
-                        t = " ".join(tanim_lines)
-                        f = " ".join(fiyat_lines)
-                        if len(t) > 2 and "TANIM" not in t.upper():
-                            perfect_rows.append([last_category, t, f])
+                                
+                    # Tablo yapısı 3 sütundan azsa ama fiyat içeriyorsa (bazı hatalı PDF satırları için kurtarma)
+                    elif len(str_row) == 2:
+                        tanim_raw = str_row[0].strip()
+                        fiyat_raw = str_row[1].strip()
+                        if "TANIM" not in tanim_raw.upper() and any(c.isdigit() for c in fiyat_raw):
+                            perfect_rows.append([last_category, tanim_raw.replace('\n', ' '), fiyat_raw.replace('\n', ' ')])
 
     tables = [perfect_rows]
 
-    print(f"  [HÜNİTEK] Regex destekli akıllı okuma tamamlandı. {len(perfect_rows)-1} adet analiz çıkarıldı.")
+    print(f"  [HÜNİTEK] 'Deney -> Kategori, Tanım -> İşlem' eşleştirmesiyle {len(perfect_rows)-1} adet analiz çekildi.")
 
     return {
         "center_id": center["id"],
