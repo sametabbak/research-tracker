@@ -51,9 +51,7 @@ def _get_with_retry(url: str, is_pdf=False):
     raise last_exc
 
 def split_cell(text):
-    """Hücre içindeki alt alta yazılmış analizleri (PCR örneğindeki gibi) listeye böler."""
     if not text: return []
-    # Tek enter'ları boşluk yap, 2 veya daha fazla enter'ı ayırma noktası kabul et
     text = re.sub(r'(?<!\n)\n(?!\n)', ' ', text)
     return [line.strip() for line in re.split(r'\n{2,}', text) if line.strip()]
 
@@ -77,8 +75,8 @@ def fetch(center: dict) -> dict:
 
     pdf_content = _get_with_retry(pdf_url, is_pdf=True)
     
-    # Sistemin ana kuralı: Çıktı kesinlikle bu 3 sütunlu düzende olacak
-    perfect_rows = [["Kategori", "İşlem Türü", "Ücret"]] 
+    # DÜZELTİLEN KISIM BURASI: json_exporter.py'nin tanıdığı standart başlıklar
+    perfect_rows = [["Kategori", "Analiz Adı", "Fiyat"]] 
     raw_text = ""
     
     with pdfplumber.open(io.BytesIO(pdf_content)) as pdf:
@@ -97,38 +95,30 @@ def fetch(center: dict) -> dict:
                         
                     str_row = [str(cell) if cell is not None else "" for cell in row]
                     
-                    # PDF'teki tablo tam olarak 3 sütunlu mu kontrol et
                     if len(str_row) >= 3:
                         cat_raw = str_row[0].strip()
                         tanim_raw = str_row[1].strip()
-                        fiyat_raw = str_row[-1].strip() # Son sütun her zaman fiyat
+                        fiyat_raw = str_row[-1].strip() 
                         
-                        # Eğer bu bir başlık satırıysa (Deney/Metot/Cihaz yazıyorsa) atla
                         if "DENEY" in cat_raw.upper() or "METOT" in cat_raw.upper():
                             continue
                             
-                        # 1. SÜTUN: Deney/Metot/Cihaz (Kategori)
                         if cat_raw:
-                            # Kategori hücresi doluysa, hafızayı güncelle
                             last_category = " ".join([line.strip() for line in cat_raw.split('\n') if line.strip()])
                             
-                        # 2. ve 3. SÜTUN: Tanım ve Hizmet Bedeli
                         tanim_lines = split_cell(tanim_raw)
                         fiyat_lines = split_cell(fiyat_raw)
                         
-                        # Hücre içinde birden fazla analiz alt alta yazılmışsa (PCR tablosu gibi)
                         if len(tanim_lines) == len(fiyat_lines) and len(tanim_lines) > 0:
                             for t, f in zip(tanim_lines, fiyat_lines):
-                                if any(c.isdigit() for c in f): # Fiyat sütununda rakam varsa ekle
+                                if any(c.isdigit() for c in f): 
                                     perfect_rows.append([last_category, t, f])
                         else:
-                            # Tek satırlık normal bir analizse
                             t = " ".join(tanim_lines)
                             f = " ".join(fiyat_lines)
                             if len(t) > 2 and any(c.isdigit() for c in f):
                                 perfect_rows.append([last_category, t, f])
                                 
-                    # Tablo yapısı 3 sütundan azsa ama fiyat içeriyorsa (bazı hatalı PDF satırları için kurtarma)
                     elif len(str_row) == 2:
                         tanim_raw = str_row[0].strip()
                         fiyat_raw = str_row[1].strip()
@@ -137,7 +127,7 @@ def fetch(center: dict) -> dict:
 
     tables = [perfect_rows]
 
-    print(f"  [HÜNİTEK] 'Deney -> Kategori, Tanım -> İşlem' eşleştirmesiyle {len(perfect_rows)-1} adet analiz çekildi.")
+    print(f"  [HÜNİTEK] 'Deney -> Kategori, Tanım -> Analiz' eşleştirmesiyle {len(perfect_rows)-1} adet analiz çekildi.")
 
     return {
         "center_id": center["id"],
