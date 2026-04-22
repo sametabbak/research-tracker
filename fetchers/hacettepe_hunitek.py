@@ -1,6 +1,6 @@
 """
 Fetcher: HACETTEPE_HUNITEK
-Açıklama: Hacettepe Üniversitesi HÜNİTEK PDF Fiyat Listesi Çekici (Gelişmiş Tablo Okuma)
+Açıklama: Hacettepe Üniversitesi HÜNİTEK PDF Fiyat Listesi Çekici (Kategori ve Tanım Ayrımı)
 """
 
 import io
@@ -70,11 +70,13 @@ def fetch(center: dict) -> dict:
 
     pdf_content = _get_with_retry(pdf_url, is_pdf=True)
     
-    # json_exporter'ın tablo başlıklarını otomatik algılaması için mükemmel bir 0. satır (Header) koyuyoruz.
-    perfect_rows = [["İşlem Türü", "Ücret"]] 
+    # json_exporter'ın kusursuz tanıması için başlıkları standart isimlerle belirliyoruz.
+    perfect_rows = [["Kategori", "İşlem Türü", "Ücret"]] 
     raw_text = ""
     
     with pdfplumber.open(io.BytesIO(pdf_content)) as pdf:
+        last_category = "Genel Analizler" # Boş gelen ilk hücreler için varsayılan kategori hafızası
+        
         for page in pdf.pages:
             text = page.extract_text()
             if text:
@@ -83,39 +85,63 @@ def fetch(center: dict) -> dict:
             extracted_tables = page.extract_tables()
             for table in extracted_tables:
                 for row in table:
-                    # Hücrelerdeki enter boşluklarını temizle
                     clean_row = [str(cell).strip().replace("\n", " ") if cell else "" for cell in row]
                     
                     if not any(clean_row):
                         continue
                     
-                    # 1. Fiyat hücresini bul: İçinde "TL" kelimesi geçen ve rakam barındıran ilk hücre
+                    # 1. Fiyat hücresini bul ("TL" ve rakam içeriyor mu?)
                     price_col_idx = -1
                     for i, cell in enumerate(clean_row):
                         if "TL" in cell.upper() and any(c.isdigit() for c in cell):
                             price_col_idx = i
                             break
                     
-                    # Eğer fiyat kolonunu bulduysak
+                    # Fiyat hücresini bulduysak işlemi başlat
                     if price_col_idx > 0:
-                        # Fiyatın solunda kalan bütün hücreleri birleştirip isim yap (bölünmüş sütunları onarır)
-                        name = " ".join(clean_row[:price_col_idx]).strip()
-                        price = clean_row[price_col_idx]
-                        if len(name) > 3:
-                            perfect_rows.append([name, price])
+                        # Durum A: Fiyat sütunundan önce en az 2 sütun var (0: Deney/Cihaz, 1... : Tanım)
+                        if price_col_idx >= 2:
+                            cat_val = clean_row[0].strip()
                             
-                    # Yedek Plan: "TL" kelimesi yoksa bile, en az 2 hücre varsa ve son hücre sayılardan oluşuyorsa
+                            # Eğer "Deney/Metot" hücresi doluysa (ve tablo başlığı değilse) hafızayı güncelle
+                            if cat_val and len(cat_val) > 2 and "DENEY" not in cat_val.upper():
+                                last_category = cat_val
+                            
+                            # Kalan aradaki sütunları birleştirip "Tanım" (İşlem Türü) yap
+                            name_val = " ".join(clean_row[1:price_col_idx]).strip()
+                            price_val = clean_row[price_col_idx]
+                            
+                            # Eğer kazara başlık satırını çekmediysek listeye ekle
+                            if len(name_val) > 2 and "TANIM" not in name_val.upper():
+                                perfect_rows.append([last_category, name_val, price_val])
+                                
+                        # Durum B: Fiyat sütunundan önce sadece 1 sütun var (Yani sadece Tanım var, kategori hücresi yutulmuş)
+                        elif price_col_idx == 1:
+                            name_val = clean_row[0].strip()
+                            price_val = clean_row[price_col_idx]
+                            
+                            if len(name_val) > 2 and "TANIM" not in name_val.upper():
+                                # Hafızadaki son cihazı (last_category) kategori olarak ata
+                                perfect_rows.append([last_category, name_val, price_val])
+                                
+                    # Yedek Plan: Sadece rakam olan ama TL yazmayan fiyatları yakala
                     elif len(clean_row) >= 2:
-                        name = " ".join(clean_row[:-1]).strip()
-                        price = clean_row[-1]
-                        if any(c.isdigit() for c in price) and len(name) > 3 and not name.lower().startswith("analiz"):
-                            perfect_rows.append([name, price])
+                        price_val = clean_row[-1]
+                        if any(c.isdigit() for c in price_val):
+                            if len(clean_row) >= 3:
+                                cat_val = clean_row[0].strip()
+                                if cat_val and len(cat_val) > 2 and "DENEY" not in cat_val.upper():
+                                    last_category = cat_val
+                                name_val = " ".join(clean_row[1:-1]).strip()
+                            else:
+                                name_val = clean_row[0].strip()
+                                
+                            if len(name_val) > 2 and "TANIM" not in name_val.upper():
+                                perfect_rows.append([last_category, name_val, price_val])
 
-    # Ayıklanan kusursuz satırları tek bir tablo objesi haline getirip gönderiyoruz.
     tables = [perfect_rows]
 
-    # Hata ayıklama (Debug) için kaç analiz yakaladığımızı ekrana basıyoruz
-    print(f"  [HÜNİTEK] Akıllı okuma tamamlandı. {len(perfect_rows)-1} adet analiz çıkarıldı.")
+    print(f"  [HÜNİTEK] Kategori ve Tanım ayrımlı akıllı okuma tamamlandı. {len(perfect_rows)-1} adet analiz çıkarıldı.")
 
     return {
         "center_id": center["id"],
