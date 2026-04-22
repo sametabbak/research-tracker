@@ -298,9 +298,8 @@
     "university": "Hacettepe Üniversitesi",
     "city": "Ankara",
     "url": "https://hunitek.hacettepe.edu.tr/",
-    "pricing_url": "https://hunitek.hacettepe.edu.tr/hizmetbedelleri/",
-    "fetch_method": "html_then_pdf",
-    "pdf_link_pattern": "HIZMET-BEDELLERI",
+    "pricing_url": "https://hunitek.hacettepe.edu.tr/wp-content/uploads/2026/01/2026_hunitek_hizmet-bedelleri.pdf",
+    "fetch_method": "hacettepe_hunitek",
     "check_months": [
       12,
       1,
@@ -310,7 +309,6 @@
       7
     ],
     "active": true,
-    "reference": false,
-    "fallback_pdf_url": "https://hunitek.hacettepe.edu.tr/wp-content/uploads/2026/01/2026_hunitek_hizmet-bedelleri.pdf"
+    "reference": false
   }
 ]
