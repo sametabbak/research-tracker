@@ -3,7 +3,6 @@
     "Toz Kırınım Deseni (Toz Numune)",
     "Yüksek Sıcaklık Kırınım Deseni",
     "XRD Temel Kullanıcı Eğitimi",
-    "X-Işını Kırınım Difraktometresi",
     "1-XRD-Standart Patern İncelemesi",
     "2-XRD-Kalitatif Analiz",
     "3-XRD-Standart Patern İncelemesi - Kalitatif Analiz",
@@ -32,7 +31,6 @@
     "Biyolojik Dokulardan SEM İçin Numune Hazırlama Eğitimi***",
     "SEM Cihaz Kullanımı Eğitimi****",
     "Semi-Dry Blotlama",
-    "SEM (Taramalı Elektron Mikroskop)",
     "3-SEM Analizi (TL/Saat)",
     "4-SEM + EDX Analizi (TL/Saat)",
     "FE-SEM ile İnceleme",
@@ -51,6 +49,7 @@
     "SEM Görüntüleme + EDS Analizi",
     "FE-SEM Görüntüleme + EDS Analizi",
     "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
+    "EDS Enerji Dağıtıcı X-Işını Spektroskopisi) / CL Çalışması",
     "4-SEM + EDX Analizi (TL/Saat)",
     "EDS modu ile Element Tayini",
     "EDS modu ile Noktasal, Çizgisel ve Bölgesel Haritalama",
@@ -83,7 +82,8 @@
     "Jel Görüntüleme ve Dökümantasyon Sistemi Kullanımı (UV)**",
     "Jel Görüntüleme ve Dökümantasyon Sistemi Kullanımı (Kemilüminesans)**",
     "HPLC-Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
-    "Gönyemetre – Temas Açısı",
+    "Su Temas Açısı- Islanabilirlik",
+    "Elektroanalitik Yöntem Geliştirilmesi ve Validasyonu",
     "1-AFM Temas (Contact) Modu (TL/Saat)",
     "2-AFM Temassız (Non-Contact) Modu (TL/Saat)",
     "STEM ile uygun numunelerde karanlık alan görüntülemesi (düşük",
@@ -99,7 +99,6 @@
     "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Sucuk Formunda"
   ],
   "AFM": [
-    "AFM (Atomik Kuvvet Mikroskobu)",
     "1-AFM Temas (Contact) Modu (TL/Saat)",
     "2-AFM Temassız (Non-Contact) Modu (TL/Saat)",
     "3-Diğer AFM Modu (TL/Saat) (Bilgi alınız!)",
@@ -110,7 +109,9 @@
     "Tek noktalı BET Analizi",
     "Çok noktalı BET Analizi",
     "Çok noktalı BET Analizi + Gözenek Boyutu (N gaz 2 adsorbsiyonu)",
-    "BET Yüzey Alanı ve Gözeneklilik",
+    "Tek Noktalı BET Yüzey Alanı",
+    "20 Noktalı BET Yüzey Alanı",
+    "40 Noktalı BET Yüzey Alanı",
     "1-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (Tek Nokta)",
     "2-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (5 Nokta)",
     "3-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı + Gözenek Dağılımı",
@@ -130,14 +131,15 @@
     "TGA + DSC (1 – 3 saat)",
     "TGA + DSC (3 – 7 saat)",
     "TGA + DSC (7 – 15 saat)",
-    "TGA (Termogravimetrik Analiz)"
+    "25°C – 1000 °C arası Termal Gravimetrik Analiz +Simultane DSC",
+    "Termal Gravimetrik Analiz + Diferensiyal Termal Analiz"
   ],
   "DSC": [
     "TGA + Diferansiyel Taramalı Kalorimetri (DSC) (1 saat)",
     "TGA + DSC (1 – 3 saat)",
     "TGA + DSC (3 – 7 saat)",
     "TGA + DSC (7 – 15 saat)",
-    "DSC (Diferansiyel Taramalı Kalorimetri)",
+    "25°C – 1000 °C arası Termal Gravimetrik Analiz +Simultane DSC",
     "4-TG DSC Analizi 0-1 Saat (25 °C-1600 °C)",
     "5-TG DSC Analizi 1-3 Saat (25 °C-1600 °C)",
     "6-TG DSC Analizi 3-7 Saat (25 °C-1600 °C)",
@@ -153,7 +155,6 @@
   "FTIR": [
     "FT-IR Spektrumu",
     "FT-IR Spektrumu + Database Taraması",
-    "ATR-FTIR-NIR Spektroskopi",
     "FT-IR Analizleri  FT-IR / FT-FIR Spektrumu  FT-IR Karakterizasyon (Spektrum + Kütüphane)",
     "ATR – FTIR Spektrumu"
   ],
@@ -176,10 +177,6 @@
     "ICP-MS 1 Nadir Toprak Elementi Analizi*",
     "ICP-MS 2-10 Nadir Toprak Elementi Analizi*",
     "ICP-MS 11-18 Nadir Toprak Elementi Analizi*",
-    "Sıvı Kromatografisi - Kuadrupol Tandem Kütle Spektrometrisi (LC-MS/MS)",
-    "Gaz Kromatografisi-Kütle Spektrometrisi (GC-MS)",
-    "Yüksek Çözünürlüklü Kütle Spektrometrisi ve Sıvı Kromatografisi (LC-QTOF-MS)",
-    "Matriks-yardımlı Lazer Desorpsiyon/İyonlaştırmalı- Uçuş Zamanlı-Kütle Spektrometrisi (MALDI-TOF/TOF-MS)",
     "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)  Numune analizi 1-10 element için  İlave element analizi için  Mikrodalga Çözme İşlemi  Çoklu Asit İle Çözme İşlemi  Değerli Metaller 1-10 Element (Au, Pd, Pt, Ag, Rh vb.)"
   ],
   "ICP-OES": [
