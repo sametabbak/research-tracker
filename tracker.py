@@ -19,7 +19,7 @@ from diff_engine import diff, save_snapshot
 from notifier import notify, notify_manual, notify_error
 from json_exporter import export_center
 
-from fetchers import html_table, html_then_pdf, manual, taum, barum, cutam, bitam, daytam, ikcu_merlab, gazi_gutmam
+from fetchers import html_table, html_then_pdf, manual, taum, barum, cutam, bitam, daytam, ikcu_merlab, gazi_gutmam, hacettepe_hunitek
 
 FETCHERS = {
     "html_table":    html_table.fetch,
@@ -35,6 +35,7 @@ FETCHERS = {
     "daytam":        daytam.fetch,
     "ikcu_merlab":   ikcu_merlab.fetch,
     "gazi_gutmam":   gazi_gutmam.fetch,
+    "hacettepe_hunitek": hacettepe_hunitek.fetch,
 }
 
 CONFIG_PATH    = Path(__file__).parent / "config" / "centers.json"
