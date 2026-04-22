@@ -272,5 +272,24 @@
     ],
     "active": false,
     "reference": false
+  },
+  {
+    "id": "gazi_gutmam",
+    "name": "GÜTMAM",
+    "university": "Gazi Üniversitesi",
+    "city": "Ankara",
+    "url": "https://tmbil.gazi.edu.tr/",
+    "pricing_url": "https://tmbil.gazi.edu.tr/view/page/287476/analiz-listesi-ucretlendirme",
+    "fetch_method": "gazi_gutmam",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "active": true,
+    "reference": false
   }
 ]
