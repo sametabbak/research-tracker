@@ -96,18 +96,6 @@
     "last_updated": "2026-04-22"
   },
   {
-    "id": "ikcu_merlab",
-    "name": "İKCÜ MERLAB",
-    "university": "İzmir Katip Çelebi Üniversitesi",
-    "city": "İzmir",
-    "url": "https://merkeziarastirmalab.ikcu.edu.tr",
-    "pricing_url": "https://merkeziarastirmalab.ikcu.edu.tr/S/15286/ucretlendirme",
-    "active": true,
-    "reference": false,
-    "analysis_count": 0,
-    "last_updated": null
-  },
-  {
     "id": "gazi_gutmam",
     "name": "GÜTMAM",
     "university": "Gazi Üniversitesi",
@@ -116,7 +104,7 @@
     "pricing_url": "https://tmbil.gazi.edu.tr/view/page/287476/analiz-listesi-ucretlendirme",
     "active": true,
     "reference": false,
-    "analysis_count": 18,
+    "analysis_count": 22,
     "last_updated": "2026-04-22"
   }
 ]
