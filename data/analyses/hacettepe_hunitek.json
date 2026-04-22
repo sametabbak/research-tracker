@@ -134,6 +134,14 @@
       "notes": ""
     },
     {
+      "name": "Mikro CT (Mikro Tomografi)",
+      "category": "Mikro CT (Mikro Tomografi)",
+      "price": 3.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
       "name": "Konfokal/Multifoton Mikroskop",
       "category": "Konfokal/Multifoton Mikroskop",
       "price": 1560.0,
