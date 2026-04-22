@@ -300,6 +300,7 @@
     "url": "https://hunitek.hacettepe.edu.tr/",
     "pricing_url": "https://hunitek.hacettepe.edu.tr/hizmetbedelleri/",
     "fetch_method": "html_then_pdf",
+    "pdf_link_pattern": "HIZMET-BEDELLERI",
     "check_months": [
       12,
       1,
@@ -310,6 +311,6 @@
     ],
     "active": true,
     "reference": false,
-    "pdf_link_pattern": "HIZMET-BEDELLERI"
+    "fallback_pdf_url": "https://hunitek.hacettepe.edu.tr/wp-content/uploads/2026/01/2026_hunitek_hizmet-bedelleri.pdf"
   }
 ]
