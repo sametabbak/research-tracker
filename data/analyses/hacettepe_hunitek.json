@@ -1,0 +1,17 @@
+{
+  "center_id": "hacettepe_hunitek",
+  "center_name": "HÜNİTEK",
+  "last_updated": "2026-04-22",
+  "source_url": "https://hunitek.hacettepe.edu.tr/wp-content/uploads/2026/01/2026_hunitek_hizmet-bedelleri.pdf",
+  "kdv_note": "Fiyatlara KDV dahil değildir.",
+  "analyses": [
+    {
+      "name": "3-Boyutlu Yazıcı",
+      "category": "",
+      "price": 3.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    }
+  ]
+}
