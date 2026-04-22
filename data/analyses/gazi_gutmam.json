@@ -15,40 +15,8 @@
     },
     {
       "name": "1 H (Proton)",
-      "category": "NMR",
+      "category": "Grid Kullanımı",
       "price": 700.0,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": ""
-    },
-    {
-      "name": "13C (Karbon) – 3 saat / 13C APT – 3 saat / 13C DEPT (45,90,135)",
-      "category": "NMR",
-      "price": 900.0,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": ""
-    },
-    {
-      "name": "13C (Karbon) Spektrumuna ek her saat",
-      "category": "NMR",
-      "price": 200.0,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": ""
-    },
-    {
-      "name": "COSY / HETCOR / HMBC / HMQC / NOESY / NOESY (Metabolomik için) / Diğer 2D Analizler",
-      "category": "NMR",
-      "price": 1000.0,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": ""
-    },
-    {
-      "name": "31P / 19F",
-      "category": "NMR",
-      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": ""
