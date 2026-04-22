@@ -106,5 +106,17 @@
     "reference": false,
     "analysis_count": 22,
     "last_updated": "2026-04-22"
+  },
+  {
+    "id": "hacettepe_hunitek",
+    "name": "HÜNİTEK",
+    "university": "Hacettepe Üniversitesi",
+    "city": "Ankara",
+    "url": "https://hunitek.hacettepe.edu.tr/",
+    "pricing_url": "https://hunitek.hacettepe.edu.tr/hizmetbedelleri/",
+    "active": true,
+    "reference": false,
+    "analysis_count": 1,
+    "last_updated": "2026-04-22"
   }
 ]

@@ -194,7 +194,8 @@
     "ROESY",
     "NOESY NMR Analizi",
     "1-Optik Emisyon Spektrometresi (OES)",
-    "Nükleer Manyetik Rezonans Spektrometresi (NMR)  1H (Proton) Spektrumu (Numune min. 20 mg)  D2O Değişimi  13C (Karbon)(Coupled, Decoupled) (Numune min. 50 mg)  1 D Spektrum: APT / DEPT (45, 90, 135)  2 D Spektrum: COSY/ NOESY/ HETCOR/ HMBC/ HMQC, 31P (Fosfor)  Çözücü (D2O, CHCI3)  Çözücü (DMSO, CD3OD)"
+    "Nükleer Manyetik Rezonans Spektrometresi (NMR)  1H (Proton) Spektrumu (Numune min. 20 mg)  D2O Değişimi  13C (Karbon)(Coupled, Decoupled) (Numune min. 50 mg)  1 D Spektrum: APT / DEPT (45, 90, 135)  2 D Spektrum: COSY/ NOESY/ HETCOR/ HMBC/ HMQC, 31P (Fosfor)  Çözücü (D2O, CHCI3)  Çözücü (DMSO, CD3OD)",
+    "COSY / HETCOR / HMBC / HMQC / NOESY / NOESY (Metabolomik için) / Diğer 2D Analizler"
   ],
   "Eleman Analizi": [
     "Elementel Analiz",
