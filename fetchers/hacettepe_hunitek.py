@@ -1,6 +1,6 @@
 """
-Fetcher: HUNITEK
-Açıklama: Hacettepe Üniversitesi HÜNİTEK PDF Fiyat Listesi Çekici
+Fetcher: HACETTEPE_HUNITEK
+Açıklama: Hacettepe Üniversitesi HÜNİTEK PDF Fiyat Listesi Çekici (Gelişmiş Tablo Okuma)
 """
 
 import io
@@ -9,7 +9,6 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-# PDF içindeki tabloları okumak için gerekli kütüphane
 try:
     import pdfplumber
 except ImportError:
@@ -31,89 +30,92 @@ TIMEOUT = 25
 def _get_with_retry(url: str, is_pdf=False):
     session = requests.Session()
     session.headers.update(HEADERS)
-    last_exc = None
     
-    # SSL hatalarını es geçmek için verify=False kullanıyoruz
+    # Üniversite sitelerindeki SSL uyarılarını kapatıyoruz
     import urllib3
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     
+    last_exc = None
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             resp = session.get(url, timeout=TIMEOUT, allow_redirects=True, verify=False)
             resp.raise_for_status()
-            
-            # Eğer indirilen şey PDF ise raw content (byte) döndür
             if is_pdf:
                 return resp.content
-                
-            # HTML ise text döndür
             resp.encoding = resp.apparent_encoding or "utf-8"
             return resp.text
         except requests.RequestException as exc:
             last_exc = exc
             if attempt < MAX_RETRIES:
-                wait = RETRY_BACKOFF ** attempt
-                print(f"  Attempt {attempt} failed ({exc}), retrying in {wait}s...")
-                time.sleep(wait)
+                time.sleep(RETRY_BACKOFF ** attempt)
     raise last_exc
 
 def fetch(center: dict) -> dict:
     if pdfplumber is None:
-        raise ImportError("⚠️ HATA: Bu fetcher'ı çalıştırmak için terminale 'pip install pdfplumber' yazarak PDF kütüphanesini kurmalısınız.")
+        raise ImportError("⚠️ HATA: 'pip install pdfplumber' kurmanız gerekli.")
 
-    # 1. Ana sayfaya gidip güncel PDF linkini bulalım (Yıl/Ay değişse bile çalışması için)
     main_url = center.get("url", "https://hunitek.hacettepe.edu.tr/")
-    
-    # 2. Verdiğin direkt linki varsayılan (yedek) olarak belirleyelim
     pdf_url = "https://hunitek.hacettepe.edu.tr/wp-content/uploads/2026/01/2026_hunitek_hizmet-bedelleri.pdf"
     
     try:
         html = _get_with_retry(main_url)
         soup = BeautifulSoup(html, "html.parser")
-        
-        # Sayfadaki tüm linkleri tara ve hizmet bedelleri PDF'ini dinamik olarak bul
         for a_tag in soup.find_all("a", href=True):
             href = a_tag["href"]
             if ".pdf" in href.lower() and "hizmet-bedelleri" in href.lower():
-                pdf_url = href
-                if not pdf_url.startswith("http"):
-                    pdf_url = urljoin(main_url, pdf_url)
-                print(f"  [HÜNİTEK] Sitede güncel PDF bulundu: {pdf_url}")
+                pdf_url = href if href.startswith("http") else urljoin(main_url, href)
                 break
-    except Exception as e:
-        print(f"  [HÜNİTEK] Ana sayfa taraması başarısız ({e}), yedek (doğrudan) PDF linki kullanılıyor.")
+    except:
+        pass
 
-    # 3. PDF'i byte olarak indir
     pdf_content = _get_with_retry(pdf_url, is_pdf=True)
     
-    tables = []
+    # json_exporter'ın tablo başlıklarını otomatik algılaması için mükemmel bir 0. satır (Header) koyuyoruz.
+    perfect_rows = [["İşlem Türü", "Ücret"]] 
     raw_text = ""
     
-    # 4. PDF'i analiz et ve tabloları çıkar
     with pdfplumber.open(io.BytesIO(pdf_content)) as pdf:
         for page in pdf.pages:
-            # Yedek amaçlı ham metni (raw text) çıkar
             text = page.extract_text()
             if text:
                 raw_text += text + "\n"
             
-            # Tabloları çıkar (pdfplumber bu konuda çok başarılıdır)
             extracted_tables = page.extract_tables()
             for table in extracted_tables:
-                clean_table = []
                 for row in table:
-                    # Hücrelerdeki 'None' değerleri boş stringe çevir ve satır arası boşlukları (enter) temizle
+                    # Hücrelerdeki enter boşluklarını temizle
                     clean_row = [str(cell).strip().replace("\n", " ") if cell else "" for cell in row]
                     
-                    # Eğer satır tamamen boş değilse dahil et
-                    if any(clean_row):
-                        clean_table.append(clean_row)
-                
-                # Tabloda en az 1 satır veri varsa listeye ekle
-                if len(clean_table) > 1:
-                    tables.append(clean_table)
-    
-    print(f"  [HÜNİTEK] PDF içinden {len(tables)} adet tablo başarıyla ayıklandı.")
+                    if not any(clean_row):
+                        continue
+                    
+                    # 1. Fiyat hücresini bul: İçinde "TL" kelimesi geçen ve rakam barındıran ilk hücre
+                    price_col_idx = -1
+                    for i, cell in enumerate(clean_row):
+                        if "TL" in cell.upper() and any(c.isdigit() for c in cell):
+                            price_col_idx = i
+                            break
+                    
+                    # Eğer fiyat kolonunu bulduysak
+                    if price_col_idx > 0:
+                        # Fiyatın solunda kalan bütün hücreleri birleştirip isim yap (bölünmüş sütunları onarır)
+                        name = " ".join(clean_row[:price_col_idx]).strip()
+                        price = clean_row[price_col_idx]
+                        if len(name) > 3:
+                            perfect_rows.append([name, price])
+                            
+                    # Yedek Plan: "TL" kelimesi yoksa bile, en az 2 hücre varsa ve son hücre sayılardan oluşuyorsa
+                    elif len(clean_row) >= 2:
+                        name = " ".join(clean_row[:-1]).strip()
+                        price = clean_row[-1]
+                        if any(c.isdigit() for c in price) and len(name) > 3 and not name.lower().startswith("analiz"):
+                            perfect_rows.append([name, price])
+
+    # Ayıklanan kusursuz satırları tek bir tablo objesi haline getirip gönderiyoruz.
+    tables = [perfect_rows]
+
+    # Hata ayıklama (Debug) için kaç analiz yakaladığımızı ekrana basıyoruz
+    print(f"  [HÜNİTEK] Akıllı okuma tamamlandı. {len(perfect_rows)-1} adet analiz çıkarıldı.")
 
     return {
         "center_id": center["id"],
