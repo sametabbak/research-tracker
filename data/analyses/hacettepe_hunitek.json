@@ -134,14 +134,6 @@
       "notes": ""
     },
     {
-      "name": "Mikro CT (Mikro Tomografi)",
-      "category": "Mikro CT (Mikro Tomografi)",
-      "price": 3.0,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": ""
-    },
-    {
       "name": "Konfokal/Multifoton Mikroskop",
       "category": "Konfokal/Multifoton Mikroskop",
       "price": 1560.0,
@@ -376,6 +368,14 @@
     {
       "name": "Yüksek Çözünürlüklü Kütle Spektrometrisi ve Sıvı Kromatografisi (LC-QTOF-MS)",
       "category": "Yüksek Çözünürlüklü Kütle Spektrometrisi ve Sıvı Kromatografisi (LC-QTOF-MS)",
+      "price": 9000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Yüksek Çözünürlüklü Kütle Spektrometrisi ve Sıvı Kromatografisi (LC-QTOF-MS)",
+      "category": "Yüksek Çözünürlüklü Kütle Spektrometrisi ve Sıvı Kromatografisi (LC-QTOF-MS)",
       "price": 11400.0,
       "currency": "TRY",
       "unit": "numune",
@@ -385,6 +385,14 @@
       "name": "Matriks-yardımlı Lazer Desorpsiyon/İyonlaştırmalı- Uçuş Zamanlı-Kütle Spektrometrisi (MALDI-TOF/TOF-MS)",
       "category": "Matriks-yardımlı Lazer Desorpsiyon/İyonlaştırmalı- Uçuş Zamanlı-Kütle Spektrometrisi (MALDI-TOF/TOF-MS)",
       "price": 4350.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Matriks-yardımlı Lazer Desorpsiyon/İyonlaştırmalı- Uçuş Zamanlı-Kütle Spektrometrisi (MALDI-TOF/TOF-MS)",
+      "category": "Matriks-yardımlı Lazer Desorpsiyon/İyonlaştırmalı- Uçuş Zamanlı-Kütle Spektrometrisi (MALDI-TOF/TOF-MS)",
+      "price": 6000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": ""
