@@ -7,7 +7,7 @@
     "url": "https://tuam.aku.edu.tr",
     "pricing_url": "https://tuam.aku.edu.tr/analiz-ucretleri/",
     "active": true,
-    "reference": true,
+    "reference": false,
     "analysis_count": 40,
     "last_updated": "2026-04-22"
   },
