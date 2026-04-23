@@ -1,0 +1,769 @@
+{
+  "center_id": "gaun_ulutem",
+  "center_name": "GAÜN ULUTEM",
+  "last_updated": "2026-04-23",
+  "source_url": "https://ulutem.gaziantep.edu.tr/pages.php?url=ulutem-analiz-ucretleri-ve-formlar-61",
+  "kdv_note": "Fiyatlara KDV dahil değildir.",
+  "analyses": [
+    {
+      "name": "FE-SEM Görüntü Alma",
+      "category": "Elektron Mikroskopi  Laboratuvarı",
+      "price": 3600.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "FE-SEM EDS Mapping Analiz",
+      "category": "Elektron Mikroskopi  Laboratuvarı",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "FE-SEM EDS Noktasal Analiz",
+      "category": "Elektron Mikroskopi  Laboratuvarı",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Asbest Analizi",
+      "category": "Elektron Mikroskopi  Laboratuvarı",
+      "price": 7200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "SEM Görüntü Alma (Maksimum 4 numune ) **çapı 10mm den büyük numuneler için maximun numune sayısı değişir.",
+      "category": "Elektron Mikroskopi  Laboratuvarı",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "SEM Noktasal-EDX Analiz",
+      "category": "Elektron Mikroskopi  Laboratuvarı",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "SEM Mapping-EDX Analiz",
+      "category": "Elektron Mikroskopi  Laboratuvarı",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Au/Pd/C Kaplama (7 taneye kadar) *7 Tane numune 10 mm çapındaki numuneler için geçerlidir. **Çapı 10 mm büyük numuneler için haznenin aldığı kadar numune konur ve set olarak değerlendirilir.",
+      "category": "Elektron Mikroskopi  Laboratuvarı",
+      "price": 900.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Numune Hazırlık (Kesme, Zımparalama,Parlatma)",
+      "category": "Elektron Mikroskopi  Laboratuvarı",
+      "price": 200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Bakalite ve/veya epoksi kaplama",
+      "category": "Elektron Mikroskopi  Laboratuvarı",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "3 nokta Eğme (Oda Sıcaklığı)",
+      "category": "Mekanik Test Laboratuvarı",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "İplik Kopma Kuvveti ve Uzama",
+      "category": "Mekanik Test Laboratuvarı",
+      "price": 900.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Sertlik Ölçümü (5 İz Ortalaması)",
+      "category": "Mekanik Test Laboratuvarı",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Aşınma Analizi",
+      "category": "Mekanik Test Laboratuvarı",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Yüksek Sıcaklık Altında Aşınma Analizi (500 o C ' ye kadar)",
+      "category": "Mekanik Test Laboratuvarı",
+      "price": 2000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Brinell sertlik ölçümü, Vickers sertlik ölçümü, Rockwell sertlik ölçümü",
+      "category": "Mekanik Test Laboratuvarı",
+      "price": 2000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Çekme Analizi",
+      "category": "Mekanik Test Laboratuvarı",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Özgül Ağırlık Analizi",
+      "category": "Genel Analizler",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Tane Boyut Analizi - Elek Analizi",
+      "category": "Genel Analizler",
+      "price": 2500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Fiziksel Öğütme",
+      "category": "Genel Analizler",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Spektrum Taraması",
+      "category": "Raman Spektroskopi Laboratuvarı",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "3B Haritalama",
+      "category": "Raman Spektroskopi Laboratuvarı",
+      "price": 800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Derinlik Profili",
+      "category": "Raman Spektroskopi Laboratuvarı",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Görüntü Alma",
+      "category": "Raman Spektroskopi Laboratuvarı",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "ATR Tekniği ile Spektrum Taraması",
+      "category": "Moleküler Spektroskopi Laboratuvarı",
+      "price": 300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Karşılaştırma (İki numune için)",
+      "category": "Moleküler Spektroskopi Laboratuvarı",
+      "price": 550.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kütüphane Taraması",
+      "category": "Moleküler Spektroskopi Laboratuvarı",
+      "price": 350.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Böbrek Taşı Analizi",
+      "category": "Moleküler Spektroskopi Laboratuvarı",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Spektrum Taraması",
+      "category": "Moleküler Spektroskopi Laboratuvarı",
+      "price": 300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Fotometrik Analiz",
+      "category": "Moleküler Spektroskopi Laboratuvarı",
+      "price": 300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kantitatif analiz ( 190-3300 cm -1 )",
+      "category": "Moleküler Spektroskopi Laboratuvarı",
+      "price": 550.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "NIR Analizi",
+      "category": "Moleküler Spektroskopi Laboratuvarı",
+      "price": 550.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Film Kalınlığı",
+      "category": "Moleküler Spektroskopi Laboratuvarı",
+      "price": 300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Renk Tayini",
+      "category": "Moleküler Spektroskopi Laboratuvarı",
+      "price": 300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Numune Hazırlık",
+      "category": "Moleküler Spektroskopi Laboratuvarı",
+      "price": 300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Element Başına AAS-ALEV",
+      "category": "Elementel Spektroskopi Laboratuvarı",
+      "price": 350.0,
+      "currency": "TRY",
+      "unit": "element",
+      "notes": ""
+    },
+    {
+      "name": "Numune Başına ICP-MS 24'lü Mix (Ag,Al,B,Ba,Bi,Ca,Cd, Cr,Co,Cu, Fe,Ga,In,K,Li) (Mg,Mn,Na,Ni,Pb,Sr,Tl,Zn)",
+      "category": "Elementel Spektroskopi Laboratuvarı",
+      "price": 1350.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Katı Numune Hazırlık (Mikrodalga Çözümlendirme)",
+      "category": "Elementel Spektroskopi Laboratuvarı",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Klasik Numune Hazırlık (Sıvı Ortamında Asidik/Bazik Çözümlendirme)",
+      "category": "Elementel Spektroskopi Laboratuvarı",
+      "price": 350.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Eritiş Yöntemi ile Numune Hazırlık (Fırın - Asidik/Bazik)",
+      "category": "Elementel Spektroskopi Laboratuvarı",
+      "price": 550.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Fiziksel Numune Hazırlık",
+      "category": "Elementel Spektroskopi Laboratuvarı",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "XRF Elementel Analiz",
+      "category": "Elementel Spektroskopi Laboratuvarı",
+      "price": 1750.0,
+      "currency": "TRY",
+      "unit": "element",
+      "notes": ""
+    },
+    {
+      "name": "Kalitatif (Kütüphane Taraması)",
+      "category": "Gaz Kromatografi Laboratuvarı",
+      "price": 1300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kantitatif (Tek Bileşen)",
+      "category": "Gaz Kromatografi Laboratuvarı",
+      "price": 1600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Headspace Kalitatif (Kütüphane Taraması)",
+      "category": "Gaz Kromatografi Laboratuvarı",
+      "price": 2300.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Headspace Kantitatif (Tek Bileşen)",
+      "category": "Gaz Kromatografi Laboratuvarı",
+      "price": 3250.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "İlave Bileşen Başına",
+      "category": "Gaz Kromatografi Laboratuvarı",
+      "price": 450.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Numune Hazırlık (Biyolojik numuneler hariç)",
+      "category": "Gaz Kromatografi Laboratuvarı",
+      "price": 350.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "SPME Analizi",
+      "category": "Gaz Kromatografi Laboratuvarı",
+      "price": 3250.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kalitatif (Kütüphane Taraması)",
+      "category": "Gaz Kromatografi Laboratuvarı",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kantitatif (Tek Bileşen)",
+      "category": "Gaz Kromatografi Laboratuvarı",
+      "price": 1200.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kalitatif (Tek Bileşen)",
+      "category": "LC/MS-MS Laboratuvarı",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "İlave Bileşen Başına",
+      "category": "LC/MS-MS Laboratuvarı",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Vitamin Analizi (1 Numunede Vitamin Çeşidi Başına)",
+      "category": "LC/MS-MS Laboratuvarı",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Numune Hazırlık (Biyolojik numuneler hariç)",
+      "category": "LC/MS-MS Laboratuvarı",
+      "price": 350.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kantitatif (Tek Bileşen)",
+      "category": "Sıvı Kromatografi Laboratuvarı",
+      "price": 1100.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "İlave Bileşen Başına",
+      "category": "Sıvı Kromatografi Laboratuvarı",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "HMF Analizi (Kantitatif)",
+      "category": "Sıvı Kromatografi Laboratuvarı",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Şeker Analizi (Kantitatif) (1 Numunede Şeker Çeşidi Başına)",
+      "category": "Sıvı Kromatografi Laboratuvarı",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Toplam Şeker Analizi (Sakkaroz, Maltoz, Glikoz, Laktoz, Fruktoz) (5 Şeker için)",
+      "category": "Sıvı Kromatografi Laboratuvarı",
+      "price": 2800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Organik Asit Analizi (Kantitatif)",
+      "category": "Sıvı Kromatografi Laboratuvarı",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Toplam Organik Asit Analizi (Oxalic Acid, Citric Acid, Tartaric Acid, Maleic Acid, Malic Acid, Succinic Acid, Lactic Acid, Formic Acid, Acetic Acid, Butric Acid) (10 Asit için)",
+      "category": "Sıvı Kromatografi Laboratuvarı",
+      "price": 5600.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Aflatoksin Analizi (B1,B2,G1,G2)",
+      "category": "Sıvı Kromatografi Laboratuvarı",
+      "price": 2800.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Hassas Terazi",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 510.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "pHmetre/ İletkenlik ölçer",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Nem Tayin Cihazı",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 350.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Dijital Viskozimetre",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Etüv (Fanlı)",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 250.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Mikrodalga Yakma Fırını",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kül Fırını",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Rotary Evaporatör (maksimum 400 mL)",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Ultrasonik Banyo",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 100.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Çalkalamalı Su Banyosu",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 500.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Soğutmalı Çalkalamalı İnkübatör",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 200.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Soğutmalı Santrifüj",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Yağ Tayin Cihazı",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Manyetik Karıştırıcılı Isıtıcı",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 150.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Kül Tayini - Dolgulu polimerler, polimerler, inorganik maddeler ve fosil yakıtlar için",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Nem tayini (Etüv ile)",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Yoğunluk Ölçümü",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Raporlama",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 5000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Protein Analizi",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 3400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Volumetrik Titrasyon (EDTA, İyodimetrik, Tiyosülfat)",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 1000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "İngilizce Raporlama",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 7000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kalitatif Testler (Kurum içi Test Metodu)",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Toplam Fenolik Madde Tayini",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Kalori Ölçümü",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 3400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Katı Madde Tayini",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 750.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Saf Su (Litre Olarak Verilecektir)",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 21.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Ölçüm Belirsizliği ve Metod Validesyonu Uygulamalı Eğitimi (16 Saat)",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 5000.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": "Stabilite",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 1500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Fitalat",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 2000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Yakıtlarda Kalori Ölçümü",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 3400.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Yanmazlık",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 2500.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    },
+    {
+      "name": "Yanmazlık Testi (UL-94)",
+      "category": "Kimyasal Analiz Laboratuvarı",
+      "price": 5000.0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": ""
+    }
+  ]
+}

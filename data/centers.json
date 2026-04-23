@@ -108,27 +108,15 @@
     "last_updated": "2026-04-23"
   },
   {
-    "id": "iuc_merlab",
-    "name": "İÜC MERLAB",
-    "university": "İstanbul Üniversitesi-Cerrahpaşa",
-    "city": "İstanbul",
-    "url": "https://merlab.iuc.edu.tr/tr/_",
-    "pricing_url": "https://merlab.iuc.edu.tr/tr/content/analiz-fiyat-listesi/analiz-fiyat-listesi",
-    "active": false,
+    "id": "gaun_ulutem",
+    "name": "GAÜN ULUTEM",
+    "university": "Gaziantep Üniversitesi",
+    "city": "Gaziantep",
+    "url": "https://ulutem.gaziantep.edu.tr/index.php",
+    "pricing_url": "https://ulutem.gaziantep.edu.tr/pages.php?url=ulutem-analiz-ucretleri-ve-formlar-61",
+    "active": true,
     "reference": false,
-    "analysis_count": 0,
+    "analysis_count": 95,
     "last_updated": "2026-04-23"
-  },
-  {
-    "id": "kastamonu_merlab",
-    "name": "Kastamonu MERLAB",
-    "university": "Kastamonu Üniversitesi",
-    "city": "Kastamonu",
-    "url": "https://merlab.kastamonu.edu.tr/",
-    "pricing_url": "https://merlab.kastamonu.edu.tr/index.php/analiz-ve-basvuru/analiz-uecretleri",
-    "active": false,
-    "reference": false,
-    "analysis_count": 0,
-    "last_updated": null
   }
 ]

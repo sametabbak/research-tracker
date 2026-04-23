@@ -1,0 +1,556 @@
+{
+  "center_id": "gaun_ulutem",
+  "url": "https://ulutem.gaziantep.edu.tr/pages.php?url=ulutem-analiz-ucretleri-ve-formlar-61",
+  "tables": [
+    [
+      [
+        "Kategori",
+        "Analiz Adı",
+        "Fiyat"
+      ],
+      [
+        "Elektron Mikroskopi  Laboratuvarı",
+        "FE-SEM Görüntü Alma",
+        "3600 TL / saat"
+      ],
+      [
+        "Elektron Mikroskopi  Laboratuvarı",
+        "FE-SEM EDS Mapping Analiz",
+        "1000 TL / adet"
+      ],
+      [
+        "Elektron Mikroskopi  Laboratuvarı",
+        "FE-SEM EDS Noktasal Analiz",
+        "800 TL / adet"
+      ],
+      [
+        "Elektron Mikroskopi  Laboratuvarı",
+        "Asbest Analizi",
+        "7200 TL / adet"
+      ],
+      [
+        "Elektron Mikroskopi  Laboratuvarı",
+        "SEM Görüntü Alma (Maksimum 4 numune ) **çapı 10mm den büyük numuneler için maximun numune sayısı değişir.",
+        "1500 TL / saat"
+      ],
+      [
+        "Elektron Mikroskopi  Laboratuvarı",
+        "SEM Noktasal-EDX Analiz",
+        "800 TL / adet"
+      ],
+      [
+        "Elektron Mikroskopi  Laboratuvarı",
+        "SEM Mapping-EDX Analiz",
+        "1000 TL / adet"
+      ],
+      [
+        "Elektron Mikroskopi  Laboratuvarı",
+        "Au/Pd/C Kaplama (7 taneye kadar) *7 Tane numune 10 mm çapındaki numuneler için geçerlidir. **Çapı 10 mm büyük numuneler için haznenin aldığı kadar numune konur ve set olarak değerlendirilir.",
+        "900 TL / set"
+      ],
+      [
+        "Elektron Mikroskopi  Laboratuvarı",
+        "Numune Hazırlık (Kesme, Zımparalama,Parlatma)",
+        "200 TL / adet"
+      ],
+      [
+        "Elektron Mikroskopi  Laboratuvarı",
+        "Bakalite ve/veya epoksi kaplama",
+        "500 TL / adet"
+      ],
+      [
+        "Elektron Mikroskopi  Laboratuvarı",
+        "Elektron Mikroskopi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim Belirtilen fiyatlar cihaz kullanım bedelleridir. ( İndirimler birleştirilmemektedir.)",
+        "Elektron Mikroskopi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim Belirtilen fiyatlar cihaz kullanım bedelleridir. ( İndirimler birleştirilmemektedir.)"
+      ],
+      [
+        "Tersine Mühendislik ve Hızlı Prototipleme Laboratuvarı",
+        "*** 3D yazıcı ile yapılacak işlemler için 0342 317 29 61 numaralı telefondan fiyat bilgisi alabilirsiniz.",
+        "*** 3D yazıcı ile yapılacak işlemler için 0342 317 29 61 numaralı telefondan fiyat bilgisi alabilirsiniz."
+      ],
+      [
+        "Mekanik Test Laboratuvarı",
+        "3 nokta Eğme (Oda Sıcaklığı)",
+        "1000 TL / adet"
+      ],
+      [
+        "Mekanik Test Laboratuvarı",
+        "İplik Kopma Kuvveti ve Uzama",
+        "900 TL / adet"
+      ],
+      [
+        "Mekanik Test Laboratuvarı",
+        "Sertlik Ölçümü (5 İz Ortalaması)",
+        "500 TL / adet"
+      ],
+      [
+        "Mekanik Test Laboratuvarı",
+        "Aşınma Analizi",
+        "1200 TL / adet"
+      ],
+      [
+        "Mekanik Test Laboratuvarı",
+        "Yüksek Sıcaklık Altında Aşınma Analizi (500 o C ' ye kadar)",
+        "2000 TL / adet"
+      ],
+      [
+        "Mekanik Test Laboratuvarı",
+        "Brinell sertlik ölçümü, Vickers sertlik ölçümü, Rockwell sertlik ölçümü",
+        "2000 TL / adet"
+      ],
+      [
+        "Mekanik Test Laboratuvarı",
+        "Çekme Analizi",
+        "1000 TL / adet"
+      ],
+      [
+        "Genel Analizler",
+        "Özgül Ağırlık Analizi",
+        "500 TL / adet"
+      ],
+      [
+        "Genel Analizler",
+        "Tane Boyut Analizi - Elek Analizi",
+        "2500 TL / adet"
+      ],
+      [
+        "Genel Analizler",
+        "Fiziksel Öğütme",
+        "500 TL / adet"
+      ],
+      [
+        "Raman Spektroskopi Laboratuvarı",
+        "Spektrum Taraması",
+        "500 TL / adet"
+      ],
+      [
+        "Raman Spektroskopi Laboratuvarı",
+        "3B Haritalama",
+        "800 TL / adet"
+      ],
+      [
+        "Raman Spektroskopi Laboratuvarı",
+        "Derinlik Profili",
+        "750 TL / adet"
+      ],
+      [
+        "Raman Spektroskopi Laboratuvarı",
+        "Görüntü Alma",
+        "500 TL / adet"
+      ],
+      [
+        "Raman Spektroskopi Laboratuvarı",
+        "Raman Spektroskopi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim Belirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı standart malzemelerin temini araştırıcıya aittir.",
+        "Raman Spektroskopi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim Belirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı standart malzemelerin temini araştırıcıya aittir."
+      ],
+      [
+        "Moleküler Spektroskopi Laboratuvarı",
+        "ATR Tekniği ile Spektrum Taraması",
+        "300 TL / adet"
+      ],
+      [
+        "Moleküler Spektroskopi Laboratuvarı",
+        "Karşılaştırma (İki numune için)",
+        "550 TL / adet"
+      ],
+      [
+        "Moleküler Spektroskopi Laboratuvarı",
+        "Kütüphane Taraması",
+        "350 TL / adet"
+      ],
+      [
+        "Moleküler Spektroskopi Laboratuvarı",
+        "Böbrek Taşı Analizi",
+        "1000 TL / adet"
+      ],
+      [
+        "Moleküler Spektroskopi Laboratuvarı",
+        "Spektrum Taraması",
+        "300 TL / adet"
+      ],
+      [
+        "Moleküler Spektroskopi Laboratuvarı",
+        "Fotometrik Analiz",
+        "300 TL / adet"
+      ],
+      [
+        "Moleküler Spektroskopi Laboratuvarı",
+        "Kantitatif analiz ( 190-3300 cm -1 )",
+        "550 TL / adet"
+      ],
+      [
+        "Moleküler Spektroskopi Laboratuvarı",
+        "NIR Analizi",
+        "550 TL / adet"
+      ],
+      [
+        "Moleküler Spektroskopi Laboratuvarı",
+        "Film Kalınlığı",
+        "300 TL / adet"
+      ],
+      [
+        "Moleküler Spektroskopi Laboratuvarı",
+        "Renk Tayini",
+        "300 TL / adet"
+      ],
+      [
+        "Moleküler Spektroskopi Laboratuvarı",
+        "Numune Hazırlık",
+        "300 TL / adet"
+      ],
+      [
+        "Moleküler Spektroskopi Laboratuvarı",
+        "Moleküler Spektroskopi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim Belirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı standart malzemelerin temini araştırıcıya aittir.",
+        "Moleküler Spektroskopi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim Belirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı standart malzemelerin temini araştırıcıya aittir."
+      ],
+      [
+        "Elementel Spektroskopi Laboratuvarı",
+        "Element Başına AAS-ALEV",
+        "350 TL / adet"
+      ],
+      [
+        "Elementel Spektroskopi Laboratuvarı",
+        "Numune Başına ICP-MS 24'lü Mix (Ag,Al,B,Ba,Bi,Ca,Cd, Cr,Co,Cu, Fe,Ga,In,K,Li) (Mg,Mn,Na,Ni,Pb,Sr,Tl,Zn)",
+        "1350 TL / adet"
+      ],
+      [
+        "Elementel Spektroskopi Laboratuvarı",
+        "Katı Numune Hazırlık (Mikrodalga Çözümlendirme)",
+        "500 TL / adet"
+      ],
+      [
+        "Elementel Spektroskopi Laboratuvarı",
+        "Klasik Numune Hazırlık (Sıvı Ortamında Asidik/Bazik Çözümlendirme)",
+        "350 TL / adet"
+      ],
+      [
+        "Elementel Spektroskopi Laboratuvarı",
+        "Eritiş Yöntemi ile Numune Hazırlık (Fırın - Asidik/Bazik)",
+        "550 TL / adet"
+      ],
+      [
+        "Elementel Spektroskopi Laboratuvarı",
+        "Fiziksel Numune Hazırlık",
+        "500 TL / adet"
+      ],
+      [
+        "Elementel Spektroskopi Laboratuvarı",
+        "XRF Elementel Analiz",
+        "1750 TL/ adet"
+      ],
+      [
+        "Gaz Kromatografi Laboratuvarı",
+        "Kalitatif (Kütüphane Taraması)",
+        "1300 TL / adet"
+      ],
+      [
+        "Gaz Kromatografi Laboratuvarı",
+        "Kantitatif (Tek Bileşen)",
+        "1600 TL / adet + STD"
+      ],
+      [
+        "Gaz Kromatografi Laboratuvarı",
+        "Headspace Kalitatif (Kütüphane Taraması)",
+        "2300 TL / adet"
+      ],
+      [
+        "Gaz Kromatografi Laboratuvarı",
+        "Headspace Kantitatif (Tek Bileşen)",
+        "3250 TL / adet"
+      ],
+      [
+        "Gaz Kromatografi Laboratuvarı",
+        "İlave Bileşen Başına",
+        "450 TL / adet"
+      ],
+      [
+        "Gaz Kromatografi Laboratuvarı",
+        "Numune Hazırlık (Biyolojik numuneler hariç)",
+        "350 TL / adet"
+      ],
+      [
+        "Gaz Kromatografi Laboratuvarı",
+        "SPME Analizi",
+        "3250 TL / adet"
+      ],
+      [
+        "Gaz Kromatografi Laboratuvarı",
+        "Kalitatif (Kütüphane Taraması)",
+        "1000 TL / adet"
+      ],
+      [
+        "Gaz Kromatografi Laboratuvarı",
+        "Kantitatif (Tek Bileşen)",
+        "1200 TL / adet + STD"
+      ],
+      [
+        "Gaz Kromatografi Laboratuvarı",
+        "İlave Bileşen Başına",
+        "450 TL / adet"
+      ],
+      [
+        "Gaz Kromatografi Laboratuvarı",
+        "Numune Hazırlık (Biyolojik numuneler hariç)",
+        "350 TL / adet"
+      ],
+      [
+        "Gaz Kromatografi Laboratuvarı",
+        "Gaz Kromatografi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim Belirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı kolon veya standart malzemelerin temini araştırıcıya aittir.",
+        "Gaz Kromatografi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim Belirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı kolon veya standart malzemelerin temini araştırıcıya aittir."
+      ],
+      [
+        "LC/MS-MS Laboratuvarı",
+        "Kalitatif (Tek Bileşen)",
+        "1000 TL / adet"
+      ],
+      [
+        "LC/MS-MS Laboratuvarı",
+        "Kantitatif (Tek Bileşen)",
+        "1200 TL / adet +STD"
+      ],
+      [
+        "LC/MS-MS Laboratuvarı",
+        "İlave Bileşen Başına",
+        "500 TL / adet"
+      ],
+      [
+        "LC/MS-MS Laboratuvarı",
+        "Vitamin Analizi (1 Numunede Vitamin Çeşidi Başına)",
+        "750 TL / adet"
+      ],
+      [
+        "LC/MS-MS Laboratuvarı",
+        "Numune Hazırlık (Biyolojik numuneler hariç)",
+        "350 TL / adet"
+      ],
+      [
+        "LC/MS-MS Laboratuvarı",
+        "LC/MS-MS Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim Belirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı kolon veya standart malzemelerin temini araştırıcıya aittir.",
+        "LC/MS-MS Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim Belirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı kolon veya standart malzemelerin temini araştırıcıya aittir."
+      ],
+      [
+        "Sıvı Kromatografi Laboratuvarı",
+        "Kantitatif (Tek Bileşen)",
+        "1100 TL / adet + STD"
+      ],
+      [
+        "Sıvı Kromatografi Laboratuvarı",
+        "İlave Bileşen Başına",
+        "400 TL / adet"
+      ],
+      [
+        "Sıvı Kromatografi Laboratuvarı",
+        "HMF Analizi (Kantitatif)",
+        "750 TL / adet"
+      ],
+      [
+        "Sıvı Kromatografi Laboratuvarı",
+        "Şeker Analizi (Kantitatif) (1 Numunede Şeker Çeşidi Başına)",
+        "750 TL / adet"
+      ],
+      [
+        "Sıvı Kromatografi Laboratuvarı",
+        "Toplam Şeker Analizi (Sakkaroz, Maltoz, Glikoz, Laktoz, Fruktoz) (5 Şeker için)",
+        "2800 TL"
+      ],
+      [
+        "Sıvı Kromatografi Laboratuvarı",
+        "Organik Asit Analizi (Kantitatif)",
+        "750 TL / adet"
+      ],
+      [
+        "Sıvı Kromatografi Laboratuvarı",
+        "Toplam Organik Asit Analizi (Oxalic Acid, Citric Acid, Tartaric Acid, Maleic Acid, Malic Acid, Succinic Acid, Lactic Acid, Formic Acid, Acetic Acid, Butric Acid) (10 Asit için)",
+        "5600 TL"
+      ],
+      [
+        "Sıvı Kromatografi Laboratuvarı",
+        "Aflatoksin Analizi (B1,B2,G1,G2)",
+        "2800 TL / adet"
+      ],
+      [
+        "Sıvı Kromatografi Laboratuvarı",
+        "Numune Hazırlık (Biyolojik numuneler hariç)",
+        "350 TL / adet"
+      ],
+      [
+        "Sıvı Kromatografi Laboratuvarı",
+        "Sıvı Kromatografi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim Belirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı kolon veya standart malzemelerin temini araştırıcıya aittir.",
+        "Sıvı Kromatografi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim Belirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı kolon veya standart malzemelerin temini araştırıcıya aittir."
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Hassas Terazi",
+        "510 TL / saat"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "pHmetre/ İletkenlik ölçer",
+        "750 TL/adet ****"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Nem Tayin Cihazı",
+        "350 TL/adet ****"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Dijital Viskozimetre",
+        "500 TL/adet ****"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Etüv (Fanlı)",
+        "250 TL / saat"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Mikrodalga Yakma Fırını",
+        "500 TL / adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Kül Fırını",
+        "400 TL / saat"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Rotary Evaporatör (maksimum 400 mL)",
+        "500 TL / adet ****"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Ultrasonik Banyo",
+        "100 TL / saat"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Çalkalamalı Su Banyosu",
+        "500 TL / saat"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Soğutmalı Çalkalamalı İnkübatör",
+        "200 TL / saat"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Soğutmalı Santrifüj",
+        "400 TL / kullanım"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Yağ Tayin Cihazı",
+        "1000 TL / adet ****"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Manyetik Karıştırıcılı Isıtıcı",
+        "150 TL / saat"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Kül Tayini - Dolgulu polimerler, polimerler, inorganik maddeler ve fosil yakıtlar için",
+        "1000 TL / adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Nem tayini (Etüv ile)",
+        "400 TL / adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Yoğunluk Ölçümü",
+        "1000 TL / adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Raporlama",
+        "5000 TL / adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Protein Analizi",
+        "3400 TL / adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Volumetrik Titrasyon (EDTA, İyodimetrik, Tiyosülfat)",
+        "1000 TL / adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "İngilizce Raporlama",
+        "7000 TL / adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Kalitatif Testler (Kurum içi Test Metodu)",
+        "1500 TL / adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Toplam Fenolik Madde Tayini",
+        "1500 TL / adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Kalori Ölçümü",
+        "3400 TL / adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Katı Madde Tayini",
+        "750 TL / adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Saf Su (Litre Olarak Verilecektir)",
+        "21 TL/ Litre"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Ölçüm Belirsizliği ve Metod Validesyonu Uygulamalı Eğitimi (16 Saat)",
+        "5000 TL/ Kişi Başı"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Stabilite",
+        "1500 TL"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Fitalat",
+        "2000 TL"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Yakıtlarda Kalori Ölçümü",
+        "3400  TL / adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Yanmazlık",
+        "2500 Tl /Adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "Yanmazlık Testi (UL-94)",
+        "5000 Tl / Adet"
+      ],
+      [
+        "Kimyasal Analiz Laboratuvarı",
+        "****Kimyasal Analiz Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim",
+        "****Kimyasal Analiz Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler: 20-29 adet numune %10 İndirim 30-49 adet numune %15 İndirim 50 adet numune ve fazlası %20 indirim"
+      ],
+      [
+        "Son güncelleme tarihi : 01.03.2025",
+        "Son güncelleme tarihi : 01.03.2025",
+        "Son güncelleme tarihi : 01.03.2025"
+      ]
+    ]
+  ],
+  "raw_text": "ULUĞ BEY YÜKSEK TEKNOLOJİ UYGULAMA VE ARAŞTIRMA MERKEZİ (ULUTEM)\nHızlı Erişim\n×\nÖğrenci E-KAYIT\nAkademik Web-Mail\nÖğrenci Web-Mail\nElektronik Belge Yönetim Sistemi\nAkademik Bilgi Sistemi\nE-Rehber\nGAÜN Hastaneleri\nGaün Kütüphane\nSürekli Eğitim Merkezi\nBologna Bilgi Sistemi\nMezun Bilgi Sistemi\nEngelli Öğrenci Birimi\nGaün Sporium\nTurizm Uygulama Oteli\nBilimsel Araştırmalar Projeleri\nHaber Merkezi\n+90 342 317 2961\nGİMER\nEnglish\nGAZİANTEP\nÜNİVERSİTESİ\nULUĞ BEY YÜKSEK TEKNOLOJİ UYGULAMA VE ARAŞTIRMA MERKEZİ (ULUTEM)\nMENÜ\nAnasayfa\nHAKKIMIZDA\nGENEL BİLGİLER\nYÖNETİM KADROSU\nMİSYON\nVİZYON\nYÖNETİM KURULU\nKALİTE POLİTİKASI\nORGANİZASYON ŞEMASI\nFİZİKİ ALT YAPI\nKURUMSAL KİMLİK KLAVUZU\nKURUMSAL LOGO\nGAUN MEVZUAT\nTEŞEKKÜR ÖRNEKLERİ\nLABORATUVARLAR\nCİHAZLAR\nGENEL KULLANIM LABORATUVARI\nNUMUNE HAZIRLAMA LABORATUVARI\nELEKTRON MİKROSKOPİ LABORATUVARI\nRAMAN SPEKTROSKOPİ LABORATUVARI\nGAZ KROMATOGRAFİ LABORATUVARI\nLC/MS-MS LABORATUVARI\nSIVI KROMATOGRAFİ LABORATUVARI\nELEMENTEL SPEKTROSKOPİ LABORATUVARI\nMOLEKÜLER SPEKTROSKOPİ LABORATUVARI\nTERSİNE MÜHENDİSLİK VE HIZLI PROTOTİPLEME LABORATUVARI\nMEKANİK TEST LABORATUVARI\nANALİZ ÜCRETLERİ VE FORMLAR\nULUTEM ANALİZ ÜCRETLERİ VE FORMLAR\nANALİZ BAŞVURU SÜRECİ\nBAP DESTEĞİ\nMERKEZ ADRESLİ YAYINLAR\nSCI INDEKSLİ YAYINLAR\nKALİTE\nGÖREV TANIMLARI\nPROSEDÜRLER\nKALİTE EL KİTABI\nİŞ AKIŞLARI\nPLANLAR\nLİSTELER\nTALİMATLAR\nFORMLAR\nPERSONEL\nPERSONEL\nİLETİŞİM\n×\nArama\nGaziantep Üniversitesi olarak internet sitemizde çeşitli çerezler kullanmaktayız. Söz konusu çerezler sayfanın sağlıklı çalışması ve daha iyi bir ziyaretçi deneyimi sunmak için zorunlu olarak kullanılmaktadır.\nGAÜN Kişisel Verilerin Korunması Bilgilendirme\nTAMAM\nULUĞ BEY YÜKSEK TEKNOLOJİ UYGULAMA VE ARAŞTIRMA MERKEZİ (ULUTEM)\nULUTEM Analiz Ücretleri ve Formlar\nİndirim Kategorisi\nİndirim (%)\nGaziantep Üniversitesi Personeline\n50\nGaziantep Teknopark Firmalarına\n50\nDiğer Üniversitelere\n35\nKamu Kurum ve Kuruluşlarına\n20\nBİLSEM Tarafından Onaylanan Projeler\n50\n*\nFiyatlarımıza %20 KDV dâhil değildir.\nDeney sonuçlarından rapor istenmesi durumunda raporlama bedeli ayrıca ücretlendirilecektir.\nNot: (\nİndirimler Birleştirilmemektedir.)\nLaboratuvar Adı\nCihaz Adı\nAnaliz Adı\nAnaliz Kodu\nHizmet Bedeli\n*\nDeney İstek Formu\nElektron Mikroskopi  Laboratuvarı\nFE-SEM\nFE-SEM Görüntü Alma\nFE-SEM01\n3600 TL / saat\nForm\nFE-SEM EDS Mapping Analiz\nFE-SEM02\n1000 TL / adet\nFE-SEM EDS Noktasal Analiz\nFE-SEM04\n800 TL / adet\nAsbest Analizi\nFE-SEM06\n7200 TL / adet\nSEM\nSEM Görüntü Alma\n(Maksimum 4 numune )\n**çapı 10mm den büyük numuneler için maximun numune sayısı değişir.\nSEM01\n1500 TL / saat\nSEM Noktasal-EDX Analiz\nSEM07\n800 TL / adet\nSEM Mapping-EDX Analiz\nSEM08\n1000 TL / adet\nKaplama Cihazı\nAu/Pd/C Kaplama\n(7 taneye kadar)\n*7 Tane numune 10 mm çapındaki numuneler için geçerlidir.\n**Çapı 10 mm büyük numuneler için haznenin aldığı kadar numune konur ve set olarak değerlendirilir.\nSEM03\n900 TL / set\nKritik Nokta Kurutma Cihazı\nKritik Nokta Kurutma\nSEM04\n-\nNumune Hazırlık 1\nNumune Hazırlık\n(Kesme, Zımparalama,Parlatma)\nSEM05\n200 TL / adet\nNumune Hazırlık 2\nBakalite ve/veya epoksi kaplama\nSEM06\n500 TL / adet\nElektron Mikroskopi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler:\n20-29 adet numune %10 İndirim\n30-49 adet numune %15 İndirim\n50 adet numune ve fazlası %20 indirim\nBelirtilen fiyatlar cihaz kullanım bedelleridir. ( İndirimler birleştirilmemektedir.)\nTersine Mühendislik ve Hızlı Prototipleme Laboratuvarı\n3D Printer\n3B Model Prototip Üretimi\nTDP01\n***\nForm\n3B Model Prototip Üretimi\n(ULTEM malzeme)\nTDP02\n***\n3D Scanner\n3B Tarama\nTDS03\nGeomagic Control/Design X\nKalite Kontrol\nTDS04\n*** 3D yazıcı ile yapılacak işlemler için\n0342 317 29 61\nnumaralı telefondan fiyat bilgisi alabilirsiniz.\nMekanik Test Laboratuvarı\nÜ\nniversal Test Cihazı (Instron 250 kN)\nBasma (Oda Sıcaklığı)\nUT01\nForm\n3 nokta Eğme (Oda Sıcaklığı)\nUT02\n1000 TL / adet\nÜniversal Test Cihazı (Instron 2 kN)\nİplik Kopma Kuvveti ve Uzama\nUT03\n900 TL / adet\nShore A   ve     Shore D Sertlik Cihazı\nSertlik Ölçümü\n(5 İz Ortalaması)\nUT05\n500 TL / adet\nForm\nAşınma Test Cihazı\n(Pin-on Disk Metod)\nAşınma Analizi\nUT06\n1200 TL / adet\nForm\nYüksek Sıcaklık Altında\nAşınma Analizi\n(500\no\nC ' ye kadar)\nUT07\n2000 TL / adet\nSertlik Ölçümü\nBrinell sertlik ölçümü, Vickers sertlik ölçümü, Rockwell sertlik ölçümü\nUT08\n2000 TL / adet\nForm\nBasma Test Cihazı\n(UTEST)\nTek Eksenli Basma Analizi\nUT09\nForm\nÇekme Test Cihazı (250KN)\nÇekme Analizi\nUT11\n1000 TL / adet\nÖzgül Ağırlık Cihazı\nÖzgül Ağırlık Analizi\nUT12\n500 TL / adet\n-\n-\nUT13\n-\nTane Boyut analizi-Elek Analizi\nTane Boyut Analizi -\nElek Analizi\nUT14\n2500 TL / adet\nFiziksel Öğütme\nFiziksel Öğütme\nUT15\n500 TL / adet\nRaman Spektroskopi Laboratuvarı\nRAMAN\nSpektrum Taraması\nRMN01\n500 TL / adet\nForm\n3B Haritalama\nRMN02\n800 TL / adet\nDerinlik Profili\nRMN03\n750 TL / adet\nGörüntü Alma\nRMN04\n500 TL / adet\nRaman Spektroskopi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler:\n20-29 adet numune %10 İndirim\n30-49 adet numune %15 İndirim\n50 adet numune ve fazlası %20 indirim\nBelirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı standart malzemelerin temini araştırıcıya aittir.\nMoleküler Spektroskopi Laboratuvarı\nFT-IR\nATR Tekniği ile Spektrum Taraması\nFTIR01\n300 TL / adet\nForm\nKarşılaştırma (İki numune için)\nFTIR02\n550 TL / adet\nKütüphane Taraması\nFTIR03\n350 TL / adet\nBöbrek Taşı Analizi\nFTIR04\n1000 TL / adet\nUV-VIS-NIR\nSpektrum Taraması\nUV01\n300 TL / adet\nForm\nFotometrik Analiz\nUV02\n300 TL / adet\nKantitatif analiz (\n190-3300\ncm\n-1\n)\nUV03\n550 TL / adet\nNIR Analizi\nUV04\n550 TL / adet\nFilm Kalınlığı\nUV05\n300 TL / adet\nRenk Tayini\nUV06\n300 TL / adet\nNumune Hazırlık\nUV07\n300 TL / adet\nMoleküler Spektroskopi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler:\n20-29 adet numune %10 İndirim\n30-49 adet numune %15 İndirim\n50 adet numune ve fazlası %20 indirim\nBelirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı standart malzemelerin temini araştırıcıya aittir.\nElementel Spektroskopi Laboratuvarı\nAAES/ICP-OES/ICP-MS\nElement Başına AAS-ALEV\nESL01\n350 TL / adet\nForm\nNumune Başına ICP-MS\n24'lü Mix\n(Ag,Al,B,Ba,Bi,Ca,Cd,\nCr,Co,Cu,\nFe,Ga,In,K,Li)\n(Mg,Mn,Na,Ni,Pb,Sr,Tl,Zn)\nESL02\n1350 TL / adet\nKatı Numune Hazırlık (Mikrodalga Çözümlendirme)\nESL04\n500 TL / adet\nKlasik Numune Hazırlık (Sıvı Ortamında Asidik/Bazik Çözümlendirme)\nESL05\n350 TL / adet\nEritiş Yöntemi ile Numune Hazırlık (Fırın - Asidik/Bazik)\nESL06\n550 TL / adet\nFiziksel Numune Hazırlık\nESL07\n500 TL / adet\nEDXRF\nXRF Elementel Analiz\nXRF01\n1750 TL/ adet\nGaz Kromatografi Laboratuvarı\nGC-MS\nKalitatif (Kütüphane Taraması)\nGC01\n1300 TL / adet\nForm\nKantitatif (Tek Bileşen)\nGC02\n1600 TL / adet + STD\nHeadspace Kalitatif\n(Kütüphane Taraması)\nGC03\n2300 TL / adet\nHeadspace Kantitatif\n(Tek Bileşen)\nGC04\n3250 TL / adet\nİlave Bileşen Başına\nGC05\n450 TL / adet\nNumune Hazırlık (Biyolojik numuneler hariç)\nGC06\n350 TL / adet\nSPME Analizi\nGC07\n3250 TL / adet\nGC-FID\nKalitatif (Kütüphane Taraması)\nGC08\n1000 TL / adet\nKantitatif (Tek Bileşen)\nGC09\n1200 TL / adet + STD\nİlave Bileşen Başına\nGC10\n450 TL / adet\nNumune Hazırlık (Biyolojik numuneler hariç)\nGC11\n350 TL / adet\nGaz Kromatografi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler:\n20-29 adet numune %10 İndirim\n30-49 adet numune %15 İndirim\n50 adet numune ve fazlası %20 indirim\nBelirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı kolon veya standart malzemelerin temini araştırıcıya aittir.\nLC/MS-MS\nLaboratuvarı\nLC/MS-MS\nKalitatif (Tek Bileşen)\nLC01\n1000 TL / adet\nForm\nKantitatif (Tek Bileşen)\nLC02\n1200 TL / adet +STD\nİlave Bileşen Başına\nLC03\n500 TL / adet\nVitamin Analizi\n(1 Numunede Vitamin Çeşidi Başına)\nLC04\n750 TL / adet\nNumune Hazırlık (Biyolojik numuneler hariç)\nLC05\n350 TL / adet\nLC/MS-MS Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler:\n20-29 adet numune %10 İndirim\n30-49 adet numune %15 İndirim\n50 adet numune ve fazlası %20 indirim\nBelirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı kolon veya standart malzemelerin temini araştırıcıya aittir.\nSıvı Kromatografi Laboratuvarı\nHPLC\nKantitatif (Tek Bileşen)\nHPLC01\n1100 TL / adet + STD\nForm\nİlave Bileşen Başına\nHPLC02\n400 TL / adet\nHMF Analizi (Kantitatif)\nHPLC03\n750 TL / adet\nŞeker Analizi (Kantitatif)\n(1 Numunede Şeker Çeşidi Başına)\nHPLC04\n750 TL / adet\nToplam Şeker Analizi\n(Sakkaroz, Maltoz, Glikoz, Laktoz, Fruktoz)\n(5 Şeker için)\nHPLC05\n2800 TL\nOrganik Asit Analizi (Kantitatif)\nHPLC06\n750 TL / adet\nToplam Organik Asit Analizi\n(Oxalic Acid, Citric Acid, Tartaric Acid, Maleic Acid, Malic Acid, Succinic Acid, Lactic Acid, Formic Acid, Acetic Acid, Butric Acid)\n(10 Asit için)\nHPLC07\n5600 TL\nAflatoksin Analizi\n(B1,B2,G1,G2)\nHPLC08\n2800 TL / adet\nNumune Hazırlık (Biyolojik numuneler hariç)\nHPLC09\n350 TL / adet\nSıvı Kromatografi Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler:\n20-29 adet numune %10 İndirim\n30-49 adet numune %15 İndirim\n50 adet numune ve fazlası %20 indirim\nBelirtilen fiyatlar cihaz kullanım bedelleridir. Merkezimizde mevcut olmayan, farklı kolon veya standart malzemelerin temini araştırıcıya aittir.\nKimyasal Analiz Laboratuvarı\nHassas Terazi\nKAL01\n510 TL / saat\nForm\npHmetre/ İletkenlik ölçer\nKAL02\n750 TL/adet\n****\nNem Tayin Cihazı\nKAL03\n350 TL/adet\n****\nDijital Viskozimetre\nKAL04\n500 TL/adet\n****\nEtüv (Fanlı)\nKAL05\n250 TL / saat\nMikrodalga Yakma Fırını\nKAL06\n500 TL / adet\nKül Fırını\nKAL07\n400 TL / saat\nRotary Evaporatör (maksimum 400 mL)\nKAL08\n500 TL / adet\n****\nUltrasonik Banyo\nKAL09\n100 TL / saat\nÇalkalamalı Su Banyosu\nKAL10\n500 TL / saat\nSoğutmalı Çalkalamalı İnkübatör\nKAL11\n200 TL / saat\nSoğutmalı Santrifüj\nKAL12\n400 TL / kullanım\nYağ Tayin Cihazı\nKAL13\n1000 TL / adet\n****\nManyetik Karıştırıcılı Isıtıcı\nKAL14\n150 TL / saat\nKül Tayini - Dolgulu polimerler, polimerler, inorganik maddeler ve fosil yakıtlar için\nKAL15\n1000 TL / adet\nNem tayini (Etüv ile)\nKAL16\n400 TL / adet\nYoğunluk Ölçümü\nKAL17\n1000 TL / adet\nRaporlama\nKAL18\n5000 TL / adet\nProtein Analizi\nKAL19\n3400 TL / adet\nVolumetrik Titrasyon (EDTA, İyodimetrik, Tiyosülfat)\nKA20\n1000 TL / adet\nİngilizce Raporlama\nKAL21\n7000 TL / adet\nKalitatif Testler (Kurum içi Test Metodu)\nKAL22\n1500 TL / adet\nToplam Fenolik Madde Tayini\nKAL23\n1500 TL / adet\nKalori Ölçümü\nKAL24\n3400 TL / adet\nKatı Madde Tayini\nKAL25\n750 TL / adet\nSaf Su (Litre Olarak Verilecektir)\nKAL27\n21 TL/ Litre\nÖlçüm Belirsizliği ve Metod Validesyonu Uygulamalı Eğitimi (16 Saat)\nKAL28\n5000 TL/ Kişi Başı\nKAL29\nStabilite\nKAL30\n1500 TL\nFitalat\nKAL32\n2000 TL\nYakıtlarda Kalori Ölçümü\nKAL33\n3400  TL / adet\nYanmazlık\nKAL34\n2500 Tl /Adet\nYanmazlık Testi (UL-94)\nKAL35\n5000 Tl / Adet\n****Kimyasal Analiz Laboratuvarı için çoklu ve aynı özellikteki numunelere uygulanacak indirimler:\n20-29 adet numune %10 İndirim\n30-49 adet numune %15 İndirim\n50 adet numune ve fazlası %20 indirim\nSon güncelleme tarihi : 01.03.2025\nAnaliz Ücretleri ve Formlar\nULUTEM Analiz Ücretleri ve Formlar\nAnaliz Başvuru Süreci\nBAP Desteği\nAnasayfa\nAkademik Takvim\nBologna Bilgi Sistemi\nGaün Kütüphane\nGaün Sporium\nÖğrenci İşleri\nAkademik Bilgi Sistemi\nEngelli Öğrenci Birimi\nBilgi İşlem D. Bşk.\nE-Rehber\nGaziantep\nÜniversitesi\nULUĞ BEY YÜKSEK TEKNOLOJİ UYGULAMA VE ARAŞTIRMA MERKEZİ (ULUTEM)",
+  "snapshot_time": "2026-04-23T14:02:33.525803+00:00",
+  "content_hash": "0e78b2609ca6390c647fd3b91f13ee1687de12686a8f1396507fb0d9c7c34f1d"
+}
