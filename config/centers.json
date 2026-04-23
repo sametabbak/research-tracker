@@ -310,5 +310,45 @@
     ],
     "active": true,
     "reference": false
+  },
+  {
+    "id": "iuc_merlab",
+    "name": "İÜC MERLAB",
+    "university": "İstanbul Üniversitesi-Cerrahpaşa",
+    "city": "İstanbul",
+    "url": "https://merlab.iuc.edu.tr/tr/_",
+    "pricing_url": "https://merlab.iuc.edu.tr/tr/content/analiz-fiyat-listesi/analiz-fiyat-listesi",
+    "fetch_method": "html_table",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "active": true,
+    "reference": false,
+    "selector": "table"
+  },
+  {
+    "id": "kastamonu_merlab",
+    "name": "Kastamonu MERLAB",
+    "university": "Kastamonu Üniversitesi",
+    "city": "Kastamonu",
+    "url": "https://merlab.kastamonu.edu.tr/",
+    "pricing_url": "https://merlab.kastamonu.edu.tr/index.php/analiz-ve-basvuru/analiz-uecretleri",
+    "fetch_method": "html_table",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "active": true,
+    "reference": false,
+    "selector": "table"
   }
 ]
