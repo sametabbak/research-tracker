@@ -114,7 +114,7 @@
     "city": "İstanbul",
     "url": "https://merlab.iuc.edu.tr/tr/_",
     "pricing_url": "https://merlab.iuc.edu.tr/tr/content/analiz-fiyat-listesi/analiz-fiyat-listesi",
-    "active": true,
+    "active": false,
     "reference": false,
     "analysis_count": 0,
     "last_updated": "2026-04-23"
@@ -126,7 +126,7 @@
     "city": "Kastamonu",
     "url": "https://merlab.kastamonu.edu.tr/",
     "pricing_url": "https://merlab.kastamonu.edu.tr/index.php/analiz-ve-basvuru/analiz-uecretleri",
-    "active": true,
+    "active": false,
     "reference": false,
     "analysis_count": 0,
     "last_updated": null
