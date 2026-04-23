@@ -69,13 +69,13 @@
     "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)"
   ],
   "Kaplama": [
-    "Altın",
-    "Au",
-    "Pd",
-    "Kaplama",
-    "Altın Kaplama",
-    "Karbon Kaplama",
-    "SEM Altın (Au,Pd), Karbon Kaplama"
+    "1-Karbon Kaplama (4 adete kadar)",
+    "2-Altın Kaplama (4 adete kadar)",
+    "SEM Altın (Au,Pd), Karbon Kaplama",
+    "Altın Kaplama (Yalıtkan Numuneler için, 1set=6 numune)",
+    "Numune Kaplama (Altın/Paladyum & Karbon)*",
+    "Numune Hazırlama:  Kesme  Öğütme  Kriyojenik Öğütme ( Tek seferde max. 2 g numune öğütülmektedir.)  Presleme  Platin potada numune hazırlık  Bakalite alma  Parlatma  Altın veya karbon kaplama (Yalıtkan örnekler için) (50 bin büyütmeye kadar)  Yüksek Çözünürlüklü Platin Kaplama (50 bin ve üzeri büyütme için)  Kritik noktada kurutma  Kızdırma kaybı",
+    "Altın/Paladyum Kaplama"
   ]
   "TEM": [
     "Bulanıklık (türbidimetrik yöntem)",
