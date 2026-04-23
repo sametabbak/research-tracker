@@ -19,7 +19,7 @@ from diff_engine import diff, save_snapshot
 from notifier import notify, notify_manual, notify_error
 from json_exporter import export_center
 
-from fetchers import html_table, html_then_pdf, manual, taum, barum, cutam, bitam, daytam, ikcu_merlab, gazi_gutmam, hacettepe_hunitek
+from fetchers import html_table, html_then_pdf, manual, taum, barum, cutam, bitam, daytam, ikcu_merlab, gazi_gutmam, hacettepe_hunitek, gaun_ulutem
 
 FETCHERS = {
     "html_table":    html_table.fetch,
