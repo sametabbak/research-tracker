@@ -9,7 +9,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 40,
-    "last_updated": "2026-04-22"
+    "last_updated": "2026-04-23"
   },
   {
     "id": "esogu_arum",
@@ -21,7 +21,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 184,
-    "last_updated": "2026-04-22"
+    "last_updated": "2026-04-23"
   },
   {
     "id": "dpu_iltem",
@@ -33,7 +33,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 66,
-    "last_updated": "2026-04-22"
+    "last_updated": "2026-04-23"
   },
   {
     "id": "atauni_daytam",
@@ -45,7 +45,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 132,
-    "last_updated": "2026-04-22"
+    "last_updated": "2026-04-23"
   },
   {
     "id": "eu_taum",
@@ -57,19 +57,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 23,
-    "last_updated": "2026-04-22"
-  },
-  {
-    "id": "bseu_barum",
-    "name": "BŞEÜ BARUM",
-    "university": "Bilecik Şeyh Edebali Üniversitesi",
-    "city": "Bilecik",
-    "url": "https://bilecik.edu.tr/barum",
-    "pricing_url": "https://bilecik.edu.tr/barum/Icerik/Analiz_%C3%9Ccretleri_cb172",
-    "active": false,
-    "reference": false,
-    "analysis_count": 0,
-    "last_updated": "2026-04-22"
+    "last_updated": "2026-04-23"
   },
   {
     "id": "cu_cutam",
@@ -81,7 +69,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 64,
-    "last_updated": "2026-04-22"
+    "last_updated": "2026-04-23"
   },
   {
     "id": "neu_bitam",
@@ -93,7 +81,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 150,
-    "last_updated": "2026-04-22"
+    "last_updated": "2026-04-23"
   },
   {
     "id": "gazi_gutmam",
@@ -105,7 +93,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 18,
-    "last_updated": "2026-04-22"
+    "last_updated": "2026-04-23"
   },
   {
     "id": "hacettepe_hunitek",
@@ -117,6 +105,30 @@
     "active": true,
     "reference": false,
     "analysis_count": 72,
-    "last_updated": "2026-04-22"
+    "last_updated": "2026-04-23"
+  },
+  {
+    "id": "iuc_merlab",
+    "name": "İÜC MERLAB",
+    "university": "İstanbul Üniversitesi-Cerrahpaşa",
+    "city": "İstanbul",
+    "url": "https://merlab.iuc.edu.tr/tr/_",
+    "pricing_url": "https://merlab.iuc.edu.tr/tr/content/analiz-fiyat-listesi/analiz-fiyat-listesi",
+    "active": true,
+    "reference": false,
+    "analysis_count": 0,
+    "last_updated": "2026-04-23"
+  },
+  {
+    "id": "kastamonu_merlab",
+    "name": "Kastamonu MERLAB",
+    "university": "Kastamonu Üniversitesi",
+    "city": "Kastamonu",
+    "url": "https://merlab.kastamonu.edu.tr/",
+    "pricing_url": "https://merlab.kastamonu.edu.tr/index.php/analiz-ve-basvuru/analiz-uecretleri",
+    "active": true,
+    "reference": false,
+    "analysis_count": 0,
+    "last_updated": null
   }
 ]
