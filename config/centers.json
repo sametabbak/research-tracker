@@ -327,7 +327,7 @@
       6,
       7
     ],
-    "active": true,
+    "active": false,
     "reference": false,
     "selector": "table"
   },
@@ -347,7 +347,7 @@
       6,
       7
     ],
-    "active": true,
+    "active": false,
     "reference": false,
     "selector": "table"
   }
