@@ -36,6 +36,7 @@ FETCHERS = {
     "ikcu_merlab":   ikcu_merlab.fetch,
     "gazi_gutmam":   gazi_gutmam.fetch,
     "hacettepe_hunitek": hacettepe_hunitek.fetch,
+    "gaun_ulutem":   gaun_ulutem.fetch,
 }
 
 CONFIG_PATH    = Path(__file__).parent / "config" / "centers.json"
