@@ -350,5 +350,24 @@
     "active": false,
     "reference": false,
     "selector": "table"
+  },
+  {
+    "id": "gaun_ulutem",
+    "name": "GAÜN ULUTEM",
+    "university": "Gaziantep Üniversitesi",
+    "city": "Gaziantep",
+    "url": "https://ulutem.gaziantep.edu.tr/index.php",
+    "pricing_url": "https://ulutem.gaziantep.edu.tr/pages.php?url=ulutem-analiz-ucretleri-ve-formlar-61",
+    "fetch_method": "gaun_ulutem",
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "active": true,
+    "reference": false
   }
 ]
