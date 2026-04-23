@@ -46,7 +46,6 @@
     "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)  FE-SEM  FE-SEM-EDX Analizi  STEM  STEM Sıvı Numune Hazırlık  Mapping  Line Scan (TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
     "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)",
     "SEM-Katodolüminesans (SEM-CL)",
-    "SEM Altın (Au,Pd), Karbon Kaplama",
     "SEM-EBIC Dedektörü",
     "Yüzey görüntüsü alma (FE- SEM)"
   ],
@@ -69,6 +68,14 @@
     "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)  FE-SEM  FE-SEM-EDX Analizi  STEM  STEM Sıvı Numune Hazırlık  Mapping  Line Scan (TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
     "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)"
   ],
+  "Kaplama": [
+    "Altın",
+    "Au",
+    "Pd",
+    "Kaplama",
+    "Altın Kaplama",
+    "Karbon Kaplama",
+  ]
   "TEM": [
     "Bulanıklık (türbidimetrik yöntem)",
     "STEM sıvı numune hazırlık**",
