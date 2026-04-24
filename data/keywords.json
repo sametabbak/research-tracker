@@ -41,7 +41,8 @@
     "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)",
     "SEM-Katodolüminesans (SEM-CL)",
     "SEM-EBIC Dedektörü",
-    "Yüzey görüntüsü alma (FE- SEM)"
+    "Yüzey görüntüsü alma (FE- SEM)",
+    "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**"
   ],
   "SEM-EDX": [
     "FE-SEM *EDX Analizi",
@@ -67,7 +68,7 @@
     "2-Altın Kaplama (4 adete kadar)",
     "SEM Altın (Au,Pd), Karbon Kaplama",
     "Altın Kaplama (Yalıtkan Numuneler için, 1set=6 numune)",
-    "Numune Kaplama (Altın/Paladyum & Karbon)",
+    "Numune Kaplama (Altın/Paladyum, Karbon)*",
     "Altın/Paladyum Kaplama"
   ],
   "TEM": [
