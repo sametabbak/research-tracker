@@ -62,7 +62,7 @@
       "notes": ""
     },
     {
-      "name": "SEM Görüntüleme + EDS Analizi",
+      "name": "SEM Görüntüleme - EDS Analizi",
       "category": "TARAMALI ELEKTRON MİKROSKUBU ANALİZİ (SEM)",
       "price": 1500.0,
       "currency": "TRY",
@@ -86,7 +86,7 @@
       "notes": ""
     },
     {
-      "name": "FE-SEM Görüntüleme + EDS Analizi",
+      "name": "FE-SEM Görüntüleme - EDS Analizi",
       "category": "ALAN EMİSYONLU TARAMALI ELEKTRON MİKROSKOBU ANALİZİ (FE-SEM)",
       "price": 3800.0,
       "currency": "TRY",
@@ -94,7 +94,7 @@
       "notes": ""
     },
     {
-      "name": "FE-SEM Görüntüleme + EBSD Analizi",
+      "name": "FE-SEM Görüntüleme - EBSD Analizi",
       "category": "ALAN EMİSYONLU TARAMALI ELEKTRON MİKROSKOBU ANALİZİ (FE-SEM)",
       "price": 6000.0,
       "currency": "TRY",
@@ -406,7 +406,7 @@
       "notes": ""
     },
     {
-      "name": "TGA + Diferansiyel Taramalı Kalorimetri (DSC) (1 saat)",
+      "name": "TGA - Diferansiyel Taramalı Kalorimetri (DSC) (1 saat)",
       "category": "",
       "price": 1150.0,
       "currency": "TRY",
@@ -414,7 +414,7 @@
       "notes": ""
     },
     {
-      "name": "TGA + DSC (1 – 3 saat)",
+      "name": "TGA - DSC (1 – 3 saat)",
       "category": "TERMAL ANALİZ (TGA – DSC)",
       "price": 1350.0,
       "currency": "TRY",
@@ -422,7 +422,7 @@
       "notes": ""
     },
     {
-      "name": "TGA + DSC (3 – 7 saat)",
+      "name": "TGA - DSC (3 – 7 saat)",
       "category": "TERMAL ANALİZ (TGA – DSC)",
       "price": 1550.0,
       "currency": "TRY",
@@ -430,7 +430,7 @@
       "notes": ""
     },
     {
-      "name": "TGA + DSC (7 – 15 saat)",
+      "name": "TGA - DSC (7 – 15 saat)",
       "category": "TERMAL ANALİZ (TGA – DSC)",
       "price": 1750.0,
       "currency": "TRY",
@@ -542,7 +542,7 @@
       "notes": ""
     },
     {
-      "name": "Çok noktalı BET Analizi + Gözenek Boyutu (N gaz 2 adsorbsiyonu)",
+      "name": "Çok noktalı BET Analizi - Gözenek Boyutu (N gaz 2 adsorbsiyonu)",
       "category": "BET YÜZEY ALANI VE GÖZENEK BOYUTU ANALİZİ",
       "price": 1000.0,
       "currency": "TRY",
@@ -574,7 +574,7 @@
       "notes": ""
     },
     {
-      "name": "XRR Analizi (Roughness Ölçümü*** + Analiz)",
+      "name": "XRR Analizi (Roughness Ölçümü*** - Analiz)",
       "category": "X – IŞINI DİFRAKTOMETRESİ ANALİZİ (XRD)",
       "price": 7000.0,
       "currency": "TRY",
@@ -590,7 +590,7 @@
       "notes": ""
     },
     {
-      "name": "FT-IR Spektrumu + Database Taraması",
+      "name": "FT-IR Spektrumu - Database Taraması",
       "category": "FOURIER DÖNÜŞÜMLÜ KIZILÖTESİ SPEKTROMETRESİ (FT-IR)",
       "price": 450.0,
       "currency": "TRY",
@@ -894,7 +894,7 @@
       "notes": ""
     },
     {
-      "name": "3 Boyutlu Tarama (CAD+YenidenTasarlama)",
+      "name": "3 Boyutlu Tarama (CAD-YenidenTasarlama)",
       "category": "ÜÇ BOYUTLU TASARIM VE PROTOTİP ÜRETİMİ",
       "price": 6000.0,
       "currency": "TRY",
