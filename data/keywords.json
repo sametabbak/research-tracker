@@ -98,7 +98,6 @@
     "2-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (5 Nokta)",
     "3-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı + Gözenek Dağılımı",
     "BET Yüzey Alanı (N adsorpsiyonu) Ölçümü",
-    "Rutubet (Nem) Tayini",
     "Hızlı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
     "Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
     "Mikrogözenek Analizi ve BET Yüzey Alanı Analizi",
@@ -365,7 +364,8 @@
   ],
   "Fiziksel Testler": [
     "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Toz Formunda",
-    "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Sucuk Formunda"
+    "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Sucuk Formunda",
+    "Rutubet (Nem) Tayini",
   ],
   "Diğer Sınıflandırılmayanlar": [
     "Elektroanalitik Yöntem Geliştirilmesi ve Validasyonu"
@@ -373,6 +373,7 @@
   "Klasik Kimyasal Analizler": [
     "Volumetrik Titrasyon (EDTA, İyodimetrik, Tiyosülfat)",
     "Titrimetrik Analizler (Tuz, Kuru madde vs.)",
-    "Numune yakma, damıtma ve titrasyon"
+    "Numune yakma, damıtma ve titrasyon",
+    "Rutubet (Nem) Tayini",
   ]
 }
