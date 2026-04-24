@@ -134,7 +134,7 @@
       "notes": ""
     },
     {
-      "name": "3-Yerli Kömür Tam Analiz (Kalori + Nem+ Kül + Kükürt Tayini)",
+      "name": "3-Yerli Kömür Tam Analiz (Kalori - Nem- Kül - Kükürt Tayini)",
       "category": "D-) YAKIT ANALİZLERİ",
       "price": 5000.0,
       "currency": "TRY",
@@ -142,7 +142,7 @@
       "notes": ""
     },
     {
-      "name": "4-İthal Kömür Tam Analiz (Kalori + Nem+ Kül+ Kükürt + Uçucu Madde)",
+      "name": "4-İthal Kömür Tam Analiz (Kalori - Nem- Kül- Kükürt - Uçucu Madde)",
       "category": "D-) YAKIT ANALİZLERİ",
       "price": 6000.0,
       "currency": "TRY",
@@ -238,7 +238,7 @@
       "notes": ""
     },
     {
-      "name": "3-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı + Gözenek Dağılımı",
+      "name": "3-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı - Gözenek Dağılımı",
       "category": "G-) Yüzey ve Gözeneklilik (Porozite) Analizleri",
       "price": 1350.0,
       "currency": "TRY",
