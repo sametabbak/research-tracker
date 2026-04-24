@@ -375,5 +375,21 @@
     "Titrimetrik Analizler (Tuz, Kuru madde vs.)",
     "Numune yakma, damıtma ve titrasyon",
     "Rutubet (Nem) Tayini"
+  ],
+  "Dielektrik": [
+    "1- Dielektrik Ölçüm Oda Sıcaklığında",
+    "2- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 400 °C)",
+    "3- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 800 °C)",
+    "4- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 1000 °C)"
+  ],
+  "Piezoelektrik": [
+    "1-Piezoelektrik Sabiti (d) Ölçümü",
+    "2- Piezoelektrik Sabiti (d) Ölçümü Ölçümü (Oda Sıcaklığı Kutuplama)",
+    "3- Piezoelektrik Sabiti (d) (Yüksek Sıcaklık Kutuplama)"
+  ],
+  "Elektriksel İletkenlik": [
+    "Elektriksel İletkenlik (EC)",
+    "Sularda Elektriksel İletkenlik Tayini",
+    "Elektrometrik Metot ile Elektriksel İletkenlik Tayini"
   ]
 }
