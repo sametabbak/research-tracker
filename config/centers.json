@@ -357,7 +357,7 @@
     "university": "Gaziantep Üniversitesi",
     "city": "Gaziantep",
     "url": "https://ulutem.gaziantep.edu.tr/index.php",
-    "pricing_url": "https://ulutem.gaziantep.edu.tr/pages.php?url=ulutem-analiz-ucretleri-ve-formlar-61",
+    "pricing_url": "https://ulutem.gaziantep.edu.tr/pages.php?url=ulutem-analiz-ucretleri-61",
     "fetch_method": "gaun_ulutem",
     "check_months": [
       12,
