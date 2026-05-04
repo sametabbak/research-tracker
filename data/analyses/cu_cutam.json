@@ -1,7 +1,7 @@
 {
   "center_id": "cu_cutam",
   "center_name": "CÜ CUTAM",
-  "last_updated": "2026-04-23",
+  "last_updated": "2026-05-04",
   "source_url": "https://cutam.cumhuriyet.edu.tr/16-analiz-fiyatlari",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
@@ -86,7 +86,7 @@
       "notes": ""
     },
     {
-      "name": "Toplam Sertlik (Ca-Mg)",
+      "name": "Toplam Sertlik (Ca+Mg)",
       "category": "FİZİKSEL/KİMYASAL TESTLER",
       "price": 400.0,
       "currency": "TRY",

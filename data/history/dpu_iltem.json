@@ -1,4 +1,534 @@
 {
   "center_id": "dpu_iltem",
-  "events": []
+  "events": [
+    {
+      "date": "2026-05-04",
+      "type": "changed",
+      "added_rows": [
+        [
+          "ATR – FTIR Spektrumu",
+          "500 / Adet"
+        ],
+        [
+          "Kırma-Öğütme",
+          "500 / Adet"
+        ],
+        [
+          "Etüv Kullanımı",
+          "450 / gün"
+        ],
+        [
+          "Kuru Presleme",
+          "500 / adet"
+        ],
+        [
+          "Isı Kapasitesi (C P ) Analizi",
+          "3000 / adet"
+        ],
+        [
+          "Pestisit Analizi (Grup Pestisit)",
+          "1500 / adet"
+        ],
+        [
+          "SEM-Katodolüminesans (SEM-CL)",
+          "3750 / saat"
+        ],
+        [
+          "AAS Numune Hazırlama (3 Tekrar)",
+          "1250 / adet"
+        ],
+        [
+          "Ultra Saf Su",
+          "50 / lt"
+        ],
+        [
+          "Press İle Numune Hazırlama",
+          "400 / adet"
+        ],
+        [
+          "LC/MS QTOF (HRMS) Tam Kütle Tayini",
+          "1500 / adet"
+        ],
+        [
+          "pH Ölçümü",
+          "150 / adet"
+        ],
+        [
+          "Kesme",
+          "400 / adet"
+        ],
+        [
+          "Mikro Sertlik Ölçümü (Vickers Yöntemi 3 – Indent)",
+          "500 / adet"
+        ],
+        [
+          "Alümina/Platin Kroze Hasar Bedeli *",
+          "10000 / adet"
+        ],
+        [
+          "Fırın Kullanımı (Kutu tipi, 1500 o C’ye kadar)",
+          "1750 / kullanım"
+        ],
+        [
+          "Rietveld Analizi",
+          "9000 / adet"
+        ],
+        [
+          "Yarı Kantitatif Element Analizi",
+          "850 / adet"
+        ],
+        [
+          "Sıvı Piknometre ile Tozlarda Kütle Yoğunluğu Tayini",
+          "300 / adet"
+        ],
+        [
+          "Soğuk Kalıplama (Reçine)",
+          "300 / adet"
+        ],
+        [
+          "Standart XRD Çekimi + Kalitatif Analiz",
+          "1125 / adet"
+        ],
+        [
+          "Mikro Sertlik Ölçümü (Vickers Yöntemi 5 – Indent)",
+          "600 / adet"
+        ],
+        [
+          "Kızdırma Kaybı",
+          "400 / adet"
+        ],
+        [
+          "Tane Boyut Dağılımı (Yaş / Kuru elek analizi)",
+          "900 / adet"
+        ],
+        [
+          "AAS Numune Hazırlama",
+          "450 / adet"
+        ],
+        [
+          "Stereo Zoom Mikroskop",
+          "400 / saat"
+        ],
+        [
+          "TG/DTA/DSC Spektrumu (Max. 1500 °C)",
+          "1500 / adet"
+        ],
+        [
+          "Şeker Analizi (Grup Şeker)",
+          "1225 / adet"
+        ],
+        [
+          "Rutubet (Nem) Tayini",
+          "150 / adet"
+        ],
+        [
+          "Faz Kontrast-Fluoresan Ataçmanlı Mikroskop",
+          "750 / saat"
+        ],
+        [
+          "Eritiş İle Numune Hazırlama",
+          "500 / adet"
+        ],
+        [
+          "Pestisit Analizi (Tek Pestisit)",
+          "1050 / adet"
+        ],
+        [
+          "Kırma, Öğütme",
+          "500 / adet"
+        ],
+        [
+          "Grafit AAS ile ppb (mg/L) seviyesinde analiz",
+          "1500 / adet"
+        ],
+        [
+          "Kimyasal Dağlama (Seramik Malzemeler)",
+          "400 / adet"
+        ],
+        [
+          "Böbrek Taşı Analizi (XRD)",
+          "300 / adet"
+        ],
+        [
+          "Hidrür AAS ile ppb (mg/L) seviyesinde analiz",
+          "1500 / adet"
+        ],
+        [
+          "Tane Boyut Dağılımı (2 mikron altı analizi)",
+          "3750 / adet"
+        ],
+        [
+          "3-Boyutlu Optik Tarayıcı",
+          "750 / saat"
+        ],
+        [
+          "SEM Altın (Au,Pd), Karbon Kaplama",
+          "300 / adet"
+        ],
+        [
+          "Kesme",
+          "500 / adet"
+        ],
+        [
+          "Şeker Analizi (Tek Şeker)",
+          "1050 / adet"
+        ],
+        [
+          "Metal Mikroskobu",
+          "400 / saat"
+        ],
+        [
+          "LC/MS Analizi (Kantitatif) *",
+          "900 / adet"
+        ],
+        [
+          "TMA (Termo-Mekanik Analiz) Spektrumu",
+          "1750 / adet"
+        ],
+        [
+          "LC/MS Analizi (Kalitatif)",
+          "700 / adet"
+        ],
+        [
+          "Zımparalama ve Parlatma",
+          "600 / adet"
+        ],
+        [
+          "Sıcak Kalıplama (Bakalit)",
+          "300 / adet"
+        ],
+        [
+          "GC/MS (Kantitatif) *",
+          "1050 / adet"
+        ],
+        [
+          "Standart X-Işını Kırınım Deseni (XRD)",
+          "750 / adet"
+        ],
+        [
+          "HPLC (Kalitatif)",
+          "750 / adet"
+        ],
+        [
+          "Termal Dağlama",
+          "1500 / kullanım"
+        ],
+        [
+          "SEM-EBIC Dedektörü",
+          "3750 / adet"
+        ],
+        [
+          "Alevli AAS ile ppm (mg/L) seviyesinde analiz (3 Tekrar Çekim)",
+          "1500 / adet"
+        ],
+        [
+          "İnteraktif Cihaz Kullanımı (Tam Kütle Tayini+Vial+Çözücü+Pipet Ucu)",
+          "Merkezimizden fiyat sorunuz."
+        ],
+        [
+          "3-Boyutlu Modelleme",
+          "750 / saat"
+        ],
+        [
+          "Kuru Öğütme",
+          "500 / adet"
+        ],
+        [
+          "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)",
+          "2500 / saat"
+        ],
+        [
+          "HPLC (Kantitatif) *",
+          "900 / adet"
+        ],
+        [
+          "LC/MS/MS",
+          "1250 / adet"
+        ],
+        [
+          "Alevli AAS ile ppm (mg/L) seviyesinde analiz (Tek Çekim)",
+          "750 / adet"
+        ],
+        [
+          "Tane Boyut Dağılımı (Lazer tekniği ile su ortamında) *",
+          "900 / adet"
+        ],
+        [
+          "EBSD Nokta Analizi ve Haritalama",
+          "3750 / saat"
+        ],
+        [
+          "GC/MS (Kalitatif)",
+          "800 / adet"
+        ],
+        [
+          "Saf Su",
+          "30 / lt"
+        ],
+        [
+          "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Toz Formunda",
+          "1500 / adet"
+        ]
+      ],
+      "removed_rows": [
+        [
+          "Termal Dağlama",
+          "1250 / kullanım"
+        ],
+        [
+          "Şeker Analizi (Tek Şeker)",
+          "750 / adet"
+        ],
+        [
+          "Ultra Saf Su",
+          "30 / lt"
+        ],
+        [
+          "pH Ölçümü",
+          "125 / adet"
+        ],
+        [
+          "Kırma, Öğütme",
+          "320 / adet"
+        ],
+        [
+          "ATR – FTIR Spektrumu",
+          "320 / Adet"
+        ],
+        [
+          "Tane Boyut Dağılımı (Yaş / Kuru elek analizi)",
+          "750 / adet"
+        ],
+        [
+          "TG/DTA/DSC Spektrumu (Max. 1500 °C)",
+          "1250 / adet"
+        ],
+        [
+          "Faz Kontrast-Fluoresan Ataçmanlı Mikroskop",
+          "625 / saat"
+        ],
+        [
+          "Kırma-Öğütme",
+          "320 / Adet"
+        ],
+        [
+          "Eritiş İle Numune Hazırlama",
+          "375 / adet"
+        ],
+        [
+          "Tane Boyut Dağılımı (2 mikron altı analizi)",
+          "3125 / adet"
+        ],
+        [
+          "Böbrek Taşı Analizi (XRD)",
+          "250 / adet"
+        ],
+        [
+          "Yarı Kantitatif Element Analizi",
+          "690 / adet"
+        ],
+        [
+          "Press İle Numune Hazırlama",
+          "320 / adet"
+        ],
+        [
+          "TMA (Termo-Mekanik Analiz) Spektrumu",
+          "1500 / adet"
+        ],
+        [
+          "Grafit AAS ile ppb (mg/L) seviyesinde analiz",
+          "1250 / adet"
+        ],
+        [
+          "Kesme",
+          "320 / adet"
+        ],
+        [
+          "Metal Mikroskobu",
+          "320 / saat"
+        ],
+        [
+          "Hidrür AAS ile ppb (mg/L) seviyesinde analiz",
+          "1250 / adet"
+        ],
+        [
+          "SEM Altın (Au,Pd), Karbon Kaplama",
+          "250 / adet"
+        ],
+        [
+          "LC/MS Analizi (Kantitatif) 1",
+          "750 / adet"
+        ],
+        [
+          "3-Boyutlu Optik Tarayıcı",
+          "625 / saat"
+        ],
+        [
+          "Rutubet (Nem) Tayini",
+          "125 / adet"
+        ],
+        [
+          "Kızdırma Kaybı",
+          "320 / adet"
+        ],
+        [
+          "Standart XRD Çekimi + Kalitatif Analiz",
+          "940 / adet"
+        ],
+        [
+          "HPLC (Kantitatif) 1",
+          "625 / adet"
+        ],
+        [
+          "Şeker Analizi (Grup Şeker)",
+          "875 / adet"
+        ],
+        [
+          "Isı Kapasitesi (C P ) Analizi",
+          "2500 / adet"
+        ],
+        [
+          "Sıcak Kalıplama (Bakalit)",
+          "250 / adet"
+        ],
+        [
+          "Kuru Öğütme",
+          "125 / adet"
+        ],
+        [
+          "SEM-EBIC Dedektörü",
+          "3125 / adet"
+        ],
+        [
+          "Pestisit Analizi (Grup Pestisit)",
+          "875 / adet"
+        ],
+        [
+          "EBSD Nokta Analizi ve Haritalama",
+          "3125 / saat"
+        ],
+        [
+          "Fırın Kullanımı (Kutu tipi, 1500 o C’ye kadar)",
+          "1500 / kullanım"
+        ],
+        [
+          "Zımparalama ve Parlatma",
+          "500 / adet"
+        ],
+        [
+          "Mikro Sertlik Ölçümü (Vickers Yöntemi 5 – Indent)",
+          "440 / adet"
+        ],
+        [
+          "3-Boyutlu Modelleme",
+          "625 / saat"
+        ],
+        [
+          "Kimyasal Dağlama (Seramik Malzemeler)",
+          "320 / adet"
+        ],
+        [
+          "Alevli AAS ile ppm (mg/L) seviyesinde analiz (3 Tekrar Çekim)",
+          "1250 / adet"
+        ],
+        [
+          "LC/MS Analizi (Kalitatif)",
+          "570 / adet"
+        ],
+        [
+          "HPLC (Kalitatif)",
+          "500 / adet"
+        ],
+        [
+          "Stereo Zoom Mikroskop",
+          "250 / saat"
+        ],
+        [
+          "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)",
+          "1570 / saat"
+        ],
+        [
+          "SEM-Katodolüminesans (SEM-CL)",
+          "3125 / saat"
+        ],
+        [
+          "AAS Numune Hazırlama",
+          "375 / adet"
+        ],
+        [
+          "LC/MS/MS",
+          "1070 / adet"
+        ],
+        [
+          "Tane Boyut Dağılımı (Lazer tekniği ile su ortamında) 1",
+          "750 / adet"
+        ],
+        [
+          "Alevli AAS ile ppm (mg/L) seviyesinde analiz (Tek Çekim)",
+          "500 / adet"
+        ],
+        [
+          "Etüv Kullanımı",
+          "375 / gün"
+        ],
+        [
+          "Kuru Presleme",
+          "320 / adet"
+        ],
+        [
+          "AAS Numune Hazırlama (3 Tekrar)",
+          "940 / adet"
+        ],
+        [
+          "Saf Su",
+          "20 / lt"
+        ],
+        [
+          "Alümina/Platin Kroze Hasar Bedeli *",
+          "6875 / adet"
+        ],
+        [
+          "Pestisit Analizi (Tek Pestisit)",
+          "750 / adet"
+        ],
+        [
+          "Rietveld Analizi",
+          "5000 / adet"
+        ],
+        [
+          "GC/MS (Kantitatif) 1",
+          "750 / adet"
+        ],
+        [
+          "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Toz Formunda",
+          "1250 / adet"
+        ],
+        [
+          "GC/MS (Kalitatif)",
+          "565 / adet"
+        ],
+        [
+          "Standart X-Işını Kırınım Deseni (XRD)",
+          "625 / adet"
+        ],
+        [
+          "Sıvı Piknometre ile Tozlarda Kütle Yoğunluğu Tayini",
+          "250 / adet"
+        ],
+        [
+          "LC/MS QTOF (HRMS) Tam Kütle Tayini",
+          "1250 / adet"
+        ],
+        [
+          "Mikro Sertlik Ölçümü (Vickers Yöntemi 3 – Indent)",
+          "375 / adet"
+        ],
+        [
+          "Soğuk Kalıplama (Reçine)",
+          "250 / adet"
+        ]
+      ],
+      "analysis_count": 67
+    }
+  ]
 }

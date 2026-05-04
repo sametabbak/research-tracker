@@ -9,7 +9,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 40,
-    "last_updated": "2026-04-23"
+    "last_updated": "2026-05-04"
   },
   {
     "id": "esogu_arum",
@@ -21,7 +21,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 184,
-    "last_updated": "2026-04-23"
+    "last_updated": "2026-05-04"
   },
   {
     "id": "dpu_iltem",
@@ -32,8 +32,8 @@
     "pricing_url": "https://dpuiltem.com.tr/analiz-ucretleri/",
     "active": true,
     "reference": false,
-    "analysis_count": 66,
-    "last_updated": "2026-04-23"
+    "analysis_count": 67,
+    "last_updated": "2026-05-04"
   },
   {
     "id": "atauni_daytam",
@@ -45,7 +45,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 132,
-    "last_updated": "2026-04-23"
+    "last_updated": "2026-05-04"
   },
   {
     "id": "eu_taum",
@@ -57,7 +57,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 23,
-    "last_updated": "2026-04-23"
+    "last_updated": "2026-05-04"
   },
   {
     "id": "cu_cutam",
@@ -69,7 +69,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 64,
-    "last_updated": "2026-04-23"
+    "last_updated": "2026-05-04"
   },
   {
     "id": "neu_bitam",
@@ -81,7 +81,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 150,
-    "last_updated": "2026-04-23"
+    "last_updated": "2026-05-04"
   },
   {
     "id": "gazi_gutmam",
@@ -93,7 +93,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 18,
-    "last_updated": "2026-04-23"
+    "last_updated": "2026-05-04"
   },
   {
     "id": "hacettepe_hunitek",
@@ -105,7 +105,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 72,
-    "last_updated": "2026-04-23"
+    "last_updated": "2026-05-04"
   },
   {
     "id": "gaun_ulutem",
@@ -116,7 +116,7 @@
     "pricing_url": "https://ulutem.gaziantep.edu.tr/pages.php?url=ulutem-analiz-ucretleri-ve-formlar-61",
     "active": true,
     "reference": false,
-    "analysis_count": 95,
-    "last_updated": "2026-04-23"
+    "analysis_count": 0,
+    "last_updated": "2026-05-04"
   }
 ]
