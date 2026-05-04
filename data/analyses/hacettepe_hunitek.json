@@ -222,7 +222,7 @@
       "notes": ""
     },
     {
-      "name": "25°C – 1000 °C arası Termal Gravimetrik Analiz +Simultane DSC",
+      "name": "25°C – 1000 °C arası Termal Gravimetrik Analiz -Simultane DSC",
       "category": "TGA (Termogravimetrik Analiz)",
       "price": 1150.0,
       "currency": "TRY",
@@ -230,7 +230,7 @@
       "notes": ""
     },
     {
-      "name": "Termal Gravimetrik Analiz + Diferensiyal Termal Analiz",
+      "name": "Termal Gravimetrik Analiz - Diferensiyal Termal Analiz",
       "category": "TGA (Termogravimetrik Analiz)",
       "price": 1650.0,
       "currency": "TRY",
@@ -518,7 +518,7 @@
       "notes": ""
     },
     {
-      "name": "Reaksiyon Hazırlığı (45 örnek ve altı) + Cihaz Kullanımı",
+      "name": "Reaksiyon Hazırlığı (45 örnek ve altı) - Cihaz Kullanımı",
       "category": "Gerçek Zamanlı PCR (RT-PCR)",
       "price": 1350.0,
       "currency": "TRY",
@@ -526,7 +526,7 @@
       "notes": ""
     },
     {
-      "name": "Reaksiyon Hazırlığı (45 örnek ve üstü) + Cihaz Kullanımı",
+      "name": "Reaksiyon Hazırlığı (45 örnek ve üstü) - Cihaz Kullanımı",
       "category": "Gerçek Zamanlı PCR (RT-PCR)",
       "price": 1950.0,
       "currency": "TRY",
@@ -542,7 +542,7 @@
       "notes": ""
     },
     {
-      "name": "Reaksiyon Hazırlığı + Cihaz Kullanımı",
+      "name": "Reaksiyon Hazırlığı - Cihaz Kullanımı",
       "category": "PCR",
       "price": 550.0,
       "currency": "TRY",
@@ -550,7 +550,7 @@
       "notes": ""
     },
     {
-      "name": "Agaroz Jel (DNA) + Görüntüleme",
+      "name": "Agaroz Jel (DNA) - Görüntüleme",
       "category": "Elektroforez ve Jel Görüntüleme",
       "price": 700.0,
       "currency": "TRY",
