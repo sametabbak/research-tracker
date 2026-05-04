@@ -525,6 +525,7 @@ def _rebuild_keywords() -> None:
         "XRD":       ["xrd", "x-ray", "x ışını", "kırınım", "difraksiyon"],
         "SEM":       ["sem", "taramalı elektron", "scanning electron"],
         "SEM-EDX":   ["edx", "eds", "enerji dağılımlı", "energy dispersive"],
+        "Kaplama":   ["kaplama", "altın kaplama", "paladyum kaplama", "karbon kaplama", "iridyum kaplama", "altın/paladyum", "au,pd", "numune kaplama", "coating"],
         "TEM":       ["tem", "transmisyon elektron", "transmission electron"],
         "AFM":       ["afm", "atomik kuvvet", "atomic force"],
         "BET":       ["bet", "yüzey alan", "surface area"],
