@@ -51,14 +51,7 @@
     "Çok noktalı BET Analizi",
     "Çok noktalı BET Analizi - Gözenek Boyutu (N gaz 2 adsorbsiyonu)"
   ],
-  "Elektriksel, Manyetik ve Dielektrik Ölçümler": [
-    "1- Dielektrik Ölçüm Oda Sıcaklığında",
-    "1-Piezoelektrik Sabiti (d) Ölçümü",
-    "2- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 400 °C)",
-    "2- Piezoelektrik Sabiti (d) Ölçümü (Oda Sıcaklığı Kutuplama)",
-    "3- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 800 °C)",
-    "3- Piezoelektrik Sabiti (d) Ölçümü (Yüksek Sıcaklık Kutuplama)",
-    "4- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 1000 °C)",
+  "Elektriksel Ölçümler": [
     "Ayrıntılı Elektokimyasal Davranışın Belirlenmesi",
     "Elektriksel İletkenlik (EC)",
     "Elektrokimyasal Aktifliğin Belirlenmesi",
@@ -69,6 +62,17 @@
     "Manyetik Kuvvet Mikroskop",
     "Manyetik Kuvvet Ölçümü (MFM)",
     "Sularda Elektriksel İletkenlik Tayini"
+  ],
+  "Dielektrik Ölçümler": [
+    "1- Dielektrik Ölçüm Oda Sıcaklığında",
+    "2- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 400 °C)",
+    "3- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 800 °C)",
+    "4- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 1000 °C)"
+  ],
+  "Piezoelektrik Ölçümler": [
+    "1-Piezoelektrik Sabiti (d) Ölçümü",
+    "2- Piezoelektrik Sabiti (d) Ölçümü (Oda Sıcaklığı Kutuplama)",
+    "3- Piezoelektrik Sabiti (d) Ölçümü (Yüksek Sıcaklık Kutuplama)",
   ],
   "Eğitim, Danışmanlık ve Raporlama": [
     "Akademik Raporlama İlk 10 sayfadan sonra her 50 sayfa için",
