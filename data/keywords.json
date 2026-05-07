@@ -1,1126 +1,721 @@
 {
-  "XRD": [
-    "Toz Kırınım Deseni (Toz Numune)",
-    "Yüksek Sıcaklık Kırınım Deseni",
+  "3 Boyutlu Tarama ve Üretim": [
+    "3 Boyutlu Tarama (CAD-YenidenTasarlama)",
+    "3 Boyutlu Tarama (Data Tarama/Yüzeylendirme)**",
+    "3 Boyutlu Ürün Üretimi (DLP) 0-4 cm’ye kadar olan numunlerin kürlemeli",
+    "3 Boyutlu Ürün Üretimi (DLP) 0-4 cm’ye kadar olan numunlerin kürlemesiz",
+    "3 Boyutlu Ürün Üretimi (DLP) 4-12 cm’ye kadar olan numunlerin kürlemeli",
+    "3 Boyutlu Ürün Üretimi (DLP) 4-12 cm’ye kadar olan numunlerin kürlemesiz",
+    "3 Boyutlu Ürün Üretimi (FDM)*",
+    "3 Boyutlu Ürün Üretimi (Polyjet)*",
+    "3-Boyutlu Modelleme",
+    "3-Boyutlu Optik Tarayıcı",
+    "Tarama ve Yeniden Yapılandırma2"
+  ],
+  "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri": [
+    "AAS (Atomik Absorpsiyon Spektrometresi)  Analiz (ilk element)  Sonraki Elementlerin Her Biri için",
+    "Alevli AAS ile ppm (mg/L) seviyesinde analiz (3 Tekrar Çekim)",
+    "Alevli AAS ile ppm (mg/L) seviyesinde analiz (Tek Çekim)",
+    "Element Başına AAS-ALEV",
+    "Grafit AAS ile ppb (mg/L) seviyesinde analiz",
+    "Hidrür AAS ile ppb (mg/L) seviyesinde analiz"
+  ],
+  "AFM (Atomik Kuvvet Mikroskobu) Analizleri": [
+    "1-AFM Temas (Contact) Modu (TL/Saat)",
+    "2-AFM Temassız (Non-Contact) Modu (TL/Saat)",
+    "3-Diğer AFM Modu (TL/Saat) (Bilgi alınız!)",
+    "AFM Numune İnceleme",
+    "Atomik Kuvvet Mikroskobu (AFM) Yüzey Analizi  Atomik Kuvvet Mikroskobu Yüzey Analizi",
+    "Temas Modunda Analiz",
+    "Temaslı Mod (10 μm x 10 μm 512 Piksel)",
+    "Temassız Mod (10 μm x 10 μm 256 Piksel)",
+    "Temassız Mod (20 μm x 20 μm 256 Piksel)"
+  ],
+  "BET ve Yüzey Alanı (Porozimetre) Analizleri": [
+    "1-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (Tek Nokta)",
+    "2-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (5 Nokta)",
+    "20 Noktalı BET Yüzey Alanı",
+    "3-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı - Gözenek Dağılımı",
+    "4-Cıvalı Porozimetre Analizi",
+    "40 Noktalı BET Yüzey Alanı",
+    "BET Yüzey Alanı (N adsorpsiyonu) Ölçümü",
+    "Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
+    "H Adsorpsiyonu Ölçümü",
+    "Hızlı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
+    "Kemisorpsiyon Ölçümü",
+    "Micro Gözeneklilik Analizi",
+    "Mikrogözenek Analizi ve BET Yüzey Alanı Analizi",
+    "Mikrogözenek Analizi ve Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
+    "Tek Noktalı BET Yüzey Alanı",
+    "Tek noktalı BET Analizi",
+    "Çok noktalı BET Analizi",
+    "Çok noktalı BET Analizi - Gözenek Boyutu (N gaz 2 adsorbsiyonu)"
+  ],
+  "Elektriksel, Manyetik ve Dielektrik Ölçümler": [
+    "1- Dielektrik Ölçüm Oda Sıcaklığında",
+    "1-Piezoelektrik Sabiti (d) Ölçümü",
+    "2- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 400 °C)",
+    "2- Piezoelektrik Sabiti (d) Ölçümü Ölçümü (Oda Sıcaklığı Kutuplama)",
+    "3- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 800 °C)",
+    "3- Piezoelektrik Sabiti (d) (Yüksek Sıcaklık Kutuplama)",
+    "4- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 1000 °C)",
+    "Ayrıntılı Elektokimyasal Davranışın Belirlenmesi",
+    "Elektriksel İletkenlik (EC)",
+    "Elektrokimyasal Aktifliğin Belirlenmesi",
+    "Hall Etkisi (77K)*",
+    "Hall Etkisi (Oda Sıcaklığı)*",
+    "Kelvin Prob Mikroskop",
+    "Kelvin Probe (KFM)",
+    "Manyetik Kuvvet Mikroskop",
+    "Manyetik Kuvvet Ölçümü (MFM)",
+    "Sularda Elektriksel İletkenlik Tayini"
+  ],
+  "Eğitim, Danışmanlık ve Raporlama": [
+    "Akademik Raporlama İlk 10 sayfadan sonra her 50 sayfa için",
+    "Biyolojik Dokulardan SEM İçin Numune Hazırlama Eğitimi***",
+    "Biyolojik Dokulardan TEM İçin Numune Hazırlama Eğitimi***",
+    "Eğitim",
+    "Katı NMR Temel Kullanıcı Eğitimi",
+    "Metod Geliştirme**",
+    "Metot Geliştirme",
+    "Metot geliştirme**",
+    "SEM Cihaz Kullanımı Eğitimi****",
+    "Sertifikalı Eğitim Paketi (Teorik ve Uygulama İçeren) İçin Günlük (8 Saat) Laboratuvar Kullanımı*****",
+    "Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
+    "Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı***",
+    "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı *",
+    "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
+    "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı**",
+    "Sıvı NMR Temel Kullanıcı Eğitimi",
+    "TEM Cihaz Kullanımı Eğitimi***",
+    "TEM Temel Kullanıcı Eğitimi",
+    "XRD Temel Kullanıcı Eğitimi",
+    "XRF Temel Kullanıcı Eğitimi**",
+    "Ölçüm Belirsizliği ve Metod Validesyonu Uygulamalı Eğitimi (16 Saat)",
+    "İngilizce Raporlama"
+  ],
+  "FTIR, Raman ve Optik Spektroskopi": [
+    "ATR – FTIR Spektrumu",
+    "Açıya Bağlı Ölçüm (Genel Tarama)",
+    "Açıya Bağlı Ölçüm (Kısmi Tarama)",
+    "Analiz (ATR)",
+    "Analiz (KBr Pellet)",
+    "FT-IR Analizleri  FT-IR / FT-FIR Spektrumu  FT-IR Karakterizasyon (Spektrum - Kütüphane)",
+    "FT-IR Spektrumu",
+    "FT-IR Spektrumu - Database Taraması",
+    "Floresans Ölçümü",
+    "Floresans Ölçümü*",
+    "Fotometrik Analiz",
+    "Frekans Taraması",
+    "Genel Spektrum",
+    "IR Spektrumu",
+    "Kantitatif analiz ( 190-3300 cm -1 )",
+    "Lüminesans Ölçümü",
+    "NIR Analizi",
+    "Oda Sıcaklığında Spektrum",
+    "Polarize Edilmiş Spektrum",
+    "Raman Spektrumu *",
+    "Raman Spektrumu (1 lazerle geniş alan tarama, 2 atım)",
+    "Raman Spektrumu (1 lazerle geniş alan tarama,10 atım)",
+    "Raman Spektrumu Eldesi",
+    "Reflektans",
+    "Renk Tayini (spektrofotometrik)",
+    "Spektrum Tarama",
+    "Spektrum Taraması",
+    "Spektrum Taraması (Absorbans/Transmittans)",
+    "Sıcaklığa Bağlı Ölçüm",
+    "Sıcaklığa Bağlı Ölçüm (70-350 Kelvin)- Genel Spektrum (Bir",
+    "Sıcaklığa Bağlı Ölçüm (70-350 Kelvin)- Kısmi Spektrum (Bir",
+    "Sıcaklığına Bağlı Spektrum (10-350 Kelvin)",
+    "Sıvı İçerisinde Spektrum",
+    "Tek Dalga Boyunda Ölçüm",
+    "UV-VIS-NIR Spektrumu (Katı Numune)",
+    "UV-VIS-NIR Spektrumu (Katı Numune)*",
+    "UV-VIS-NIR Spektrumu (Sıvı Numune)",
+    "UV-VIS-NIR Spektrumu (Sıvı Numune)*",
+    "UV-Vis Spektrometrik Ölçüm",
+    "UV/UPS Ölçümü"
+  ],
+  "Genel Elementel Analizler (CHNS vb.)": [
+    "C, H, N, S Analizi",
+    "Elementel Analiz",
+    "Yüzey Elementel Haritalama"
+  ],
+  "Genel Kimya, Su, Çevre ve Gıda Analizleri": [
+    "1-Kükürt Tayini",
+    "Aflatoksin Analizi (B1,B2,G1,G2)",
+    "Alkol Analizleri ve Raporlanması",
+    "Anyon Analizi (Cl-, F-, Br-, SO 2-, SO 2- H PO 3-, NO -, NO -) 4 3 2 4 3 2",
+    "Anyon, Katyon Kalitatif Analiz (Tek İyon)",
+    "Anyon, Katyon Kantitatif Analiz (Tek İyon)",
+    "Anyon, Katyon Kantitatif Analiz İlave Bileşen",
+    "Asbest Analizi",
+    "Bulanıklık (türbidimetrik yöntem)",
+    "Elektrometrik Metot ile Elektriksel İletkenlik Tayini",
+    "Elektrometrik Metot ile pH Tayini",
+    "Fitalat",
+    "HMF Analizi (Kantitatif)",
+    "Kalitatif Böbrek Taşı Analizi",
+    "Kalitatif Testler (Kurum içi Test Metodu)",
+    "Katı Madde Tayini",
+    "Nem Tayini",
+    "Nem tayini (Etüv ile)",
+    "Organik Asit Analizi (Kantitatif)",
+    "Pestisit Analizi (Grup Pestisit)",
+    "Pestisit Analizi (Tek Pestisit)",
+    "Renk Tayini",
+    "Rutubet (Nem) Tayini",
+    "Sularda pH Tayini",
+    "Sularda ve gıdalarda (Cs-137, Cs-134)",
+    "Titrimetrik Analizler (Tuz, Kuru madde vs.)",
+    "Toplam Fenolik Madde Tayini",
+    "Toplam Organik Asit Analizi (Oxalic Acid, Citric Acid, Tartaric Acid, Maleic Acid, Malic Acid, Succinic Acid, Lactic Acid, Formic Acid, Acetic Acid, Butric Acid) (10 Asit için)",
+    "Toplam Sertlik (Ca-Mg)",
+    "Toplam Çözünmüş Madde Miktarı (TDS)",
+    "Toplam Şeker Analizi (Sakkaroz, Maltoz, Glikoz, Laktoz, Fruktoz) (5 Şeker için)",
+    "Tuzluluk",
+    "Uçucu Yağ Analizi",
+    "Uyuşturucu Madde Analizi İçin Mikroskobik İnceleme ve Raporlanması",
+    "Uyuşturucu ve Uyarıcı Madde Analizi (LC-MS veya GC-MS ile) Ve Raporlama",
+    "Vitamin Analizi (1 Numunede Vitamin Çeşidi Başına)",
+    "Volumetrik Titrasyon (EDTA, İyodimetrik, Tiyosülfat)",
+    "Yağ asitleri Kompozisyonu % bağıl miktar",
+    "Çözünmüş Oksijen",
+    "Şeker Analizi (Grup Şeker)",
+    "Şeker Analizi (Kantitatif) (1 Numunede Şeker Çeşidi Başına)",
+    "Şeker Analizi (Tek Şeker)",
+    "pH Tayini",
+    "pH Ölçümü"
+  ],
+  "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)": [
+    "1-Soğuk İzostatik Pres (CIP)",
+    "AAS Numune Hazırlama",
+    "AAS Numune Hazırlama (3 Tekrar)",
+    "ASE ile Ekstraksiyon**",
+    "Analiz Çözeltisi Hazırlama",
+    "Bilyeli homojenizatör Tek Kullanım",
+    "Biyolojik Dokulardan Kriyo-TEM İçin Numune Hazırlama*",
+    "Biyolojik Dokulardan SEM İçin Numune Hazırlama",
+    "Biyolojik Dokulardan TEM İçin Numune Hazırlama",
+    "Dondurarak Kurutma (Bakteri örnekleri çalışılmamaktadır)",
+    "Elektro Parlatma Numune Hazırlama**",
+    "Eritiş Cihazı ile Numune Hazırlama",
+    "Eritiş Numune Hazırlama",
+    "Eritiş İle Numune Hazırlama",
+    "Fiziksel Numune Hazırlık",
+    "Fiziksel Öğütme",
+    "Formwar/Karbon Grid Üzerine Çözeltiden Numune Hazırlama",
+    "Fırın Kullanımı (Kutu tipi, 1500 o C’ye kadar)",
+    "HPLC-Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
+    "Katı Numune Hazırlık (Mikrodalga Çözümlendirme)",
+    "Kesme",
+    "Kimyasal Dağlama (Seramik Malzemeler)",
+    "Klasik Numune Hazırlık (Sıvı Ortamında Asidik/Bazik Çözümlendirme)",
+    "Kritik Nokta Kurutma (Biyolojik Numune)***",
+    "Kritik Nokta Kurutma Cihazı ile Numune Hazırlama",
+    "Kritik Noktada Kurutma",
+    "Kriyostat ile kesit alma",
+    "Kuru Presleme",
+    "Kuru Öğütme",
+    "Kırma ve Öğütme",
+    "Kırma, Öğütme",
+    "Kırma-Öğütme",
+    "Liyofilizasyon (100 mL/24 saat)",
+    "Liyofilizasyon Numune Kurutma",
+    "Liyofilizatör Kullanımı",
+    "Mekanik Numune Hazırlama (Öğütme, presleme vb.)",
+    "Mikrodalga Yakma Fırını",
+    "Mikrodalga ile Numune Hazırlama (H2O2 içeren karışım)",
+    "Mikrodalga ile Numune Hazırlama (HF içeren karışım)",
+    "Mikrodalga ile Numune Hazırlama (Kral Suyu ile)",
+    "Mikrodalga ile Numune Hazırlama (Nitik asit ile)",
+    "Mikrodalga ile Numune Hazırlama (Çoklu asit içeren karışım)",
+    "Numune Hazırlama",
+    "Numune Hazırlama:  Kesme  Öğütme  Kriyojenik Öğütme ( Tek seferde max. 2 g numune öğütülmektedir.)  Presleme  Platin potada numune hazırlık  Bakalite alma  Parlatma  Altın veya karbon kaplama (Yalıtkan örnekler için) (50 bin büyütmeye kadar)  Yüksek Çözünürlüklü Platin Kaplama (50 bin ve üzeri büyütme için)  Kritik noktada kurutma  Kızdırma kaybı",
+    "Numune Hazırlık",
+    "Numune Hazırlık (Biyolojik numuneler hariç)",
+    "Numune Hazırlık (Kesme, Zımparalama,Parlatma)",
+    "Numune hazırlığı (asit ile mikro dalga yakma/yaş yakma)",
+    "Numune yakma, damıtma ve titrasyon",
+    "Otoklav",
+    "Press İle Numune Hazırlama",
+    "Reaksiyon Hazırlığı (45 örnek ve altı) - Cihaz Kullanımı",
+    "Reaksiyon Hazırlığı (45 örnek ve üstü) - Cihaz Kullanımı",
+    "Reaksiyon Hazırlığı - Cihaz Kullanımı",
+    "Rotary Evaporatör (maksimum 400 mL)",
+    "STEM sıvı numune hazırlık**",
+    "Semi-Dry Blotlama",
+    "Soğuk Kalıplama (Reçine)",
+    "Soğuk Plazma (O gazı)** 2",
+    "Sıcak Kalıplama (Bakalit)",
+    "Ultramikrotomda Tam İnce Kesit Alma",
+    "Ultramikrotomda Yarı İnce Kesit Alma",
+    "Zımparalama ve Parlatma",
+    "Ön Hazırlık (Açıktan Çözeltiye Alma)",
+    "Ön Hazırlık (Kırma. Öğütme vb.)",
+    "Ön Hazırlık (Süzme. Santrifüj vb,)",
+    "Ön Hazırlık (Yakma. Kurutma vb.)",
+    "Örnek Hazırlama",
+    "Örnek Hazırlama (Bilyalı Öğütücü)",
+    "Örnek Hazırlama (Toz halinde gönderilen numunelerin cihaza",
+    "Örnek Hazırlama Adet Daytamla"
+  ],
+  "Hücre Kültürü ve Biyolojik Analizler": [
+    "Annexin V , Dead Cell Kit",
+    "Annexin-PI ile apoptoz-nekroz hücre analizi (Annexin V-",
+    "Autophagy LC3-antibody based Kit",
+    "Caspase-3/7 Kit",
+    "Cell Cycle Kit",
+    "Direkt veya İndirekt Sitotoksisite (ISO10993-5)",
+    "ELİSA dataların analizi ve yorumlanması",
+    "ELİSA kit protokolü uygun örnek plaka hazırlanması ve",
+    "ELİSA kit protokolüne göre hazırlanmış hazır Örnekler,",
+    "Elektroporasyon ile gen aktarımı",
+    "Elisa Reader",
+    "Flow sonuçlarının analizi ve yorumlanması Analiz",
+    "Histokimyasal Boyama; Yarı İnce Kesit Boyama",
+    "Hücre Akış Sitometrisi",
+    "Hücre Kültürü Laboratuvarı Kullanımı",
+    "Hücre Kültürü Laboratuvarı Kullanımı**",
+    "Hücre Kültürlerinde Mikoplazma Kontrolü-DAPI ile",
+    "Hücre Serisi Stoklama (6 Ay Stoklama)",
+    "Hücre açma. pasajlama, hücre sayımı (25T Flask)",
+    "Hücre açma, çoğaltma, stoklama (20 gün)",
+    "IC50 değeri hesaplama (Bir örnek için) ******",
+    "MTT veya eşdeğeri sitotoksisite testi (5 konsantrasyon dışında ek her konsantrasyon)",
+    "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, Tek saat dilimi ) ****",
+    "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, Üç farklı saat dilimi ) ****",
+    "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, İki farklı saat dilimi ) ****",
+    "Mikrobiyoloji Laboratuvar Kullanımı",
+    "Mikroplazma Testi",
+    "Nanodrop ile Protein Miktar Tayini",
+    "Otomatik Hücre Sayımı Cihazı Kullanımı",
+    "Oxidative Stress Kit",
+    "Primer Hücre Kültürü*******",
+    "Protein Analizi",
+    "Protein Tanımlama",
+    "Trans-Blotlama",
+    "Çözelti / Hücre Süspansiyonlarından Grid Üzerine Kriyo Hazırlık*",
+    "İmmunogold Boyama İçin Numune Hazırlama",
+    "İmmunogold Etiketleme****"
+  ],
+  "ICP (İndüktif Eşleşmiş Plazma) Analizleri": [
+    "ICP-MS 1 Element Analizi",
+    "ICP-MS 1 Nadir Toprak Elementi Analizi*",
+    "ICP-MS 11-15 Element Analizi",
+    "ICP-MS 11-18 Nadir Toprak Elementi Analizi*",
+    "ICP-MS 16-20 Element Analizi",
+    "ICP-MS 2-10 Nadir Toprak Elementi Analizi*",
+    "ICP-MS 2-5 Element Analizi",
+    "ICP-MS 21-30 Element Analizi",
+    "ICP-MS 31-40 Element Analizi",
+    "ICP-MS 41-50 Element Analizi",
+    "ICP-MS 51 ve üzeri element Analizi",
+    "ICP-MS 6-10 Element Analizi",
+    "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)  Numune analizi 1-10 element için  İlave element analizi için  Mikrodalga Çözme İşlemi  Çoklu Asit İle Çözme İşlemi  Değerli Metaller 1-10 Element (Au, Pd, Pt, Ag, Rh vb.)",
+    "Numune Başına ICP-MS 24'lü Mix (Ag,Al,B,Ba,Bi,Ca,Cd, Cr,Co,Cu, Fe,Ga,In,K,Li) (Mg,Mn,Na,Ni,Pb,Sr,Tl,Zn)"
+  ],
+  "Kalori, Kömür ve Yanmazlık Testleri": [
+    "2-Kalori Tayini (Kömür, Fuel-Oil vb.)",
+    "3-Yerli Kömür Tam Analiz (Kalori - Nem- Kül - Kükürt Tayini)",
+    "4-İthal Kömür Tam Analiz (Kalori - Nem- Kül- Kükürt - Uçucu Madde)",
+    "Kalori Ölçümü",
+    "Kızdırma Kaybı",
+    "Kül Fırını",
+    "Kül Tayini - Dolgulu polimerler, polimerler, inorganik maddeler ve fosil yakıtlar için",
+    "Yakıtlarda Kalori Ölçümü",
+    "Yanmazlık",
+    "Yanmazlık Testi (UL-94)"
+  ],
+  "Kaplama İşlemleri (Altın, Karbon, Platin vb.)": [
+    "1-Karbon Kaplama (4 adete kadar)",
+    "2-Altın Kaplama (4 adete kadar)",
+    "Altın Kaplama (Yalıtkan Numuneler için, 1set-6 numune)",
+    "Altın/Paladyum Kaplama",
+    "Au/Pd/C Kaplama (7 taneye kadar) *7 Tane numune 10 mm çapındaki numuneler için geçerlidir. **Çapı 10 mm büyük numuneler için haznenin aldığı kadar numune konur ve set olarak değerlendirilir. *** Diş Numuneleri için  en fazla 3 adet , 1 set olarak değerlendirilir.",
+    "Bakalite ve/veya epoksi kaplama",
+    "Hassas İridyum Kaplama",
+    "Kaplama",
+    "Numune Kaplama (Altın/Paladyum , Karbon)*",
+    "SEM Altın (Au,Pd), Karbon Kaplama"
+  ],
+  "Kromatografi (HPLC, GC, GPC)": [
+    "GPC analizi (mobil faz THF)",
+    "GPC analizi numune hazırlama",
+    "HPLC (Kalitatif)",
+    "HPLC (Kantitatif) *",
+    "HPLC Analizleri  Fruktoz, Glukoz, Sakaroz, Maltoz analizi  Kafein, Naftalin, HMF analizi  Vitamin analizleri (her biri için)  Monomer analizi (BPA, UDMA, HEMA, TEGDMA vb.)  Diğer Özel bileşenler için analizler (standart ve metot getirilecek)  Kromatografik Yöntem Geliştirme Vitamin analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
+    "HPLC- Kantitatif: İki veya Daha Fazla Bileşenli Numunelerde Her Bir Ek Bileşen Başına",
+    "HPLC-Kalitatif: İki veya Daha Fazla Bileşenli Numunelerde Her Bir Ek Bileşen Başına",
+    "HPLC-Kalitatif: Tek Bileşen (Metot Bildirilmişse)",
+    "HPLC-Kantitatif: Tek Bileşen (Metot Bildirilmişse)",
+    "HPLC-Metot geliştirme (2 bileşen)",
+    "Preparatif HPLC"
+  ],
+  "Kütle Spektrometrisi (LC-MS, GC-MS)": [
+    "GC-MS Analizleri  Kalitatif Analiz Aroma Bileşikler (GC-MS kütüphane taraması)  Kalitatif Analiz Uçucu Bileşikler (GC-MS kütüphane taraması)  Kalitatif Analiz Fenolik Bileşikler(GC-MS kütüphane taraması)  Kalitatif Analiz Yağ asitleri (GC-MS kütüphane taraması)  Kalitatif Analiz Tam Spektrum Tarama (GC-MS kütüphane taraması)  Esansiyel yağ bileşenleri/Yağ asitleri Komp % bağıl (GC-FID) GC-MS analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
+    "GC-MS Kantitatif Analiz Tek Bileşen/İlave Bileşen Başına GC-FID Kantitatif Analiz Tek Bileşen/İlave Bileşen Başına",
+    "GC/MS (Kalitatif)",
+    "GC/MS (Kantitatif) *",
+    "Headspace Kalitatif (Kütüphane Taraması)",
+    "Headspace Kantitatif (Tek Bileşen)",
+    "Kantitatif ve Kalitatif GC-MS Analizi",
+    "LC/MS Analizi (Kalitatif)",
+    "LC/MS Analizi (Kantitatif) *",
+    "LC/MS QTOF (HRMS) Tam Kütle Tayini",
+    "LC/MS/MS",
+    "Molekül ağırlığı tayini (Işık Saçınımı ile)",
+    "Moleküler Kütle Tayini (Yüksek Çözünürlüklü)",
+    "SPME Analizi",
+    "Tam Kütle Tayini (Kolon kullanılarak numune analizi)",
+    "Tam Kütle Tayini Tek Enjeksiyon (Kolonsuz saf numune analizi)",
+    "Yüksek Çözünürlüklü (HRMS) Kütle Analizi"
+  ],
+  "Mekanik Testler (Çekme, Basma, Eğme)": [
+    "3 nokta Eğme (Oda Sıcaklığı)",
+    "Aşınma Analizi",
+    "Basma Testi",
+    "Dinamik Mekanik Analiz – (-100 – 400 oC)",
+    "Dinamik Mekanik Analiz – (25 – 400 oC)",
+    "Kalıntı Gerilme Analizi",
+    "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Sucuk Formunda",
+    "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Toz Formunda",
+    "Yüksek Sıcaklık Altında Aşınma Analizi (500 o C ' ye kadar)",
+    "Çekme Analizi",
+    "Çekme Mukavemeti Tayini / TS EN ISO 6892-1",
+    "Çekme Testi (1-5 saat)",
+    "Çekme Testi (5 saat ve üzeri her ek saat)",
+    "Çekme-Basma-Üç Nokta Eğme Testleri  Çekme, Basma, Üç Nokta Eğme (oda sıcaklığında)",
+    "ÇekmeTesti (0-1 saat)",
+    "Üç Nokta Eğme Testi",
+    "İplik Kopma Kuvveti ve Uzama"
+  ],
+  "Mikrosertlik ve Makrosertlik Testleri": [
+    "2-Mikrosertlik Ölçümü (5 iz/numune)",
+    "Brinell sertlik ölçümü, Vickers sertlik ölçümü, Rockwell sertlik ölçümü",
+    "Mikro Sertlik Ölçümü (Vickers Yöntemi 3 – Indent)",
+    "Mikro Sertlik Ölçümü (Vickers Yöntemi 5 – Indent)",
+    "Mikro Sertlik Ölçümü (Vickers, Knoop) Mikro sertlik Dağılımı (Vickers, Knoop)",
+    "Sertlik Ölçümü (5 İz Ortalaması)",
+    "Vickers-Brinell ve Rockwell Sertik Testi*"
+  ],
+  "Moleküler Genetik ve PCR Analizleri": [
+    "Agaroz Jel (DNA) - Görüntüleme",
+    "Agaroz Jel Görüntüleme",
+    "Agaroz Jel-Yürütme",
+    "DNA/RNA Saflık ve Miktar Analizi Tek Kullanım",
+    "Gerçek Zamanlı PCR Cihazı*",
+    "Isoelektrik Fokuslama Cihazı Kullanımı Tek Kullanım",
+    "Jel Dökümantasyonu",
+    "Kan, doku ve bakteri gibi biyolojik örneklerden DNA ve RNA izolasyonu",
+    "Maxi Dikey Jel Elektroforezi (Cihaz Kullanımı)**",
+    "Mini Dikey Jel Elektroforezi (Cihaz Kullanımı)**",
+    "Mini Yatay Jel Elektroforezi  (Cihaz Kullanımı)**",
+    "PCR Cihaz Kullanımı",
+    "PCR Tek Kullanım",
+    "PCR, RT-PCR ve DNA Dizi Analizi için Primer Dizaynı Gerçekleştirilir.",
+    "Real Time PCR Tek Kullanım",
+    "SDS-PAGE Jeli Yürütme"
+  ],
+  "NMR Analizleri": [
+    "1 H (Proton)",
+    "11B NMR Analizi",
+    "11B NMR Analizi 16 Saat",
+    "11B NMR Analizi 27 Saat",
+    "11B NMR Analizi 4 Saat",
+    "11B NMR Analizi 8 Saat",
+    "11B-NMR",
+    "13C (Karbon) NMR Analizi",
+    "13C APT NMR Analizi",
+    "13C CP MAS NMR Analizi 16 Saat",
+    "13C CP MAS NMR Analizi 27 Saat",
+    "13C CP MAS NMR Analizi 4 Saat",
+    "13C CP MAS NMR Analizi 8 Saat",
+    "13C DEPT (45,90,135) NMR Analizi",
+    "13C-NMR",
+    "13C-NMR (1 saat)",
+    "13C-NMR (100 tarama)",
+    "13C-NMR (3 saat)",
+    "13C-NMR (coupled)",
+    "13C-NMR (gece)",
+    "15N NMR Analizi",
+    "15N NMR Analizi 16 Saat",
+    "15N NMR Analizi 27 Saat",
+    "15N NMR Analizi 4 Saat",
+    "15N NMR Analizi 8 Saat",
+    "15N-NMR",
+    "17O-NMR",
+    "19F NMR Analizi",
+    "19F-NMR",
+    "1H (Proton) NMR Analizi",
+    "1H NMR Analizi",
+    "1H-NMR",
+    "1H-NMR (Ölçüme hazır gelen numune)",
+    "29Si-NMR",
+    "31P NMR Analizi",
+    "31P NMR Analizi 16 Saat",
+    "31P NMR Analizi 27 Saat",
+    "31P NMR Analizi 4 Saat",
+    "31P NMR Analizi 8 Saat",
+    "31P-NMR",
+    "APT",
+    "Al NMR Analizi 16 Saat",
+    "Al NMR Analizi 27 Saat",
+    "Al NMR Analizi 4 Saat",
+    "Al NMR Analizi 8 Saat",
+    "COSY",
+    "COSY NMR Analizi",
+    "D O Değişimi 2",
+    "D O Exchange 2",
+    "DEPT (45-90-135)",
+    "DEPT-135",
+    "DEPT-90",
+    "Dötoro Çözücü",
+    "Full Analiz Paketi (1H-NMR, 13C-NMR, APT, DEPT-90, DEPT-135, COSY, HMBC, HMQC, HSQC",
+    "HETCOR NMR Analizi",
+    "HETCOR NMR Analizi 16 Saat",
+    "HETCOR NMR Analizi 27 Saat",
+    "HETCOR NMR Analizi 4 Saat",
+    "HETCOR NMR Analizi 8 Saat",
+    "HMBC",
+    "HMBC NMR Analizi",
+    "HMQC",
+    "HMQC NMR Analizi",
+    "HSQC",
+    "HSQC NMR Analizi",
+    "INADEQUATE NMR Analizi",
+    "NOE",
+    "NOE NMR Analizi",
+    "NOESY",
+    "NOESY NMR Analizi",
+    "Nükleer Manyetik Rezonans Spektrometresi (NMR)  1H (Proton) Spektrumu (Numune min. 20 mg)  D2O Değişimi  13C (Karbon)(Coupled, Decoupled) (Numune min. 50 mg)  1 D Spektrum: APT / DEPT (45, 90, 135)  2 D Spektrum: COSY/ NOESY/ HETCOR/ HMBC/ HMQC, 31P (Fosfor)  Çözücü (D2O, CHCI3)  Çözücü (DMSO, CD3OD)",
+    "ROESY",
+    "Relaxation Time Ölçümleri",
+    "Si NMR Analizi",
+    "Si NMR Analizi 16 Saat",
+    "Si NMR Analizi 27 Saat",
+    "Si NMR Analizi 4 Saat",
+    "Si NMR Analizi 8 Saat",
+    "TOCSY",
+    "TOCSY NMR Analizi",
+    "Water-Gated NMR Analizi",
+    "Çözücü Ücreti***/****: CDCl 3",
+    "Çözücü Ücreti: DMSO-D6, D O, ACETONE-D6 2",
+    "Çözücü Ücreti: MeOH-D4"
+  ],
+  "Nanoindentasyon": [
+    "Nanoindentasyon (10x10 matriks)*",
+    "Nanoindentasyon (15x15 matriks)*",
+    "Nanoindentasyon (20x20 matriks)*",
+    "Nanoindentasyon (5 iz)",
+    "Nanoindentasyon (Yumuşak yüzeyler)"
+  ],
+  "OES (Optik Emisyon Spektrometresi) Analizleri": [
+    "1-Optik Emisyon Spektrometresi (OES)"
+  ],
+  "Optik Mikroskopi ve Görüntüleme": [
+    "Faz Kontrast-Fluoresan Ataçmanlı Mikroskop",
+    "Floresan Ataçmanlı Mikroskop ile Görüntüleme*",
+    "Geniş Alan Haritalama ve Görüntü Birleştirme İşlemi",
+    "Görüntü Alma",
+    "Görüntü Analiz İşlemleri",
+    "Görüntü Renklendirme",
+    "Görüntüleme",
+    "Görüntüleme (Maksimum 6 saat)",
+    "Görüntüleme1",
+    "Hazır Preparat Görüntüleme",
+    "Hazır Preparatlar için Görüntüleme denemesi* Preparat",
+    "Inverted Mikroskop ile Görüntüleme*",
+    "Kamera entegreli floresan mikroskobu ile görüntü",
+    "Kamera entegreli ışık mikroskobu ile görüntü alma",
+    "Kamera entegreli ters (inverted) ışık mikroskobu",
+    "Kompakt Ters Tip Metalurjik Mikroskop Analizi",
+    "Konfokal Görüntüleme",
+    "Konfokal Mikroskop ile Görüntüleme*",
+    "Metal Mikroskobu",
+    "Multifoton Görüntüleme",
+    "Stereo Zoom Mikroskop",
+    "Stereomikroskop ile Görüntüleme*"
+  ],
+  "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri": [
+    "3-SEM Analizi (TL/Saat)",
+    "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)  FE-SEM  FE-SEM-EDX Analizi  STEM  STEM Sıvı Numune Hazırlık  Mapping  Line Scan (TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
+    "FE-SEM Görüntü Alma",
+    "FE-SEM Görüntüleme",
+    "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)",
+    "FE-SEM ile İnceleme",
+    "SEM Görüntü Alma (Maksimum 4 numune ) **çapı 10mm den büyük numuneler için maximun numune sayısı değişir.",
+    "SEM Görüntüleme",
+    "SEM-EBIC Dedektörü",
+    "SEM-Katodolüminesans (SEM-CL)",
+    "Yüzey görüntüsü alma (FE- SEM)"
+  ],
+  "SEM-EDX ve EBSD Analizleri": [
+    "4-SEM - EDX Analizi (TL/Saat)",
+    "EDS Enerji Dağıtıcı X-Işını Spektroskopisi) / CL Çalışması",
+    "EDS modu ile Element Tayini",
+    "EDS modu ile Noktasal, Çizgisel ve Bölgesel Haritalama",
+    "FE-SEM *EDX Analizi",
+    "FE-SEM /EDS ile Haritalama",
+    "FE-SEM /EDS ile Noktasal ve Çizgisel Analiz",
+    "FE-SEM /EDS ile Yarı Kantitatif Analiz",
+    "FE-SEM EDS Mapping Analiz",
+    "FE-SEM EDS Noktasal Analiz",
+    "FE-SEM Görüntüleme - EBSD Analizi",
+    "FE-SEM Görüntüleme - EDS Analizi",
+    "SEM / EBSD Analizi**",
+    "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
+    "SEM Görüntüleme - EDS Analizi",
+    "SEM Mapping-EDX Analiz",
+    "SEM Noktasal-EDX Analiz"
+  ],
+  "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri": [
+    "Kriyo-Ultramikrotomda Tam İnce Kesit Alma*",
+    "SEM / STEM Analizi**",
+    "STEM Dedektörü ile İnceleme",
+    "STEM Görüntüleme",
+    "STEM ile uygun numunelerde karanlık alan görüntülemesi (düşük"
+  ],
+  "Tane Boyutu ve Zeta Potansiyeli Analizleri": [
+    "1-Tane Boyut Dağılımı Tayini",
+    "Boyut Analizi (Kuru)",
+    "Boyut Analizi (Yaş)*",
+    "Nano Boyutta Partikül İzleme",
+    "Parçacık Boyut Analizi",
+    "Parçacık Boyutu Ve Boyut Dağılımı",
+    "Parçacık Boyutu ve Boyut Dağılımı",
+    "Parçacık Zeta Potansiyeli",
+    "Partikül Boyutu Analizi",
+    "Tane Boyut Analizi - Elek Analizi",
+    "Tane Boyut Dağılımı (2 mikron altı analizi)",
+    "Tane Boyut Dağılımı (Lazer tekniği ile su ortamında) *",
+    "Tane Boyut Dağılımı (Yaş / Kuru elek analizi)",
+    "Zeta Potansiyel Ölçümü",
+    "Zeta Potansiyeli Analizi"
+  ],
+  "Termal Analizler (TGA, DSC, DTA, STA)": [
+    "1-TG DTA Analizi 0-1 Saat (25 °C-1600 °C)",
+    "2-TG DTA Analizi 1-3 Saat (25 °C-1600 °C)",
+    "25°C – 1000 °C arası Termal Gravimetrik Analiz -Simultane DSC",
+    "25°C – 700 °C",
+    "3-TG DTA Analizi 3-7 Saat (25 °C-1600 °C)",
+    "4-TG DSC Analizi 0-1 Saat (25 °C-1600 °C)",
+    "5-TG DSC Analizi 1-3 Saat (25 °C-1600 °C)",
+    "50°C – 400 °C",
+    "6-TG DSC Analizi 3-7 Saat (25 °C-1600 °C)",
+    "7-Isı Kapasitesi Ölçümü",
+    "Isı Kapasitesi (C P ) Analizi",
+    "Isıl Geçirgenlik Cihazı  Isıl Geçirgenlik Analizi",
+    "STA Analizi (25 °C – 900 °C) 1 Saat",
+    "STA Analizi (25 °C – 900 °C) 2 Saat",
+    "STA Analizi (25 °C – 900 °C) 3 Saat",
+    "STA Analizi (25 °C – 900 °C) 3-7 Saat",
+    "STA Analizi (25 °C – 900 °C) 7-14 Saat",
+    "Stabilite",
+    "Sıcaklık",
+    "Sıcaklık Deneyleri",
+    "Sıcaklık Deneyleri (0-4 sa.)",
+    "Sıcaklık Taraması (-40°C-200°C arası)",
+    "Sıcaklığa Bağlı Ölçüm",
+    "TGA (1 – 3 saat)",
+    "TGA (3 – 7 saat)",
+    "TGA (7 – 15 saat)",
+    "TGA - DSC (1 – 3 saat)",
+    "TGA - DSC (3 – 7 saat)",
+    "TGA - DSC (7 – 15 saat)",
+    "TGA - Diferansiyel Taramalı Kalorimetri (DSC) (1 saat)",
+    "TG/DTA – Analizleri  TG/DTA Spektrumu (Analiz süresi: 0 – 1 saat)  TG/DTA Spektrumu (Analiz süresi: 1 – 3 saat)  TG/DTA Spektrumu (Analiz süresi: 3 – 7 saat)",
+    "TG/DTA/DSC Spektrumu (Max. 1500 °C)",
+    "Termal Dağlama",
+    "Termal Gravimetrik Analiz - Diferensiyal Termal Analiz",
+    "Termal Görüntü Çekimi*",
+    "Termogravimetrik Analiz (TGA) (1 saat)"
+  ],
+  "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri": [
+    "XPS Genel Tarama",
+    "XPS Kısmi Tarama (Bir Element için)",
+    "XPS Kısmi Tarama (C,N,B,O gibi 1S Elementleri için)"
+  ],
+  "XRD (X-Işını Kırınım) ve XRR Analizleri": [
     "1-XRD-Standart Patern İncelemesi",
     "2-XRD-Kalitatif Analiz",
     "3-XRD-Standart Patern İncelemesi - Kalitatif Analiz",
     "4-XRD-Detay Kil Standart Patern Çekimi",
     "5-XRD-Yüksek Sıcaklık Faz Analizi (25 oC – 800 °C)",
     "6-XRD-Yüksek Sıcaklık Faz Analizi (800 oC– 1600 °C)",
-    "Toz ve Bulk Numune Kırınım Deseni",
-    "İnce Film Kırınım Deseni",
-    "XRD Numune Hazırlama",
-    "X-Işını Toz Difraksiyonu (XRD)  X-Işını difraksiyon paterni çekimi (toz numune)  X-Işını difraksiyon paterni çekimi (toz numune)  X-Işını difraksiyon paterni çekimi (ince film)  Mineral analiz  Yüksek sıcaklık paterni çekimi  Rietveld analizi  Kalıntı gerilme analizi  XRR analizi",
+    "Böbrek Taşı Analizi (XRD)",
+    "Kalitatif Analiz (Toz, bulk ve ince film)",
+    "Kalitatif Mineral Analiz",
+    "Rietveld Analizi",
+    "SAXS Analizi",
     "Standart X-Işını Kırınım Deseni (XRD)",
     "Standart XRD Çekimi - Kalitatif Analiz",
-    "Böbrek Taşı Analizi (XRD)"
-  ],
-  "SEM": [
-    "SEM Görüntüleme",
-    "FE-SEM Görüntüleme",
-    "FE-SEM Görüntüleme - EBSD Analizi",
-    "SEM / EBSD Analizi**",
-    "SEM / STEM Analizi**",
-    "Semi-Dry Blotlama",
-    "FE-SEM Görüntü Alma",
-    "SEM Görüntü Alma (Maksimum 4 numune ) **çapı 10mm den büyük numuneler için maximun numune sayısı değişir.",
-    "3-SEM Analizi (TL/Saat)",
-    "FE-SEM ile İnceleme",
-    "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)  FE-SEM  FE-SEM-EDX Analizi  STEM  STEM Sıvı Numune Hazırlık  Mapping  Line Scan (TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
-    "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)",
-    "SEM-Katodolüminesans (SEM-CL)",
-    "SEM-EBIC Dedektörü",
-    "Yüzey görüntüsü alma (FE- SEM)"
-  ],
-  "SEM-EDX": [
-    "FE-SEM *EDX Analizi",
-    "SEM Görüntüleme - EDS Analizi",
-    "FE-SEM Görüntüleme - EDS Analizi",
-    "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
-    "FE-SEM EDS Mapping Analiz",
-    "FE-SEM EDS Noktasal Analiz",
-    "SEM Noktasal-EDX Analiz",
-    "SEM Mapping-EDX Analiz",
-    "EDS Enerji Dağıtıcı X-Işını Spektroskopisi) / CL Çalışması",
-    "4-SEM - EDX Analizi (TL/Saat)",
-    "EDS modu ile Element Tayini",
-    "EDS modu ile Noktasal, Çizgisel ve Bölgesel Haritalama",
-    "FE-SEM /EDS ile Yarı Kantitatif Analiz",
-    "FE-SEM /EDS ile Haritalama",
-    "FE-SEM /EDS ile Noktasal ve Çizgisel Analiz",
-    "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)  FE-SEM  FE-SEM-EDX Analizi  STEM  STEM Sıvı Numune Hazırlık  Mapping  Line Scan (TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
-    "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)"
-  ],
-  "Kaplama": [
-    "Altın Kaplama (Yalıtkan Numuneler için, 1set-6 numune)",
-    "Altın/Paladyum Kaplama",
-    "Hassas İridyum Kaplama",
-    "Numune Kaplama (Altın/Paladyum , Karbon)*",
-    "Au/Pd/C Kaplama (7 taneye kadar) *7 Tane numune 10 mm çapındaki numuneler için geçerlidir. **Çapı 10 mm büyük numuneler için haznenin aldığı kadar numune konur ve set olarak değerlendirilir. *** Diş Numuneleri için  en fazla 3 adet , 1 set olarak değerlendirilir.",
-    "Bakalite ve/veya epoksi kaplama",
-    "Kaplama",
-    "1-Karbon Kaplama (4 adete kadar)",
-    "2-Altın Kaplama (4 adete kadar)",
-    "Numune Hazırlama:  Kesme  Öğütme  Kriyojenik Öğütme ( Tek seferde max. 2 g numune öğütülmektedir.)  Presleme  Platin potada numune hazırlık  Bakalite alma  Parlatma  Altın veya karbon kaplama (Yalıtkan örnekler için) (50 bin büyütmeye kadar)  Yüksek Çözünürlüklü Platin Kaplama (50 bin ve üzeri büyütme için)  Kritik noktada kurutma  Kızdırma kaybı",
-    "SEM Altın (Au,Pd), Karbon Kaplama"
-  ],
-  "TEM": [
-    "Bulanıklık (türbidimetrik yöntem)",
-    "STEM sıvı numune hazırlık**",
-    "STEM Dedektörü ile İnceleme",
-    "Temassız Mod (10 μm x 10 μm 256 Piksel)",
-    "Temassız Mod (20 μm x 20 μm 256 Piksel)",
-    "Temaslı Mod (10 μm x 10 μm 512 Piksel)",
-    "STEM Görüntüleme",
-    "Yüzeylerde temas açısı ölçümü",
-    "Jel Görüntüleme ve Dökümentasyon Sistemi (UV)**",
-    "SEM / STEM Analizi**",
-    "Biyolojik Dokulardan TEM İçin Numune Hazırlama",
-    "Biyolojik Dokulardan Kriyo-TEM İçin Numune Hazırlama*",
-    "Hücre Serisi Dondurulması (Temel Sarflar Dahil, 6 Ay Stoklama) ***",
-    "Jel Görüntüleme ve Dökümantasyon Sistemi Kullanımı (UV)**",
-    "Jel Görüntüleme ve Dökümantasyon Sistemi Kullanımı (Kemilüminesans)**",
-    "HPLC-Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
-    "Eritiş Yöntemi ile Numune Hazırlık (Fırın - Asidik/Bazik)",
-    "Su Temas Açısı- Islanabilirlik",
-    "Elektroanalitik Yöntem Geliştirilmesi ve Validasyonu",
-    "1-AFM Temas (Contact) Modu (TL/Saat)",
-    "2-AFM Temassız (Non-Contact) Modu (TL/Saat)",
-    "STEM ile uygun numunelerde karanlık alan görüntülemesi (düşük",
-    "Temas Modunda Analiz",
-    "Temas Açısı Ölçümü",
-    "Mikrodalga Sistemi İle Numune Hazırlama",
-    "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)  FE-SEM  FE-SEM-EDX Analizi  STEM  STEM Sıvı Numune Hazırlık  Mapping  Line Scan (TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
-    "HPLC Analizleri  Fruktoz, Glukoz, Sakaroz, Maltoz analizi  Kafein, Naftalin, HMF analizi  Vitamin analizleri (her biri için)  Monomer analizi (BPA, UDMA, HEMA, TEGDMA vb.)  Diğer Özel bileşenler için analizler (standart ve metot getirilecek)  Kromatografik Yöntem Geliştirme Vitamin analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
-    "Mikro Sertlik Ölçümü (Vickers Yöntemi 3 – Indent)",
-    "Mikro Sertlik Ölçümü (Vickers Yöntemi 5 – Indent)",
-    "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Toz Formunda",
-    "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Sucuk Formunda"
-  ],
-  "AFM": [
-    "1-AFM Temas (Contact) Modu (TL/Saat)",
-    "2-AFM Temassız (Non-Contact) Modu (TL/Saat)",
-    "3-Diğer AFM Modu (TL/Saat) (Bilgi alınız!)",
-    "AFM Numune İnceleme",
-    "Atomik Kuvvet Mikroskobu (AFM) Yüzey Analizi  Atomik Kuvvet Mikroskobu Yüzey Analizi"
-  ],
-  "BET": [
-    "Tek noktalı BET Analizi",
-    "Çok noktalı BET Analizi",
-    "Çok noktalı BET Analizi - Gözenek Boyutu (N gaz 2 adsorbsiyonu)",
-    "Tek Noktalı BET Yüzey Alanı",
-    "20 Noktalı BET Yüzey Alanı",
-    "40 Noktalı BET Yüzey Alanı",
-    "1-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (Tek Nokta)",
-    "2-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (5 Nokta)",
-    "3-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı - Gözenek Dağılımı",
-    "BET Yüzey Alanı (N adsorpsiyonu) Ölçümü",
-    "Rutubet (Nem) Tayini",
-    "Hızlı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
-    "Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
-    "Mikrogözenek Analizi ve BET Yüzey Alanı Analizi",
-    "Mikrogözenek Analizi ve Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)"
-  ],
-  "TGA": [
-    "Termogravimetrik Analiz (TGA) (1 saat)",
-    "TGA (1 – 3 saat)",
-    "TGA (3 – 7 saat)",
-    "TGA (7 – 15 saat)",
-    "TGA - Diferansiyel Taramalı Kalorimetri (DSC) (1 saat)",
-    "TGA - DSC (1 – 3 saat)",
-    "TGA - DSC (3 – 7 saat)",
-    "TGA - DSC (7 – 15 saat)",
-    "25°C – 1000 °C arası Termal Gravimetrik Analiz -Simultane DSC",
-    "Termal Gravimetrik Analiz - Diferensiyal Termal Analiz"
-  ],
-  "DSC": [
-    "TGA - Diferansiyel Taramalı Kalorimetri (DSC) (1 saat)",
-    "TGA - DSC (1 – 3 saat)",
-    "TGA - DSC (3 – 7 saat)",
-    "TGA - DSC (7 – 15 saat)",
-    "25°C – 1000 °C arası Termal Gravimetrik Analiz -Simultane DSC",
-    "4-TG DSC Analizi 0-1 Saat (25 °C-1600 °C)",
-    "5-TG DSC Analizi 1-3 Saat (25 °C-1600 °C)",
-    "6-TG DSC Analizi 3-7 Saat (25 °C-1600 °C)",
-    "TG/DTA/DSC Spektrumu (Max. 1500 °C)"
-  ],
-  "DTA": [
-    "Volumetrik Titrasyon (EDTA, İyodimetrik, Tiyosülfat)",
-    "1-TG DTA Analizi 0-1 Saat (25 °C-1600 °C)",
-    "2-TG DTA Analizi 1-3 Saat (25 °C-1600 °C)",
-    "3-TG DTA Analizi 3-7 Saat (25 °C-1600 °C)",
-    "TG/DTA – Analizleri  TG/DTA Spektrumu (Analiz süresi: 0 – 1 saat)  TG/DTA Spektrumu (Analiz süresi: 1 – 3 saat)  TG/DTA Spektrumu (Analiz süresi: 3 – 7 saat)",
-    "TG/DTA/DSC Spektrumu (Max. 1500 °C)"
-  ],
-  "FTIR": [
-    "FT-IR Spektrumu",
-    "FT-IR Spektrumu - Database Taraması",
-    "FT-IR Analizleri  FT-IR / FT-FIR Spektrumu  FT-IR Karakterizasyon (Spektrum - Kütüphane)",
-    "ATR – FTIR Spektrumu"
-  ],
-  "Raman": [
-    "Raman Spektrumu (1 lazerle geniş alan tarama, 2 atım)",
-    "Raman Spektrumu (1 lazerle geniş alan tarama,10 atım)",
-    "Raman Spektrumu *",
-    "Raman Spektrumu Eldesi"
-  ],
-  "ICP-MS": [
-    "ICP-MS 1 Element Analizi",
-    "ICP-MS 2-5 Element Analizi",
-    "ICP-MS 6-10 Element Analizi",
-    "ICP-MS 11-15 Element Analizi",
-    "ICP-MS 16-20 Element Analizi",
-    "ICP-MS 21-30 Element Analizi",
-    "ICP-MS 31-40 Element Analizi",
-    "ICP-MS 41-50 Element Analizi",
-    "ICP-MS 51 ve üzeri element Analizi",
-    "ICP-MS 1 Nadir Toprak Elementi Analizi*",
-    "ICP-MS 2-10 Nadir Toprak Elementi Analizi*",
-    "ICP-MS 11-18 Nadir Toprak Elementi Analizi*",
-    "Numune Başına ICP-MS 24'lü Mix (Ag,Al,B,Ba,Bi,Ca,Cd, Cr,Co,Cu, Fe,Ga,In,K,Li) (Mg,Mn,Na,Ni,Pb,Sr,Tl,Zn)",
-    "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)  Numune analizi 1-10 element için  İlave element analizi için  Mikrodalga Çözme İşlemi  Çoklu Asit İle Çözme İşlemi  Değerli Metaller 1-10 Element (Au, Pd, Pt, Ag, Rh vb.)"
-  ],
-  "ICP-OES": [
-    "1-Optik Emisyon Spektrometresi (OES)"
-  ],
-  "XRF": [
-    "XRF Analizi / Katı Numune",
-    "XRF Analizi / Sıvı Numune*",
-    "XRF Elementel Analiz",
-    "X-Işını Floresans Spektrometresi (WD/XRF)  Yarı Kantitatif element analizi (Öğütülmüş Örnek)  Yarı Kantitatif element analizi (Maden Örnekleri)  Yarı Kantitatif element analizi (Metal, Alaşım vb.) (Rapor istenilen durumlarda ilave 1100 TL ücret alınacaktır.)"
-  ],
-  "Porozimetre": [
-    "4-Cıvalı Porozimetre Analizi"
-  ],
-  "Mikrosertlik": [
-    "Vickers-Brinell ve Rockwell Sertik Testi*",
-    "Brinell sertlik ölçümü, Vickers sertlik ölçümü, Rockwell sertlik ölçümü",
-    "2-Mikrosertlik Ölçümü (5 iz/numune)",
-    "Mikro Sertlik Ölçümü (Vickers, Knoop) Mikro sertlik Dağılımı (Vickers, Knoop)",
-    "Mikro Sertlik Ölçümü (Vickers Yöntemi 3 – Indent)",
-    "Mikro Sertlik Ölçümü (Vickers Yöntemi 5 – Indent)"
-  ],
-  "OES": [
-    "NOESY",
-    "ROESY",
-    "NOESY NMR Analizi",
-    "1-Optik Emisyon Spektrometresi (OES)",
-    "Nükleer Manyetik Rezonans Spektrometresi (NMR)  1H (Proton) Spektrumu (Numune min. 20 mg)  D2O Değişimi  13C (Karbon)(Coupled, Decoupled) (Numune min. 50 mg)  1 D Spektrum: APT / DEPT (45, 90, 135)  2 D Spektrum: COSY/ NOESY/ HETCOR/ HMBC/ HMQC, 31P (Fosfor)  Çözücü (D2O, CHCI3)  Çözücü (DMSO, CD3OD)",
-    "NOE"
-  ],
-  "Eleman Analizi": [
-    "Elementel Analiz",
-    "XRF Elementel Analiz",
-    "Yüzey Elementel Haritalama"
-  ],
-  "NMR": [
-    "1H-NMR",
-    "13C-NMR",
-    "19F-NMR",
-    "15N-NMR",
-    "31P-NMR",
-    "1H-NMR (Ölçüme hazır gelen numune)",
-    "13C-NMR (100 tarama)",
-    "13C-NMR (1 saat)",
-    "13C-NMR (3 saat)",
-    "13C-NMR (gece)",
-    "13C-NMR (coupled)",
-    "Full Analiz Paketi (1H-NMR, 13C-NMR, APT, DEPT-90, DEPT-135, COSY, HMBC, HMQC, HSQC",
-    "17O-NMR",
-    "11B-NMR",
-    "29Si-NMR",
-    "1H (Proton) NMR Analizi",
-    "13C (Karbon) NMR Analizi",
-    "13C APT NMR Analizi",
-    "13C DEPT (45,90,135) NMR Analizi",
-    "COSY NMR Analizi",
-    "HETCOR NMR Analizi",
-    "HMBC NMR Analizi",
-    "HMQC NMR Analizi",
-    "NOESY NMR Analizi",
-    "31P NMR Analizi",
-    "19F NMR Analizi",
-    "11B NMR Analizi",
-    "TOCSY NMR Analizi",
-    "15N NMR Analizi",
-    "Si NMR Analizi",
-    "NOE NMR Analizi",
-    "Water-Gated NMR Analizi",
-    "HSQC NMR Analizi",
-    "INADEQUATE NMR Analizi",
-    "Al NMR Analizi 4 Saat",
-    "Al NMR Analizi 8 Saat",
-    "Al NMR Analizi 16 Saat",
-    "Al NMR Analizi 27 Saat",
-    "13C CP MAS NMR Analizi 4 Saat",
-    "13C CP MAS NMR Analizi 8 Saat",
-    "13C CP MAS NMR Analizi 16 Saat",
-    "13C CP MAS NMR Analizi 27 Saat",
-    "1H NMR Analizi",
-    "11B NMR Analizi 4 Saat",
-    "11B NMR Analizi 8 Saat",
-    "11B NMR Analizi 16 Saat",
-    "11B NMR Analizi 27 Saat",
-    "15N NMR Analizi 4 Saat",
-    "15N NMR Analizi 8 Saat",
-    "15N NMR Analizi 16 Saat",
-    "15N NMR Analizi 27 Saat",
-    "HETCOR NMR Analizi 4 Saat",
-    "HETCOR NMR Analizi 8 Saat",
-    "HETCOR NMR Analizi 16 Saat",
-    "HETCOR NMR Analizi 27 Saat",
-    "31P NMR Analizi 4 Saat",
-    "31P NMR Analizi 8 Saat",
-    "31P NMR Analizi 16 Saat",
-    "31P NMR Analizi 27 Saat",
-    "Si NMR Analizi 4 Saat",
-    "Si NMR Analizi 8 Saat",
-    "Si NMR Analizi 16 Saat",
-    "Si NMR Analizi 27 Saat",
-    "Nükleer Manyetik Rezonans Spektrometresi (NMR)  1H (Proton) Spektrumu (Numune min. 20 mg)  D2O Değişimi  13C (Karbon)(Coupled, Decoupled) (Numune min. 50 mg)  1 D Spektrum: APT / DEPT (45, 90, 135)  2 D Spektrum: COSY/ NOESY/ HETCOR/ HMBC/ HMQC, 31P (Fosfor)  Çözücü (D2O, CHCI3)  Çözücü (DMSO, CD3OD)",
-    "NIR Analizi"
-  ],
-  "Fitalat": [
-    "Fitalat"
-  ],
-  "Elektrokimyasal": [
-    "Elektrokimyasal Aktifliğin Belirlenmesi"
-  ],
-  "Yüzey": [
-    "Yüzey Porozitesi (Topografya) Analizi",
-    "Nanoindentasyon (Yumuşak yüzeyler)",
-    "Yüzey Pürüzlülüğü Ölçümü",
-    "Üç Boyutlu Yüzey Profili (2 mm x 2 mm) (İki Alan)",
-    "Yüzey Karakterizasyonu",
-    "Yüzey Serbest Enerjisi Hesaplama",
-    "Üç Boyutlu Yüzey Profili (2 mm x 2 mm) (Üç Alan)",
-    "Serbest Yüzey Enerjisi Analizi",
-    "Sıvılarda yüzey gerilimi ölçümü",
-    "3 Boyutlu Tarama (Data Tarama/Yüzeylendirme)**",
-    "Üç Boyutlu Yüzey Profili (2 mm x 2 mm) (Tek Alan)",
-    "Yüzey Gerilimi Analizi",
-    "Derinlik Profili (Ar iyonları ile yüzeyin etch edilmesi)",
-    "Yüzey Gerilimi Ölçümü (Sıvı/Sıvı, Sıvı/Hava)",
-    "Pürüzlülük Ölçümü",
-    "Yüzeylerde serbest yüzey enerjisi ölçümü*"
-  ],
-  "STA": [
-    "STA Analizi (25 °C – 900 °C) 3-7 Saat",
-    "Verilerin istatistiksel analizi ve yorumlanması Analiz",
-    "1-Soğuk İzostatik Pres (CIP)",
-    "STA Analizi (25 °C – 900 °C) 7-14 Saat",
-    "Stabilite",
-    "Kriyostat ile kesit alma",
-    "STA Analizi (25 °C – 900 °C) 2 Saat",
-    "STA Analizi (25 °C – 900 °C) 1 Saat",
-    "STA Analizi (25 °C – 900 °C) 3 Saat"
-  ],
-  "LC/MS": [
-    "LC/MS QTOF (HRMS) Tam Kütle Tayini",
-    "LC/MS Analizi (Kalitatif)",
-    "LC/MS/MS",
-    "LC/MS Analizi (Kantitatif) *"
-  ],
-  "Çalkalayıcı": [
-    "Çalkalayıcı İnkübatör Kullanımı"
-  ],
-  "Görüntüleme": [
-    "Görüntüleme (Maksimum 6 saat)",
-    "Inverted Mikroskop ile Görüntüleme*",
-    "Hazır Preparatlar için Görüntüleme denemesi* Preparat",
-    "Topografik Görüntüleme",
-    "Stereomikroskop ile Görüntüleme*",
-    "Görüntüleme1",
-    "Floresan Ataçmanlı Mikroskop ile Görüntüleme*",
-    "Multifoton Görüntüleme",
-    "Konfokal Mikroskop ile Görüntüleme*",
-    "Agaroz Jel Görüntüleme",
-    "Hazır Preparat Görüntüleme",
-    "Görüntüleme",
-    "Agaroz Jel (DNA) - Görüntüleme",
-    "Konfokal Görüntüleme"
-  ],
-  "Tane": [
-    "Tane Boyut Dağılımı (2 mikron altı analizi)",
-    "Tane Boyut Analizi - Elek Analizi",
-    "1-Tane Boyut Dağılımı Tayini",
-    "Tane Boyut Dağılımı (Yaş / Kuru elek analizi)",
-    "Tane Boyut Dağılımı (Lazer tekniği ile su ortamında) *"
-  ],
-  "Metod": [
-    "Metod Geliştirme**",
-    "Metot Geliştirme",
-    "Kalitatif Testler (Kurum içi Test Metodu)",
-    "Metot geliştirme**"
-  ],
-  "Basma": [
-    "Basma Testi",
-    "Çekme-Basma-Üç Nokta Eğme Testleri  Çekme, Basma, Üç Nokta Eğme (oda sıcaklığında)"
-  ],
-  "HPLC-Metot": [
-    "HPLC-Metot geliştirme (2 bileşen)"
-  ],
-  "XRR": [
+    "Toz Kırınım Deseni (Toz Numune)",
+    "Toz ve Bulk Numune Kırınım Deseni",
+    "X-Işını Toz Difraksiyonu (XRD)  X-Işını difraksiyon paterni çekimi (toz numune)  X-Işını difraksiyon paterni çekimi (toz numune)  X-Işını difraksiyon paterni çekimi (ince film)  Mineral analiz  Yüksek sıcaklık paterni çekimi  Rietveld analizi  Kalıntı gerilme analizi  XRR analizi",
+    "XRD Numune Hazırlama",
     "XRR (Reflectivity) Analizi",
     "XRR Analizi",
-    "XRR Analizi (Roughness Ölçümü*** - Analiz)"
+    "XRR Analizi (Roughness Ölçümü*** - Analiz)",
+    "Yüksek Sıcaklık Kırınım Deseni",
+    "İnce Film Kırınım Deseni"
   ],
-  "Histokimyasal": [
-    "Histokimyasal Boyama; Yarı İnce Kesit Boyama"
+  "XRF (X-Işını Floresans) Analizleri": [
+    "X-Işını Floresans Spektrometresi (WD/XRF)  Yarı Kantitatif element analizi (Öğütülmüş Örnek)  Yarı Kantitatif element analizi (Maden Örnekleri)  Yarı Kantitatif element analizi (Metal, Alaşım vb.) (Rapor istenilen durumlarda ilave 1100 TL ücret alınacaktır.)",
+    "XRF Analizi / Katı Numune",
+    "XRF Analizi / Sıvı Numune*",
+    "XRF Elementel Analiz"
   ],
-  "Katı": [
-    "Katı Numune Hazırlık (Mikrodalga Çözümlendirme)",
+  "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler": [
+    "3B Haritalama",
+    "Alan Analizi - Haritalama",
+    "Derinlik Profili",
+    "Derinlik Profili (1 lazer)*",
+    "Derinlik Profili (Ar iyonları ile yüzeyin etch edilmesi)",
+    "Dijital Viskozimetre",
+    "EBSD Nokta Analizi ve Haritalama",
+    "FIB (Odaklanmış İyon Demeti) Çalışması",
+    "Film Kalınlığı",
+    "Gerinim Taraması",
+    "Hacim Tarama*",
+    "Haritalama",
+    "Haritalama (1 lazer)*",
+    "Hava Geçirgenlik Cihazı  Hava Geçirgenlik Analizi",
     "Katı Numune Ölçümü",
     "Katı Prob Analizi",
     "Katı ve İnce Film Numunelerde Ölçüm",
-    "UV-VIS-NIR Spektrumu (Katı Numune)*",
-    "Katı Madde Tayini",
-    "UV-VIS-NIR Spektrumu (Katı Numune)"
-  ],
-  "Numune Hazırlama": [
-    "Biyolojik Dokulardan SEM İçin Numune Hazırlama",
-    "Numune yakma, damıtma ve titrasyon",
-    "Şeker Analizi (Kantitatif) (1 Numunede Şeker Çeşidi Başına)",
-    "GC-MS Analizleri  Kalitatif Analiz Aroma Bileşikler (GC-MS kütüphane taraması)  Kalitatif Analiz Uçucu Bileşikler (GC-MS kütüphane taraması)  Kalitatif Analiz Fenolik Bileşikler(GC-MS kütüphane taraması)  Kalitatif Analiz Yağ asitleri (GC-MS kütüphane taraması)  Kalitatif Analiz Tam Spektrum Tarama (GC-MS kütüphane taraması)  Esansiyel yağ bileşenleri/Yağ asitleri Komp % bağıl (GC-FID) GC-MS analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
-    "Press İle Numune Hazırlama",
-    "Mekanik Numune Hazırlama (Öğütme, presleme vb.)",
-    "Toz Numunelerde Ölçüm",
-    "Mikrodalga ile Numune Hazırlama (Kral Suyu ile)",
-    "HPLC- Kantitatif: İki veya Daha Fazla Bileşenli Numunelerde Her Bir Ek Bileşen Başına",
-    "Elektro Parlatma Numune Hazırlama**",
-    "UV-VIS-NIR Spektrumu (Sıvı Numune)",
-    "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (20-29 bileşen)",
-    "Karşılaştırma (İki numune için)",
-    "GPC analizi numune hazırlama",
-    "Kalitatif: Her Bir Numune İçin",
-    "Fiziksel Numune Hazırlık",
+    "Metalik Kalıntı Analizi ve Raporlama",
+    "Pürüzlülük Ölçümü",
+    "Serbest Yüzey Enerjisi Analizi",
+    "Su Temas Açısı- Islanabilirlik",
     "Sıvı Numune Ölçümü",
-    "Aynı numune için ilave analiz raporu",
-    "Eritiş İle Numune Hazırlama",
-    "Klasik Numune Hazırlık (Sıvı Ortamında Asidik/Bazik Çözümlendirme)",
-    "Mikrodalga ile Numune Hazırlama (Nitik asit ile)",
-    "Numune hazırlığı (asit ile mikro dalga yakma/yaş yakma)",
-    "Numune Hazırlama",
-    "Formwar/Karbon Grid Üzerine Çözeltiden Numune Hazırlama",
-    "Numune Hazırlık (Kesme, Zımparalama,Parlatma)",
-    "Mikrodalga ile Numune Hazırlama (H2O2 içeren karışım)",
-    "Numune Hazırlık",
-    "Tek Numune",
-    "AAS Numune Hazırlama",
-    "Liyofilizasyon Numune Kurutma",
-    "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (10-19 bileşen)",
-    "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (30 ve daha fazla sayıda bileşen)",
-    "Örnek Hazırlama (Toz halinde gönderilen numunelerin cihaza",
-    "UV-VIS-NIR Spektrumu (Sıvı Numune)*",
-    "Vitamin Analizi (1 Numunede Vitamin Çeşidi Başına)",
-    "Mikrodalga ile Numune Hazırlama (HF içeren karışım)",
-    "Numune Hazırlık (Biyolojik numuneler hariç)",
-    "Diğer numunelerde (Ra-226, Th-232, K-40, Ac- 228, Cs-137, Cs-134, Th- 228)",
-    "Mikrodalga ile Numune Hazırlama (Çoklu asit içeren karışım)",
-    "Kritik Nokta Kurutma Cihazı ile Numune Hazırlama",
-    "AAS Numune Hazırlama (3 Tekrar)",
-    "Eritiş Cihazı ile Numune Hazırlama",
-    "Tam Kütle Tayini (Kolon kullanılarak numune analizi)",
-    "Numune Hazırlık (Biyolojik numuneler hariç)",
-    "HPLC-Kalitatif: İki veya Daha Fazla Bileşenli Numunelerde Her Bir Ek Bileşen Başına",
     "Sıvı Numunelerde Ölçüm",
-    "Kantitatif: Her Bir Numunede Tek Bileşen",
-    "Kritik Nokta Kurutma (Biyolojik Numune)***",
-    "Tam Kütle Tayini Tek Enjeksiyon (Kolonsuz saf numune analizi)",
-    "Eritiş Numune Hazırlama",
-    "İmmunogold Boyama İçin Numune Hazırlama",
-    "Yoğunluk Tayini (Gaz Piknometresiyle) “ “ (Numune Hazırlığı Gerektiren malzemeler)",
-    "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (1-9 bileşen)"
-  ],
-  "HMQC": [
-    "HMQC",
-    "HMBC",
-    "HSQC"
-  ],
-  "Nanoindentasyon": [
-    "Nanoindentasyon (20x20 matriks)*",
-    "Nanoindentasyon (10x10 matriks)*",
-    "Nanoindentasyon (5 iz)",
-    "Nanoindentasyon (15x15 matriks)*"
-  ],
-  "Partikül": [
-    "Partikül Boyutu Analizi",
-    "Nano Boyutta Partikül İzleme"
-  ],
-  "Termal": [
-    "Termal Görüntü Çekimi*",
-    "Termal Dağlama"
-  ],
-  "Kalitatif": [
-    "Kalitatif (Kütüphane Taraması)",
-    "Kalitatif Analiz",
-    "GC/MS (Kalitatif)",
-    "HPLC-Kalitatif: Tek Bileşen (Metot Bildirilmişse)",
-    "HPLC (Kalitatif)",
-    "Kalitatif/Kantitatif Analiz Cihaz Kullanımı",
-    "Kantitatif ve Kalitatif Analiz",
-    "HPLC-Kantitatif: Tek Bileşen (Metot Bildirilmişse)",
-    "Headspace Kalitatif (Kütüphane Taraması)",
-    "Kalitatif (Tek Bileşen)",
-    "Kütüphane Taraması",
-    "Kantitatif (Tek Bileşen)",
-    "GC-MS Kalitatif Analiz GC-FID Kalitatif Analiz",
-    "HPLC (Kantitatif) *",
-    "Kalitatif Mineral Analiz",
-    "Kütüphane Tarama",
-    "Anyon, Katyon Kalitatif Analiz (Tek İyon)",
-    "Headspace Kantitatif (Tek Bileşen)",
-    "Kalitatif/Kantitatif Analiz Cihaz Kullanım",
-    "Kantitatif ve Kalitatif GC-MS Analizi",
-    "Frekans Taraması",
-    "GC/MS (Kantitatif) *",
-    "Kalitatif Böbrek Taşı Analizi",
-    "Kalitatif Analiz (Toz, bulk ve ince film)",
-    "Kalitatif/Kantitatif Analiz"
-  ],
-  "Diğer Sınıflandırılmayanlar": [
-    "11-15 element",
-    "Ön Hazırlık (Süzme. Santrifüj vb,)",
-    "1-5 Element",
-    "6-10 Element",
-    "pH Ölçümü",
-    ">2 saat",
-    "Ölçüm",
-    "H Adsorpsiyonu Ölçümü",
-    "Ön Hazırlık (Açıktan Çözeltiye Alma)",
-    "-40 Dondurucu Kulanımı",
-    "1 H (Proton)",
-    "D O Değişimi 2",
-    "-80 Dondurucu Kullanımı",
-    "Kemisorpsiyon Ölçümü",
-    "UV/UPS Ölçümü",
-    "D O Exchange 2",
-    "Üç Nokta Eğme Testi"
-  ],
-  "ELİSA": [
-    "ELİSA dataların analizi ve yorumlanması",
-    "Flow sonuçlarının analizi ve yorumlanması Analiz",
-    "ELİSA kit protokolü uygun örnek plaka hazırlanması ve",
-    "ELİSA kit protokolüne göre hazırlanmış hazır Örnekler,"
-  ],
-  "Derinlik": [
-    "Derinlik Profili",
-    "Derinlik Profili (1 lazer)*"
-  ],
-  "Boyutlu": [
-    "3 Boyutlu Ürün Üretimi (DLP) 4-12 cm’ye kadar olan numunlerin kürlemeli",
-    "3 Boyutlu Ürün Üretimi (DLP) 0-4 cm’ye kadar olan numunlerin kürlemeli",
-    "3 Boyutlu Tarama (CAD-YenidenTasarlama)",
-    "3 Boyutlu Ürün Üretimi (FDM)*",
-    "3-Boyutlu Optik Tarayıcı",
-    "3 Boyutlu Ürün Üretimi (DLP) 4-12 cm’ye kadar olan numunlerin kürlemesiz",
-    "3-Boyutlu Modelleme",
-    "3 Boyutlu Ürün Üretimi (Polyjet)*",
-    "3 Boyutlu Ürün Üretimi (DLP) 0-4 cm’ye kadar olan numunlerin kürlemesiz"
-  ],
-  "Spektrum": [
-    "Spektrum Taraması (Absorbans/Transmittans)",
-    "Oda Sıcaklığında Spektrum",
-    "Sıvı İçerisinde Spektrum",
-    "Sıcaklığa Bağlı Ölçüm (70-350 Kelvin)- Genel Spektrum (Bir",
-    "TMA (Termo-Mekanik Analiz) Spektrumu",
-    "Polarize Edilmiş Spektrum",
-    "ATR Tekniği ile Spektrum Taraması",
-    "Sıcaklığa Bağlı Ölçüm (70-350 Kelvin)- Kısmi Spektrum (Bir",
-    "Genel Spektrum",
-    "IR Spektrumu",
-    "Spektrum Taraması",
-    "Sıcaklığına Bağlı Spektrum (10-350 Kelvin)",
-    "Spektrum Tarama"
-  ],
-  "Yarı": [
-    "Yarı Kantitatif Element Analizi",
-    "Uyuşturucu ve Uyarıcı Madde Analizi (LC-MS veya GC-MS ile) Ve Raporlama",
-    "Ultramikrotomda Yarı İnce Kesit Alma"
-  ],
-  "Hücre": [
-    "Hücre Kültürlerinde Mikoplazma Kontrolü-DAPI ile",
-    "Hücre açma. pasajlama, hücre sayımı (25T Flask)",
-    "Hücre Akış Sitometrisi",
-    "Hücre Kültürü Laboratuvarı Kullanımı",
-    "Hücre açma, çoğaltma, stoklama (20 gün)",
-    "Annexin-PI ile apoptoz-nekroz hücre analizi (Annexin V-",
-    "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, İki farklı saat dilimi ) ****",
-    "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, Tek saat dilimi ) ****",
-    "Çözelti / Hücre Süspansiyonlarından Grid Üzerine Kriyo Hazırlık*",
-    "Otomatik Hücre Sayımı Cihazı Kullanımı",
-    "Hücre Serisi Stoklama (6 Ay Stoklama)",
-    "Hücre Kültürü Laboratuvarı Kullanımı**",
-    "Primer Hücre Kültürü*******",
-    "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, Üç farklı saat dilimi ) ****"
-  ],
-  "25°C": [
-    "25°C – 700 °C",
-    "50°C – 400 °C",
-    "3- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 800 °C)",
-    "4- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 1000 °C)",
-    "2- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 400 °C)"
-  ],
-  "Çözücü": [
-    "Çözücü Ücreti***/****: CDCl 3",
-    "Çözücü Ücreti: DMSO-D6, D O, ACETONE-D6 2",
-    "Çözücü Ücreti: MeOH-D4",
-    "Dötoro Çözücü"
-  ],
-  "Isıl": [
-    "Isıl Geçirgenlik Cihazı  Isıl Geçirgenlik Analizi"
-  ],
-  "Kırma": [
-    "Kırma ve Öğütme",
-    "Ön Hazırlık (Kırma. Öğütme vb.)",
-    "Kırma, Öğütme",
-    "Kırma-Öğütme"
-  ],
-  "Görüntü": [
-    "Görüntü Renklendirme",
-    "Kamera entegreli floresan mikroskobu ile görüntü",
-    "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
-    "Kriyojenik Örnekler İçin İnceleme ve Görüntü Alma**",
-    "Görüntü Alma",
-    "Görüntü Analiz İşlemleri",
-    "Geniş Alan Haritalama ve Görüntü Birleştirme İşlemi",
-    "Kamera entegreli ışık mikroskobu ile görüntü alma"
-  ],
-  "Örnek": [
-    "Örnek Hazırlama Adet Daytamla",
-    "Örnek Hazırlama (Bilyalı Öğütücü)",
-    "Reaksiyon Hazırlığı (45 örnek ve altı) - Cihaz Kullanımı",
-    "Kan, doku ve bakteri gibi biyolojik örneklerden DNA ve RNA izolasyonu",
-    "Reaksiyon Hazırlığı (45 örnek ve üstü) - Cihaz Kullanımı",
-    "Örnek Hazırlama",
-    "HR (malzeme örnekleri) veya HC (biyolojik örnekler) modunda",
-    "Dondurarak Kurutma (Bakteri örnekleri çalışılmamaktadır)",
-    "IC50 değeri hesaplama (Bir örnek için) ******"
-  ],
-  "Liyofilizasyon": [
-    "Liyofilizasyon (100 mL/24 saat)"
-  ],
-  "Özgül": [
-    "Özgül Ağırlık Analizi"
-  ],
-  "Akademik": [
-    "Akademik Raporlama İlk 10 sayfadan sonra her 50 sayfa için"
-  ],
-  "Yağ": [
-    "Yağ asitleri Kompozisyonu % bağıl miktar",
-    "Uçucu Yağ Analizi",
-    "Yağ Tayin Cihazı"
-  ],
-  "Sıcak": [
-    "Sıcak Kalıplama (Bakalit)",
-    "1- Dielektrik Ölçüm Oda Sıcaklığında",
-    "Yüksek Sıcaklık Altında Aşınma Analizi (500 o C ' ye kadar)",
-    "Sıcaklık Deneyleri (0-4 sa.)",
-    "Sıcaklık Deneyleri",
-    "2- Piezoelektrik Sabiti (d) Ölçümü Ölçümü (Oda Sıcaklığı Kutuplama)",
-    "Sıcaklık",
-    "Sıcaklık Taraması (-40°C-200°C arası)",
-    "3 nokta Eğme (Oda Sıcaklığı)",
-    "Hall Etkisi (Oda Sıcaklığı)*",
-    "Sıcaklığa Bağlı Ölçüm",
-    "3- Piezoelektrik Sabiti (d) (Yüksek Sıcaklık Kutuplama)"
-  ],
-  "Mini": [
-    "Mini Yatay Jel Elektroforezi  (Cihaz Kullanımı)**",
-    "Mini Dikey Jel Elektroforezi (Cihaz Kullanımı)**"
-  ],
-  "Cihaz": [
-    "Cihaz Kullanımı",
-    "Muse Cihaz Kulanımı",
-    "Reaksiyon Hazırlığı - Cihaz Kullanımı",
-    "Hava Geçirgenlik Cihazı  Hava Geçirgenlik Analizi",
-    "Isoelektrik Fokuslama Cihazı Kullanımı Tek Kullanım",
-    "Gerçek Zamanlı PCR Cihazı*",
-    "Maxi Dikey Jel Elektroforezi (Cihaz Kullanımı)**",
-    "PCR Cihaz Kullanımı",
-    "Beckman Coulter Cytoflex cihaz konfigurasyonuna uygun",
-    "Nem Tayin Cihazı"
-  ],
-  "Kompakt": [
-    "Kompakt Ters Tip Metalurjik Mikroskop Analizi"
-  ],
-  "Cell": [
-    "Cell Cycle Kit",
-    "Annexin V , Dead Cell Kit"
-  ],
-  "Kuru": [
-    "Kuru Öğütme",
-    "Kuru Presleme",
-    "Titrimetrik Analizler (Tuz, Kuru madde vs.)",
-    "Kritik Noktada Kurutma",
-    "Presleme",
-    "Ön Hazırlık (Yakma. Kurutma vb.)",
-    "Boyut Analizi (Kuru)"
-  ],
-  "Anion": [
-    "Anion, Cation Qualitative Analysis (Single-Ion Method"
-  ],
-  "Mikrodalga": [
-    "Mikrodalga Yakma Fırını"
-  ],
-  "Elisa": [
-    "Elisa Reader"
-  ],
-  "Element": [
-    "Element grubu (Ca, Mg, K, Na, Zn)",
-    "AAS (Atomik Absorpsiyon Spektrometresi)  Analiz (ilk element)  Sonraki Elementlerin Her Biri için",
-    "XPS Kısmi Tarama (Bir Element için)",
-    "Analysis of Macro, Micro and Trace Elements in Plant and Soil Samples",
-    "21-30 Element",
-    "Element Başına AAS-ALEV",
-    "XPS Kısmi Tarama (C,N,B,O gibi 1S Elementleri için)",
-    "11-15 Element",
-    "İz Element Analizi (Pro-Trace Çekim Modu)",
-    "31-40 Element",
-    "Single Element Quantitative Analysis",
-    "6-10 element",
-    "Özel elementler (Hg, Au, Ag, Al, Pt)",
-    "16-20 element",
-    "Tek Element",
-    "16-20 Element",
-    "1-5 element"
-  ],
-  "Pestisit": [
-    "Pestisit Analizi (Tek Pestisit)",
-    "Pestisit Analizi (Grup Pestisit)"
-  ],
-  "Açıya": [
-    "Açıya Bağlı Ölçüm (Genel Tarama)",
-    "Açıya Bağlı Ölçüm (Kısmi Tarama)"
-  ],
-  "Hacim": [
-    "Hacim Tarama*"
-  ],
-  "FIB": [
-    "FIB (Odaklanmış İyon Demeti) Çalışması"
-  ],
-  "İplik": [
-    "İplik Kopma Kuvveti ve Uzama"
-  ],
-  "Elektroporasyon": [
-    "Elektroporasyon ile gen aktarımı"
-  ],
-  "Fotometrik": [
-    "Fotometrik Analiz",
-    "Renk Tayini (spektrofotometrik)"
-  ],
-  "Alkol": [
-    "Alkol Analizleri ve Raporlanması"
-  ],
-  "Nem": [
-    "Nem tayini (Etüv ile)",
-    "Nem Tayini",
-    "Renk Tayini",
-    "3-Yerli Kömür Tam Analiz (Kalori - Nem- Kül - Kükürt Tayini)",
-    "pH Tayini",
-    "4-İthal Kömür Tam Analiz (Kalori - Nem- Kül- Kükürt - Uçucu Madde)"
-  ],
-  "SDS-PAGE": [
-    "SDS-PAGE Jeli Yürütme"
-  ],
-  "Film": [
-    "Film Kalınlığı",
-    "İnce Film Analizi",
-    "İnce Film Kalınlık Ölçümü (1nm-60 um)*"
-  ],
-  "Component": [
-    "Component",
-    "Per Each Additional Component"
-  ],
-  "Sularda": [
-    "Sularda pH Tayini",
-    "Sularda Elektriksel İletkenlik Tayini",
-    "Elektriksel İletkenlik (EC)",
-    "Sularda ve gıdalarda (Cs-137, Cs-134)"
-  ],
-  "Metal": [
-    "Metal Mikroskobu",
-    "Metalik Kalıntı Analizi ve Raporlama"
-  ],
-  "Sertlik": [
-    "Sertlik Ölçümü (5 İz Ortalaması)",
-    "Toplam Sertlik (Ca-Mg)"
-  ],
-  "PCR": [
-    "PCR Tek Kullanım",
-    "PCR, RT-PCR ve DNA Dizi Analizi için Primer Dizaynı Gerçekleştirilir.",
-    "Real Time PCR Tek Kullanım"
-  ],
-  "APT": [
-    "APT"
-  ],
-  "Haritalama": [
-    "Haritalama",
-    "EBSD Nokta Analizi ve Haritalama",
-    "3B Haritalama",
-    "Haritalama (1 lazer)*",
-    "Alan Analizi - Haritalama"
-  ],
-  "Yapı": [
-    "Yapı malzemeleri, sanayi ürünleri ve hammaddelerinde (Ra-226, Th-232, K-40, Ac- 228, Cs- 137)",
-    "Yapı malzemeleri için çevre ve insan sağlığı açısından doz değerlendirmesi",
-    "Tarama ve Yeniden Yapılandırma2"
-  ],
-  "Sıvı": [
-    "Sıvı Azot",
-    "Sıvı Piknometre ile Tozlarda Kütle Yoğunluğu Tayini"
-  ],
-  "Sertifikalı": [
-    "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı *",
-    "Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
-    "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
-    "Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı***",
-    "Sertifikalı Eğitim Paketi (Teorik ve Uygulama İçeren) İçin Günlük (8 Saat) Laboratuvar Kullanımı*****",
-    "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı**"
-  ],
-  "Çekme": [
-    "Çekme Mukavemeti Tayini / TS EN ISO 6892-1",
-    "ÇekmeTesti (0-1 saat)",
-    "Çekme Testi (5 saat ve üzeri her ek saat)",
-    "Çekme Testi (1-5 saat)",
-    "Çekme Analizi"
-  ],
-  "Çözünmüş": [
-    "Çözünmüş Oksijen",
-    "Toplam Çözünmüş Madde Miktarı (TDS)"
-  ],
-  "Dijital": [
-    "Dijital Viskozimetre"
-  ],
-  "Rotary": [
-    "Rotary Evaporatör (maksimum 400 mL)"
-  ],
-  "Aflatoksin": [
-    "Aflatoksin Analizi (B1,B2,G1,G2)"
-  ],
-  "Kalori": [
-    "Kalori Ölçümü",
-    "2-Kalori Tayini (Kömür, Fuel-Oil vb.)",
-    "Yakıtlarda Kalori Ölçümü"
-  ],
-  "Sentetik": [
-    "Sentetik Polimer ve Diğer Makromoleküllerin Analizleri"
-  ],
-  "Bilyeli": [
-    "Bilyeli homojenizatör Tek Kullanım"
-  ],
-  "Soğutmalı": [
-    "Soğutmalı Santrifüj",
-    "Soğutmalı Santrifüj Kullanımı****",
-    "Soğutmalı Santrifüj*",
-    "Soğutmalı Çalkalamalı İnkübatör"
-  ],
-  "Rietveld": [
-    "Rietveld Analizi",
-    "Rietveld Analizi"
-  ],
-  "Ultrasonik": [
-    "Ultrasonik homojenizatör",
-    "Ultrasonik Banyo"
-  ],
-  "Toplam": [
-    "Toplam Organik Asit Analizi (Oxalic Acid, Citric Acid, Tartaric Acid, Maleic Acid, Malic Acid, Succinic Acid, Lactic Acid, Formic Acid, Acetic Acid, Butric Acid) (10 Asit için)",
-    "Toplam Şeker Analizi (Sakkaroz, Maltoz, Glikoz, Laktoz, Fruktoz) (5 Şeker için)",
-    "Toplam Fenolik Madde Tayini"
-  ],
-  "Tuzluluk": [
-    "Tuzluluk"
-  ],
-  "Şeker": [
-    "Şeker Analizi (Tek Şeker)",
-    "Şeker Analizi (Grup Şeker)"
-  ],
-  "Dinamik": [
-    "Dinamik Mekanik Analiz – (-100 – 400 oC)",
-    "Dinamik Mekanik Analiz – (25 – 400 oC)"
-  ],
-  "Yoğunluk": [
-    "Yoğunluk",
-    "Yoğunluk Ölçümü"
-  ],
-  "Analiz": [
-    "Analiz (ATR)",
-    "Alevli AAS ile ppm (mg/L) seviyesinde analiz (3 Tekrar Çekim)",
-    "Kantitatif Analiz İlave Bileşen Başına",
-    "Uyuşturucu Madde Analizi İçin Mikroskobik İnceleme ve Raporlanması",
-    "Analiz Çözeltisi Hazırlama",
-    "C, H, N, S Analizi",
-    "Kantitatif Analiz Tek Bileşen",
-    "Organik Asit Analizi (Kantitatif)",
-    "Protein Analizi",
-    "DNA/RNA Saflık ve Miktar Analizi Tek Kullanım",
-    "GC-MS Kantitatif Analiz Tek Bileşen/İlave Bileşen Başına GC-FID Kantitatif Analiz Tek Bileşen/İlave Bileşen Başına",
-    "Zeta Potansiyeli Analizi",
-    "SAXS Analizi",
-    "Kalıntı Gerilme Analizi",
+    "Sıvı Piknometre ile Tozlarda Kütle Yoğunluğu Tayini",
+    "Sıvılarda yüzey gerilimi ölçümü",
+    "Temas Açısı Ölçümü",
+    "Topografik Görüntüleme",
+    "Toz Numunelerde Ölçüm",
     "Toz ve Yığın Analizi**",
-    "Böbrek Taşı Analizi",
-    "Yüksek Çözünürlüklü (HRMS) Kütle Analizi",
-    "Grafit AAS ile ppb (mg/L) seviyesinde analiz",
-    "Boyut Analizi (Yaş)*",
-    "Anyon, Katyon Kantitatif Analiz (Tek İyon)",
-    "Aşınma Analizi",
-    "Alevli AAS ile ppm (mg/L) seviyesinde analiz (Tek Çekim)",
-    "Kantitatif analiz ( 190-3300 cm -1 )",
-    "Zeta Potansiyel Ölçümü",
-    "Özel amaçlı radyoaktivite analizi**",
-    "Micro Gözeneklilik Analizi",
-    "Anyon, Katyon Kantitatif Analiz İlave Bileşen",
-    "Asbest Analizi",
-    "HMF Analizi (Kantitatif)",
-    "GPC analizi (mobil faz THF)",
-    "Parçacık Boyut Analizi",
-    "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-    "Isı Kapasitesi (C P ) Analizi",
-    "Hidrür AAS ile ppb (mg/L) seviyesinde analiz",
-    "SPME Analizi",
-    "Aroma Analizi",
-    "Analiz (KBr Pellet)",
-    "Anyon Analizi (Cl-, F-, Br-, SO 2-, SO 2- H PO 3-, NO -, NO -) 4 3 2 4 3 2"
-  ],
-  "Reflektans": [
-    "Reflektans"
-  ],
-  "Kükürt": [
-    "1-Kükürt Tayini"
-  ],
-  "Kamera": [
-    "Kamera entegreli ters (inverted) ışık mikroskobu"
-  ],
-  "UV-Vis": [
-    "UV-Vis Spektrometrik Ölçüm"
-  ],
-  "Kelvin": [
-    "Kelvin Probe (KFM)",
-    "Kelvin Prob Mikroskop"
-  ],
-  "Molekül": [
-    "Molekül ağırlığı tayini (Işık Saçınımı ile)",
-    "Moleküler Kütle Tayini (Yüksek Çözünürlüklü)"
-  ],
-  "Fiziksel": [
-    "Fiziksel Öğütme"
-  ],
-  "Otoklav": [
-    "Otoklav"
-  ],
-  "Protein": [
-    "Protein Tanımlama",
-    "Nanodrop ile Protein Miktar Tayini"
-  ],
-  "Tip": [
-    "Tip I Biyogüvenlik Kabini",
-    "Fırın Kullanımı (Kutu tipi, 1500 o C’ye kadar)"
-  ],
-  "Trans-Blotlama": [
-    "Trans-Blotlama"
-  ],
-  "DEPT": [
-    "DEPT (45-90-135)",
-    "DEPT-90",
-    "DEPT-135"
-  ],
-  "Agaroz": [
-    "Agaroz Jel-Yürütme"
-  ],
-  "Hall": [
-    "Hall Etkisi (77K)*"
-  ],
-  "Hassas": [
-    "Hassas Terazi"
-  ],
-  "Stereo": [
-    "Stereo Zoom Mikroskop"
-  ],
-  "Parçacık": [
-    "Parçacık Boyutu Ve Boyut Dağılımı",
-    "Parçacık Zeta Potansiyeli",
-    "Parçacık Boyutu ve Boyut Dağılımı"
-  ],
-  "Zımparalama": [
-    "Zımparalama ve Parlatma"
-  ],
-  "Liyofilizatör": [
-    "Liyofilizatör Kullanımı"
-  ],
-  "saat": [
-    "saat dilimi, 24 veya 48 veya 72 saatlik)",
-    "1-2 saat",
-    "saat dilimi, 24 ve 48 veya 48 ve 72 saatlik)",
-    "saat dilimi, 24, 48 ve 72 saatlik)",
-    "0-1 saat"
-  ],
-  "Ultra": [
-    "Ultra Saf Su",
-    "Ultramikrotomda Tam İnce Kesit Alma",
-    "Kriyo-Ultramikrotomda Tam İnce Kesit Alma*",
-    "Ultrasantrifüj Kullanımı Tek Kullanım"
-  ],
-  "İlave": [
-    "İlave Bileşen)",
-    "İlave Bileşen Başına"
-  ],
-  "Piezoelektrik": [
-    "1-Piezoelektrik Sabiti (d) Ölçümü"
-  ],
-  "Etüv": [
-    "Etüv Kullanımı",
-    "Etüv (Fanlı)"
-  ],
-  "Ayrıntılı": [
-    "Ayrıntılı Elektokimyasal Davranışın Belirlenmesi"
-  ],
-  "Relaxation": [
-    "Relaxation Time Ölçümleri"
-  ],
-  "Biyogüvenlik": [
-    "Biyogüvenlik Kabini Kullanımı****"
-  ],
-  "Elektrometrik": [
-    "Elektrometrik Metot ile pH Tayini",
-    "Elektrometrik Metot ile Elektriksel İletkenlik Tayini"
-  ],
-  "COSY": [
-    "COSY"
-  ],
-  "Genel": [
-    "Genel Tarama",
-    "Uzman Değerlendirmesi* (Genel)",
-    "Gerinim Taraması",
-    "XPS Genel Tarama"
-  ],
-  "Manyetik": [
-    "Manyetik Kuvvet Mikroskop",
-    "Manyetik Kuvvet Ölçümü (MFM)",
-    "Manyetik Karıştırıcılı Isıtıcı"
-  ],
-  "Mikroplazma": [
-    "Mikroplazma Testi"
-  ],
-  "Mikrobiyoloji": [
-    "Mikrobiyoloji Laboratuvar Kullanımı"
-  ],
-  "Isı": [
-    "7-Isı Kapasitesi Ölçümü"
-  ],
-  "Saf": [
-    "Saf Su (Litre Olarak Verilecektir)",
-    "Saf Su"
-  ],
-  "Floresans": [
-    "Floresans Ölçümü*",
-    "Lüminesans Ölçümü",
-    "Floresans Ölçümü"
-  ],
-  "İmmunogold": [
-    "İmmunogold Etiketleme****"
-  ],
-  "ASE": [
-    "ASE ile Ekstraksiyon**",
-    "Caspase-3/7 Kit",
-    "Tam İnce Kesit Boyama (Uranil Asetat / Kurşun Sitrat ile)",
-    "Autophagy LC3-antibody based Kit"
-  ],
-  "Kül": [
-    "Kül Tayini - Dolgulu polimerler, polimerler, inorganik maddeler ve fosil yakıtlar için",
-    "Kül Fırını"
-  ],
-  "Faz": [
-    "Faz Kontrast-Fluoresan Ataçmanlı Mikroskop"
-  ],
-  "İngilizce": [
-    "İngilizce Raporlama"
-  ],
-  "TOCSY": [
-    "TOCSY"
-  ],
-  "78.01": [
-    "78.01"
-  ],
-  "Eğitim": [
-    "Eğitim",
-    "Biyolojik Dokulardan SEM İçin Numune Hazırlama Eğitimi***",
-    "SEM Cihaz Kullanımı Eğitimi****",
-    "XRD Temel Kullanıcı Eğitimi",
-    "Biyolojik Dokulardan TEM İçin Numune Hazırlama Eğitimi***",
-    "TEM Cihaz Kullanımı Eğitimi***",
-    "XRD Temel Kullanıcı Eğitimi",
-    "XRF Temel Kullanıcı Eğitimi**",
-    "Sıvı NMR Temel Kullanıcı Eğitimi",
-    "Katı NMR Temel Kullanıcı Eğitimi",
-    "TEM Temel Kullanıcı Eğitimi",
-    "XRF Temel Kullanıcı Eğitimi**",
-    "Sıvı NMR Temel Kullanıcı Eğitimi",
-    "Katı NMR Temel Kullanıcı Eğitimi",
-    "Ölçüm Belirsizliği ve Metod Validesyonu Uygulamalı Eğitimi (16 Saat)"
-  ],
-  "Tek": [
-    "Tek Dalga Boyunda Ölçüm",
-    "Tüp hacmi 30 ml'dir. Tek bir santrifüj işlemi için maksimum 6 tüp kullanılabilmektedir."
-  ],
-  "Oxidative": [
-    "Oxidative Stress Kit"
-  ],
-  "İşlem": [
-    "İşlem"
-  ],
-  "Alümina/Platin": [
-    "Alümina/Platin Kroze Hasar Bedeli *"
-  ],
-  "Soğuk": [
-    "Soğuk Kalıplama (Reçine)",
-    "Soğuk Plazma (O gazı)** 2"
-  ],
-  "Yanmazlık": [
-    "Yanmazlık",
-    "Yanmazlık Testi (UL-94)"
-  ],
-  "Çalkalamalı": [
-    "Çalkalamalı Su Banyosu"
-  ],
-  "pHmetre/": [
-    "pHmetre/ İletkenlik ölçer"
-  ],
-  "Kimyasal": [
-    "Kimyasal Dağlama (Seramik Malzemeler)"
-  ],
-  "Viskozite": [
-    "Viskozite Ölçümü"
-  ],
-  "Preparatif": [
-    "Preparatif HPLC"
-  ],
-  "Kesme": [
-    "Kesme"
-  ],
-  "Jel": [
-    "Jel Dökümantasyonu"
-  ],
-  "Tüp": [
-    "Tüp"
-  ],
-  "Gün-Dondurulmuş": [
-    "Gün-Dondurulmuş"
-  ],
-  "Kızdırma": [
-    "Kızdırma Kaybı"
-  ],
-  "Direkt": [
-    "Direkt veya İndirekt Sitotoksisite (ISO10993-5)"
-  ],
-  "MTT": [
-    "MTT veya eşdeğeri sitotoksisite testi (5 konsantrasyon dışında ek her konsantrasyon)"
-  ],
-  "Gama": [
-    "Gama ışını Lineer Azalım Katsayısı (LAC) tespiti (Am-241, Mn-54, Co-57, Co- 60 ve Cs-137 kaynakları için)"
-  ],
-  "Toprak": [
-    "Toprak ve sedimentte Pb-210 ve Cs-137 tarihlendirme"
+    "Viskozite Ölçümü",
+    "Yoğunluk",
+    "Yoğunluk Ölçümü",
+    "Yoğunluk Tayini (Gaz Piknometresiyle) “ “ (Numune Hazırlığı Gerektiren malzemeler)",
+    "Yüzey Elementel Haritalama",
+    "Yüzey Gerilimi Analizi",
+    "Yüzey Gerilimi Ölçümü (Sıvı/Sıvı, Sıvı/Hava)",
+    "Yüzey Karakterizasyonu",
+    "Yüzey Porozitesi (Topografya) Analizi",
+    "Yüzey Pürüzlülüğü Ölçümü",
+    "Yüzey Serbest Enerjisi Hesaplama",
+    "Yüzeylerde serbest yüzey enerjisi ölçümü*",
+    "Yüzeylerde temas açısı ölçümü",
+    "İnce Film Analizi",
+    "İnce Film Kalınlık Ölçümü (1nm-60 um)*",
+    "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
+    "Ölçüm",
+    "Üç Boyutlu Yüzey Profili (2 mm x 2 mm) (Tek Alan)",
+    "Üç Boyutlu Yüzey Profili (2 mm x 2 mm) (İki Alan)",
+    "Üç Boyutlu Yüzey Profili (2 mm x 2 mm) (Üç Alan)",
+    "Özgül Ağırlık Analizi"
   ]
 }
