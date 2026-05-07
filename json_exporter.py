@@ -125,7 +125,7 @@ def _parse_analyses(center: dict, result: dict) -> list[dict]:
             while len(row) <= max(name_col, price_col):
                 row.append("")
 
-            name  = row[name_col].strip() if name_col < len(row) else ""
+            name  = _sanitize_name(row[name_col].strip()) if name_col < len(row) else ""
             price_raw = row[price_col].strip() if price_col < len(row) else ""
 
             # Detect category section headers (full-width rows with no price)
@@ -256,6 +256,26 @@ def _is_noise(name: str) -> bool:
         if re.match(pat, n):
             return True
     return False
+
+
+# Characters that break Shell URL routing or SQLite LIKE matching when in names
+_SANITIZE_MAP = {
+    "+": "-",
+    "&": ",",
+    "#": "",
+    "?": "",
+    "=": "-",
+}
+
+
+def _sanitize_name(name: str) -> str:
+    """
+    Replace characters that cause problems in Shell navigation or SQLite queries.
+    Applied to every analysis name before it is stored in data/analyses/*.json.
+    """
+    for char, replacement in _SANITIZE_MAP.items():
+        name = name.replace(char, replacement)
+    return re.sub(r"  +", " ", name).strip()
 
 
 def _infer_unit(name: str, price_raw: str) -> str:
