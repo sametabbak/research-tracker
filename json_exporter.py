@@ -502,60 +502,14 @@ def _rebuild_centers_index() -> None:
 
 def _rebuild_keywords() -> None:
     """
-    Builds data/keywords.json — maps canonical analysis names to keyword aliases.
-    The app uses this to group same-analysis results from different centers
-    even when names differ (e.g. "XRD", "XRD Analizi", "X-Işını Kırınımı").
-    Collected from all written analyses files.
+    Eskiden bu fonksiyon 'keywords.json' dosyasını sıfırdan oluşturarak 
+    manuel düzenlemeleri siliyordu. Artık 'auto_categorizer.py' dosyasındaki 
+    akıllı sınıflandırmayı çağırarak mevcut şablonu bozmadan yeni analizleri ekliyor.
     """
-    analyses_dir = DATA_DIR / "analyses"
-    if not analyses_dir.exists():
-        return
-
-    # Collect all unique analysis names across all centers
-    all_names: list[str] = []
-    for f in analyses_dir.glob("*.json"):
-        try:
-            data = json.loads(f.read_text(encoding="utf-8"))
-            all_names.extend(a["name"] for a in data.get("analyses", []))
-        except Exception:
-            continue
-
-    # Group names that share a common root keyword
-    CANONICAL_KEYWORDS: dict[str, list[str]] = {
-        "XRD":       ["xrd", "x-ray", "x ışını", "kırınım", "difraksiyon"],
-        "SEM":       ["sem", "taramalı elektron", "scanning electron"],
-        "SEM-EDX":   ["edx", "eds", "enerji dağılımlı", "energy dispersive"],
-        "Kaplama":   ["kaplama", "altın kaplama", "paladyum kaplama", "karbon kaplama", "iridyum kaplama", "altın/paladyum", "au,pd", "numune kaplama", "coating"],
-        "TEM":       ["tem", "transmisyon elektron", "transmission electron"],
-        "AFM":       ["afm", "atomik kuvvet", "atomic force"],
-        "BET":       ["bet", "yüzey alan", "surface area"],
-        "TGA":       ["tga", "termogravimetri", "thermogravimetric", "termal gravimetri"],
-        "DSC":       ["dsc", "diferansiyel taramalı kalorimetre", "differential scanning"],
-        "DTA":       ["dta", "diferansiyel termal analiz"],
-        "FTIR":      ["ftir", "ft-ir", "kızılötesi spektroskopi", "infrared"],
-        "Raman":     ["raman"],
-        "ICP-MS":    ["icp-ms", "icp ms", "kütle spektrometri"],
-        "ICP-OES":   ["icp-oes", "icp oes", "optik emisyon"],
-        "XRF":       ["xrf", "x-ışını floresans", "x-ray fluorescence"],
-        "Porozimetre":["porozimetre", "porozimetri", "cıvalı", "mercury porosimetry"],
-        "Mikrosertlik":["mikrosertlik", "vickers", "hardness"],
-        "OES":       ["oes", "optik emisyon spektroskopi"],
-        "Eleman Analizi": ["eleman analiz", "elementel", "elemental", "chns"],
-        "NMR":       ["nmr", "nükleer manyetik rezonans"],
-    }
-
-    # Build the output: for each canonical name, list all matching names from real data
-    keywords_map: dict[str, list[str]] = {}
-    for canonical, kws in CANONICAL_KEYWORDS.items():
-        matched = []
-        for name in all_names:
-            name_lower = name.lower()
-            if any(kw in name_lower for kw in kws):
-                if name not in matched:
-                    matched.append(name)
-        if matched:
-            keywords_map[canonical] = matched
-
-    out = DATA_DIR / "keywords.json"
-    out.write_text(json.dumps(keywords_map, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"🔑 Anahtar kelime indeksi güncellendi ({len(keywords_map)} analiz türü) → {out}")
+    try:
+        import auto_categorizer
+        auto_categorizer.auto_categorize()
+    except ImportError:
+        print("⚠️ auto_categorizer.py bulunamadı, keywords.json güncellenmedi.")
+    except Exception as e:
+        print(f"⚠️ Kategori güncellemesi sırasında hata oluştu: {e}")
