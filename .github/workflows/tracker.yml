@@ -16,15 +16,38 @@ on:
 
   workflow_dispatch:        # Manual trigger from GitHub UI anytime
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   track:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository (full history)
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Set up Python
+      - name: Configure git
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Set up staging branch
+        run: |
+          git fetch origin
+          if git ls-remote --exit-code --heads origin staging; then
+            # Branch exists — check it out and merge latest main to avoid drift
+            git checkout staging
+            git merge origin/main --no-edit --strategy-option=theirs || true
+          else
+            # First run — create staging from main
+            git checkout -b staging
+          fi
+
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -35,17 +58,20 @@ jobs:
       - name: Run tracker
         run: python tracker.py
 
-      - name: Commit updated data and snapshots
+      - name: Run sanitizer
+        run: python sanitize.py
+
+      - name: Run auto-categorizer
+        run: python auto_categorizer.py
+
+      - name: Commit and push to staging
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add data/
-          git add snapshots/
-
+          git add data/ snapshots/
           if git diff --staged --quiet; then
-            echo "No changes to commit."
+            echo "Değişiklik yok — staging güncel."
           else
-            git commit -m "chore: update data + snapshots $(date -u '+%Y-%m-%d')"
-            git push
+            git commit -m "chore: tracker run $(date '+%Y-%m-%d')"
+            git push origin staging
+            echo "✅ Değişiklikler staging branch'e gönderildi."
+            echo "   İnceleme panelini açıp onaylayın: https://sametabbak.github.io/research-tracker/"
           fi
