@@ -6,255 +6,259 @@
 <title>AnalizBul — İnceleme Paneli</title>
 <style>
   :root {
-    --primary:   #1FA8AE;
-    --primary-d: #178a8f;
-    --bg:        #f4f6f8;
-    --card:      #ffffff;
-    --border:    #e0e4e8;
-    --text:      #1a2332;
-    --muted:     #6b7a8d;
-    --add:       #22c55e;
-    --del:       #ef4444;
-    --chg:       #f97316;
-    --warn-bg:   #fffbeb;
-    --warn-bd:   #fbbf24;
+    --primary:#1FA8AE; --primary-d:#178a8f;
+    --bg:#f4f6f8; --card:#fff; --border:#e0e4e8;
+    --text:#1a2332; --muted:#6b7a8d;
+    --add:#22c55e; --del:#ef4444; --chg:#f97316;
+    --warn-bg:#fffbeb; --warn-bd:#fbbf24;
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: system-ui, -apple-system, sans-serif;
-         background: var(--bg); color: var(--text); font-size: 14px; }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:system-ui,-apple-system,sans-serif;
+       background:var(--bg);color:var(--text);font-size:14px;}
 
-  /* ── Header ─────────────────────────────────────────── */
-  .header { background: var(--primary); color: #fff; padding: 16px 24px;
-             display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-  .header h1 { font-size: 20px; font-weight: 700; flex: 1; }
-  .header-right { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-  .token-badge { background: rgba(255,255,255,.2); border-radius: 8px;
-                  padding: 6px 12px; font-size: 12px; cursor: pointer;
-                  white-space: nowrap; }
-  .token-badge.ok  { background: rgba(34,197,94,.3); }
-  .token-badge.bad { background: rgba(239,68,68,.3); }
-  .btn { padding: 8px 18px; border: none; border-radius: 8px;
-          font-size: 14px; cursor: pointer; font-weight: 600;
-          white-space: nowrap; }
-  .btn-approve { background: #22c55e; color: #fff; }
-  .btn-approve:disabled { background: #9ca3af; cursor: not-allowed; }
-  .btn-secondary { background: rgba(255,255,255,.15); color: #fff; }
+  /* Header */
+  .header{background:var(--primary);color:#fff;padding:14px 24px;
+          display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  .header h1{font-size:19px;font-weight:700;flex:1;}
+  .header-meta{font-size:11px;opacity:.75;white-space:nowrap;}
+  .header-right{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .token-badge{background:rgba(255,255,255,.2);border-radius:8px;
+               padding:6px 12px;font-size:12px;cursor:pointer;white-space:nowrap;}
+  .token-badge.ok{background:rgba(34,197,94,.3);}
+  .token-badge.bad{background:rgba(239,68,68,.3);}
+  .btn{padding:8px 16px;border:none;border-radius:8px;font-size:13px;
+       cursor:pointer;font-weight:600;white-space:nowrap;}
+  .btn-approve{background:#22c55e;color:#fff;}
+  .btn-approve:disabled{background:#9ca3af;cursor:not-allowed;}
+  .btn-secondary{background:rgba(255,255,255,.15);color:#fff;}
 
-  /* ── Summary cards ───────────────────────────────────── */
-  .summary { display: flex; gap: 12px; padding: 16px 24px;
-              flex-wrap: wrap; background: var(--card);
-              border-bottom: 1px solid var(--border); }
-  .card { background: var(--bg); border-radius: 10px; padding: 12px 18px;
-           min-width: 120px; text-align: center; }
-  .card .num { font-size: 26px; font-weight: 700; }
-  .card .lbl { font-size: 12px; color: var(--muted); margin-top: 2px; }
-  .card.add .num { color: var(--add); }
-  .card.del .num { color: var(--del); }
-  .card.chg .num { color: var(--chg); }
-  .card.neu .num { color: var(--primary); }
+  /* Summary cards */
+  .summary{display:flex;gap:10px;padding:14px 24px;
+           flex-wrap:wrap;background:var(--card);
+           border-bottom:1px solid var(--border);}
+  .card{background:var(--bg);border-radius:10px;padding:10px 16px;
+        min-width:110px;text-align:center;cursor:pointer;
+        transition:box-shadow .15s,transform .1s;border:2px solid transparent;}
+  .card:hover{box-shadow:0 2px 10px rgba(0,0,0,.1);transform:translateY(-1px);}
+  .card.active-card{border-color:var(--primary);}
+  .card .num{font-size:24px;font-weight:700;}
+  .card .lbl{font-size:11px;color:var(--muted);margin-top:2px;}
+  .card.add .num{color:var(--add);}
+  .card.del .num{color:var(--del);}
+  .card.chg .num{color:var(--chg);}
+  .card.neu .num{color:var(--primary);}
 
-  /* ── Tabs ────────────────────────────────────────────── */
-  .tabs { display: flex; gap: 2px; padding: 12px 24px 0;
-           border-bottom: 2px solid var(--border); background: var(--card); }
-  .tab { padding: 8px 20px; cursor: pointer; border-radius: 8px 8px 0 0;
-          font-weight: 600; color: var(--muted);
-          border: 1px solid transparent; border-bottom: none; }
-  .tab.active { color: var(--primary); background: var(--bg);
-                 border-color: var(--border); position: relative; top: 2px; }
+  /* Tabs */
+  .tabs{display:flex;gap:2px;padding:12px 24px 0;
+        border-bottom:2px solid var(--border);background:var(--card);}
+  .tab{padding:8px 20px;cursor:pointer;border-radius:8px 8px 0 0;
+       font-weight:600;color:var(--muted);
+       border:1px solid transparent;border-bottom:none;}
+  .tab.active{color:var(--primary);background:var(--bg);
+              border-color:var(--border);position:relative;top:2px;}
 
-  /* ── Content ─────────────────────────────────────────── */
-  .content { padding: 20px 24px; max-width: 1400px; }
-  .section  { margin-bottom: 28px; }
-  .section h2 { font-size: 16px; font-weight: 700; margin-bottom: 10px;
-                 display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-  .cnt { background: var(--bg); border: 1px solid var(--border);
-          border-radius: 12px; padding: 2px 8px;
-          font-size: 12px; color: var(--muted); font-weight: 500; }
-  .cnt.add { color: var(--add); border-color: #bbf7d0; background: #f0fdf4; }
-  .cnt.del { color: var(--del); border-color: #fecaca; background: #fef2f2; }
-  .cnt.chg { color: var(--chg); border-color: #fed7aa; background: #fff7ed; }
+  /* Content */
+  .content{padding:20px 24px;}
+  .section{margin-bottom:28px;}
+  .section h2{font-size:15px;font-weight:700;margin-bottom:10px;
+              display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .cnt{background:var(--bg);border:1px solid var(--border);border-radius:12px;
+       padding:2px 8px;font-size:11px;color:var(--muted);font-weight:500;}
+  .cnt.add{color:var(--add);border-color:#bbf7d0;background:#f0fdf4;}
+  .cnt.del{color:var(--del);border-color:#fecaca;background:#fef2f2;}
+  .cnt.chg{color:var(--chg);border-color:#fed7aa;background:#fff7ed;}
 
-  /* ── Table ───────────────────────────────────────────── */
-  .tbl-wrap { overflow-x: auto; border-radius: 10px;
-               border: 1px solid var(--border); background: var(--card); }
-  table { width: 100%; border-collapse: collapse; }
-  th { background: var(--bg); padding: 10px 12px; text-align: left;
-        font-size: 12px; color: var(--muted); font-weight: 600;
-        border-bottom: 1px solid var(--border); white-space: nowrap; }
-  td { padding: 9px 12px; border-bottom: 1px solid var(--border);
-        vertical-align: middle; }
-  tr:last-child td { border-bottom: none; }
-  tr.row-add  { background: #f0fdf4; }
-  tr.row-del  { background: #fef2f2; }
-  tr.row-chg  { background: #fff7ed; }
-  tr.row-man  { background: #f0f9ff; }
-  tr.row-del td { opacity: .7; }
-  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px;
-            font-size: 11px; font-weight: 600; }
-  .badge-add { background: #dcfce7; color: #166534; }
-  .badge-del { background: #fee2e2; color: #991b1b; }
-  .badge-chg { background: #ffedd5; color: #9a3412; }
-  .badge-man { background: #e0f2fe; color: #075985; }
+  /* Filter bar */
+  .filter-bar{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;
+              align-items:center;}
+  .filter-bar span{font-size:12px;color:var(--muted);font-weight:600;}
+  .fbtn{padding:5px 14px;border:1px solid var(--border);border-radius:20px;
+        background:var(--card);cursor:pointer;font-size:12px;font-weight:600;
+        color:var(--muted);transition:all .15s;}
+  .fbtn:hover{border-color:var(--primary);color:var(--primary);}
+  .fbtn.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+  .fbtn.f-add.active{background:var(--add);border-color:var(--add);}
+  .fbtn.f-del.active{background:var(--del);border-color:var(--del);}
+  .fbtn.f-chg.active{background:var(--chg);border-color:var(--chg);}
 
-  /* ── Editable cells ──────────────────────────────────── */
-  .editable { cursor: pointer; border-radius: 4px; padding: 2px 4px;
-               transition: background .15s; }
-  .editable:hover { background: #f0f9ff; outline: 1px solid var(--primary); }
-  .editable input, .editable select {
-    border: 1px solid var(--primary); border-radius: 4px;
-    padding: 2px 6px; font-size: 13px; width: 100%; min-width: 60px;
-    font-family: inherit; background: #fff; }
-  .edit-hint { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+  /* Search */
+  .search-bar{display:flex;gap:10px;margin-bottom:14px;}
+  .search-bar input{flex:1;padding:9px 14px;border:1px solid var(--border);
+                    border-radius:8px;font-size:14px;font-family:inherit;}
+  .search-bar input:focus{outline:2px solid var(--primary);border-color:transparent;}
 
-  /* ── Action buttons ──────────────────────────────────── */
-  .btn-del-row { background: none; border: none; cursor: pointer;
-                  color: var(--del); font-size: 16px; padding: 2px 6px;
-                  border-radius: 4px; }
-  .btn-del-row:hover { background: #fee2e2; }
-  .btn-add-row { background: var(--add); color: #fff; padding: 5px 14px;
-                  border: none; border-radius: 6px; cursor: pointer;
-                  font-size: 12px; font-weight: 600; }
-  .btn-add-row:hover { background: #16a34a; }
-  .btn-undo { background: none; border: 1px solid var(--border); cursor: pointer;
-               font-size: 11px; border-radius: 4px; padding: 1px 6px;
-               color: var(--muted); }
-  .btn-undo:hover { background: var(--bg); }
+  /* Table */
+  .tbl-wrap{overflow-x:auto;border-radius:10px;
+            border:1px solid var(--border);background:var(--card);}
+  table{width:100%;border-collapse:collapse;}
+  th{background:var(--bg);padding:9px 10px;text-align:left;
+     font-size:11px;color:var(--muted);font-weight:600;
+     border-bottom:1px solid var(--border);white-space:nowrap;}
+  td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:middle;}
+  tr:last-child td{border-bottom:none;}
+  tr.row-add{background:#f0fdf4;}
+  tr.row-del{background:#fef2f2;opacity:.75;}
+  tr.row-chg{background:#fff7ed;}
+  tr.row-man{background:#f0f9ff;}
+  .badge{display:inline-block;padding:2px 7px;border-radius:10px;
+         font-size:11px;font-weight:600;white-space:nowrap;}
+  .badge-add{background:#dcfce7;color:#166534;}
+  .badge-del{background:#fee2e2;color:#991b1b;}
+  .badge-chg{background:#ffedd5;color:#9a3412;}
+  .badge-man{background:#e0f2fe;color:#075985;}
 
-  /* ── Search ──────────────────────────────────────────── */
-  .search-bar { display: flex; gap: 10px; margin-bottom: 14px; }
-  .search-bar input { flex: 1; padding: 9px 14px; border: 1px solid var(--border);
-                       border-radius: 8px; font-size: 14px; font-family: inherit; }
-  .search-bar input:focus { outline: 2px solid var(--primary); border-color: transparent; }
+  /* Editable */
+  .editable{cursor:pointer;border-radius:4px;padding:2px 4px;transition:background .1s;}
+  .editable:hover{background:#f0f9ff;outline:1px solid var(--primary);}
+  .editable input,.editable select{
+    border:1px solid var(--primary);border-radius:4px;
+    padding:2px 6px;font-size:13px;width:100%;min-width:50px;
+    font-family:inherit;background:#fff;}
+  .notes-cell{max-width:200px;white-space:nowrap;overflow:hidden;
+              text-overflow:ellipsis;color:var(--muted);font-size:12px;}
+  .edit-hint{font-size:11px;color:var(--muted);margin-bottom:6px;}
 
-  /* ── Modal ───────────────────────────────────────────── */
-  .overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45);
-              display: flex; align-items: center; justify-content: center;
-              z-index: 100; padding: 16px; }
-  .modal { background: var(--card); border-radius: 14px; padding: 28px;
-            width: 440px; max-width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,.2); }
-  .modal h3 { font-size: 17px; margin-bottom: 16px; }
-  .field { margin-top: 12px; }
-  .field label { display: block; font-size: 12px; color: var(--muted);
-                  margin-bottom: 4px; font-weight: 600; }
-  .field input, .field select {
-    width: 100%; padding: 9px 12px; border: 1px solid var(--border);
-    border-radius: 8px; font-size: 14px; font-family: inherit; background: #fff; }
-  .field input:focus, .field select:focus {
-    outline: 2px solid var(--primary); border-color: transparent; }
-  .modal-btns { display: flex; gap: 10px; margin-top: 20px; }
-  .modal-btns .btn { flex: 1; }
-  .btn-primary { background: var(--primary); color: #fff; }
-  .btn-ghost   { background: var(--bg); color: var(--text);
-                  border: 1px solid var(--border); }
+  /* Buttons */
+  .btn-del-row{background:none;border:none;cursor:pointer;color:var(--del);
+               font-size:15px;padding:2px 5px;border-radius:4px;}
+  .btn-del-row:hover{background:#fee2e2;}
+  .btn-add-row{background:var(--add);color:#fff;padding:5px 12px;border:none;
+               border-radius:6px;cursor:pointer;font-size:12px;font-weight:600;}
+  .btn-add-row:hover{background:#16a34a;}
+  .pending-bar{background:var(--warn-bg);border:1px solid var(--warn-bd);
+               border-radius:8px;padding:9px 14px;margin-bottom:12px;
+               display:flex;align-items:center;gap:10px;font-size:13px;}
+  .pending-bar span{flex:1;}
+  .btn-undo{background:none;border:1px solid var(--border);cursor:pointer;
+            font-size:11px;border-radius:4px;padding:2px 8px;color:var(--muted);}
+  .btn-undo:hover{background:var(--bg);}
 
-  /* ── Notices ─────────────────────────────────────────── */
-  .warn-box { background: var(--warn-bg); border: 1px solid var(--warn-bd);
-               border-radius: 8px; padding: 12px 16px; font-size: 13px;
-               line-height: 1.6; }
-  .info-box { background: #f0f9ff; border: 1px solid #bae6fd;
-               border-radius: 8px; padding: 12px 16px; font-size: 13px;
-               line-height: 1.6; color: #075985; }
-  .ok-box   { background: #f0fdf4; border: 1px solid #bbf7d0;
-               border-radius: 8px; padding: 12px 16px; font-size: 13px;
-               line-height: 1.6; color: #166534; }
+  /* Price diff */
+  .price-old{text-decoration:line-through;color:var(--muted);
+             font-size:11px;margin-right:4px;}
+  .price-new{color:var(--chg);font-weight:600;}
 
-  /* ── Pending edits bar ───────────────────────────────── */
-  .pending-bar { background: var(--warn-bg); border: 1px solid var(--warn-bd);
-                  border-radius: 8px; padding: 10px 16px; margin-bottom: 14px;
-                  display: flex; align-items: center; gap: 12px;
-                  font-size: 13px; }
-  .pending-bar span { flex: 1; }
+  /* Boxes */
+  .warn-box{background:var(--warn-bg);border:1px solid var(--warn-bd);
+            border-radius:8px;padding:12px 16px;font-size:13px;line-height:1.6;}
+  .info-box{background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;
+            padding:12px 16px;font-size:13px;line-height:1.6;color:#075985;}
+  .ok-box{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;
+          padding:12px 16px;font-size:13px;line-height:1.6;color:#166534;}
 
-  /* ── Loader ──────────────────────────────────────────── */
-  .loader { text-align: center; padding: 60px 24px; color: var(--muted); }
-  .spin { display: inline-block; width: 36px; height: 36px;
-           border: 3px solid var(--border); border-top-color: var(--primary);
-           border-radius: 50%; animation: spin .8s linear infinite; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .empty { text-align: center; padding: 40px; color: var(--muted); }
+  /* Modal */
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);
+           display:flex;align-items:center;justify-content:center;
+           z-index:100;padding:16px;}
+  .modal{background:var(--card);border-radius:14px;padding:26px;
+         width:460px;max-width:100%;max-height:90vh;overflow-y:auto;
+         box-shadow:0 20px 60px rgba(0,0,0,.2);}
+  .modal h3{font-size:16px;margin-bottom:14px;}
+  .field{margin-top:11px;}
+  .field label{display:block;font-size:11px;color:var(--muted);
+               margin-bottom:3px;font-weight:600;}
+  .field input,.field select{width:100%;padding:8px 12px;
+    border:1px solid var(--border);border-radius:8px;
+    font-size:14px;font-family:inherit;background:#fff;}
+  .field input:focus,.field select:focus{outline:2px solid var(--primary);border-color:transparent;}
+  .field-row{display:flex;gap:10px;}
+  .field-row .field{flex:1;}
+  .modal-btns{display:flex;gap:10px;margin-top:18px;}
+  .modal-btns .btn{flex:1;}
+  .btn-primary{background:var(--primary);color:#fff;}
+  .btn-ghost{background:var(--bg);color:var(--text);border:1px solid var(--border);}
 
-  /* ── Price diff ──────────────────────────────────────── */
-  .price-old { text-decoration: line-through; color: var(--muted);
-                font-size: 11px; margin-right: 4px; }
-  .price-new { color: var(--chg); font-weight: 600; }
-
-  .hidden { display: none; }
+  /* Loader */
+  .loader{text-align:center;padding:60px 24px;color:var(--muted);}
+  .spin{display:inline-block;width:34px;height:34px;
+        border:3px solid var(--border);border-top-color:var(--primary);
+        border-radius:50%;animation:spin .8s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .empty{text-align:center;padding:40px;color:var(--muted);}
+  .hidden{display:none;}
 </style>
 </head>
 <body>
 
-<!-- ── HEADER ──────────────────────────────────────────────────────────────── -->
+<!-- HEADER -->
 <div class="header">
-  <h1>🔬 AnalizBul — İnceleme Paneli</h1>
+  <div>
+    <h1>🔬 AnalizBul — İnceleme Paneli</h1>
+    <div class="header-meta" id="stagingMeta">Yükleniyor...</div>
+  </div>
   <div class="header-right">
-    <div class="token-badge" id="tokenBadge" onclick="showModal('tokenOverlay')">
-      🔑 Token gir
-    </div>
+    <div class="token-badge" id="tokenBadge" onclick="showModal('tokenOverlay')">🔑 Token gir</div>
     <button class="btn btn-secondary" onclick="loadAll()">↻ Yenile</button>
-    <button class="btn btn-approve" id="approveBtn"
-            onclick="approve()" disabled>
-      ✓ Onayla ve Yayınla
-    </button>
+    <button class="btn btn-approve" id="approveBtn" onclick="approve()" disabled>✓ Onayla ve Yayınla</button>
   </div>
 </div>
 
-<!-- ── SUMMARY ─────────────────────────────────────────────────────────────── -->
+<!-- SUMMARY CARDS (each clickable) -->
 <div class="summary">
-  <div class="card neu"><div class="num" id="sTotal">—</div><div class="lbl">Toplam Analiz</div></div>
-  <div class="card add"><div class="num" id="sNew">—</div><div class="lbl">Yeni Eklenen</div></div>
-  <div class="card del"><div class="num" id="sDel">—</div><div class="lbl">Silinen</div></div>
-  <div class="card chg"><div class="num" id="sChg">—</div><div class="lbl">Değişen Fiyat</div></div>
-  <div class="card neu"><div class="num" id="sMan">—</div><div class="lbl">Manuel Ekleme</div></div>
+  <div class="card neu" id="card-total"   onclick="cardClick('total')"   title="Tüm analizleri göster">
+    <div class="num" id="sTotal">—</div><div class="lbl">Toplam Analiz</div></div>
+  <div class="card add" id="card-added"  onclick="cardClick('added')"   title="Yeni eklenen analizleri göster">
+    <div class="num" id="sNew">—</div><div class="lbl">Yeni Eklenen</div></div>
+  <div class="card del" id="card-deleted" onclick="cardClick('deleted')" title="Silinen analizleri göster">
+    <div class="num" id="sDel">—</div><div class="lbl">Silindi</div></div>
+  <div class="card chg" id="card-changed" onclick="cardClick('changed')" title="Fiyat değişen analizleri göster">
+    <div class="num" id="sChg">—</div><div class="lbl">Değişen Fiyat</div></div>
+  <div class="card neu" id="card-manual"  onclick="cardClick('manual')"  title="Manuel eklenen analizleri göster">
+    <div class="num" id="sMan">—</div><div class="lbl">Manuel Ekleme</div></div>
 </div>
 
-<!-- ── TABS ────────────────────────────────────────────────────────────────── -->
+<!-- TABS -->
 <div class="tabs">
-  <div class="tab active" onclick="showTab('changes')">Değişiklikler</div>
-  <div class="tab" onclick="showTab('catalog')">Tüm Analizler</div>
-  <div class="tab" onclick="showTab('overrides')">Manuel Eklemeler</div>
+  <div class="tab active" id="tab-btn-changes"   onclick="showTab('changes')">Değişiklikler</div>
+  <div class="tab"        id="tab-btn-catalog"   onclick="showTab('catalog')">Tüm Analizler</div>
+  <div class="tab"        id="tab-btn-overrides" onclick="showTab('overrides')">Manuel Eklemeler</div>
 </div>
 
 <div class="content">
 
+  <!-- CHANGES TAB -->
   <div id="tab-changes">
+    <div class="filter-bar" id="changeFilterBar">
+      <span>Filtre:</span>
+      <button class="fbtn active"  id="fb-all"     onclick="setChangeFilter('all')">Tümü</button>
+      <button class="fbtn f-add"   id="fb-added"   onclick="setChangeFilter('added')">Yeni Eklenen</button>
+      <button class="fbtn f-del"   id="fb-deleted" onclick="setChangeFilter('deleted')">Silindi</button>
+      <button class="fbtn f-chg"   id="fb-changed" onclick="setChangeFilter('changed')">Fiyat Değişti</button>
+    </div>
     <div id="changesContent">
-      <div class="loader"><div class="spin"></div>
-        <p style="margin-top:16px">Veriler yükleniyor...</p></div>
+      <div class="loader"><div class="spin"></div><p style="margin-top:14px">Yükleniyor...</p></div>
     </div>
   </div>
 
+  <!-- CATALOG TAB -->
   <div id="tab-catalog" class="hidden">
     <div class="search-bar">
-      <input id="catalogSearch" placeholder="Analiz adı veya merkez ara..."
-             oninput="filterCatalog()">
+      <input id="catalogSearch" placeholder="Analiz adı, kategori veya merkez ara..." oninput="filterCatalog()">
     </div>
-    <div id="catalogContent">
-      <div class="loader"><div class="spin"></div></div>
-    </div>
+    <div id="catalogContent"><div class="loader"><div class="spin"></div></div></div>
   </div>
 
+  <!-- OVERRIDES TAB -->
   <div id="tab-overrides" class="hidden">
-    <div id="overridesContent">
-      <div class="loader"><div class="spin"></div></div>
-    </div>
+    <div id="overridesContent"><div class="loader"><div class="spin"></div></div></div>
   </div>
 
 </div>
 
-<!-- ══════════════════ MODALS ══════════════════════════════════════════════ -->
+<!-- ═══ MODALS ═══════════════════════════════════════════════════════════════ -->
 
-<!-- Token modal -->
+<!-- Token -->
 <div class="overlay hidden" id="tokenOverlay">
   <div class="modal">
     <h3>🔑 GitHub Personal Access Token</h3>
     <div class="field">
       <label>Token (Contents: read/write · Actions: write)</label>
       <input type="password" id="tokenInput" placeholder="ghp_xxxxxxxxxxxx"
-             onkeydown="if(event.key==='Enter') saveToken()">
+             onkeydown="if(event.key==='Enter')saveToken()">
     </div>
-    <div class="warn-box" style="margin-top:14px">
-      Token yalnızca bu tarayıcı oturumunda tutulur. Sayfayı kapattığınızda silinir.<br>
-      Okuma işlemleri için token gerekmez; yazmak ve onaylamak için gereklidir.
+    <div class="warn-box" style="margin-top:12px">
+      Token yalnızca bu tarayıcı oturumunda tutulur. Okuma işlemleri için gerekmez;
+      düzenleme ve onaylama için gereklidir.
     </div>
     <div class="modal-btns">
       <button class="btn btn-primary" onclick="saveToken()">Kaydet</button>
@@ -263,12 +267,12 @@
   </div>
 </div>
 
-<!-- Add analysis modal -->
+<!-- Add analysis -->
 <div class="overlay hidden" id="addOverlay">
   <div class="modal">
     <h3>➕ Yeni Analiz Ekle</h3>
     <div class="field">
-      <label>Merkez</label>
+      <label>Merkez *</label>
       <select id="addCenter"></select>
     </div>
     <div class="field">
@@ -279,25 +283,36 @@
       <label>Kategori</label>
       <select id="addCategory"></select>
     </div>
-    <div class="field">
-      <label>Fiyat (TL) *</label>
-      <input type="number" id="addPrice" placeholder="1500" min="0">
+    <div class="field-row">
+      <div class="field">
+        <label>Fiyat *</label>
+        <input type="number" id="addPrice" placeholder="1500" min="0" step="0.01">
+      </div>
+      <div class="field">
+        <label>Para Birimi</label>
+        <select id="addCurrency">
+          <option value="TRY" selected>TRY (₺)</option>
+          <option value="USD">USD ($)</option>
+          <option value="EUR">EUR (€)</option>
+        </select>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label>Birim</label>
+        <select id="addUnit">
+          <option>numune</option><option>saat</option><option>gün</option>
+          <option>enjeksiyon</option><option>analiz</option>
+          <option>set</option><option>kullanım</option><option>adet</option>
+        </select>
+      </div>
     </div>
     <div class="field">
-      <label>Birim</label>
-      <select id="addUnit">
-        <option>numune</option><option>saat</option><option>gün</option>
-        <option>enjeksiyon</option><option>analiz</option>
-        <option>set</option><option>kullanım</option>
-      </select>
+      <label>Not</label>
+      <input id="addNotes" placeholder="Ek açıklama veya kısıt (isteğe bağlı)">
     </div>
-    <div class="field">
-      <label>Not (isteğe bağlı)</label>
-      <input id="addNotes" placeholder="Ek bilgi...">
-    </div>
-    <div class="info-box" style="margin-top:14px">
-      Bu analiz <strong>manuel ekleme</strong> olarak kaydedilir ve tracker
-      çalışmalarından etkilenmez.
+    <div class="info-box" style="margin-top:12px;font-size:12px;">
+      Bu analiz <strong>Manuel Eklemeler</strong> olarak kaydedilir ve tracker çalışmalarından etkilenmez.
     </div>
     <div class="modal-btns">
       <button class="btn btn-primary" onclick="submitAdd()">Ekle</button>
@@ -306,11 +321,11 @@
   </div>
 </div>
 
-<!-- Approve confirm modal -->
+<!-- Confirm approve -->
 <div class="overlay hidden" id="confirmOverlay">
   <div class="modal">
     <h3>✓ Onay</h3>
-    <div id="confirmBody" style="margin-bottom:16px;line-height:1.7"></div>
+    <div id="confirmBody" style="margin-bottom:14px;line-height:1.7;"></div>
     <div class="modal-btns">
       <button class="btn btn-primary" onclick="doApprove()">Evet, Yayınla</button>
       <button class="btn btn-ghost"   onclick="hideModal('confirmOverlay')">İptal</button>
@@ -319,26 +334,29 @@
 </div>
 
 <script>
-// ─── CONFIG ────────────────────────────────────────────────────────────────────
+// ── CONFIG ─────────────────────────────────────────────────────────────────────
 const REPO    = 'sametabbak/research-tracker';
 const STAGING = 'staging';
 const MAIN    = 'main';
+const CURRENCIES = ['TRY','USD','EUR'];
+const UNITS = ['numune','saat','gün','enjeksiyon','analiz','set','kullanım','adet'];
+const CURRENCY_SYMBOLS = { TRY:'₺', USD:'$', EUR:'€' };
 
-// ─── STATE ─────────────────────────────────────────────────────────────────────
-let token       = sessionStorage.getItem('gh_token') || '';
-let centers     = [];
-let stagingMap  = {};   // centerId → { content: {analyses:[...]}, sha }
-let mainMap     = {};   // centerId → { analyses:[] }           (raw JSON)
-let overrideMap = {};   // centerId → { content: {overrides:[...]}, sha }
-let categories  = [];
-let stagingExists = false;  // true if staging branch files were found
+// ── STATE ──────────────────────────────────────────────────────────────────────
+let token         = sessionStorage.getItem('gh_token') || '';
+let centers       = [];
+let stagingMap    = {};   // id → { content:{analyses:[]}, sha }
+let mainMap       = {};   // id → { analyses:[] }
+let overrideMap   = {};   // id → { content:{overrides:[]}, sha }
+let categories    = [];
+let stagingExists = false;
+let changeFilter  = 'all';  // 'all' | 'added' | 'deleted' | 'changed'
 
-// Pending mutations (cleared after approve)
-let pendEdits   = {};   // centerId → { analysisName → { field: newValue } }
-let pendAdds    = {};   // centerId → [newEntries]
-let pendDeletes = {};   // centerId → Set of names
+let pendEdits   = {};  // id → { analysisName → { field: value } }
+let pendAdds    = {};  // id → [entries]
+let pendDeletes = {};  // id → Set<name>
 
-// ─── AUTH ───────────────────────────────────────────────────────────────────────
+// ── AUTH ───────────────────────────────────────────────────────────────────────
 function saveToken() {
   token = document.getElementById('tokenInput').value.trim();
   sessionStorage.setItem('gh_token', token);
@@ -353,90 +371,92 @@ function updateTokenBadge() {
 }
 updateTokenBadge();
 
-// ─── GITHUB API ─────────────────────────────────────────────────────────────────
-function ghHeaders() {
+// ── GITHUB API ─────────────────────────────────────────────────────────────────
+function ghH() {
   const h = { Accept: 'application/vnd.github.v3+json' };
   if (token) h.Authorization = `token ${token}`;
   return h;
 }
 
-/** Read a file from any branch — no token needed for public repos. */
 async function rawRead(branch, path) {
-  const url = `https://raw.githubusercontent.com/${REPO}/${branch}/${path}?t=${Date.now()}`;
-  const r   = await fetch(url);
-  if (!r.ok) return null;
-  return r.json();
+  const r = await fetch(
+    `https://raw.githubusercontent.com/${REPO}/${branch}/${path}?t=${Date.now()}`
+  );
+  return r.ok ? r.json() : null;
 }
 
-/** Read via Contents API so we also get the SHA (needed for writes). */
 async function apiRead(branch, path) {
-  const url = `https://api.github.com/repos/${REPO}/contents/${path}?ref=${branch}`;
-  const r   = await fetch(url, { headers: ghHeaders() });
+  const r = await fetch(
+    `https://api.github.com/repos/${REPO}/contents/${path}?ref=${branch}`,
+    { headers: ghH() }
+  );
   if (!r.ok) return null;
-  const d   = await r.json();
+  const d = await r.json();
   try {
-    return {
-      content: JSON.parse(atob(d.content.replace(/\n/g, ''))),
-      sha: d.sha,
-      path: d.path
-    };
+    return { content: JSON.parse(atob(d.content.replace(/\n/g,''))), sha: d.sha };
   } catch { return null; }
 }
 
-/** Write (create or update) a file on staging. */
 async function apiWrite(path, content, sha, message) {
   if (!token) throw new Error('Token gerekli — sağ üstten giriş yapın.');
-  const encoded = btoa(unescape(encodeURIComponent(
-    JSON.stringify(content, null, 2)
-  )));
-  const body = { message, content: encoded, branch: STAGING };
+  const body = {
+    message, branch: STAGING,
+    content: btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2))))
+  };
   if (sha) body.sha = sha;
-  const r = await fetch(
-    `https://api.github.com/repos/${REPO}/contents/${path}`,
-    { method: 'PUT', headers: { ...ghHeaders(), 'Content-Type': 'application/json' },
-      body: JSON.stringify(body) }
-  );
-  if (!r.ok) {
-    const e = await r.json().catch(() => ({}));
-    throw new Error(e.message || `HTTP ${r.status}`);
-  }
+  const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
+    method: 'PUT',
+    headers: { ...ghH(), 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  });
+  if (!r.ok) { const e = await r.json().catch(()=>({})); throw new Error(e.message||`HTTP ${r.status}`); }
   return r.json();
 }
 
-/** Trigger the merge-staging workflow. */
 async function triggerMerge(note) {
   if (!token) throw new Error('Token gerekli.');
   const r = await fetch(
     `https://api.github.com/repos/${REPO}/actions/workflows/merge-staging.yml/dispatches`,
-    { method: 'POST',
-      headers: { ...ghHeaders(), 'Content-Type': 'application/json' },
+    { method: 'POST', headers: { ...ghH(), 'Content-Type': 'application/json' },
       body: JSON.stringify({ ref: 'main', inputs: { message: note } }) }
   );
-  if (r.status !== 204) {
-    const e = await r.json().catch(() => ({}));
-    throw new Error(e.message || `HTTP ${r.status}`);
-  }
+  if (r.status !== 204) { const e = await r.json().catch(()=>({})); throw new Error(e.message||`HTTP ${r.status}`); }
 }
 
-// ─── LOAD ───────────────────────────────────────────────────────────────────────
+async function fetchStagingMeta() {
+  const r = await fetch(
+    `https://api.github.com/repos/${REPO}/branches/${STAGING}`,
+    { headers: ghH() }
+  );
+  if (!r.ok) return null;
+  const d = await r.json();
+  return d?.commit?.commit?.committer?.date || null;
+}
+
+// ── LOAD ───────────────────────────────────────────────────────────────────────
 async function loadAll() {
-  document.getElementById('changesContent').innerHTML =
-    '<div class="loader"><div class="spin"></div><p style="margin-top:16px">Yükleniyor...</p></div>';
-  document.getElementById('catalogContent').innerHTML  =
-    '<div class="loader"><div class="spin"></div></div>';
-  document.getElementById('overridesContent').innerHTML =
-    '<div class="loader"><div class="spin"></div></div>';
+  ['changesContent','catalogContent','overridesContent'].forEach(id => {
+    document.getElementById(id).innerHTML =
+      '<div class="loader"><div class="spin"></div><p style="margin-top:14px">Yükleniyor...</p></div>';
+  });
   document.getElementById('approveBtn').disabled = true;
+  stagingMap = {}; mainMap = {}; overrideMap = {};
+  pendEdits  = {}; pendAdds = {}; pendDeletes = {};
 
-  // Reset state
-  stagingMap  = {}; mainMap = {}; overrideMap = {};
-  pendEdits   = {}; pendAdds = {}; pendDeletes = {};
-
-  // 1. Centers + categories
-  [centers, categories] = await Promise.all([
-    rawRead(MAIN, 'data/centers.json').then(d => (d || []).filter(c => c.active)),
-    rawRead(MAIN, 'data/keywords.json').then(d => Object.keys(d || {})).catch(() => [])
+  // Centers, categories, staging meta in parallel
+  const [centersRaw, categoriesRaw, stagingDate] = await Promise.all([
+    rawRead(MAIN, 'data/centers.json'),
+    rawRead(MAIN, 'data/keywords.json').catch(() => null),
+    fetchStagingMeta().catch(() => null)
   ]);
+
+  centers    = (centersRaw || []).filter(c => c.active);
+  categories = Object.keys(categoriesRaw || {});
+
+  // Staging meta in header
+  document.getElementById('stagingMeta').textContent = stagingDate
+    ? `staging son güncelleme: ${new Date(stagingDate).toLocaleString('tr-TR')}`
+    : `staging: tarih bilgisi alınamadı`;
 
   if (!centers.length) {
     document.getElementById('changesContent').innerHTML =
@@ -446,7 +466,6 @@ async function loadAll() {
 
   const ids = centers.map(c => c.id);
 
-  // 2. Load all data in parallel
   const [stagFiles, mainFiles, ovFiles] = await Promise.all([
     Promise.all(ids.map(id =>
       apiRead(STAGING, `data/analyses/${id}.json`).then(r => [id, r])
@@ -462,12 +481,10 @@ async function loadAll() {
 
   stagFiles.forEach(([id, r]) => { if (r) stagingMap[id] = r; });
   mainFiles.forEach(([id, r]) => { if (r) mainMap[id]    = r; });
-  ovFiles.forEach( ([id, r]) => { if (r) overrideMap[id] = r; });
+  ovFiles.forEach(( [id, r]) => { if (r) overrideMap[id] = r; });
 
-  // 3. Determine if staging branch actually has data
   stagingExists = Object.keys(stagingMap).length > 0;
 
-  // 4. Render
   updateSummary();
   renderChanges();
   renderCatalog();
@@ -475,57 +492,41 @@ async function loadAll() {
   updateApproveBtn();
 }
 
-// ─── DIFF ───────────────────────────────────────────────────────────────────────
-/**
- * Compare staging vs main for one center.
- *
- * KEY FIX: if staging has NO file for this center, treat it as identical
- * to main — a missing file means the tracker hasn't updated that center
- * yet, not that all analyses were deleted.
- */
+// ── DIFF ───────────────────────────────────────────────────────────────────────
 function getDiff(centerId) {
-  const stagingFile    = stagingMap[centerId];
-  const mainAnalyses   = mainMap[centerId]?.analyses || [];
-
-  // Missing staging file → treat as same as main (no real changes)
-  const stagingAnalyses = stagingFile
+  const stagingFile  = stagingMap[centerId];
+  const mainAnalyses = mainMap[centerId]?.analyses || [];
+  // KEY FIX: missing staging file → treat same as main (not a real deletion)
+  const stagAnalyses = stagingFile
     ? (stagingFile.content?.analyses || [])
     : mainAnalyses;
 
-  const mainByName = new Map(mainAnalyses.map(a    => [a.name, a]));
-  const stagByName = new Map(stagingAnalyses.map(a => [a.name, a]));
-
-  const added   = stagingAnalyses.filter(a => !mainByName.has(a.name));
-  const deleted = mainAnalyses.filter(a    => !stagByName.has(a.name));
-  const changed = stagingAnalyses.filter(a => {
-    const m = mainByName.get(a.name);
-    return m && m.price !== a.price;
-  });
-
-  // Also apply pending local mutations for display purposes
-  const pendDel = pendDeletes[centerId] || new Set();
-  const pendAdd = pendAdds[centerId]    || [];
+  const byMain = new Map(mainAnalyses.map(a => [a.name, a]));
+  const byStag = new Map(stagAnalyses.map(a => [a.name, a]));
 
   return {
-    added:   [...added, ...pendAdd.filter(a => !stagByName.has(a.name))],
-    deleted: deleted.filter(a => !pendDel.has(a.name)),
-    changed,
-    all:     stagingAnalyses,
+    added:   stagAnalyses.filter(a => !byMain.has(a.name)),
+    deleted: mainAnalyses.filter(a => !byStag.has(a.name)),
+    changed: stagAnalyses.filter(a => {
+      const m = byMain.get(a.name);
+      return m && m.price !== a.price;
+    }),
+    all: stagAnalyses,
     stagingMissing: !stagingFile
   };
 }
 
-// ─── SUMMARY ────────────────────────────────────────────────────────────────────
+// ── SUMMARY ────────────────────────────────────────────────────────────────────
 function updateSummary() {
   let total=0, newA=0, delA=0, chgA=0, manA=0;
   centers.forEach(c => {
-    const d  = getDiff(c.id);
-    total   += d.all.length;
-    newA    += d.added.length;
-    delA    += d.deleted.length;
-    chgA    += d.changed.length;
-    manA    += overrideMap[c.id]?.content?.overrides?.length || 0;
-    manA    += pendAdds[c.id]?.length || 0;
+    const d = getDiff(c.id);
+    total += d.all.length;
+    newA  += d.added.length + (pendAdds[c.id]?.length||0);
+    delA  += d.deleted.length;
+    chgA  += d.changed.length;
+    manA  += (overrideMap[c.id]?.content?.overrides?.length||0)
+           + (pendAdds[c.id]?.length||0);
   });
   document.getElementById('sTotal').textContent = total;
   document.getElementById('sNew').textContent   = newA;
@@ -539,23 +540,45 @@ function updateApproveBtn() {
     const d = getDiff(c.id);
     return d.added.length || d.deleted.length || d.changed.length;
   });
-  const hasPendingLocal =
+  const hasPending =
     Object.values(pendEdits).some(m => Object.keys(m).length) ||
     Object.values(pendAdds).some(a => a.length) ||
     Object.values(pendDeletes).some(s => s.size);
-
-  document.getElementById('approveBtn').disabled = !(hasRealDiff || hasPendingLocal);
+  document.getElementById('approveBtn').disabled = !(hasRealDiff || hasPending);
 }
 
-// ─── RENDER: CHANGES TAB ────────────────────────────────────────────────────────
+// ── CARD CLICK ─────────────────────────────────────────────────────────────────
+function cardClick(type) {
+  document.querySelectorAll('.card').forEach(c => c.classList.remove('active-card'));
+  document.getElementById(`card-${type === 'total' ? 'total' : type === 'manual' ? 'manual' : type}`).classList.add('active-card');
+
+  if (type === 'total') {
+    showTab('catalog');
+  } else if (type === 'manual') {
+    showTab('overrides');
+  } else {
+    showTab('changes');
+    setChangeFilter(type);
+  }
+}
+
+// ── CHANGE FILTER ──────────────────────────────────────────────────────────────
+function setChangeFilter(f) {
+  changeFilter = f;
+  ['all','added','deleted','changed'].forEach(id => {
+    document.getElementById(`fb-${id}`).classList.toggle('active', id === f);
+  });
+  renderChanges();
+}
+
+// ── RENDER: CHANGES TAB ────────────────────────────────────────────────────────
 function renderChanges() {
   const el = document.getElementById('changesContent');
 
   if (!stagingExists) {
     el.innerHTML = `<div class="warn-box">
       ⚠️ <strong>staging branch'de veri bulunamadı.</strong><br>
-      Tracker workflow'u bir kez çalıştırın:<br>
-      Actions → <em>Research Center Price Tracker</em> → Run workflow.<br>
+      Actions → <em>Research Center Price Tracker</em> → Run workflow ile tracker'ı çalıştırın.
       Staging oluşturulduktan sonra panel doğru çalışacak.
     </div>`;
     return;
@@ -566,106 +589,90 @@ function renderChanges() {
 
   centers.forEach(c => {
     const d = getDiff(c.id);
-    if (!d.added.length && !d.deleted.length && !d.changed.length) return;
+    let rows = [];
+
+    if (changeFilter === 'all' || changeFilter === 'added')
+      rows.push(...d.added.map(a => ({ ...a, _type: 'add' })));
+    if (changeFilter === 'all' || changeFilter === 'deleted')
+      rows.push(...d.deleted.map(a => ({ ...a, _type: 'del' })));
+    if (changeFilter === 'all' || changeFilter === 'changed')
+      rows.push(...d.changed.map(a => ({ ...a, _type: 'chg' })));
+
+    if (!rows.length) return;
     hasAny = true;
 
     html += `<div class="section">
-      <h2>${esc(c.name)}
-        <span class="cnt">${esc(c.city)}</span>
-        ${d.added.length   ? `<span class="cnt add">+${d.added.length} yeni</span>`   : ''}
-        ${d.deleted.length ? `<span class="cnt del">-${d.deleted.length} silindi</span>` : ''}
-        ${d.changed.length ? `<span class="cnt chg">${d.changed.length} fiyat değişti</span>` : ''}
+      <h2>${esc(c.name)} <span class="cnt">${esc(c.city)}</span>
+        ${d.added.length   ? `<span class="cnt add">+${d.added.length} yeni</span>`       : ''}
+        ${d.deleted.length ? `<span class="cnt del">-${d.deleted.length} silindi</span>`  : ''}
+        ${d.changed.length ? `<span class="cnt chg">${d.changed.length} değişti</span>`   : ''}
       </h2>
       <div class="tbl-wrap"><table>
         <thead><tr>
-          <th>Durum</th><th>Analiz Adı</th>
-          <th>Kategori</th><th>Fiyat</th><th>Birim</th>
+          <th>Durum</th><th>Analiz Adı</th><th>Kategori</th>
+          <th>Eski Fiyat</th><th>Yeni Fiyat</th>
+          <th>Para Birimi</th><th>Birim</th><th>Not</th>
         </tr></thead><tbody>`;
 
-    d.added.forEach(a => {
-      html += `<tr class="row-add">
-        <td><span class="badge badge-add">Yeni</span></td>
-        <td>${esc(a.name)}</td>
-        <td>${esc(a.category||'')}</td>
-        <td><strong>${fmt(a.price)}</strong></td>
-        <td>${esc(a.unit||'')}</td>
-      </tr>`;
-    });
-
-    d.deleted.forEach(a => {
-      html += `<tr class="row-del">
-        <td><span class="badge badge-del">Silindi</span></td>
-        <td>${esc(a.name)}</td>
-        <td>${esc(a.category||'')}</td>
-        <td>${fmt(a.price)}</td>
-        <td>${esc(a.unit||'')}</td>
-      </tr>`;
-    });
-
-    d.changed.forEach(a => {
+    rows.forEach(a => {
       const old = mainMap[c.id]?.analyses?.find(x => x.name === a.name);
-      html += `<tr class="row-chg">
-        <td><span class="badge badge-chg">Fiyat Değişti</span></td>
+      const badge = a._type === 'add'
+        ? '<span class="badge badge-add">Yeni</span>'
+        : a._type === 'del'
+          ? '<span class="badge badge-del">Silindi</span>'
+          : '<span class="badge badge-chg">Fiyat Değişti</span>';
+      const rowCls = { add: 'row-add', del: 'row-del', chg: 'row-chg' }[a._type];
+
+      html += `<tr class="${rowCls}">
+        <td>${badge}</td>
         <td>${esc(a.name)}</td>
         <td>${esc(a.category||'')}</td>
-        <td>
-          <span class="price-old">${fmt(old?.price)}</span>
-          <span class="price-new">→ ${fmt(a.price)}</span>
-        </td>
+        <td>${old ? fmtC(old.price, old.currency||'TRY') : '—'}</td>
+        <td>${a._type !== 'del' ? `<strong>${fmtC(a.price, a.currency||'TRY')}</strong>` : '—'}</td>
+        <td>${esc(a.currency||'TRY')}</td>
         <td>${esc(a.unit||'')}</td>
+        <td class="notes-cell" title="${esc(a.notes||'')}">${esc(a.notes||'')}</td>
       </tr>`;
     });
 
     html += '</tbody></table></div></div>';
   });
 
-  if (!hasAny) {
-    html = '<div class="ok-box">✅ Staging ve main arasında fark yok.<br>'
-      + 'Tüm analizleri görmek için <strong>Tüm Analizler</strong> sekmesine geçin.</div>';
-  }
-
-  el.innerHTML = html;
+  el.innerHTML = hasAny
+    ? html
+    : `<div class="ok-box">✅ ${changeFilter === 'all'
+        ? 'Staging ve main arasında fark yok.'
+        : 'Bu filtreye uygun değişiklik yok.'}</div>`;
 }
 
-// ─── RENDER: FULL CATALOG ────────────────────────────────────────────────────────
+// ── RENDER: FULL CATALOG ───────────────────────────────────────────────────────
 function renderCatalog() {
   const el = document.getElementById('catalogContent');
   let html = '';
 
   centers.forEach(c => {
-    // Show staging if available, otherwise main (so catalog is always populated)
     const analyses = stagingMap[c.id]?.content?.analyses
-                   || mainMap[c.id]?.analyses
-                   || [];
-
-    html += `<div class="section" data-center-id="${esc(c.id)}">
-      <h2>${esc(c.name)}
-        <span class="cnt">${esc(c.city)}</span>
-        <span class="cnt">${analyses.length} analiz</span>
-        <button class="btn-add-row" onclick="openAddModal('${esc(c.id)}')">+ Analiz Ekle</button>
-      </h2>`;
-
-    // Pending edits hint
+                   || mainMap[c.id]?.analyses || [];
     const hasEdits = Object.keys(pendEdits[c.id]||{}).length ||
                      (pendDeletes[c.id]?.size||0);
-    if (hasEdits) {
-      html += `<div class="pending-bar">
-        ⚡ <span>Bu merkez için kaydedilmemiş değişiklikler var.</span>
-        <button class="btn-undo" onclick="undoCenter('${esc(c.id)}')">Geri Al</button>
-      </div>`;
-    }
 
-    html += `<p class="edit-hint">Düzenlemek için bir hücreye tıklayın.</p>
+    html += `<div class="section" data-center-id="${esc(c.id)}">
+      <h2>${esc(c.name)} <span class="cnt">${esc(c.city)}</span>
+        <span class="cnt">${analyses.length} analiz</span>
+        <button class="btn-add-row" onclick="openAddModal('${esc(c.id)}')">+ Analiz Ekle</button>
+      </h2>
+      ${hasEdits ? `<div class="pending-bar">⚡ <span>Kaydedilmemiş değişiklik var.</span>
+        <button class="btn-undo" onclick="undoCenter('${esc(c.id)}')">Geri Al</button></div>` : ''}
+      <p class="edit-hint">Herhangi bir hücreye tıklayarak düzenleyebilirsiniz.</p>
       <div class="tbl-wrap"><table>
         <thead><tr>
           <th>Analiz Adı</th><th>Kategori</th>
-          <th>Fiyat (TL)</th><th>Birim</th><th></th>
+          <th>Fiyat</th><th>Para Birimi</th>
+          <th>Birim</th><th>Not</th><th></th>
         </tr></thead>
         <tbody id="tbody-${esc(c.id)}">`;
 
-    analyses.forEach(a => {
-      html += catalogRow(c.id, a, false);
-    });
+    analyses.forEach(a => { html += catalogRow(c.id, a); });
 
     html += '</tbody></table></div></div>';
   });
@@ -673,27 +680,27 @@ function renderCatalog() {
   el.innerHTML = html;
 }
 
-function catalogRow(centerId, a, isManual) {
-  const isDel = pendDeletes[centerId]?.has(a.name) || false;
-  const rowCls = isDel ? 'row-del' : (isManual ? 'row-man' : '');
-  const sid = safeId(a.name);
-  const nameEsc = esc(a.name);
-  const catEsc  = esc(a.category||'');
+function catalogRow(cid, a) {
+  const isDel  = pendDeletes[cid]?.has(a.name) || false;
+  const cls    = isDel ? 'row-del' : '';
+  const sid    = safeId(cid) + '_' + safeId(a.name);
+  const ne     = esc(a.name);
+  const ce     = esc(a.category||'');
+  const pe     = esc(String(a.price||0));
+  const cue    = esc(a.currency||'TRY');
+  const ue     = esc(a.unit||'numune');
+  const note   = esc(a.notes||'');
+  const sym    = CURRENCY_SYMBOLS[a.currency||'TRY'] || '₺';
 
-  return `<tr class="${rowCls}" id="tr-${esc(centerId)}-${sid}">
-    <td class="editable" title="Düzenle"
-        onclick="editCell(this,'${esc(centerId)}','${nameEsc}','name')">${nameEsc}</td>
-    <td class="editable" title="Düzenle"
-        onclick="editCell(this,'${esc(centerId)}','${nameEsc}','category')">${catEsc}</td>
-    <td class="editable" title="Düzenle"
-        onclick="editCell(this,'${esc(centerId)}','${nameEsc}','price')">${fmt(a.price)}</td>
-    <td>${esc(a.unit||'numune')}</td>
-    <td>
-      <button class="btn-del-row" title="${isDel?'Geri al':'Sil'}"
-        onclick="toggleDelete('${esc(centerId)}','${nameEsc}')">
-        ${isDel ? '↩' : '🗑'}
-      </button>
-    </td>
+  return `<tr class="${cls}" id="tr-${sid}">
+    <td class="editable" title="Düzenle" onclick="editCell(this,'${esc(cid)}','${ne}','name')">${ne}</td>
+    <td class="editable" title="Düzenle" onclick="editCell(this,'${esc(cid)}','${ne}','category')">${ce}</td>
+    <td class="editable" title="Düzenle" onclick="editCell(this,'${esc(cid)}','${ne}','price')">${Number(a.price||0).toLocaleString('tr-TR')} ${sym}</td>
+    <td class="editable" title="Düzenle" onclick="editCell(this,'${esc(cid)}','${ne}','currency')">${cue}</td>
+    <td class="editable" title="Düzenle" onclick="editCell(this,'${esc(cid)}','${ne}','unit')">${ue}</td>
+    <td class="editable notes-cell" title="${note}" onclick="editCell(this,'${esc(cid)}','${ne}','notes')">${note||'<span style="color:var(--muted);font-style:italic">—</span>'}</td>
+    <td><button class="btn-del-row" title="${isDel?'Geri al':'Sil'}"
+        onclick="toggleDelete('${esc(cid)}','${ne}')">${isDel?'↩':'🗑'}</button></td>
   </tr>`;
 }
 
@@ -711,11 +718,10 @@ function filterCatalog() {
   });
 }
 
-// ─── RENDER: OVERRIDES TAB ──────────────────────────────────────────────────────
+// ── RENDER: OVERRIDES TAB ─────────────────────────────────────────────────────
 function renderOverrides() {
   const el = document.getElementById('overridesContent');
-  let html = '';
-  let total = 0;
+  let html = '', total = 0;
 
   centers.forEach(c => {
     const saved   = overrideMap[c.id]?.content?.overrides || [];
@@ -725,34 +731,34 @@ function renderOverrides() {
     total += all.length;
 
     html += `<div class="section">
-      <h2>${esc(c.name)}
-        <span class="cnt">${all.length} manuel</span>
-      </h2>
+      <h2>${esc(c.name)} <span class="cnt">${all.length} manuel</span></h2>
       <div class="tbl-wrap"><table>
         <thead><tr>
-          <th>Durum</th><th>Analiz Adı</th>
-          <th>Kategori</th><th>Fiyat (TL)</th><th>Birim</th><th></th>
+          <th>Durum</th><th>Analiz Adı</th><th>Kategori</th>
+          <th>Fiyat</th><th>Para Birimi</th><th>Birim</th><th>Not</th><th></th>
         </tr></thead><tbody>`;
 
     saved.forEach(a => {
+      const sym = CURRENCY_SYMBOLS[a.currency||'TRY']||'₺';
       html += `<tr class="row-man">
         <td><span class="badge badge-man">Kaydedilmiş</span></td>
-        <td>${esc(a.name)}</td>
-        <td>${esc(a.category||'')}</td>
-        <td>${fmt(a.price)}</td>
-        <td>${esc(a.unit||'numune')}</td>
+        <td>${esc(a.name)}</td><td>${esc(a.category||'')}</td>
+        <td>${Number(a.price||0).toLocaleString('tr-TR')} ${sym}</td>
+        <td>${esc(a.currency||'TRY')}</td><td>${esc(a.unit||'numune')}</td>
+        <td class="notes-cell" title="${esc(a.notes||'')}">${esc(a.notes||'')}</td>
         <td><button class="btn-del-row" title="Kaldır"
           onclick="removeOverride('${esc(c.id)}','${esc(a.name)}')">🗑</button></td>
       </tr>`;
     });
 
     pending.forEach(a => {
+      const sym = CURRENCY_SYMBOLS[a.currency||'TRY']||'₺';
       html += `<tr class="row-add">
         <td><span class="badge badge-add">Onay Bekliyor</span></td>
-        <td>${esc(a.name)}</td>
-        <td>${esc(a.category||'')}</td>
-        <td>${fmt(a.price)}</td>
-        <td>${esc(a.unit||'numune')}</td>
+        <td>${esc(a.name)}</td><td>${esc(a.category||'')}</td>
+        <td>${Number(a.price||0).toLocaleString('tr-TR')} ${sym}</td>
+        <td>${esc(a.currency||'TRY')}</td><td>${esc(a.unit||'numune')}</td>
+        <td class="notes-cell" title="${esc(a.notes||'')}">${esc(a.notes||'')}</td>
         <td><button class="btn-del-row" title="İptal"
           onclick="cancelPendingAdd('${esc(c.id)}','${esc(a.name)}')">✕</button></td>
       </tr>`;
@@ -761,166 +767,179 @@ function renderOverrides() {
     html += '</tbody></table></div></div>';
   });
 
-  el.innerHTML = total
-    ? html
+  el.innerHTML = total ? html
     : `<div class="empty">Henüz manuel ekleme yok.<br><br>
         <button class="btn btn-primary" style="margin:0 auto;display:block;max-width:200px"
           onclick="openAddModal()">+ Analiz Ekle</button></div>`;
 }
 
-// ─── INLINE EDITING ──────────────────────────────────────────────────────────────
-function editCell(td, centerId, analysisName, field) {
+// ── INLINE EDITING ────────────────────────────────────────────────────────────
+function editCell(td, cid, analysisName, field) {
   if (td.querySelector('input,select')) return;
-  const current = td.textContent.trim();
+  const current = td.textContent.trim().replace(/[₺$€]/g,'').replace(/\s/g,'').replace(/\./g,'').replace(/,/g,'.');
+
   let input;
 
   if (field === 'category' && categories.length) {
     input = document.createElement('select');
     categories.forEach(cat => {
-      const o = new Option(cat, cat, cat === current, cat === current);
+      const o = new Option(cat, cat, false, cat === td.textContent.trim());
+      input.appendChild(o);
+    });
+  } else if (field === 'currency') {
+    input = document.createElement('select');
+    CURRENCIES.forEach(c => {
+      const o = new Option(c, c, false, c === td.textContent.trim());
+      input.appendChild(o);
+    });
+  } else if (field === 'unit') {
+    input = document.createElement('select');
+    UNITS.forEach(u => {
+      const o = new Option(u, u, false, u === td.textContent.trim());
       input.appendChild(o);
     });
   } else {
     input = document.createElement('input');
     input.type  = field === 'price' ? 'number' : 'text';
-    input.value = field === 'price' ? current.replace(/[^\d.]/g, '') : current;
+    input.value = field === 'price'
+      ? parseFloat(current.replace(',','.')) || 0
+      : td.textContent.trim();
+    if (field === 'price') { input.min = '0'; input.step = '0.01'; }
   }
 
   const commit = () => {
     const raw = input.value;
     const val = field === 'price' ? parseFloat(raw) : raw.trim();
-    if (!isNaN(val) || field !== 'price') {
-      if (!pendEdits[centerId]) pendEdits[centerId] = {};
-      if (!pendEdits[centerId][analysisName]) pendEdits[centerId][analysisName] = {};
-      pendEdits[centerId][analysisName][field] = val;
+    if (!pendEdits[cid]) pendEdits[cid] = {};
+    if (!pendEdits[cid][analysisName]) pendEdits[cid][analysisName] = {};
+    pendEdits[cid][analysisName][field] = val;
+
+    // Update display
+    if (field === 'price') {
+      const sym = CURRENCY_SYMBOLS[pendEdits[cid][analysisName]['currency']||'TRY']||'₺';
+      td.textContent = `${val.toLocaleString('tr-TR')} ${sym}`;
+    } else if (field === 'currency') {
+      td.textContent = val;
+    } else if (field === 'notes' && !val) {
+      td.innerHTML = '<span style="color:var(--muted);font-style:italic">—</span>';
+    } else {
+      td.textContent = val;
     }
-    td.textContent = field === 'price' ? fmt(val) : String(val);
     updateApproveBtn();
     updateSummary();
   };
 
   input.onblur   = commit;
-  input.onkeydown = e => { if (e.key === 'Enter') input.blur(); if (e.key === 'Escape') { td.textContent = current; } };
+  input.onkeydown = e => {
+    if (e.key === 'Enter') input.blur();
+    if (e.key === 'Escape') { td.textContent = td.getAttribute('data-orig') || td.textContent; }
+  };
+  td.setAttribute('data-orig', td.textContent);
   td.textContent = '';
   td.appendChild(input);
   input.focus();
-  if (field !== 'category') input.select();
+  if (input.tagName === 'INPUT') input.select();
 }
 
-function toggleDelete(centerId, name) {
-  if (!pendDeletes[centerId]) pendDeletes[centerId] = new Set();
-  const s = pendDeletes[centerId];
+function toggleDelete(cid, name) {
+  if (!pendDeletes[cid]) pendDeletes[cid] = new Set();
+  const s = pendDeletes[cid];
   s.has(name) ? s.delete(name) : s.add(name);
-  // Re-render that row
-  const analyses = stagingMap[centerId]?.content?.analyses
-                 || mainMap[centerId]?.analyses || [];
+  // Re-render just that row
+  const analyses = stagingMap[cid]?.content?.analyses || mainMap[cid]?.analyses || [];
   const a = analyses.find(x => x.name === name);
   if (!a) return;
-  const tbody = document.getElementById(`tbody-${safeId(centerId)}`);
-  const existing = document.getElementById(`tr-${safeId(centerId)}-${safeId(name)}`);
-  if (existing && tbody) {
-    const newRow = document.createElement('tbody');
-    newRow.innerHTML = catalogRow(centerId, a, false);
-    existing.replaceWith(newRow.firstElementChild);
+  const old = document.getElementById(`tr-${safeId(cid)}_${safeId(name)}`);
+  if (old) {
+    const tmp = document.createElement('tbody');
+    tmp.innerHTML = catalogRow(cid, a);
+    old.replaceWith(tmp.firstElementChild);
   }
-  updateApproveBtn();
-  updateSummary();
+  updateApproveBtn(); updateSummary();
 }
 
-function undoCenter(centerId) {
-  delete pendEdits[centerId];
-  delete pendDeletes[centerId];
+function undoCenter(cid) {
+  delete pendEdits[cid];
+  delete pendDeletes[cid];
   renderCatalog();
-  updateApproveBtn();
-  updateSummary();
+  updateApproveBtn(); updateSummary();
 }
 
-// ─── ADD ANALYSIS ────────────────────────────────────────────────────────────────
-function openAddModal(defaultCenterId) {
+// ── ADD ANALYSIS ──────────────────────────────────────────────────────────────
+function openAddModal(defaultCid) {
   const sel = document.getElementById('addCenter');
   sel.innerHTML = centers.map(c =>
-    `<option value="${esc(c.id)}" ${c.id===defaultCenterId?'selected':''}>${esc(c.name)}</option>`
+    `<option value="${esc(c.id)}" ${c.id===defaultCid?'selected':''}>${esc(c.name)}</option>`
   ).join('');
   const catSel = document.getElementById('addCategory');
-  catSel.innerHTML = categories.map(cat =>
-    `<option value="${esc(cat)}">${esc(cat)}</option>`
+  catSel.innerHTML = ['', ...categories].map((cat, i) =>
+    `<option value="${esc(cat)}">${i===0?'— Kategori seçin —':esc(cat)}</option>`
   ).join('');
-  ['addName','addPrice','addNotes'].forEach(id =>
-    document.getElementById(id).value = '');
-  document.getElementById('addUnit').value = 'numune';
+  ['addName','addNotes'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('addPrice').value    = '';
+  document.getElementById('addUnit').value     = 'numune';
+  document.getElementById('addCurrency').value = 'TRY';
   showModal('addOverlay');
 }
 
 function submitAdd() {
-  const centerId = document.getElementById('addCenter').value;
+  const cid      = document.getElementById('addCenter').value;
   const name     = document.getElementById('addName').value.trim();
   const category = document.getElementById('addCategory').value;
   const price    = parseFloat(document.getElementById('addPrice').value);
+  const currency = document.getElementById('addCurrency').value;
   const unit     = document.getElementById('addUnit').value;
   const notes    = document.getElementById('addNotes').value.trim();
 
-  if (!name)      { alert('Analiz adı boş bırakılamaz.'); return; }
-  if (isNaN(price)||price<=0) { alert('Geçerli bir fiyat girin.'); return; }
+  if (!name)             { alert('Analiz adı boş bırakılamaz.');   return; }
+  if (isNaN(price)||price<0) { alert('Geçerli bir fiyat girin.'); return; }
 
-  if (!pendAdds[centerId]) pendAdds[centerId] = [];
-  pendAdds[centerId].push({ name, category, price, currency:'TRY', unit, notes, manual:true });
+  if (!pendAdds[cid]) pendAdds[cid] = [];
+  pendAdds[cid].push({ name, category, price, currency, unit, notes, manual: true });
 
   hideModal('addOverlay');
   renderOverrides();
-  updateSummary();
-  updateApproveBtn();
+  updateSummary(); updateApproveBtn();
   showTab('overrides');
 }
 
-function cancelPendingAdd(centerId, name) {
-  if (pendAdds[centerId]) {
-    pendAdds[centerId] = pendAdds[centerId].filter(a => a.name !== name);
-  }
-  renderOverrides();
-  updateSummary();
-  updateApproveBtn();
+function cancelPendingAdd(cid, name) {
+  if (pendAdds[cid]) pendAdds[cid] = pendAdds[cid].filter(a => a.name !== name);
+  renderOverrides(); updateSummary(); updateApproveBtn();
 }
 
-async function removeOverride(centerId, name) {
+async function removeOverride(cid, name) {
   if (!confirm(`"${name}" manuel kaydı kaldırılsın mı?`)) return;
   if (!token) { showModal('tokenOverlay'); return; }
-  const file = overrideMap[centerId];
+  const file = overrideMap[cid];
   if (!file) return;
   file.content.overrides = file.content.overrides.filter(a => a.name !== name);
   try {
-    const res = await apiWrite(
-      `data/overrides/${centerId}.json`,
-      file.content, file.sha,
-      `chore: remove override "${name}"`
-    );
-    // Refresh SHA
-    const updated = await apiRead(STAGING, `data/overrides/${centerId}.json`);
-    if (updated) overrideMap[centerId] = updated;
-    renderOverrides();
-    updateSummary();
+    await apiWrite(`data/overrides/${cid}.json`, file.content, file.sha,
+      `chore: remove override "${name}"`);
+    const up = await apiRead(STAGING, `data/overrides/${cid}.json`);
+    if (up) overrideMap[cid] = up;
+    renderOverrides(); updateSummary();
   } catch(e) { alert('Hata: ' + e.message); }
 }
 
-// ─── APPROVE ─────────────────────────────────────────────────────────────────────
+// ── APPROVE ───────────────────────────────────────────────────────────────────
 function approve() {
   if (!token) { showModal('tokenOverlay'); return; }
-
   const lines = [];
   centers.forEach(c => {
-    const d   = getDiff(c.id);
-    const edC = Object.keys(pendEdits[c.id]||{}).length;
-    const delC = pendDeletes[c.id]?.size || 0;
-    const addC = pendAdds[c.id]?.length || 0;
+    const d    = getDiff(c.id);
+    const edC  = Object.keys(pendEdits[c.id]||{}).length;
+    const delC = pendDeletes[c.id]?.size||0;
+    const addC = pendAdds[c.id]?.length||0;
     if (d.added.length||d.deleted.length||d.changed.length||edC||delC||addC) {
       lines.push(`<strong>${c.name}:</strong> `
-        + [d.added.length   ? `${d.added.length} yeni`     : '',
-           d.deleted.length ? `${d.deleted.length} silindi` : '',
-           d.changed.length ? `${d.changed.length} fiyat değişti` : '',
-           edC  ? `${edC} düzenlendi`   : '',
-           delC ? `${delC} silindi (lokal)` : '',
-           addC ? `${addC} manuel eklendi`  : '']
-          .filter(Boolean).join(', ')
-      );
+        + [d.added.length?`${d.added.length} yeni`:'',
+           d.deleted.length?`${d.deleted.length} silindi`:'',
+           d.changed.length?`${d.changed.length} fiyat değişti`:'',
+           edC?`${edC} düzenlendi`:'',delC?`${delC} silindi`:'',
+           addC?`${addC} manuel eklendi`:'']
+          .filter(Boolean).join(', '));
     }
   });
 
@@ -928,9 +947,8 @@ function approve() {
     (lines.length
       ? `<div class="info-box" style="margin-bottom:12px">${lines.join('<br>')}</div>`
       : '') +
-    'Tüm değişiklikler <strong>staging</strong> branchine kaydedilecek, '
-    + 'ardından <strong>main</strong> branchine merge edilecek.<br><br>'
-    + 'Bu işlem geri alınamaz. Devam edilsin mi?';
+    'Değişiklikler <strong>staging</strong>'e kaydedilecek, '
+    + 'ardından <strong>main</strong>'e merge edilecek. Devam?';
 
   showModal('confirmOverlay');
 }
@@ -938,76 +956,54 @@ function approve() {
 async function doApprove() {
   hideModal('confirmOverlay');
   const btn = document.getElementById('approveBtn');
-  btn.disabled = true;
-  btn.textContent = '⏳ Kaydediliyor...';
+  btn.disabled = true; btn.textContent = '⏳ Kaydediliyor...';
 
   try {
-    // 1. Commit edits + deletes to staging analyses files
-    const changedCenters = new Set([
-      ...Object.keys(pendEdits),
-      ...Object.keys(pendDeletes)
-    ]);
-    for (const cid of changedCenters) {
-      const file = stagingMap[cid];
-      if (!file) continue;
-      let analyses = [...(file.content.analyses || [])];
-
-      // Apply edits
+    // 1. Commit edits + deletes
+    const edited = new Set([...Object.keys(pendEdits), ...Object.keys(pendDeletes)]);
+    for (const cid of edited) {
+      const file = stagingMap[cid]; if (!file) continue;
+      let analyses = [...(file.content.analyses||[])];
       if (pendEdits[cid]) {
         analyses = analyses.map(a => {
-          const patch = pendEdits[cid][a.name];
-          return patch ? { ...a, ...patch } : a;
+          const p = pendEdits[cid][a.name];
+          return p ? { ...a, ...p } : a;
         });
       }
-      // Apply deletes
       if (pendDeletes[cid]?.size) {
         analyses = analyses.filter(a => !pendDeletes[cid].has(a.name));
       }
-
-      const newContent = { ...file.content, analyses };
-      await apiWrite(
-        `data/analyses/${cid}.json`,
-        newContent, file.sha,
-        `fix: inceleme paneli düzenlemesi — ${centers.find(c=>c.id===cid)?.name}`
-      );
-      // Refresh local SHA
-      const updated = await apiRead(STAGING, `data/analyses/${cid}.json`);
-      if (updated) stagingMap[cid] = updated;
+      const nc = { ...file.content, analyses };
+      await apiWrite(`data/analyses/${cid}.json`, nc, file.sha,
+        `fix: panel düzenlemesi — ${centers.find(c=>c.id===cid)?.name}`);
+      const up = await apiRead(STAGING, `data/analyses/${cid}.json`);
+      if (up) stagingMap[cid] = up;
     }
 
-    // 2. Commit pending override additions
+    // 2. Commit pending adds (overrides)
     btn.textContent = '⏳ Manuel eklemeler kaydediliyor...';
     for (const cid of Object.keys(pendAdds)) {
-      const additions = pendAdds[cid];
-      if (!additions.length) continue;
+      const additions = pendAdds[cid]; if (!additions.length) continue;
       const center   = centers.find(c => c.id === cid);
       const existing = overrideMap[cid];
-      const newContent = existing
-        ? { ...existing.content,
-            overrides: [...(existing.content.overrides||[]), ...additions] }
+      const nc = existing
+        ? { ...existing.content, overrides: [...(existing.content.overrides||[]), ...additions] }
         : { center_id: cid, center_name: center?.name, overrides: additions };
-      await apiWrite(
-        `data/overrides/${cid}.json`,
-        newContent, existing?.sha || null,
-        `feat: manuel analiz eklendi — ${center?.name}`
-      );
-      const updated = await apiRead(STAGING, `data/overrides/${cid}.json`);
-      if (updated) overrideMap[cid] = updated;
+      await apiWrite(`data/overrides/${cid}.json`, nc, existing?.sha||null,
+        `feat: manuel analiz — ${center?.name}`);
+      const up = await apiRead(STAGING, `data/overrides/${cid}.json`);
+      if (up) overrideMap[cid] = up;
     }
 
-    // 3. Trigger merge workflow
+    // 3. Merge
     btn.textContent = '⏳ Yayınlanıyor...';
     await triggerMerge('İnceleme panelinden onaylandı');
 
-    // 4. Clear pending state
     pendEdits = {}; pendAdds = {}; pendDeletes = {};
-
-    alert('✅ Onaylandı!\n\nMerge workflow başlatıldı. GitHub Actions tamamlandığında uygulama güncellenir (1-2 dakika).');
-
+    alert('✅ Onaylandı!\n\nMerge başlatıldı. 1-2 dakika içinde uygulama güncellenir.');
     btn.textContent = '✓ Onayla ve Yayınla';
     btn.disabled = false;
     await loadAll();
-
   } catch(e) {
     alert('❌ Hata: ' + e.message);
     btn.textContent = '✓ Onayla ve Yayınla';
@@ -1015,32 +1011,28 @@ async function doApprove() {
   }
 }
 
-// ─── UI HELPERS ──────────────────────────────────────────────────────────────────
+// ── TAB / MODAL HELPERS ───────────────────────────────────────────────────────
 function showTab(name) {
   ['changes','catalog','overrides'].forEach(t => {
-    document.getElementById(`tab-${t}`).className =
-      t === name ? '' : 'hidden';
-  });
-  document.querySelectorAll('.tab').forEach((el, i) => {
-    const names = ['changes','catalog','overrides'];
-    el.className = 'tab' + (names[i] === name ? ' active' : '');
+    document.getElementById(`tab-${t}`).className = t===name ? '' : 'hidden';
+    document.getElementById(`tab-btn-${t}`).className = 'tab'+(t===name?' active':'');
   });
 }
 function showModal(id) { document.getElementById(id).classList.remove('hidden'); }
 function hideModal(id) { document.getElementById(id).classList.add('hidden'); }
 
 function esc(s) {
-  return String(s||'')
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')
     .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
-function fmt(n) {
-  const num = Number(n);
-  return isNaN(num) ? '—' : num.toLocaleString('tr-TR') + ' ₺';
+function fmt(n)      { return isNaN(Number(n)) ? '—' : Number(n).toLocaleString('tr-TR') + ' ₺'; }
+function fmtC(n, c)  {
+  const sym = CURRENCY_SYMBOLS[c||'TRY']||'₺';
+  return isNaN(Number(n)) ? '—' : Number(n).toLocaleString('tr-TR') + ' ' + sym;
 }
-function safeId(s) { return String(s||'').replace(/[^a-z0-9]/gi,'_'); }
+function safeId(s)   { return String(s||'').replace(/[^a-z0-9]/gi,'_'); }
 
-// ─── INIT ─────────────────────────────────────────────────────────────────────────
+// ── INIT ──────────────────────────────────────────────────────────────────────
 loadAll();
 </script>
 </body>
