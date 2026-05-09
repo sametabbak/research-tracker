@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AnalizBul — İnceleme Paneli</title>
+<title>Analiz Bul — İnceleme Paneli</title>
 <style>
   :root {
     --primary:#1FA8AE; --primary-d:#178a8f;
@@ -490,6 +490,7 @@ async function loadAll() {
   renderCatalog();
   renderOverrides();
   updateApproveBtn();
+  window.scrollTo({ top: 0, behavior: 'instant' });
 }
 
 // ── DIFF ───────────────────────────────────────────────────────────────────────
