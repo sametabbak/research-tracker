@@ -1,0 +1,36 @@
+name: Merge Staging to Main
+
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Onay notu (isteğe bağlı)'
+        required: false
+        default: 'chore: review panelinden onaylandı'
+
+permissions:
+  contents: write
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge staging → main
+        run: |
+          git fetch origin staging
+          git merge origin/staging --no-edit \
+            -m "${{ github.event.inputs.message }}"
+          git push origin main
+          echo "✅ staging başarıyla main'e merge edildi."
