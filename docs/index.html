@@ -382,7 +382,13 @@ async function apiRead(branch, path) {
   if (!r.ok) return null;
   var d = await r.json();
   try {
-    return { content: JSON.parse(atob(d.content.replace(/\n/g, ''))), sha: d.sha };
+    /* atob() returns a Latin-1 string (raw bytes). To correctly decode UTF-8
+       (which is what GitHub stores), we feed those bytes into TextDecoder. */
+    var binary = atob(d.content.replace(/\n/g, ''));
+    var bytes  = new Uint8Array(binary.length);
+    for (var i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+    var text = new TextDecoder('utf-8').decode(bytes);
+    return { content: JSON.parse(text), sha: d.sha };
   } catch(e) { return null; }
 }
 
