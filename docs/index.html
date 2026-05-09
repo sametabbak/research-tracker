@@ -27,13 +27,15 @@
   .header { background: var(--primary); color: #fff; padding: 16px 24px;
              display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
   .header h1 { font-size: 20px; font-weight: 700; flex: 1; }
-  .header-right { display: flex; gap: 10px; align-items: center; }
+  .header-right { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
   .token-badge { background: rgba(255,255,255,.2); border-radius: 8px;
-                  padding: 6px 12px; font-size: 12px; cursor: pointer; }
+                  padding: 6px 12px; font-size: 12px; cursor: pointer;
+                  white-space: nowrap; }
   .token-badge.ok  { background: rgba(34,197,94,.3); }
   .token-badge.bad { background: rgba(239,68,68,.3); }
   .btn { padding: 8px 18px; border: none; border-radius: 8px;
-          font-size: 14px; cursor: pointer; font-weight: 600; }
+          font-size: 14px; cursor: pointer; font-weight: 600;
+          white-space: nowrap; }
   .btn-approve { background: #22c55e; color: #fff; }
   .btn-approve:disabled { background: #9ca3af; cursor: not-allowed; }
   .btn-secondary { background: rgba(255,255,255,.15); color: #fff; }
@@ -42,9 +44,9 @@
   .summary { display: flex; gap: 12px; padding: 16px 24px;
               flex-wrap: wrap; background: var(--card);
               border-bottom: 1px solid var(--border); }
-  .card { background: var(--bg); border-radius: 10px;
-           padding: 12px 18px; min-width: 130px; text-align: center; }
-  .card .num { font-size: 28px; font-weight: 700; }
+  .card { background: var(--bg); border-radius: 10px; padding: 12px 18px;
+           min-width: 120px; text-align: center; }
+  .card .num { font-size: 26px; font-weight: 700; }
   .card .lbl { font-size: 12px; color: var(--muted); margin-top: 2px; }
   .card.add .num { color: var(--add); }
   .card.del .num { color: var(--del); }
@@ -55,19 +57,22 @@
   .tabs { display: flex; gap: 2px; padding: 12px 24px 0;
            border-bottom: 2px solid var(--border); background: var(--card); }
   .tab { padding: 8px 20px; cursor: pointer; border-radius: 8px 8px 0 0;
-          font-weight: 600; color: var(--muted); border: 1px solid transparent;
-          border-bottom: none; }
+          font-weight: 600; color: var(--muted);
+          border: 1px solid transparent; border-bottom: none; }
   .tab.active { color: var(--primary); background: var(--bg);
                  border-color: var(--border); position: relative; top: 2px; }
 
   /* ── Content ─────────────────────────────────────────── */
-  .content { padding: 20px 24px; }
+  .content { padding: 20px 24px; max-width: 1400px; }
   .section  { margin-bottom: 28px; }
   .section h2 { font-size: 16px; font-weight: 700; margin-bottom: 10px;
-                 display: flex; align-items: center; gap: 8px; }
-  .section h2 .cnt { background: var(--bg); border: 1px solid var(--border);
-                      border-radius: 12px; padding: 2px 8px;
-                      font-size: 12px; color: var(--muted); }
+                 display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .cnt { background: var(--bg); border: 1px solid var(--border);
+          border-radius: 12px; padding: 2px 8px;
+          font-size: 12px; color: var(--muted); font-weight: 500; }
+  .cnt.add { color: var(--add); border-color: #bbf7d0; background: #f0fdf4; }
+  .cnt.del { color: var(--del); border-color: #fecaca; background: #fef2f2; }
+  .cnt.chg { color: var(--chg); border-color: #fed7aa; background: #fff7ed; }
 
   /* ── Table ───────────────────────────────────────────── */
   .tbl-wrap { overflow-x: auto; border-radius: 10px;
@@ -76,40 +81,44 @@
   th { background: var(--bg); padding: 10px 12px; text-align: left;
         font-size: 12px; color: var(--muted); font-weight: 600;
         border-bottom: 1px solid var(--border); white-space: nowrap; }
-  td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  td { padding: 9px 12px; border-bottom: 1px solid var(--border);
+        vertical-align: middle; }
   tr:last-child td { border-bottom: none; }
-  tr.row-add { background: #f0fdf4; }
-  tr.row-del { background: #fef2f2; text-decoration: line-through; opacity: .7; }
-  tr.row-chg { background: #fff7ed; }
-  tr.row-manual { background: #f0f9ff; }
+  tr.row-add  { background: #f0fdf4; }
+  tr.row-del  { background: #fef2f2; }
+  tr.row-chg  { background: #fff7ed; }
+  tr.row-man  { background: #f0f9ff; }
+  tr.row-del td { opacity: .7; }
   .badge { display: inline-block; padding: 2px 8px; border-radius: 10px;
             font-size: 11px; font-weight: 600; }
-  .badge-add  { background: #dcfce7; color: #166534; }
-  .badge-del  { background: #fee2e2; color: #991b1b; }
-  .badge-chg  { background: #ffedd5; color: #9a3412; }
-  .badge-manual { background: #e0f2fe; color: #075985; }
+  .badge-add { background: #dcfce7; color: #166534; }
+  .badge-del { background: #fee2e2; color: #991b1b; }
+  .badge-chg { background: #ffedd5; color: #9a3412; }
+  .badge-man { background: #e0f2fe; color: #075985; }
 
   /* ── Editable cells ──────────────────────────────────── */
-  .editable { cursor: pointer; border-radius: 4px; padding: 2px 4px; }
+  .editable { cursor: pointer; border-radius: 4px; padding: 2px 4px;
+               transition: background .15s; }
   .editable:hover { background: #f0f9ff; outline: 1px solid var(--primary); }
   .editable input, .editable select {
     border: 1px solid var(--primary); border-radius: 4px;
     padding: 2px 6px; font-size: 13px; width: 100%; min-width: 60px;
-    font-family: inherit; }
+    font-family: inherit; background: #fff; }
+  .edit-hint { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
 
-  /* ── Add form ────────────────────────────────────────── */
-  .add-row td { background: #f0fdf4; padding: 8px 12px; }
-  .add-row input, .add-row select {
-    border: 1px solid var(--border); border-radius: 6px;
-    padding: 5px 8px; font-size: 13px; width: 100%; font-family: inherit; }
-  .add-row input:focus, .add-row select:focus {
-    outline: 2px solid var(--primary); border-color: transparent; }
-  .btn-add-row { background: var(--add); color: #fff;
-                  padding: 5px 14px; border: none; border-radius: 6px;
-                  cursor: pointer; font-size: 13px; font-weight: 600; }
+  /* ── Action buttons ──────────────────────────────────── */
   .btn-del-row { background: none; border: none; cursor: pointer;
-                  color: var(--del); font-size: 16px; padding: 2px 6px; }
+                  color: var(--del); font-size: 16px; padding: 2px 6px;
+                  border-radius: 4px; }
+  .btn-del-row:hover { background: #fee2e2; }
+  .btn-add-row { background: var(--add); color: #fff; padding: 5px 14px;
+                  border: none; border-radius: 6px; cursor: pointer;
+                  font-size: 12px; font-weight: 600; }
   .btn-add-row:hover { background: #16a34a; }
+  .btn-undo { background: none; border: 1px solid var(--border); cursor: pointer;
+               font-size: 11px; border-radius: 4px; padding: 1px 6px;
+               color: var(--muted); }
+  .btn-undo:hover { background: var(--bg); }
 
   /* ── Search ──────────────────────────────────────────── */
   .search-bar { display: flex; gap: 10px; margin-bottom: 14px; }
@@ -118,41 +127,58 @@
   .search-bar input:focus { outline: 2px solid var(--primary); border-color: transparent; }
 
   /* ── Modal ───────────────────────────────────────────── */
-  .overlay { position: fixed; inset: 0; background: rgba(0,0,0,.4);
+  .overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45);
               display: flex; align-items: center; justify-content: center;
-              z-index: 100; }
+              z-index: 100; padding: 16px; }
   .modal { background: var(--card); border-radius: 14px; padding: 28px;
-            width: 420px; max-width: 95vw; }
+            width: 440px; max-width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,.2); }
   .modal h3 { font-size: 17px; margin-bottom: 16px; }
-  .modal label { display: block; font-size: 12px; color: var(--muted);
-                  margin-bottom: 4px; margin-top: 12px; font-weight: 600; }
-  .modal input, .modal select { width: 100%; padding: 9px 12px;
-    border: 1px solid var(--border); border-radius: 8px;
-    font-size: 14px; font-family: inherit; }
-  .modal input:focus, .modal select:focus {
+  .field { margin-top: 12px; }
+  .field label { display: block; font-size: 12px; color: var(--muted);
+                  margin-bottom: 4px; font-weight: 600; }
+  .field input, .field select {
+    width: 100%; padding: 9px 12px; border: 1px solid var(--border);
+    border-radius: 8px; font-size: 14px; font-family: inherit; background: #fff; }
+  .field input:focus, .field select:focus {
     outline: 2px solid var(--primary); border-color: transparent; }
   .modal-btns { display: flex; gap: 10px; margin-top: 20px; }
   .modal-btns .btn { flex: 1; }
   .btn-primary { background: var(--primary); color: #fff; }
-  .btn-ghost   { background: var(--bg); color: var(--text); border: 1px solid var(--border); }
-  .warn-box { background: var(--warn-bg); border: 1px solid var(--warn-bd);
-               border-radius: 8px; padding: 10px 14px; font-size: 13px;
-               margin-top: 12px; }
+  .btn-ghost   { background: var(--bg); color: var(--text);
+                  border: 1px solid var(--border); }
 
-  /* ── Loading / Empty ─────────────────────────────────── */
-  .loader { text-align: center; padding: 60px; color: var(--muted); }
-  .loader .spin { display: inline-block; width: 36px; height: 36px;
-                   border: 3px solid var(--border); border-top-color: var(--primary);
-                   border-radius: 50%; animation: spin .8s linear infinite; }
+  /* ── Notices ─────────────────────────────────────────── */
+  .warn-box { background: var(--warn-bg); border: 1px solid var(--warn-bd);
+               border-radius: 8px; padding: 12px 16px; font-size: 13px;
+               line-height: 1.6; }
+  .info-box { background: #f0f9ff; border: 1px solid #bae6fd;
+               border-radius: 8px; padding: 12px 16px; font-size: 13px;
+               line-height: 1.6; color: #075985; }
+  .ok-box   { background: #f0fdf4; border: 1px solid #bbf7d0;
+               border-radius: 8px; padding: 12px 16px; font-size: 13px;
+               line-height: 1.6; color: #166534; }
+
+  /* ── Pending edits bar ───────────────────────────────── */
+  .pending-bar { background: var(--warn-bg); border: 1px solid var(--warn-bd);
+                  border-radius: 8px; padding: 10px 16px; margin-bottom: 14px;
+                  display: flex; align-items: center; gap: 12px;
+                  font-size: 13px; }
+  .pending-bar span { flex: 1; }
+
+  /* ── Loader ──────────────────────────────────────────── */
+  .loader { text-align: center; padding: 60px 24px; color: var(--muted); }
+  .spin { display: inline-block; width: 36px; height: 36px;
+           border: 3px solid var(--border); border-top-color: var(--primary);
+           border-radius: 50%; animation: spin .8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
   .empty { text-align: center; padding: 40px; color: var(--muted); }
 
-  /* ── Misc ────────────────────────────────────────────── */
-  .price-diff { color: var(--chg); font-weight: 600; font-size: 12px; }
-  .price-old  { text-decoration: line-through; color: var(--muted);
-                 font-size: 11px; margin-right: 4px; }
+  /* ── Price diff ──────────────────────────────────────── */
+  .price-old { text-decoration: line-through; color: var(--muted);
+                font-size: 11px; margin-right: 4px; }
+  .price-new { color: var(--chg); font-weight: 600; }
+
   .hidden { display: none; }
-  select.cat-select { font-size: 12px; }
 </style>
 </head>
 <body>
@@ -161,18 +187,19 @@
 <div class="header">
   <h1>🔬 AnalizBul — İnceleme Paneli</h1>
   <div class="header-right">
-    <div class="token-badge" id="tokenBadge" onclick="showTokenModal()">
+    <div class="token-badge" id="tokenBadge" onclick="showModal('tokenOverlay')">
       🔑 Token gir
     </div>
     <button class="btn btn-secondary" onclick="loadAll()">↻ Yenile</button>
-    <button class="btn btn-approve" id="approveBtn" onclick="approve()" disabled>
+    <button class="btn btn-approve" id="approveBtn"
+            onclick="approve()" disabled>
       ✓ Onayla ve Yayınla
     </button>
   </div>
 </div>
 
 <!-- ── SUMMARY ─────────────────────────────────────────────────────────────── -->
-<div class="summary" id="summary">
+<div class="summary">
   <div class="card neu"><div class="num" id="sTotal">—</div><div class="lbl">Toplam Analiz</div></div>
   <div class="card add"><div class="num" id="sNew">—</div><div class="lbl">Yeni Eklenen</div></div>
   <div class="card del"><div class="num" id="sDel">—</div><div class="lbl">Silinen</div></div>
@@ -189,218 +216,316 @@
 
 <div class="content">
 
-  <!-- Changes tab -->
   <div id="tab-changes">
-    <div id="changesContent"><div class="loader"><div class="spin"></div><p style="margin-top:16px">Veriler yükleniyor...</p></div></div>
+    <div id="changesContent">
+      <div class="loader"><div class="spin"></div>
+        <p style="margin-top:16px">Veriler yükleniyor...</p></div>
+    </div>
   </div>
 
-  <!-- Full catalog tab -->
   <div id="tab-catalog" class="hidden">
     <div class="search-bar">
-      <input id="catalogSearch" placeholder="Analiz adı veya merkez ara..." oninput="filterCatalog()">
+      <input id="catalogSearch" placeholder="Analiz adı veya merkez ara..."
+             oninput="filterCatalog()">
     </div>
-    <div id="catalogContent"><div class="loader"><div class="spin"></div></div></div>
+    <div id="catalogContent">
+      <div class="loader"><div class="spin"></div></div>
+    </div>
   </div>
 
-  <!-- Overrides tab -->
   <div id="tab-overrides" class="hidden">
-    <div id="overridesContent"><div class="loader"><div class="spin"></div></div></div>
+    <div id="overridesContent">
+      <div class="loader"><div class="spin"></div></div>
+    </div>
   </div>
 
 </div>
 
-<!-- ── TOKEN MODAL ─────────────────────────────────────────────────────────── -->
+<!-- ══════════════════ MODALS ══════════════════════════════════════════════ -->
+
+<!-- Token modal -->
 <div class="overlay hidden" id="tokenOverlay">
   <div class="modal">
     <h3>🔑 GitHub Personal Access Token</h3>
-    <label>Token (repo scope)</label>
-    <input type="password" id="tokenInput" placeholder="ghp_xxxxxxxxxxxx"
-           onkeydown="if(event.key==='Enter') saveToken()">
-    <div class="warn-box">
-      Token'ınız yalnızca tarayıcı oturumunda saklanır. Sayfayı kapattığınızda silinir.
-      Yazmak (düzenleme/onaylama) için gereklidir; okumak için gerekmez.
+    <div class="field">
+      <label>Token (Contents: read/write · Actions: write)</label>
+      <input type="password" id="tokenInput" placeholder="ghp_xxxxxxxxxxxx"
+             onkeydown="if(event.key==='Enter') saveToken()">
+    </div>
+    <div class="warn-box" style="margin-top:14px">
+      Token yalnızca bu tarayıcı oturumunda tutulur. Sayfayı kapattığınızda silinir.<br>
+      Okuma işlemleri için token gerekmez; yazmak ve onaylamak için gereklidir.
     </div>
     <div class="modal-btns">
       <button class="btn btn-primary" onclick="saveToken()">Kaydet</button>
-      <button class="btn btn-ghost" onclick="hideModal('tokenOverlay')">İptal</button>
+      <button class="btn btn-ghost"   onclick="hideModal('tokenOverlay')">İptal</button>
     </div>
   </div>
 </div>
 
-<!-- ── ADD ANALYSIS MODAL ──────────────────────────────────────────────────── -->
+<!-- Add analysis modal -->
 <div class="overlay hidden" id="addOverlay">
   <div class="modal">
-    <h3 id="addModalTitle">➕ Yeni Analiz Ekle</h3>
-    <label>Merkez</label>
-    <select id="addCenter"></select>
-    <label>Analiz Adı</label>
-    <input id="addName" placeholder="Örn: XRD Standart Patern İncelemesi">
-    <label>Kategori</label>
-    <select id="addCategory"></select>
-    <label>Fiyat (TL)</label>
-    <input type="number" id="addPrice" placeholder="1500">
-    <label>Birim</label>
-    <select id="addUnit">
-      <option>numune</option><option>saat</option><option>gün</option>
-      <option>enjeksiyon</option><option>analiz</option><option>set</option>
-    </select>
-    <label>Not (isteğe bağlı)</label>
-    <input id="addNotes" placeholder="Ek bilgi...">
-    <div class="warn-box">
-      Bu analiz <strong>Manuel Eklemeler</strong> olarak kaydedilecek ve
-      tracker çalışmalarından etkilenmeyecek.
+    <h3>➕ Yeni Analiz Ekle</h3>
+    <div class="field">
+      <label>Merkez</label>
+      <select id="addCenter"></select>
+    </div>
+    <div class="field">
+      <label>Analiz Adı *</label>
+      <input id="addName" placeholder="Örn: XRD Standart Patern İncelemesi">
+    </div>
+    <div class="field">
+      <label>Kategori</label>
+      <select id="addCategory"></select>
+    </div>
+    <div class="field">
+      <label>Fiyat (TL) *</label>
+      <input type="number" id="addPrice" placeholder="1500" min="0">
+    </div>
+    <div class="field">
+      <label>Birim</label>
+      <select id="addUnit">
+        <option>numune</option><option>saat</option><option>gün</option>
+        <option>enjeksiyon</option><option>analiz</option>
+        <option>set</option><option>kullanım</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Not (isteğe bağlı)</label>
+      <input id="addNotes" placeholder="Ek bilgi...">
+    </div>
+    <div class="info-box" style="margin-top:14px">
+      Bu analiz <strong>manuel ekleme</strong> olarak kaydedilir ve tracker
+      çalışmalarından etkilenmez.
     </div>
     <div class="modal-btns">
-      <button class="btn btn-primary" onclick="submitAddAnalysis()">Ekle</button>
-      <button class="btn btn-ghost" onclick="hideModal('addOverlay')">İptal</button>
+      <button class="btn btn-primary" onclick="submitAdd()">Ekle</button>
+      <button class="btn btn-ghost"   onclick="hideModal('addOverlay')">İptal</button>
+    </div>
+  </div>
+</div>
+
+<!-- Approve confirm modal -->
+<div class="overlay hidden" id="confirmOverlay">
+  <div class="modal">
+    <h3>✓ Onay</h3>
+    <div id="confirmBody" style="margin-bottom:16px;line-height:1.7"></div>
+    <div class="modal-btns">
+      <button class="btn btn-primary" onclick="doApprove()">Evet, Yayınla</button>
+      <button class="btn btn-ghost"   onclick="hideModal('confirmOverlay')">İptal</button>
     </div>
   </div>
 </div>
 
 <script>
-// ── CONFIG ────────────────────────────────────────────────────────────────────
+// ─── CONFIG ────────────────────────────────────────────────────────────────────
 const REPO    = 'sametabbak/research-tracker';
 const STAGING = 'staging';
 const MAIN    = 'main';
 
-// ── STATE ─────────────────────────────────────────────────────────────────────
-let token      = sessionStorage.getItem('gh_token') || '';
-let centers    = [];
-let stagingMap = {};   // centerId → {analyses:[...], sha:'...'}
-let mainMap    = {};   // centerId → {analyses:[...]}
-let overrideMap= {};   // centerId → {overrides:[...], sha:'...'}
-let categories = [];
-let pendingEdits  = {};  // centerId → {name → {field: newValue}}
-let pendingAdds   = {};  // centerId → [{...}]
-let pendingDeletes= {};  // centerId → Set of names
+// ─── STATE ─────────────────────────────────────────────────────────────────────
+let token       = sessionStorage.getItem('gh_token') || '';
+let centers     = [];
+let stagingMap  = {};   // centerId → { content: {analyses:[...]}, sha }
+let mainMap     = {};   // centerId → { analyses:[] }           (raw JSON)
+let overrideMap = {};   // centerId → { content: {overrides:[...]}, sha }
+let categories  = [];
+let stagingExists = false;  // true if staging branch files were found
 
-// ── AUTH ──────────────────────────────────────────────────────────────────────
-function showTokenModal() { showModal('tokenOverlay'); }
+// Pending mutations (cleared after approve)
+let pendEdits   = {};   // centerId → { analysisName → { field: newValue } }
+let pendAdds    = {};   // centerId → [newEntries]
+let pendDeletes = {};   // centerId → Set of names
+
+// ─── AUTH ───────────────────────────────────────────────────────────────────────
 function saveToken() {
   token = document.getElementById('tokenInput').value.trim();
-  if (token) { sessionStorage.setItem('gh_token', token); updateTokenBadge(); }
+  sessionStorage.setItem('gh_token', token);
+  updateTokenBadge();
   hideModal('tokenOverlay');
   loadAll();
 }
 function updateTokenBadge() {
   const b = document.getElementById('tokenBadge');
   b.textContent = token ? '🔑 Token ✓' : '🔑 Token gir';
-  b.className = 'token-badge ' + (token ? 'ok' : 'bad');
+  b.className   = 'token-badge ' + (token ? 'ok' : 'bad');
 }
 updateTokenBadge();
 
-// ── GITHUB API ────────────────────────────────────────────────────────────────
-function headers() {
-  const h = { 'Accept': 'application/vnd.github.v3+json' };
-  if (token) h['Authorization'] = `token ${token}`;
+// ─── GITHUB API ─────────────────────────────────────────────────────────────────
+function ghHeaders() {
+  const h = { Accept: 'application/vnd.github.v3+json' };
+  if (token) h.Authorization = `token ${token}`;
   return h;
 }
 
-async function rawFetch(branch, path) {
-  const url = `https://raw.githubusercontent.com/${REPO}/${branch}/${path}`;
-  const r = await fetch(url);
+/** Read a file from any branch — no token needed for public repos. */
+async function rawRead(branch, path) {
+  const url = `https://raw.githubusercontent.com/${REPO}/${branch}/${path}?t=${Date.now()}`;
+  const r   = await fetch(url);
   if (!r.ok) return null;
   return r.json();
 }
 
-async function apiGetFile(branch, path) {
+/** Read via Contents API so we also get the SHA (needed for writes). */
+async function apiRead(branch, path) {
   const url = `https://api.github.com/repos/${REPO}/contents/${path}?ref=${branch}`;
-  const r = await fetch(url, { headers: headers() });
+  const r   = await fetch(url, { headers: ghHeaders() });
   if (!r.ok) return null;
-  const d = await r.json();
-  return { content: JSON.parse(atob(d.content.replace(/\n/g,''))), sha: d.sha };
+  const d   = await r.json();
+  try {
+    return {
+      content: JSON.parse(atob(d.content.replace(/\n/g, ''))),
+      sha: d.sha,
+      path: d.path
+    };
+  } catch { return null; }
 }
 
-async function apiPutFile(branch, path, content, sha, message) {
+/** Write (create or update) a file on staging. */
+async function apiWrite(path, content, sha, message) {
+  if (!token) throw new Error('Token gerekli — sağ üstten giriş yapın.');
   const encoded = btoa(unescape(encodeURIComponent(
     JSON.stringify(content, null, 2)
   )));
-  const body = { message, content: encoded, branch };
+  const body = { message, content: encoded, branch: STAGING };
   if (sha) body.sha = sha;
-  const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
-    method: 'PUT',
-    headers: { ...headers(), 'Content-Type': 'application/json' },
-    body: JSON.stringify(body)
-  });
-  if (!r.ok) { const e = await r.json(); throw new Error(e.message); }
+  const r = await fetch(
+    `https://api.github.com/repos/${REPO}/contents/${path}`,
+    { method: 'PUT', headers: { ...ghHeaders(), 'Content-Type': 'application/json' },
+      body: JSON.stringify(body) }
+  );
+  if (!r.ok) {
+    const e = await r.json().catch(() => ({}));
+    throw new Error(e.message || `HTTP ${r.status}`);
+  }
   return r.json();
 }
 
-async function triggerMerge(message) {
+/** Trigger the merge-staging workflow. */
+async function triggerMerge(note) {
+  if (!token) throw new Error('Token gerekli.');
   const r = await fetch(
     `https://api.github.com/repos/${REPO}/actions/workflows/merge-staging.yml/dispatches`,
     { method: 'POST',
-      headers: { ...headers(), 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ref: 'main', inputs: { message } }) }
+      headers: { ...ghHeaders(), 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ref: 'main', inputs: { message: note } }) }
   );
-  return r.status === 204;
-}
-
-// ── LOAD DATA ─────────────────────────────────────────────────────────────────
-async function loadAll() {
-  setLoading(true);
-  try {
-    // Centers list + keywords
-    [centers, categories] = await Promise.all([
-      rawFetch(MAIN, 'data/centers.json').then(d => (d||[]).filter(c => c.active)),
-      rawFetch(STAGING, 'data/keywords.json').then(d => Object.keys(d||{})).catch(()=>[])
-    ]);
-
-    // Load staging and main analyses in parallel
-    const ids = centers.map(c => c.id);
-    const [stagingFiles, mainFiles, overrideFiles] = await Promise.all([
-      Promise.all(ids.map(id =>
-        apiGetFile(STAGING, `data/analyses/${id}.json`).then(r => [id, r])
-      )),
-      Promise.all(ids.map(id =>
-        rawFetch(MAIN, `data/analyses/${id}.json`).then(r => [id, r])
-      )),
-      Promise.all(ids.map(id =>
-        apiGetFile(STAGING, `data/overrides/${id}.json`)
-          .then(r => [id, r]).catch(() => [id, null])
-      ))
-    ]);
-
-    stagingMap  = Object.fromEntries(stagingFiles.filter(([,r]) => r));
-    mainMap     = Object.fromEntries(mainFiles.filter(([,r]) => r).map(([id,r]) => [id, r]));
-    overrideMap = Object.fromEntries(overrideFiles.filter(([,r]) => r));
-
-    updateSummary();
-    renderChanges();
-    renderCatalog();
-    renderOverrides();
-    document.getElementById('approveBtn').disabled = false;
-  } catch(e) {
-    alert('Veri yüklenemedi: ' + e.message);
+  if (r.status !== 204) {
+    const e = await r.json().catch(() => ({}));
+    throw new Error(e.message || `HTTP ${r.status}`);
   }
-  setLoading(false);
 }
 
-// ── DIFF ──────────────────────────────────────────────────────────────────────
+// ─── LOAD ───────────────────────────────────────────────────────────────────────
+async function loadAll() {
+  document.getElementById('changesContent').innerHTML =
+    '<div class="loader"><div class="spin"></div><p style="margin-top:16px">Yükleniyor...</p></div>';
+  document.getElementById('catalogContent').innerHTML  =
+    '<div class="loader"><div class="spin"></div></div>';
+  document.getElementById('overridesContent').innerHTML =
+    '<div class="loader"><div class="spin"></div></div>';
+  document.getElementById('approveBtn').disabled = true;
+
+  // Reset state
+  stagingMap  = {}; mainMap = {}; overrideMap = {};
+  pendEdits   = {}; pendAdds = {}; pendDeletes = {};
+
+  // 1. Centers + categories
+  [centers, categories] = await Promise.all([
+    rawRead(MAIN, 'data/centers.json').then(d => (d || []).filter(c => c.active)),
+    rawRead(MAIN, 'data/keywords.json').then(d => Object.keys(d || {})).catch(() => [])
+  ]);
+
+  if (!centers.length) {
+    document.getElementById('changesContent').innerHTML =
+      '<div class="warn-box">centers.json okunamadı veya aktif merkez yok.</div>';
+    return;
+  }
+
+  const ids = centers.map(c => c.id);
+
+  // 2. Load all data in parallel
+  const [stagFiles, mainFiles, ovFiles] = await Promise.all([
+    Promise.all(ids.map(id =>
+      apiRead(STAGING, `data/analyses/${id}.json`).then(r => [id, r])
+    )),
+    Promise.all(ids.map(id =>
+      rawRead(MAIN, `data/analyses/${id}.json`).then(r => [id, r])
+    )),
+    Promise.all(ids.map(id =>
+      apiRead(STAGING, `data/overrides/${id}.json`)
+        .then(r => [id, r]).catch(() => [id, null])
+    ))
+  ]);
+
+  stagFiles.forEach(([id, r]) => { if (r) stagingMap[id] = r; });
+  mainFiles.forEach(([id, r]) => { if (r) mainMap[id]    = r; });
+  ovFiles.forEach( ([id, r]) => { if (r) overrideMap[id] = r; });
+
+  // 3. Determine if staging branch actually has data
+  stagingExists = Object.keys(stagingMap).length > 0;
+
+  // 4. Render
+  updateSummary();
+  renderChanges();
+  renderCatalog();
+  renderOverrides();
+  updateApproveBtn();
+}
+
+// ─── DIFF ───────────────────────────────────────────────────────────────────────
+/**
+ * Compare staging vs main for one center.
+ *
+ * KEY FIX: if staging has NO file for this center, treat it as identical
+ * to main — a missing file means the tracker hasn't updated that center
+ * yet, not that all analyses were deleted.
+ */
 function getDiff(centerId) {
-  const stagingAnalyses = (stagingMap[centerId]?.content?.analyses || []);
-  const mainAnalyses    = mainMap[centerId]?.analyses || [];
-  const mainByName = Object.fromEntries(mainAnalyses.map(a => [a.name, a]));
-  const stagByName = Object.fromEntries(stagingAnalyses.map(a => [a.name, a]));
-  const added   = stagingAnalyses.filter(a => !mainByName[a.name]);
-  const deleted = mainAnalyses.filter(a => !stagByName[a.name]);
+  const stagingFile    = stagingMap[centerId];
+  const mainAnalyses   = mainMap[centerId]?.analyses || [];
+
+  // Missing staging file → treat as same as main (no real changes)
+  const stagingAnalyses = stagingFile
+    ? (stagingFile.content?.analyses || [])
+    : mainAnalyses;
+
+  const mainByName = new Map(mainAnalyses.map(a    => [a.name, a]));
+  const stagByName = new Map(stagingAnalyses.map(a => [a.name, a]));
+
+  const added   = stagingAnalyses.filter(a => !mainByName.has(a.name));
+  const deleted = mainAnalyses.filter(a    => !stagByName.has(a.name));
   const changed = stagingAnalyses.filter(a => {
-    const m = mainByName[a.name];
+    const m = mainByName.get(a.name);
     return m && m.price !== a.price;
   });
-  return { added, deleted, changed, all: stagingAnalyses };
+
+  // Also apply pending local mutations for display purposes
+  const pendDel = pendDeletes[centerId] || new Set();
+  const pendAdd = pendAdds[centerId]    || [];
+
+  return {
+    added:   [...added, ...pendAdd.filter(a => !stagByName.has(a.name))],
+    deleted: deleted.filter(a => !pendDel.has(a.name)),
+    changed,
+    all:     stagingAnalyses,
+    stagingMissing: !stagingFile
+  };
 }
 
-// ── SUMMARY ───────────────────────────────────────────────────────────────────
+// ─── SUMMARY ────────────────────────────────────────────────────────────────────
 function updateSummary() {
   let total=0, newA=0, delA=0, chgA=0, manA=0;
   centers.forEach(c => {
-    const d = getDiff(c.id);
-    total += d.all.length;
-    newA  += d.added.length;
-    delA  += d.deleted.length;
-    chgA  += d.changed.length;
-    manA  += overrideMap[c.id]?.content?.overrides?.length || 0;
+    const d  = getDiff(c.id);
+    total   += d.all.length;
+    newA    += d.added.length;
+    delA    += d.deleted.length;
+    chgA    += d.changed.length;
+    manA    += overrideMap[c.id]?.content?.overrides?.length || 0;
+    manA    += pendAdds[c.id]?.length || 0;
   });
   document.getElementById('sTotal').textContent = total;
   document.getElementById('sNew').textContent   = newA;
@@ -409,87 +534,166 @@ function updateSummary() {
   document.getElementById('sMan').textContent   = manA;
 }
 
-// ── RENDER: CHANGES TAB ───────────────────────────────────────────────────────
+function updateApproveBtn() {
+  const hasRealDiff = centers.some(c => {
+    const d = getDiff(c.id);
+    return d.added.length || d.deleted.length || d.changed.length;
+  });
+  const hasPendingLocal =
+    Object.values(pendEdits).some(m => Object.keys(m).length) ||
+    Object.values(pendAdds).some(a => a.length) ||
+    Object.values(pendDeletes).some(s => s.size);
+
+  document.getElementById('approveBtn').disabled = !(hasRealDiff || hasPendingLocal);
+}
+
+// ─── RENDER: CHANGES TAB ────────────────────────────────────────────────────────
 function renderChanges() {
   const el = document.getElementById('changesContent');
+
+  if (!stagingExists) {
+    el.innerHTML = `<div class="warn-box">
+      ⚠️ <strong>staging branch'de veri bulunamadı.</strong><br>
+      Tracker workflow'u bir kez çalıştırın:<br>
+      Actions → <em>Research Center Price Tracker</em> → Run workflow.<br>
+      Staging oluşturulduktan sonra panel doğru çalışacak.
+    </div>`;
+    return;
+  }
+
   let html = '';
-  let hasChanges = false;
+  let hasAny = false;
 
   centers.forEach(c => {
     const d = getDiff(c.id);
     if (!d.added.length && !d.deleted.length && !d.changed.length) return;
-    hasChanges = true;
+    hasAny = true;
+
     html += `<div class="section">
-      <h2>${c.name} <span class="cnt">${c.city}</span>
-        <span class="cnt add">${d.added.length} yeni</span>
-        <span class="cnt del">${d.deleted.length} silinen</span>
-        <span class="cnt chg">${d.changed.length} değişen</span>
+      <h2>${esc(c.name)}
+        <span class="cnt">${esc(c.city)}</span>
+        ${d.added.length   ? `<span class="cnt add">+${d.added.length} yeni</span>`   : ''}
+        ${d.deleted.length ? `<span class="cnt del">-${d.deleted.length} silindi</span>` : ''}
+        ${d.changed.length ? `<span class="cnt chg">${d.changed.length} fiyat değişti</span>` : ''}
       </h2>
       <div class="tbl-wrap"><table>
-      <thead><tr><th>Durum</th><th>Analiz Adı</th>
-        <th>Kategori</th><th>Fiyat</th><th>Birim</th></tr></thead><tbody>`;
+        <thead><tr>
+          <th>Durum</th><th>Analiz Adı</th>
+          <th>Kategori</th><th>Fiyat</th><th>Birim</th>
+        </tr></thead><tbody>`;
 
     d.added.forEach(a => {
-      html += `<tr class="row-add"><td><span class="badge badge-add">Yeni</span></td>
-        <td>${esc(a.name)}</td><td>${esc(a.category||'')}</td>
-        <td><strong>${fmt(a.price)}</strong></td><td>${esc(a.unit||'')}</td></tr>`;
+      html += `<tr class="row-add">
+        <td><span class="badge badge-add">Yeni</span></td>
+        <td>${esc(a.name)}</td>
+        <td>${esc(a.category||'')}</td>
+        <td><strong>${fmt(a.price)}</strong></td>
+        <td>${esc(a.unit||'')}</td>
+      </tr>`;
     });
+
     d.deleted.forEach(a => {
-      html += `<tr class="row-del"><td><span class="badge badge-del">Silindi</span></td>
-        <td>${esc(a.name)}</td><td>${esc(a.category||'')}</td>
-        <td>${fmt(a.price)}</td><td>${esc(a.unit||'')}</td></tr>`;
+      html += `<tr class="row-del">
+        <td><span class="badge badge-del">Silindi</span></td>
+        <td>${esc(a.name)}</td>
+        <td>${esc(a.category||'')}</td>
+        <td>${fmt(a.price)}</td>
+        <td>${esc(a.unit||'')}</td>
+      </tr>`;
     });
+
     d.changed.forEach(a => {
-      const old = (mainMap[c.id]?.analyses||[]).find(x=>x.name===a.name);
-      html += `<tr class="row-chg"><td><span class="badge badge-chg">Değişti</span></td>
-        <td>${esc(a.name)}</td><td>${esc(a.category||'')}</td>
-        <td><span class="price-old">${fmt(old?.price)}</span>
-            <span class="price-diff">→ ${fmt(a.price)}</span></td>
-        <td>${esc(a.unit||'')}</td></tr>`;
+      const old = mainMap[c.id]?.analyses?.find(x => x.name === a.name);
+      html += `<tr class="row-chg">
+        <td><span class="badge badge-chg">Fiyat Değişti</span></td>
+        <td>${esc(a.name)}</td>
+        <td>${esc(a.category||'')}</td>
+        <td>
+          <span class="price-old">${fmt(old?.price)}</span>
+          <span class="price-new">→ ${fmt(a.price)}</span>
+        </td>
+        <td>${esc(a.unit||'')}</td>
+      </tr>`;
     });
 
     html += '</tbody></table></div></div>';
   });
 
-  el.innerHTML = hasChanges ? html
-    : '<div class="empty">✅ Staging ve main arasında fark yok.</div>';
-}
+  if (!hasAny) {
+    html = '<div class="ok-box">✅ Staging ve main arasında fark yok.<br>'
+      + 'Tüm analizleri görmek için <strong>Tüm Analizler</strong> sekmesine geçin.</div>';
+  }
 
-// ── RENDER: FULL CATALOG ──────────────────────────────────────────────────────
-function renderCatalog() {
-  const el = document.getElementById('catalogContent');
-  let html = '';
-  centers.forEach(c => {
-    const analyses = stagingMap[c.id]?.content?.analyses || [];
-    html += `<div class="section" data-center="${esc(c.id)}">
-      <h2>${esc(c.name)} <span class="cnt">${c.city}</span>
-        <span class="cnt">${analyses.length} analiz</span>
-        <button class="btn btn-add-row" style="font-size:12px;padding:4px 12px"
-          onclick="openAddModal('${c.id}')">+ Analiz Ekle</button>
-      </h2>
-      <div class="tbl-wrap"><table>
-      <thead><tr><th>Analiz Adı</th><th>Kategori</th>
-        <th>Fiyat (TL)</th><th>Birim</th><th></th></tr></thead>
-      <tbody id="tbody-${c.id}">`;
-
-    analyses.forEach(a => {
-      html += catalogRow(c.id, a);
-    });
-
-    html += `</tbody></table></div></div>`;
-  });
   el.innerHTML = html;
 }
 
-function catalogRow(centerId, a) {
-  const isDel = pendingDeletes[centerId]?.has(a.name);
-  return `<tr class="${isDel?'row-del':''}" id="row-${centerId}-${safeId(a.name)}">
-    <td class="editable" onclick="editCell(this,'${centerId}','${esc(a.name)}','name')">${esc(a.name)}</td>
-    <td class="editable" onclick="editCell(this,'${centerId}','${esc(a.name)}','category')">${esc(a.category||'')}</td>
-    <td class="editable" onclick="editCell(this,'${centerId}','${esc(a.name)}','price')">${fmt(a.price)}</td>
+// ─── RENDER: FULL CATALOG ────────────────────────────────────────────────────────
+function renderCatalog() {
+  const el = document.getElementById('catalogContent');
+  let html = '';
+
+  centers.forEach(c => {
+    // Show staging if available, otherwise main (so catalog is always populated)
+    const analyses = stagingMap[c.id]?.content?.analyses
+                   || mainMap[c.id]?.analyses
+                   || [];
+
+    html += `<div class="section" data-center-id="${esc(c.id)}">
+      <h2>${esc(c.name)}
+        <span class="cnt">${esc(c.city)}</span>
+        <span class="cnt">${analyses.length} analiz</span>
+        <button class="btn-add-row" onclick="openAddModal('${esc(c.id)}')">+ Analiz Ekle</button>
+      </h2>`;
+
+    // Pending edits hint
+    const hasEdits = Object.keys(pendEdits[c.id]||{}).length ||
+                     (pendDeletes[c.id]?.size||0);
+    if (hasEdits) {
+      html += `<div class="pending-bar">
+        ⚡ <span>Bu merkez için kaydedilmemiş değişiklikler var.</span>
+        <button class="btn-undo" onclick="undoCenter('${esc(c.id)}')">Geri Al</button>
+      </div>`;
+    }
+
+    html += `<p class="edit-hint">Düzenlemek için bir hücreye tıklayın.</p>
+      <div class="tbl-wrap"><table>
+        <thead><tr>
+          <th>Analiz Adı</th><th>Kategori</th>
+          <th>Fiyat (TL)</th><th>Birim</th><th></th>
+        </tr></thead>
+        <tbody id="tbody-${esc(c.id)}">`;
+
+    analyses.forEach(a => {
+      html += catalogRow(c.id, a, false);
+    });
+
+    html += '</tbody></table></div></div>';
+  });
+
+  el.innerHTML = html;
+}
+
+function catalogRow(centerId, a, isManual) {
+  const isDel = pendDeletes[centerId]?.has(a.name) || false;
+  const rowCls = isDel ? 'row-del' : (isManual ? 'row-man' : '');
+  const sid = safeId(a.name);
+  const nameEsc = esc(a.name);
+  const catEsc  = esc(a.category||'');
+
+  return `<tr class="${rowCls}" id="tr-${esc(centerId)}-${sid}">
+    <td class="editable" title="Düzenle"
+        onclick="editCell(this,'${esc(centerId)}','${nameEsc}','name')">${nameEsc}</td>
+    <td class="editable" title="Düzenle"
+        onclick="editCell(this,'${esc(centerId)}','${nameEsc}','category')">${catEsc}</td>
+    <td class="editable" title="Düzenle"
+        onclick="editCell(this,'${esc(centerId)}','${nameEsc}','price')">${fmt(a.price)}</td>
     <td>${esc(a.unit||'numune')}</td>
-    <td><button class="btn-del-row" title="Sil"
-      onclick="toggleDelete('${centerId}','${esc(a.name)}')">🗑</button></td>
+    <td>
+      <button class="btn-del-row" title="${isDel?'Geri al':'Sil'}"
+        onclick="toggleDelete('${esc(centerId)}','${nameEsc}')">
+        ${isDel ? '↩' : '🗑'}
+      </button>
+    </td>
   </tr>`;
 }
 
@@ -499,265 +703,344 @@ function filterCatalog() {
     const rows = sec.querySelectorAll('tbody tr');
     let vis = 0;
     rows.forEach(tr => {
-      const match = !q || tr.textContent.toLowerCase().includes(q);
-      tr.style.display = match ? '' : 'none';
-      if (match) vis++;
+      const m = !q || tr.textContent.toLowerCase().includes(q);
+      tr.style.display = m ? '' : 'none';
+      if (m) vis++;
     });
-    sec.style.display = (!q || vis > 0) ? '' : 'none';
+    sec.style.display = !q || vis ? '' : 'none';
   });
 }
 
-// ── RENDER: OVERRIDES TAB ─────────────────────────────────────────────────────
+// ─── RENDER: OVERRIDES TAB ──────────────────────────────────────────────────────
 function renderOverrides() {
   const el = document.getElementById('overridesContent');
   let html = '';
   let total = 0;
+
   centers.forEach(c => {
-    const ov = overrideMap[c.id]?.content?.overrides || [];
-    if (!ov.length) return;
-    total += ov.length;
+    const saved   = overrideMap[c.id]?.content?.overrides || [];
+    const pending = pendAdds[c.id] || [];
+    const all     = [...saved, ...pending];
+    if (!all.length) return;
+    total += all.length;
+
     html += `<div class="section">
-      <h2>${esc(c.name)} <span class="cnt">${ov.length} manuel</span></h2>
+      <h2>${esc(c.name)}
+        <span class="cnt">${all.length} manuel</span>
+      </h2>
       <div class="tbl-wrap"><table>
-      <thead><tr><th>Analiz Adı</th><th>Kategori</th>
-        <th>Fiyat (TL)</th><th>Birim</th><th></th></tr></thead><tbody>`;
-    ov.forEach(a => {
-      html += `<tr class="row-manual">
-        <td><span class="badge badge-manual">Manuel</span> ${esc(a.name)}</td>
+        <thead><tr>
+          <th>Durum</th><th>Analiz Adı</th>
+          <th>Kategori</th><th>Fiyat (TL)</th><th>Birim</th><th></th>
+        </tr></thead><tbody>`;
+
+    saved.forEach(a => {
+      html += `<tr class="row-man">
+        <td><span class="badge badge-man">Kaydedilmiş</span></td>
+        <td>${esc(a.name)}</td>
         <td>${esc(a.category||'')}</td>
-        <td>${fmt(a.price)}</td><td>${esc(a.unit||'numune')}</td>
+        <td>${fmt(a.price)}</td>
+        <td>${esc(a.unit||'numune')}</td>
         <td><button class="btn-del-row" title="Kaldır"
-          onclick="removeOverride('${c.id}','${esc(a.name)}')">🗑</button></td>
+          onclick="removeOverride('${esc(c.id)}','${esc(a.name)}')">🗑</button></td>
       </tr>`;
     });
+
+    pending.forEach(a => {
+      html += `<tr class="row-add">
+        <td><span class="badge badge-add">Onay Bekliyor</span></td>
+        <td>${esc(a.name)}</td>
+        <td>${esc(a.category||'')}</td>
+        <td>${fmt(a.price)}</td>
+        <td>${esc(a.unit||'numune')}</td>
+        <td><button class="btn-del-row" title="İptal"
+          onclick="cancelPendingAdd('${esc(c.id)}','${esc(a.name)}')">✕</button></td>
+      </tr>`;
+    });
+
     html += '</tbody></table></div></div>';
   });
-  el.innerHTML = total ? html
-    : '<div class="empty">Henüz manuel ekleme yok.<br><br>'
-    + '<button class="btn btn-primary" style="margin-top:8px" onclick="openAddModal()">+ Analiz Ekle</button></div>';
+
+  el.innerHTML = total
+    ? html
+    : `<div class="empty">Henüz manuel ekleme yok.<br><br>
+        <button class="btn btn-primary" style="margin:0 auto;display:block;max-width:200px"
+          onclick="openAddModal()">+ Analiz Ekle</button></div>`;
 }
 
-// ── INLINE EDITING ────────────────────────────────────────────────────────────
-function editCell(td, centerId, name, field) {
+// ─── INLINE EDITING ──────────────────────────────────────────────────────────────
+function editCell(td, centerId, analysisName, field) {
   if (td.querySelector('input,select')) return;
   const current = td.textContent.trim();
   let input;
+
   if (field === 'category' && categories.length) {
     input = document.createElement('select');
-    input.className = 'cat-select';
     categories.forEach(cat => {
-      const opt = document.createElement('option');
-      opt.value = cat; opt.textContent = cat;
-      if (cat === current) opt.selected = true;
-      input.appendChild(opt);
+      const o = new Option(cat, cat, cat === current, cat === current);
+      input.appendChild(o);
     });
   } else {
     input = document.createElement('input');
-    input.type = field === 'price' ? 'number' : 'text';
-    input.value = field === 'price' ? current.replace(/[^\d.]/g,'') : current;
+    input.type  = field === 'price' ? 'number' : 'text';
+    input.value = field === 'price' ? current.replace(/[^\d.]/g, '') : current;
   }
 
-  input.onblur = () => {
-    const val = field === 'price' ? parseFloat(input.value) : input.value.trim();
-    td.textContent = field === 'price' ? fmt(val) : val;
-    if (!pendingEdits[centerId]) pendingEdits[centerId] = {};
-    if (!pendingEdits[centerId][name]) pendingEdits[centerId][name] = {};
-    pendingEdits[centerId][name][field] = val;
+  const commit = () => {
+    const raw = input.value;
+    const val = field === 'price' ? parseFloat(raw) : raw.trim();
+    if (!isNaN(val) || field !== 'price') {
+      if (!pendEdits[centerId]) pendEdits[centerId] = {};
+      if (!pendEdits[centerId][analysisName]) pendEdits[centerId][analysisName] = {};
+      pendEdits[centerId][analysisName][field] = val;
+    }
+    td.textContent = field === 'price' ? fmt(val) : String(val);
+    updateApproveBtn();
+    updateSummary();
   };
-  input.onkeydown = e => { if (e.key==='Enter') input.blur(); };
 
+  input.onblur   = commit;
+  input.onkeydown = e => { if (e.key === 'Enter') input.blur(); if (e.key === 'Escape') { td.textContent = current; } };
   td.textContent = '';
   td.appendChild(input);
   input.focus();
+  if (field !== 'category') input.select();
 }
 
 function toggleDelete(centerId, name) {
-  if (!pendingDeletes[centerId]) pendingDeletes[centerId] = new Set();
-  const s = pendingDeletes[centerId];
+  if (!pendDeletes[centerId]) pendDeletes[centerId] = new Set();
+  const s = pendDeletes[centerId];
   s.has(name) ? s.delete(name) : s.add(name);
-  const analyses = stagingMap[centerId]?.content?.analyses || [];
+  // Re-render that row
+  const analyses = stagingMap[centerId]?.content?.analyses
+                 || mainMap[centerId]?.analyses || [];
   const a = analyses.find(x => x.name === name);
-  if (a) {
-    const row = document.getElementById(`row-${centerId}-${safeId(name)}`);
-    if (row) row.className = s.has(name) ? 'row-del' : '';
+  if (!a) return;
+  const tbody = document.getElementById(`tbody-${safeId(centerId)}`);
+  const existing = document.getElementById(`tr-${safeId(centerId)}-${safeId(name)}`);
+  if (existing && tbody) {
+    const newRow = document.createElement('tbody');
+    newRow.innerHTML = catalogRow(centerId, a, false);
+    existing.replaceWith(newRow.firstElementChild);
   }
+  updateApproveBtn();
+  updateSummary();
 }
 
-// ── ADD ANALYSIS MODAL ────────────────────────────────────────────────────────
+function undoCenter(centerId) {
+  delete pendEdits[centerId];
+  delete pendDeletes[centerId];
+  renderCatalog();
+  updateApproveBtn();
+  updateSummary();
+}
+
+// ─── ADD ANALYSIS ────────────────────────────────────────────────────────────────
 function openAddModal(defaultCenterId) {
   const sel = document.getElementById('addCenter');
   sel.innerHTML = centers.map(c =>
-    `<option value="${c.id}" ${c.id===defaultCenterId?'selected':''}>${c.name}</option>`
+    `<option value="${esc(c.id)}" ${c.id===defaultCenterId?'selected':''}>${esc(c.name)}</option>`
   ).join('');
   const catSel = document.getElementById('addCategory');
   catSel.innerHTML = categories.map(cat =>
-    `<option value="${cat}">${cat}</option>`
+    `<option value="${esc(cat)}">${esc(cat)}</option>`
   ).join('');
-  document.getElementById('addName').value  = '';
-  document.getElementById('addPrice').value = '';
-  document.getElementById('addNotes').value = '';
+  ['addName','addPrice','addNotes'].forEach(id =>
+    document.getElementById(id).value = '');
+  document.getElementById('addUnit').value = 'numune';
   showModal('addOverlay');
 }
 
-function submitAddAnalysis() {
-  const centerId  = document.getElementById('addCenter').value;
-  const name      = document.getElementById('addName').value.trim();
-  const category  = document.getElementById('addCategory').value;
-  const price     = parseFloat(document.getElementById('addPrice').value);
-  const unit      = document.getElementById('addUnit').value;
-  const notes     = document.getElementById('addNotes').value.trim();
+function submitAdd() {
+  const centerId = document.getElementById('addCenter').value;
+  const name     = document.getElementById('addName').value.trim();
+  const category = document.getElementById('addCategory').value;
+  const price    = parseFloat(document.getElementById('addPrice').value);
+  const unit     = document.getElementById('addUnit').value;
+  const notes    = document.getElementById('addNotes').value.trim();
 
-  if (!name || !price) { alert('Analiz adı ve fiyat zorunludur.'); return; }
+  if (!name)      { alert('Analiz adı boş bırakılamaz.'); return; }
+  if (isNaN(price)||price<=0) { alert('Geçerli bir fiyat girin.'); return; }
 
-  // Add to pending overrides
-  if (!pendingAdds[centerId]) pendingAdds[centerId] = [];
-  pendingAdds[centerId].push({
-    name, category, price, currency: 'TRY', unit, notes, manual: true
-  });
+  if (!pendAdds[centerId]) pendAdds[centerId] = [];
+  pendAdds[centerId].push({ name, category, price, currency:'TRY', unit, notes, manual:true });
 
   hideModal('addOverlay');
-
-  // Refresh overrides tab preview
-  const center = centers.find(c => c.id === centerId);
-  const current = overrideMap[centerId]?.content?.overrides || [];
-  const all = [...current, ...pendingAdds[centerId]];
-  let found = false;
-  document.querySelectorAll('#overridesContent .section').forEach(sec => {
-    if (sec.dataset.center === centerId) { found = true; /* update */ }
-  });
-  // Re-render overrides with pending additions shown
-  renderOverrides(); // simplified — full re-render
+  renderOverrides();
+  updateSummary();
+  updateApproveBtn();
   showTab('overrides');
 }
 
+function cancelPendingAdd(centerId, name) {
+  if (pendAdds[centerId]) {
+    pendAdds[centerId] = pendAdds[centerId].filter(a => a.name !== name);
+  }
+  renderOverrides();
+  updateSummary();
+  updateApproveBtn();
+}
+
 async function removeOverride(centerId, name) {
+  if (!confirm(`"${name}" manuel kaydı kaldırılsın mı?`)) return;
+  if (!token) { showModal('tokenOverlay'); return; }
   const file = overrideMap[centerId];
   if (!file) return;
-  if (!confirm(`"${name}" manuel kaydı kaldırılsın mı?`)) return;
   file.content.overrides = file.content.overrides.filter(a => a.name !== name);
   try {
-    await apiPutFile(STAGING, `data/overrides/${centerId}.json`,
-      file.content, file.sha, `chore: remove override ${name}`);
-    // Re-fetch sha
-    const updated = await apiGetFile(STAGING, `data/overrides/${centerId}.json`);
+    const res = await apiWrite(
+      `data/overrides/${centerId}.json`,
+      file.content, file.sha,
+      `chore: remove override "${name}"`
+    );
+    // Refresh SHA
+    const updated = await apiRead(STAGING, `data/overrides/${centerId}.json`);
     if (updated) overrideMap[centerId] = updated;
     renderOverrides();
     updateSummary();
   } catch(e) { alert('Hata: ' + e.message); }
 }
 
-// ── APPROVE ───────────────────────────────────────────────────────────────────
-async function approve() {
-  if (!token) { showTokenModal(); return; }
+// ─── APPROVE ─────────────────────────────────────────────────────────────────────
+function approve() {
+  if (!token) { showModal('tokenOverlay'); return; }
 
-  const hasPendingEdits  = Object.keys(pendingEdits).length > 0;
-  const hasPendingAdds   = Object.keys(pendingAdds).length > 0;
-  const hasPendingDeletes= Object.values(pendingDeletes).some(s=>s.size>0);
+  const lines = [];
+  centers.forEach(c => {
+    const d   = getDiff(c.id);
+    const edC = Object.keys(pendEdits[c.id]||{}).length;
+    const delC = pendDeletes[c.id]?.size || 0;
+    const addC = pendAdds[c.id]?.length || 0;
+    if (d.added.length||d.deleted.length||d.changed.length||edC||delC||addC) {
+      lines.push(`<strong>${c.name}:</strong> `
+        + [d.added.length   ? `${d.added.length} yeni`     : '',
+           d.deleted.length ? `${d.deleted.length} silindi` : '',
+           d.changed.length ? `${d.changed.length} fiyat değişti` : '',
+           edC  ? `${edC} düzenlendi`   : '',
+           delC ? `${delC} silindi (lokal)` : '',
+           addC ? `${addC} manuel eklendi`  : '']
+          .filter(Boolean).join(', ')
+      );
+    }
+  });
 
-  const msg = [
-    hasPendingEdits   ? '• Satır içi düzenlemeler' : '',
-    hasPendingAdds    ? '• Manuel analizler' : '',
-    hasPendingDeletes ? '• Silinmiş satırlar' : '',
-    'Onaylandıktan sonra uygulama güncellenir. Devam?'
-  ].filter(Boolean).join('\n');
+  document.getElementById('confirmBody').innerHTML =
+    (lines.length
+      ? `<div class="info-box" style="margin-bottom:12px">${lines.join('<br>')}</div>`
+      : '') +
+    'Tüm değişiklikler <strong>staging</strong> branchine kaydedilecek, '
+    + 'ardından <strong>main</strong> branchine merge edilecek.<br><br>'
+    + 'Bu işlem geri alınamaz. Devam edilsin mi?';
 
-  if (!confirm(msg)) return;
+  showModal('confirmOverlay');
+}
 
+async function doApprove() {
+  hideModal('confirmOverlay');
   const btn = document.getElementById('approveBtn');
   btn.disabled = true;
   btn.textContent = '⏳ Kaydediliyor...';
 
   try {
-    // 1. Commit pending edits and deletes to staging analyses files
-    for (const centerId of Object.keys({...pendingEdits,...pendingDeletes})) {
-      const file = stagingMap[centerId];
+    // 1. Commit edits + deletes to staging analyses files
+    const changedCenters = new Set([
+      ...Object.keys(pendEdits),
+      ...Object.keys(pendDeletes)
+    ]);
+    for (const cid of changedCenters) {
+      const file = stagingMap[cid];
       if (!file) continue;
-      let analyses = [...file.content.analyses];
+      let analyses = [...(file.content.analyses || [])];
 
       // Apply edits
-      if (pendingEdits[centerId]) {
+      if (pendEdits[cid]) {
         analyses = analyses.map(a => {
-          const edits = pendingEdits[centerId][a.name];
-          return edits ? { ...a, ...edits } : a;
+          const patch = pendEdits[cid][a.name];
+          return patch ? { ...a, ...patch } : a;
         });
       }
       // Apply deletes
-      if (pendingDeletes[centerId]?.size) {
-        analyses = analyses.filter(a => !pendingDeletes[centerId].has(a.name));
+      if (pendDeletes[cid]?.size) {
+        analyses = analyses.filter(a => !pendDeletes[cid].has(a.name));
       }
 
-      file.content.analyses = analyses;
-      const result = await apiPutFile(STAGING,
-        `data/analyses/${centerId}.json`,
-        file.content, file.sha,
-        `fix: düzenleme — ${centers.find(c=>c.id===centerId)?.name}`
+      const newContent = { ...file.content, analyses };
+      await apiWrite(
+        `data/analyses/${cid}.json`,
+        newContent, file.sha,
+        `fix: inceleme paneli düzenlemesi — ${centers.find(c=>c.id===cid)?.name}`
       );
-      // Update sha
-      const updated = await apiGetFile(STAGING, `data/analyses/${centerId}.json`);
-      if (updated) stagingMap[centerId] = updated;
+      // Refresh local SHA
+      const updated = await apiRead(STAGING, `data/analyses/${cid}.json`);
+      if (updated) stagingMap[cid] = updated;
     }
 
     // 2. Commit pending override additions
-    for (const centerId of Object.keys(pendingAdds)) {
-      const additions = pendingAdds[centerId];
+    btn.textContent = '⏳ Manuel eklemeler kaydediliyor...';
+    for (const cid of Object.keys(pendAdds)) {
+      const additions = pendAdds[cid];
       if (!additions.length) continue;
-      const center = centers.find(c => c.id === centerId);
-      const existing = overrideMap[centerId];
-      const content = existing
-        ? { ...existing.content, overrides: [...existing.content.overrides, ...additions] }
-        : { center_id: centerId, center_name: center?.name, overrides: additions };
-      const sha = existing?.sha || null;
-      const result = await apiPutFile(STAGING,
-        `data/overrides/${centerId}.json`,
-        content, sha,
+      const center   = centers.find(c => c.id === cid);
+      const existing = overrideMap[cid];
+      const newContent = existing
+        ? { ...existing.content,
+            overrides: [...(existing.content.overrides||[]), ...additions] }
+        : { center_id: cid, center_name: center?.name, overrides: additions };
+      await apiWrite(
+        `data/overrides/${cid}.json`,
+        newContent, existing?.sha || null,
         `feat: manuel analiz eklendi — ${center?.name}`
       );
-      // Update local state
-      const updated = await apiGetFile(STAGING, `data/overrides/${centerId}.json`);
-      if (updated) overrideMap[centerId] = updated;
+      const updated = await apiRead(STAGING, `data/overrides/${cid}.json`);
+      if (updated) overrideMap[cid] = updated;
     }
 
     // 3. Trigger merge workflow
-    btn.textContent = '⏳ Merge tetikleniyor...';
-    const ok = await triggerMerge('Review panelinden onaylandı');
-    if (!ok) throw new Error('Merge workflow tetiklenemedi. Token\'ın repo scope yetkisi var mı?');
+    btn.textContent = '⏳ Yayınlanıyor...';
+    await triggerMerge('İnceleme panelinden onaylandı');
 
-    // 4. Reset pending state
-    pendingEdits   = {};
-    pendingAdds    = {};
-    pendingDeletes = {};
+    // 4. Clear pending state
+    pendEdits = {}; pendAdds = {}; pendDeletes = {};
 
-    alert('✅ Onaylandı! Merge workflow başlatıldı. 1-2 dakika içinde uygulama güncellenir.');
+    alert('✅ Onaylandı!\n\nMerge workflow başlatıldı. GitHub Actions tamamlandığında uygulama güncellenir (1-2 dakika).');
+
     btn.textContent = '✓ Onayla ve Yayınla';
     btn.disabled = false;
-
-    // Reload
     await loadAll();
 
   } catch(e) {
-    alert('Hata: ' + e.message);
+    alert('❌ Hata: ' + e.message);
     btn.textContent = '✓ Onayla ve Yayınla';
     btn.disabled = false;
   }
 }
 
-// ── UTILS ─────────────────────────────────────────────────────────────────────
+// ─── UI HELPERS ──────────────────────────────────────────────────────────────────
 function showTab(name) {
   ['changes','catalog','overrides'].forEach(t => {
-    document.getElementById(`tab-${t}`).className = t===name ? '' : 'hidden';
+    document.getElementById(`tab-${t}`).className =
+      t === name ? '' : 'hidden';
   });
-  document.querySelectorAll('.tab').forEach((el,i) => {
-    el.className = 'tab' + (['changes','catalog','overrides'][i]===name?' active':'');
+  document.querySelectorAll('.tab').forEach((el, i) => {
+    const names = ['changes','catalog','overrides'];
+    el.className = 'tab' + (names[i] === name ? ' active' : '');
   });
 }
-function showModal(id)  { document.getElementById(id).classList.remove('hidden'); }
-function hideModal(id)  { document.getElementById(id).classList.add('hidden'); }
-function setLoading(on) { /* tabs still show */ }
-function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-function fmt(n) { return n ? `${Number(n).toLocaleString('tr-TR')} ₺` : '—'; }
-function safeId(s) { return String(s).replace(/[^a-z0-9]/gi,'_'); }
+function showModal(id) { document.getElementById(id).classList.remove('hidden'); }
+function hideModal(id) { document.getElementById(id).classList.add('hidden'); }
 
-// ── INIT ──────────────────────────────────────────────────────────────────────
+function esc(s) {
+  return String(s||'')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function fmt(n) {
+  const num = Number(n);
+  return isNaN(num) ? '—' : num.toLocaleString('tr-TR') + ' ₺';
+}
+function safeId(s) { return String(s||'').replace(/[^a-z0-9]/gi,'_'); }
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────────
 loadAll();
 </script>
 </body>
