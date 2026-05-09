@@ -3,258 +3,254 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AnalizBul — İnceleme Paneli</title>
+<title>Analiz Bul — İnceleme Paneli</title>
 <style>
-  :root {
-    --primary:   #1FA8AE;
-    --primary-d: #178a8f;
-    --bg:        #f4f6f8;
-    --card:      #ffffff;
-    --border:    #e0e4e8;
-    --text:      #1a2332;
-    --muted:     #6b7a8d;
-    --add:       #22c55e;
-    --del:       #ef4444;
-    --chg:       #f97316;
-    --warn-bg:   #fffbeb;
-    --warn-bd:   #fbbf24;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: system-ui, -apple-system, sans-serif;
-         background: var(--bg); color: var(--text); font-size: 14px; }
+:root {
+  --primary:#1FA8AE; --bg:#f4f6f8; --card:#fff;
+  --border:#e0e4e8; --text:#1a2332; --muted:#6b7a8d;
+  --add:#22c55e; --del:#ef4444; --chg:#f97316;
+  --warn-bg:#fffbeb; --warn-bd:#fbbf24;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:system-ui,-apple-system,sans-serif;
+     background:var(--bg);color:var(--text);font-size:14px;}
 
-  /* ── Header ─────────────────────────────────────────── */
-  .header { background: var(--primary); color: #fff; padding: 16px 24px;
-             display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-  .header h1 { font-size: 20px; font-weight: 700; flex: 1; }
-  .header-right { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-  .token-badge { background: rgba(255,255,255,.2); border-radius: 8px;
-                  padding: 6px 12px; font-size: 12px; cursor: pointer;
-                  white-space: nowrap; }
-  .token-badge.ok  { background: rgba(34,197,94,.3); }
-  .token-badge.bad { background: rgba(239,68,68,.3); }
-  .btn { padding: 8px 18px; border: none; border-radius: 8px;
-          font-size: 14px; cursor: pointer; font-weight: 600;
-          white-space: nowrap; }
-  .btn-approve { background: #22c55e; color: #fff; }
-  .btn-approve:disabled { background: #9ca3af; cursor: not-allowed; }
-  .btn-secondary { background: rgba(255,255,255,.15); color: #fff; }
+/* Header */
+.header{background:var(--primary);color:#fff;padding:14px 24px;
+        display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.header h1{font-size:19px;font-weight:700;flex:1;}
+.header-meta{font-size:11px;opacity:.75;white-space:nowrap;}
+.header-right{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+.token-badge{background:rgba(255,255,255,.2);border-radius:8px;
+             padding:6px 12px;font-size:12px;cursor:pointer;}
+.token-badge.ok{background:rgba(34,197,94,.3);}
+.token-badge.bad{background:rgba(239,68,68,.3);}
+.btn{padding:8px 16px;border:none;border-radius:8px;font-size:13px;
+     cursor:pointer;font-weight:600;white-space:nowrap;}
+.btn-approve{background:#22c55e;color:#fff;}
+.btn-approve:disabled{background:#9ca3af;cursor:not-allowed;}
+.btn-secondary{background:rgba(255,255,255,.15);color:#fff;}
 
-  /* ── Summary cards ───────────────────────────────────── */
-  .summary { display: flex; gap: 12px; padding: 16px 24px;
-              flex-wrap: wrap; background: var(--card);
-              border-bottom: 1px solid var(--border); }
-  .card { background: var(--bg); border-radius: 10px; padding: 12px 18px;
-           min-width: 120px; text-align: center; }
-  .card .num { font-size: 26px; font-weight: 700; }
-  .card .lbl { font-size: 12px; color: var(--muted); margin-top: 2px; }
-  .card.add .num { color: var(--add); }
-  .card.del .num { color: var(--del); }
-  .card.chg .num { color: var(--chg); }
-  .card.neu .num { color: var(--primary); }
+/* Summary cards */
+.summary{display:flex;gap:10px;padding:14px 24px;flex-wrap:wrap;
+         background:var(--card);border-bottom:1px solid var(--border);}
+.card{background:var(--bg);border-radius:10px;padding:10px 16px;
+      min-width:110px;text-align:center;cursor:pointer;
+      transition:box-shadow .15s,transform .1s;border:2px solid transparent;}
+.card:hover{box-shadow:0 2px 10px rgba(0,0,0,.1);transform:translateY(-1px);}
+.card.active-card{border-color:var(--primary);}
+.card .num{font-size:24px;font-weight:700;}
+.card .lbl{font-size:11px;color:var(--muted);margin-top:2px;}
+.card.cadd .num{color:var(--add);}
+.card.cdel .num{color:var(--del);}
+.card.cchg .num{color:var(--chg);}
+.card.cneu .num{color:var(--primary);}
 
-  /* ── Tabs ────────────────────────────────────────────── */
-  .tabs { display: flex; gap: 2px; padding: 12px 24px 0;
-           border-bottom: 2px solid var(--border); background: var(--card); }
-  .tab { padding: 8px 20px; cursor: pointer; border-radius: 8px 8px 0 0;
-          font-weight: 600; color: var(--muted);
-          border: 1px solid transparent; border-bottom: none; }
-  .tab.active { color: var(--primary); background: var(--bg);
-                 border-color: var(--border); position: relative; top: 2px; }
+/* Tabs */
+.tabs{display:flex;gap:2px;padding:12px 24px 0;
+      border-bottom:2px solid var(--border);background:var(--card);}
+.tab{padding:8px 20px;cursor:pointer;border-radius:8px 8px 0 0;
+     font-weight:600;color:var(--muted);
+     border:1px solid transparent;border-bottom:none;}
+.tab.active{color:var(--primary);background:var(--bg);
+            border-color:var(--border);position:relative;top:2px;}
 
-  /* ── Content ─────────────────────────────────────────── */
-  .content { padding: 20px 24px; max-width: 1400px; }
-  .section  { margin-bottom: 28px; }
-  .section h2 { font-size: 16px; font-weight: 700; margin-bottom: 10px;
-                 display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-  .cnt { background: var(--bg); border: 1px solid var(--border);
-          border-radius: 12px; padding: 2px 8px;
-          font-size: 12px; color: var(--muted); font-weight: 500; }
-  .cnt.add { color: var(--add); border-color: #bbf7d0; background: #f0fdf4; }
-  .cnt.del { color: var(--del); border-color: #fecaca; background: #fef2f2; }
-  .cnt.chg { color: var(--chg); border-color: #fed7aa; background: #fff7ed; }
+/* Content */
+.content{padding:20px 24px;}
+.section{margin-bottom:28px;}
+.section h2{font-size:15px;font-weight:700;margin-bottom:10px;
+            display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.cnt{background:var(--bg);border:1px solid var(--border);border-radius:12px;
+     padding:2px 8px;font-size:11px;color:var(--muted);font-weight:500;}
+.cnt.cadd{color:var(--add);border-color:#bbf7d0;background:#f0fdf4;}
+.cnt.cdel{color:var(--del);border-color:#fecaca;background:#fef2f2;}
+.cnt.cchg{color:var(--chg);border-color:#fed7aa;background:#fff7ed;}
 
-  /* ── Table ───────────────────────────────────────────── */
-  .tbl-wrap { overflow-x: auto; border-radius: 10px;
-               border: 1px solid var(--border); background: var(--card); }
-  table { width: 100%; border-collapse: collapse; }
-  th { background: var(--bg); padding: 10px 12px; text-align: left;
-        font-size: 12px; color: var(--muted); font-weight: 600;
-        border-bottom: 1px solid var(--border); white-space: nowrap; }
-  td { padding: 9px 12px; border-bottom: 1px solid var(--border);
-        vertical-align: middle; }
-  tr:last-child td { border-bottom: none; }
-  tr.row-add  { background: #f0fdf4; }
-  tr.row-del  { background: #fef2f2; }
-  tr.row-chg  { background: #fff7ed; }
-  tr.row-man  { background: #f0f9ff; }
-  tr.row-del td { opacity: .7; }
-  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px;
-            font-size: 11px; font-weight: 600; }
-  .badge-add { background: #dcfce7; color: #166534; }
-  .badge-del { background: #fee2e2; color: #991b1b; }
-  .badge-chg { background: #ffedd5; color: #9a3412; }
-  .badge-man { background: #e0f2fe; color: #075985; }
+/* Filter bar */
+.filter-bar{display:flex;gap:8px;margin-bottom:14px;
+            flex-wrap:wrap;align-items:center;}
+.filter-bar span{font-size:12px;color:var(--muted);font-weight:600;}
+.fbtn{padding:5px 14px;border:1px solid var(--border);border-radius:20px;
+      background:var(--card);cursor:pointer;font-size:12px;font-weight:600;
+      color:var(--muted);transition:all .15s;}
+.fbtn:hover{border-color:var(--primary);color:var(--primary);}
+.fbtn.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.fbtn.fadd.active{background:var(--add);border-color:var(--add);}
+.fbtn.fdel.active{background:var(--del);border-color:var(--del);}
+.fbtn.fchg.active{background:var(--chg);border-color:var(--chg);}
 
-  /* ── Editable cells ──────────────────────────────────── */
-  .editable { cursor: pointer; border-radius: 4px; padding: 2px 4px;
-               transition: background .15s; }
-  .editable:hover { background: #f0f9ff; outline: 1px solid var(--primary); }
-  .editable input, .editable select {
-    border: 1px solid var(--primary); border-radius: 4px;
-    padding: 2px 6px; font-size: 13px; width: 100%; min-width: 60px;
-    font-family: inherit; background: #fff; }
-  .edit-hint { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+/* Search */
+.search-bar{display:flex;gap:10px;margin-bottom:14px;}
+.search-bar input{flex:1;padding:9px 14px;border:1px solid var(--border);
+                  border-radius:8px;font-size:14px;font-family:inherit;}
+.search-bar input:focus{outline:2px solid var(--primary);border-color:transparent;}
 
-  /* ── Action buttons ──────────────────────────────────── */
-  .btn-del-row { background: none; border: none; cursor: pointer;
-                  color: var(--del); font-size: 16px; padding: 2px 6px;
-                  border-radius: 4px; }
-  .btn-del-row:hover { background: #fee2e2; }
-  .btn-add-row { background: var(--add); color: #fff; padding: 5px 14px;
-                  border: none; border-radius: 6px; cursor: pointer;
-                  font-size: 12px; font-weight: 600; }
-  .btn-add-row:hover { background: #16a34a; }
-  .btn-undo { background: none; border: 1px solid var(--border); cursor: pointer;
-               font-size: 11px; border-radius: 4px; padding: 1px 6px;
-               color: var(--muted); }
-  .btn-undo:hover { background: var(--bg); }
+/* Table */
+.tbl-wrap{overflow-x:auto;border-radius:10px;
+          border:1px solid var(--border);background:var(--card);}
+table{width:100%;border-collapse:collapse;}
+th{background:var(--bg);padding:9px 10px;text-align:left;
+   font-size:11px;color:var(--muted);font-weight:600;
+   border-bottom:1px solid var(--border);white-space:nowrap;}
+td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:middle;}
+tr:last-child td{border-bottom:none;}
+tr.row-add{background:#f0fdf4;}
+tr.row-del{background:#fef2f2;opacity:.75;}
+tr.row-chg{background:#fff7ed;}
+tr.row-man{background:#f0f9ff;}
+.badge{display:inline-block;padding:2px 7px;border-radius:10px;
+       font-size:11px;font-weight:600;white-space:nowrap;}
+.badge-add{background:#dcfce7;color:#166534;}
+.badge-del{background:#fee2e2;color:#991b1b;}
+.badge-chg{background:#ffedd5;color:#9a3412;}
+.badge-man{background:#e0f2fe;color:#075985;}
 
-  /* ── Search ──────────────────────────────────────────── */
-  .search-bar { display: flex; gap: 10px; margin-bottom: 14px; }
-  .search-bar input { flex: 1; padding: 9px 14px; border: 1px solid var(--border);
-                       border-radius: 8px; font-size: 14px; font-family: inherit; }
-  .search-bar input:focus { outline: 2px solid var(--primary); border-color: transparent; }
+/* Editable */
+.editable{cursor:pointer;border-radius:4px;padding:2px 4px;transition:background .1s;}
+.editable:hover{background:#f0f9ff;outline:1px solid var(--primary);}
+.editable input,.editable select{border:1px solid var(--primary);border-radius:4px;
+  padding:2px 6px;font-size:13px;width:100%;min-width:50px;font-family:inherit;background:#fff;}
+.notes-cell{max-width:180px;white-space:nowrap;overflow:hidden;
+            text-overflow:ellipsis;color:var(--muted);font-size:12px;}
+.edit-hint{font-size:11px;color:var(--muted);margin-bottom:6px;}
 
-  /* ── Modal ───────────────────────────────────────────── */
-  .overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45);
-              display: flex; align-items: center; justify-content: center;
-              z-index: 100; padding: 16px; }
-  .modal { background: var(--card); border-radius: 14px; padding: 28px;
-            width: 440px; max-width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,.2); }
-  .modal h3 { font-size: 17px; margin-bottom: 16px; }
-  .field { margin-top: 12px; }
-  .field label { display: block; font-size: 12px; color: var(--muted);
-                  margin-bottom: 4px; font-weight: 600; }
-  .field input, .field select {
-    width: 100%; padding: 9px 12px; border: 1px solid var(--border);
-    border-radius: 8px; font-size: 14px; font-family: inherit; background: #fff; }
-  .field input:focus, .field select:focus {
-    outline: 2px solid var(--primary); border-color: transparent; }
-  .modal-btns { display: flex; gap: 10px; margin-top: 20px; }
-  .modal-btns .btn { flex: 1; }
-  .btn-primary { background: var(--primary); color: #fff; }
-  .btn-ghost   { background: var(--bg); color: var(--text);
-                  border: 1px solid var(--border); }
+/* Action buttons */
+.btn-del-row{background:none;border:none;cursor:pointer;color:var(--del);
+             font-size:15px;padding:2px 5px;border-radius:4px;}
+.btn-del-row:hover{background:#fee2e2;}
+.btn-add-row{background:var(--add);color:#fff;padding:5px 12px;border:none;
+             border-radius:6px;cursor:pointer;font-size:12px;font-weight:600;}
+.btn-add-row:hover{background:#16a34a;}
+.pending-bar{background:var(--warn-bg);border:1px solid var(--warn-bd);
+             border-radius:8px;padding:9px 14px;margin-bottom:12px;
+             display:flex;align-items:center;gap:10px;font-size:13px;}
+.pending-bar span{flex:1;}
+.btn-undo{background:none;border:1px solid var(--border);cursor:pointer;
+          font-size:11px;border-radius:4px;padding:2px 8px;color:var(--muted);}
+.btn-undo:hover{background:var(--bg);}
 
-  /* ── Notices ─────────────────────────────────────────── */
-  .warn-box { background: var(--warn-bg); border: 1px solid var(--warn-bd);
-               border-radius: 8px; padding: 12px 16px; font-size: 13px;
-               line-height: 1.6; }
-  .info-box { background: #f0f9ff; border: 1px solid #bae6fd;
-               border-radius: 8px; padding: 12px 16px; font-size: 13px;
-               line-height: 1.6; color: #075985; }
-  .ok-box   { background: #f0fdf4; border: 1px solid #bbf7d0;
-               border-radius: 8px; padding: 12px 16px; font-size: 13px;
-               line-height: 1.6; color: #166534; }
+/* Price diff */
+.price-old{text-decoration:line-through;color:var(--muted);font-size:11px;margin-right:4px;}
+.price-new{color:var(--chg);font-weight:600;}
 
-  /* ── Pending edits bar ───────────────────────────────── */
-  .pending-bar { background: var(--warn-bg); border: 1px solid var(--warn-bd);
-                  border-radius: 8px; padding: 10px 16px; margin-bottom: 14px;
-                  display: flex; align-items: center; gap: 12px;
-                  font-size: 13px; }
-  .pending-bar span { flex: 1; }
+/* Boxes */
+.warn-box{background:var(--warn-bg);border:1px solid var(--warn-bd);
+          border-radius:8px;padding:12px 16px;font-size:13px;line-height:1.6;}
+.info-box{background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;
+          padding:12px 16px;font-size:13px;line-height:1.6;color:#075985;}
+.ok-box{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;
+        padding:12px 16px;font-size:13px;line-height:1.6;color:#166534;}
 
-  /* ── Loader ──────────────────────────────────────────── */
-  .loader { text-align: center; padding: 60px 24px; color: var(--muted); }
-  .spin { display: inline-block; width: 36px; height: 36px;
-           border: 3px solid var(--border); border-top-color: var(--primary);
-           border-radius: 50%; animation: spin .8s linear infinite; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .empty { text-align: center; padding: 40px; color: var(--muted); }
+/* Modal */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);
+         display:flex;align-items:center;justify-content:center;
+         z-index:100;padding:16px;}
+.modal{background:var(--card);border-radius:14px;padding:26px;
+       width:460px;max-width:100%;max-height:90vh;overflow-y:auto;
+       box-shadow:0 20px 60px rgba(0,0,0,.2);}
+.modal h3{font-size:16px;margin-bottom:14px;}
+.field{margin-top:11px;}
+.field label{display:block;font-size:11px;color:var(--muted);
+             margin-bottom:3px;font-weight:600;}
+.field input,.field select{width:100%;padding:8px 12px;
+  border:1px solid var(--border);border-radius:8px;
+  font-size:14px;font-family:inherit;background:#fff;}
+.field input:focus,.field select:focus{outline:2px solid var(--primary);border-color:transparent;}
+.field-row{display:flex;gap:10px;}
+.field-row .field{flex:1;}
+.modal-btns{display:flex;gap:10px;margin-top:18px;}
+.modal-btns .btn{flex:1;}
+.btn-primary{background:var(--primary);color:#fff;}
+.btn-ghost{background:var(--bg);color:var(--text);border:1px solid var(--border);}
 
-  /* ── Price diff ──────────────────────────────────────── */
-  .price-old { text-decoration: line-through; color: var(--muted);
-                font-size: 11px; margin-right: 4px; }
-  .price-new { color: var(--chg); font-weight: 600; }
-
-  .hidden { display: none; }
+/* Loader */
+.loader{text-align:center;padding:60px 24px;color:var(--muted);}
+.spin{display:inline-block;width:34px;height:34px;border:3px solid var(--border);
+      border-top-color:var(--primary);border-radius:50%;animation:spin .8s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.empty{text-align:center;padding:40px;color:var(--muted);}
+.hidden{display:none!important;}
 </style>
 </head>
 <body>
 
-<!-- ── HEADER ──────────────────────────────────────────────────────────────── -->
+<!-- HEADER -->
 <div class="header">
-  <h1>🔬 AnalizBul — İnceleme Paneli</h1>
+  <div>
+    <h1>🔬 AnalizBul — İnceleme Paneli</h1>
+    <div class="header-meta" id="stagingMeta">Yükleniyor...</div>
+  </div>
   <div class="header-right">
-    <div class="token-badge" id="tokenBadge" onclick="showModal('tokenOverlay')">
-      🔑 Token gir
-    </div>
+    <div class="token-badge" id="tokenBadge" onclick="showModal('tokenOverlay')">🔑 Token gir</div>
     <button class="btn btn-secondary" onclick="loadAll()">↻ Yenile</button>
-    <button class="btn btn-approve" id="approveBtn"
-            onclick="approve()" disabled>
-      ✓ Onayla ve Yayınla
-    </button>
+    <button class="btn btn-approve" id="approveBtn" onclick="approve()" disabled>✓ Onayla ve Yayınla</button>
   </div>
 </div>
 
-<!-- ── SUMMARY ─────────────────────────────────────────────────────────────── -->
+<!-- SUMMARY CARDS -->
 <div class="summary">
-  <div class="card neu"><div class="num" id="sTotal">—</div><div class="lbl">Toplam Analiz</div></div>
-  <div class="card add"><div class="num" id="sNew">—</div><div class="lbl">Yeni Eklenen</div></div>
-  <div class="card del"><div class="num" id="sDel">—</div><div class="lbl">Silinen</div></div>
-  <div class="card chg"><div class="num" id="sChg">—</div><div class="lbl">Değişen Fiyat</div></div>
-  <div class="card neu"><div class="num" id="sMan">—</div><div class="lbl">Manuel Ekleme</div></div>
+  <div class="card cneu" id="card-total"   onclick="cardClick('total')"  title="Tum analizleri goster">
+    <div class="num" id="sTotal">—</div><div class="lbl">Toplam Analiz</div></div>
+  <div class="card cadd" id="card-added"   onclick="cardClick('added')"  title="Yeni eklenenler">
+    <div class="num" id="sNew">—</div><div class="lbl">Yeni Eklenen</div></div>
+  <div class="card cdel" id="card-deleted" onclick="cardClick('deleted')" title="Silinenler">
+    <div class="num" id="sDel">—</div><div class="lbl">Silindi</div></div>
+  <div class="card cchg" id="card-changed" onclick="cardClick('changed')" title="Fiyat degisiklikler">
+    <div class="num" id="sChg">—</div><div class="lbl">Değişen Fiyat</div></div>
+  <div class="card cneu" id="card-manual"  onclick="cardClick('manual')"  title="Manuel eklemeler">
+    <div class="num" id="sMan">—</div><div class="lbl">Manuel Ekleme</div></div>
 </div>
 
-<!-- ── TABS ────────────────────────────────────────────────────────────────── -->
+<!-- TABS -->
 <div class="tabs">
-  <div class="tab active" onclick="showTab('changes')">Değişiklikler</div>
-  <div class="tab" onclick="showTab('catalog')">Tüm Analizler</div>
-  <div class="tab" onclick="showTab('overrides')">Manuel Eklemeler</div>
+  <div class="tab active" id="tab-btn-changes"   onclick="showTab('changes')">Değişiklikler</div>
+  <div class="tab"        id="tab-btn-catalog"   onclick="showTab('catalog')">Tüm Analizler</div>
+  <div class="tab"        id="tab-btn-overrides" onclick="showTab('overrides')">Manuel Eklemeler</div>
 </div>
 
 <div class="content">
 
+  <!-- CHANGES TAB -->
   <div id="tab-changes">
+    <div class="filter-bar">
+      <span>Filtre:</span>
+      <button class="fbtn active"  id="fb-all"     onclick="setChangeFilter('all')">Tümü</button>
+      <button class="fbtn fadd"    id="fb-added"   onclick="setChangeFilter('added')">Yeni Eklenen</button>
+      <button class="fbtn fdel"    id="fb-deleted" onclick="setChangeFilter('deleted')">Silindi</button>
+      <button class="fbtn fchg"    id="fb-changed" onclick="setChangeFilter('changed')">Fiyat Değişti</button>
+    </div>
     <div id="changesContent">
-      <div class="loader"><div class="spin"></div>
-        <p style="margin-top:16px">Veriler yükleniyor...</p></div>
+      <div class="loader"><div class="spin"></div><p style="margin-top:14px">Yükleniyor...</p></div>
     </div>
   </div>
 
+  <!-- CATALOG TAB -->
   <div id="tab-catalog" class="hidden">
     <div class="search-bar">
-      <input id="catalogSearch" placeholder="Analiz adı veya merkez ara..."
-             oninput="filterCatalog()">
+      <input id="catalogSearch" placeholder="Analiz adı, kategori veya merkez ara..." oninput="filterCatalog()">
     </div>
-    <div id="catalogContent">
-      <div class="loader"><div class="spin"></div></div>
-    </div>
+    <div id="catalogContent"><div class="loader"><div class="spin"></div></div></div>
   </div>
 
+  <!-- OVERRIDES TAB -->
   <div id="tab-overrides" class="hidden">
-    <div id="overridesContent">
-      <div class="loader"><div class="spin"></div></div>
-    </div>
+    <div id="overridesContent"><div class="loader"><div class="spin"></div></div></div>
   </div>
 
 </div>
 
-<!-- ══════════════════ MODALS ══════════════════════════════════════════════ -->
-
-<!-- Token modal -->
+<!-- TOKEN MODAL -->
 <div class="overlay hidden" id="tokenOverlay">
   <div class="modal">
     <h3>🔑 GitHub Personal Access Token</h3>
     <div class="field">
       <label>Token (Contents: read/write · Actions: write)</label>
       <input type="password" id="tokenInput" placeholder="ghp_xxxxxxxxxxxx"
-             onkeydown="if(event.key==='Enter') saveToken()">
+             onkeydown="if(event.key==='Enter')saveToken()">
     </div>
-    <div class="warn-box" style="margin-top:14px">
-      Token yalnızca bu tarayıcı oturumunda tutulur. Sayfayı kapattığınızda silinir.<br>
-      Okuma işlemleri için token gerekmez; yazmak ve onaylamak için gereklidir.
+    <div class="warn-box" style="margin-top:12px">
+      Token yalnızca bu tarayıcı oturumunda tutulur.
+      Okuma için gerekmez; düzenleme ve onaylama için gereklidir.
     </div>
     <div class="modal-btns">
       <button class="btn btn-primary" onclick="saveToken()">Kaydet</button>
@@ -263,12 +259,12 @@
   </div>
 </div>
 
-<!-- Add analysis modal -->
+<!-- ADD ANALYSIS MODAL -->
 <div class="overlay hidden" id="addOverlay">
   <div class="modal">
     <h3>➕ Yeni Analiz Ekle</h3>
     <div class="field">
-      <label>Merkez</label>
+      <label>Merkez *</label>
       <select id="addCenter"></select>
     </div>
     <div class="field">
@@ -279,25 +275,35 @@
       <label>Kategori</label>
       <select id="addCategory"></select>
     </div>
-    <div class="field">
-      <label>Fiyat (TL) *</label>
-      <input type="number" id="addPrice" placeholder="1500" min="0">
+    <div class="field-row">
+      <div class="field">
+        <label>Fiyat *</label>
+        <input type="number" id="addPrice" placeholder="1500" min="0" step="0.01">
+      </div>
+      <div class="field">
+        <label>Para Birimi</label>
+        <select id="addCurrency">
+          <option value="TRY">TRY (₺)</option>
+          <option value="USD">USD ($)</option>
+          <option value="EUR">EUR (€)</option>
+        </select>
+      </div>
     </div>
     <div class="field">
       <label>Birim</label>
       <select id="addUnit">
         <option>numune</option><option>saat</option><option>gün</option>
         <option>enjeksiyon</option><option>analiz</option>
-        <option>set</option><option>kullanım</option>
+        <option>set</option><option>kullanım</option><option>adet</option>
       </select>
     </div>
     <div class="field">
-      <label>Not (isteğe bağlı)</label>
-      <input id="addNotes" placeholder="Ek bilgi...">
+      <label>Not</label>
+      <input id="addNotes" placeholder="İsteğe bağlı açıklama">
     </div>
-    <div class="info-box" style="margin-top:14px">
-      Bu analiz <strong>manuel ekleme</strong> olarak kaydedilir ve tracker
-      çalışmalarından etkilenmez.
+    <div class="info-box" style="margin-top:12px;font-size:12px">
+      Bu analiz <strong>Manuel Eklemeler</strong> olarak kaydedilir
+      ve tracker çalışmalarından etkilenmez.
     </div>
     <div class="modal-btns">
       <button class="btn btn-primary" onclick="submitAdd()">Ekle</button>
@@ -306,11 +312,11 @@
   </div>
 </div>
 
-<!-- Approve confirm modal -->
+<!-- CONFIRM MODAL -->
 <div class="overlay hidden" id="confirmOverlay">
   <div class="modal">
     <h3>✓ Onay</h3>
-    <div id="confirmBody" style="margin-bottom:16px;line-height:1.7"></div>
+    <div id="confirmBody" style="margin-bottom:14px;line-height:1.7"></div>
     <div class="modal-btns">
       <button class="btn btn-primary" onclick="doApprove()">Evet, Yayınla</button>
       <button class="btn btn-ghost"   onclick="hideModal('confirmOverlay')">İptal</button>
@@ -319,26 +325,29 @@
 </div>
 
 <script>
-// ─── CONFIG ────────────────────────────────────────────────────────────────────
-const REPO    = 'sametabbak/research-tracker';
-const STAGING = 'staging';
-const MAIN    = 'main';
+/* ── CONFIG ────────────────────────────────────────────────────────────── */
+var REPO    = 'sametabbak/research-tracker';
+var STAGING = 'staging';
+var MAIN    = 'main';
+var CURRENCY_SYMBOLS = { TRY: '₺', USD: '$', EUR: '€' };
+var CURRENCIES = ['TRY', 'USD', 'EUR'];
+var UNITS = ['numune','saat','gün','enjeksiyon','analiz','set','kullanım','adet'];
 
-// ─── STATE ─────────────────────────────────────────────────────────────────────
-let token       = sessionStorage.getItem('gh_token') || '';
-let centers     = [];
-let stagingMap  = {};   // centerId → { content: {analyses:[...]}, sha }
-let mainMap     = {};   // centerId → { analyses:[] }           (raw JSON)
-let overrideMap = {};   // centerId → { content: {overrides:[...]}, sha }
-let categories  = [];
-let stagingExists = false;  // true if staging branch files were found
+/* ── STATE ─────────────────────────────────────────────────────────────── */
+var token         = sessionStorage.getItem('gh_token') || '';
+var centers       = [];
+var stagingMap    = {};
+var mainMap       = {};
+var overrideMap   = {};
+var categories    = [];
+var stagingExists = false;
+var changeFilter  = 'all';
 
-// Pending mutations (cleared after approve)
-let pendEdits   = {};   // centerId → { analysisName → { field: newValue } }
-let pendAdds    = {};   // centerId → [newEntries]
-let pendDeletes = {};   // centerId → Set of names
+var pendEdits   = {};
+var pendAdds    = {};
+var pendDeletes = {};
 
-// ─── AUTH ───────────────────────────────────────────────────────────────────────
+/* ── AUTH ──────────────────────────────────────────────────────────────── */
 function saveToken() {
   token = document.getElementById('tokenInput').value.trim();
   sessionStorage.setItem('gh_token', token);
@@ -346,97 +355,108 @@ function saveToken() {
   hideModal('tokenOverlay');
   loadAll();
 }
+
 function updateTokenBadge() {
-  const b = document.getElementById('tokenBadge');
+  var b = document.getElementById('tokenBadge');
   b.textContent = token ? '🔑 Token ✓' : '🔑 Token gir';
-  b.className   = 'token-badge ' + (token ? 'ok' : 'bad');
+  b.className = 'token-badge ' + (token ? 'ok' : 'bad');
 }
 updateTokenBadge();
 
-// ─── GITHUB API ─────────────────────────────────────────────────────────────────
-function ghHeaders() {
-  const h = { Accept: 'application/vnd.github.v3+json' };
-  if (token) h.Authorization = `token ${token}`;
+/* ── GITHUB API ────────────────────────────────────────────────────────── */
+function ghH() {
+  var h = { 'Accept': 'application/vnd.github.v3+json' };
+  if (token) h['Authorization'] = 'token ' + token;
   return h;
 }
 
-/** Read a file from any branch — no token needed for public repos. */
 async function rawRead(branch, path) {
-  const url = `https://raw.githubusercontent.com/${REPO}/${branch}/${path}?t=${Date.now()}`;
-  const r   = await fetch(url);
-  if (!r.ok) return null;
-  return r.json();
+  var url = 'https://raw.githubusercontent.com/' + REPO + '/' + branch + '/' + path + '?t=' + Date.now();
+  var r = await fetch(url);
+  return r.ok ? r.json() : null;
 }
 
-/** Read via Contents API so we also get the SHA (needed for writes). */
 async function apiRead(branch, path) {
-  const url = `https://api.github.com/repos/${REPO}/contents/${path}?ref=${branch}`;
-  const r   = await fetch(url, { headers: ghHeaders() });
+  var url = 'https://api.github.com/repos/' + REPO + '/contents/' + path + '?ref=' + branch;
+  var r = await fetch(url, { headers: ghH() });
   if (!r.ok) return null;
-  const d   = await r.json();
+  var d = await r.json();
   try {
-    return {
-      content: JSON.parse(atob(d.content.replace(/\n/g, ''))),
-      sha: d.sha,
-      path: d.path
-    };
-  } catch { return null; }
+    /* atob() returns a Latin-1 string (raw bytes). To correctly decode UTF-8
+       (which is what GitHub stores), we feed those bytes into TextDecoder. */
+    var binary = atob(d.content.replace(/\n/g, ''));
+    var bytes  = new Uint8Array(binary.length);
+    for (var i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+    var text = new TextDecoder('utf-8').decode(bytes);
+    return { content: JSON.parse(text), sha: d.sha };
+  } catch(e) { return null; }
 }
 
-/** Write (create or update) a file on staging. */
 async function apiWrite(path, content, sha, message) {
   if (!token) throw new Error('Token gerekli — sağ üstten giriş yapın.');
-  const encoded = btoa(unescape(encodeURIComponent(
-    JSON.stringify(content, null, 2)
-  )));
-  const body = { message, content: encoded, branch: STAGING };
+  var encoded = btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2))));
+  var body = { message: message, branch: STAGING, content: encoded };
   if (sha) body.sha = sha;
-  const r = await fetch(
-    `https://api.github.com/repos/${REPO}/contents/${path}`,
-    { method: 'PUT', headers: { ...ghHeaders(), 'Content-Type': 'application/json' },
-      body: JSON.stringify(body) }
-  );
+  var r = await fetch('https://api.github.com/repos/' + REPO + '/contents/' + path, {
+    method: 'PUT',
+    headers: Object.assign({}, ghH(), { 'Content-Type': 'application/json' }),
+    body: JSON.stringify(body)
+  });
   if (!r.ok) {
-    const e = await r.json().catch(() => ({}));
-    throw new Error(e.message || `HTTP ${r.status}`);
+    var e = await r.json().catch(function() { return {}; });
+    throw new Error(e.message || ('HTTP ' + r.status));
   }
   return r.json();
 }
 
-/** Trigger the merge-staging workflow. */
 async function triggerMerge(note) {
   if (!token) throw new Error('Token gerekli.');
-  const r = await fetch(
-    `https://api.github.com/repos/${REPO}/actions/workflows/merge-staging.yml/dispatches`,
-    { method: 'POST',
-      headers: { ...ghHeaders(), 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ref: 'main', inputs: { message: note } }) }
+  var r = await fetch(
+    'https://api.github.com/repos/' + REPO + '/actions/workflows/merge-staging.yml/dispatches',
+    {
+      method: 'POST',
+      headers: Object.assign({}, ghH(), { 'Content-Type': 'application/json' }),
+      body: JSON.stringify({ ref: 'main', inputs: { message: note } })
+    }
   );
   if (r.status !== 204) {
-    const e = await r.json().catch(() => ({}));
-    throw new Error(e.message || `HTTP ${r.status}`);
+    var e = await r.json().catch(function() { return {}; });
+    throw new Error(e.message || ('HTTP ' + r.status));
   }
 }
 
-// ─── LOAD ───────────────────────────────────────────────────────────────────────
+async function fetchStagingDate() {
+  var r = await fetch('https://api.github.com/repos/' + REPO + '/branches/' + STAGING, { headers: ghH() });
+  if (!r.ok) return null;
+  var d = await r.json();
+  return (d && d.commit && d.commit.commit && d.commit.commit.committer)
+    ? d.commit.commit.committer.date : null;
+}
+
+/* ── LOAD ──────────────────────────────────────────────────────────────── */
 async function loadAll() {
-  document.getElementById('changesContent').innerHTML =
-    '<div class="loader"><div class="spin"></div><p style="margin-top:16px">Yükleniyor...</p></div>';
-  document.getElementById('catalogContent').innerHTML  =
-    '<div class="loader"><div class="spin"></div></div>';
-  document.getElementById('overridesContent').innerHTML =
-    '<div class="loader"><div class="spin"></div></div>';
+  ['changesContent','catalogContent','overridesContent'].forEach(function(id) {
+    document.getElementById(id).innerHTML =
+      '<div class="loader"><div class="spin"></div><p style="margin-top:14px">Yükleniyor...</p></div>';
+  });
   document.getElementById('approveBtn').disabled = true;
 
-  // Reset state
-  stagingMap  = {}; mainMap = {}; overrideMap = {};
-  pendEdits   = {}; pendAdds = {}; pendDeletes = {};
+  stagingMap = {}; mainMap = {}; overrideMap = {};
+  pendEdits  = {}; pendAdds = {}; pendDeletes = {};
 
-  // 1. Centers + categories
-  [centers, categories] = await Promise.all([
-    rawRead(MAIN, 'data/centers.json').then(d => (d || []).filter(c => c.active)),
-    rawRead(MAIN, 'data/keywords.json').then(d => Object.keys(d || {})).catch(() => [])
+  var results = await Promise.all([
+    rawRead(MAIN, 'data/centers.json'),
+    rawRead(MAIN, 'data/keywords.json').catch(function() { return null; }),
+    fetchStagingDate().catch(function() { return null; })
   ]);
+
+  centers    = (results[0] || []).filter(function(c) { return c.active; });
+  categories = Object.keys(results[1] || {});
+  var stagingDate = results[2];
+
+  document.getElementById('stagingMeta').textContent = stagingDate
+    ? ('staging son güncelleme: ' + new Date(stagingDate).toLocaleString('tr-TR'))
+    : 'staging: tarih bilgisi alınamadı';
 
   if (!centers.length) {
     document.getElementById('changesContent').innerHTML =
@@ -444,88 +464,77 @@ async function loadAll() {
     return;
   }
 
-  const ids = centers.map(c => c.id);
+  var ids = centers.map(function(c) { return c.id; });
 
-  // 2. Load all data in parallel
-  const [stagFiles, mainFiles, ovFiles] = await Promise.all([
-    Promise.all(ids.map(id =>
-      apiRead(STAGING, `data/analyses/${id}.json`).then(r => [id, r])
-    )),
-    Promise.all(ids.map(id =>
-      rawRead(MAIN, `data/analyses/${id}.json`).then(r => [id, r])
-    )),
-    Promise.all(ids.map(id =>
-      apiRead(STAGING, `data/overrides/${id}.json`)
-        .then(r => [id, r]).catch(() => [id, null])
-    ))
+  var fileResults = await Promise.all([
+    Promise.all(ids.map(function(id) {
+      return apiRead(STAGING, 'data/analyses/' + id + '.json').then(function(r) { return [id, r]; });
+    })),
+    Promise.all(ids.map(function(id) {
+      return rawRead(MAIN, 'data/analyses/' + id + '.json').then(function(r) { return [id, r]; });
+    })),
+    Promise.all(ids.map(function(id) {
+      return apiRead(STAGING, 'data/overrides/' + id + '.json')
+        .then(function(r) { return [id, r]; })
+        .catch(function() { return [id, null]; });
+    }))
   ]);
 
-  stagFiles.forEach(([id, r]) => { if (r) stagingMap[id] = r; });
-  mainFiles.forEach(([id, r]) => { if (r) mainMap[id]    = r; });
-  ovFiles.forEach( ([id, r]) => { if (r) overrideMap[id] = r; });
+  fileResults[0].forEach(function(pair) { if (pair[1]) stagingMap[pair[0]] = pair[1]; });
+  fileResults[1].forEach(function(pair) { if (pair[1]) mainMap[pair[0]]    = pair[1]; });
+  fileResults[2].forEach(function(pair) { if (pair[1]) overrideMap[pair[0]]= pair[1]; });
 
-  // 3. Determine if staging branch actually has data
   stagingExists = Object.keys(stagingMap).length > 0;
 
-  // 4. Render
   updateSummary();
   renderChanges();
   renderCatalog();
   renderOverrides();
   updateApproveBtn();
+
+  /* Scroll to top after render — prevents browser from jumping down */
+  window.scrollTo({ top: 0, behavior: 'instant' });
 }
 
-// ─── DIFF ───────────────────────────────────────────────────────────────────────
-/**
- * Compare staging vs main for one center.
- *
- * KEY FIX: if staging has NO file for this center, treat it as identical
- * to main — a missing file means the tracker hasn't updated that center
- * yet, not that all analyses were deleted.
- */
+/* ── DIFF ──────────────────────────────────────────────────────────────── */
 function getDiff(centerId) {
-  const stagingFile    = stagingMap[centerId];
-  const mainAnalyses   = mainMap[centerId]?.analyses || [];
+  var stagingFile   = stagingMap[centerId];
+  var mainAnalyses  = (mainMap[centerId] && mainMap[centerId].analyses) ? mainMap[centerId].analyses : [];
 
-  // Missing staging file → treat as same as main (no real changes)
-  const stagingAnalyses = stagingFile
-    ? (stagingFile.content?.analyses || [])
+  /*
+   * KEY FIX: if staging has no file for this center, treat it as identical
+   * to main. A missing file means the tracker has not run yet — not a real deletion.
+   */
+  var stagAnalyses = stagingFile
+    ? ((stagingFile.content && stagingFile.content.analyses) ? stagingFile.content.analyses : [])
     : mainAnalyses;
 
-  const mainByName = new Map(mainAnalyses.map(a    => [a.name, a]));
-  const stagByName = new Map(stagingAnalyses.map(a => [a.name, a]));
-
-  const added   = stagingAnalyses.filter(a => !mainByName.has(a.name));
-  const deleted = mainAnalyses.filter(a    => !stagByName.has(a.name));
-  const changed = stagingAnalyses.filter(a => {
-    const m = mainByName.get(a.name);
-    return m && m.price !== a.price;
-  });
-
-  // Also apply pending local mutations for display purposes
-  const pendDel = pendDeletes[centerId] || new Set();
-  const pendAdd = pendAdds[centerId]    || [];
+  var byMain = {};
+  mainAnalyses.forEach(function(a) { byMain[a.name] = a; });
+  var byStag = {};
+  stagAnalyses.forEach(function(a) { byStag[a.name] = a; });
 
   return {
-    added:   [...added, ...pendAdd.filter(a => !stagByName.has(a.name))],
-    deleted: deleted.filter(a => !pendDel.has(a.name)),
-    changed,
-    all:     stagingAnalyses,
+    added:         stagAnalyses.filter(function(a) { return !byMain[a.name]; }),
+    deleted:       mainAnalyses.filter(function(a) { return !byStag[a.name]; }),
+    changed:       stagAnalyses.filter(function(a) { var m = byMain[a.name]; return m && m.price !== a.price; }),
+    all:           stagAnalyses,
     stagingMissing: !stagingFile
   };
 }
 
-// ─── SUMMARY ────────────────────────────────────────────────────────────────────
+/* ── SUMMARY ───────────────────────────────────────────────────────────── */
 function updateSummary() {
-  let total=0, newA=0, delA=0, chgA=0, manA=0;
-  centers.forEach(c => {
-    const d  = getDiff(c.id);
-    total   += d.all.length;
-    newA    += d.added.length;
-    delA    += d.deleted.length;
-    chgA    += d.changed.length;
-    manA    += overrideMap[c.id]?.content?.overrides?.length || 0;
-    manA    += pendAdds[c.id]?.length || 0;
+  var total=0, newA=0, delA=0, chgA=0, manA=0;
+  centers.forEach(function(c) {
+    var d = getDiff(c.id);
+    total += d.all.length;
+    newA  += d.added.length;
+    delA  += d.deleted.length;
+    chgA  += d.changed.length;
+    var ov = overrideMap[c.id];
+    manA  += (ov && ov.content && ov.content.overrides) ? ov.content.overrides.length : 0;
+    manA  += pendAdds[c.id] ? pendAdds[c.id].length : 0;
   });
   document.getElementById('sTotal').textContent = total;
   document.getElementById('sNew').textContent   = newA;
@@ -535,137 +544,146 @@ function updateSummary() {
 }
 
 function updateApproveBtn() {
-  const hasRealDiff = centers.some(c => {
-    const d = getDiff(c.id);
+  var hasRealDiff = centers.some(function(c) {
+    var d = getDiff(c.id);
     return d.added.length || d.deleted.length || d.changed.length;
   });
-  const hasPendingLocal =
-    Object.values(pendEdits).some(m => Object.keys(m).length) ||
-    Object.values(pendAdds).some(a => a.length) ||
-    Object.values(pendDeletes).some(s => s.size);
-
-  document.getElementById('approveBtn').disabled = !(hasRealDiff || hasPendingLocal);
+  var hasPending =
+    Object.keys(pendEdits).some(function(k)   { return Object.keys(pendEdits[k]).length > 0; }) ||
+    Object.keys(pendAdds).some(function(k)    { return pendAdds[k].length > 0; }) ||
+    Object.keys(pendDeletes).some(function(k) { return pendDeletes[k].size > 0; });
+  document.getElementById('approveBtn').disabled = !(hasRealDiff || hasPending);
 }
 
-// ─── RENDER: CHANGES TAB ────────────────────────────────────────────────────────
+/* ── CARD CLICK ────────────────────────────────────────────────────────── */
+function cardClick(type) {
+  document.querySelectorAll('.card').forEach(function(c) { c.classList.remove('active-card'); });
+  var cardId = 'card-' + type;
+  var el = document.getElementById(cardId);
+  if (el) el.classList.add('active-card');
+
+  if (type === 'total') {
+    showTab('catalog');
+  } else if (type === 'manual') {
+    showTab('overrides');
+  } else {
+    showTab('changes');
+    setChangeFilter(type);
+  }
+}
+
+/* ── CHANGE FILTER ─────────────────────────────────────────────────────── */
+function setChangeFilter(f) {
+  changeFilter = f;
+  ['all','added','deleted','changed'].forEach(function(id) {
+    document.getElementById('fb-' + id).classList.toggle('active', id === f);
+  });
+  renderChanges();
+}
+
+/* ── RENDER: CHANGES ───────────────────────────────────────────────────── */
 function renderChanges() {
-  const el = document.getElementById('changesContent');
+  var el = document.getElementById('changesContent');
 
   if (!stagingExists) {
-    el.innerHTML = `<div class="warn-box">
-      ⚠️ <strong>staging branch'de veri bulunamadı.</strong><br>
-      Tracker workflow'u bir kez çalıştırın:<br>
-      Actions → <em>Research Center Price Tracker</em> → Run workflow.<br>
-      Staging oluşturulduktan sonra panel doğru çalışacak.
-    </div>`;
+    el.innerHTML = '<div class="warn-box">'
+      + '<strong>staging branch\'de veri bulunamadı.</strong><br>'
+      + 'Actions → <em>Research Center Price Tracker</em> → Run workflow ile tracker\'ı başlatın.'
+      + '</div>';
     return;
   }
 
-  let html = '';
-  let hasAny = false;
+  var html = '';
+  var hasAny = false;
 
-  centers.forEach(c => {
-    const d = getDiff(c.id);
-    if (!d.added.length && !d.deleted.length && !d.changed.length) return;
+  centers.forEach(function(c) {
+    var d = getDiff(c.id);
+    var rows = [];
+
+    if (changeFilter === 'all' || changeFilter === 'added')
+      d.added.forEach(function(a) { rows.push(Object.assign({}, a, { _t: 'add' })); });
+    if (changeFilter === 'all' || changeFilter === 'deleted')
+      d.deleted.forEach(function(a) { rows.push(Object.assign({}, a, { _t: 'del' })); });
+    if (changeFilter === 'all' || changeFilter === 'changed')
+      d.changed.forEach(function(a) { rows.push(Object.assign({}, a, { _t: 'chg' })); });
+
+    if (!rows.length) return;
     hasAny = true;
 
-    html += `<div class="section">
-      <h2>${esc(c.name)}
-        <span class="cnt">${esc(c.city)}</span>
-        ${d.added.length   ? `<span class="cnt add">+${d.added.length} yeni</span>`   : ''}
-        ${d.deleted.length ? `<span class="cnt del">-${d.deleted.length} silindi</span>` : ''}
-        ${d.changed.length ? `<span class="cnt chg">${d.changed.length} fiyat değişti</span>` : ''}
-      </h2>
-      <div class="tbl-wrap"><table>
-        <thead><tr>
-          <th>Durum</th><th>Analiz Adı</th>
-          <th>Kategori</th><th>Fiyat</th><th>Birim</th>
-        </tr></thead><tbody>`;
+    html += '<div class="section">'
+      + '<h2>' + esc(c.name) + ' <span class="cnt">' + esc(c.city) + '</span>'
+      + (d.added.length   ? ' <span class="cnt cadd">+' + d.added.length + ' yeni</span>'         : '')
+      + (d.deleted.length ? ' <span class="cnt cdel">-' + d.deleted.length + ' silindi</span>'   : '')
+      + (d.changed.length ? ' <span class="cnt cchg">'  + d.changed.length + ' değişti</span>'   : '')
+      + '</h2>'
+      + '<div class="tbl-wrap"><table>'
+      + '<thead><tr><th>Durum</th><th>Analiz Adı</th><th>Kategori</th>'
+      + '<th>Eski Fiyat</th><th>Yeni Fiyat</th><th>Para Birimi</th><th>Birim</th><th>Not</th>'
+      + '</tr></thead><tbody>';
 
-    d.added.forEach(a => {
-      html += `<tr class="row-add">
-        <td><span class="badge badge-add">Yeni</span></td>
-        <td>${esc(a.name)}</td>
-        <td>${esc(a.category||'')}</td>
-        <td><strong>${fmt(a.price)}</strong></td>
-        <td>${esc(a.unit||'')}</td>
-      </tr>`;
-    });
-
-    d.deleted.forEach(a => {
-      html += `<tr class="row-del">
-        <td><span class="badge badge-del">Silindi</span></td>
-        <td>${esc(a.name)}</td>
-        <td>${esc(a.category||'')}</td>
-        <td>${fmt(a.price)}</td>
-        <td>${esc(a.unit||'')}</td>
-      </tr>`;
-    });
-
-    d.changed.forEach(a => {
-      const old = mainMap[c.id]?.analyses?.find(x => x.name === a.name);
-      html += `<tr class="row-chg">
-        <td><span class="badge badge-chg">Fiyat Değişti</span></td>
-        <td>${esc(a.name)}</td>
-        <td>${esc(a.category||'')}</td>
-        <td>
-          <span class="price-old">${fmt(old?.price)}</span>
-          <span class="price-new">→ ${fmt(a.price)}</span>
-        </td>
-        <td>${esc(a.unit||'')}</td>
-      </tr>`;
+    rows.forEach(function(a) {
+      var mainList = mainMap[c.id] ? mainMap[c.id].analyses || [] : [];
+      var old = mainList.find(function(x) { return x.name === a.name; });
+      var badge = a._t === 'add'
+        ? '<span class="badge badge-add">Yeni</span>'
+        : a._t === 'del'
+          ? '<span class="badge badge-del">Silindi</span>'
+          : '<span class="badge badge-chg">Fiyat Değişti</span>';
+      var rowCls = { add:'row-add', del:'row-del', chg:'row-chg' }[a._t];
+      var sym = CURRENCY_SYMBOLS[a.currency || 'TRY'] || '₺';
+      html += '<tr class="' + rowCls + '">'
+        + '<td>' + badge + '</td>'
+        + '<td>' + esc(a.name) + '</td>'
+        + '<td>' + esc(a.category || '') + '</td>'
+        + '<td>' + (old ? fmtC(old.price, old.currency || 'TRY') : '—') + '</td>'
+        + '<td>' + (a._t !== 'del' ? '<strong>' + fmtC(a.price, a.currency || 'TRY') + '</strong>' : '—') + '</td>'
+        + '<td>' + esc(a.currency || 'TRY') + '</td>'
+        + '<td>' + esc(a.unit || '') + '</td>'
+        + '<td class="notes-cell" title="' + esc(a.notes || '') + '">' + esc(a.notes || '') + '</td>'
+        + '</tr>';
     });
 
     html += '</tbody></table></div></div>';
   });
 
-  if (!hasAny) {
-    html = '<div class="ok-box">✅ Staging ve main arasında fark yok.<br>'
-      + 'Tüm analizleri görmek için <strong>Tüm Analizler</strong> sekmesine geçin.</div>';
-  }
-
-  el.innerHTML = html;
+  el.innerHTML = hasAny
+    ? html
+    : '<div class="ok-box">✅ '
+      + (changeFilter === 'all'
+        ? 'Staging ve main arasında fark yok.'
+        : 'Bu filtreye uygun değişiklik yok.')
+      + '</div>';
 }
 
-// ─── RENDER: FULL CATALOG ────────────────────────────────────────────────────────
+/* ── RENDER: CATALOG ───────────────────────────────────────────────────── */
 function renderCatalog() {
-  const el = document.getElementById('catalogContent');
-  let html = '';
+  var el = document.getElementById('catalogContent');
+  var html = '';
 
-  centers.forEach(c => {
-    // Show staging if available, otherwise main (so catalog is always populated)
-    const analyses = stagingMap[c.id]?.content?.analyses
-                   || mainMap[c.id]?.analyses
-                   || [];
+  centers.forEach(function(c) {
+    var sf = stagingMap[c.id];
+    var analyses = sf ? (sf.content && sf.content.analyses ? sf.content.analyses : [])
+                      : (mainMap[c.id] ? mainMap[c.id].analyses || [] : []);
+    var hasEdits = (pendEdits[c.id] && Object.keys(pendEdits[c.id]).length > 0)
+                || (pendDeletes[c.id] && pendDeletes[c.id].size > 0);
 
-    html += `<div class="section" data-center-id="${esc(c.id)}">
-      <h2>${esc(c.name)}
-        <span class="cnt">${esc(c.city)}</span>
-        <span class="cnt">${analyses.length} analiz</span>
-        <button class="btn-add-row" onclick="openAddModal('${esc(c.id)}')">+ Analiz Ekle</button>
-      </h2>`;
+    html += '<div class="section" data-center-id="' + esc(c.id) + '">'
+      + '<h2>' + esc(c.name)
+      + ' <span class="cnt">' + esc(c.city) + '</span>'
+      + ' <span class="cnt">' + analyses.length + ' analiz</span>'
+      + ' <button class="btn-add-row" onclick="openAddModal(\'' + esc(c.id) + '\')">+ Analiz Ekle</button>'
+      + '</h2>'
+      + (hasEdits
+        ? '<div class="pending-bar">⚡ <span>Kaydedilmemiş değişiklik var.</span>'
+          + '<button class="btn-undo" onclick="undoCenter(\'' + esc(c.id) + '\')">Geri Al</button></div>'
+        : '')
+      + '<p class="edit-hint">Düzenlemek için bir hücreye tıklayın.</p>'
+      + '<div class="tbl-wrap"><table>'
+      + '<thead><tr><th>Analiz Adı</th><th>Kategori</th>'
+      + '<th>Fiyat</th><th>Para Birimi</th><th>Birim</th><th>Not</th><th></th>'
+      + '</tr></thead><tbody id="tbody-' + safeId(c.id) + '">';
 
-    // Pending edits hint
-    const hasEdits = Object.keys(pendEdits[c.id]||{}).length ||
-                     (pendDeletes[c.id]?.size||0);
-    if (hasEdits) {
-      html += `<div class="pending-bar">
-        ⚡ <span>Bu merkez için kaydedilmemiş değişiklikler var.</span>
-        <button class="btn-undo" onclick="undoCenter('${esc(c.id)}')">Geri Al</button>
-      </div>`;
-    }
-
-    html += `<p class="edit-hint">Düzenlemek için bir hücreye tıklayın.</p>
-      <div class="tbl-wrap"><table>
-        <thead><tr>
-          <th>Analiz Adı</th><th>Kategori</th>
-          <th>Fiyat (TL)</th><th>Birim</th><th></th>
-        </tr></thead>
-        <tbody id="tbody-${esc(c.id)}">`;
-
-    analyses.forEach(a => {
-      html += catalogRow(c.id, a, false);
-    });
+    analyses.forEach(function(a) { html += catalogRow(c.id, a); });
 
     html += '</tbody></table></div></div>';
   });
@@ -673,89 +691,83 @@ function renderCatalog() {
   el.innerHTML = html;
 }
 
-function catalogRow(centerId, a, isManual) {
-  const isDel = pendDeletes[centerId]?.has(a.name) || false;
-  const rowCls = isDel ? 'row-del' : (isManual ? 'row-man' : '');
-  const sid = safeId(a.name);
-  const nameEsc = esc(a.name);
-  const catEsc  = esc(a.category||'');
-
-  return `<tr class="${rowCls}" id="tr-${esc(centerId)}-${sid}">
-    <td class="editable" title="Düzenle"
-        onclick="editCell(this,'${esc(centerId)}','${nameEsc}','name')">${nameEsc}</td>
-    <td class="editable" title="Düzenle"
-        onclick="editCell(this,'${esc(centerId)}','${nameEsc}','category')">${catEsc}</td>
-    <td class="editable" title="Düzenle"
-        onclick="editCell(this,'${esc(centerId)}','${nameEsc}','price')">${fmt(a.price)}</td>
-    <td>${esc(a.unit||'numune')}</td>
-    <td>
-      <button class="btn-del-row" title="${isDel?'Geri al':'Sil'}"
-        onclick="toggleDelete('${esc(centerId)}','${nameEsc}')">
-        ${isDel ? '↩' : '🗑'}
-      </button>
-    </td>
-  </tr>`;
+function catalogRow(cid, a) {
+  var isDel = pendDeletes[cid] && pendDeletes[cid].has(a.name);
+  var cls   = isDel ? 'row-del' : '';
+  var sid   = safeId(cid) + '__' + safeId(a.name);
+  var sym   = CURRENCY_SYMBOLS[a.currency || 'TRY'] || '₺';
+  var price = Number(a.price || 0).toLocaleString('tr-TR') + ' ' + sym;
+  return '<tr class="' + cls + '" id="tr-' + sid + '">'
+    + '<td class="editable" onclick="editCell(this,\'' + jsStr(cid) + '\',\'' + jsStr(a.name) + '\',\'name\')">' + esc(a.name) + '</td>'
+    + '<td class="editable" onclick="editCell(this,\'' + jsStr(cid) + '\',\'' + jsStr(a.name) + '\',\'category\')">' + esc(a.category || '') + '</td>'
+    + '<td class="editable" onclick="editCell(this,\'' + jsStr(cid) + '\',\'' + jsStr(a.name) + '\',\'price\')">' + price + '</td>'
+    + '<td class="editable" onclick="editCell(this,\'' + jsStr(cid) + '\',\'' + jsStr(a.name) + '\',\'currency\')">' + esc(a.currency || 'TRY') + '</td>'
+    + '<td class="editable" onclick="editCell(this,\'' + jsStr(cid) + '\',\'' + jsStr(a.name) + '\',\'unit\')">' + esc(a.unit || 'numune') + '</td>'
+    + '<td class="editable notes-cell" title="' + esc(a.notes || '') + '" onclick="editCell(this,\'' + jsStr(cid) + '\',\'' + jsStr(a.name) + '\',\'notes\')">'
+    + (a.notes ? esc(a.notes) : '<span style="color:var(--muted);font-style:italic">—</span>') + '</td>'
+    + '<td><button class="btn-del-row" onclick="toggleDelete(\'' + jsStr(cid) + '\',\'' + jsStr(a.name) + '\')">'
+    + (isDel ? '↩' : '🗑') + '</button></td>'
+    + '</tr>';
 }
 
 function filterCatalog() {
-  const q = document.getElementById('catalogSearch').value.toLowerCase();
-  document.querySelectorAll('#catalogContent .section').forEach(sec => {
-    const rows = sec.querySelectorAll('tbody tr');
-    let vis = 0;
-    rows.forEach(tr => {
-      const m = !q || tr.textContent.toLowerCase().includes(q);
+  var q = document.getElementById('catalogSearch').value.toLowerCase();
+  document.querySelectorAll('#catalogContent .section').forEach(function(sec) {
+    var rows = sec.querySelectorAll('tbody tr');
+    var vis = 0;
+    rows.forEach(function(tr) {
+      var m = !q || tr.textContent.toLowerCase().includes(q);
       tr.style.display = m ? '' : 'none';
       if (m) vis++;
     });
-    sec.style.display = !q || vis ? '' : 'none';
+    sec.style.display = (!q || vis) ? '' : 'none';
   });
 }
 
-// ─── RENDER: OVERRIDES TAB ──────────────────────────────────────────────────────
+/* ── RENDER: OVERRIDES ─────────────────────────────────────────────────── */
 function renderOverrides() {
-  const el = document.getElementById('overridesContent');
-  let html = '';
-  let total = 0;
+  var el = document.getElementById('overridesContent');
+  var html = '';
+  var total = 0;
 
-  centers.forEach(c => {
-    const saved   = overrideMap[c.id]?.content?.overrides || [];
-    const pending = pendAdds[c.id] || [];
-    const all     = [...saved, ...pending];
+  centers.forEach(function(c) {
+    var ov      = overrideMap[c.id];
+    var saved   = (ov && ov.content && ov.content.overrides) ? ov.content.overrides : [];
+    var pending = pendAdds[c.id] || [];
+    var all     = saved.concat(pending);
     if (!all.length) return;
     total += all.length;
 
-    html += `<div class="section">
-      <h2>${esc(c.name)}
-        <span class="cnt">${all.length} manuel</span>
-      </h2>
-      <div class="tbl-wrap"><table>
-        <thead><tr>
-          <th>Durum</th><th>Analiz Adı</th>
-          <th>Kategori</th><th>Fiyat (TL)</th><th>Birim</th><th></th>
-        </tr></thead><tbody>`;
+    html += '<div class="section"><h2>' + esc(c.name)
+      + ' <span class="cnt">' + all.length + ' manuel</span></h2>'
+      + '<div class="tbl-wrap"><table>'
+      + '<thead><tr><th>Durum</th><th>Analiz Adı</th><th>Kategori</th>'
+      + '<th>Fiyat</th><th>Para Birimi</th><th>Birim</th><th>Not</th><th></th>'
+      + '</tr></thead><tbody>';
 
-    saved.forEach(a => {
-      html += `<tr class="row-man">
-        <td><span class="badge badge-man">Kaydedilmiş</span></td>
-        <td>${esc(a.name)}</td>
-        <td>${esc(a.category||'')}</td>
-        <td>${fmt(a.price)}</td>
-        <td>${esc(a.unit||'numune')}</td>
-        <td><button class="btn-del-row" title="Kaldır"
-          onclick="removeOverride('${esc(c.id)}','${esc(a.name)}')">🗑</button></td>
-      </tr>`;
+    saved.forEach(function(a) {
+      var sym = CURRENCY_SYMBOLS[a.currency || 'TRY'] || '₺';
+      html += '<tr class="row-man">'
+        + '<td><span class="badge badge-man">Kaydedilmiş</span></td>'
+        + '<td>' + esc(a.name) + '</td><td>' + esc(a.category || '') + '</td>'
+        + '<td>' + fmtC(a.price, a.currency || 'TRY') + '</td>'
+        + '<td>' + esc(a.currency || 'TRY') + '</td>'
+        + '<td>' + esc(a.unit || 'numune') + '</td>'
+        + '<td class="notes-cell" title="' + esc(a.notes || '') + '">' + esc(a.notes || '') + '</td>'
+        + '<td><button class="btn-del-row" onclick="removeOverride(\'' + jsStr(c.id) + '\',\'' + jsStr(a.name) + '\')">🗑</button></td>'
+        + '</tr>';
     });
 
-    pending.forEach(a => {
-      html += `<tr class="row-add">
-        <td><span class="badge badge-add">Onay Bekliyor</span></td>
-        <td>${esc(a.name)}</td>
-        <td>${esc(a.category||'')}</td>
-        <td>${fmt(a.price)}</td>
-        <td>${esc(a.unit||'numune')}</td>
-        <td><button class="btn-del-row" title="İptal"
-          onclick="cancelPendingAdd('${esc(c.id)}','${esc(a.name)}')">✕</button></td>
-      </tr>`;
+    pending.forEach(function(a) {
+      html += '<tr class="row-add">'
+        + '<td><span class="badge badge-add">Onay Bekliyor</span></td>'
+        + '<td>' + esc(a.name) + '</td><td>' + esc(a.category || '') + '</td>'
+        + '<td>' + fmtC(a.price, a.currency || 'TRY') + '</td>'
+        + '<td>' + esc(a.currency || 'TRY') + '</td>'
+        + '<td>' + esc(a.unit || 'numune') + '</td>'
+        + '<td class="notes-cell" title="' + esc(a.notes || '') + '">' + esc(a.notes || '') + '</td>'
+        + '<td><button class="btn-del-row" onclick="cancelPendingAdd(\'' + jsStr(c.id) + '\',\'' + jsStr(a.name) + '\')">✕</button></td>'
+        + '</tr>';
     });
 
     html += '</tbody></table></div></div>';
@@ -763,247 +775,256 @@ function renderOverrides() {
 
   el.innerHTML = total
     ? html
-    : `<div class="empty">Henüz manuel ekleme yok.<br><br>
-        <button class="btn btn-primary" style="margin:0 auto;display:block;max-width:200px"
-          onclick="openAddModal()">+ Analiz Ekle</button></div>`;
+    : '<div class="empty">Henüz manuel ekleme yok.<br><br>'
+      + '<button class="btn btn-primary" style="margin:0 auto;display:block;max-width:200px"'
+      + ' onclick="openAddModal()">+ Analiz Ekle</button></div>';
 }
 
-// ─── INLINE EDITING ──────────────────────────────────────────────────────────────
-function editCell(td, centerId, analysisName, field) {
+/* ── INLINE EDITING ────────────────────────────────────────────────────── */
+function editCell(td, cid, analysisName, field) {
   if (td.querySelector('input,select')) return;
-  const current = td.textContent.trim();
-  let input;
+  var input;
 
-  if (field === 'category' && categories.length) {
+  if (field === 'category') {
     input = document.createElement('select');
-    categories.forEach(cat => {
-      const o = new Option(cat, cat, cat === current, cat === current);
+    var curCat = td.textContent.trim();
+    categories.forEach(function(cat) {
+      var o = new Option(cat, cat, cat === curCat, cat === curCat);
+      input.appendChild(o);
+    });
+  } else if (field === 'currency') {
+    input = document.createElement('select');
+    var curCur = td.textContent.trim();
+    CURRENCIES.forEach(function(c) {
+      var o = new Option(c, c, c === curCur, c === curCur);
+      input.appendChild(o);
+    });
+  } else if (field === 'unit') {
+    input = document.createElement('select');
+    var curUnit = td.textContent.trim();
+    UNITS.forEach(function(u) {
+      var o = new Option(u, u, u === curUnit, u === curUnit);
       input.appendChild(o);
     });
   } else {
     input = document.createElement('input');
-    input.type  = field === 'price' ? 'number' : 'text';
-    input.value = field === 'price' ? current.replace(/[^\d.]/g, '') : current;
+    if (field === 'price') {
+      input.type = 'number';
+      input.min  = '0';
+      input.step = '0.01';
+      input.value = parseFloat(td.textContent.replace(/[^0-9.,]/g,'').replace(',','.')) || 0;
+    } else {
+      input.type  = 'text';
+      input.value = (td.textContent.trim() === '—') ? '' : td.textContent.trim();
+    }
   }
 
-  const commit = () => {
-    const raw = input.value;
-    const val = field === 'price' ? parseFloat(raw) : raw.trim();
-    if (!isNaN(val) || field !== 'price') {
-      if (!pendEdits[centerId]) pendEdits[centerId] = {};
-      if (!pendEdits[centerId][analysisName]) pendEdits[centerId][analysisName] = {};
-      pendEdits[centerId][analysisName][field] = val;
+  function commit() {
+    var raw = input.value;
+    var val = (field === 'price') ? parseFloat(raw) : raw.trim();
+    if (!pendEdits[cid]) pendEdits[cid] = {};
+    if (!pendEdits[cid][analysisName]) pendEdits[cid][analysisName] = {};
+    pendEdits[cid][analysisName][field] = val;
+
+    if (field === 'price') {
+      var patchCur = (pendEdits[cid][analysisName]['currency']) || 'TRY';
+      var sym = CURRENCY_SYMBOLS[patchCur] || '₺';
+      td.textContent = Number(val).toLocaleString('tr-TR') + ' ' + sym;
+    } else if (field === 'notes' && !val) {
+      td.innerHTML = '<span style="color:var(--muted);font-style:italic">—</span>';
+    } else {
+      td.textContent = val;
     }
-    td.textContent = field === 'price' ? fmt(val) : String(val);
     updateApproveBtn();
     updateSummary();
-  };
+  }
 
-  input.onblur   = commit;
-  input.onkeydown = e => { if (e.key === 'Enter') input.blur(); if (e.key === 'Escape') { td.textContent = current; } };
+  input.onblur = commit;
+  input.onkeydown = function(e) {
+    if (e.key === 'Enter') input.blur();
+    if (e.key === 'Escape') { td.textContent = td.dataset.orig || ''; }
+  };
+  td.dataset.orig = td.textContent;
   td.textContent = '';
   td.appendChild(input);
   input.focus();
-  if (field !== 'category') input.select();
+  if (input.tagName === 'INPUT') input.select();
 }
 
-function toggleDelete(centerId, name) {
-  if (!pendDeletes[centerId]) pendDeletes[centerId] = new Set();
-  const s = pendDeletes[centerId];
-  s.has(name) ? s.delete(name) : s.add(name);
-  // Re-render that row
-  const analyses = stagingMap[centerId]?.content?.analyses
-                 || mainMap[centerId]?.analyses || [];
-  const a = analyses.find(x => x.name === name);
+function toggleDelete(cid, name) {
+  if (!pendDeletes[cid]) pendDeletes[cid] = new Set();
+  var s = pendDeletes[cid];
+  if (s.has(name)) s.delete(name); else s.add(name);
+  var sf = stagingMap[cid];
+  var analyses = sf ? (sf.content && sf.content.analyses ? sf.content.analyses : [])
+                    : (mainMap[cid] ? mainMap[cid].analyses || [] : []);
+  var a = analyses.find(function(x) { return x.name === name; });
   if (!a) return;
-  const tbody = document.getElementById(`tbody-${safeId(centerId)}`);
-  const existing = document.getElementById(`tr-${safeId(centerId)}-${safeId(name)}`);
-  if (existing && tbody) {
-    const newRow = document.createElement('tbody');
-    newRow.innerHTML = catalogRow(centerId, a, false);
-    existing.replaceWith(newRow.firstElementChild);
+  var old = document.getElementById('tr-' + safeId(cid) + '__' + safeId(name));
+  if (old) {
+    var tmp = document.createElement('tbody');
+    tmp.innerHTML = catalogRow(cid, a);
+    old.replaceWith(tmp.firstElementChild);
   }
-  updateApproveBtn();
-  updateSummary();
+  updateApproveBtn(); updateSummary();
 }
 
-function undoCenter(centerId) {
-  delete pendEdits[centerId];
-  delete pendDeletes[centerId];
+function undoCenter(cid) {
+  delete pendEdits[cid];
+  delete pendDeletes[cid];
   renderCatalog();
-  updateApproveBtn();
-  updateSummary();
+  updateApproveBtn(); updateSummary();
 }
 
-// ─── ADD ANALYSIS ────────────────────────────────────────────────────────────────
-function openAddModal(defaultCenterId) {
-  const sel = document.getElementById('addCenter');
-  sel.innerHTML = centers.map(c =>
-    `<option value="${esc(c.id)}" ${c.id===defaultCenterId?'selected':''}>${esc(c.name)}</option>`
-  ).join('');
-  const catSel = document.getElementById('addCategory');
-  catSel.innerHTML = categories.map(cat =>
-    `<option value="${esc(cat)}">${esc(cat)}</option>`
-  ).join('');
-  ['addName','addPrice','addNotes'].forEach(id =>
-    document.getElementById(id).value = '');
-  document.getElementById('addUnit').value = 'numune';
+/* ── ADD ANALYSIS ──────────────────────────────────────────────────────── */
+function openAddModal(defaultCid) {
+  var sel = document.getElementById('addCenter');
+  sel.innerHTML = centers.map(function(c) {
+    return '<option value="' + esc(c.id) + '"' + (c.id === defaultCid ? ' selected' : '') + '>'
+      + esc(c.name) + '</option>';
+  }).join('');
+  var catSel = document.getElementById('addCategory');
+  catSel.innerHTML = [''].concat(categories).map(function(cat, i) {
+    return '<option value="' + esc(cat) + '">' + (i === 0 ? '— Kategori seçin —' : esc(cat)) + '</option>';
+  }).join('');
+  ['addName','addNotes'].forEach(function(id) { document.getElementById(id).value = ''; });
+  document.getElementById('addPrice').value    = '';
+  document.getElementById('addUnit').value     = 'numune';
+  document.getElementById('addCurrency').value = 'TRY';
   showModal('addOverlay');
 }
 
 function submitAdd() {
-  const centerId = document.getElementById('addCenter').value;
-  const name     = document.getElementById('addName').value.trim();
-  const category = document.getElementById('addCategory').value;
-  const price    = parseFloat(document.getElementById('addPrice').value);
-  const unit     = document.getElementById('addUnit').value;
-  const notes    = document.getElementById('addNotes').value.trim();
+  var cid      = document.getElementById('addCenter').value;
+  var name     = document.getElementById('addName').value.trim();
+  var category = document.getElementById('addCategory').value;
+  var price    = parseFloat(document.getElementById('addPrice').value);
+  var currency = document.getElementById('addCurrency').value;
+  var unit     = document.getElementById('addUnit').value;
+  var notes    = document.getElementById('addNotes').value.trim();
 
-  if (!name)      { alert('Analiz adı boş bırakılamaz.'); return; }
-  if (isNaN(price)||price<=0) { alert('Geçerli bir fiyat girin.'); return; }
+  if (!name)             { alert('Analiz adı boş bırakılamaz.'); return; }
+  if (isNaN(price)||price < 0) { alert('Geçerli bir fiyat girin.'); return; }
 
-  if (!pendAdds[centerId]) pendAdds[centerId] = [];
-  pendAdds[centerId].push({ name, category, price, currency:'TRY', unit, notes, manual:true });
+  if (!pendAdds[cid]) pendAdds[cid] = [];
+  pendAdds[cid].push({ name:name, category:category, price:price,
+    currency:currency, unit:unit, notes:notes, manual:true });
 
   hideModal('addOverlay');
   renderOverrides();
-  updateSummary();
-  updateApproveBtn();
+  updateSummary(); updateApproveBtn();
   showTab('overrides');
 }
 
-function cancelPendingAdd(centerId, name) {
-  if (pendAdds[centerId]) {
-    pendAdds[centerId] = pendAdds[centerId].filter(a => a.name !== name);
-  }
-  renderOverrides();
-  updateSummary();
-  updateApproveBtn();
+function cancelPendingAdd(cid, name) {
+  if (pendAdds[cid]) pendAdds[cid] = pendAdds[cid].filter(function(a) { return a.name !== name; });
+  renderOverrides(); updateSummary(); updateApproveBtn();
 }
 
-async function removeOverride(centerId, name) {
-  if (!confirm(`"${name}" manuel kaydı kaldırılsın mı?`)) return;
+async function removeOverride(cid, name) {
+  if (!confirm('"' + name + '" manuel kaydı kaldırılsın mı?')) return;
   if (!token) { showModal('tokenOverlay'); return; }
-  const file = overrideMap[centerId];
+  var file = overrideMap[cid];
   if (!file) return;
-  file.content.overrides = file.content.overrides.filter(a => a.name !== name);
+  file.content.overrides = file.content.overrides.filter(function(a) { return a.name !== name; });
   try {
-    const res = await apiWrite(
-      `data/overrides/${centerId}.json`,
-      file.content, file.sha,
-      `chore: remove override "${name}"`
-    );
-    // Refresh SHA
-    const updated = await apiRead(STAGING, `data/overrides/${centerId}.json`);
-    if (updated) overrideMap[centerId] = updated;
-    renderOverrides();
-    updateSummary();
+    await apiWrite('data/overrides/' + cid + '.json', file.content, file.sha,
+      'chore: remove override "' + name + '"');
+    var up = await apiRead(STAGING, 'data/overrides/' + cid + '.json');
+    if (up) overrideMap[cid] = up;
+    renderOverrides(); updateSummary();
   } catch(e) { alert('Hata: ' + e.message); }
 }
 
-// ─── APPROVE ─────────────────────────────────────────────────────────────────────
+/* ── APPROVE ───────────────────────────────────────────────────────────── */
 function approve() {
   if (!token) { showModal('tokenOverlay'); return; }
 
-  const lines = [];
-  centers.forEach(c => {
-    const d   = getDiff(c.id);
-    const edC = Object.keys(pendEdits[c.id]||{}).length;
-    const delC = pendDeletes[c.id]?.size || 0;
-    const addC = pendAdds[c.id]?.length || 0;
-    if (d.added.length||d.deleted.length||d.changed.length||edC||delC||addC) {
-      lines.push(`<strong>${c.name}:</strong> `
-        + [d.added.length   ? `${d.added.length} yeni`     : '',
-           d.deleted.length ? `${d.deleted.length} silindi` : '',
-           d.changed.length ? `${d.changed.length} fiyat değişti` : '',
-           edC  ? `${edC} düzenlendi`   : '',
-           delC ? `${delC} silindi (lokal)` : '',
-           addC ? `${addC} manuel eklendi`  : '']
-          .filter(Boolean).join(', ')
-      );
-    }
+  var lines = [];
+  centers.forEach(function(c) {
+    var d   = getDiff(c.id);
+    var edC = pendEdits[c.id]   ? Object.keys(pendEdits[c.id]).length : 0;
+    var dlC = pendDeletes[c.id] ? pendDeletes[c.id].size : 0;
+    var adC = pendAdds[c.id]    ? pendAdds[c.id].length : 0;
+    var parts = [];
+    if (d.added.length)   parts.push(d.added.length + ' yeni');
+    if (d.deleted.length) parts.push(d.deleted.length + ' silindi');
+    if (d.changed.length) parts.push(d.changed.length + ' fiyat değişti');
+    if (edC)              parts.push(edC + ' düzenlendi');
+    if (dlC)              parts.push(dlC + ' silindi (lokal)');
+    if (adC)              parts.push(adC + ' manuel eklendi');
+    if (parts.length) lines.push('<strong>' + esc(c.name) + ':</strong> ' + parts.join(', '));
   });
 
-  document.getElementById('confirmBody').innerHTML =
-    (lines.length
-      ? `<div class="info-box" style="margin-bottom:12px">${lines.join('<br>')}</div>`
-      : '') +
-    'Tüm değişiklikler <strong>staging</strong> branchine kaydedilecek, '
-    + 'ardından <strong>main</strong> branchine merge edilecek.<br><br>'
-    + 'Bu işlem geri alınamaz. Devam edilsin mi?';
+  var body = lines.length
+    ? '<div class="info-box" style="margin-bottom:12px">' + lines.join('<br>') + '</div>'
+    : '';
+  body += 'Değişiklikler <strong>staging</strong> branchine kaydedilecek, '
+    + 'ardından <strong>main</strong> branchine merge edilecek. Devam?';
 
+  document.getElementById('confirmBody').innerHTML = body;
   showModal('confirmOverlay');
 }
 
 async function doApprove() {
   hideModal('confirmOverlay');
-  const btn = document.getElementById('approveBtn');
+  var btn = document.getElementById('approveBtn');
   btn.disabled = true;
   btn.textContent = '⏳ Kaydediliyor...';
 
   try {
-    // 1. Commit edits + deletes to staging analyses files
-    const changedCenters = new Set([
-      ...Object.keys(pendEdits),
-      ...Object.keys(pendDeletes)
-    ]);
-    for (const cid of changedCenters) {
-      const file = stagingMap[cid];
+    /* 1. Commit edits + deletes */
+    var editedIds = Object.keys(Object.assign({}, pendEdits, pendDeletes));
+    for (var i = 0; i < editedIds.length; i++) {
+      var cid  = editedIds[i];
+      var file = stagingMap[cid];
       if (!file) continue;
-      let analyses = [...(file.content.analyses || [])];
+      var analyses = (file.content.analyses || []).slice();
 
-      // Apply edits
       if (pendEdits[cid]) {
-        analyses = analyses.map(a => {
-          const patch = pendEdits[cid][a.name];
-          return patch ? { ...a, ...patch } : a;
+        analyses = analyses.map(function(a) {
+          var p = pendEdits[cid][a.name];
+          return p ? Object.assign({}, a, p) : a;
         });
       }
-      // Apply deletes
-      if (pendDeletes[cid]?.size) {
-        analyses = analyses.filter(a => !pendDeletes[cid].has(a.name));
+      if (pendDeletes[cid] && pendDeletes[cid].size) {
+        analyses = analyses.filter(function(a) { return !pendDeletes[cid].has(a.name); });
       }
 
-      const newContent = { ...file.content, analyses };
-      await apiWrite(
-        `data/analyses/${cid}.json`,
-        newContent, file.sha,
-        `fix: inceleme paneli düzenlemesi — ${centers.find(c=>c.id===cid)?.name}`
-      );
-      // Refresh local SHA
-      const updated = await apiRead(STAGING, `data/analyses/${cid}.json`);
-      if (updated) stagingMap[cid] = updated;
+      var nc = Object.assign({}, file.content, { analyses: analyses });
+      var center = centers.find(function(c) { return c.id === cid; });
+      await apiWrite('data/analyses/' + cid + '.json', nc, file.sha,
+        'fix: panel düzenlemesi — ' + (center ? center.name : cid));
+      var up = await apiRead(STAGING, 'data/analyses/' + cid + '.json');
+      if (up) stagingMap[cid] = up;
     }
 
-    // 2. Commit pending override additions
+    /* 2. Commit overrides */
     btn.textContent = '⏳ Manuel eklemeler kaydediliyor...';
-    for (const cid of Object.keys(pendAdds)) {
-      const additions = pendAdds[cid];
+    var addIds = Object.keys(pendAdds);
+    for (var j = 0; j < addIds.length; j++) {
+      var acid = addIds[j];
+      var additions = pendAdds[acid];
       if (!additions.length) continue;
-      const center   = centers.find(c => c.id === cid);
-      const existing = overrideMap[cid];
-      const newContent = existing
-        ? { ...existing.content,
-            overrides: [...(existing.content.overrides||[]), ...additions] }
-        : { center_id: cid, center_name: center?.name, overrides: additions };
-      await apiWrite(
-        `data/overrides/${cid}.json`,
-        newContent, existing?.sha || null,
-        `feat: manuel analiz eklendi — ${center?.name}`
-      );
-      const updated = await apiRead(STAGING, `data/overrides/${cid}.json`);
-      if (updated) overrideMap[cid] = updated;
+      var ac = centers.find(function(c) { return c.id === acid; });
+      var existing = overrideMap[acid];
+      var existOverrides = (existing && existing.content && existing.content.overrides)
+        ? existing.content.overrides : [];
+      var nc2 = { center_id: acid, center_name: ac ? ac.name : acid,
+                  overrides: existOverrides.concat(additions) };
+      await apiWrite('data/overrides/' + acid + '.json', nc2,
+        existing ? existing.sha : null,
+        'feat: manuel analiz — ' + (ac ? ac.name : acid));
+      var up2 = await apiRead(STAGING, 'data/overrides/' + acid + '.json');
+      if (up2) overrideMap[acid] = up2;
     }
 
-    // 3. Trigger merge workflow
+    /* 3. Merge */
     btn.textContent = '⏳ Yayınlanıyor...';
     await triggerMerge('İnceleme panelinden onaylandı');
 
-    // 4. Clear pending state
     pendEdits = {}; pendAdds = {}; pendDeletes = {};
-
-    alert('✅ Onaylandı!\n\nMerge workflow başlatıldı. GitHub Actions tamamlandığında uygulama güncellenir (1-2 dakika).');
-
+    alert('✅ Onaylandı!\nMerge başlatıldı. 1-2 dakika içinde uygulama güncellenir.');
     btn.textContent = '✓ Onayla ve Yayınla';
     btn.disabled = false;
     await loadAll();
@@ -1015,32 +1036,32 @@ async function doApprove() {
   }
 }
 
-// ─── UI HELPERS ──────────────────────────────────────────────────────────────────
+/* ── HELPERS ───────────────────────────────────────────────────────────── */
 function showTab(name) {
-  ['changes','catalog','overrides'].forEach(t => {
-    document.getElementById(`tab-${t}`).className =
-      t === name ? '' : 'hidden';
-  });
-  document.querySelectorAll('.tab').forEach((el, i) => {
-    const names = ['changes','catalog','overrides'];
-    el.className = 'tab' + (names[i] === name ? ' active' : '');
+  ['changes','catalog','overrides'].forEach(function(t) {
+    document.getElementById('tab-' + t).className = t === name ? '' : 'hidden';
+    document.getElementById('tab-btn-' + t).className = 'tab' + (t === name ? ' active' : '');
   });
 }
 function showModal(id) { document.getElementById(id).classList.remove('hidden'); }
 function hideModal(id) { document.getElementById(id).classList.add('hidden'); }
 
 function esc(s) {
-  return String(s||'')
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;')
     .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
-function fmt(n) {
-  const num = Number(n);
-  return isNaN(num) ? '—' : num.toLocaleString('tr-TR') + ' ₺';
-}
-function safeId(s) { return String(s||'').replace(/[^a-z0-9]/gi,'_'); }
 
-// ─── INIT ─────────────────────────────────────────────────────────────────────────
+/* Escapes a value for use inside a JS string literal in an onclick attribute */
+function jsStr(s) {
+  return String(s || '').replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+}
+
+function fmt(n)     { var x = Number(n); return isNaN(x) ? '—' : x.toLocaleString('tr-TR') + ' ₺'; }
+function fmtC(n, c) { var x = Number(n); var sym = CURRENCY_SYMBOLS[c || 'TRY'] || '₺';
+                       return isNaN(x) ? '—' : x.toLocaleString('tr-TR') + ' ' + sym; }
+function safeId(s)  { return String(s || '').replace(/[^a-z0-9]/gi, '_'); }
+
+/* ── INIT ──────────────────────────────────────────────────────────────── */
 loadAll();
 </script>
 </body>
