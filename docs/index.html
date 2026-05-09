@@ -512,7 +512,8 @@ async function loadAll() {
   renderOverrides();
   updateApproveBtn();
 
-  /* Scroll to top after render — prevents browser from jumping down */
+  /* Collapse all sections by default, then scroll to top */
+  collapseAll();
   window.scrollTo({ top: 0, behavior: 'instant' });
 }
 
@@ -1327,6 +1328,19 @@ function showErr(el, msg) {
   el.style.display = 'block';
 }
 
+/* ── COLLAPSE ALL ──────────────────────────────────────────────────────── */
+function collapseAll() {
+  document.querySelectorAll('.section-body').forEach(function(body) {
+    body.classList.add('collapsed');
+    var id = body.id.replace('body-', '');
+    collapsedSections[id] = true;
+  });
+  document.querySelectorAll('.toggle-btn').forEach(function(btn) {
+    btn.textContent = '▶';
+    btn.title = 'Genişlet';
+  });
+}
+
 /* ── INIT ──────────────────────────────────────────────────────────────── */
 loadAll();
 </script>
@@ -1338,21 +1352,21 @@ loadAll();
     <div class="field-row">
       <div class="field">
         <label>Merkez Adı *</label>
-        <input id="acName" placeholder="Örn: AKÜ TUAM" oninput="acAutoId()">
+        <input id="acName" placeholder="Örn: OMÜ ANITAM" oninput="acAutoId()">
       </div>
       <div class="field">
         <label>Merkez ID * <span style="font-weight:400;color:var(--muted)">(küçük harf, alt çizgi)</span></label>
-        <input id="acId" placeholder="Örn: aku_tuam">
+        <input id="acId" placeholder="Örn: omu_anitam">
       </div>
     </div>
     <div class="field">
       <label>Üniversite</label>
-      <input id="acUniversity" placeholder="Örn: Afyon Kocatepe Üniversitesi">
+      <input id="acUniversity" placeholder="Örn: Ondokuz Mayıs Üniversitesi">
     </div>
     <div class="field-row">
       <div class="field">
         <label>Şehir</label>
-        <input id="acCity" placeholder="Örn: Afyonkarahisar">
+        <input id="acCity" placeholder="Örn: Samsun">
       </div>
       <div class="field">
         <label>Fetch Yöntemi</label>
