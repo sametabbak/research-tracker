@@ -343,6 +343,8 @@ var categories    = [];
 var stagingExists = false;
 var changeFilter  = 'all';
 
+var pendCenterEdits = {};  /* centerId → { url, pricing_url } */
+var centersSha      = null;   /* SHA of centers.json on staging for writes */
 var pendEdits   = {};
 var pendAdds    = {};
 var pendDeletes = {};
@@ -443,6 +445,16 @@ async function loadAll() {
 
   stagingMap = {}; mainMap = {}; overrideMap = {};
   pendEdits  = {}; pendAdds = {}; pendDeletes = {};
+  pendCenterEdits = {};
+
+  /* Read centers.json SHA from staging so we can write edits back to it */
+  var centersStagingFile = await apiRead(STAGING, 'data/centers.json')
+    .catch(function() { return null; });
+  if (!centersStagingFile) {
+    centersStagingFile = await apiRead(MAIN, 'data/centers.json')
+      .catch(function() { return null; });
+  }
+  centersSha = centersStagingFile ? centersStagingFile.sha : null;
 
   var results = await Promise.all([
     rawRead(MAIN, 'data/centers.json'),
@@ -549,6 +561,7 @@ function updateApproveBtn() {
     return d.added.length || d.deleted.length || d.changed.length;
   });
   var hasPending =
+    Object.keys(pendCenterEdits).length > 0 ||
     Object.keys(pendEdits).some(function(k)   { return Object.keys(pendEdits[k]).length > 0; }) ||
     Object.keys(pendAdds).some(function(k)    { return pendAdds[k].length > 0; }) ||
     Object.keys(pendDeletes).some(function(k) { return pendDeletes[k].size > 0; });
@@ -610,11 +623,15 @@ function renderChanges() {
     if (!rows.length) return;
     hasAny = true;
 
+    var purl = c.pricing_url || c.url || '';
     html += '<div class="section">'
       + '<h2>' + esc(c.name) + ' <span class="cnt">' + esc(c.city) + '</span>'
       + (d.added.length   ? ' <span class="cnt cadd">+' + d.added.length + ' yeni</span>'         : '')
       + (d.deleted.length ? ' <span class="cnt cdel">-' + d.deleted.length + ' silindi</span>'   : '')
       + (d.changed.length ? ' <span class="cnt cchg">'  + d.changed.length + ' değişti</span>'   : '')
+      + (purl ? ' <a href="' + esc(purl) + '" target="_blank" rel="noopener" '
+             + 'style="font-size:11px;color:var(--primary);font-weight:500;text-decoration:none;">'
+             + '↗ Fiyat Listesi</a>' : '')
       + '</h2>'
       + '<div class="tbl-wrap"><table>'
       + '<thead><tr><th>Durum</th><th>Analiz Adı</th><th>Kategori</th>'
@@ -655,6 +672,38 @@ function renderChanges() {
       + '</div>';
 }
 
+/* ── EDIT CENTER LINKS ─────────────────────────────────────────────────── */
+function editCenterLink(span, cid, field) {
+  if (span.querySelector('input')) return;
+  var current = span.dataset.value || '';
+  var input = document.createElement('input');
+  input.type        = 'text';
+  input.value       = current;
+  input.placeholder = field === 'url' ? 'https://merkez.edu.tr' : 'https://merkez.edu.tr/fiyatlar';
+  input.style.cssText = 'width:320px;max-width:90vw;padding:3px 8px;'
+    + 'border:1px solid var(--primary);border-radius:4px;font-size:12px;font-family:inherit;';
+
+  function commit() {
+    var val = input.value.trim();
+    span.dataset.value = val;
+    span.innerHTML = val
+      ? '<a href="' + esc(val) + '" target="_blank" rel="noopener" '
+        + 'style="color:var(--primary);text-decoration:none">' + esc(val) + '</a>'
+        + ' <span style="color:var(--muted);font-size:10px">(düzenlendi)</span>'
+      : '<span style="color:var(--muted);font-style:italic">— bağlantı yok —</span>';
+    if (!pendCenterEdits[cid]) pendCenterEdits[cid] = {};
+    pendCenterEdits[cid][field] = val;
+    updateApproveBtn();
+  }
+
+  input.onblur   = commit;
+  input.onkeydown = function(e) { if (e.key === 'Enter') input.blur(); };
+  span.innerHTML = '';
+  span.appendChild(input);
+  input.focus();
+  input.select();
+}
+
 /* ── RENDER: CATALOG ───────────────────────────────────────────────────── */
 function renderCatalog() {
   var el = document.getElementById('catalogContent');
@@ -667,12 +716,42 @@ function renderCatalog() {
     var hasEdits = (pendEdits[c.id] && Object.keys(pendEdits[c.id]).length > 0)
                 || (pendDeletes[c.id] && pendDeletes[c.id].size > 0);
 
+    var centerUrl     = (pendCenterEdits[c.id] && pendCenterEdits[c.id].url        !== undefined)
+      ? pendCenterEdits[c.id].url        : (c.url         || '');
+    var centerPriceUrl= (pendCenterEdits[c.id] && pendCenterEdits[c.id].pricing_url !== undefined)
+      ? pendCenterEdits[c.id].pricing_url : (c.pricing_url || '');
+
+    function linkHtml(val) {
+      return val
+        ? '<a href="' + esc(val) + '" target="_blank" rel="noopener" '
+          + 'style="color:var(--primary);text-decoration:none">' + esc(val) + '</a>'
+        : '<span style="color:var(--muted);font-style:italic">— bağlantı yok —</span>';
+    }
+
     html += '<div class="section" data-center-id="' + esc(c.id) + '">'
       + '<h2>' + esc(c.name)
       + ' <span class="cnt">' + esc(c.city) + '</span>'
       + ' <span class="cnt">' + analyses.length + ' analiz</span>'
       + ' <button class="btn-add-row" onclick="openAddModal(\'' + esc(c.id) + '\')">+ Analiz Ekle</button>'
       + '</h2>'
+      + '<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:10px;font-size:12px;align-items:center;">'
+      + '<span>🌐 <strong>Web Sitesi:</strong> '
+      + '<span data-value="' + esc(centerUrl) + '" '
+        + 'onclick="editCenterLink(this,\'' + jsStr(c.id) + '\',\'url\')" '
+        + 'title="Düzenlemek için tıklayın" '
+        + 'style="cursor:pointer;border-radius:4px;padding:1px 4px;" '
+        + 'onmouseover="this.style.background=\'#f0f9ff\'" '
+        + 'onmouseout="this.style.background=\'\'">'
+      + linkHtml(centerUrl) + '</span></span>'
+      + '<span>📄 <strong>Fiyat Listesi:</strong> '
+      + '<span data-value="' + esc(centerPriceUrl) + '" '
+        + 'onclick="editCenterLink(this,\'' + jsStr(c.id) + '\',\'pricing_url\')" '
+        + 'title="Düzenlemek için tıklayın" '
+        + 'style="cursor:pointer;border-radius:4px;padding:1px 4px;" '
+        + 'onmouseover="this.style.background=\'#f0f9ff\'" '
+        + 'onmouseout="this.style.background=\'\'">'
+      + linkHtml(centerPriceUrl) + '</span></span>'
+      + '</div>'
       + (hasEdits
         ? '<div class="pending-bar">⚡ <span>Kaydedilmemiş değişiklik var.</span>'
           + '<button class="btn-undo" onclick="undoCenter(\'' + esc(c.id) + '\')">Geri Al</button></div>'
@@ -973,6 +1052,21 @@ async function doApprove() {
   btn.textContent = '⏳ Kaydediliyor...';
 
   try {
+    /* 0. Commit center URL edits to centers.json */
+    if (Object.keys(pendCenterEdits).length > 0) {
+      var updatedCenters = centers.map(function(c) {
+        var patch = pendCenterEdits[c.id];
+        return patch ? Object.assign({}, c, patch) : c;
+      });
+      await apiWrite('data/centers.json', updatedCenters, centersSha,
+        'fix: merkez bağlantıları güncellendi');
+      /* Refresh SHA for next write */
+      var upC = await apiRead(STAGING, 'data/centers.json');
+      if (upC) centersSha = upC.sha;
+      /* Sync local centers array */
+      centers = updatedCenters;
+    }
+
     /* 1. Commit edits + deletes */
     var editedIds = Object.keys(Object.assign({}, pendEdits, pendDeletes));
     for (var i = 0; i < editedIds.length; i++) {
