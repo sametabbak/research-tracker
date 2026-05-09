@@ -170,6 +170,13 @@ tr.row-man{background:#f0f9ff;}
 @keyframes spin{to{transform:rotate(360deg);}}
 .empty{text-align:center;padding:40px;color:var(--muted);}
 .hidden{display:none!important;}
+.section-body{transition:opacity .15s;}
+.section-body.collapsed{display:none;}
+.toggle-btn{background:none;border:none;cursor:pointer;font-size:13px;
+            color:var(--muted);padding:2px 6px;border-radius:4px;
+            margin-left:auto;flex-shrink:0;}
+.toggle-btn:hover{background:var(--bg);}
+.section h2{cursor:pointer;}
 </style>
 </head>
 <body>
@@ -226,8 +233,9 @@ tr.row-man{background:#f0f9ff;}
 
   <!-- CATALOG TAB -->
   <div id="tab-catalog" class="hidden">
-    <div class="search-bar">
-      <input id="catalogSearch" placeholder="Analiz adı, kategori veya merkez ara..." oninput="filterCatalog()">
+    <div style="display:flex;gap:10px;margin-bottom:14px;align-items:center;flex-wrap:wrap;">
+      <input id="catalogSearch" style="flex:1;padding:9px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;font-family:inherit;" placeholder="Analiz adı, kategori veya merkez ara..." oninput="filterCatalog()">
+      <button class="btn btn-primary" onclick="openAddCenterModal()" style="white-space:nowrap;">➕ Yeni Merkez Ekle</button>
     </div>
     <div id="catalogContent"><div class="loader"><div class="spin"></div></div></div>
   </div>
@@ -624,15 +632,21 @@ function renderChanges() {
     hasAny = true;
 
     var purl = c.pricing_url || c.url || '';
+    var chgSecId = 'chg_' + safeId(c.id);
+    var chgCollapsed = collapsedSections[chgSecId] || false;
     html += '<div class="section">'
-      + '<h2>' + esc(c.name) + ' <span class="cnt">' + esc(c.city) + '</span>'
+      + '<h2 onclick="toggleSection(\'' + chgSecId + '\')" title="Daralt / Genişlet">'
+      + esc(c.name) + ' <span class="cnt">' + esc(c.city) + '</span>'
       + (d.added.length   ? ' <span class="cnt cadd">+' + d.added.length + ' yeni</span>'         : '')
       + (d.deleted.length ? ' <span class="cnt cdel">-' + d.deleted.length + ' silindi</span>'   : '')
       + (d.changed.length ? ' <span class="cnt cchg">'  + d.changed.length + ' değişti</span>'   : '')
       + (purl ? ' <a href="' + esc(purl) + '" target="_blank" rel="noopener" '
              + 'style="font-size:11px;color:var(--primary);font-weight:500;text-decoration:none;">'
              + '↗ Fiyat Listesi</a>' : '')
+      + '<button class="toggle-btn" id="toggle-' + chgSecId + '" title="Daralt">'
+      + (chgCollapsed ? '▶' : '▼') + '</button>'
       + '</h2>'
+      + '<div id="body-' + chgSecId + '" class="section-body' + (chgCollapsed ? ' collapsed' : '') + '">'
       + '<div class="tbl-wrap"><table>'
       + '<thead><tr><th>Durum</th><th>Analiz Adı</th><th>Kategori</th>'
       + '<th>Eski Fiyat</th><th>Yeni Fiyat</th><th>Para Birimi</th><th>Birim</th><th>Not</th>'
@@ -660,7 +674,7 @@ function renderChanges() {
         + '</tr>';
     });
 
-    html += '</tbody></table></div></div>';
+    html += '</tbody></table></div></div></div>';
   });
 
   el.innerHTML = hasAny
@@ -670,6 +684,25 @@ function renderChanges() {
         ? 'Staging ve main arasında fark yok.'
         : 'Bu filtreye uygun değişiklik yok.')
       + '</div>';
+}
+
+/* ── COLLAPSE / EXPAND ─────────────────────────────────────────────────── */
+var collapsedSections = {};  /* sectionId → true if collapsed */
+
+function toggleSection(sectionId) {
+  collapsedSections[sectionId] = !collapsedSections[sectionId];
+  var body = document.getElementById('body-' + sectionId);
+  var btn  = document.getElementById('toggle-' + sectionId);
+  if (!body || !btn) return;
+  if (collapsedSections[sectionId]) {
+    body.classList.add('collapsed');
+    btn.textContent = '▶';
+    btn.title = 'Genişlet';
+  } else {
+    body.classList.remove('collapsed');
+    btn.textContent = '▼';
+    btn.title = 'Daralt';
+  }
 }
 
 /* ── EDIT CENTER LINKS ─────────────────────────────────────────────────── */
@@ -728,12 +761,16 @@ function renderCatalog() {
         : '<span style="color:var(--muted);font-style:italic">— bağlantı yok —</span>';
     }
 
+    var secId = safeId(c.id);
+    var isCollapsed = collapsedSections[secId] || false;
     html += '<div class="section" data-center-id="' + esc(c.id) + '">'
-      + '<h2>' + esc(c.name)
+      + '<h2 onclick="toggleSection(\'' + secId + '\')" title="Daralt / Genişlet">' + esc(c.name)
       + ' <span class="cnt">' + esc(c.city) + '</span>'
       + ' <span class="cnt">' + analyses.length + ' analiz</span>'
-      + ' <button class="btn-add-row" onclick="openAddModal(\'' + esc(c.id) + '\')">+ Analiz Ekle</button>'
+      + ' <button class="btn-add-row" onclick="event.stopPropagation();openAddModal(\'' + esc(c.id) + '\')">+ Analiz Ekle</button>'
+      + '<button class="toggle-btn" id="toggle-' + secId + '" title="Daralt">' + (isCollapsed ? '▶' : '▼') + '</button>'
       + '</h2>'
+      + '<div id="body-' + secId + '" class="section-body' + (isCollapsed ? ' collapsed' : '') + '">'
       + '<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:10px;font-size:12px;align-items:center;">'
       + '<span>🌐 <strong>Web Sitesi:</strong> '
       + '<span data-value="' + esc(centerUrl) + '" '
@@ -764,7 +801,9 @@ function renderCatalog() {
 
     analyses.forEach(function(a) { html += catalogRow(c.id, a); });
 
-    html += '</tbody></table></div></div>';
+    html += '</tbody></table></div>'  /* end tbl-wrap */
+      + '</div>'  /* end section-body */
+      + '</div>';  /* end section */
   });
 
   el.innerHTML = html;
@@ -817,8 +856,14 @@ function renderOverrides() {
     if (!all.length) return;
     total += all.length;
 
-    html += '<div class="section"><h2>' + esc(c.name)
-      + ' <span class="cnt">' + all.length + ' manuel</span></h2>'
+    var ovSecId = 'ov_' + safeId(c.id);
+    var ovCollapsed = collapsedSections[ovSecId] || false;
+    html += '<div class="section">'
+      + '<h2 onclick="toggleSection(\'' + ovSecId + '\')" title="Daralt / Genişlet">' + esc(c.name)
+      + ' <span class="cnt">' + all.length + ' manuel</span>'
+      + '<button class="toggle-btn" id="toggle-' + ovSecId + '" title="Daralt">'
+      + (ovCollapsed ? '▶' : '▼') + '</button></h2>'
+      + '<div id="body-' + ovSecId + '" class="section-body' + (ovCollapsed ? ' collapsed' : '') + '">'
       + '<div class="tbl-wrap"><table>'
       + '<thead><tr><th>Durum</th><th>Analiz Adı</th><th>Kategori</th>'
       + '<th>Fiyat</th><th>Para Birimi</th><th>Birim</th><th>Not</th><th></th>'
@@ -849,7 +894,7 @@ function renderOverrides() {
         + '</tr>';
     });
 
-    html += '</tbody></table></div></div>';
+    html += '</tbody></table></div></div></div>';
   });
 
   el.innerHTML = total
@@ -1155,8 +1200,192 @@ function fmtC(n, c) { var x = Number(n); var sym = CURRENCY_SYMBOLS[c || 'TRY'] 
                        return isNaN(x) ? '—' : x.toLocaleString('tr-TR') + ' ' + sym; }
 function safeId(s)  { return String(s || '').replace(/[^a-z0-9]/gi, '_'); }
 
+/* ── ADD CENTER ─────────────────────────────────────────────────────────── */
+function openAddCenterModal() {
+  ['acName','acId','acUniversity','acCity','acUrl','acPricingUrl'].forEach(function(id) {
+    document.getElementById(id).value = '';
+  });
+  document.getElementById('acMonths').value  = '1,6,12';
+  document.getElementById('acMethod').value  = 'manual';
+  document.getElementById('acError').style.display = 'none';
+  showModal('addCenterOverlay');
+}
+
+/* Auto-generate a safe ID from the center name */
+function acAutoId() {
+  var name = document.getElementById('acName').value;
+  /* Take the last word (abbreviation) if multiple words, else use all */
+  var parts = name.trim().toLowerCase().split(/\s+/);
+  var id = parts.join('_')
+    .replace(/ğ/g,'g').replace(/ü/g,'u').replace(/ş/g,'s')
+    .replace(/ı/g,'i').replace(/ö/g,'o').replace(/ç/g,'c')
+    .replace(/[^a-z0-9_]/g,'_')
+    .replace(/_+/g,'_').replace(/^_|_$/g,'');
+  document.getElementById('acId').value = id;
+}
+
+async function submitAddCenter() {
+  if (!token) { hideModal('addCenterOverlay'); showModal('tokenOverlay'); return; }
+
+  var name       = document.getElementById('acName').value.trim();
+  var id         = document.getElementById('acId').value.trim().toLowerCase();
+  var university = document.getElementById('acUniversity').value.trim();
+  var city       = document.getElementById('acCity').value.trim();
+  var url        = document.getElementById('acUrl').value.trim();
+  var pricingUrl = document.getElementById('acPricingUrl').value.trim();
+  var method     = document.getElementById('acMethod').value;
+  var monthsRaw  = document.getElementById('acMonths').value.trim();
+  var errEl      = document.getElementById('acError');
+
+  /* Validation */
+  if (!name) { showErr(errEl, 'Merkez adı boş bırakılamaz.'); return; }
+  if (!id)   { showErr(errEl, 'Merkez ID boş bırakılamaz.'); return; }
+  if (!/^[a-z0-9_]+$/.test(id)) {
+    showErr(errEl, 'ID yalnızca küçük harf, rakam ve alt çizgi içerebilir.'); return; }
+  if (centers.some(function(c) { return c.id === id; })) {
+    showErr(errEl, '"' + id + '" ID zaten kullaniliyor.'); return; }
+
+  var months = monthsRaw.split(',')
+    .map(function(m) { return parseInt(m.trim(), 10); })
+    .filter(function(m) { return !isNaN(m) && m >= 1 && m <= 12; });
+  if (!months.length) months = [1, 6, 12];
+
+  errEl.style.display = 'none';
+  var btn = document.querySelector('#addCenterOverlay .btn-primary');
+  btn.disabled = true;
+  btn.textContent = '⏳ Kaydediliyor...';
+
+  try {
+    /* Build new center object */
+    var newCenter = {
+      id:          id,
+      name:        name,
+      university:  university,
+      city:        city,
+      url:         url,
+      pricing_url: pricingUrl,
+      fetch_method: method,
+      check_months: months,
+      active:      true,
+      reference:   false,
+      column_name_map: method === 'html_table' ? {
+        name: null, price: null, unit: null, category: null, notes: null
+      } : null
+    };
+
+    /* 1. Add to centers.json on staging */
+    var updatedCenters = centers.concat([newCenter]);
+    await apiWrite('data/centers.json', updatedCenters, centersSha,
+      'feat: yeni merkez eklendi — ' + name);
+    var upC = await apiRead(STAGING, 'data/centers.json');
+    if (upC) centersSha = upC.sha;
+
+    /* 2. Create empty analyses file for the new center */
+    var today = new Date().toISOString().slice(0, 10);
+    var emptyAnalyses = {
+      center_id:    id,
+      center_name:  name,
+      last_updated: today,
+      source_url:   pricingUrl || url,
+      analyses:     []
+    };
+    await apiWrite('data/analyses/' + id + '.json', emptyAnalyses, null,
+      'feat: analiz dosyası oluşturuldu — ' + name);
+
+    /* 3. Create empty overrides file */
+    var emptyOverrides = { center_id: id, center_name: name, overrides: [] };
+    await apiWrite('data/overrides/' + id + '.json', emptyOverrides, null,
+      'feat: override dosyası oluşturuldu — ' + name);
+
+    /* 4. Update local state */
+    centers.push(newCenter);
+    var newStagingFile = await apiRead(STAGING, 'data/analyses/' + id + '.json');
+    if (newStagingFile) stagingMap[id] = newStagingFile;
+    mainMap[id] = { analyses: [] };
+
+    hideModal('addCenterOverlay');
+    updateSummary();
+    renderCatalog();
+    showTab('catalog');
+
+    /* Scroll to the new center section */
+    setTimeout(function() {
+      var el = document.querySelector('[data-center-id="' + id + '"]');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+
+  } catch(e) {
+    showErr(errEl, 'Hata: ' + e.message);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Kaydet';
+  }
+}
+
+function showErr(el, msg) {
+  el.textContent = msg;
+  el.style.display = 'block';
+}
+
 /* ── INIT ──────────────────────────────────────────────────────────────── */
 loadAll();
 </script>
+
+<!-- ADD CENTER MODAL -->
+<div class="overlay hidden" id="addCenterOverlay">
+  <div class="modal" style="width:520px;">
+    <h3>🏛️ Yeni Merkez Ekle</h3>
+    <div class="field-row">
+      <div class="field">
+        <label>Merkez Adı *</label>
+        <input id="acName" placeholder="Örn: OMÜ ANITAM" oninput="acAutoId()">
+      </div>
+      <div class="field">
+        <label>Merkez ID * <span style="font-weight:400;color:var(--muted)">(küçük harf, alt çizgi)</span></label>
+        <input id="acId" placeholder="Örn: omu_anitam">
+      </div>
+    </div>
+    <div class="field">
+      <label>Üniversite</label>
+      <input id="acUniversity" placeholder="Örn: Ondokuz Mayıs Üniversitesi">
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label>Şehir</label>
+        <input id="acCity" placeholder="Örn: Samsun">
+      </div>
+      <div class="field">
+        <label>Fetch Yöntemi</label>
+        <select id="acMethod">
+          <option value="manual">manual (elle girilen veriler)</option>
+          <option value="html_table">html_table</option>
+          <option value="html_then_pdf">html_then_pdf</option>
+        </select>
+      </div>
+    </div>
+    <div class="field">
+      <label>Web Sitesi</label>
+      <input id="acUrl" placeholder="https://merkez.edu.tr" type="url">
+    </div>
+    <div class="field">
+      <label>Fiyat Listesi URL</label>
+      <input id="acPricingUrl" placeholder="https://merkez.edu.tr/analiz-ucretleri" type="url">
+    </div>
+    <div class="field">
+      <label>Kontrol Ayları <span style="font-weight:400;color:var(--muted)">(virgülle ayrılmış ay numaraları, örn: 1,6,12)</span></label>
+      <input id="acMonths" placeholder="1,6,12" value="1,6,12">
+    </div>
+    <div class="info-box" style="margin-top:12px;font-size:12px;">
+      Merkez hemen <strong>staging</strong> branchine kaydedilir.
+      Ardından analizleri manuel olarak ekleyebilirsiniz.
+    </div>
+    <div id="acError" style="color:var(--del);font-size:12px;margin-top:8px;display:none;"></div>
+    <div class="modal-btns">
+      <button class="btn btn-primary" onclick="submitAddCenter()">Kaydet</button>
+      <button class="btn btn-ghost"   onclick="hideModal('addCenterOverlay')">İptal</button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
