@@ -43,6 +43,22 @@ def export_center(center: dict, result: dict, diff_report: dict) -> None:
     _write_analyses(center, analyses)
     _update_history(center, diff_report, analyses)
     _rebuild_centers_index()
+    # Merge manually maintained overrides (never overwritten by tracker)
+    overrides_path = DATA_DIR / "overrides" / f"{center['id']}.json"
+    if overrides_path.exists():
+        try:
+            overrides_data = json.loads(overrides_path.read_text(encoding="utf-8"))
+            override_entries = overrides_data.get("overrides", [])
+            if override_entries:
+                existing_names = {a["name"] for a in analyses}
+                for entry in override_entries:
+                    if entry.get("name") and entry["name"] not in existing_names:
+                        analyses.append(entry)
+                        existing_names.add(entry["name"])
+                print(f"  ✅ {len(override_entries)} manuel analiz eklendi ({center['id']})")
+        except Exception as exc:
+            print(f"  ⚠️  Override dosyası okunamadı ({center['id']}): {exc}")
+
     _rebuild_keywords()
 
 
