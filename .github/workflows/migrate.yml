@@ -28,7 +28,61 @@ jobs:
           python-version: '3.11'
 
       - name: Run migration
-        run: python migrate_keyword_groups.py
+        run: |
+          python - << 'EOF'
+          import json, glob
+          from pathlib import Path
+
+          KEYWORDS_FILE  = Path("data/keywords.json")
+          ANALYSES_GLOB  = "data/analyses/*.json"
+          FALLBACK_GROUP = "Diğer Analiz ve Laboratuvar Hizmetleri"
+
+          kw = json.loads(KEYWORDS_FILE.read_text(encoding="utf-8"))
+
+          # Build reverse index: name → group (excluding Diğer)
+          reverse = {}
+          for group, names in kw.items():
+              if group == FALLBACK_GROUP:
+                  continue
+              for name in names:
+                  clean = name.strip()
+                  if clean and clean not in reverse:
+                      reverse[clean] = group
+
+          print(f"Reverse index: {len(reverse)} entries")
+
+          total_stamped  = 0
+          total_skipped  = 0
+          total_no_match = 0
+
+          for path_str in sorted(glob.glob(ANALYSES_GLOB)):
+              p = Path(path_str)
+              data = json.loads(p.read_text(encoding="utf-8"))
+              analyses = data.get("analyses", [])
+              changed = 0
+
+              for entry in analyses:
+                  name = entry.get("name", "").strip()
+                  if not name:
+                      continue
+                  if entry.get("keyword_group"):
+                      total_skipped += 1
+                      continue
+                  group = reverse.get(name)
+                  if group:
+                      entry["keyword_group"] = group
+                      changed += 1
+                      total_stamped += 1
+                  else:
+                      entry["keyword_group"] = None
+                      total_no_match += 1
+
+              if changed:
+                  p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+                  print(f"  {p.name}: {changed} stamped")
+
+          print(f"\nStamped: {total_stamped}  |  Skipped: {total_skipped}  |  No match: {total_no_match}")
+          EOF
 
       - name: Commit results
         run: |
