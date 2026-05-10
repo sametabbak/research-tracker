@@ -194,16 +194,12 @@ CATEGORY_KEYWORDS = {
         "tuzluluk", "bulanıklık"],
 
     "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri": [
-        "\btem\b", "\bstem\b", "geçirimli elektron",
+        r"\btem\b", r"\bstem\b", "geçirimli elektron",
         "transmission electron", "kriyo-tem"],
 
     "TGA (Termogravimetrik Analiz)": [
         "tga", "termogravimetrik", "thermogravimetric",
         "tg/dta – analizleri", "termal gravimetrik"],
-
-    "DSC (Diferansiyel Taramalı Kalorimetri)": [
-        "dsc", "diferansiyel taramalı kalorimetre",
-        "differential scanning calori", "tg/dsc", "tga - dsc"],
 
     "Tane Boyutu ve Zeta Potansiyeli Analizleri": [
         "tane boyut", "zeta", "partikül boyut",
@@ -214,7 +210,7 @@ CATEGORY_KEYWORDS = {
         "ıslanabilirlik", "yüzey serbest enerji"],
 
     "Termal Analizler (STA, DMA, TMA)": [
-        "\bsta\b", "dinamik mekanik analiz", "\bdma\b", "\btma\b",
+        r"\bsta\b", "dinamik mekanik analiz", r"\bdma\b", r"\btma\b",
         "termal mekanik", "ısı kapasitesi",
         "sıcaklık taraması", "ısıl geçirgenlik"],
 
@@ -260,72 +256,115 @@ def get_all_fetched_analyses():
                 fetched.add(analysis["name"].strip())
     return fetched
 
+def _kw_matches(kw: str, text: str) -> bool:
+    """
+    Match a single keyword against lowercased analysis text.
+    Raw strings starting with \b use regex word-boundary matching.
+    Plain strings use simple substring matching.
+    """
+    if kw.startswith("\b") or kw.endswith("\b"):
+        return bool(re.search(kw, text))
+    return kw in text
+
+
 def auto_categorize():
     keywords_data = load_json(KEYWORDS_FILE)
-    
-    # Bilinmeyenler için ana havuz
+
+    # ── Fallback group for unclassified analyses ──────────────────────────────
     fallback_category = "Diğer Analiz ve Laboratuvar Hizmetleri"
     if fallback_category not in keywords_data:
         keywords_data[fallback_category] = []
-        
+
     known_analyses = get_all_known_analyses(keywords_data)
     fetched_analyses = get_all_fetched_analyses()
 
+    # ── Re-check "Diğer" entries — a new CATEGORY_KEYWORDS rule may now match ─
+    # This prevents analyses from getting permanently stuck in the fallback group
+    # when better rules are added later.
+    rescued = []
+    for analysis in list(keywords_data.get(fallback_category, [])):
+        analysis_lower = analysis.lower()
+        for category, kws in CATEGORY_KEYWORDS.items():
+            if category == fallback_category:
+                continue
+            if any(_kw_matches(kw, analysis_lower) for kw in kws):
+                # Move from Diğer to the correct category
+                keywords_data[fallback_category].remove(analysis)
+                if category not in keywords_data:
+                    keywords_data[category] = []
+                if analysis not in keywords_data[category]:
+                    keywords_data[category].append(analysis)
+                rescued.append((analysis, category))
+                print(f"[TAŞINDI]  \'{analysis}\' -> \'{category}\' (Diğer\'den kurtarıldı)")
+                break
+
+    # ── Process genuinely new analyses ────────────────────────────────────────
     new_analyses = fetched_analyses - known_analyses
 
-    if not new_analyses:
+    if not new_analyses and not rescued:
         print("Sınıflandırılacak yeni analiz bulunamadı.")
         return
 
-    print(f"{len(new_analyses)} adet yeni analiz tespit edildi. Sınıflandırma başlıyor...")
+    if new_analyses:
+        print(f"{len(new_analyses)} adet yeni analiz tespit edildi. Sınıflandırma başlıyor...")
 
-    for analysis in new_analyses:
+    for analysis in sorted(new_analyses):
         categorized = False
         analysis_lower = analysis.lower()
 
-        # 1. YÖNTEM: Akıllı Kelime Eşleştirme (Keyword Mapping)
+        # Method 1: Keyword matching (supports  regex patterns)
         for category, kws in CATEGORY_KEYWORDS.items():
-            if any(kw in analysis_lower for kw in kws):
+            if any(_kw_matches(kw, analysis_lower) for kw in kws):
                 if category not in keywords_data:
                     keywords_data[category] = []
-                keywords_data[category].append(analysis)
-                print(f"[BAŞARILI] '{analysis}' -> '{category}' kategorisine eklendi.")
+                if analysis not in keywords_data[category]:
+                    keywords_data[category].append(analysis)
+                print(f"[BAŞARILI] \'{analysis}\' -> \'{category}\'")
                 categorized = True
                 break
-        
+
         if categorized:
             continue
 
-        # 2. YÖNTEM: Metin Benzerliği (Fuzzy Matching)
+        # Method 2: Fuzzy similarity against existing entries
         best_match = None
         best_ratio = 0.0
         best_category = None
 
         for category, items in keywords_data.items():
+            if category == fallback_category:
+                continue  # don't fuzzy-match against the fallback group itself
             for item in items:
-                ratio = difflib.SequenceMatcher(None, analysis_lower, item.lower()).ratio()
+                ratio = difflib.SequenceMatcher(
+                    None, analysis_lower, item.lower()
+                ).ratio()
                 if ratio > best_ratio:
                     best_ratio = ratio
                     best_match = item
                     best_category = category
 
-        if best_ratio > 0.70:
+        if best_ratio >= 0.75:  # raised from 0.70 to reduce false positives
             keywords_data[best_category].append(analysis)
-            print(f"[BENZERLİK] '{analysis}' -> '{best_category}' kategorisine eklendi. (Eşleşen: {best_match})")
-            categorized = True
+            print(f"[BENZERLİK] \'{analysis}\' -> \'{best_category}\' "
+                  f"(benzerlik: {best_ratio:.2f}, eşleşen: \'{best_match}\')")
             continue
 
-        # 3. YÖNTEM: Rastgele kategori açmak yerine güvenli havuza (Diğer) atma
+        # Method 3: Fallback group
         keywords_data[fallback_category].append(analysis)
-        print(f"[DİĞER] '{analysis}' -> '{fallback_category}' kategorisine eklendi.")
+        print(f"[DİĞER]    \'{analysis}\' -> \'{fallback_category}\'")
 
-    # JSON dosyasını alfabetik ve temiz bir düzende kaydetme
-    for cat in keywords_data:
-        keywords_data[cat] = sorted(list(set(keywords_data[cat])))
-    
-    sorted_keywords_data = {k: keywords_data[k] for k in sorted(keywords_data.keys())}
-    save_json(sorted_keywords_data, KEYWORDS_FILE)
-    print("keywords.json başarıyla güncellendi!")
+    # ── Save: preserve existing group order, deduplicate, sort entries ────────
+    # Existing groups keep their position. New groups (from CATEGORY_KEYWORDS)
+    # are appended at the end. "Diğer" is always last.
+    ordered = {}
+    for key in keywords_data:
+        if key != fallback_category:
+            ordered[key] = sorted(list(set(keywords_data[key])))
+    ordered[fallback_category] = sorted(list(set(keywords_data[fallback_category])))
+
+    save_json(ordered, KEYWORDS_FILE)
+    total_changed = len(new_analyses) + len(rescued)
+    print(f"keywords.json güncellendi — {total_changed} değişiklik.")
 
 if __name__ == "__main__":
     auto_categorize()
