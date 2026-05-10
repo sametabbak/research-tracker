@@ -11,7 +11,8 @@
       "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "1-Karbon Kaplama (4 adete kadar)",
@@ -19,7 +20,8 @@
       "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
     {
       "name": "2-Altın Kaplama (4 adete kadar)",
@@ -27,7 +29,8 @@
       "price": 375.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
     {
       "name": "3-SEM Analizi (TL/Saat)",
@@ -35,7 +38,8 @@
       "price": 1500.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
       "name": "4-SEM - EDX Analizi (TL/Saat)",
@@ -43,7 +47,8 @@
       "price": 1800.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "1-AFM Temas (Contact) Modu (TL/Saat)",
@@ -51,7 +56,8 @@
       "price": 1200.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
       "name": "2-AFM Temassız (Non-Contact) Modu (TL/Saat)",
@@ -59,7 +65,8 @@
       "price": 1400.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
       "name": "3-Diğer AFM Modu (TL/Saat) (Bilgi alınız!)",
@@ -67,7 +74,8 @@
       "price": 1750.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
       "name": "1-XRD-Standart Patern İncelemesi",
@@ -75,7 +83,8 @@
       "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "2-XRD-Kalitatif Analiz",
@@ -83,7 +92,8 @@
       "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "3-XRD-Standart Patern İncelemesi - Kalitatif Analiz",
@@ -91,7 +101,8 @@
       "price": 1200.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "4-XRD-Detay Kil Standart Patern Çekimi",
@@ -99,7 +110,8 @@
       "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "5-XRD-Yüksek Sıcaklık Faz Analizi (25 oC – 800 °C)",
@@ -107,7 +119,8 @@
       "price": 3000.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "6-XRD-Yüksek Sıcaklık Faz Analizi (800 oC– 1600 °C)",
@@ -115,7 +128,8 @@
       "price": 6000.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "1-Kükürt Tayini",
@@ -123,7 +137,8 @@
       "price": 700.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Kalori, Kömür ve Yanmazlık Testleri"
     },
     {
       "name": "2-Kalori Tayini (Kömür, Fuel-Oil vb.)",
@@ -131,7 +146,8 @@
       "price": 2000.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Kalori, Kömür ve Yanmazlık Testleri"
     },
     {
       "name": "3-Yerli Kömür Tam Analiz (Kalori - Nem- Kül - Kükürt Tayini)",
@@ -139,7 +155,8 @@
       "price": 5000.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Kalori, Kömür ve Yanmazlık Testleri"
     },
     {
       "name": "4-İthal Kömür Tam Analiz (Kalori - Nem- Kül- Kükürt - Uçucu Madde)",
@@ -147,7 +164,8 @@
       "price": 6000.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Kalori, Kömür ve Yanmazlık Testleri"
     },
     {
       "name": "1-TG DTA Analizi 0-1 Saat (25 °C-1600 °C)",
@@ -155,7 +173,8 @@
       "price": 900.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "2-TG DTA Analizi 1-3 Saat (25 °C-1600 °C)",
@@ -163,7 +182,8 @@
       "price": 1100.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "3-TG DTA Analizi 3-7 Saat (25 °C-1600 °C)",
@@ -171,7 +191,8 @@
       "price": 1350.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "4-TG DSC Analizi 0-1 Saat (25 °C-1600 °C)",
@@ -179,7 +200,8 @@
       "price": 1000.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "5-TG DSC Analizi 1-3 Saat (25 °C-1600 °C)",
@@ -187,7 +209,8 @@
       "price": 1200.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "6-TG DSC Analizi 3-7 Saat (25 °C-1600 °C)",
@@ -195,7 +218,8 @@
       "price": 1400.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "7-Isı Kapasitesi Ölçümü",
@@ -203,7 +227,8 @@
       "price": 2000.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "1-Soğuk İzostatik Pres (CIP)",
@@ -211,7 +236,8 @@
       "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
       "name": "2-Mikrosertlik Ölçümü (5 iz/numune)",
@@ -219,7 +245,8 @@
       "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Mikrosertlik ve Makrosertlik Testleri"
     },
     {
       "name": "1-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (Tek Nokta)",
@@ -227,7 +254,8 @@
       "price": 700.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "2-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı (5 Nokta)",
@@ -235,7 +263,8 @@
       "price": 1000.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "3-BET Cihazı Yüzey Alanı Ölçümü Çok Noktalı - Gözenek Dağılımı",
@@ -243,7 +272,8 @@
       "price": 1350.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "4-Cıvalı Porozimetre Analizi",
@@ -251,7 +281,8 @@
       "price": 2500.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "1- Dielektrik Ölçüm Oda Sıcaklığında",
@@ -259,7 +290,8 @@
       "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
     },
     {
       "name": "2- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 400 °C)",
@@ -267,7 +299,8 @@
       "price": 1000.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
     },
     {
       "name": "3- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 800 °C)",
@@ -275,7 +308,8 @@
       "price": 1300.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
     },
     {
       "name": "4- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 1000 °C)",
@@ -283,7 +317,8 @@
       "price": 2000.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
     },
     {
       "name": "1-Piezoelektrik Sabiti (d) Ölçümü",
@@ -291,7 +326,8 @@
       "price": 200.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
     },
     {
       "name": "2- Piezoelektrik Sabiti (d) Ölçümü Ölçümü (Oda Sıcaklığı Kutuplama)",
@@ -299,7 +335,8 @@
       "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
     },
     {
       "name": "3- Piezoelektrik Sabiti (d) (Yüksek Sıcaklık Kutuplama)",
@@ -307,7 +344,8 @@
       "price": 700.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
     },
     {
       "name": "1-Optik Emisyon Spektrometresi (OES)",
@@ -315,7 +353,8 @@
       "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "OES (Optik Emisyon Spektrometresi) Analizleri"
     },
     {
       "name": "1-Tane Boyut Dağılımı Tayini",
@@ -323,7 +362,8 @@
       "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     }
   ]
 }
