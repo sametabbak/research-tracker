@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Analiz Bul — İnceleme Paneli</title>
+<title>AnalizBul — İnceleme Paneli</title>
 <style>
 :root {
   --primary:#1FA8AE; --bg:#f4f6f8; --card:#fff;
@@ -188,7 +188,7 @@ tr.row-man{background:#f0f9ff;}
     <div class="header-meta" id="stagingMeta">Yükleniyor...</div>
   </div>
   <div class="header-right">
-    <div class="token-badge" id="tokenBadge" onclick="showModal('tokenOverlay')">🔑 Token gir</div>
+    <div class="token-badge" id="tokenBadge" onclick="openTokenModal(null)">🔑 Token gir</div>
     <button class="btn btn-secondary" onclick="loadAll()">↻ Yenile</button>
     <button class="btn btn-approve" id="approveBtn" onclick="approve()" disabled>✓ Onayla ve Yayınla</button>
   </div>
@@ -256,7 +256,8 @@ tr.row-man{background:#f0f9ff;}
       <input type="password" id="tokenInput" placeholder="ghp_xxxxxxxxxxxx"
              onkeydown="if(event.key==='Enter')saveToken()">
     </div>
-    <div class="warn-box" style="margin-top:12px">
+    <div id="tokenModalNote" style="font-size:12px;color:var(--primary);margin-top:8px;min-height:16px;font-weight:600;"></div>
+    <div class="warn-box" style="margin-top:8px">
       Token yalnızca bu tarayıcı oturumunda tutulur.
       Okuma için gerekmez; düzenleme ve onaylama için gereklidir.
     </div>
@@ -303,7 +304,6 @@ tr.row-man{background:#f0f9ff;}
         <option>numune</option><option>saat</option><option>gün</option>
         <option>enjeksiyon</option><option>analiz</option>
         <option>set</option><option>kullanım</option><option>adet</option>
-        <option>sertifika</option>
       </select>
     </div>
     <div class="field">
@@ -352,19 +352,49 @@ var categories    = [];
 var stagingExists = false;
 var changeFilter  = 'all';
 
-var pendCenterEdits = {};  /* centerId → { url, pricing_url } */
+var pendCenterEdits  = {};  /* centerId → { url, pricing_url } */
+var tokenCallback    = null; /* function to call after token is saved */
 var centersSha      = null;   /* SHA of centers.json on staging for writes */
 var pendEdits   = {};
 var pendAdds    = {};
 var pendDeletes = {};
 
 /* ── AUTH ──────────────────────────────────────────────────────────────── */
+function openTokenModal(callback) {
+  tokenCallback = callback || null;
+  document.getElementById('tokenInput').value = token || '';
+  /* Show a note in the modal if called from approve flow */
+  var note = document.getElementById('tokenModalNote');
+  if (note) {
+    note.textContent = callback
+      ? 'Token kaydedildikten sonra işleminiz devam edecek.'
+      : '';
+  }
+  showModal('tokenOverlay');
+}
+
 function saveToken() {
   token = document.getElementById('tokenInput').value.trim();
+  if (!token) {
+    /* User left token blank — show error, don't proceed */
+    var inp = document.getElementById('tokenInput');
+    inp.style.borderColor = 'var(--del)';
+    inp.placeholder = 'Token boş bırakılamaz!';
+    setTimeout(function() {
+      inp.style.borderColor = '';
+      inp.placeholder = 'ghp_xxxxxxxxxxxx';
+    }, 2000);
+    return;
+  }
   sessionStorage.setItem('gh_token', token);
   updateTokenBadge();
   hideModal('tokenOverlay');
-  loadAll();
+  /* Resume pending action if any; otherwise do nothing (don't wipe pending changes) */
+  if (tokenCallback) {
+    var cb = tokenCallback;
+    tokenCallback = null;
+    cb();
+  }
 }
 
 function updateTokenBadge() {
@@ -404,7 +434,7 @@ async function apiRead(branch, path) {
 }
 
 async function apiWrite(path, content, sha, message) {
-  if (!token) throw new Error('Token gerekli — sağ üstten giriş yapın.');
+  if (!token) throw new Error('Token gerekli. Sağ üstteki 🔑 Token butonuna tıklayın.');
   var encoded = btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2))));
   var body = { message: message, branch: STAGING, content: encoded };
   if (sha) body.sha = sha;
@@ -1049,7 +1079,7 @@ function cancelPendingAdd(cid, name) {
 
 async function removeOverride(cid, name) {
   if (!confirm('"' + name + '" manuel kaydı kaldırılsın mı?')) return;
-  if (!token) { showModal('tokenOverlay'); return; }
+  if (!token) { openTokenModal(function() { removeOverride(cid, name); }); return; }
   var file = overrideMap[cid];
   if (!file) return;
   file.content.overrides = file.content.overrides.filter(function(a) { return a.name !== name; });
@@ -1064,7 +1094,7 @@ async function removeOverride(cid, name) {
 
 /* ── APPROVE ───────────────────────────────────────────────────────────── */
 function approve() {
-  if (!token) { showModal('tokenOverlay'); return; }
+  if (!token) { openTokenModal(approve); return; }
 
   var lines = [];
   centers.forEach(function(c) {
@@ -1227,7 +1257,7 @@ function acAutoId() {
 }
 
 async function submitAddCenter() {
-  if (!token) { hideModal('addCenterOverlay'); showModal('tokenOverlay'); return; }
+  if (!token) { hideModal('addCenterOverlay'); openTokenModal(submitAddCenter); return; }
 
   var name       = document.getElementById('acName').value.trim();
   var id         = document.getElementById('acId').value.trim().toLowerCase();
