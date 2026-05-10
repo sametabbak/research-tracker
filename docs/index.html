@@ -483,7 +483,8 @@ updateTokenBadge();
 function ghH(){var h={'Accept':'application/vnd.github.v3+json'};if(token)h['Authorization']='token '+token;return h;}
 async function rawRead(branch,path){var r=await fetch('https://raw.githubusercontent.com/'+REPO+'/'+branch+'/'+path+'?t='+Date.now());return r.ok?r.json():null;}
 async function apiRead(branch,path){
-  var r=await fetch('https://api.github.com/repos/'+REPO+'/contents/'+path+'?ref='+branch,{headers:ghH()});
+  var r=await fetch('https://api.github.com/repos/'+REPO+'/contents/'+path+'?ref='+branch,
+    {headers:ghH(), cache:'no-store'});
   if(!r.ok)return null;
   var d=await r.json();
   try{var bin=atob(d.content.replace(/\n/g,''));var bytes=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);return{content:JSON.parse(new TextDecoder('utf-8').decode(bytes)),sha:d.sha};}
@@ -1257,59 +1258,118 @@ function approve(){
   showModal('confirmOverlay');
 }
 async function doApprove(){
-  hideModal('confirmOverlay');var btn=document.getElementById('approveBtn');btn.disabled=true;btn.textContent='⏳ Kaydediliyor...';
+  hideModal('confirmOverlay');
+  var btn=document.getElementById('approveBtn');
+  btn.disabled=true;btn.textContent='⏳ Kaydediliyor...';
   try{
     /* 0. Center edits */
     if(Object.keys(pendCenterEdits).length){
       var uc=centers.map(function(c){var p=pendCenterEdits[c.id];return p?Object.assign({},c,p):c;});
-      await apiWrite('data/centers.json',uc,centersSha,'fix: merkez güncellemesi');
-      var upC2=await apiRead(STAGING,'data/centers.json');if(upC2)centersSha=upC2.sha;centers=uc;
+      var wcRes=await apiWrite('data/centers.json',uc,centersSha,'fix: merkez güncellemesi');
+      /* Update SHA from write response — no re-fetch needed */
+      if(wcRes&&wcRes.content)centersSha=wcRes.content.sha;
+      centers=uc;
     }
+
     /* 1. Analyses edits + deletes */
-    var changedCids=Object.keys(Object.assign({},pendEdits,pendDeletes?Object.fromEntries(Object.keys(pendDeletes).map(function(k){return[k,1];})):{}));
+    var delKeys=Object.keys(pendDeletes);
+    var changedCids=Object.keys(pendEdits).concat(
+      delKeys.filter(function(k){return Object.keys(pendEdits).indexOf(k)===-1;})
+    );
     for(var i=0;i<changedCids.length;i++){
-      var cid=changedCids[i];var file=stagingMap[cid];if(!file)continue;
-      var analyses=file.content.analyses.slice();
-      if(pendEdits[cid])analyses=analyses.map(function(a){var p=pendEdits[cid][a.name];return p?Object.assign({},a,p):a;});
-      if(pendDeletes[cid]&&pendDeletes[cid].size)analyses=analyses.filter(function(a){return!pendDeletes[cid].has(a.name);});
+      var cid=changedCids[i];
+      var file=stagingMap[cid];if(!file)continue;
+      var newAnalyses=file.content.analyses.slice();
+      if(pendEdits[cid]){
+        newAnalyses=newAnalyses.map(function(a){
+          var p=pendEdits[cid][a.name];
+          return p?Object.assign({},a,p):a;
+        });
+      }
+      if(pendDeletes[cid]&&pendDeletes[cid].size){
+        newAnalyses=newAnalyses.filter(function(a){return!pendDeletes[cid].has(a.name);});
+      }
+      var newContent=Object.assign({},file.content,{analyses:newAnalyses});
       var cn=centers.find(function(c){return c.id===cid;});
-      await apiWrite('data/analyses/'+cid+'.json',Object.assign({},file.content,{analyses:analyses}),file.sha,'fix: panel düzenlemesi — '+(cn?cn.name:cid));
-      var up=await apiRead(STAGING,'data/analyses/'+cid+'.json');if(up)stagingMap[cid]=up;
+      var wRes=await apiWrite(
+        'data/analyses/'+cid+'.json', newContent, file.sha,
+        'fix: panel düzenlemesi — '+(cn?cn.name:cid)
+      );
+      /* Update stagingMap directly from what we wrote — avoids stale API cache */
+      stagingMap[cid]={
+        content: newContent,
+        sha: (wRes&&wRes.content)?wRes.content.sha:file.sha
+      };
     }
+
     /* 2. Override additions */
     btn.textContent='⏳ Manuel eklemeler...';
-    for(var j=0;j<Object.keys(pendAdds).length;j++){
-      var acid=Object.keys(pendAdds)[j];var adds=pendAdds[acid];if(!adds.length)continue;
-      var ac=centers.find(function(c){return c.id===acid;});var ex=overrideMap[acid];
+    var addIds=Object.keys(pendAdds);
+    for(var j=0;j<addIds.length;j++){
+      var acid=addIds[j];var adds=pendAdds[acid];if(!adds.length)continue;
+      var ac=centers.find(function(c){return c.id===acid;});
+      var ex=overrideMap[acid];
       var exOv=(ex&&ex.content&&ex.content.overrides)?ex.content.overrides:[];
       var nc3={center_id:acid,center_name:ac?ac.name:acid,overrides:exOv.concat(adds)};
-      await apiWrite('data/overrides/'+acid+'.json',nc3,ex?ex.sha:null,'feat: manuel analiz — '+(ac?ac.name:acid));
-      var up2=await apiRead(STAGING,'data/overrides/'+acid+'.json');if(up2)overrideMap[acid]=up2;
+      var wRes2=await apiWrite(
+        'data/overrides/'+acid+'.json',nc3,ex?ex.sha:null,
+        'feat: manuel analiz — '+(ac?ac.name:acid)
+      );
+      overrideMap[acid]={
+        content:nc3,
+        sha:(wRes2&&wRes2.content)?wRes2.content.sha:(ex?ex.sha:null)
+      };
     }
-    /* 3. Keywords */
-    if(Object.keys(pendKwEdits).length||pendKwRenames.length||pendKwDeletes.length||pendNewGroups.length){
+
+    /* 3. Keyword group definition changes (renames, deletes, new groups only)
+          Individual keyword_group field assignments are handled via pendEdits above. */
+    if(pendKwRenames.length||pendKwDeletes.length||pendNewGroups.length){
       btn.textContent='⏳ Keyword grupları...';
       var newKw=JSON.parse(JSON.stringify(kwGroups));
-      /* Apply renames */
-      pendKwRenames.forEach(function(r){if(newKw[r.from]!==undefined){newKw[r.to]=newKw[r.from];delete newKw[r.from];}});
-      /* Apply deletes */
-      pendKwDeletes.forEach(function(g){delete newKw[g];});
-      /* Apply new groups */
-      pendNewGroups.forEach(function(g){if(!newKw[g])newKw[g]=[];});
-      /* Apply edits */
-      Object.keys(pendKwEdits).forEach(function(name){
-        var edits=pendKwEdits[name];
-        (edits.remove||[]).forEach(function(grp){if(newKw[grp])newKw[grp]=newKw[grp].filter(function(n){return n!==name;});});
-        (edits.add||[]).forEach(function(grp){if(!newKw[grp])newKw[grp]=[];if(newKw[grp].indexOf(name)===-1)newKw[grp].push(name);});
+      pendKwRenames.forEach(function(r){
+        if(newKw[r.from]!==undefined){newKw[r.to]=newKw[r.from];delete newKw[r.from];}
       });
-      await apiWrite('data/keywords.json',newKw,kwSha,'fix: keyword grubu düzenlemesi');
-      var upKw=await apiRead(STAGING,'data/keywords.json');if(upKw)kwSha=upKw.sha;kwGroups=newKw;
+      pendKwDeletes.forEach(function(g){delete newKw[g];});
+      pendNewGroups.forEach(function(g){if(!newKw[g])newKw[g]=[];});
+      var wKw=await apiWrite('data/keywords.json',newKw,kwSha,'fix: keyword grubu tanımları güncellendi');
+      if(wKw&&wKw.content)kwSha=wKw.content.sha;
+      kwGroups=newKw;
     }
-    /* 4. Merge */
-    btn.textContent='⏳ Yayınlanıyor...';await triggerMerge('İnceleme panelinden onaylandı');
-    pendEdits={};pendAdds={};pendDeletes={};pendCenterEdits={};pendKwEdits={};pendKwRenames=[];pendKwDeletes=[];pendNewGroups=[];selectedRows={};
-    alert('Onaylandı! Merge başlatıldı.');btn.textContent='✓ Onayla ve Yayınla';btn.disabled=false;await loadAll();
-  }catch(e){alert('Hata: '+e.message);btn.textContent='✓ Onayla ve Yayınla';btn.disabled=false;}
+
+    /* 4. Trigger merge */
+    btn.textContent='⏳ Yayınlanıyor...';
+    await triggerMerge('İnceleme panelinden onaylandı');
+
+    /* 5. Reset pending state and re-render from updated stagingMap
+          Do NOT call loadAll() — that would re-fetch and get stale cached data.
+          The stagingMap is already up to date from the write responses above. */
+    pendEdits={};pendAdds={};pendDeletes={};pendCenterEdits={};
+    pendKwEdits={};pendKwRenames=[];pendKwDeletes=[];pendNewGroups=[];selectedRows={};
+
+    buildReverseKW();
+    buildAnalysisToCenterMap();
+    buildAllCategories();
+    buildDataLists();
+    updateSummary();
+    renderCatalog();
+    renderOverrides();
+    renderClassify();
+    updateApproveBtn();
+
+    btn.textContent='✓ Onayla ve Yayınla';
+    btn.disabled=false;
+
+    /* Show a non-blocking message — merge takes 30-60s on GitHub Actions */
+    document.getElementById('stagingMeta').textContent =
+    document.getElementById('stagingMeta').textContent =
+      "Merge başlatıldı. GitHub Actions 30-60 saniye içinde main'i güncelleyecek. Tamamlandığında ↻ Yenile butonuna basın.";
+
+
+  }catch(e){
+    alert('Hata: '+e.message);
+    btn.textContent='✓ Onayla ve Yayınla';
+    btn.disabled=false;
+  }
 }
 
 /* ─── COLLAPSE ───────────────────────────────────────────────────────────── */
