@@ -7,7 +7,7 @@
   "analyses": [
     {
       "name": "Biyolojik Dokulardan SEM İçin Numune Hazırlama",
-      "category": "",
+      "category": "SEM-Taramalı Elektron Mikroskobu",
       "price": 2400,
       "currency": "TRY",
       "unit": "Adet",
@@ -16,7 +16,7 @@
     },
     {
       "name": "Numune Kaplama (Altın/Paladyum , Karbon)*",
-      "category": "",
+      "category": "SEM-Taramalı Elektron Mikroskobu",
       "price": 400,
       "currency": "TRY",
       "unit": "Adet",
@@ -25,7 +25,7 @@
     },
     {
       "name": "Kritik Nokta Kurutma Cihazı ile Numune Hazırlama",
-      "category": "",
+      "category": "SEM-Taramalı Elektron Mikroskobu",
       "price": 700,
       "currency": "TRY",
       "unit": "Adet",
@@ -34,7 +34,7 @@
     },
     {
       "name": "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 3800,
       "currency": "TRY",
       "unit": "Saat",
@@ -43,7 +43,7 @@
     },
     {
       "name": "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
-      "category": "",
+      "category": "SEM-Taramalı Elektron Mikroskobu",
       "price": 3800,
       "currency": "TRY",
       "unit": "Saat",
@@ -52,7 +52,7 @@
     },
     {
       "name": "SEM / EBSD Analizi**",
-      "category": "",
+      "category": "SEM-Taramalı Elektron Mikroskobu",
       "price": 3800,
       "currency": "TRY",
       "unit": "Saat",
@@ -61,7 +61,7 @@
     },
     {
       "name": "SEM / STEM Analizi**",
-      "category": "",
+      "category": "SEM-Taramalı Elektron Mikroskobu",
       "price": 3800,
       "currency": "TRY",
       "unit": "Saat",
@@ -70,7 +70,7 @@
     },
     {
       "name": "Biyolojik Dokulardan SEM İçin Numune Hazırlama Eğitimi***",
-      "category": "",
+      "category": "SEM-Taramalı Elektron Mikroskobu",
       "price": 2700,
       "currency": "TRY",
       "unit": "Saat",
@@ -79,7 +79,7 @@
     },
     {
       "name": "SEM Cihaz Kullanımı Eğitimi****",
-      "category": "",
+      "category": "SEM-Taramalı Elektron Mikroskobu",
       "price": 5600,
       "currency": "TRY",
       "unit": "Saat",
@@ -88,7 +88,7 @@
     },
     {
       "name": "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı *",
-      "category": "",
+      "category": "SEM-Taramalı Elektron Mikroskobu",
       "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Biyolojik Dokulardan TEM İçin Numune Hazırlama",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 3200,
       "currency": "TRY",
       "unit": "Adet",
@@ -106,7 +106,7 @@
     },
     {
       "name": "Ultramikrotomda Yarı İnce Kesit Alma",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1250,
       "currency": "TRY",
       "unit": "Adet",
@@ -115,7 +115,7 @@
     },
     {
       "name": "Histokimyasal Boyama; Yarı İnce Kesit Boyama",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1400,
       "currency": "TRY",
       "unit": "Adet",
@@ -124,7 +124,7 @@
     },
     {
       "name": "Ultramikrotomda Tam İnce Kesit Alma",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1600,
       "currency": "TRY",
       "unit": "Adet",
@@ -133,7 +133,7 @@
     },
     {
       "name": "Tam İnce Kesit Boyama (Uranil Asetat / Kurşun Sitrat ile)",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1800,
       "currency": "TRY",
       "unit": "Adet",
@@ -142,7 +142,7 @@
     },
     {
       "name": "Biyolojik Dokulardan Kriyo-TEM İçin Numune Hazırlama*",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 4000,
       "currency": "TRY",
       "unit": "Adet",
@@ -151,7 +151,7 @@
     },
     {
       "name": "Kriyo-Ultramikrotomda Tam İnce Kesit Alma*",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 4100,
       "currency": "TRY",
       "unit": "Adet",
@@ -160,7 +160,7 @@
     },
     {
       "name": "Çözelti / Hücre Süspansiyonlarından Grid Üzerine Kriyo Hazırlık*",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 6500,
       "currency": "TRY",
       "unit": "Adet",
@@ -169,7 +169,7 @@
     },
     {
       "name": "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 4000,
       "currency": "TRY",
       "unit": "Saat",
@@ -178,7 +178,7 @@
     },
     {
       "name": "Kriyojenik Örnekler İçin İnceleme ve Görüntü Alma**",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 4500,
       "currency": "TRY",
       "unit": "Saat",
@@ -187,7 +187,7 @@
     },
     {
       "name": "Formwar/Karbon Grid Üzerine Çözeltiden Numune Hazırlama",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1400,
       "currency": "TRY",
       "unit": "Adet",
@@ -196,7 +196,7 @@
     },
     {
       "name": "Biyolojik Dokulardan TEM İçin Numune Hazırlama Eğitimi***",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 4100,
       "currency": "TRY",
       "unit": "Saat",
@@ -205,7 +205,7 @@
     },
     {
       "name": "TEM Cihaz Kullanımı Eğitimi***",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 6500,
       "currency": "TRY",
       "unit": "Saat",
@@ -214,7 +214,7 @@
     },
     {
       "name": "İmmunogold Boyama İçin Numune Hazırlama",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 3250,
       "currency": "TRY",
       "unit": "Adet",
@@ -223,7 +223,7 @@
     },
     {
       "name": "İmmunogold Etiketleme****",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 3250,
       "currency": "TRY",
       "unit": "Adet",
@@ -232,7 +232,7 @@
     },
     {
       "name": "Sertifikalı Eğitim Paketi (Teorik ve Uygulama İçeren) İçin Günlük (8 Saat) Laboratuvar Kullanımı*****",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
@@ -241,7 +241,7 @@
     },
     {
       "name": "Konfokal Mikroskop ile Görüntüleme*",
-      "category": "",
+      "category": "İleri Mikroskobi Birimi",
       "price": 2350,
       "currency": "TRY",
       "unit": "Saat",
@@ -250,7 +250,7 @@
     },
     {
       "name": "Görüntü Analiz İşlemleri",
-      "category": "",
+      "category": "İleri Mikroskobi Birimi",
       "price": 1750,
       "currency": "TRY",
       "unit": "Numune",
@@ -259,7 +259,7 @@
     },
     {
       "name": "Inverted Mikroskop ile Görüntüleme*",
-      "category": "",
+      "category": "İleri Mikroskobi Birimi",
       "price": 675,
       "currency": "TRY",
       "unit": "Saat",
@@ -268,7 +268,7 @@
     },
     {
       "name": "Floresan Ataçmanlı Mikroskop ile Görüntüleme*",
-      "category": "",
+      "category": "İleri Mikroskobi Birimi",
       "price": 1350,
       "currency": "TRY",
       "unit": "Saat",
@@ -277,7 +277,7 @@
     },
     {
       "name": "Stereomikroskop ile Görüntüleme*",
-      "category": "",
+      "category": "İleri Mikroskobi Birimi",
       "price": 500,
       "currency": "TRY",
       "unit": "Saat",
@@ -286,7 +286,7 @@
     },
     {
       "name": "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı**",
-      "category": "",
+      "category": "İleri Mikroskobi Birimi",
       "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
@@ -295,7 +295,7 @@
     },
     {
       "name": "Toz Kırınım Deseni (Toz Numune)",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 1050,
       "currency": "TRY",
       "unit": "Adet",
@@ -304,7 +304,7 @@
     },
     {
       "name": "İnce Film Analizi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 3150,
       "currency": "TRY",
       "unit": "Adet",
@@ -313,7 +313,7 @@
     },
     {
       "name": "SAXS Analizi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 5250,
       "currency": "TRY",
       "unit": "Adet",
@@ -322,7 +322,7 @@
     },
     {
       "name": "Kalitatif Mineral Analiz",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 3150,
       "currency": "TRY",
       "unit": "Adet",
@@ -331,7 +331,7 @@
     },
     {
       "name": "Yüksek Sıcaklık Kırınım Deseni",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 5250,
       "currency": "TRY",
       "unit": "Adet",
@@ -340,7 +340,7 @@
     },
     {
       "name": "Rietveld Analizi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 10500,
       "currency": "TRY",
       "unit": "Adet",
@@ -349,7 +349,7 @@
     },
     {
       "name": "Kalıntı Gerilme Analizi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 10500,
       "currency": "TRY",
       "unit": "Adet",
@@ -358,7 +358,7 @@
     },
     {
       "name": "XRD Temel Kullanıcı Eğitimi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 15750,
       "currency": "TRY",
       "unit": "Gün",
@@ -367,7 +367,7 @@
     },
     {
       "name": "XRR Analizi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 420,
       "currency": "TRY",
       "unit": "Adet",
@@ -376,7 +376,7 @@
     },
     {
       "name": "Numune Hazırlama",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 10500,
       "currency": "TRY",
       "unit": "Adet",
@@ -385,7 +385,7 @@
     },
     {
       "name": "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
@@ -394,7 +394,7 @@
     },
     {
       "name": "XRF Analizi / Katı Numune",
-      "category": "",
+      "category": "XRF-X-Işını Floresans",
       "price": 1575,
       "currency": "TRY",
       "unit": "Adet",
@@ -403,7 +403,7 @@
     },
     {
       "name": "Eritiş Cihazı ile Numune Hazırlama",
-      "category": "",
+      "category": "XRF-X-Işını Floresans",
       "price": 800,
       "currency": "TRY",
       "unit": "Adet",
@@ -412,7 +412,7 @@
     },
     {
       "name": "Kırma ve Öğütme",
-      "category": "",
+      "category": "XRF-X-Işını Floresans",
       "price": 485,
       "currency": "TRY",
       "unit": "Adet",
@@ -421,7 +421,7 @@
     },
     {
       "name": "Presleme",
-      "category": "",
+      "category": "XRF-X-Işını Floresans",
       "price": 420,
       "currency": "TRY",
       "unit": "Adet",
@@ -430,7 +430,7 @@
     },
     {
       "name": "Kızdırma Kaybı",
-      "category": "",
+      "category": "ICP-MS",
       "price": 315,
       "currency": "TRY",
       "unit": "Adet",
@@ -439,7 +439,7 @@
     },
     {
       "name": "XRF Analizi / Sıvı Numune*",
-      "category": "",
+      "category": "XRF-X-Işını Floresans",
       "price": 2100,
       "currency": "TRY",
       "unit": "Adet",
@@ -448,7 +448,7 @@
     },
     {
       "name": "XRF Temel Kullanıcı Eğitimi**",
-      "category": "",
+      "category": "XRF-X-Işını Floresans",
       "price": 15750,
       "currency": "TRY",
       "unit": "Gün",
@@ -457,7 +457,7 @@
     },
     {
       "name": "ICP-MS 1 Element Analizi",
-      "category": "",
+      "category": "ICP-MS",
       "price": 1150,
       "currency": "TRY",
       "unit": "Numune",
@@ -466,7 +466,7 @@
     },
     {
       "name": "ICP-MS 2-5 Element Analizi",
-      "category": "",
+      "category": "ICP-MS",
       "price": 1350,
       "currency": "TRY",
       "unit": "Numune",
@@ -475,7 +475,7 @@
     },
     {
       "name": "ICP-MS 6-10 Element Analizi",
-      "category": "",
+      "category": "ICP-MS",
       "price": 1650,
       "currency": "TRY",
       "unit": "Numune",
@@ -484,7 +484,7 @@
     },
     {
       "name": "ICP-MS 11-15 Element Analizi",
-      "category": "",
+      "category": "ICP-MS",
       "price": 1900,
       "currency": "TRY",
       "unit": "Numune",
@@ -493,7 +493,7 @@
     },
     {
       "name": "ICP-MS 16-20 Element Analizi",
-      "category": "",
+      "category": "ICP-MS",
       "price": 2150,
       "currency": "TRY",
       "unit": "Numune",
@@ -502,7 +502,7 @@
     },
     {
       "name": "ICP-MS 21-30 Element Analizi",
-      "category": "",
+      "category": "ICP-MS",
       "price": 2625,
       "currency": "TRY",
       "unit": "Numune",
@@ -511,7 +511,7 @@
     },
     {
       "name": "ICP-MS 31-40 Element Analizi",
-      "category": "",
+      "category": "ICP-MS",
       "price": 3150,
       "currency": "TRY",
       "unit": "Numune",
@@ -520,7 +520,7 @@
     },
     {
       "name": "ICP-MS 41-50 Element Analizi",
-      "category": "",
+      "category": "ICP-MS",
       "price": 3690,
       "currency": "TRY",
       "unit": "Numune",
@@ -529,7 +529,7 @@
     },
     {
       "name": "ICP-MS 51 ve üzeri element Analizi",
-      "category": "",
+      "category": "ICP-MS",
       "price": 4325,
       "currency": "TRY",
       "unit": "Numune",
@@ -538,7 +538,7 @@
     },
     {
       "name": "ICP-MS 1 Nadir Toprak Elementi Analizi*",
-      "category": "",
+      "category": "ICP-MS",
       "price": 1200,
       "currency": "TRY",
       "unit": "Numune",
@@ -547,7 +547,7 @@
     },
     {
       "name": "ICP-MS 2-10 Nadir Toprak Elementi Analizi*",
-      "category": "",
+      "category": "ICP-MS",
       "price": 1690,
       "currency": "TRY",
       "unit": "Numune",
@@ -556,7 +556,7 @@
     },
     {
       "name": "ICP-MS 11-18 Nadir Toprak Elementi Analizi*",
-      "category": "",
+      "category": "ICP-MS",
       "price": 2220,
       "currency": "TRY",
       "unit": "Numune",
@@ -565,7 +565,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (Nitik asit ile)",
-      "category": "",
+      "category": "ICP-MS",
       "price": 750,
       "currency": "TRY",
       "unit": "Numune",
@@ -574,7 +574,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (Kral Suyu ile)",
-      "category": "",
+      "category": "ICP-MS",
       "price": 865,
       "currency": "TRY",
       "unit": "Numune",
@@ -583,7 +583,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (H2O2 içeren karışım)",
-      "category": "",
+      "category": "ICP-MS",
       "price": 900,
       "currency": "TRY",
       "unit": "Numune",
@@ -592,7 +592,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (HF içeren karışım)",
-      "category": "",
+      "category": "ICP-MS",
       "price": 940,
       "currency": "TRY",
       "unit": "Numune",
@@ -601,7 +601,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (Çoklu asit içeren karışım)",
-      "category": "",
+      "category": "ICP-MS",
       "price": 1020,
       "currency": "TRY",
       "unit": "Numune",
@@ -610,7 +610,7 @@
     },
     {
       "name": "Ön Hazırlık (Kırma. Öğütme vb.)",
-      "category": "",
+      "category": "ICP-MS",
       "price": 345,
       "currency": "TRY",
       "unit": "Numune",
@@ -619,7 +619,7 @@
     },
     {
       "name": "Ön Hazırlık (Yakma. Kurutma vb.)",
-      "category": "",
+      "category": "ICP-MS",
       "price": 375,
       "currency": "TRY",
       "unit": "Numune",
@@ -628,7 +628,7 @@
     },
     {
       "name": "Ön Hazırlık (Süzme. Santrifüj vb,)",
-      "category": "",
+      "category": "ICP-MS",
       "price": 280,
       "currency": "TRY",
       "unit": "Numune",
@@ -637,7 +637,7 @@
     },
     {
       "name": "Ön Hazırlık (Açıktan Çözeltiye Alma)",
-      "category": "",
+      "category": "ICP-MS",
       "price": 375,
       "currency": "TRY",
       "unit": "Numune",
@@ -646,7 +646,7 @@
     },
     {
       "name": "Kızdırma Kaybı",
-      "category": "",
+      "category": "ICP-MS",
       "price": 280,
       "currency": "TRY",
       "unit": "Numune",
