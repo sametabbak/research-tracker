@@ -102,7 +102,6 @@
     "-40 Dondurucu Kulanımı",
     "-80 Dondurucu Kullanımı",
     "0-1 saat",
-    "1 H (Proton)",
     "1-2 saat",
     "1-5 Element",
     "1-5 element",
@@ -120,7 +119,6 @@
     "78.01",
     ">2 saat",
     "ATR Tekniği ile Spektrum Taraması",
-    "Alan Analizi - Haritalama",
     "Alümina/Platin Kroze Hasar Bedeli *",
     "Analiz (ATR)",
     "Analysis of Macro, Micro and Trace Elements in Plant and Soil Samples",
@@ -637,7 +635,8 @@
     "TOCSY",
     "TOCSY NMR Analizi",
     "Water-Gated NMR Analizi",
-    "İnce Film Analizi"
+    "İnce Film Analizi",
+    "1 H (Proton)"
   ],
   "Nanoindentasyon Analizleri": [
     "Nanoindentasyon (10x10 matriks)*",
@@ -694,7 +693,8 @@
     "Raman Spektrumu (1 lazerle geniş alan tarama,10 atım)",
     "Raman Spektrumu *",
     "Raman Spektrumu Eldesi",
-    "Sıcaklığına Bağlı Spektrum (10-350 Kelvin)"
+    "Sıcaklığına Bağlı Spektrum (10-350 Kelvin)",
+    "Alan Analizi - Haritalama"
   ],
   "Raporlama ve Metot Geliştirme": [
     "Akademik Raporlama İlk 10 sayfadan sonra her 50 sayfa için",
