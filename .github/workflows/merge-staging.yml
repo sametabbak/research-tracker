@@ -30,7 +30,13 @@ jobs:
       - name: Merge staging → main
         run: |
           git fetch origin staging
+
+          # Merge staging into main.
+          # --strategy-option=theirs: when there are conflicts in data files,
+          # staging always wins (it has the reviewed, approved content).
           git merge origin/staging --no-edit \
+            --strategy-option=theirs \
             -m "${{ github.event.inputs.message }}"
+
           git push origin main
           echo "✅ staging başarıyla main'e merge edildi."
