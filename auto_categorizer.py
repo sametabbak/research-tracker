@@ -1,370 +1,331 @@
+"""
+auto_categorizer.py
+───────────────────
+Assigns a keyword_group to every analysis entry in data/analyses/*.json
+that does not already have one.
+
+Key design decisions:
+  - Keyword matching only. Fuzzy matching removed entirely — it caused
+    generic short names to contaminate specific technical groups.
+  - Once an analysis has a keyword_group (set by this script or by a human
+    in the review panel), it is never overwritten.
+  - The Diğer fallback group is no longer written to keyword_group; those
+    entries stay null and appear in the panel's Sınıflandırma tab.
+  - keywords.json is now a GROUP DEFINITION FILE only (group name → keyword
+    triggers). It no longer stores lists of analysis names.
+"""
+
 import json
-import os
-import glob
-import difflib
 import re
+import glob
+from pathlib import Path
 
-# Dosya yolları
-KEYWORDS_FILE = "data/keywords.json"
-ANALYSES_DIR = "data/analyses/*.json"
+KEYWORDS_FILE  = Path("data/keywords.json")
+ANALYSES_GLOB  = "data/analyses/*.json"
 
-# YENİ SİSTEM: Semantik kategori yapısına uygun arama motoru (Keyword Mapping)
-CATEGORY_KEYWORDS = {
+
+# ── Group definitions ─────────────────────────────────────────────────────────
+# These keywords are used ONLY to match new, unassigned analyses.
+# They do not affect analyses that already have a keyword_group.
+# Use r"\bword\b" for whole-word matching, plain string for substring.
+
+CATEGORY_KEYWORDS: dict[str, list[str]] = {
     "3 Boyutlu Tarama ve Üretim": [
-        "3 boyutlu", "3d", "dlp", "fdm", "polyjet",
-        "yeniden yapılandırma", "modelleme", "prototip"],
+        "3 boyutlu", "3d tarama", "3d baskı", "dlp", "fdm", "polyjet",
+        "yeniden yapılandırma", "tersine mühendislik"],
 
     "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri": [
-        "aas", "atomik absorpsiyon", "alev aas", "grafit aas", "hidrür aas"],
+        r"\baas\b", "atomik absorpsiyon", "alev aas", "grafit aas", "hidrür aas"],
 
-    # MFM and KFM are AFM modes — kept in AFM, not in Elektriksel
     "AFM (Atomik Kuvvet Mikroskobu) Analizleri": [
-        "afm", "atomik kuvvet", "atomic force",
-        "manyetik kuvvet", "mfm", "kelvin prob", "kfm",
-        "temaslı mod", "temassız mod", "contact mod", "non-contact"],
+        r"\bafm\b", "atomik kuvvet", "atomic force",
+        "manyetik kuvvet", r"\bmfm\b", "kelvin prob", r"\bkfm\b",
+        "temaslı mod", "temassız mod", "contact mod", "non-contact mod"],
 
     "BET ve Yüzey Alanı (Porozimetre) Analizleri": [
-        "bet", "yüzey alan", "surface area", "porozimetre", "porozimetri",
-        "cıvalı", "mercury porosimetry", "adsorpsiyon", "kemisorpsiyon",
-        "izoterm", "mikrogözenek"],
+        r"\bbet\b", "yüzey alan", "surface area",
+        "porozimetre", "porozimetri", "cıvalı porozim",
+        "mercury porosimetry", "adsorpsiyon izotemi",
+        "kemisorpsiyon", "mikrogözenek"],
 
     "Biyolojik Numune Hazırlama": [
-        "biyolojik dokulardan", "kritik nokta kurutma", "ultramikrotom",
-        "kriyo-ultramikrotom", "liyofilizasyon", "dondurarak kurutma",
-        "kriyostat ile kesit", "semi-dry", "immunogold"],
+        "biyolojik dokulardan", "kritik nokta kurutma",
+        "kriyo-ultramikrotom", "kriyostat ile kesit",
+        "liyofilizasyon", "dondurarak kurutma", "immunogold"],
 
     "DSC (Diferansiyel Taramalı Kalorimetri)": [
-        "dsc", "diferansiyel taramalı kalorimetre",
-        "differential scanning calori", "tg/dsc", "tga - dsc"],
+        r"\bdsc\b", "diferansiyel taramalı kalorimetre",
+        "differential scanning calori", r"\btg/dsc\b"],
 
     "DTA (Diferansiyel Termal Analiz)": [
-        "dta", "diferansiyel termal analiz",
-        "differential thermal analys", "tg/dta"],
+        r"\bdta\b", "diferansiyel termal analiz",
+        "differential thermal analys", r"\btg/dta\b"],
 
     "Elektriksel ve Dielektrik Ölçümler": [
-        "hall etkisi", "dielektrik", "piezoelektrik",
-        "elektrokimyasal", "elektrokimya", "ferroelektrik"],
+        "hall etkisi", "dielektrik ölçüm", "piezoelektrik",
+        "elektrokimyasal", "ferroelektrik"],
 
     "FTIR ve IR Spektroskopi": [
-        "ftir", "ft-ir", "kızılötesi", "infrared", "atr spektrum",
-        "kbr pellet", "ft-fir", "nir analizi"],
+        r"\bftir\b", r"\bft-ir\b", "kızılötesi spektrum",
+        "infrared spektrum", "atr spektrum", r"\bft-fir\b"],
 
     "Floresans ve Fotolüminesans Spektroskopi": [
-        "floresans", "flöresans", "lüminesans",
-        "fotolüminesans", "fotometrik"],
+        "floresans ölçüm", "flöresans ölçüm",
+        "fotolüminesans", "lüminesans ölçüm"],
 
     "Genel Elementel Analizler (CHNS vb.)": [
-        "chns", "elementel analiz", "eleman analizi",
-        "c, h, n, s", "karbon, hidrojen"],
+        r"\bchns\b", "elementel analiz", "eleman analizi",
+        "c, h, n, s analizi"],
 
     "Genel Kimya ve Gıda Analizleri": [
-        "aflatoksin", "alkol analiz", "asbest",
-        "fitalat", "toksin", "gıda", "vitamin analizi", "yağ asit",
-        "organik asit", "fenolik madde",
-        "titrimetrik", "titrasyon", "katı madde tayini", "kızdırma"],
+        "aflatoksin", "asbest analizi", "fitalat",
+        "gıda analizi", "pestisit analizi",
+        "organik asit analizi", "fenolik madde tayini",
+        "titrimetrik", "toplam fenolik"],
 
     "Genel Numune Hazırlama": [
-        "numune hazırl", "örnek hazırl", "analiz çözeltisi",
-        "otoklav", "homojenizatör", "rotary evaporatör",
-        "reaksiyon hazırlığı", "santrifüj"],
+        "numune hazırl", "örnek hazırl",
+        "otoklav kullanım", "homojenizatör", "santrifüj"],
 
     "Hücre Kültürü ve Biyolojik Analizler": [
-        "hücre", "sitotoksisite", "mtt", "elisa", "akış sitometrisi",
-        "apoptoz", "mikroplazma", "mikrobiyoloji", "biyogüvenlik",
-        "caspase", "annexin", "immunogold etiket", "protein analizi",
-        "protein tanımlama"],
+        "hücre kültür", "sitotoksisite", r"\bmtt\b",
+        r"\belisa\b", "akış sitometrisi", "apoptoz",
+        "mikroplazma testi", "mikrobiyoloji", "biyogüvenlik"],
 
     "ICP-MS Analizleri": [
-        "icp-ms", "icp ms", "nadir toprak elementi"],
+        r"\bicp-ms\b", r"\bicp ms\b", "nadir toprak elementi"],
 
     "ICP-OES Analizleri": [
-        "icp-oes", "icp oes", "icp-aes"],
+        r"\bicp-oes\b", r"\bicp oes\b", r"\bicp-aes\b"],
 
     "İnce Film Kalınlık Ölçümü": [
         "ince film kalınlık", "film kalınlığı", "elipsometri"],
 
     "İyon Kromatografisi": [
-        "anyon", "katyon", "iyon kromatografi", "ion exchange",
-        "anyon, katyon"],
+        "anyon analizi", "katyon analizi",
+        "iyon kromatografi", "anyon, katyon"],
 
     "Kalori, Kömür ve Yanmazlık Testleri": [
-        "kalori", "kömür", "yanmazlık", "kül tayini", "yakıt"],
+        "kalori tayini", "kömür analizi", "yanmazlık",
+        "kül tayini", "yakıt analizi", "nem tayini"],
 
     "Kaplama İşlemleri (Altın, Karbon, Platin vb.)": [
-        "kaplama", "altın kaplama", "karbon kaplama",
-        "paladyum kaplama", "iridyum kaplama", "sputter", "au/pd"],
+        "altın kaplama", "karbon kaplama",
+        "paladyum kaplama", "iridyum kaplama",
+        r"\bsputter\b", "au/pd kaplama", "numune kaplama"],
 
     "Kimyasal Çözme ve Numune Hazırlığı": [
-        "mikrodalga ile numune", "asit ile çözme", "kral suyu",
-        "eritiş ile", "eritiş cihaz", "eritiş numune",
-        "klasik numune hazırlık", "katı numune hazırlık",
-        "mikrodalga yakma", "yaş yakma", "ase ile ekstraksiyon",
-        "numune yakma", "numune hazırlığı (asit"],
+        "mikrodalga ile numune",
+        "asit ile çözme", "kral suyu",
+        "eritiş ile çözme", "mikrodalga yakma",
+        "yaş yakma", "ase ile ekstraksiyon"],
 
     "Kromatografi (HPLC, GPC)": [
-        "hplc", "preparatif hplc", "gpc", "jel geçirgenlik",
-        "kantitatif: her bir numunede", "kalitatif: her bir numune"],
+        r"\bhplc\b", "preparatif hplc",
+        r"\bgpc\b", "jel geçirgenlik kromatografi"],
 
     "Kütle Spektrometrisi (LC-MS, GC-MS)": [
-        "lc-ms", "gc-ms", "gc/ms", "lc/ms", "lc-ms/ms",
-        "kütle spektrometri", "qtof", "hrms", "kütle tayini",
-        "headspace", "spme", "gc-fid"],
+        r"\blc-ms\b", r"\bgc-ms\b", r"\bgc/ms\b", r"\blc/ms\b",
+        r"\bhrms\b", r"\bqtof\b", "kütle spektrometri", r"\bgc-fid\b"],
 
     "Mekanik Numune Hazırlama": [
-        "kırma ve öğütme", "kırma, öğütme", "kırma-öğütme",
-        "kuru öğütme", "zımparalama", "parlatma",
-        "presleme", "kuru presleme", "kesme",
-        "soğuk kalıplama", "sıcak kalıplama", "bakalit",
-        "elektro parlatma", "fiziksel öğütme",
+        "kırma ve öğütme", "kuru öğütme",
+        "zımparalama", "elektro parlatma",
+        "soğuk kalıplama", "sıcak kalıplama", r"\bbakalit\b",
         "mekanik numune hazırl"],
 
     "Mekanik Testler (Çekme, Basma, Eğme)": [
-        "çekme", "basma", "eğme", "aşınma", "plastisite",
-        "kopma", "mukavemet", "dinamik mekanik",
-        "kalıntı gerilme", "yorulma testi"],
+        "çekme testi", "basma testi", "eğme testi",
+        "aşınma testi", "kopma mukavemeti",
+        "dinamik mekanik analiz", "kalıntı gerilme",
+        "yorulma testi", "üç nokta eğme"],
 
     "Mikrosertlik ve Makrosertlik Testleri": [
-        "mikrosertlik", "sertlik", "vickers",
-        "brinell", "rockwell", "knoop"],
+        "mikrosertlik", r"\bvickers\b",
+        r"\bbrinell\b", r"\brockwell\b", r"\bknoop\b"],
 
     "Moleküler Genetik ve PCR Analizleri": [
-        "pcr", "dna", "rna", "agaroz jel", "elektroforez",
-        "jel yürütme", "jel görüntüleme", "jel dökümantasyon",
-        "nanodrop", "real time pcr", "sds-page",
+        r"\bpcr\b", "dna izolasyon", "rna izolasyon",
+        "agaroz jel yürütme", "jel elektroforez",
+        "jel görüntüleme", "jel dökümantasyon",
+        r"\bnanodrop\b", "real time pcr", r"\bsds-page\b",
         "trans-blotlama", "protein tanımlama"],
 
     "NMR Analizleri": [
-        "nmr", "nükleer manyetik", "cosy", "hsqc", "hmbc",
-        "tocsy", "dept", "noesy", "roesy", "inadequate"],
+        r"\bnmr\b", "nükleer manyetik",
+        r"\bcosy\b", r"\bhsqc\b", r"\bhmbc\b",
+        r"\btocsy\b", r"\bdept\b", r"\bnoesy\b", r"\broesy\b"],
 
-    "Nanoindentasyon Analizleri": ["nanoindentasyon"],
+    "Nanoindentasyon Analizleri": [r"\bnanoindentasyon\b"],
 
     "OES (Optik Emisyon Spektrometresi) Analizleri": [
-        "optik emisyon spektrometre"],
+        "optik emisyon spektrometre", "1-optik emisyon"],
 
     "Optik Mikroskopi ve Görüntüleme": [
-        "mikroskop", "konfokal mikroskop", "stereomikroskop",
-        "inverted mikroskop", "floresan mikroskop",
-        "metal mikroskobu", "görüntü analiz"],
+        "ışık mikroskobu", "konfokal mikroskop",
+        "stereomikroskop", "inverted mikroskop",
+        "floresan mikroskop", "metal mikroskobu",
+        "görüntü analiz sistemi", "hazır preparat görüntüleme",
+        "görüntü alma", "görüntüleme"],
 
     "Raman Spektroskopi": [
-        "raman spektrum", "raman analiz", "raman ölçüm",
-        "derinlik profili (1 lazer", "haritalama (1 lazer"],
+        "raman spektrum", "raman analiz", "raman ölçüm"],
 
     "Raporlama ve Metot Geliştirme": [
-        "raporlama", "metod geliştirme", "metot geliştirme",
-        "yorumlanması ve raporlama", "danışmanlık",
-        "validasyon", "istatistiksel analizi"],
-
-    # XRD and XRR are separate — different measurements
-    "XRD (X-Işını Kırınım) Analizleri": [
-        "xrd", "kırınım deseni", "difraksiyon",
-        "x-ray difraksiyon", "saxs", "patern inceleme", "rietveld"],
-
-    "XRF (X-Işını Floresans) Analizleri": [
-        "xrf", "x-ray fluorescence", "x-ışınları floresans",
-        "x-ışını floresans", "wd/xrf"],
-
-    "XRR (X-Işını Yansıma) Analizleri": [
-        "xrr", "reflectivity", "reflektivite",
-        "roughness ölçümü", "yansıma analizi"],
-
-    "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri": [
-        "xps", "fotoelektron", "ups analizi",
-        "açıya bağlı ölçüm", "derinlik profili (ar iyonları"],
-
-    "Radyoaktivite Analizleri": [
-        "radyoaktivite", "cs-137", "ra-226", "th-232",
-        "gama ışını", "pb-210", "tarihlendirme"],
+        "analiz sonuçlarının yorumlanması",
+        "metot geliştirme", "metod geliştirme",
+        "istatistiksel analizi ve yorumlanması"],
 
     "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri": [
-        "sem görüntü", "fe-sem görüntü", "fe-sem ile inceleme",
-        "taramalı elektron", "scanning electron",
-        "katodolüminesans", "sem-cl", "sem-ebic"],
+        r"\bsem\b görüntü", r"\bsem\b analizi",
+        r"\bsem\b cihaz", "fe-sem görüntü",
+        "fe-sem ile inceleme", "taramalı elektron",
+        "scanning electron", r"\bsem-cl\b",
+        "katodolüminesans", r"\bsem-ebic\b",
+        "yüzey görüntüsü alma"],
 
     "SEM-EDX ve EBSD Analizleri": [
-        "edx", "eds analiz", "ebsd", "enerji dağılımlı",
-        "sem-edx", "sem/edx", "fib", "odaklanmış iyon demeti",
+        r"\bedx\b", r"\beds\b", r"\bebsd\b",
+        "enerji dağılımlı x", "sem-edx", "sem/edx",
+        r"\bfib\b", "odaklanmış iyon demeti",
+        "eds modu", "edx modu", "haritalama",
         "metalik kalıntı analizi"],
 
     "Su Kalitesi ve Çevre Analizleri": [
-        "sularda ph", "sularda elektrik", "ph tayini", "ph ölçüm",
-        "elektrometrik metot", "çözünmüş oksijen",
-        "toplam sertlik", "toplam çözünmüş",
-        "tuzluluk", "bulanıklık"],
+        "sularda ph", "elektrometrik metot ile ph",
+        "çözünmüş oksijen tayini", "toplam sertlik tayini",
+        "toplam çözünmüş madde", "bulanıklık tayini"],
 
     "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri": [
-        r"\btem\b", r"\bstem\b", "geçirimli elektron",
-        "transmission electron", "kriyo-tem"],
+        r"\btem\b analiz", r"\bstem\b analiz",
+        "geçirimli elektron", "transmission electron",
+        r"\bkriyo-tem\b", "biyolojik dokulardan tem"],
 
     "TGA (Termogravimetrik Analiz)": [
-        "tga", "termogravimetrik", "thermogravimetric",
-        "tg/dta – analizleri", "termal gravimetrik"],
+        r"\btga\b", "termogravimetrik", "thermogravimetric",
+        "termal gravimetrik"],
 
     "Tane Boyutu ve Zeta Potansiyeli Analizleri": [
-        "tane boyut", "zeta", "partikül boyut",
-        "parçacık boyut", "elek analizi", "lazer tekniği ile"],
+        "tane boyutu", "partikül boyut", "parçacık boyut",
+        "zeta potansiyeli", "elek analizi",
+        "lazer kırınım", "dinamik ışık saçılması"],
 
     "Temas Açısı ve Yüzey Enerjisi Analizleri": [
-        "temas açısı", "yüzey gerilimi", "serbest yüzey enerjisi",
-        "ıslanabilirlik", "yüzey serbest enerji"],
+        "temas açısı", "yüzey gerilimi ölçüm",
+        "serbest yüzey enerjisi", "ıslanabilirlik"],
 
     "Termal Analizler (STA, DMA, TMA)": [
-        r"\bsta\b", "dinamik mekanik analiz", r"\bdma\b", r"\btma\b",
-        "termal mekanik", "ısı kapasitesi",
-        "sıcaklık taraması", "ısıl geçirgenlik"],
+        r"\bsta\b analiz", "dinamik mekanik analiz",
+        r"\bdma\b analiz", r"\btma\b analiz",
+        "ısıl geçirgenlik", "ısı kapasitesi ölçüm"],
 
     "UV-VIS Spektrofotometri": [
-        "uv-vis", "uv vis", "uvvis", "uv-vis-nir",
-        "absorbans", "transmittans", "spektrofotometre"],
+        "uv-vis", "uv vis spektrum", "uv-vis-nir",
+        "spektrofotometre", "absorbans ölçüm", "transmittans"],
+
+    "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri": [
+        r"\bxps\b", "fotoelektron spektroskopi",
+        "ups analizi", "açıya bağlı xps"],
+
+    "XRD (X-Işını Kırınım) Analizleri": [
+        r"\bxrd\b", "x-ışını kırınım", "difraksiyon deseni",
+        r"\bsaxs\b", "patern inceleme", "rietveld analiz",
+        "kalitatif mineral analiz"],
+
+    "XRF (X-Işını Floresans) Analizleri": [
+        r"\bxrf\b", "x-ışını floresans", "x-ray fluorescence",
+        r"\bwd/xrf\b"],
+
+    "XRR (X-Işını Yansıma) Analizleri": [
+        r"\bxrr\b", "reflectivity", "reflektivite",
+        "x-ışını yansıma"],
 
     "Yoğunluk ve Fiziksel Özellikler": [
-        "yoğunluk", "piknometre", "özgül ağırlık", "viskozite"],
+        "yoğunluk tayini", "özgül ağırlık tayini",
+        "piknometre", "viskozite ölçüm"],
 
     "Yüzey Pürüzlülüğü ve Profilometri": [
-        "pürüzlülük", "profilometre", "yüzey profili",
-        "topografik", "yüzey porozitesi"],
-
-    # Training is intentionally excluded — training fees ≠ analysis fees
-    # They go to "Diğer" fallback
+        "yüzey pürüzlülüğü", "profilometre",
+        "3b yüzey profili", "topografik ölçüm"],
 }
 
 
-def load_json(filepath):
-    if os.path.exists(filepath):
-        with open(filepath, "r", encoding="utf-8") as f:
-            return json.load(f)
+# ── Helpers ───────────────────────────────────────────────────────────────────
+
+def load_json(path: Path) -> dict:
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
     return {}
 
-def save_json(data, filepath):
-    with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
 
-def get_all_known_analyses(keywords_data):
-    known = set()
-    for category, items in keywords_data.items():
-        for item in items:
-            known.add(item.strip())
-    return known
+def save_json(data: dict, path: Path) -> None:
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
-def get_all_fetched_analyses():
-    fetched = set()
-    for file in glob.glob(ANALYSES_DIR):
-        data = load_json(file)
-        for analysis in data.get("analyses", []):
-            if "name" in analysis:
-                fetched.add(analysis["name"].strip())
-    return fetched
 
-def _kw_matches(kw: str, text: str) -> bool:
+def kw_matches(keyword: str, text: str) -> bool:
     """
-    Match a single keyword against lowercased analysis text.
-    Raw strings starting with \b use regex word-boundary matching.
-    Plain strings use simple substring matching.
+    Match a keyword against lowercased analysis text.
+    Keywords wrapped in \\b use regex word-boundary matching.
+    All others use plain substring matching.
     """
-    if kw.startswith("\b") or kw.endswith("\b"):
-        return bool(re.search(kw, text))
-    return kw in text
+    if "\\b" in keyword:
+        return bool(re.search(keyword, text, re.IGNORECASE))
+    return keyword.lower() in text
 
 
-def auto_categorize():
-    keywords_data = load_json(KEYWORDS_FILE)
+def find_group(name: str) -> str | None:
+    """
+    Return the first matching group for an analysis name, or None.
+    No fuzzy matching — keyword matching only.
+    """
+    name_lower = name.lower()
+    for group, keywords in CATEGORY_KEYWORDS.items():
+        if any(kw_matches(kw, name_lower) for kw in keywords):
+            return group
+    return None
 
-    # ── Fallback group for unclassified analyses ──────────────────────────────
-    fallback_category = "Diğer Analiz ve Laboratuvar Hizmetleri"
-    if fallback_category not in keywords_data:
-        keywords_data[fallback_category] = []
 
-    known_analyses = get_all_known_analyses(keywords_data)
-    fetched_analyses = get_all_fetched_analyses()
+# ── Main ──────────────────────────────────────────────────────────────────────
 
-    # ── Re-check "Diğer" entries — a new CATEGORY_KEYWORDS rule may now match ─
-    # This prevents analyses from getting permanently stuck in the fallback group
-    # when better rules are added later.
-    rescued = []
-    for analysis in list(keywords_data.get(fallback_category, [])):
-        analysis_lower = analysis.lower()
-        for category, kws in CATEGORY_KEYWORDS.items():
-            if category == fallback_category:
+def auto_categorize() -> None:
+    total_assigned = 0
+    total_skipped  = 0
+    total_no_match = 0
+
+    for path_str in sorted(glob.glob(ANALYSES_GLOB)):
+        path = Path(path_str)
+        data = load_json(path)
+        analyses = data.get("analyses", [])
+        changed = 0
+
+        for entry in analyses:
+            name = entry.get("name", "").strip()
+            if not name:
                 continue
-            if any(_kw_matches(kw, analysis_lower) for kw in kws):
-                # Move from Diğer to the correct category
-                keywords_data[fallback_category].remove(analysis)
-                if category not in keywords_data:
-                    keywords_data[category] = []
-                if analysis not in keywords_data[category]:
-                    keywords_data[category].append(analysis)
-                rescued.append((analysis, category))
-                print(f"[TAŞINDI]  \'{analysis}\' -> \'{category}\' (Diğer\'den kurtarıldı)")
-                break
 
-    # ── Process genuinely new analyses ────────────────────────────────────────
-    new_analyses = fetched_analyses - known_analyses
+            # Never overwrite an existing human or auto assignment
+            if entry.get("keyword_group"):
+                total_skipped += 1
+                continue
 
-    if not new_analyses and not rescued:
-        print("Sınıflandırılacak yeni analiz bulunamadı.")
-        return
+            group = find_group(name)
+            if group:
+                entry["keyword_group"] = group
+                changed += 1
+                total_assigned += 1
+                print(f"  [OK] '{name[:55]}' → '{group}'")
+            else:
+                entry["keyword_group"] = None
+                total_no_match += 1
 
-    if new_analyses:
-        print(f"{len(new_analyses)} adet yeni analiz tespit edildi. Sınıflandırma başlıyor...")
+        if changed:
+            save_json(data, path)
 
-    for analysis in sorted(new_analyses):
-        categorized = False
-        analysis_lower = analysis.lower()
+    print(f"\nTamamlandı.")
+    print(f"  Yeni atama    : {total_assigned}")
+    print(f"  Zaten atanmış : {total_skipped}")
+    print(f"  Eşleşme yok  : {total_no_match}  ← panel Sınıflandırma sekmesinden atayın")
 
-        # Method 1: Keyword matching (supports  regex patterns)
-        for category, kws in CATEGORY_KEYWORDS.items():
-            if any(_kw_matches(kw, analysis_lower) for kw in kws):
-                if category not in keywords_data:
-                    keywords_data[category] = []
-                if analysis not in keywords_data[category]:
-                    keywords_data[category].append(analysis)
-                print(f"[BAŞARILI] \'{analysis}\' -> \'{category}\'")
-                categorized = True
-                break
-
-        if categorized:
-            continue
-
-        # Method 2: Fuzzy similarity against existing entries
-        best_match = None
-        best_ratio = 0.0
-        best_category = None
-
-        for category, items in keywords_data.items():
-            if category == fallback_category:
-                continue  # don't fuzzy-match against the fallback group itself
-            for item in items:
-                ratio = difflib.SequenceMatcher(
-                    None, analysis_lower, item.lower()
-                ).ratio()
-                if ratio > best_ratio:
-                    best_ratio = ratio
-                    best_match = item
-                    best_category = category
-
-        if best_ratio >= 0.75:  # raised from 0.70 to reduce false positives
-            keywords_data[best_category].append(analysis)
-            print(f"[BENZERLİK] \'{analysis}\' -> \'{best_category}\' "
-                  f"(benzerlik: {best_ratio:.2f}, eşleşen: \'{best_match}\')")
-            continue
-
-        # Method 3: Fallback group
-        keywords_data[fallback_category].append(analysis)
-        print(f"[DİĞER]    \'{analysis}\' -> \'{fallback_category}\'")
-
-    # ── Save: preserve existing group order, deduplicate, sort entries ────────
-    # Existing groups keep their position. New groups (from CATEGORY_KEYWORDS)
-    # are appended at the end. "Diğer" is always last.
-    ordered = {}
-    for key in keywords_data:
-        if key != fallback_category:
-            ordered[key] = sorted(list(set(keywords_data[key])))
-    ordered[fallback_category] = sorted(list(set(keywords_data[fallback_category])))
-
-    save_json(ordered, KEYWORDS_FILE)
-    total_changed = len(new_analyses) + len(rescued)
-    print(f"keywords.json güncellendi — {total_changed} değişiklik.")
 
 if __name__ == "__main__":
     auto_categorize()
