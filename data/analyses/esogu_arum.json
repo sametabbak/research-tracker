@@ -39,7 +39,7 @@
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
       "name": "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
@@ -93,7 +93,7 @@
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Biyolojik Dokulardan TEM İçin Numune Hazırlama",
@@ -120,7 +120,7 @@
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Ultramikrotomda Tam İnce Kesit Alma",
@@ -138,7 +138,7 @@
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Biyolojik Dokulardan Kriyo-TEM İçin Numune Hazırlama*",
@@ -174,7 +174,7 @@
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
       "name": "Kriyojenik Örnekler İçin İnceleme ve Görüntü Alma**",
