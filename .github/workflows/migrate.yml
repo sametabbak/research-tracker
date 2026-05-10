@@ -19,7 +19,7 @@ jobs:
 
       - name: Configure git
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Set up Python 3.11
@@ -34,16 +34,9 @@ jobs:
         run: |
           git add data/analyses/
           if git diff --staged --quiet; then
-            echo "Hiç değişiklik yok — tüm analizler zaten keyword_group sahibi."
+            echo "No changes — all analyses already have keyword_group."
           else
-            STAMPED=$(git diff --staged --stat | tail -1)
-            git commit -m "chore: migrate keyword_group into analyses files
-
-  keyword_group alanı son çalışan keywords.json dosyasından
-  data/analyses/*.json dosyalarına aktarıldı.
-
-  $STAMPED"
+            git commit -m "chore: migrate keyword_group into analyses files"
             git push origin staging
-            echo "✅ Değişiklikler staging branch'e gönderildi."
-            echo "   İnceleme panelini açıp onaylayın."
+            echo "Done. Open the review panel and approve."
           fi
