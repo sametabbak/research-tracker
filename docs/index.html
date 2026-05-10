@@ -976,15 +976,21 @@ function refreshKwCell(name,cid){
 /* ─── CLASSIFICATION TAB ─────────────────────────────────────────────────── */
 function renderClassify(){
   var el=document.getElementById('classifyContent');
-  var digerNames=kwGroups[FALLBACK_GROUP]||[];
-  var ungrouped=[];
-  centers.forEach(function(c){getAnalyses(c.id).forEach(function(a){if(!reverseKW[a.name]||!reverseKW[a.name].length)if(ungrouped.indexOf(a.name)===-1)ungrouped.push(a.name);});});
-  var allToClassify=digerNames.concat(ungrouped.filter(function(n){return digerNames.indexOf(n)===-1;}));
+  /* Ungrouped = analyses where keyword_group is null/empty in analyses data */
+  var ungroupedEntries=[];
+  centers.forEach(function(c){
+    getAnalyses(c.id).forEach(function(a){
+      if(!a.keyword_group){
+        if(!ungroupedEntries.some(function(x){return x.name===a.name&&x.cid===c.id;}))
+          ungroupedEntries.push({name:a.name,cid:c.id,centerName:c.name});
+      }
+    });
+  });
 
-  if(!allToClassify.length){el.innerHTML='<div class="ok-box">✅ Tüm analizler bir karşılaştırma grubuna atanmış.</div>';return;}
+  if(!ungroupedEntries.length){el.innerHTML='<div class="ok-box">✅ Tüm analizler bir karşılaştırma grubuna atanmış.</div>';return;}
 
   var html='<div class="toolbar" style="margin-bottom:16px;"><div class="toolbar-left">'
-    +'<span style="font-size:13px;font-weight:600;">'+allToClassify.length+' analiz sınıflandırma bekliyor</span>'
+    +'<span style="font-size:13px;font-weight:600;">'+ungroupedEntries.length+' analiz sınıflandırma bekliyor</span>'
     +'<input class="search-inp" id="classifySearch" placeholder="Ara..." oninput="filterClassify()">'
     +'</div><div class="toolbar-right">'
     +'<button class="btn btn-primary btn-sm" onclick="autoClassifyAll()">⚡ Otomatik Sınıflandır</button>'
@@ -994,16 +1000,16 @@ function renderClassify(){
     +'<th>Analiz Adı</th><th>Kaynak Merkez</th><th>Mevcut Grup</th><th>Yeni Grup Ata</th><th></th>'
     +'</tr></thead><tbody id="classifyTbody">';
 
-  allToClassify.forEach(function(name){
-    var centers_for=analysisToCenter[name]||[];
-    var centerNames=centers_for.map(function(x){return x.centerName;}).join(', ')||'—';
-    var currentGroup=(reverseKW[name]||[]).join(', ')||'<span style="color:var(--chg);">'+FALLBACK_GROUP+'</span>';
-    var cid=centers_for.length>0?centers_for[0].cid:'';
-    html+='<tr id="classify-row-'+safeId(name)+'">'
+  ungroupedEntries.forEach(function(entry){
+    var name=entry.name;var cid=entry.cid;
+    var centerNames=entry.centerName||'—';
+    var currentGroup='<span style="color:var(--chg);">Grupsuz</span>';
+    var rowId=safeId(cid)+'__'+safeId(name);
+    html+='<tr id="classify-row-'+rowId+'">'
       +'<td style="font-weight:500;max-width:200px;">'+esc(name)+'</td>'
       +'<td style="font-size:11px;color:var(--muted);">'+esc(centerNames)+'</td>'
       +'<td style="font-size:11px;">'+currentGroup+'</td>'
-      +'<td><div class="ac-wrap"><input list="kwGroupsDatalist" id="cls-inp-'+safeId(name)+'" placeholder="Grup seçin..." style="width:200px;padding:4px 8px;border:1px solid var(--border);border-radius:6px;font-size:12px;font-family:inherit;"></div></td>'
+      +'<td><div class="ac-wrap"><input list="kwGroupsDatalist" id="cls-inp-'+rowId+'" placeholder="Grup seçin..." style="width:200px;padding:4px 8px;border:1px solid var(--border);border-radius:6px;font-size:12px;font-family:inherit;"></div></td>'
       +'<td><button class="btn btn-primary btn-sm" onclick="assignFromClassify(\''+jsStr(name)+'\',\''+jsStr(cid)+'\')">Ata</button></td>'
       +'</tr>';
   });
@@ -1016,35 +1022,65 @@ function filterClassify(){
   document.querySelectorAll('#classifyTbody tr').forEach(function(tr){tr.style.display=!q||tr.textContent.toLowerCase().includes(q)?'':'none';});
 }
 function assignFromClassify(name,cid){
-  var inp=document.getElementById('cls-inp-'+safeId(name));
+  var rowId=safeId(cid)+'__'+safeId(name);
+  var inp=document.getElementById('cls-inp-'+rowId);
   if(!inp)return;
   var group=inp.value.trim();
   if(!group){alert('Lütfen bir grup seçin.');return;}
-  /* Remove from Diger if there */
-  removeKwGroup(name,FALLBACK_GROUP,cid);
   addKwGroup(name,group,cid);
-  /* Hide the row */
-  var row=document.getElementById('classify-row-'+safeId(name));
+  var row=document.getElementById('classify-row-'+rowId);
   if(row)row.style.display='none';
   updateSummary();updateApproveBtn();
 }
 function autoClassifyAll(){
-  var digerNames=kwGroups[FALLBACK_GROUP]||[];
   var classified=0;
-  digerNames.forEach(function(name){
-    var nl=name.toLowerCase();
-    for(var g in kwGroups){
-      if(g===FALLBACK_GROUP)continue;
-      /* Simple substring check against group name words */
-      var gWords=g.toLowerCase().replace(/[()]/g,' ').split(/\s+/).filter(function(w){return w.length>3;});
-      if(gWords.some(function(w){return nl.includes(w);})){
-        removeKwGroup(name,FALLBACK_GROUP,'');addKwGroup(name,g,'');classified++;break;
+  var keywordMap={
+    'SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri':['sem görüntü','fe-sem','taramalı elektron','scanning electron','sem analizi','sem cihaz','yüzey görüntüsü'],
+    'SEM-EDX ve EBSD Analizleri':['edx','eds','ebsd','haritalama','enerji dağılımlı','fib'],
+    'XRD (X-Işını Kırınım) Analizleri':['xrd','difraksiyon','kırınım','rietveld','patern inceleme'],
+    'AFM (Atomik Kuvvet Mikroskobu) Analizleri':['afm','atomik kuvvet','mfm','kelvin prob'],
+    'BET ve Yüzey Alanı (Porozimetre) Analizleri':['bet','yüzey alan','porozimetre','adsorpsiyon'],
+    'TGA (Termogravimetrik Analiz)':['tga','termogravimetrik','tg/dta','tg/dsc'],
+    'DSC (Diferansiyel Taramalı Kalorimetri)':['dsc','diferansiyel taramalı'],
+    'DTA (Diferansiyel Termal Analiz)':['dta','diferansiyel termal'],
+    'FTIR ve IR Spektroskopi':['ftir','ft-ir','kızılötesi','infrared','atr spektrum'],
+    'Raman Spektroskopi':['raman'],
+    'NMR Analizleri':['nmr','nükleer manyetik','cosy','hsqc','hmbc','dept'],
+    'ICP-MS Analizleri':['icp-ms'],
+    'ICP-OES Analizleri':['icp-oes','icp-aes'],
+    'Kütle Spektrometrisi (LC-MS, GC-MS)':['lc-ms','gc-ms','gc/ms','lc/ms','hrms','gc-fid'],
+    'Kromatografi (HPLC, GPC)':['hplc','gpc','preparatif hplc'],
+    'Mikrosertlik ve Makrosertlik Testleri':['mikrosertlik','vickers','brinell','rockwell'],
+    'Mekanik Testler (Çekme, Basma, Eğme)':['çekme testi','basma testi','eğme testi','yorulma testi'],
+    'Optik Mikroskopi ve Görüntüleme':['ışık mikroskobu','stereomikroskop','konfokal','inverted mikroskop'],
+    'TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri':['tem analiz','stem analiz','geçirimli elektron','kriyo-tem'],
+    'Moleküler Genetik ve PCR Analizleri':['pcr','dna izolasyon','rna izolasyon','agaroz jel','jel görüntüleme','jel dökümantasyon'],
+    'Tane Boyutu ve Zeta Potansiyeli Analizleri':['tane boyutu','partikül boyut','zeta potansiyeli'],
+    'Kaplama İşlemleri (Altın, Karbon, Platin vb.)':['altın kaplama','karbon kaplama','paladyum kaplama','iridyum kaplama','sputter'],
+    'XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri':['xps','fotoelektron'],
+    'XRF (X-Işını Floresans) Analizleri':['xrf'],
+    'UV-VIS Spektrofotometri':['uv-vis','uv vis','spektrofotometre','absorbans ölçüm'],
+    'AAS (Atomik Absorpsiyon Spektrometresi) Analizleri':['aas','atomik absorpsiyon'],
+    'Nanoindentasyon Analizleri':['nanoindentasyon'],
+    'Temas Açısı ve Yüzey Enerjisi Analizleri':['temas açısı','yüzey gerilimi','serbest yüzey enerjisi'],
+    'Yüzey Pürüzlülüğü ve Profilometri':['pürüzlülük','profilometre','yüzey profili'],
+  };
+  centers.forEach(function(c){
+    getAnalyses(c.id).forEach(function(a){
+      if(a.keyword_group)return;
+      var nl=a.name.toLowerCase();
+      for(var g in keywordMap){
+        var kws=keywordMap[g];
+        if(kws.some(function(kw){return nl.includes(kw);})){
+          addKwGroup(a.name,g,c.id);
+          classified++;break;
+        }
       }
-    }
+    });
   });
   if(classified)alert(classified+' analiz otomatik sınıflandırıldı. Lütfen sonuçları kontrol edin.');
   else alert('Otomatik eşleşme bulunamadı. Manuel atama yapınız.');
-  renderClassify();updateSummary();updateApproveBtn();
+  renderClassify();renderCatalog();updateSummary();updateApproveBtn();
 }
 
 /* ─── DUPLICATE ──────────────────────────────────────────────────────────── */
