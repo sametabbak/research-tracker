@@ -34,7 +34,7 @@
     },
     {
       "name": "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
+      "category": "SEM-Taramalı Elektron Mikroskobu",
       "price": 3800,
       "currency": "TRY",
       "unit": "Saat",
@@ -169,7 +169,7 @@
     },
     {
       "name": "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
+      "category": "SEM-Taramalı Elektron Mikroskobu",
       "price": 4000,
       "currency": "TRY",
       "unit": "Saat",
