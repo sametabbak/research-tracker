@@ -72,9 +72,7 @@
   "Piezoelektrik Ölçümler": [
     "1-Piezoelektrik Sabiti (d) Ölçümü",
     "2- Piezoelektrik Sabiti (d) Ölçümü (Oda Sıcaklığı Kutuplama)",
-    "3- Piezoelektrik Sabiti (d) Ölçümü (Yüksek Sıcaklık Kutuplama)",
-    "2- Piezoelektrik Sabiti (d) Ölçümü Ölçümü (Oda Sıcaklığı Kutuplama)",
-    "3- Piezoelektrik Sabiti (d) (Yüksek Sıcaklık Kutuplama)"
+    "3- Piezoelektrik Sabiti (d) Ölçümü (Yüksek Sıcaklık Kutuplama)"
   ],
   "Eğitim, Danışmanlık ve Raporlama": [
     "Akademik Raporlama İlk 10 sayfadan sonra her 50 sayfa için",
@@ -264,12 +262,7 @@
     "Örnek Hazırlama",
     "Örnek Hazırlama (Bilyalı Öğütücü)",
     "Örnek Hazırlama (Toz halinde gönderilen numunelerin cihaza",
-    "Örnek Hazırlama Adet Daytamla",
-    "Presleme",
-    "Mikrodalga ile Numune Hazırlama (Nitik asit ile)",
-    "Ön Hazırlık (Kırma. Öğütme vb.)",
-    "Ön Hazırlık (Yakma. Kurutma vb.)",
-    "Ön Hazırlık (Süzme. Santrifüj vb,)"
+    "Örnek Hazırlama Adet Daytamla"
   ],
   "Hücre Kültürü ve Biyolojik Analizler": [
     "Annexin V , Dead Cell Kit",
@@ -389,6 +382,7 @@
     "Basma Testi",
     "Dinamik Mekanik Analiz – (-100 – 400 oC)",
     "Dinamik Mekanik Analiz – (25 – 400 oC)",
+    "Kalıntı Gerilme Analizi",
     "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Sucuk Formunda",
     "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Toz Formunda",
     "Yüksek Sıcaklık Altında Aşınma Analizi (500 o C ' ye kadar)",
@@ -546,11 +540,7 @@
     "Metal Mikroskobu",
     "Multifoton Görüntüleme",
     "Stereo Zoom Mikroskop",
-    "Stereomikroskop ile Görüntüleme*",
-    "Konfokal Mikroskop ile Görüntüleme*",
-    "Inverted Mikroskop ile Görüntüleme*",
-    "Floresan Ataçmanlı Mikroskop ile Görüntüleme*",
-    "Stereomikroskop ile Görüntüleme*"
+    "Stereomikroskop ile Görüntüleme*"
   ],
   "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri": [
     "3-SEM Analizi (TL/Saat)",
@@ -590,17 +580,7 @@
     "SEM / STEM Analizi**",
     "STEM Dedektörü ile İnceleme",
     "STEM Görüntüleme",
-    "STEM ile uygun numunelerde karanlık alan görüntülemesi (düşük",
-    "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
-    "Ultramikrotomda Yarı İnce Kesit Alma",
-    "Histokimyasal Boyama; Yarı İnce Kesit Boyama",
-    "Ultramikrotomda Tam İnce Kesit Alma",
-    "Tam İnce Kesit Boyama (Uranil Asetat / Kurşun Sitrat ile)",
-    "Biyolojik Dokulardan Kriyo-TEM İçin Numune Hazırlama*",
-    "Kriyo-Ultramikrotomda Tam İnce Kesit Alma*",
-    "Çözelti / Hücre Süspansiyonlarından Grid Üzerine Kriyo Hazırlık*",
-    "İmmunogold Boyama İçin Numune Hazırlama",
-    "İmmunogold Etiketleme****"
+    "STEM ile uygun numunelerde karanlık alan görüntülemesi (düşük"
   ],
   "Tane Boyutu ve Zeta Potansiyeli Analizleri": [
     "1-Tane Boyut Dağılımı Tayini",
@@ -684,11 +664,7 @@
     "XRR Analizi",
     "XRR Analizi (Roughness Ölçümü*** - Analiz)",
     "Yüksek Sıcaklık Kırınım Deseni",
-    "İnce Film Kırınım Deseni",
-    "İnce Film Analizi",
-    "Kalitatif Mineral Analiz",
-    "Rietveld Analizi",
-    "Kalıntı Gerilme Analizi"
+    "İnce Film Kırınım Deseni"
   ],
   "XRF (X-Işını Floresans) Analizleri": [
     "X-Işını Floresans Spektrometresi (WD/XRF)  Yarı Kantitatif element analizi (Öğütülmüş Örnek)  Yarı Kantitatif element analizi (Maden Örnekleri)  Yarı Kantitatif element analizi (Metal, Alaşım vb.) (Rapor istenilen durumlarda ilave 1100 TL ücret alınacaktır.)",
@@ -739,6 +715,7 @@
     "Yüzey Serbest Enerjisi Hesaplama",
     "Yüzeylerde serbest yüzey enerjisi ölçümü*",
     "Yüzeylerde temas açısı ölçümü",
+    "İnce Film Analizi",
     "İnce Film Kalınlık Ölçümü (1nm-60 um)*",
     "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
     "Ölçüm",
