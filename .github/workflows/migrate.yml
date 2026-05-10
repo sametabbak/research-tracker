@@ -1,0 +1,49 @@
+name: Migrate Keyword Groups
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout staging branch
+        uses: actions/checkout@v4
+        with:
+          ref: staging
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run migration
+        run: python migrate_keyword_groups.py
+
+      - name: Commit results
+        run: |
+          git add data/analyses/
+          if git diff --staged --quiet; then
+            echo "Hiç değişiklik yok — tüm analizler zaten keyword_group sahibi."
+          else
+            STAMPED=$(git diff --staged --stat | tail -1)
+            git commit -m "chore: migrate keyword_group into analyses files
+
+  keyword_group alanı son çalışan keywords.json dosyasından
+  data/analyses/*.json dosyalarına aktarıldı.
+
+  $STAMPED"
+            git push origin staging
+            echo "✅ Değişiklikler staging branch'e gönderildi."
+            echo "   İnceleme panelini açıp onaylayın."
+          fi
