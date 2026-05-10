@@ -35,15 +35,23 @@ def export_center(center: dict, result: dict, diff_report: dict) -> None:
     (DATA_DIR / "analyses").mkdir(exist_ok=True)
     (DATA_DIR / "history").mkdir(exist_ok=True)
 
+    # Load existing keyword_group assignments before overwriting the file.
+    # The tracker updates prices/units but must never erase group assignments
+    # made by auto_categorizer or by a human in the review panel.
+    existing_groups = _load_existing_keyword_groups(center)
+
     analyses = _parse_analyses(center, result)
 
     if not analyses:
         _print_table_diagnostics(center, result)
 
-    _write_analyses(center, analyses)
-    _update_history(center, diff_report, analyses)
-    _rebuild_centers_index()
-    # Merge manually maintained overrides (never overwritten by tracker)
+    # Carry keyword_group forward from the previous version of the file
+    for entry in analyses:
+        name = entry.get("name", "").strip()
+        if name and not entry.get("keyword_group") and name in existing_groups:
+            entry["keyword_group"] = existing_groups[name]
+
+    # Merge manually maintained overrides
     overrides_path = DATA_DIR / "overrides" / f"{center['id']}.json"
     if overrides_path.exists():
         try:
@@ -51,14 +59,16 @@ def export_center(center: dict, result: dict, diff_report: dict) -> None:
             override_entries = overrides_data.get("overrides", [])
             if override_entries:
                 existing_names = {a["name"] for a in analyses}
-                for entry in override_entries:
-                    if entry.get("name") and entry["name"] not in existing_names:
-                        analyses.append(entry)
-                        existing_names.add(entry["name"])
-                print(f"  ✅ {len(override_entries)} manuel analiz eklendi ({center['id']})")
+                for ov in override_entries:
+                    if ov.get("name") and ov["name"] not in existing_names:
+                        analyses.append(ov)
+                        existing_names.add(ov["name"])
         except Exception as exc:
             print(f"  ⚠️  Override dosyası okunamadı ({center['id']}): {exc}")
 
+    _write_analyses(center, analyses)
+    _update_history(center, diff_report, analyses)
+    _rebuild_centers_index()
     _rebuild_keywords()
 
 
@@ -360,6 +370,27 @@ def _parse_price(raw: str) -> float | None:
 
 # ── File writers ───────────────────────────────────────────────────────────────
 
+def _load_existing_keyword_groups(center: dict) -> dict[str, str]:
+    """
+    Read the current analyses file (if it exists) and return a mapping of
+    analysis name → keyword_group for every entry that has one.
+    Used to carry keyword_group assignments forward through tracker runs.
+    """
+    path = DATA_DIR / "analyses" / f"{center['id']}.json"
+    if not path.exists():
+        return {}
+    try:
+        data     = json.loads(path.read_text(encoding="utf-8"))
+        analyses = data.get("analyses", [])
+        return {
+            a["name"]: a["keyword_group"]
+            for a in analyses
+            if a.get("name") and a.get("keyword_group")
+        }
+    except Exception:
+        return {}
+
+
 def _write_analyses(center: dict, analyses: list[dict]) -> None:
     output = {
         "center_id":    center["id"],
@@ -538,14 +569,9 @@ def _rebuild_centers_index() -> None:
 
 def _rebuild_keywords() -> None:
     """
-    Eskiden bu fonksiyon 'keywords.json' dosyasını sıfırdan oluşturarak 
-    manuel düzenlemeleri siliyordu. Artık 'auto_categorizer.py' dosyasındaki 
-    akıllı sınıflandırmayı çağırarak mevcut şablonu bozmadan yeni analizleri ekliyor.
+    keywords.json is now a group-definition file only.
+    Individual analysis → group assignments live in the analyses files
+    as keyword_group fields, maintained by auto_categorizer.py.
+    This function is intentionally a no-op; kept for API compatibility.
     """
-    try:
-        import auto_categorizer
-        auto_categorizer.auto_categorize()
-    except ImportError:
-        print("⚠️ auto_categorizer.py bulunamadı, keywords.json güncellenmedi.")
-    except Exception as e:
-        print(f"⚠️ Kategori güncellemesi sırasında hata oluştu: {e}")
+    pass
