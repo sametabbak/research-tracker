@@ -186,13 +186,13 @@
       "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
-      "name": "RAMAN Spektrum Taraması",
+      "name": "Raman Spektrum Taraması",
       "category": "Raman Spektroskopi Laboratuvarı",
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Moleküler Genetik ve PCR Analizleri"
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "3B Haritalama",
@@ -258,7 +258,7 @@
       "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
-      "name": "Spektrum Taraması",
+      "name": "UV-VIS-NIR Spektrum Taraması",
       "category": "Moleküler Spektroskopi Laboratuvarı",
       "price": 300,
       "currency": "TRY",
