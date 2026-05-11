@@ -1128,7 +1128,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "PM-04 Temel Kullanıcı Eğitimi",
@@ -1155,7 +1155,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "WD-02 Temel Kullanıcı Eğitimi",
@@ -1191,7 +1191,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "WB-02 Temel Kullanıcı Eğitimi",
@@ -1203,9 +1203,9 @@
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
-      "name": "WB-03 İşlem",
+      "name": "WB-01 Ölçüm",
       "category": "",
-      "price": 1100,
+      "price": 600,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
