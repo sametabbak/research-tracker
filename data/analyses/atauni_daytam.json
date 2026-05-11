@@ -70,7 +70,7 @@
     },
     {
       "name": "FE-SEM /EDS ile Yarı Kantitatif Analiz",
-      "category": "",
+      "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 2700,
       "currency": "TRY",
       "unit": "numune",
@@ -79,7 +79,7 @@
     },
     {
       "name": "FE-SEM /EDS ile Haritalama",
-      "category": "",
+      "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 2900,
       "currency": "TRY",
       "unit": "numune",
@@ -88,7 +88,7 @@
     },
     {
       "name": "FE-SEM /EDS ile Noktasal ve Çizgisel Analiz",
-      "category": "",
+      "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 2700,
       "currency": "TRY",
       "unit": "numune",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Metalik Kalıntı Analizi ve Raporlama",
-      "category": "",
+      "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 18000,
       "currency": "TRY",
       "unit": "numune",
@@ -106,7 +106,7 @@
     },
     {
       "name": "Numune Hazırlama",
-      "category": "",
+      "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 2300,
       "currency": "TRY",
       "unit": "numune",
