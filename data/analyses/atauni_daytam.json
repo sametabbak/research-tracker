@@ -97,7 +97,7 @@
     },
     {
       "name": "AFM-05 Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
+      "category": "AFM (Atomik Kuvvet Mikroskobu)",
       "price": 3000,
       "currency": "TRY",
       "unit": "adet",
@@ -169,7 +169,7 @@
     },
     {
       "name": "SEM-08 Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "AFM (Atomik Kuvvet Mikroskobu)",
+      "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 4000,
       "currency": "TRY",
       "unit": "adet",
@@ -223,7 +223,7 @@
     },
     {
       "name": "RMN-06 Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "SEM (Taramalı Elektron Mikroskop)",
+      "category": "MİKRO RAMAN SPEKTROSKOPİ",
       "price": 4100,
       "currency": "TRY",
       "unit": "adet",
@@ -309,7 +309,7 @@
       "currency": "TRY",
       "unit": "adet",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
     {
       "name": "Sıcaklığa Bağlı Ölçüm (70-350 Kelvin)- Kısmi Spektrum (Bir",
@@ -318,11 +318,11 @@
       "currency": "TRY",
       "unit": "adet",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
     {
       "name": "XPS-11 Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "MİKRO RAMAN SPEKTROSKOPİ",
+      "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
       "price": 5000,
       "currency": "TRY",
       "unit": "adet",
