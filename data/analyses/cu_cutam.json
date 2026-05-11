@@ -1,7 +1,7 @@
 {
   "center_id": "cu_cutam",
   "center_name": "CÜ CUTAM",
-  "last_updated": "2026-05-09",
+  "last_updated": "2026-05-11",
   "source_url": "https://cutam.cumhuriyet.edu.tr/16-analiz-fiyatlari",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
@@ -47,8 +47,7 @@
       "price": 100.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "Çözünmüş Oksijen",
@@ -182,8 +181,7 @@
       "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "Yağ asitleri Kompozisyonu % bağıl miktar",
@@ -272,8 +270,7 @@
       "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "Analiz (KBr Pellet)",
@@ -299,8 +296,7 @@
       "price": 200.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "Altın Kaplama (Yalıtkan Numuneler için, 1set-6 numune)",
@@ -362,8 +358,7 @@
       "price": 100.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "Özel elementler (Hg, Au, Ag, Al, Pt)",
@@ -389,8 +384,7 @@
       "price": 500.0,
       "currency": "TRY",
       "unit": "element",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "6-10 element",
@@ -398,8 +392,7 @@
       "price": 600.0,
       "currency": "TRY",
       "unit": "element",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "11-15 element",
@@ -407,8 +400,7 @@
       "price": 700.0,
       "currency": "TRY",
       "unit": "element",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "16-20 element",
@@ -416,8 +408,7 @@
       "price": 800.0,
       "currency": "TRY",
       "unit": "element",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "Numune hazırlığı (asit ile mikro dalga yakma/yaş yakma)",
@@ -434,8 +425,7 @@
       "price": 500.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "1-2 saat",
@@ -443,8 +433,7 @@
       "price": 650.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": ">2 saat",
@@ -452,8 +441,7 @@
       "price": 150.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "1H-NMR",
@@ -479,8 +467,7 @@
       "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "APT",

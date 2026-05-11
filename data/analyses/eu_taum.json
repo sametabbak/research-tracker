@@ -1,7 +1,7 @@
 {
   "center_id": "eu_taum",
   "center_name": "Erciyes TAUM",
-  "last_updated": "2026-05-09",
+  "last_updated": "2026-05-11",
   "source_url": "https://taum.erciyes.edu.tr/tr/analiz-ucretleri",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
@@ -119,8 +119,7 @@
       "price": 650.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "Hava Geçirgenlik Cihazı  Hava Geçirgenlik Analizi",
@@ -128,8 +127,7 @@
       "price": 650.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "Yoğunluk Tayini (Gaz Piknometresiyle) “ “ (Numune Hazırlığı Gerektiren malzemeler)",
@@ -191,8 +189,7 @@
       "price": 50.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "Sıvı Azot",
@@ -200,8 +197,7 @@
       "price": 60.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "",
-      "keyword_group": null
+      "notes": ""
     },
     {
       "name": "Akademik Raporlama İlk 10 sayfadan sonra her 50 sayfa için",

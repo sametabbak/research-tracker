@@ -1,7 +1,7 @@
 {
   "center_id": "gaun_ulutem",
   "center_name": "GAÜN ULUTEM",
-  "last_updated": "2026-05-09",
+  "last_updated": "2026-05-11",
   "source_url": "https://ulutem.gaziantep.edu.tr/pages.php?url=ulutem-analiz-ucretleri-61",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
@@ -201,7 +201,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "Derinlik Profili",
@@ -714,7 +714,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Kalori, Kömür ve Yanmazlık Testleri"
     },
     {
       "name": "Yoğunluk Ölçümü",
