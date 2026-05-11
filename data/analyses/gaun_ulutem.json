@@ -534,7 +534,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Toplam Şeker Analizi (Sakkaroz, Maltoz, Glikoz, Laktoz, Fruktoz) (5 Şeker için)",
@@ -543,7 +543,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Organik Asit Analizi (Kantitatif)",
