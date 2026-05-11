@@ -484,33 +484,33 @@
     },
     {
       "name": "Parçacık Boyut Analizi",
-      "category": "",
+      "category": "Tane Büyüklüğü ve Zeta Potansiyel",
       "price": 550,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Zeta Potansiyeli Analizi",
-      "category": "",
+      "category": "Tane Büyüklüğü ve Zeta Potansiyel",
       "price": 550,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Molekül ağırlığı tayini (Işık Saçınımı ile)",
-      "category": "",
+      "category": "Tane Büyüklüğü ve Zeta Potansiyel",
       "price": 840,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
-      "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
+      "name": "ZET-06 Analiz Sonuçlarının Yorumlanması ve Raporlama",
       "category": "FOTOLÜMİNESANS",
       "price": 1050,
       "currency": "TRY",
@@ -519,8 +519,8 @@
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
     {
-      "name": "Örnek Hazırlama (Toz halinde gönderilen numunelerin cihaza",
-      "category": "",
+      "name": "Örnek Hazırlama (Toz halinde gönderilen numunelerin cihaza uygun olarak hazırlanması)",
+      "category": "Tane Büyüklüğü ve Zeta Potansiyel",
       "price": 350,
       "currency": "TRY",
       "unit": "numune",
@@ -556,7 +556,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "FOTOLÜMİNESANS",
+      "category": "Tane Büyüklüğü ve Zeta Potansiyel",
       "price": 500,
       "currency": "TRY",
       "unit": "adet",
@@ -601,7 +601,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "FOTOLÜMİNESANS",
+      "category": "Tane Büyüklüğü ve Zeta Potansiyel",
       "price": 2500,
       "currency": "TRY",
       "unit": "adet",
