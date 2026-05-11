@@ -466,7 +466,7 @@
     },
     {
       "name": "Faz Kontrast-Fluoresan Ataçmanlı Mikroskop",
-      "category": "",
+      "category": "GÖRÜNTÜLEME LABORATUVARI",
       "price": 750,
       "currency": "TRY",
       "unit": "saat",
@@ -475,7 +475,7 @@
     },
     {
       "name": "Stereo Zoom Mikroskop",
-      "category": "",
+      "category": "GÖRÜNTÜLEME LABORATUVARI",
       "price": 400,
       "currency": "TRY",
       "unit": "saat",
@@ -484,7 +484,7 @@
     },
     {
       "name": "3-Boyutlu Modelleme",
-      "category": "",
+      "category": "TERSİNE MÜHENDİSLİK ve EKLEMELİ İMALAT LABORATUVARI",
       "price": 750,
       "currency": "TRY",
       "unit": "saat",
@@ -493,7 +493,7 @@
     },
     {
       "name": "3-Boyutlu Optik Tarayıcı",
-      "category": "",
+      "category": "TERSİNE MÜHENDİSLİK ve EKLEMELİ İMALAT LABORATUVARI",
       "price": 750,
       "currency": "TRY",
       "unit": "saat",
@@ -502,7 +502,7 @@
     },
     {
       "name": "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Toz Formunda",
-      "category": "",
+      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -511,7 +511,7 @@
     },
     {
       "name": "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Sucuk Formunda",
-      "category": "",
+      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
       "price": 3125,
       "currency": "TRY",
       "unit": "numune",
@@ -520,7 +520,7 @@
     },
     {
       "name": "Tane Boyut Dağılımı (Lazer tekniği ile su ortamında) *",
-      "category": "",
+      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
       "price": 900,
       "currency": "TRY",
       "unit": "numune",
@@ -529,7 +529,7 @@
     },
     {
       "name": "Tane Boyut Dağılımı (Yaş / Kuru elek analizi)",
-      "category": "",
+      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
       "price": 900,
       "currency": "TRY",
       "unit": "numune",
@@ -538,7 +538,7 @@
     },
     {
       "name": "Tane Boyut Dağılımı (2 mikron altı analizi)",
-      "category": "",
+      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
       "price": 3750,
       "currency": "TRY",
       "unit": "numune",
@@ -547,7 +547,7 @@
     },
     {
       "name": "Fırın Kullanımı (Kutu tipi, 1500 o C’ye kadar)",
-      "category": "",
+      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
       "price": 1750,
       "currency": "TRY",
       "unit": "numune",
@@ -556,7 +556,7 @@
     },
     {
       "name": "pH Ölçümü",
-      "category": "",
+      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
       "price": 150,
       "currency": "TRY",
       "unit": "numune",
@@ -565,7 +565,7 @@
     },
     {
       "name": "Rutubet (Nem) Tayini",
-      "category": "",
+      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
       "price": 150,
       "currency": "TRY",
       "unit": "numune",
@@ -574,7 +574,7 @@
     },
     {
       "name": "Etüv Kullanımı",
-      "category": "",
+      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
       "price": 450,
       "currency": "TRY",
       "unit": "numune",
@@ -583,7 +583,7 @@
     },
     {
       "name": "Sıvı Piknometre ile Tozlarda Kütle Yoğunluğu Tayini",
-      "category": "",
+      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
       "price": 300,
       "currency": "TRY",
       "unit": "numune",
@@ -592,7 +592,7 @@
     },
     {
       "name": "Kuru Öğütme",
-      "category": "",
+      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
@@ -601,7 +601,7 @@
     },
     {
       "name": "Kuru Presleme",
-      "category": "",
+      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
