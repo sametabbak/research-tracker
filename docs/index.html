@@ -208,6 +208,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
   <div class="tab"     id="t-catalog"  onclick="showTab('catalog')">Tüm Analizler</div>
   <div class="tab"     id="t-override" onclick="showTab('override')">Manuel Eklemeler</div>
   <div class="tab"     id="t-classify" onclick="showTab('classify')">🏷️ Sınıflandırma</div>
+  <div class="tab"     id="t-test"     onclick="showTab('test')">🧪 Test</div>
 </div>
 
 <div class="content">
@@ -233,6 +234,9 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
   </div>
   <div id="tab-override" class="hidden">
     <div id="overrideContent"><div class="loader"><div class="spin"></div></div></div>
+  </div>
+  <div id="tab-test" class="hidden">
+    <div id="testContent"></div>
   </div>
   <div id="tab-classify" class="hidden">
     <div id="classifyContent"><div class="loader"><div class="spin"></div></div></div>
@@ -591,7 +595,7 @@ function getDiff(cid){
   return{
     added:  sa.filter(function(a){return!bm[a.name];}),
     deleted:ma.filter(function(a){return!bs[a.name];}),
-    changed:sa.filter(function(a){var m=bm[a.name];return m&&m.price!==a.price;}),
+    changed:sa.filter(function(a){var m=bm[a.name];if(!m)return false;return Math.round(Number(a.price)*100)!==Math.round(Number(m.price)*100);}),
     all:sa,miss:!sf
   };
 }
@@ -637,7 +641,8 @@ function setFilter(f){
   renderChanges();
 }
 function showTab(name){
-  ['changes','catalog','override','classify'].forEach(function(t){
+  if(name==='test')renderTest();
+  ['changes','catalog','override','classify','test'].forEach(function(t){
     document.getElementById('tab-'+t).className=t===name?'':'hidden';
     document.getElementById('t-'+t).className='tab'+(t===name?' on':'');
   });
@@ -813,6 +818,10 @@ function filterCat(){
 
 /* ═══ INLINE EDITING ═════════════════════════════════════════════════════════ */
 function edCell(td,cid,name,field){
+  /* Commit any other open editors before opening a new one */
+  document.querySelectorAll('.ed input, .ed select').forEach(function(el){
+    if(el!==td.querySelector('input,select'))el.blur();
+  });
   if(td.querySelector('input,select'))return;
   var inp;
   if(field==='category'){inp=document.createElement('input');inp.setAttribute('list','catDl');inp.value=td.textContent.trim();}
@@ -827,11 +836,17 @@ function edCell(td,cid,name,field){
     var val=field==='price'?parseFloat(inp.value):inp.value.trim();
     if(!pE[cid])pE[cid]={};if(!pE[cid][name])pE[cid][name]={};
     pE[cid][name][field]=val;
-    /* Also update sMap so re-renders are instant */
+    /* Update sMap so re-renders are instant */
     var sf=sMap[cid];
     if(sf&&sf.content&&sf.content.analyses){
       var entry=sf.content.analyses.find(function(a){return a.name===name;});
       if(entry)entry[field]=val;
+    }
+    /* If the name field changed, migrate pE key so subsequent
+       edits on this row still accumulate under the new name */
+    if(field==='name'&&val&&val!==name){
+      pE[cid][val]=Object.assign({},pE[cid][name]);
+      delete pE[cid][name];
     }
     if(field==='price'){var sy=SYM[pE[cid][name].currency||'TRY']||'₺';td.textContent=Number(val).toLocaleString('tr-TR')+' '+sy;}
     else if(field==='notes'&&!val){td.innerHTML='<span style="color:var(--muted);font-style:italic">—</span>';}
@@ -1467,14 +1482,108 @@ async function doApprove(){
 
     btn.textContent='✓ Onayla ve Yayınla';btn.disabled=false;
 
-    /* Non-blocking merge timing message */
-    document.getElementById('hdrMeta').textContent="Merge başlatıldı. 30-60 saniye içinde main güncellenecek. Tamamlandığında ↻ Yenile.";
+    /* Show timing message, then auto-refresh mMap after merge completes */
+    document.getElementById('hdrMeta').textContent="Merge başlatıldı. 30-60 saniye içinde main güncellenecek...";
     document.getElementById('hdrMeta').style.color='#ffe066';
+
+    setTimeout(async function(){
+      try{
+        /* Refresh mMap from newly merged main — clears false "price changed" diffs */
+        var ids=centers.map(function(c){return c.id;});
+        var rs=await Promise.all(ids.map(function(id){
+          return rawRead(MAIN,'data/analyses/'+id+'.json').then(function(r){return[id,r];});
+        }));
+        rs.forEach(function(p){if(p[1])mMap[p[0]]=p[1];});
+        renderChanges();updSum();
+        document.getElementById('hdrMeta').textContent='✅ Merge tamamlandı. Main güncellendi.';
+        document.getElementById('hdrMeta').style.color='#aaff88';
+      }catch(e){
+        document.getElementById('hdrMeta').textContent='Merge kontrolü için ↻ Yenile butonuna basın.';
+      }
+    }, 65000);
 
   }catch(e){
     alert('Hata: '+e.message);
     btn.textContent='✓ Onayla ve Yayınla';btn.disabled=false;
   }
+}
+
+/* ═══ TEST / PREVIEW ════════════════════════════════════════════════════════ */
+function renderTest(){
+  var el=document.getElementById('testContent');
+  el.innerHTML='<div style="max-width:700px;">'
+    +'<div class="info-box" style="margin-bottom:16px;">'
+    +'<strong>🧪 Karşılaştırma Testi</strong><br>'
+    +'Bir analiz seçin ve mobil uygulamanın göstereceği karşılaştırma sonuçlarını görün.'
+    +'</div>'
+    +'<div style="display:flex;gap:10px;margin-bottom:16px;">'
+    +'<div class="ac-w" style="flex:1;">'
+    +'<input id="testInp" list="nlDl" class="s-inp" style="width:100%;" placeholder="Analiz adı yazın veya seçin..." oninput="runTest()" autocomplete="off">'
+    +'</div>'
+    +'<button class="btn btn-p" onclick="runTest()">Ara</button>'
+    +'</div>'
+    +'<div id="testResult"></div>'
+    +'</div>';
+}
+
+function runTest(){
+  var name=(document.getElementById('testInp')||{}).value;
+  if(!name)return;
+  name=name.trim();
+  var res=document.getElementById('testResult');
+  if(!res)return;
+
+  /* Find the analysis in any center */
+  var found=null;var foundCid=null;
+  centers.forEach(function(c){
+    if(found)return;
+    var a=getA(c.id).find(function(x){return x.name===name;});
+    if(a){found=a;foundCid=c.id;}
+  });
+
+  if(!found){
+    res.innerHTML='<div class="warn-box">Bu isimde analiz bulunamadı. Tam adı kontrol edin.</div>';
+    return;
+  }
+
+  var grp=found.keyword_group;
+  if(!grp){
+    res.innerHTML='<div class="warn-box">⚠️ Bu analiz henüz bir karşılaştırma grubuna atanmamış.<br>'
+      +'Sınıflandırma sekmesinden grup atayın.</div>';
+    return;
+  }
+
+  /* Collect all analyses in the same group across all centers */
+  var results=[];
+  centers.forEach(function(c){
+    getA(c.id).forEach(function(a){
+      if(a.keyword_group===grp)
+        results.push({name:a.name,price:a.price,currency:a.currency||'TRY',unit:a.unit||'numune',cid:c.id,cn:c.name,city:c.city||''});
+    });
+  });
+  results.sort(function(a,b){return(a.price||0)-(b.price||0);});
+
+  var html='<div class="info-box" style="margin-bottom:12px;">'
+    +'<strong>Karşılaştırma Grubu:</strong> '+esc(grp)+'<br>'
+    +'<strong>Sonuç Sayısı:</strong> '+results.length+' analiz'
+    +'</div>'
+    +'<div class="tw"><table>'
+    +'<thead><tr><th>Merkez</th><th>Şehir</th><th>Analiz Adı</th><th>Fiyat</th><th>Birim</th></tr></thead>'
+    +'<tbody>';
+
+  results.forEach(function(r){
+    var isSelf=r.name===name&&r.cid===foundCid;
+    html+='<tr'+(isSelf?' style="background:#f0fdf4;font-weight:600;"':'')+'>'
+      +'<td>'+esc(r.cn)+'</td>'
+      +'<td style="font-size:11px;color:var(--muted);">'+esc(r.city)+'</td>'
+      +'<td>'+esc(r.name)+(isSelf?' <span class="badge b-add" style="font-size:10px;">Seçilen</span>':'')+'</td>'
+      +'<td>'+fmtC(r.price,r.currency)+'</td>'
+      +'<td>'+esc(r.unit)+'</td>'
+      +'</tr>';
+  });
+
+  html+='</tbody></table></div>';
+  res.innerHTML=html;
 }
 
 /* ═══ COLLAPSE ═══════════════════════════════════════════════════════════════ */
