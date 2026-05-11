@@ -10,18 +10,18 @@
       "category": "",
       "price": 700,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "HR (malzeme örnekleri) veya HC (biyolojik örnekler) modunda",
       "category": "",
       "price": 1400,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "STEM ile uygun numunelerde karanlık alan görüntülemesi (düşük",
