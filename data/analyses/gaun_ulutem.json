@@ -768,7 +768,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Diğer Analiz Türleri"
     },
     {
       "name": "Toplam Fenolik Madde Tayini",
@@ -804,7 +804,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Sıvı Azot, Saf Su"
     },
     {
       "name": "Ölçüm Belirsizliği ve Metod Validesyonu Uygulamalı Eğitimi (16 Saat)",
@@ -813,7 +813,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Stabilite",
@@ -822,7 +822,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Diğer Analiz Türleri"
     },
     {
       "name": "Fitalat",
