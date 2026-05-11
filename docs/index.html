@@ -189,6 +189,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
   <div class="hdr-right">
     <div class="tok bad" id="tokBadge" onclick="openTokModal(null)">🔑 Token gir</div>
     <button class="btn btn-sec" onclick="loadAll()">↻ Yenile</button>
+    <button class="btn btn-sec" onclick="showModal('bkpOv')">💾 Yedek</button>
     <button class="btn btn-ok" id="apvBtn" onclick="approve()" disabled>✓ Onayla ve Yayınla</button>
   </div>
 </div>
@@ -204,7 +205,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 
 <!-- TABS -->
 <div class="tabs">
-  <div class="tab on"  id="t-changes"  onclick="showTab('changes')">Değişiklikler</div>
+  <div class="tab on"  id="t-changes"  onclick="showTab('changes')">Değişiklikler<span id="chgBadge" class="hidden" style="background:var(--del);color:#fff;border-radius:10px;padding:1px 6px;font-size:10px;font-weight:700;margin-left:5px;">0</span></div>
   <div class="tab"     id="t-catalog"  onclick="showTab('catalog')">Tüm Analizler</div>
   <div class="tab"     id="t-override" onclick="showTab('override')">Manuel Eklemeler</div>
   <div class="tab"     id="t-classify" onclick="showTab('classify')">🏷️ Sınıflandırma</div>
@@ -547,6 +548,13 @@ async function loadAll(){
 
   stagOk=Object.keys(sMap).length>0;
 
+  /* Stamp stable _pid so same-name analyses in same center don't collide */
+  centers.forEach(function(c){
+    var sf=sMap[c.id];
+    if(sf&&sf.content&&sf.content.analyses)
+      sf.content.analyses.forEach(function(a,i){a._pid=c.id+'_'+i;});
+  });
+
   buildRKW();buildA2C();buildAllCats();buildDLs();
   updSum();renderChanges();renderCatalog();renderOverride();renderClassify();
   updApvBtn();collapseAll();
@@ -638,6 +646,9 @@ function updSum(){
   document.getElementById('sDel').textContent=dl;
   document.getElementById('sChg').textContent=ch;
   document.getElementById('sUg').textContent=ug;
+  var dc=nw+dl+ch;
+  var bdg=document.getElementById('chgBadge');
+  if(bdg){bdg.textContent=dc;bdg.className=dc>0?'':'hidden';}
 }
 function updApvBtn(){
   var hasD=centers.some(function(c){var d=getDiff(c.id);return d.added.length||d.deleted.length||d.changed.length;});
@@ -713,11 +724,36 @@ function renderChanges(){
 }
 
 /* ═══ RENDER: CATALOG ════════════════════════════════════════════════════════ */
+function sbtn(cid,f,lbl){
+  var sc=sortCfg[cid]||{};var on=sc.field===f;
+  var cls='sort-btn'+(on?' on':'');
+  var arr=on?(sc.dir===1?' ↑':' ↓'):'';
+  var oc="setSort('"  +jsS(cid)+"','"  +f+"')";
+  return'<button class="'+cls+'" onclick="'+oc+'">'  +lbl+arr+'</button>';
+}
+function setSort(cid,f){
+  var sc=sortCfg[cid]||{field:null,dir:1};
+  if(sc.field===f)sc.dir=sc.dir===1?-1:1;else{sc.field=f;sc.dir=1;}
+  sortCfg[cid]=sc;renderCatalog();
+}
+function sortList(list,cid){
+  var sc=sortCfg[cid];if(!sc||!sc.field)return list;
+  return list.slice().sort(function(a,b){
+    var va,vb;
+    if(sc.field==='name'){va=(a.name||'').toLowerCase();vb=(b.name||'').toLowerCase();}
+    else if(sc.field==='price'){va=a.price||0;vb=b.price||0;}
+    else if(sc.field==='category'){va=(a.category||'').toLowerCase();vb=(b.category||'').toLowerCase();}
+    else if(sc.field==='kw'){va=(a.keyword_group||'').toLowerCase();vb=(b.keyword_group||'').toLowerCase();}
+    if(va<vb)return-sc.dir;if(va>vb)return sc.dir;return 0;
+  });
+}
+
 function renderCatalog(){
   var el=document.getElementById('catalogContent');var html='';
   centers.forEach(function(c){
-    var raw=getA(c.id);var list=sortList(raw,c.id);
+    var raw=getA(c.id);var list=sortList(raw,c.id);var list=sortList(raw,c.id);
     var sid=sid2(c.id);var col=colState[sid]||false;
+    var d=getDiff(c.id);
     var hasE=(pE[c.id]&&Object.keys(pE[c.id]).length)||(pD[c.id]&&pD[c.id].size);
     var cu=(pCE[c.id]&&pCE[c.id].url!==undefined)?pCE[c.id].url:(c.url||'');
     var pu=(pCE[c.id]&&pCE[c.id].pricing_url!==undefined)?pCE[c.id].pricing_url:(c.pricing_url||'');
@@ -746,9 +782,10 @@ function renderCatalog(){
 
     /* Toolbar */
     html+='<div class="tb"><div class="tb-l">'
-      +(hasE?(function(){var ec=pE[c.id]?Object.keys(pE[c.id]).length:0;var dc=pD[c.id]?pD[c.id].size:0;var parts=[];if(ec)parts.push(ec+' düzenleme');if(dc)parts.push(dc+' silme');return '<div class="pend" style="margin:0;padding:5px 10px;font-size:11px;"><span>Bekleyen: '+parts.join(', ')+'</span><button class="undo" onclick="undoCtr(\''+jsS(c.id)+'\')">Geri Al</button></div>';})():'')
-      +(hasE?'<div class="pend" style="margin:0;padding:5px 10px;font-size:11px;"><span>Kaydedilmemiş değişiklik</span><button class="undo" onclick="undoCtr(\''+jsS(c.id)+'\')">Geri Al</button></div>':'')
+      +sbtn(c.id,'name','Ad')+sbtn(c.id,'price','Fiyat')+sbtn(c.id,'category','Kategori')+sbtn(c.id,'kw','Grup')
+      +(hasE?(function(){var ec=pE[c.id]?Object.keys(pE[c.id]).length:0;var dc=pD[c.id]?pD[c.id].size:0;var pts=[];if(ec)pts.push(ec+' düzenleme');if(dc)pts.push(dc+' silme');return'<div class="pend" style="margin:0;padding:5px 10px;font-size:11px;"><span>Bekleyen: '+pts.join(', ')+'</span><button class="undo" onclick="undoCtr(\''+jsS(c.id)+'\')">Geri Al</button></div>';})():'')
       +'</div><div class="tb-r">'
+      +((hasE||d.added.length||d.deleted.length||d.changed.length)?'<button class="btn btn-sm" style="background:#dcfce7;border:1px solid #86efac;color:#166534;font-weight:700;" onclick="approveCtr(\''+jsS(c.id)+'\')" id="apv-'+sid2(c.id)+'">✓ Bu Merkezi Yayınla</button>':'')
       +'<button class="btn btn-p btn-sm" onclick="openAddModal(\''+jsS(c.id)+'\')">+ Analiz</button>'
       +'<button class="btn btn-sm btn-ghost" onclick="openPasteModal(\''+jsS(c.id)+'\')">📋</button>'
       +(sel>0?'<button class="btn btn-sm btn-warn" onclick="openBatch(\''+jsS(c.id)+'\')">'+sel+' seçili ⚡</button>':'')
@@ -790,29 +827,30 @@ function sortList(list,cid){
 }
 
 function catRow(cid,a){
-  var isDel=pD[cid]&&pD[cid].has(a.name);
-  var isSel=selRows[cid]&&selRows[cid].has(a.name);
+  /* _pid = stable session ID; prevents collision when two analyses share a name */
+  var pid=a._pid||(cid+'__'+a.name);
+  var isDel=pD[cid]&&pD[cid].has(pid);
+  var isSel=selRows[cid]&&selRows[cid].has(pid);
   var cls=isDel?'r-del':isSel?'r-sel':'';
-  var rid=sid2(cid)+'__'+sid2(a.name);
+  var rid=sid2(pid);
   var sym=SYM[a.currency||'TRY']||'₺';
-  /* KW badges */
   var kg=a.keyword_group||'';
   var kwH='';
   if(!kg){kwH='<span class="ug-warn">⚠️ Grupsuz</span> ';}
-  else{kwH='<span class="kw-badge">'+esc(kg.length>30?kg.substring(0,28)+'…':kg)+'<span class="kw-x" onclick="removeKwG(\''+jsS(a.name)+'\',\''+jsS(kg)+'\',\''+jsS(cid)+'\')">✕</span></span>';}
-  kwH+='<button class="kw-add" onclick="openKwPicker(\''+jsS(a.name)+'\',\''+jsS(cid)+'\')">+ grup</button>';
+  else{var ks=kg.length>40?kg.substring(0,38)+'…':kg;kwH='<span class="kw-badge" title="'+esc(kg)+'">'+esc(ks)+'<span class="kw-x" onclick="removeKwG(\''+jsS(a.name)+'\',\''+jsS(kg)+'\',\''+jsS(cid)+'\')" title="Gruptan çıkar">✕</span></span>';}
+  kwH+='<button class="kw-add" onclick="openKwPicker(\''+jsS(a.name)+'\',\''+jsS(cid)+'\')" title="Grubu değiştir">✎ grup</button>';
 
   return'<tr class="'+cls+'" id="tr-'+rid+'">'
-    +'<td><input type="checkbox"'+(isSel?' checked':'')+' onchange="togSel(\''+jsS(cid)+'\',\''+jsS(a.name)+'\',this.checked)"></td>'
-    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(a.name)+'\',\'name\')">'+esc(a.name)+'</td>'
-    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(a.name)+'\',\'category\')">'+esc(a.category||'')+'</td>'
-    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(a.name)+'\',\'price\')">'+Number(a.price||0).toLocaleString('tr-TR')+' '+sym+'</td>'
-    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(a.name)+'\',\'unit\')">'+esc(a.unit||'numune')+'</td>'
-    +'<td class="ed nc" title="'+esc(a.notes||'')+'" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(a.name)+'\',\'notes\')">'+(a.notes?esc(a.notes):'<span style="color:var(--muted);font-style:italic">—</span>')+'</td>'
+    +'<td><input type="checkbox"'+(isSel?' checked':'')+' onchange="togSel(\''+jsS(cid)+'\',\''+jsS(pid)+'\',this.checked)"></td>'
+    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(pid)+'\',\'name\')">'+esc(a.name)+'</td>'
+    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(pid)+'\',\'category\')">'+esc(a.category||'')+'</td>'
+    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(pid)+'\',\'price\')">'+Number(a.price||0).toLocaleString('tr-TR')+' '+sym+'</td>'
+    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(pid)+'\',\'unit\')">'+esc(a.unit||'numune')+'</td>'
+    +'<td class="ed nc" title="'+esc(a.notes||'')+'" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(pid)+'\',\'notes\')">'+(a.notes?esc(a.notes):'<span style="color:var(--muted);font-style:italic">—</span>')+'</td>'
     +'<td class="kw-cell">'+kwH+'</td>'
     +'<td style="white-space:nowrap;">'
-    +'<button class="r-dup-btn" title="Kopyala" onclick="openDup(\''+jsS(cid)+'\',\''+jsS(a.name)+'\')">⊕</button>'
-    +'<button class="r-del-btn" title="'+(isDel?'Geri al':'Sil')+'" onclick="togDel(\''+jsS(cid)+'\',\''+jsS(a.name)+'\')">'+(isDel?'↩':'🗑')+'</button>'
+    +'<button class="r-dup-btn" title="Kopyala" onclick="openDup(\''+jsS(cid)+'\',\''+jsS(pid)+'\')">⊕</button>'
+    +'<button class="r-del-btn" title="'+(isDel?'Geri al':'Sil')+'" onclick="togDel(\''+jsS(cid)+'\',\''+jsS(pid)+'\')">'+(isDel?'↩':'🗑')+'</button>'
     +'</td></tr>';
 }
 
@@ -881,7 +919,7 @@ function filterCat(){
 }
 
 /* ═══ INLINE EDITING ═════════════════════════════════════════════════════════ */
-function edCell(td,cid,name,field){
+function edCell(td,cid,pid,field){
   /* Commit any other open editors before opening a new one */
   document.querySelectorAll('.ed input, .ed select').forEach(function(el){
     if(el!==td.querySelector('input,select'))el.blur();
@@ -898,19 +936,18 @@ function edCell(td,cid,name,field){
   }
   var commit=function(){
     var val=field==='price'?parseFloat(inp.value):inp.value.trim();
-    if(!pE[cid])pE[cid]={};if(!pE[cid][name])pE[cid][name]={};
-    pE[cid][name][field]=val;
+    if(!pE[cid])pE[cid]={};if(!pE[cid][pid])pE[cid][pid]={};
+    pE[cid][pid][field]=val;
     /* Update sMap so re-renders are instant */
     var sf=sMap[cid];
     if(sf&&sf.content&&sf.content.analyses){
-      var entry=sf.content.analyses.find(function(a){return a.name===name;});
+      var entry=sf.content.analyses.find(function(a){return a._pid===pid;});
       if(entry)entry[field]=val;
     }
     /* If the name field changed, migrate pE key so subsequent
        edits on this row still accumulate under the new name */
     if(field==='name'&&val&&val!==name){
-      pE[cid][val]=Object.assign({},pE[cid][name]);
-      delete pE[cid][name];
+      /* name changed — pid still points to the same entry */
     }
     if(field==='price'){var sy=SYM[pE[cid][name].currency||'TRY']||'₺';td.textContent=Number(val).toLocaleString('tr-TR')+' '+sy;}
     else if(field==='notes'&&!val){td.innerHTML='<span style="color:var(--muted);font-style:italic">—</span>';}
@@ -921,26 +958,28 @@ function edCell(td,cid,name,field){
   td.textContent='';td.appendChild(inp);inp.focus();if(inp.tagName==='INPUT')inp.select();
 }
 
-function togDel(cid,name){
+function togDel(cid,pid){
   if(!pD[cid])pD[cid]=new Set();
-  var s=pD[cid];s.has(name)?s.delete(name):s.add(name);
-  var a=getA(cid).find(function(x){return x.name===name;});if(!a)return;
-  var old=document.getElementById('tr-'+sid2(cid)+'__'+sid2(name));
+  var s=pD[cid];s.has(pid)?s.delete(pid):s.add(pid);
+  var sf=sMap[cid];
+  var a=sf&&sf.content&&sf.content.analyses?sf.content.analyses.find(function(x){return x._pid===pid;}):null;
+  if(!a)return;
+  var old=document.getElementById('tr-'+sid2(pid));
   if(old){var tmp=document.createElement('tbody');tmp.innerHTML=catRow(cid,a);old.replaceWith(tmp.firstElementChild);}
   updApvBtn();updSum();
 }
 function undoCtr(cid){delete pE[cid];delete pD[cid];renderCatalog();updApvBtn();updSum();}
 
 /* Selection */
-function togSel(cid,name,on){
+function togSel(cid,pid,on){
   if(!selRows[cid])selRows[cid]=new Set();
-  on?selRows[cid].add(name):selRows[cid].delete(name);
+  on?selRows[cid].add(pid):selRows[cid].delete(pid);
   updApvBtn();renderCatalog();
 }
 function selAll(cid){
   var list=getA(cid);if(!selRows[cid])selRows[cid]=new Set();
   var all=selRows[cid].size===list.length;
-  list.forEach(function(a){all?selRows[cid].delete(a.name):selRows[cid].add(a.name);});
+  list.forEach(function(a){var pid=a._pid||(cid+'__'+a.name);all?selRows[cid].delete(pid):selRows[cid].add(pid);});
   renderCatalog();
 }
 
@@ -1283,8 +1322,10 @@ function autoClassify(){
 }
 
 /* ═══ DUPLICATE ══════════════════════════════════════════════════════════════ */
-function openDup(cid,name){
-  var list=getA(cid);dupSrc={cid:cid,a:list.find(function(x){return x.name===name;})};
+function openDup(cid,pid){
+  var sf=sMap[cid];
+  var byPid=sf&&sf.content&&sf.content.analyses?sf.content.analyses.find(function(x){return x._pid===pid;}):null;
+  dupSrc={cid:cid,a:byPid||getA(cid).find(function(x){return x._pid===pid;})};
   if(!dupSrc.a)return;
   document.getElementById('dupSrc').textContent=name;
   var sel=document.getElementById('dupCtr');
@@ -1393,33 +1434,21 @@ function openBatch(cid){
 }
 function applyBatch(){
   var cid=document.getElementById('batchOv').dataset.cid;
-  var names=selRows[cid]?Array.from(selRows[cid]):[];
-  if(!names.length){hideModal('batchOv');return;}
+  var pids=selRows[cid]?Array.from(selRows[cid]):[];
+  if(!pids.length){hideModal('batchOv');return;}
   var ncat=document.getElementById('batchCat').value.trim();
   var nkwg=document.getElementById('batchKwg').value.trim();
   var mult=parseFloat(document.getElementById('batchMult').value);
   var ncur=document.getElementById('batchCur').value;
   var sf=sMap[cid];
-  names.forEach(function(name){
-    if(!pE[cid])pE[cid]={};if(!pE[cid][name])pE[cid][name]={};
-    var entry=sf&&sf.content&&sf.content.analyses?sf.content.analyses.find(function(a){return a.name===name;}):null;
-    if(ncat){
-      pE[cid][name].category=ncat;
-      if(entry)entry.category=ncat;       /* update sMap for immediate visual */
-    }
-    if(ncur){
-      pE[cid][name].currency=ncur;
-      if(entry)entry.currency=ncur;
-    }
-    if(!isNaN(mult)&&mult>0){
-      var a=getA(cid).find(function(x){return x.name===name;});
-      if(a){
-        var np=Math.round(a.price*mult);
-        pE[cid][name].price=np;
-        if(entry)entry.price=np;          /* update sMap for immediate visual */
-      }
-    }
-    if(nkwg)addKwG(name,nkwg,cid);
+  pids.forEach(function(pid){
+    var entry=sf&&sf.content&&sf.content.analyses?sf.content.analyses.find(function(a){return a._pid===pid;}):null;
+    if(!entry)return;
+    if(!pE[cid])pE[cid]={};if(!pE[cid][pid])pE[cid][pid]={};
+    if(ncat){pE[cid][pid].category=ncat;entry.category=ncat;}
+    if(ncur){pE[cid][pid].currency=ncur;entry.currency=ncur;}
+    if(!isNaN(mult)&&mult>0){var np=Math.round((entry.price||0)*mult);pE[cid][pid].price=np;entry.price=np;}
+    if(nkwg)addKwG(entry.name,nkwg,cid);
   });
   selRows[cid]=new Set();hideModal('batchOv');renderCatalog();updSum();updApvBtn();
 }
@@ -1521,12 +1550,14 @@ async function doApprove(){
     for(var i=0;i<cids.length;i++){
       var cid=cids[i];var sf=sMap[cid];if(!sf)continue;
       var newA=sf.content.analyses.slice();
-      if(pE[cid])newA=newA.map(function(a){var p=pE[cid][a.name];return p?Object.assign({},a,p):a;});
-      if(pD[cid]&&pD[cid].size)newA=newA.filter(function(a){return!pD[cid].has(a.name);});
+      if(pE[cid])newA=newA.map(function(a){var p=pE[cid][a._pid];return p?Object.assign({},a,p):a;});
+      if(pD[cid]&&pD[cid].size)newA=newA.filter(function(a){return!pD[cid].has(a._pid);});
+      newA=newA.map(function(a){var x=Object.assign({},a);delete x._pid;return x;});
       var nc=Object.assign({},sf.content,{analyses:newA});
       var cn=centers.find(function(c){return c.id===cid;});
       var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf.sha,'fix: panel düzenlemesi — '+(cn?cn.name:cid));
       sMap[cid]={content:nc,sha:(wa&&wa.content)?wa.content.sha:sf.sha};
+      sMap[cid].content.analyses.forEach(function(a,i){a._pid=cid+'_'+i;});
     }
 
     /* 2. Override additions */
@@ -1566,8 +1597,11 @@ async function doApprove(){
 
     btn.textContent='✓ Onayla ve Yayınla';btn.disabled=false;
 
-    /* Show timing message, then auto-refresh mMap after merge completes */
-    document.getElementById('hdrMeta').textContent="Merge başlatıldı. 30-60 saniye içinde main güncellenecek...";
+    /* Sync mMap immediately so diff clears without waiting for CDN */
+    centers.forEach(function(c){if(sMap[c.id])mMap[c.id]=sMap[c.id].content;});
+
+    /* Show timing message + auto-refresh after merge completes */
+    document.getElementById('hdrMeta').textContent='Merge başlatıldı. 30-60 saniye içinde main güncellenecek...';
     document.getElementById('hdrMeta').style.color='#ffe066';
 
     setTimeout(async function(){
@@ -1686,6 +1720,119 @@ function collapseAll(){
   document.querySelectorAll('.tog').forEach(function(t){t.textContent='▶';});
 }
 
+/* ═══ PER-CENTER APPROVE ════════════════════════════════════════════════════ */
+async function approveCtr(cid){
+  if(!tok){openTokModal(function(){approveCtr(cid);});return;}
+  var c=centers.find(function(x){return x.id===cid;});
+  var btn=document.getElementById('apv-'+sid2(cid));
+  if(btn){btn.disabled=true;btn.textContent='⏳ Kaydediliyor...';}
+  try{
+    var sf=sMap[cid];
+    if(sf){
+      var newA=sf.content.analyses.slice();
+      if(pE[cid])newA=newA.map(function(a){var p=pE[cid][a._pid];return p?Object.assign({},a,p):a;});
+      if(pD[cid]&&pD[cid].size)newA=newA.filter(function(a){return!pD[cid].has(a._pid);});
+      newA=newA.map(function(a){var x=Object.assign({},a);delete x._pid;return x;});
+      var nc=Object.assign({},sf.content,{analyses:newA});
+      var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf.sha,'fix: '+(c?c.name:cid)+' güncellendi');
+      sMap[cid]={content:nc,sha:(wa&&wa.content)?wa.content.sha:sf.sha};
+      sMap[cid].content.analyses.forEach(function(a,i){a._pid=cid+'_'+i;});
+      mMap[cid]=nc;
+    }
+    if(pA[cid]&&pA[cid].length){
+      var ex=ovMap[cid];
+      var exOv=(ex&&ex.content&&ex.content.overrides)?ex.content.overrides:[];
+      var nc2={center_id:cid,center_name:c?c.name:cid,overrides:exOv.concat(pA[cid])};
+      var wo=await apiWrite('data/overrides/'+cid+'.json',nc2,ex?ex.sha:null,'feat: manuel analiz — '+(c?c.name:cid));
+      ovMap[cid]={content:nc2,sha:(wo&&wo.content)?wo.content.sha:(ex?ex.sha:null)};
+    }
+    await triggerMerge((c?c.name:cid)+' analiz güncellemesi');
+    delete pE[cid];delete pD[cid];delete pA[cid];if(pCE[cid])delete pCE[cid];
+    buildRKW();buildAllCats();buildDLs();
+    updSum();renderChanges();renderCatalog();renderOverride();updApvBtn();
+    document.getElementById('hdrMeta').textContent=(c?c.name:cid)+' yayınlandı. Main 30-60 sn içinde güncellenecek.';
+    document.getElementById('hdrMeta').style.color='#aaff88';
+  }catch(e){
+    alert('Hata: '+e.message);
+    if(btn){btn.disabled=false;btn.textContent='✓ Bu Merkezi Yayınla';}
+  }
+}
+
+/* ═══ BACKUP / EXPORT / IMPORT ══════════════════════════════════════════════ */
+async function exportBackup(){
+  var btn=document.getElementById('expBtn');
+  if(btn){btn.disabled=true;btn.textContent='⏳ Hazırlanıyor...';}
+  try{
+    var bundle={
+      exported_at:new Date().toISOString(),
+      version:'1.0',
+      centers:centers,
+      keywords:kwGrps,
+      analyses:{},
+      overrides:{}
+    };
+    centers.forEach(function(c){
+      if(sMap[c.id])bundle.analyses[c.id]=sMap[c.id].content;
+      if(ovMap[c.id])bundle.overrides[c.id]=ovMap[c.id].content;
+    });
+    var json=JSON.stringify(bundle,null,2);
+    var blob=new Blob([json],{type:'application/json'});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a');
+    a.href=url;a.download='analizbul-backup-'+new Date().toISOString().slice(0,10)+'.json';
+    document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);
+    document.getElementById('bkpStatus').textContent='✅ Dışa aktarıldı: '+centers.length+' merkez, '+Object.keys(bundle.analyses).length+' analiz dosyası.';
+  }catch(e){document.getElementById('bkpStatus').textContent='Hata: '+e.message;}
+  if(btn){btn.disabled=false;btn.textContent='⬇ Yedek Al';}
+}
+
+async function importBackup(){
+  var file=document.getElementById('impFile').files[0];
+  if(!file){alert('Lütfen bir dosya seçin.');return;}
+  if(!tok){openTokModal(importBackup);return;}
+  var btn=document.getElementById('impBtn');
+  if(btn){btn.disabled=true;btn.textContent='⏳ Yükleniyor...';}
+  try{
+    var text=await file.text();
+    var bundle=JSON.parse(text);
+    if(!bundle.version||!bundle.analyses){throw new Error('Geçersiz yedek dosyası.');}
+    var status=document.getElementById('bkpStatus');
+    var total=0;var done=0;
+    var ids=Object.keys(bundle.analyses);total=ids.length;
+    /* Write centers.json */
+    if(bundle.centers){
+      var csha=ctxSha;
+      var wr=await apiWrite('data/centers.json',bundle.centers,csha,'restore: centers');
+      if(wr&&wr.content)ctxSha=wr.content.sha;
+    }
+    /* Write keywords.json */
+    if(bundle.keywords){
+      var wr2=await apiWrite('data/keywords.json',bundle.keywords,kwSha,'restore: keywords');
+      if(wr2&&wr2.content)kwSha=wr2.content.sha;
+    }
+    /* Write each analyses file */
+    for(var i=0;i<ids.length;i++){
+      var cid=ids[i];var content=bundle.analyses[cid];
+      var existingSha=sMap[cid]?sMap[cid].sha:null;
+      status.textContent='Geri yükleniyor: '+(i+1)+'/'+total+' — '+cid;
+      await apiWrite('data/analyses/'+cid+'.json',content,existingSha,'restore: analyses '+cid);
+      done++;
+    }
+    /* Write each overrides file */
+    var ovIds=Object.keys(bundle.overrides||{});
+    for(var j=0;j<ovIds.length;j++){
+      var ocid=ovIds[j];var ocontent=bundle.overrides[ocid];
+      var ovSha=ovMap[ocid]?ovMap[ocid].sha:null;
+      await apiWrite('data/overrides/'+ocid+'.json',ocontent,ovSha,'restore: overrides '+ocid);
+    }
+    status.textContent='✅ Geri yükleme tamamlandı: '+done+' analiz dosyası yüklendi. Yenileniyor...';
+    setTimeout(loadAll,1500);
+  }catch(e){
+    document.getElementById('bkpStatus').textContent='Hata: '+e.message;
+  }
+  if(btn){btn.disabled=false;btn.textContent='⬆ Geri Yükle';}
+}
+
 /* ═══ HELPERS ════════════════════════════════════════════════════════════════ */
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function jsS(s){return String(s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'");}
@@ -1695,5 +1842,34 @@ function fmtC(n,c){var x=Number(n);var s=SYM[c||'TRY']||'₺';return isNaN(x)?'�
 
 loadAll();
 </script>
+<!-- BACKUP MODAL -->
+<div class="ov hidden" id="bkpOv">
+  <div class="modal" style="width:500px;">
+    <h3>💾 Yedek & Geri Yükleme</h3>
+    <div class="info-box" style="margin-bottom:14px;font-size:12px;">
+      Tüm staging verisi (analizler, merkez bilgileri, keywords, override'lar) tek bir JSON dosyasına aktarılır.
+      Bu dosyayı bilgisayarınıza kaydedin ve gerektiğinde geri yükleyin.
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div style="border:1px solid var(--border);border-radius:10px;padding:16px;">
+        <div style="font-weight:700;margin-bottom:6px;">⬇ Yedek Al</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:10px;">Mevcut staging verisini bilgisayarınıza indirin.</div>
+        <button class="btn btn-p" id="expBtn" onclick="exportBackup()">⬇ Yedek Al</button>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:10px;padding:16px;">
+        <div style="font-weight:700;margin-bottom:6px;">⬆ Geri Yükle</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:10px;">Daha önce aldığınız yedeği staging'e geri yükleyin. Mevcut verinin üzerine yazar.</div>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+          <input type="file" id="impFile" accept=".json" style="font-size:12px;flex:1;">
+          <button class="btn btn-warn" id="impBtn" onclick="importBackup()">⬆ Geri Yükle</button>
+        </div>
+        <div class="warn-box" style="margin-top:8px;font-size:11px;">⚠️ Geri yükleme mevcut staging verisinin üzerine yazar. İşlemden önce yedek aldığınızdan emin olun.</div>
+      </div>
+    </div>
+    <div id="bkpStatus" style="margin-top:10px;font-size:12px;color:var(--muted);min-height:18px;"></div>
+    <div class="m-btns"><button class="btn btn-ghost" onclick="hideModal('bkpOv')">Kapat</button></div>
+  </div>
+</div>
+
 </body>
 </html>
