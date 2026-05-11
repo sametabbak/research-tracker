@@ -109,7 +109,7 @@
       "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 800,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
@@ -118,7 +118,7 @@
       "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 2400,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
