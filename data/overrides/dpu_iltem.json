@@ -1,0 +1,16 @@
+{
+  "center_id": "dpu_iltem",
+  "center_name": "DPÜ İLTEM",
+  "overrides": [
+    {
+      "name": "SEM/STEM/TEM Numune Hazırlama",
+      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
+      "price": 1,
+      "currency": "TRY",
+      "unit": "adet",
+      "notes": "Merkezimizden fiyat sorunuz.",
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
+      "manual": true
+    }
+  ]
+}

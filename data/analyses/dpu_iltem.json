@@ -7,7 +7,7 @@
   "analyses": [
     {
       "name": "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)",
-      "category": "",
+      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
       "price": 2500,
       "currency": "TRY",
       "unit": "saat",
@@ -16,7 +16,7 @@
     },
     {
       "name": "EBSD Nokta Analizi ve Haritalama",
-      "category": "",
+      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
       "price": 3750,
       "currency": "TRY",
       "unit": "saat",
@@ -25,7 +25,7 @@
     },
     {
       "name": "SEM-Katodolüminesans (SEM-CL)",
-      "category": "",
+      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
       "price": 3750,
       "currency": "TRY",
       "unit": "saat",
@@ -34,7 +34,7 @@
     },
     {
       "name": "SEM Altın (Au,Pd), Karbon Kaplama",
-      "category": "",
+      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
       "price": 300,
       "currency": "TRY",
       "unit": "numune",
@@ -43,7 +43,7 @@
     },
     {
       "name": "SEM-EBIC Dedektörü",
-      "category": "",
+      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
       "price": 3750,
       "currency": "TRY",
       "unit": "numune",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Kesme",
-      "category": "",
+      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 400,
       "currency": "TRY",
       "unit": "numune",
@@ -61,7 +61,7 @@
     },
     {
       "name": "Zımparalama ve Parlatma",
-      "category": "",
+      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 600,
       "currency": "TRY",
       "unit": "numune",
@@ -70,7 +70,7 @@
     },
     {
       "name": "Kimyasal Dağlama (Seramik Malzemeler)",
-      "category": "",
+      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 400,
       "currency": "TRY",
       "unit": "numune",
@@ -79,7 +79,7 @@
     },
     {
       "name": "Termal Dağlama",
-      "category": "",
+      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -88,7 +88,7 @@
     },
     {
       "name": "Sıcak Kalıplama (Bakalit)",
-      "category": "",
+      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 300,
       "currency": "TRY",
       "unit": "numune",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Soğuk Kalıplama (Reçine)",
-      "category": "",
+      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 300,
       "currency": "TRY",
       "unit": "numune",
@@ -106,7 +106,7 @@
     },
     {
       "name": "Metal Mikroskobu",
-      "category": "",
+      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 400,
       "currency": "TRY",
       "unit": "saat",
@@ -115,7 +115,7 @@
     },
     {
       "name": "Mikro Sertlik Ölçümü (Vickers Yöntemi 3 – Indent)",
-      "category": "",
+      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
@@ -124,7 +124,7 @@
     },
     {
       "name": "Mikro Sertlik Ölçümü (Vickers Yöntemi 5 – Indent)",
-      "category": "",
+      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 600,
       "currency": "TRY",
       "unit": "numune",
@@ -133,7 +133,7 @@
     },
     {
       "name": "Standart X-Işını Kırınım Deseni (XRD)",
-      "category": "",
+      "category": "MİNERALOJİK ANALİZ LABORATUVARI",
       "price": 750,
       "currency": "TRY",
       "unit": "numune",
@@ -142,7 +142,7 @@
     },
     {
       "name": "Standart XRD Çekimi - Kalitatif Analiz",
-      "category": "",
+      "category": "MİNERALOJİK ANALİZ LABORATUVARI",
       "price": 1125,
       "currency": "TRY",
       "unit": "numune",
@@ -151,7 +151,7 @@
     },
     {
       "name": "Kesme",
-      "category": "",
+      "category": "MİNERALOJİK ANALİZ LABORATUVARI",
       "price": 400,
       "currency": "TRY",
       "unit": "numune",
@@ -160,7 +160,7 @@
     },
     {
       "name": "Kırma, Öğütme",
-      "category": "",
+      "category": "MİNERALOJİK ANALİZ LABORATUVARI",
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
@@ -169,7 +169,7 @@
     },
     {
       "name": "Böbrek Taşı Analizi (XRD)",
-      "category": "",
+      "category": "MİNERALOJİK ANALİZ LABORATUVARI",
       "price": 300,
       "currency": "TRY",
       "unit": "numune",
@@ -178,7 +178,7 @@
     },
     {
       "name": "Rietveld Analizi",
-      "category": "",
+      "category": "MİNERALOJİK ANALİZ LABORATUVARI",
       "price": 9000,
       "currency": "TRY",
       "unit": "numune",
@@ -187,34 +187,34 @@
     },
     {
       "name": "Yarı Kantitatif Element Analizi",
-      "category": "",
+      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
       "price": 850,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "İz Element Analizi (Pro-Trace Çekim Modu)",
-      "category": "",
+      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
       "price": 2750,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "Kızdırma Kaybı",
-      "category": "",
+      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
       "price": 400,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Kimya ve Gıda Analizleri"
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Eritiş İle Numune Hazırlama",
-      "category": "",
+      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
@@ -223,7 +223,7 @@
     },
     {
       "name": "Press İle Numune Hazırlama",
-      "category": "",
+      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
       "price": 400,
       "currency": "TRY",
       "unit": "numune",
@@ -232,7 +232,7 @@
     },
     {
       "name": "Alevli AAS ile ppm (mg/L) seviyesinde analiz (Tek Çekim)",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 750,
       "currency": "TRY",
       "unit": "numune",
@@ -241,7 +241,7 @@
     },
     {
       "name": "Alevli AAS ile ppm (mg/L) seviyesinde analiz (3 Tekrar Çekim)",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -250,7 +250,7 @@
     },
     {
       "name": "Hidrür AAS ile ppb (mg/L) seviyesinde analiz",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -259,7 +259,7 @@
     },
     {
       "name": "Grafit AAS ile ppb (mg/L) seviyesinde analiz",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -268,7 +268,7 @@
     },
     {
       "name": "AAS Numune Hazırlama",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 450,
       "currency": "TRY",
       "unit": "numune",
@@ -277,7 +277,7 @@
     },
     {
       "name": "AAS Numune Hazırlama (3 Tekrar)",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 1250,
       "currency": "TRY",
       "unit": "numune",
@@ -286,7 +286,7 @@
     },
     {
       "name": "Saf Su",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 30,
       "currency": "TRY",
       "unit": "numune",
@@ -295,7 +295,7 @@
     },
     {
       "name": "Ultra Saf Su",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 50,
       "currency": "TRY",
       "unit": "numune",
@@ -304,7 +304,7 @@
     },
     {
       "name": "TMA (Termo-Mekanik Analiz) Spektrumu",
-      "category": "",
+      "category": "TERMAL ANALİZ LABORATUVARI",
       "price": 1750,
       "currency": "TRY",
       "unit": "numune",
@@ -313,7 +313,7 @@
     },
     {
       "name": "TG/DTA/DSC Spektrumu (Max. 1500 °C)",
-      "category": "",
+      "category": "TERMAL ANALİZ LABORATUVARI",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -322,7 +322,7 @@
     },
     {
       "name": "Isı Kapasitesi (C P ) Analizi",
-      "category": "",
+      "category": "TERMAL ANALİZ LABORATUVARI",
       "price": 3000,
       "currency": "TRY",
       "unit": "numune",
@@ -331,7 +331,7 @@
     },
     {
       "name": "Alümina/Platin Kroze Hasar Bedeli *",
-      "category": "",
+      "category": "TERMAL ANALİZ LABORATUVARI",
       "price": 10000,
       "currency": "TRY",
       "unit": "numune",
@@ -340,7 +340,7 @@
     },
     {
       "name": "ATR – FTIR Spektrumu",
-      "category": "",
+      "category": "SPEKTROSKOPİ LABORATUVARI",
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
@@ -349,7 +349,7 @@
     },
     {
       "name": "Kırma-Öğütme",
-      "category": "",
+      "category": "SPEKTROSKOPİ LABORATUVARI",
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
@@ -358,7 +358,7 @@
     },
     {
       "name": "LC/MS Analizi (Kalitatif)",
-      "category": "",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi/Yüksek Çözünürlüklü Kütle Spektrometresi",
       "price": 700,
       "currency": "TRY",
       "unit": "numune",
@@ -367,7 +367,7 @@
     },
     {
       "name": "LC/MS Analizi (Kantitatif) *",
-      "category": "",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi/Yüksek Çözünürlüklü Kütle Spektrometresi",
       "price": 900,
       "currency": "TRY",
       "unit": "numune",
@@ -376,7 +376,7 @@
     },
     {
       "name": "LC/MS/MS",
-      "category": "",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi/Yüksek Çözünürlüklü Kütle Spektrometresi",
       "price": 1250,
       "currency": "TRY",
       "unit": "numune",
@@ -385,7 +385,7 @@
     },
     {
       "name": "LC/MS QTOF (HRMS) Tam Kütle Tayini",
-      "category": "",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi/Yüksek Çözünürlüklü Kütle Spektrometresi",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -394,7 +394,7 @@
     },
     {
       "name": "HPLC (Kalitatif)",
-      "category": "",
+      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
       "price": 750,
       "currency": "TRY",
       "unit": "numune",
@@ -403,7 +403,7 @@
     },
     {
       "name": "HPLC (Kantitatif) *",
-      "category": "",
+      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
       "price": 900,
       "currency": "TRY",
       "unit": "numune",
@@ -412,7 +412,7 @@
     },
     {
       "name": "Şeker Analizi (Tek Şeker)",
-      "category": "",
+      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
       "price": 1050,
       "currency": "TRY",
       "unit": "numune",
@@ -421,7 +421,7 @@
     },
     {
       "name": "Şeker Analizi (Grup Şeker)",
-      "category": "",
+      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
       "price": 1225,
       "currency": "TRY",
       "unit": "numune",
@@ -430,7 +430,7 @@
     },
     {
       "name": "Pestisit Analizi (Tek Pestisit)",
-      "category": "",
+      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
       "price": 1050,
       "currency": "TRY",
       "unit": "numune",
@@ -439,7 +439,7 @@
     },
     {
       "name": "Pestisit Analizi (Grup Pestisit)",
-      "category": "",
+      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -448,7 +448,7 @@
     },
     {
       "name": "GC/MS (Kalitatif)",
-      "category": "",
+      "category": "Gaz Kromatografisi – Kütle Spektrometresi (GC-MS)",
       "price": 800,
       "currency": "TRY",
       "unit": "numune",
@@ -457,7 +457,7 @@
     },
     {
       "name": "GC/MS (Kantitatif) *",
-      "category": "",
+      "category": "Gaz Kromatografisi – Kütle Spektrometresi (GC-MS)",
       "price": 1050,
       "currency": "TRY",
       "unit": "numune",
