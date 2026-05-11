@@ -723,7 +723,7 @@ function renderCatalog(){
 
     /* Toolbar */
     html+='<div class="tb"><div class="tb-l">'
-      +sb(c.id,'name','Ad')+sb(c.id,'price','Fiyat')+sb(c.id,'category','Kategori')+sb(c.id,'kw','Grup')
+      +(hasE?(function(){var ec=pE[c.id]?Object.keys(pE[c.id]).length:0;var dc=pD[c.id]?pD[c.id].size:0;var parts=[];if(ec)parts.push(ec+' düzenleme');if(dc)parts.push(dc+' silme');return '<div class="pend" style="margin:0;padding:5px 10px;font-size:11px;"><span>Bekleyen: '+parts.join(', ')+'</span><button class="undo" onclick="undoCtr(\''+jsS(c.id)+'\')">Geri Al</button></div>';})():'')
       +(hasE?'<div class="pend" style="margin:0;padding:5px 10px;font-size:11px;"><span>Kaydedilmemiş değişiklik</span><button class="undo" onclick="undoCtr(\''+jsS(c.id)+'\')">Geri Al</button></div>':'')
       +'</div><div class="tb-r">'
       +'<button class="btn btn-p btn-sm" onclick="openAddModal(\''+jsS(c.id)+'\')">+ Analiz</button>'
@@ -1406,10 +1406,18 @@ function approve(){
     var ec=pE[c.id]?Object.keys(pE[c.id]).length:0;
     var dc=pD[c.id]?pD[c.id].size:0;
     var ac=pA[c.id]?pA[c.id].length:0;
-    if(ec)parts.push(ec+' düzenlendi');
+    if(ec)parts.push(ec+' analiz düzenlendi');
     if(dc)parts.push(dc+' silindi');
     if(ac)parts.push(ac+' manuel eklendi');
-    if(parts.length)lines.push('<strong>'+esc(c.name)+':</strong> '+parts.join(', '));
+    if(parts.length){
+      var detail='';
+      if(pE[c.id]){
+        var enames=Object.keys(pE[c.id]);
+        if(enames.length<=5)
+          detail=' <span style="font-size:11px;color:var(--muted);">('+enames.map(function(n){return esc(n.length>30?n.substring(0,28)+'…':n);}).join(', ')+')</span>';
+      }
+      lines.push('<strong>'+esc(c.name)+':</strong> '+parts.join(', ')+detail);
+    }
   });
   var kwc=pKwR.length+pKwDel.length+pKwNew.length;
   if(kwc)lines.push('<strong>Keywords:</strong> '+kwc+' yapısal değişiklik');
