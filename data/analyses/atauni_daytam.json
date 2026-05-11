@@ -28,7 +28,7 @@
       "category": "",
       "price": 1400,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
@@ -37,7 +37,7 @@
       "category": "",
       "price": 1400,
       "currency": "TRY",
-      "unit": "element",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
@@ -46,7 +46,7 @@
       "category": "",
       "price": 1400,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
@@ -55,7 +55,7 @@
       "category": "",
       "price": 2700,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
@@ -100,7 +100,7 @@
       "category": "",
       "price": 3000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
@@ -172,7 +172,7 @@
       "category": "",
       "price": 4000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
@@ -226,7 +226,7 @@
       "category": "",
       "price": 4100,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
@@ -325,7 +325,7 @@
       "category": "",
       "price": 5000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
@@ -415,7 +415,7 @@
       "category": "",
       "price": 5500,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
@@ -451,7 +451,7 @@
       "category": "",
       "price": 1800,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
@@ -478,7 +478,7 @@
       "category": "",
       "price": 2000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
@@ -514,7 +514,7 @@
       "category": "",
       "price": 1050,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
@@ -559,7 +559,7 @@
       "category": "",
       "price": 500,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
@@ -604,7 +604,7 @@
       "category": "",
       "price": 2500,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
