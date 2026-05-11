@@ -107,6 +107,9 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 .ac-i{padding:6px 10px;cursor:pointer;font-size:12px;}
 .ac-i:hover{background:#f0f9ff;}
 /* Row buttons */
+.r-move-btn{background:none;border:none;cursor:pointer;color:var(--muted);font-size:13px;padding:2px 3px;border-radius:4px;line-height:1;}
+.r-move-btn:hover{background:var(--bg);color:var(--p);}
+.r-move-btn:disabled{opacity:.25;cursor:default;}
 .r-del-btn{background:none;border:none;cursor:pointer;color:var(--del);font-size:14px;padding:2px 4px;border-radius:4px;}
 .r-del-btn:hover{background:#fee2e2;}
 .r-dup-btn{background:none;border:none;cursor:pointer;color:var(--muted);font-size:14px;padding:2px 4px;border-radius:4px;}
@@ -440,6 +443,7 @@ var stagOk=false,chgFilter='all';
 var colState={},sortCfg={},selRows={};
 var pE={},pA={},pD={},pCE={};             /* pending: edits, adds, deletes, center edits */
 var pRej={};  /* pending rejections: {cid:{name:type}} */
+var pOrder=new Set(),pOrderSnap={};  /* pending order changes + undo snapshots */
 var pKwR=[],pKwDel=[],pKwNew=[];
 var fCat='',fKwg='';  /* active catalog filters */          /* pending kw renames/deletes/new */
 var dupSrc=null,pasteRows=[],kwCtx=null;
@@ -520,7 +524,7 @@ async function loadAll(){
     document.getElementById(id).innerHTML='<div class="loader"><div class="spin"></div><p style="margin-top:12px">Yükleniyor...</p></div>';
   });
   document.getElementById('apvBtn').disabled=true;
-  sMap={};mMap={};ovMap={};pE={};pA={};pD={};pCE={};pKwR=[];pKwDel=[];pKwNew=[];pRej={};selRows={};colState={};a2c={};
+  sMap={};mMap={};ovMap={};pE={};pA={};pD={};pCE={};pKwR=[];pKwDel=[];pKwNew=[];pRej={};pOrder=new Set();pOrderSnap={};selRows={};colState={};a2c={};
 
   var misc=await Promise.all([
     rawRead(MAIN,'data/centers.json'),
@@ -655,7 +659,7 @@ function updSum(){
 }
 function updApvBtn(){
   var hasD=centers.some(function(c){var d=getDiff(c.id);return d.added.length||d.deleted.length||d.changed.length;});
-  var hasP=Object.keys(pE).some(function(k){return Object.keys(pE[k]).length;})||
+  var hasP=pOrder.size>0||Object.keys(pE).some(function(k){return Object.keys(pE[k]).length;})||
            Object.keys(pA).some(function(k){return pA[k].length;})||
            Object.keys(pD).some(function(k){return pD[k].size;})||
            Object.keys(pCE).length>0||pKwR.length>0||pKwDel.length>0||pKwNew.length>0;
@@ -892,33 +896,40 @@ function sortList(list,cid){
 }
 
 function catRow(cid,a){
-  /* _pid = stable session ID; prevents collision when two analyses share a name */
   var pid=a._pid||(cid+'__'+a.name);
   var isDel=pD[cid]&&pD[cid].has(pid);
   var isSel=selRows[cid]&&selRows[cid].has(pid);
   var cls=isDel?'r-del':isSel?'r-sel':'';
   var rid=sid2(pid);
   var sym=SYM[a.currency||'TRY']||'₺';
+  var canMove=!(sortCfg[cid]&&sortCfg[cid].field);
+  var moveH='';
+  if(canMove){
+    moveH='<button class="r-move-btn" title="Yukarı taşı" onclick="moveRow(\''+jsS(cid)+'\',' +'\''+jsS(pid)+'\',-1)">↑</button>'
+           +'<button class="r-move-btn" title="Aşağı taşı" onclick="moveRow(\''+jsS(cid)+'\',' +'\''+jsS(pid)+'\'  ,1)">↓</button>';
+  }
   var kg=a.keyword_group||'';
   var kwH='';
   if(!kg){kwH='<span class="ug-warn">⚠️ Grupsuz</span> ';}
-  else{var ks=kg.length>40?kg.substring(0,38)+'…':kg;kwH='<span class="kw-badge" title="'+esc(kg)+'">'+esc(ks)+'<span class="kw-x" onclick="removeKwG(\''+jsS(a.name)+'\',\''+jsS(kg)+'\',\''+jsS(cid)+'\')" title="Gruptan çıkar">✕</span></span>';}
-  kwH+='<button class="kw-add" onclick="openKwPicker(\''+jsS(a.name)+'\',\''+jsS(cid)+'\')" title="Grubu değiştir">✎ grup</button>';
-
+  else{var ks=kg.length>40?kg.substring(0,38)+'…':kg;
+    kwH='<span class="kw-badge" title="'+esc(kg)+'">'+esc(ks)
+      +'<span class="kw-x" onclick="removeKwG(\''+jsS(a.name)+'\',' +'\''+jsS(kg)+'\',' +'\''+jsS(cid)+'\')" title="Gruptan çıkar">✕</span></span>';
+  }
+  kwH+='<button class="kw-add" onclick="openKwPicker(\''+jsS(a.name)+'\',' +'\''+jsS(cid)+'\')" title="Grubu değiştir">✎ grup</button>';
   return'<tr class="'+cls+'" id="tr-'+rid+'">'
-    +'<td><input type="checkbox"'+(isSel?' checked':'')+' onchange="togSel(\''+jsS(cid)+'\',\''+jsS(pid)+'\',this.checked)"></td>'
-    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(pid)+'\',\'name\')">'+esc(a.name)+'</td>'
-    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(pid)+'\',\'category\')">'+esc(a.category||'')+'</td>'
-    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(pid)+'\',\'price\')">'+Number(a.price||0).toLocaleString('tr-TR')+' '+sym+'</td>'
-    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(pid)+'\',\'unit\')">'+esc(a.unit||'numune')+'</td>'
-    +'<td class="ed nc" title="'+esc(a.notes||'')+'" onclick="edCell(this,\''+jsS(cid)+'\',\''+jsS(pid)+'\',\'notes\')">'+(a.notes?esc(a.notes):'<span style="color:var(--muted);font-style:italic">—</span>')+'</td>'
+    +'<td><input type="checkbox"'+(isSel?' checked':'')+' onchange="togSel(\''+jsS(cid)+'\',' +'\''+jsS(pid)+'\',this.checked)"></td>'
+    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',' +'\''+jsS(pid)+'\',\'name\')">'+esc(a.name)+'</td>'
+    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',' +'\''+jsS(pid)+'\',\'category\')">'+esc(a.category||'')+'</td>'
+    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',' +'\''+jsS(pid)+'\',\'price\')">'+Number(a.price||0).toLocaleString('tr-TR')+' '+sym+'</td>'
+    +'<td class="ed" onclick="edCell(this,\''+jsS(cid)+'\',' +'\''+jsS(pid)+'\',\'unit\')">'+esc(a.unit||'numune')+'</td>'
+    +'<td class="ed nc" title="'+esc(a.notes||'')+'" onclick="edCell(this,\''+jsS(cid)+'\',' +'\''+jsS(pid)+'\',\'notes\')">'+(a.notes?esc(a.notes):'<span style="color:var(--muted);font-style:italic">—</span>')+'</td>'
     +'<td class="kw-cell">'+kwH+'</td>'
     +'<td style="white-space:nowrap;">'
-    +'<button class="r-dup-btn" title="Kopyala" onclick="openDup(\''+jsS(cid)+'\',\''+jsS(pid)+'\')">⊕</button>'
-    +'<button class="r-del-btn" title="'+(isDel?'Geri al':'Sil')+'" onclick="togDel(\''+jsS(cid)+'\',\''+jsS(pid)+'\')">'+(isDel?'↩':'🗑')+'</button>'
+    +moveH
+    +'<button class="r-dup-btn" title="Kopyala" onclick="openDup(\''+jsS(cid)+'\',' +'\''+jsS(pid)+'\')">⊕</button>'
+    +'<button class="r-del-btn" title="'+(isDel?'Geri al':'Sil')+'"' +' onclick="togDel(\''+jsS(cid)+'\',' +'\''+jsS(pid)+'\')">'+(isDel?'↩':'&#x1f5d1;')+'</button>'
     +'</td></tr>';
 }
-
 function qaRow(cid){
   var s=sid2(cid);
   return'<tr class="r-qa"><td></td>'
@@ -1033,7 +1044,28 @@ function togDel(cid,pid){
   if(old){var tmp=document.createElement('tbody');tmp.innerHTML=catRow(cid,a);old.replaceWith(tmp.firstElementChild);}
   updApvBtn();updSum();
 }
-function undoCtr(cid){delete pE[cid];delete pD[cid];renderCatalog();updApvBtn();updSum();}
+function undoCtr(cid){
+  delete pE[cid];delete pD[cid];
+  /* Restore original analysis order if it was changed */
+  if(pOrderSnap[cid]){
+    var snap=pOrderSnap[cid];
+    var sf=sMap[cid];
+    if(sf&&sf.content&&sf.content.analyses){
+      var orig=[];
+      snap.forEach(function(pid){
+        var a=sf.content.analyses.find(function(x){return x._pid===pid;});
+        if(a)orig.push(a);
+      });
+      /* Append any new analyses not in the snapshot */
+      sf.content.analyses.forEach(function(a){
+        if(snap.indexOf(a._pid)===-1)orig.push(a);
+      });
+      sf.content.analyses=orig;
+    }
+    pOrder.delete(cid);delete pOrderSnap[cid];
+  }
+  renderCatalog();updApvBtn();updSum();
+}
 
 /* Selection */
 function togSel(cid,pid,on){
@@ -1611,7 +1643,8 @@ async function doApprove(){
     }
 
     /* 1. Analyses edits + deletes — update sMap directly, no re-fetch */
-    var cids=Object.keys(pE).concat(Object.keys(pD).filter(function(k){return!pE[k];}));
+    var pOrderArr=Array.from(pOrder).filter(function(k){return!pE[k]&&!pD[k];});
+    var cids=Object.keys(pE).concat(Object.keys(pD).filter(function(k){return!pE[k];})).concat(pOrderArr);
     for(var i=0;i<cids.length;i++){
       var cid=cids[i];var sf=sMap[cid];if(!sf)continue;
       var newA=sf.content.analyses.slice();
@@ -1623,7 +1656,6 @@ async function doApprove(){
       var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf.sha,'fix: panel düzenlemesi — '+(cn?cn.name:cid));
       sMap[cid]={content:nc,sha:(wa&&wa.content)?wa.content.sha:sf.sha};
       sMap[cid].content.analyses.forEach(function(a,i){a._pid=cid+'_'+i;});
-      pOrder.delete(cid);delete pOrderSnap[cid];
       pOrder.delete(cid);delete pOrderSnap[cid];
     }
 
@@ -1677,9 +1709,9 @@ async function doApprove(){
         /* Refresh mMap from newly merged main — clears false "price changed" diffs */
         var ids=centers.map(function(c){return c.id;});
         var rs=await Promise.all(ids.map(function(id){
-          return rawRead(MAIN,'data/analyses/'+id+'.json').then(function(r){return[id,r];});
+          return apiRead(MAIN,'data/analyses/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});
         }));
-        rs.forEach(function(p){if(p[1])mMap[p[0]]=p[1];});
+        rs.forEach(function(p){if(p[1])mMap[p[0]]=p[1].content||p[1];});
         renderChanges();updSum();
         document.getElementById('hdrMeta').textContent='✅ Merge tamamlandı. Main güncellendi.';
         document.getElementById('hdrMeta').style.color='#aaff88';
@@ -1816,6 +1848,7 @@ async function approveCtr(cid){
     }
     await triggerMerge((c?c.name:cid)+' analiz güncellemesi');
     delete pE[cid];delete pD[cid];delete pA[cid];if(pCE[cid])delete pCE[cid];
+    pOrder.delete(cid);delete pOrderSnap[cid];
     buildRKW();buildAllCats();buildDLs();
     updSum();renderChanges();renderCatalog();renderOverride();updApvBtn();
     document.getElementById('hdrMeta').textContent=(c?c.name:cid)+' yayınlandı. Main 30-60 sn içinde güncellenecek.';
@@ -1901,6 +1934,33 @@ async function importBackup(){
   if(btn){btn.disabled=false;btn.textContent='⬆ Geri Yükle';}
 }
 
+/* ═══ MOVE ROWS ═════════════════════════════════════════════════════════════ */
+function moveRow(cid,pid,dir){
+  var sf=sMap[cid];
+  if(!sf||!sf.content||!sf.content.analyses)return;
+  var arr=sf.content.analyses;
+  var idx=arr.findIndex(function(a){return a._pid===pid;});
+  if(idx===-1)return;
+  var nIdx=idx+dir;
+  if(nIdx<0||nIdx>=arr.length)return;
+
+  /* Snapshot the original order before the first move for this center */
+  if(!pOrderSnap[cid])
+    pOrderSnap[cid]=arr.map(function(a){return a._pid;});
+
+  /* Swap */
+  var tmp=arr[idx];arr[idx]=arr[nIdx];arr[nIdx]=tmp;
+  pOrder.add(cid);
+
+  /* Re-render only this center's tbody — no full renderCatalog needed */
+  var tbody=document.getElementById('tb-'+sid2(cid));
+  if(tbody){
+    var list=sortList(arr,cid);
+    tbody.innerHTML=list.map(function(a){return catRow(cid,a);}).join('')+qaRow(cid);
+  }
+  updApvBtn();
+}
+
 /* ═══ REJECT CHANGES ════════════════════════════════════════════════════════ */
 function togRej(cid,name,type){
   if(!pRej[cid])pRej[cid]={};
@@ -1951,10 +2011,20 @@ async function applyRejections(){
             /* Tracker added it — remove from staging */
             newA=newA.filter(function(a){return a.name!==name;});
           } else if(type==='del'){
-            /* Tracker deleted it — restore from main */
+            /* Tracker deleted it — restore from main at original position */
             var orig=mainA.find(function(a){return a.name===name;});
-            if(orig&&!newA.some(function(a){return a.name===name;}))
-              newA.push(Object.assign({},orig));
+            if(orig&&!newA.some(function(a){return a.name===name;})){
+              var origIdx=mainA.indexOf(orig);
+              /* Find nearest preceding mainA neighbour that still exists in newA */
+              var insertAfter=-1;
+              for(var k=origIdx-1;k>=0;k--){
+                var prevName=mainA[k].name;
+                var fi=newA.findIndex(function(a){return a.name===prevName;});
+                if(fi!==-1){insertAfter=fi;break;}
+              }
+              if(insertAfter===-1)newA.unshift(Object.assign({},orig));
+              else newA.splice(insertAfter+1,0,Object.assign({},orig));
+            }
           } else if(type==='chg'){
             /* Tracker changed price — revert to main price */
             var origM=mainA.find(function(a){return a.name===name;});
