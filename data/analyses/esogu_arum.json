@@ -75,7 +75,7 @@
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama"
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "SEM Cihaz Kullanımı Eğitimi****",
@@ -84,7 +84,7 @@
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı *",
@@ -201,7 +201,7 @@
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama"
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "TEM Cihaz Kullanımı Eğitimi***",
@@ -210,7 +210,7 @@
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "İmmunogold Boyama İçin Numune Hazırlama",
@@ -1650,7 +1650,7 @@
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Sıvı Azot",
