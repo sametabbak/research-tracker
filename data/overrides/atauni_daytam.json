@@ -1,0 +1,17 @@
+{
+  "center_id": "atauni_daytam",
+  "center_name": "ATAÜNİ DAYTAM",
+  "overrides": [
+    {
+      "name": "Liyofilizatör kullanımı (Gün-Dondurulmuş)",
+      "category": "ÖRNEK HAZIRLAMA",
+      "price": 750,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": "",
+      "keyword_group": null,
+      "_pid": "atauni_daytam_99",
+      "manual": true
+    }
+  ]
+}
