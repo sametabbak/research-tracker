@@ -474,8 +474,8 @@
       "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı"
     },
     {
-      "name": "Single Element Quantitative Analysis",
-      "category": "",
+      "name": "Tek Element Kantitatif Analizi",
+      "category": "İNDÜKTİF EŞLEŞMİŞ PLAZMA KÜTLE SPEKTROMETRESİ (ICP-MS)",
       "price": 50,
       "currency": "TRY",
       "unit": "element",
@@ -483,8 +483,8 @@
       "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
-      "name": "Analysis of Macro, Micro and Trace Elements in Plant and Soil Samples",
-      "category": "",
+      "name": "Bitki ve Toprak Örneklerinde Makro, Mikro ve Eser Element Analizi",
+      "category": "İNDÜKTİF EŞLEŞMİŞ PLAZMA KÜTLE SPEKTROMETRESİ (ICP-MS)",
       "price": 85,
       "currency": "TRY",
       "unit": "element",
@@ -507,11 +507,11 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "Preparatif HPLC",
-      "category": "",
+      "category": "YÜKSEK BASINÇLI SIVI KROMATOGRAFİSİ",
       "price": 1350,
       "currency": "TRY",
       "unit": "numune",
@@ -525,7 +525,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "Örnek Hazırlama Adet Daytamla",
@@ -564,8 +564,8 @@
       "keyword_group": "İyon Kromatografisi"
     },
     {
-      "name": "Anion, Cation Qualitative Analysis (Single-Ion Method",
-      "category": "",
+      "name": "Anyon, Katyon Kalitatif Analiz (Tek İyon Metot Geliştirme)",
+      "category": "İYON KROMOTOGRAFİ (IC)",
       "price": 5000,
       "currency": "TRY",
       "unit": "numune",
@@ -574,12 +574,12 @@
     },
     {
       "name": "İlave Bileşen)",
-      "category": "",
+      "category": "İYON KROMOTOGRAFİ (IC)",
       "price": 1000,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "İyon Kromatografisi"
     },
     {
       "name": "Ölçüm",
