@@ -540,12 +540,12 @@ async function loadAll(){
   var ids=centers.map(function(c){return c.id;});
   var res=await Promise.all([
     Promise.all(ids.map(function(id){return apiRead(STAGING,'data/analyses/'+id+'.json').then(function(r){return[id,r];});})),
-    Promise.all(ids.map(function(id){return rawRead(MAIN,'data/analyses/'+id+'.json').then(function(r){return[id,r];});})),
+    Promise.all(ids.map(function(id){return apiRead(MAIN,'data/analyses/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});})),
     Promise.all(ids.map(function(id){return apiRead(STAGING,'data/overrides/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});})),
     apiRead(STAGING,'data/keywords.json').catch(function(){return null;})
   ]);
   res[0].forEach(function(p){if(p[1])sMap[p[0]]=p[1];});
-  res[1].forEach(function(p){if(p[1])mMap[p[0]]=p[1];});
+  res[1].forEach(function(p){if(p[1])mMap[p[0]]=p[1].content||p[1];});  /* apiRead wraps in .content */
   res[2].forEach(function(p){if(p[1])ovMap[p[0]]=p[1];});
   if(res[3])kwSha=res[3].sha;
 
@@ -1623,6 +1623,8 @@ async function doApprove(){
       var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf.sha,'fix: panel düzenlemesi — '+(cn?cn.name:cid));
       sMap[cid]={content:nc,sha:(wa&&wa.content)?wa.content.sha:sf.sha};
       sMap[cid].content.analyses.forEach(function(a,i){a._pid=cid+'_'+i;});
+      pOrder.delete(cid);delete pOrderSnap[cid];
+      pOrder.delete(cid);delete pOrderSnap[cid];
     }
 
     /* 2. Override additions */
@@ -1656,6 +1658,7 @@ async function doApprove(){
 
     /* 5. Clear pending, re-render from updated sMap (no loadAll, no stale cache) */
     pE={};pA={};pD={};pCE={};pKwR=[];pKwDel=[];pKwNew=[];selRows={};
+    pOrder=new Set();pOrderSnap={};
 
     buildRKW();buildA2C();buildAllCats();buildDLs();
     updSum();renderChanges();renderCatalog();renderOverride();renderClassify();updApvBtn();
