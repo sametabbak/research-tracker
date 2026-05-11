@@ -1203,15 +1203,6 @@
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
-      "name": "WB-01 Ölçüm",
-      "category": "",
-      "price": 600,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": null
-    },
-    {
       "name": "RTP-01 İşlem",
       "category": "",
       "price": 1200,
