@@ -480,7 +480,7 @@
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "Analysis of Macro, Micro and Trace Elements in Plant and Soil Samples",
@@ -489,7 +489,7 @@
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "Örnek Hazırlama Adet Daytamla",
@@ -501,8 +501,8 @@
       "keyword_group": "Genel Numune Hazırlama"
     },
     {
-      "name": "Component",
-      "category": "",
+      "name": "Tek Bileşenin Kantitatif Analizi için Yöntem Geliştirme",
+      "category": "Sıvı Kromatografisi - Kuadrupol Tandem Kütle Spektrometrisi (LC-MS/MS)",
       "price": 1350,
       "currency": "TRY",
       "unit": "numune",
@@ -519,8 +519,8 @@
       "keyword_group": "Kromatografi (HPLC, GPC)"
     },
     {
-      "name": "Per Each Additional Component",
-      "category": "",
+      "name": "İlave Her Bileşen İçin",
+      "category": "Sıvı Kromatografisi - Kuadrupol Tandem Kütle Spektrometrisi (LC-MS/MS)",
       "price": 2500,
       "currency": "TRY",
       "unit": "numune",
