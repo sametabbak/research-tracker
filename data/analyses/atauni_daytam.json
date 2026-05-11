@@ -1173,7 +1173,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Su Kalitesi ve Çevre Analizleri"
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "PS-03 Temel Kullanıcı Eğitimi",
@@ -1218,7 +1218,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     }
   ]
 }
