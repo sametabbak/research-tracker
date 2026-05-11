@@ -579,7 +579,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "pHmetre/ İletkenlik ölçer",
@@ -588,7 +588,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "Nem Tayin Cihazı",
@@ -597,7 +597,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "Dijital Viskozimetre",
@@ -606,7 +606,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "Etüv (Fanlı)",
@@ -615,7 +615,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "Mikrodalga Yakma Fırını",
@@ -633,7 +633,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "Rotary Evaporatör (maksimum 400 mL)",
@@ -651,7 +651,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "Çalkalamalı Su Banyosu",
@@ -660,7 +660,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "Soğutmalı Çalkalamalı İnkübatör",
@@ -669,7 +669,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "Soğutmalı Santrifüj",
@@ -687,7 +687,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "Manyetik Karıştırıcılı Isıtıcı",
@@ -696,7 +696,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "Kül Tayini - Dolgulu polimerler, polimerler, inorganik maddeler ve fosil yakıtlar için",
