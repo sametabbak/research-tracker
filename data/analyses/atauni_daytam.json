@@ -235,7 +235,7 @@
       "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
       "price": 970,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
@@ -421,33 +421,33 @@
     },
     {
       "name": "Katı ve İnce Film Numunelerde Ölçüm",
-      "category": "",
+      "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
       "price": 200,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "UV-VIS Spektrofotometri"
     },
     {
       "name": "Sıvı Numunelerde Ölçüm",
-      "category": "",
+      "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
       "price": 300,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "UV-VIS Spektrofotometri"
     },
     {
       "name": "Toz Numunelerde Ölçüm",
-      "category": "",
+      "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
       "price": 300,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "UV-VIS Spektrofotometri"
     },
     {
-      "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
+      "name": "UV-04 Analiz Sonuçlarının Yorumlanması ve Raporlama",
       "category": "",
       "price": 1800,
       "currency": "TRY",
@@ -475,7 +475,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
       "price": 2000,
       "currency": "TRY",
       "unit": "adet",
@@ -511,7 +511,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
       "price": 1050,
       "currency": "TRY",
       "unit": "adet",
@@ -556,7 +556,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
       "price": 500,
       "currency": "TRY",
       "unit": "adet",
@@ -601,7 +601,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
       "price": 2500,
       "currency": "TRY",
       "unit": "adet",
