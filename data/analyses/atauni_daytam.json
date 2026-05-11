@@ -334,7 +334,7 @@
       "category": "X-IŞINI KIRINIMI",
       "price": 800,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
@@ -343,7 +343,7 @@
       "category": "X-IŞINI KIRINIMI",
       "price": 1600,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
@@ -352,7 +352,7 @@
       "category": "X-IŞINI KIRINIMI",
       "price": 1000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
@@ -361,7 +361,7 @@
       "category": "X-IŞINI KIRINIMI",
       "price": 1600,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
@@ -412,7 +412,7 @@
     },
     {
       "name": "XRD-10 Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
+      "category": "X-IŞINI KIRINIMI",
       "price": 5500,
       "currency": "TRY",
       "unit": "adet",
