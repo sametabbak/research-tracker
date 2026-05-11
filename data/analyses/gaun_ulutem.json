@@ -192,7 +192,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Moleküler Genetik ve PCR Analizleri"
     },
     {
       "name": "3B Haritalama",
@@ -228,7 +228,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Moleküler Genetik ve PCR Analizleri"
     },
     {
       "name": "Karşılaştırma (İki numune için)",
@@ -237,7 +237,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Moleküler Genetik ve PCR Analizleri"
     },
     {
       "name": "Kütüphane Taraması",
@@ -246,7 +246,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Moleküler Genetik ve PCR Analizleri"
     },
     {
       "name": "Böbrek Taşı Analizi",
@@ -282,7 +282,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Moleküler Genetik ve PCR Analizleri"
     },
     {
       "name": "NIR Analizi",
