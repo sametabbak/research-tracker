@@ -291,7 +291,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
+      "keyword_group": "Dielektrik Ölçümler"
     },
     {
       "name": "2- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 400 °C)",
@@ -300,7 +300,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
+      "keyword_group": "Dielektrik Ölçümler"
     },
     {
       "name": "3- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 800 °C)",
@@ -309,7 +309,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
+      "keyword_group": "Dielektrik Ölçümler"
     },
     {
       "name": "4- Dielektrik Ölçüm Yüksek Sıcaklık (25°C – 1000 °C)",
@@ -318,7 +318,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
+      "keyword_group": "Dielektrik Ölçümler"
     },
     {
       "name": "1-Piezoelektrik Sabiti (d) Ölçümü",
@@ -327,7 +327,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
+      "keyword_group": "Piezoelektrik Ölçümler"
     },
     {
       "name": "2- Piezoelektrik Sabiti (d) Ölçümü (Oda Sıcaklığı Kutuplama)",
@@ -336,7 +336,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
+      "keyword_group": "Piezoelektrik Ölçümler"
     },
     {
       "name": "3- Piezoelektrik Sabiti (d) Ölçümü (Yüksek Sıcaklık Kutuplama)",
@@ -345,7 +345,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Elektriksel ve Dielektrik Ölçümler"
+      "keyword_group": "Piezoelektrik Ölçümler"
     },
     {
       "name": "1-Optik Emisyon Spektrometresi (OES)",
