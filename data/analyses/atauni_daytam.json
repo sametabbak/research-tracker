@@ -186,7 +186,7 @@
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
-      "name": "Haritalama",
+      "name": "PM-02 Haritalama",
       "category": "MİKRO RAMAN SPEKTROSKOPİ",
       "price": 700,
       "currency": "TRY",
@@ -565,7 +565,7 @@
     },
     {
       "name": "Temas Açısı Ölçümü",
-      "category": "",
+      "category": "TEMAS AÇISI ÖLÇÜMÜ",
       "price": 230,
       "currency": "TRY",
       "unit": "adet",
@@ -574,7 +574,7 @@
     },
     {
       "name": "Yüzey Porozitesi (Topografya) Analizi",
-      "category": "",
+      "category": "TEMAS AÇISI ÖLÇÜMÜ",
       "price": 800,
       "currency": "TRY",
       "unit": "adet",
@@ -583,7 +583,7 @@
     },
     {
       "name": "Yüzey Gerilimi Analizi",
-      "category": "",
+      "category": "TEMAS AÇISI ÖLÇÜMÜ",
       "price": 700,
       "currency": "TRY",
       "unit": "adet",
@@ -592,7 +592,7 @@
     },
     {
       "name": "Serbest Yüzey Enerjisi Analizi",
-      "category": "",
+      "category": "TEMAS AÇISI ÖLÇÜMÜ",
       "price": 700,
       "currency": "TRY",
       "unit": "adet",
@@ -600,7 +600,7 @@
       "keyword_group": "Temas Açısı ve Yüzey Enerjisi Analizleri"
     },
     {
-      "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
+      "name": "TMS-05 Analiz Sonuçlarının Yorumlanması ve Raporlama",
       "category": "Tane Büyüklüğü ve Zeta Potansiyel",
       "price": 2500,
       "currency": "TRY",
@@ -610,7 +610,7 @@
     },
     {
       "name": "Yüzey Pürüzlülüğü Ölçümü",
-      "category": "",
+      "category": "DOKUNARAK TARAMALI PROFİLOMETRE",
       "price": 400,
       "currency": "TRY",
       "unit": "numune",
@@ -627,7 +627,7 @@
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
-      "name": "İşlem",
+      "name": "PM-03 İşlem",
       "category": "",
       "price": 1000,
       "currency": "TRY",
@@ -636,7 +636,7 @@
       "keyword_group": null
     },
     {
-      "name": "Temel Kullanıcı Eğitimi",
+      "name": "PM-04 Temel Kullanıcı Eğitimi",
       "category": "",
       "price": 2000,
       "currency": "TRY",
@@ -645,7 +645,7 @@
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
-      "name": "Ölçüm",
+      "name": "PS-01 Ölçüm",
       "category": "",
       "price": 500,
       "currency": "TRY",
@@ -654,7 +654,7 @@
       "keyword_group": "Su Kalitesi ve Çevre Analizleri"
     },
     {
-      "name": "Sıcaklığa Bağlı Ölçüm",
+      "name": "PS-02 Sıcaklığa Bağlı Ölçüm",
       "category": "",
       "price": 1300,
       "currency": "TRY",
@@ -663,7 +663,7 @@
       "keyword_group": null
     },
     {
-      "name": "Temel Kullanıcı Eğitimi",
+      "name": "WD-02 Temel Kullanıcı Eğitimi",
       "category": "",
       "price": 2600,
       "currency": "TRY",
@@ -672,7 +672,7 @@
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
-      "name": "Ölçüm",
+      "name": "WB-01 Ölçüm",
       "category": "",
       "price": 600,
       "currency": "TRY",
@@ -681,7 +681,7 @@
       "keyword_group": "Su Kalitesi ve Çevre Analizleri"
     },
     {
-      "name": "Temel Kullanıcı Eğitimi",
+      "name": "PS-03 Temel Kullanıcı Eğitimi",
       "category": "",
       "price": 1300,
       "currency": "TRY",
@@ -690,7 +690,7 @@
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
-      "name": "İşlem",
+      "name": "WD-01 İşlem",
       "category": "",
       "price": 700,
       "currency": "TRY",
@@ -699,7 +699,7 @@
       "keyword_group": null
     },
     {
-      "name": "Temel Kullanıcı Eğitimi",
+      "name": "WB-02 Temel Kullanıcı Eğitimi",
       "category": "",
       "price": 2700,
       "currency": "TRY",
@@ -708,7 +708,7 @@
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
-      "name": "İşlem",
+      "name": "WB-03 İşlem",
       "category": "",
       "price": 1100,
       "currency": "TRY",
@@ -717,7 +717,7 @@
       "keyword_group": null
     },
     {
-      "name": "İşlem",
+      "name": "RTP-01 İşlem",
       "category": "",
       "price": 1200,
       "currency": "TRY",
