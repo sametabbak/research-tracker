@@ -34,7 +34,7 @@
     },
     {
       "name": "AFM Numune İnceleme",
-      "category": "",
+      "category": "AFM (Atomik Kuvvet Mikroskobu)",
       "price": 1100,
       "currency": "TRY",
       "unit": "numune",
@@ -43,7 +43,7 @@
     },
     {
       "name": "Manyetik Kuvvet Mikroskop",
-      "category": "",
+      "category": "AFM (Atomik Kuvvet Mikroskobu)",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Temas Modunda Analiz",
-      "category": "",
+      "category": "AFM (Atomik Kuvvet Mikroskobu)",
       "price": 2000,
       "currency": "TRY",
       "unit": "numune",
@@ -61,7 +61,7 @@
     },
     {
       "name": "Kelvin Prob Mikroskop",
-      "category": "",
+      "category": "AFM (Atomik Kuvvet Mikroskobu)",
       "price": 2000,
       "currency": "TRY",
       "unit": "numune",
