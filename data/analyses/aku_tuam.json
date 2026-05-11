@@ -172,7 +172,7 @@
       "category": "E-) ISIL İŞLEMLER VE ANALİZLER",
       "price": 900,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "numune",
       "notes": "",
       "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
@@ -181,7 +181,7 @@
       "category": "E-) ISIL İŞLEMLER VE ANALİZLER",
       "price": 1100,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "numune",
       "notes": "",
       "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
@@ -190,7 +190,7 @@
       "category": "E-) ISIL İŞLEMLER VE ANALİZLER",
       "price": 1350,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "numune",
       "notes": "",
       "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
@@ -199,7 +199,7 @@
       "category": "E-) ISIL İŞLEMLER VE ANALİZLER",
       "price": 1000,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "numune",
       "notes": "",
       "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
@@ -208,7 +208,7 @@
       "category": "E-) ISIL İŞLEMLER VE ANALİZLER",
       "price": 1200,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "numune",
       "notes": "",
       "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
@@ -217,7 +217,7 @@
       "category": "E-) ISIL İŞLEMLER VE ANALİZLER",
       "price": 1400,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "numune",
       "notes": "",
       "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
