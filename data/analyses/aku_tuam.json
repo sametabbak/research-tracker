@@ -1,7 +1,7 @@
 {
   "center_id": "aku_tuam",
   "center_name": "AKÜ TUAM",
-  "last_updated": "2026-05-04",
+  "last_updated": "2026-05-11",
   "source_url": "https://tuam.aku.edu.tr/analiz-ucretleri/",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
@@ -19,7 +19,7 @@
       "category": "A-) MİKROYAPI ANALİZLER",
       "price": 300,
       "currency": "TRY",
-      "unit": "set",
+      "unit": "numune",
       "notes": "",
       "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
@@ -28,7 +28,7 @@
       "category": "A-) MİKROYAPI ANALİZLER",
       "price": 375,
       "currency": "TRY",
-      "unit": "set",
+      "unit": "numune",
       "notes": "",
       "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
@@ -172,7 +172,7 @@
       "category": "E-) ISIL İŞLEMLER VE ANALİZLER",
       "price": 900,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
@@ -181,7 +181,7 @@
       "category": "E-) ISIL İŞLEMLER VE ANALİZLER",
       "price": 1100,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
@@ -190,7 +190,7 @@
       "category": "E-) ISIL İŞLEMLER VE ANALİZLER",
       "price": 1350,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
@@ -199,7 +199,7 @@
       "category": "E-) ISIL İŞLEMLER VE ANALİZLER",
       "price": 1000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
@@ -208,7 +208,7 @@
       "category": "E-) ISIL İŞLEMLER VE ANALİZLER",
       "price": 1200,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
@@ -217,7 +217,7 @@
       "category": "E-) ISIL İŞLEMLER VE ANALİZLER",
       "price": 1400,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
@@ -330,24 +330,6 @@
       "keyword_group": "Piezoelektrik Ölçümler"
     },
     {
-      "name": "2- Piezoelektrik Sabiti (d) Ölçümü (Oda Sıcaklığı Kutuplama)",
-      "category": "I-) PİEZOELEKTRİK ÖZELLİKLER",
-      "price": 400,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "Piezoelektrik Ölçümler"
-    },
-    {
-      "name": "3- Piezoelektrik Sabiti (d) Ölçümü (Yüksek Sıcaklık Kutuplama)",
-      "category": "I-) PİEZOELEKTRİK ÖZELLİKLER",
-      "price": 700,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "Piezoelektrik Ölçümler"
-    },
-    {
       "name": "1-Optik Emisyon Spektrometresi (OES)",
       "category": "İ-) METALLERDE ELEMENTEL ANALİZ",
       "price": 600,
@@ -364,6 +346,24 @@
       "unit": "numune",
       "notes": "",
       "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
+    },
+    {
+      "name": "2- Piezoelektrik Sabiti (d) Ölçümü (Oda Sıcaklığı Kutuplama)",
+      "category": "I-) PİEZOELEKTRİK ÖZELLİKLER",
+      "price": 400,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": "",
+      "keyword_group": "Piezoelektrik Ölçümler"
+    },
+    {
+      "name": "3- Piezoelektrik Sabiti (d) Ölçümü (Yüksek Sıcaklık Kutuplama)",
+      "category": "I-) PİEZOELEKTRİK ÖZELLİKLER",
+      "price": 700,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": "",
+      "keyword_group": "Piezoelektrik Ölçümler"
     }
   ]
 }
