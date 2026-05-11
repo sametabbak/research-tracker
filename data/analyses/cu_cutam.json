@@ -47,7 +47,8 @@
       "price": 100,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Çözünmüş Oksijen",
@@ -181,7 +182,8 @@
       "price": 300,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Yağ asitleri Kompozisyonu % bağıl miktar",
@@ -270,7 +272,8 @@
       "price": 300,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Analiz (KBr Pellet)",
@@ -296,7 +299,8 @@
       "price": 200,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Altın Kaplama (Yalıtkan Numuneler için, 1set-6 numune)",
@@ -358,7 +362,8 @@
       "price": 100,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "Özel elementler (Hg, Au, Ag, Al, Pt)",
@@ -384,7 +389,8 @@
       "price": 500,
       "currency": "TRY",
       "unit": "element",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "6-10 element",
@@ -392,7 +398,8 @@
       "price": 600,
       "currency": "TRY",
       "unit": "element",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "11-15 element",
@@ -400,7 +407,8 @@
       "price": 700,
       "currency": "TRY",
       "unit": "element",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "16-20 element",
@@ -408,7 +416,8 @@
       "price": 800,
       "currency": "TRY",
       "unit": "element",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "Numune hazırlığı (asit ile mikro dalga yakma/yaş yakma)",
@@ -425,7 +434,8 @@
       "price": 500,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Termal Analizler (TGA, DSC, DTA, STA)"
     },
     {
       "name": "1-2 saat",
@@ -433,7 +443,8 @@
       "price": 650,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Termal Analizler (TGA, DSC, DTA, STA)"
     },
     {
       "name": ">2 saat",
@@ -441,7 +452,8 @@
       "price": 150,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Termal Analizler (TGA, DSC, DTA, STA)"
     },
     {
       "name": "1H-NMR",
@@ -467,7 +479,8 @@
       "price": 400,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "APT",
