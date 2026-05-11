@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AnalizBul — İnceleme Paneli</title>
+<title>Analiz Bul — İnceleme Paneli</title>
 <style>
 :root{
   --p:#1FA8AE;--bg:#f4f6f8;--card:#fff;--border:#e0e4e8;
@@ -183,7 +183,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 <!-- HEADER -->
 <div class="hdr">
   <div>
-    <h1>🔬 AnalizBul — İnceleme Paneli</h1>
+    <h1>🔬 Analiz Bul — İnceleme Paneli</h1>
     <div class="hdr-meta" id="hdrMeta">Yükleniyor...</div>
   </div>
   <div class="hdr-right">
@@ -223,9 +223,18 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
     <div id="changesContent"><div class="loader"><div class="spin"></div></div></div>
   </div>
   <div id="tab-catalog" class="hidden">
-    <div class="tb">
-      <div class="tb-l">
-        <input class="s-inp" id="catSearch" placeholder="Analiz veya merkez ara..." oninput="filterCat()" style="width:210px;">
+    <div class="tb" style="margin-bottom:8px;">
+      <div class="tb-l" style="flex-wrap:wrap;gap:7px;">
+        <input class="s-inp" id="catSearch" placeholder="Analiz adı ara..." oninput="filterCat()" style="width:180px;">
+        <select id="fCatSel" onchange="setFCat()" class="s-inp" style="width:190px;">
+          <option value="">— Kategori filtrele —</option>
+        </select>
+        <select id="fKwgSel" onchange="setFKwg()" class="s-inp" style="width:220px;">
+          <option value="">— Karş. grubu filtrele —</option>
+        </select>
+        <button class="btn btn-ghost btn-sm" id="clearFBtn" onclick="clearFilters()" style="display:none;">✕ Filtreleri Temizle</button>
+      </div>
+      <div class="tb-r">
         <button class="btn btn-p btn-sm" onclick="openAddCtrModal()">🏛️ Yeni Merkez</button>
         <button class="btn btn-sm" style="background:#f0fdf4;border:1px solid #bbf7d0;color:#166534;" onclick="openPasteModal(null)">📋 Yapıştır</button>
       </div>
@@ -427,7 +436,8 @@ var cats=[],allCats=[];                    /* kw group names, center-internal ca
 var stagOk=false,chgFilter='all';
 var colState={},sortCfg={},selRows={};
 var pE={},pA={},pD={},pCE={};             /* pending: edits, adds, deletes, center edits */
-var pKwR=[],pKwDel=[],pKwNew=[];          /* pending kw renames/deletes/new */
+var pKwR=[],pKwDel=[],pKwNew=[];
+var fCat='',fKwg='';  /* active catalog filters */          /* pending kw renames/deletes/new */
 var dupSrc=null,pasteRows=[],kwCtx=null;
 var a2c={};                                /* analysis name → [{cid,cn}] */
 
@@ -583,6 +593,19 @@ function buildDLs(){
   document.getElementById('nlDl').innerHTML=Object.keys(names).sort().map(function(n){return'<option value="'+esc(n)+'">';}).join('');
   document.getElementById('catDl').innerHTML=allCats.map(function(c){return'<option value="'+esc(c)+'">';}).join('');
   document.getElementById('kwDl').innerHTML=cats.map(function(g){return'<option value="'+esc(g)+'">';}).join('');
+  /* Filter dropdowns */
+  var fcs=document.getElementById('fCatSel');
+  var fkg=document.getElementById('fKwgSel');
+  if(fcs){
+    var prevCat=fcs.value;
+    fcs.innerHTML='<option value="">— Kategori filtrele —</option>'
+      +allCats.map(function(c){return'<option value="'+esc(c)+'"'+(c===prevCat?' selected':'')+'>'+esc(c.length>35?c.substring(0,33)+'…':c)+'</option>';}).join('');
+  }
+  if(fkg){
+    var prevKwg=fkg.value;
+    fkg.innerHTML='<option value="">— Karş. grubu filtrele —</option>'
+      +cats.map(function(g){return'<option value="'+esc(g)+'"'+(g===prevKwg?' selected':'')+'>'+esc(g.length>38?g.substring(0,36)+'…':g)+'</option>';}).join('');
+  }
 }
 
 /* ═══ DIFF ═══════════════════════════════════════════════════════════════════ */
@@ -807,12 +830,53 @@ function qaRow(cid){
     +'<td><button class="r-add-btn" onclick="qaAdd(\''+jsS(cid)+'\')">✓ Ekle</button></td></tr>';
 }
 
+function setFCat(){
+  var sel=document.getElementById('fCatSel');
+  fCat=sel?sel.value:'';
+  updateClearBtn();filterCat();
+}
+function setFKwg(){
+  var sel=document.getElementById('fKwgSel');
+  fKwg=sel?sel.value:'';
+  updateClearBtn();filterCat();
+}
+function clearFilters(){
+  fCat='';fKwg='';
+  var fc=document.getElementById('fCatSel');if(fc)fc.value='';
+  var fk=document.getElementById('fKwgSel');if(fk)fk.value='';
+  document.getElementById('catSearch').value='';
+  updateClearBtn();filterCat();
+}
+function updateClearBtn(){
+  var btn=document.getElementById('clearFBtn');
+  if(btn)btn.style.display=(fCat||fKwg||document.getElementById('catSearch').value)?'':'none';
+}
+
 function filterCat(){
   var q=document.getElementById('catSearch').value.toLowerCase();
   document.querySelectorAll('#catalogContent .sec').forEach(function(sec){
+    var cid=sec.dataset.cid||'';
     var rows=sec.querySelectorAll('tbody tr:not(.r-qa)');var vis=0;
-    rows.forEach(function(tr){var m=!q||tr.textContent.toLowerCase().includes(q);tr.style.display=m?'':'none';if(m)vis++;});
-    sec.style.display=(!q||vis)?'':'none';
+    rows.forEach(function(tr){
+      var textOk=!q||tr.textContent.toLowerCase().includes(q);
+      /* Category filter: check the category cell (3rd td) */
+      var catOk=true;
+      if(fCat){
+        var catTd=tr.querySelectorAll('td')[2];
+        catOk=catTd&&catTd.textContent.trim()===fCat;
+      }
+      /* Keyword group filter: check the kw-cell content */
+      var kwgOk=true;
+      if(fKwg){
+        var kwCell=tr.querySelector('.kw-cell');
+        kwgOk=kwCell&&kwCell.textContent.includes(fKwg.length>30?fKwg.substring(0,30):fKwg);
+      }
+      var show=textOk&&catOk&&kwgOk;
+      tr.style.display=show?'':'none';if(show)vis++;
+    });
+    /* Show section if any rows visible, or if no filter is active */
+    var anyFilter=q||fCat||fKwg;
+    sec.style.display=(!anyFilter||vis)?'':'none';
   });
 }
 
@@ -1335,13 +1399,25 @@ function applyBatch(){
   var nkwg=document.getElementById('batchKwg').value.trim();
   var mult=parseFloat(document.getElementById('batchMult').value);
   var ncur=document.getElementById('batchCur').value;
+  var sf=sMap[cid];
   names.forEach(function(name){
     if(!pE[cid])pE[cid]={};if(!pE[cid][name])pE[cid][name]={};
-    if(ncat)pE[cid][name].category=ncat;
-    if(ncur)pE[cid][name].currency=ncur;
+    var entry=sf&&sf.content&&sf.content.analyses?sf.content.analyses.find(function(a){return a.name===name;}):null;
+    if(ncat){
+      pE[cid][name].category=ncat;
+      if(entry)entry.category=ncat;       /* update sMap for immediate visual */
+    }
+    if(ncur){
+      pE[cid][name].currency=ncur;
+      if(entry)entry.currency=ncur;
+    }
     if(!isNaN(mult)&&mult>0){
       var a=getA(cid).find(function(x){return x.name===name;});
-      if(a){pE[cid][name].price=Math.round(a.price*mult);}
+      if(a){
+        var np=Math.round(a.price*mult);
+        pE[cid][name].price=np;
+        if(entry)entry.price=np;          /* update sMap for immediate visual */
+      }
     }
     if(nkwg)addKwG(name,nkwg,cid);
   });
