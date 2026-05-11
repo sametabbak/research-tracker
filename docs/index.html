@@ -1958,7 +1958,7 @@ function moveRow(cid,pid,dir){
     var list=sortList(arr,cid);
     tbody.innerHTML=list.map(function(a){return catRow(cid,a);}).join('')+qaRow(cid);
   }
-  updApvBtn();
+  updApvBtn();updCtrApvBtn(cid);
 }
 
 /* ═══ REJECT CHANGES ════════════════════════════════════════════════════════ */
