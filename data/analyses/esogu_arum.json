@@ -1623,7 +1623,7 @@
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Yasaklı Madde Analizi"
     },
     {
       "name": "Uyuşturucu ve Uyarıcı Madde Analizi (LC-MS veya GC-MS ile) Ve Raporlama",
@@ -1644,7 +1644,7 @@
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
     {
-      "name": "78.01",
+      "name": "Analiz Sonucunun Yorumlanması ve Rapor Oluşturulması",
       "category": "",
       "price": 15000,
       "currency": "TRY",
@@ -1659,7 +1659,7 @@
       "currency": "TRY",
       "unit": "Litre",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Sıvı Azot ve Saf Su"
     }
   ]
 }
