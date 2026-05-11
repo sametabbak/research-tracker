@@ -1146,7 +1146,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Full Analiz Paketi (1H-NMR, 13C-NMR, APT, DEPT-90, DEPT-135, COSY, HMBC, HMQC, HSQC",
@@ -1227,7 +1227,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "NOESY",
@@ -1317,7 +1317,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Çözücü Ücreti***/****: CDCl 3",
@@ -1326,7 +1326,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Çözücü Ücreti: DMSO-D6, D O, ACETONE-D6 2",
@@ -1335,7 +1335,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Çözücü Ücreti: MeOH-D4",
@@ -1344,7 +1344,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Uzman Değerlendirmesi* (Genel)",
@@ -1353,7 +1353,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     }
   ]
 }
