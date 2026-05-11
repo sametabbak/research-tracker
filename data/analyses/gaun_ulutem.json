@@ -186,7 +186,7 @@
       "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
-      "name": "Spektrum Taraması",
+      "name": "RAMAN Spektrum Taraması",
       "category": "Raman Spektroskopi Laboratuvarı",
       "price": 500,
       "currency": "TRY",
@@ -260,7 +260,7 @@
     {
       "name": "Spektrum Taraması",
       "category": "Moleküler Spektroskopi Laboratuvarı",
-      "price": 500,
+      "price": 300,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
