@@ -7,7 +7,7 @@
   "analyses": [
     {
       "name": "TEM-01 HR (malzeme örnekleri) veya HC (biyolojik örnekler) modunda",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 700,
       "currency": "TRY",
       "unit": "adet",
@@ -16,7 +16,7 @@
     },
     {
       "name": "TEM-02 HR (malzeme örnekleri) veya HC (biyolojik örnekler) modunda",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1400,
       "currency": "TRY",
       "unit": "saat",
@@ -25,7 +25,7 @@
     },
     {
       "name": "STEM ile uygun numunelerde karanlık alan görüntülemesi (düşük",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1400,
       "currency": "TRY",
       "unit": "saat",
@@ -34,7 +34,7 @@
     },
     {
       "name": "EDS modu ile Element Tayini",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1400,
       "currency": "TRY",
       "unit": "saat",
@@ -43,7 +43,7 @@
     },
     {
       "name": "EDS modu ile Noktasal, Çizgisel ve Bölgesel Haritalama",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1400,
       "currency": "TRY",
       "unit": "saat",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 2700,
       "currency": "TRY",
       "unit": "adet",
@@ -61,43 +61,43 @@
     },
     {
       "name": "AFM Numune İnceleme",
-      "category": "",
+      "category": "AFM (Atomik Kuvvet Mikroskobu)",
       "price": 1100,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
       "name": "Manyetik Kuvvet Mikroskop",
-      "category": "",
+      "category": "AFM (Atomik Kuvvet Mikroskobu)",
       "price": 1500,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
       "name": "Temas Modunda Analiz",
-      "category": "",
+      "category": "AFM (Atomik Kuvvet Mikroskobu)",
       "price": 2000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
       "name": "Kelvin Prob Mikroskop",
-      "category": "",
+      "category": "AFM (Atomik Kuvvet Mikroskobu)",
       "price": 2000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 3000,
       "currency": "TRY",
       "unit": "adet",
@@ -105,7 +105,7 @@
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
     {
-      "name": "FE-SEM ile İnceleme",
+      "name": "SEM-01 FE-SEM ile İnceleme",
       "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 800,
       "currency": "TRY",
@@ -114,7 +114,7 @@
       "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
-      "name": "FE-SEM ile İnceleme",
+      "name": "SEM-02 FE-SEM ile İnceleme",
       "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 2400,
       "currency": "TRY",
@@ -127,7 +127,7 @@
       "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 2700,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
@@ -136,7 +136,7 @@
       "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 2900,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
@@ -145,31 +145,31 @@
       "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 2700,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "Metalik Kalıntı Analizi ve Raporlama",
-      "category": "",
+      "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 18000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
     {
       "name": "Numune Hazırlama",
-      "category": "",
+      "category": "SEM (Taramalı Elektron Mikroskop)",
       "price": 2300,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "set",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 4000,
       "currency": "TRY",
       "unit": "adet",
@@ -178,52 +178,52 @@
     },
     {
       "name": "Genel Spektrum",
-      "category": "",
+      "category": "MİKRO RAMAN SPEKTROSKOPİ",
       "price": 590,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": null
     },
     {
       "name": "Haritalama",
-      "category": "",
+      "category": "MİKRO RAMAN SPEKTROSKOPİ",
       "price": 700,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": null
     },
     {
       "name": "Derinlik Profili",
-      "category": "",
+      "category": "MİKRO RAMAN SPEKTROSKOPİ",
       "price": 700,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "Raman Spektroskopi"
     },
     {
       "name": "Polarize Edilmiş Spektrum",
-      "category": "",
+      "category": "MİKRO RAMAN SPEKTROSKOPİ",
       "price": 590,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": null
     },
     {
       "name": "Sıvı İçerisinde Spektrum",
-      "category": "",
+      "category": "MİKRO RAMAN SPEKTROSKOPİ",
       "price": 590,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "UV-VIS Spektrofotometri"
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 4100,
       "currency": "TRY",
       "unit": "adet",
@@ -232,7 +232,7 @@
     },
     {
       "name": "XPS Genel Tarama",
-      "category": "",
+      "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
       "price": 970,
       "currency": "TRY",
       "unit": "numune",
@@ -241,88 +241,88 @@
     },
     {
       "name": "XPS Kısmi Tarama (Bir Element için)",
-      "category": "",
+      "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
       "price": 580,
       "currency": "TRY",
-      "unit": "element",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
     {
       "name": "XPS Kısmi Tarama (C,N,B,O gibi 1S Elementleri için)",
-      "category": "",
+      "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
       "price": 300,
       "currency": "TRY",
-      "unit": "element",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
     {
       "name": "UV/UPS Ölçümü",
-      "category": "",
+      "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
       "price": 1400,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Su Kalitesi ve Çevre Analizleri"
     },
     {
       "name": "Yüzey Elementel Haritalama",
-      "category": "",
+      "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
       "price": 1960,
       "currency": "TRY",
-      "unit": "element",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
     },
     {
       "name": "Derinlik Profili (Ar iyonları ile yüzeyin etch edilmesi)",
-      "category": "",
+      "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
       "price": 700,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
     {
       "name": "Açıya Bağlı Ölçüm (Genel Tarama)",
-      "category": "",
+      "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
       "price": 970,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
     {
       "name": "Açıya Bağlı Ölçüm (Kısmi Tarama)",
-      "category": "",
+      "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
       "price": 570,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
     {
       "name": "Sıcaklığa Bağlı Ölçüm (70-350 Kelvin)- Genel Spektrum (Bir",
-      "category": "",
+      "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
       "price": 1800,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": null
     },
     {
       "name": "Sıcaklığa Bağlı Ölçüm (70-350 Kelvin)- Kısmi Spektrum (Bir",
-      "category": "",
+      "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
       "price": 900,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": null
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 5000,
       "currency": "TRY",
       "unit": "adet",
@@ -330,8 +330,8 @@
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
     {
-      "name": "Toz ve Bulk Numune Kırınım Deseni",
-      "category": "",
+      "name": "XRD-01 Toz ve Bulk Numune Kırınım Deseni",
+      "category": "X-IŞINI KIRINIMI",
       "price": 800,
       "currency": "TRY",
       "unit": "numune",
@@ -339,7 +339,7 @@
       "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
-      "name": "Toz ve Bulk Numune Kırınım Deseni",
+      "name": "XRD-02 Toz ve Bulk Numune Kırınım Deseni",
       "category": "",
       "price": 1600,
       "currency": "TRY",
@@ -348,8 +348,8 @@
       "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
-      "name": "İnce Film Kırınım Deseni",
-      "category": "",
+      "name": "XRD-03 İnce Film Kırınım Deseni",
+      "category": "X-IŞINI KIRINIMI",
       "price": 1000,
       "currency": "TRY",
       "unit": "numune",
@@ -357,7 +357,7 @@
       "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
-      "name": "İnce Film Kırınım Deseni",
+      "name": "XRD-04 İnce Film Kırınım Deseni",
       "category": "",
       "price": 1600,
       "currency": "TRY",
@@ -367,52 +367,52 @@
     },
     {
       "name": "Kalitatif Böbrek Taşı Analizi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 1000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "Kalitatif Analiz (Toz, bulk ve ince film)",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 2000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "XRR (Reflectivity) Analizi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 6000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "XRR (X-Işını Yansıma) Analizleri"
     },
     {
       "name": "Kalıntı Gerilme Analizi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 6000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "XRD Numune Hazırlama",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 500,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 5500,
       "currency": "TRY",
       "unit": "adet",
@@ -448,7 +448,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 1800,
       "currency": "TRY",
       "unit": "adet",
@@ -475,7 +475,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 2000,
       "currency": "TRY",
       "unit": "adet",
@@ -511,7 +511,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 1050,
       "currency": "TRY",
       "unit": "adet",
@@ -556,7 +556,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 500,
       "currency": "TRY",
       "unit": "adet",
@@ -601,7 +601,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 2500,
       "currency": "TRY",
       "unit": "adet",
@@ -619,10 +619,10 @@
     },
     {
       "name": "Haritalama",
-      "category": "",
+      "category": "MİKRO RAMAN SPEKTROSKOPİ",
       "price": 1300,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": null
     },
