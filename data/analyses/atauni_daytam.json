@@ -651,7 +651,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "MTT ile Sitotoksisite testleri: Tek tip hücre ile 1 örnek için 1 plaka başına 7 konsantrasyon (dilüsyon) + 1 Kontrol için (üç saat dilimi, 24, 48 ve 72 saatlik)",
@@ -660,7 +660,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Verilerin istatistiksel analizi ve yorumlanması Analiz",
@@ -687,7 +687,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Flow sonuçlarının analizi ve yorumlanması Analiz",
@@ -777,7 +777,7 @@
       "currency": "TRY",
       "unit": "Tek Kullanım",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "PCR Tek Kullanım",
@@ -903,7 +903,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Kriyostat ile kesit alma",
@@ -930,7 +930,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "TEM-01 HR (malzeme örnekleri) veya HC (biyolojik örnekler) modunda",
@@ -1122,9 +1122,9 @@
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
     {
-      "name": "PM-03 İşlem",
+      "name": "PM-03 Analiz Sonuçlarının Yorumlanması ve Raporlama",
       "category": "",
-      "price": 1000,
+      "price": 2000,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
