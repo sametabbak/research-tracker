@@ -6,31 +6,31 @@
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
     {
-      "name": "STEM ile uygun numunelerde karanlık alan görüntülemesi (düşük",
-      "category": "",
+      "name": "STEM ile uygun numunelerde karanlık alan görüntülemesi (düşük çözünürlükte görüntü)",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1400,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "EDS modu ile Element Tayini",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1400,
       "currency": "TRY",
-      "unit": "element",
+      "unit": "saat",
       "notes": "",
-      "keyword_group": "SEM-EDX ve EBSD Analizleri"
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "EDS modu ile Noktasal, Çizgisel ve Bölgesel Haritalama",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1400,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
-      "keyword_group": "SEM-EDX ve EBSD Analizleri"
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "AFM Numune İnceleme",
