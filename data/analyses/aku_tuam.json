@@ -330,24 +330,6 @@
       "keyword_group": "Piezoelektrik Ölçümler"
     },
     {
-      "name": "1-Optik Emisyon Spektrometresi (OES)",
-      "category": "İ-) METALLERDE ELEMENTEL ANALİZ",
-      "price": 600,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "OES (Optik Emisyon Spektrometresi) Analizleri"
-    },
-    {
-      "name": "1-Tane Boyut Dağılımı Tayini",
-      "category": "J-) TOZ MALZEME ANALİZİ",
-      "price": 600,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
-    },
-    {
       "name": "2- Piezoelektrik Sabiti (d) Ölçümü (Oda Sıcaklığı Kutuplama)",
       "category": "I-) PİEZOELEKTRİK ÖZELLİKLER",
       "price": 400,
@@ -364,6 +346,24 @@
       "unit": "numune",
       "notes": "",
       "keyword_group": "Piezoelektrik Ölçümler"
+    },
+    {
+      "name": "1-Optik Emisyon Spektrometresi (OES)",
+      "category": "İ-) METALLERDE ELEMENTEL ANALİZ",
+      "price": 600,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": "",
+      "keyword_group": "OES (Optik Emisyon Spektrometresi) Analizleri"
+    },
+    {
+      "name": "1-Tane Boyut Dağılımı Tayini",
+      "category": "J-) TOZ MALZEME ANALİZİ",
+      "price": 600,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": "",
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     }
   ]
 }
