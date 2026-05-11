@@ -6,7 +6,7 @@
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
     {
-      "name": "HR (malzeme örnekleri) veya HC (biyolojik örnekler) modunda",
+      "name": "TEM-01 HR (malzeme örnekleri) veya HC (biyolojik örnekler) modunda",
       "category": "",
       "price": 700,
       "currency": "TRY",
@@ -15,7 +15,7 @@
       "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
-      "name": "HR (malzeme örnekleri) veya HC (biyolojik örnekler) modunda",
+      "name": "TEM-02 HR (malzeme örnekleri) veya HC (biyolojik örnekler) modunda",
       "category": "",
       "price": 1400,
       "currency": "TRY",
