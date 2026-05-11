@@ -264,7 +264,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Moleküler Genetik ve PCR Analizleri"
     },
     {
       "name": "Fotometrik Analiz",
@@ -420,13 +420,13 @@
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
-      "name": "İlave Bileşen Başına",
+      "name": "GC-MS İlave Bileşen Başına",
       "category": "Gaz Kromatografi Laboratuvarı",
       "price": 450,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Numune Hazırlık (Biyolojik numuneler hariç)",
@@ -474,13 +474,13 @@
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
-      "name": "İlave Bileşen Başına",
+      "name": "LC/MS-MS İlave Bileşen Başına",
       "category": "LC/MS-MS Laboratuvarı",
       "price": 450,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Vitamin Analizi (1 Numunede Vitamin Çeşidi Başına)",
@@ -510,13 +510,13 @@
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
-      "name": "İlave Bileşen Başına",
+      "name": "HPLC İlave Bileşen Başına",
       "category": "Sıvı Kromatografi Laboratuvarı",
       "price": 450,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HMF Analizi (Kantitatif)",
