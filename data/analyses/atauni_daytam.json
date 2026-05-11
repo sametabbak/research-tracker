@@ -523,40 +523,40 @@
       "category": "Tane Büyüklüğü ve Zeta Potansiyel",
       "price": 350,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "BET Yüzey Alanı (N adsorpsiyonu) Ölçümü",
-      "category": "",
+      "category": "YÜZEY ALANI VE MİKROGÖZENEK BOYUTU ÖLÇÜMÜ",
       "price": 1100,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "Kemisorpsiyon Ölçümü",
-      "category": "",
+      "category": "YÜZEY ALANI VE MİKROGÖZENEK BOYUTU ÖLÇÜMÜ",
       "price": 1900,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "H Adsorpsiyonu Ölçümü",
-      "category": "",
+      "category": "YÜZEY ALANI VE MİKROGÖZENEK BOYUTU ÖLÇÜMÜ",
       "price": 1100,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
-      "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "Tane Büyüklüğü ve Zeta Potansiyel",
+      "name": "BET-04 Analiz Sonuçlarının Yorumlanması ve Raporlama",
+      "category": "YÜZEY ALANI VE MİKROGÖZENEK BOYUTU ÖLÇÜMÜ",
       "price": 500,
       "currency": "TRY",
       "unit": "adet",
@@ -568,7 +568,7 @@
       "category": "",
       "price": 230,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Temas Açısı ve Yüzey Enerjisi Analizleri"
     },
@@ -577,7 +577,7 @@
       "category": "",
       "price": 800,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
@@ -586,7 +586,7 @@
       "category": "",
       "price": 700,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Temas Açısı ve Yüzey Enerjisi Analizleri"
     },
@@ -595,7 +595,7 @@
       "category": "",
       "price": 700,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Temas Açısı ve Yüzey Enerjisi Analizleri"
     },
