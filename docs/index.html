@@ -80,6 +80,7 @@ th{background:var(--bg);padding:8px 9px;text-align:left;font-size:11px;color:var
 th:hover{color:var(--p);}
 td{padding:7px 9px;border-bottom:1px solid var(--border);vertical-align:middle;}
 tr:last-child td{border-bottom:none;}
+.r-rej{background:#fdf4ff;opacity:.75;}
 .r-add{background:#f0fdf4;} .r-del{background:#fef2f2;opacity:.75;} .r-chg{background:#fff7ed;}
 .r-man{background:#f0f9ff;} .r-qa{background:#fffbeb;} .r-sel{background:#e0f2fe!important;}
 .badge{display:inline-block;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600;white-space:nowrap;}
@@ -220,6 +221,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
       <button class="fb fb-add" id="fb-add" onclick="setFilter('added')">Yeni</button>
       <button class="fb fb-del" id="fb-del" onclick="setFilter('deleted')">Silindi</button>
       <button class="fb fb-chg" id="fb-chg" onclick="setFilter('changed')">Fiyat Değişti</button>
+      <button class="fb" id="fb-rej" onclick="setFilter('rejected')" style="border-color:#a855f7;color:#7e22ce;">✕ Reddedilenler</button>
     </div>
     <div id="changesContent"><div class="loader"><div class="spin"></div></div></div>
   </div>
@@ -437,6 +439,7 @@ var cats=[],allCats=[];                    /* kw group names, center-internal ca
 var stagOk=false,chgFilter='all';
 var colState={},sortCfg={},selRows={};
 var pE={},pA={},pD={},pCE={};             /* pending: edits, adds, deletes, center edits */
+var pRej={};  /* pending rejections: {cid:{name:type}} */
 var pKwR=[],pKwDel=[],pKwNew=[];
 var fCat='',fKwg='';  /* active catalog filters */          /* pending kw renames/deletes/new */
 var dupSrc=null,pasteRows=[],kwCtx=null;
@@ -517,7 +520,7 @@ async function loadAll(){
     document.getElementById(id).innerHTML='<div class="loader"><div class="spin"></div><p style="margin-top:12px">Yükleniyor...</p></div>';
   });
   document.getElementById('apvBtn').disabled=true;
-  sMap={};mMap={};ovMap={};pE={};pA={};pD={};pCE={};pKwR=[];pKwDel=[];pKwNew=[];selRows={};colState={};a2c={};
+  sMap={};mMap={};ovMap={};pE={};pA={};pD={};pCE={};pKwR=[];pKwDel=[];pKwNew=[];pRej={};selRows={};colState={};a2c={};
 
   var misc=await Promise.all([
     rawRead(MAIN,'data/centers.json'),
@@ -671,7 +674,7 @@ function cardClick(t){
 }
 function setFilter(f){
   chgFilter=f;
-  ['all','add','del','chg'].forEach(function(x){document.getElementById('fb-'+x).classList.toggle('on',x===f||(f==='all'&&x==='all')||(f==='added'&&x==='add')||(f==='deleted'&&x==='del')||(f==='changed'&&x==='chg'));});
+  ['all','add','del','chg','rej'].forEach(function(x){document.getElementById('fb-'+x).classList.toggle('on',x===f||(f==='all'&&x==='all')||(f==='added'&&x==='add')||(f==='deleted'&&x==='del')||(f==='changed'&&x==='chg')||(f==='rejected'&&x==='rej'));});
   renderChanges();
 }
 function showTab(name){
@@ -687,43 +690,105 @@ function hideModal(id){document.getElementById(id).classList.add('hidden');}
 /* ═══ RENDER: CHANGES ════════════════════════════════════════════════════════ */
 function renderChanges(){
   var el=document.getElementById('changesContent');
-  if(!stagOk){
-    el.innerHTML='<div class="warn-box"><strong>staging\'de veri bulunamadı.</strong><br>Actions → Research Center Price Tracker → Run workflow.</div>';
-    return;
-  }
-  var html='',any=false;
+  if(!stagOk){el.innerHTML='<div class="warn-box"><strong>Staging\'de veri bulunamadı.</strong></div>';return;}
+
+  var totalRej=Object.keys(pRej).reduce(function(s,cid){return s+Object.keys(pRej[cid]||{}).length;},0);
+  var rejBar=totalRej>0
+    ?'<div class="pend" style="margin-bottom:10px;"><span>'+totalRej+' değişiklik reddedildi — staging\'e uygulamak için kaydedin.</span>'
+      +'<button class="btn btn-del btn-sm" style="margin-left:4px;" onclick="applyRejections()">✕ Reddedilenleri Yayınla</button>'
+      +'<button class="undo" style="margin-left:4px;" onclick="clearRej()">Tümünü Geri Al</button></div>'
+    :'';
+
+  var html=rejBar,any=false;
   centers.forEach(function(c){
-    var d=getDiff(c.id);var rows=[];
-    if(chgFilter==='all'||chgFilter==='added')d.added.forEach(function(a){rows.push(Object.assign({},a,{_t:'add'}));});
-    if(chgFilter==='all'||chgFilter==='deleted')d.deleted.forEach(function(a){rows.push(Object.assign({},a,{_t:'del'}));});
-    if(chgFilter==='all'||chgFilter==='changed')d.changed.forEach(function(a){rows.push(Object.assign({},a,{_t:'chg'}));});
-    if(!rows.length)return;any=true;
+    var d=getDiff(c.id);
+    var crej=pRej[c.id]||{};
+    var rows=[];
+
+    if(chgFilter==='all'||chgFilter==='added')
+      d.added.forEach(function(a){rows.push(Object.assign({},a,{_t:'add'}));});
+    if(chgFilter==='all'||chgFilter==='deleted')
+      d.deleted.forEach(function(a){rows.push(Object.assign({},a,{_t:'del'}));});
+    if(chgFilter==='all'||chgFilter==='changed')
+      d.changed.forEach(function(a){rows.push(Object.assign({},a,{_t:'chg'}));});
+    if(chgFilter==='rejected'){
+      Object.keys(crej).forEach(function(name){
+        var t=crej[name];
+        var pool=t==='deleted'?(mMap[c.id]?mMap[c.id].analyses||[]:
+                 []):(sMap[c.id]?sMap[c.id].content&&sMap[c.id].content.analyses||[]:[]);
+        var a=pool.find(function(x){return x.name===name;});
+        if(a)rows.push(Object.assign({},a,{_t:t}));
+      });
+    }
+    if(!rows.length)return;
+    any=true;
     var sid='ch_'+sid2(c.id);var col=colState[sid]||false;
     var pu=c.pricing_url||c.url||'';
-    html+='<div class="sec"><h2 class="sec-h" onclick="togSec(\''+sid+'\')">'
-      +esc(c.name)+' <span class="cnt">'+esc(c.city)+'</span>'
+    var rejCount=Object.keys(crej).length;
+
+    html+='<div class="sec">'
+      +'<h2 class="sec-h" onclick="togSec(\''+sid+'\')">'
+      +esc(c.name)+' <span class="cnt">'+esc(c.city||'')+'</span>'
       +(d.added.length?' <span class="cnt cnt-add">+'+d.added.length+'</span>':'')
       +(d.deleted.length?' <span class="cnt cnt-del">-'+d.deleted.length+'</span>':'')
       +(d.changed.length?' <span class="cnt cnt-chg">'+d.changed.length+' fiyat</span>':'')
-      +(pu?' <a href="'+esc(pu)+'" target="_blank" rel="noopener" style="font-size:11px;color:var(--p);font-weight:500;text-decoration:none;">↗ Fiyat Listesi</a>':'')
-      +'<button class="tog" id="tog-'+sid+'">'+(col?'▶':'▼')+'</button></h2>'
+      +(rejCount?' <span class="cnt" style="border-color:#d8b4fe;background:#faf5ff;color:#7e22ce;">'
+        +'\u2715 '+rejCount+' reddedildi</span>':'')
+      +(pu?' <a href="'+esc(pu)+'" target="_blank" rel="noopener" '
+        +'style="font-size:11px;color:var(--p);text-decoration:none;">\u2197 Fiyat</a>':'')
+      +'<button class="btn btn-sm" style="background:#fdf4ff;border:1px solid #d8b4fe;'
+        +'color:#7e22ce;font-size:11px;" '
+        +'onclick="event.stopPropagation();rejectCenter(\''+jsS(c.id)+'\')">'
+        +'\u2715 T\u00fcm\u00fcn\u00fc Reddet</button>'
+      +(rejCount?'<button class="btn btn-sm" style="background:#f0fdf4;border:1px solid #bbf7d0;'
+        +'color:#166534;font-size:11px;" '
+        +'onclick="event.stopPropagation();restoreCenter(\''+jsS(c.id)+'\')">'
+        +'\u21a9 Geri Al</button>':'')
+      +'<button class="tog" id="tog-'+sid+'">'+(col?'\u25b6':'\u25bc')+'</button>'
+      +'</h2>'
       +'<div id="sb-'+sid+'" class="sec-body'+(col?' closed':'')+'">'
-      +'<div class="tw"><table><thead><tr><th>Durum</th><th>Analiz Adı</th><th>Kategori</th><th>Eski Fiyat</th><th>Yeni Fiyat</th><th>Birim</th></tr></thead><tbody>';
+      +'<div class="tw"><table>'
+      +'<thead><tr><th>Durum</th><th>Analiz Ad\u0131</th><th>Eski Fiyat</th><th>Yeni Fiyat</th><th></th></tr></thead>'
+      +'<tbody>';
+
     rows.forEach(function(a){
+      var isRej=!!crej[a.name];
       var old=mMap[c.id]?(mMap[c.id].analyses||[]).find(function(x){return x.name===a.name;}):null;
-      var bg={'add':'r-add','del':'r-del','chg':'r-chg'}[a._t];
-      var badge=a._t==='add'?'<span class="badge b-add">Yeni</span>':a._t==='del'?'<span class="badge b-del">Silindi</span>':'<span class="badge b-chg">Fiyat</span>';
-      html+='<tr class="'+bg+'"><td>'+badge+'</td><td>'+esc(a.name)+'</td><td>'+esc(a.category||'')+'</td>'
+      var bg=isRej?'r-rej':({add:'r-add',del:'r-del',chg:'r-chg'}[a._t]||'');
+      var badge=a._t==='add'
+        ?'<span class="badge b-add">Yeni</span>'
+        :a._t==='del'
+          ?'<span class="badge b-del">Silindi</span>'
+          :'<span class="badge b-chg">Fiyat</span>';
+      var rejBadge=isRej
+        ?'<span class="badge" style="background:#f3e8ff;color:#7e22ce;margin-left:3px;">'
+          +'\u2715 Reddedildi</span>'
+        :'';
+      var nameHtml=isRej
+        ?'<s style="opacity:.5;">'+esc(a.name)+'</s>'
+        :esc(a.name);
+      var rejBtn=isRej
+        ?'<button class="btn btn-sm" style="background:#f0fdf4;border:1px solid #bbf7d0;'
+          +'color:#166534;padding:2px 8px;font-size:11px;" '
+          +'onclick="togRej(\''+jsS(c.id)+'\',\''+jsS(a.name)+'\',\''+a._t+'\')">\u21a9</button>'
+        :'<button class="btn btn-sm" style="background:#fdf4ff;border:1px solid #d8b4fe;'
+          +'color:#7e22ce;padding:2px 8px;font-size:11px;" '
+          +'onclick="togRej(\''+jsS(c.id)+'\',\''+jsS(a.name)+'\',\''+a._t+'\')">\u2715 Reddet</button>';
+
+      html+='<tr class="'+bg+'">'
+        +'<td>'+badge+rejBadge+'</td>'
+        +'<td>'+nameHtml+'</td>'
         +'<td>'+(old?fmtC(old.price,old.currency||'TRY'):'—')+'</td>'
         +'<td>'+(a._t!=='del'?'<strong>'+fmtC(a.price,a.currency||'TRY')+'</strong>':'—')+'</td>'
-        +'<td>'+esc(a.unit||'')+'</td></tr>';
+        +'<td>'+rejBtn+'</td></tr>';
     });
     html+='</tbody></table></div></div></div>';
   });
-  el.innerHTML=any?html:'<div class="ok-box">✅ '+(chgFilter==='all'?'Staging ve main arasında fark yok.':'Bu filtreye uygun değişiklik yok.')+'</div>';
+  el.innerHTML=any?html
+    :'<div class="ok-box">\u2705 '+(chgFilter==='all'?'Staging ve main aras\u0131nda fark yok.'
+      :'Bu filtreye uygun de\u011fi\u015fiklik yok.')+'</div>';
 }
 
-/* ═══ RENDER: CATALOG ════════════════════════════════════════════════════════ */
 function sbtn(cid,f,lbl){
   var sc=sortCfg[cid]||{};var on=sc.field===f;
   var cls='sort-btn'+(on?' on':'');
@@ -1831,6 +1896,99 @@ async function importBackup(){
     document.getElementById('bkpStatus').textContent='Hata: '+e.message;
   }
   if(btn){btn.disabled=false;btn.textContent='⬆ Geri Yükle';}
+}
+
+/* ═══ REJECT CHANGES ════════════════════════════════════════════════════════ */
+function togRej(cid,name,type){
+  if(!pRej[cid])pRej[cid]={};
+  if(pRej[cid][name])delete pRej[cid][name];
+  else pRej[cid][name]=type;
+  renderChanges();
+}
+function rejectCenter(cid){
+  var d=getDiff(cid);
+  if(!pRej[cid])pRej[cid]={};
+  d.added.forEach(function(a){pRej[cid][a.name]='add';});
+  d.deleted.forEach(function(a){pRej[cid][a.name]='del';});
+  d.changed.forEach(function(a){pRej[cid][a.name]='chg';});
+  renderChanges();
+}
+function restoreCenter(cid){
+  delete pRej[cid];
+  renderChanges();
+}
+function clearRej(){
+  pRej={};
+  renderChanges();
+}
+async function applyRejections(){
+  if(!tok){openTokModal(applyRejections);return;}
+  var total=Object.keys(pRej).reduce(function(s,cid){return s+Object.keys(pRej[cid]||{}).length;},0);
+  if(!total){alert('Reddedilecek değişiklik yok.');return;}
+  if(!confirm(total+' değişiklik staging\'den geri alınacak ve yayınlanacak. Devam?'))return;
+
+  var btn=document.getElementById('apvBtn');
+  if(btn){btn.disabled=true;btn.textContent='\u29b3 Reddedilenler uygulanıyor...';}
+  var errors=[];
+
+  try{
+    var cids=Object.keys(pRej).filter(function(cid){return Object.keys(pRej[cid]).length>0;});
+    for(var i=0;i<cids.length;i++){
+      var cid=cids[i];
+      var sf=sMap[cid];if(!sf)continue;
+      var rejMap=pRej[cid];
+      var mainA=mMap[cid]?mMap[cid].analyses||[]:[];
+
+      try{
+        var newA=sf.content.analyses.slice();
+
+        Object.keys(rejMap).forEach(function(name){
+          var type=rejMap[name];
+          if(type==='add'){
+            /* Tracker added it — remove from staging */
+            newA=newA.filter(function(a){return a.name!==name;});
+          } else if(type==='del'){
+            /* Tracker deleted it — restore from main */
+            var orig=mainA.find(function(a){return a.name===name;});
+            if(orig&&!newA.some(function(a){return a.name===name;}))
+              newA.push(Object.assign({},orig));
+          } else if(type==='chg'){
+            /* Tracker changed price — revert to main price */
+            var origM=mainA.find(function(a){return a.name===name;});
+            if(origM)newA=newA.map(function(a){
+              if(a.name!==name)return a;
+              return Object.assign({},a,{price:origM.price,currency:origM.currency||a.currency});
+            });
+          }
+        });
+
+        /* Strip _pid before writing */
+        var cleanA=newA.map(function(a){var x=Object.assign({},a);delete x._pid;return x;});
+        var nc=Object.assign({},sf.content,{analyses:cleanA});
+        var cn=centers.find(function(c){return c.id===cid;});
+        var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf.sha,
+          'fix: değişiklikler reddedildi — '+(cn?cn.name:cid));
+        sMap[cid]={content:nc,sha:(wa&&wa.content)?wa.content.sha:sf.sha};
+        sMap[cid].content.analyses.forEach(function(a,idx){a._pid=cid+'_'+idx;});
+        mMap[cid]=nc;
+      }catch(we){
+        var cn2=centers.find(function(c){return c.id===cid;});
+        errors.push((cn2?cn2.name:cid)+': '+we.message);
+      }
+    }
+
+    if(errors.length)alert('Bazı merkezler kaydedilemedi:\n'+errors.join('\n'));
+
+    await triggerMerge('Reddedilen değişiklikler uygulandı');
+    pRej={};
+    buildRKW();buildAllCats();buildDLs();
+    updSum();renderChanges();renderCatalog();updApvBtn();
+    document.getElementById('hdrMeta').textContent='Reddedilenler yayınlandı. Main 30-60 sn içinde güncellenecek.';
+    document.getElementById('hdrMeta').style.color='#aaff88';
+  }catch(e){
+    alert('Hata: '+e.message);
+  }
+  if(btn){btn.disabled=false;btn.textContent='\u2713 Onayla ve Yayınla';}
 }
 
 /* ═══ HELPERS ════════════════════════════════════════════════════════════════ */
