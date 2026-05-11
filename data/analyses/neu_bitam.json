@@ -777,7 +777,7 @@
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "6-10 Element",
@@ -786,7 +786,7 @@
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "11-15 Element",
@@ -795,7 +795,7 @@
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "16-20 Element",
@@ -804,7 +804,7 @@
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "21-30 Element",
@@ -813,7 +813,7 @@
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "31-40 Element",
@@ -822,7 +822,7 @@
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "ASE ile Ekstraksiyon**",
@@ -1056,7 +1056,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Diğer Analiz Türleri"
     },
     {
       "name": "pH Tayini",
@@ -1083,7 +1083,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Sıvı Azot, Saf Su"
     },
     {
       "name": "1H-NMR (Ölçüme hazır gelen numune)",
@@ -1140,8 +1140,8 @@
       "keyword_group": "NMR Analizleri"
     },
     {
-      "name": "D O Exchange 2",
-      "category": "",
+      "name": "D2O Exchange",
+      "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
       "price": 350,
       "currency": "TRY",
       "unit": "numune",
