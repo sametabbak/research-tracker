@@ -236,7 +236,8 @@
       "price": 1440,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Termal Analizler (TGA, DSC, DTA, STA)"
     },
     {
       "name": "25°C – 700 °C",
@@ -244,7 +245,8 @@
       "price": 1440,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Termal Analizler (TGA, DSC, DTA, STA)"
     },
     {
       "name": "25°C – 1000 °C arası Termal Gravimetrik Analiz -Simultane DSC",
@@ -333,7 +335,8 @@
       "price": 1750,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Gerinim Taraması",
@@ -341,7 +344,8 @@
       "price": 1750,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Sıcaklık Taraması (-40°C-200°C arası)",
@@ -574,7 +578,8 @@
       "price": 1100,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Reaksiyon Hazırlığı (45 örnek ve altı) - Cihaz Kullanımı",
@@ -600,7 +605,8 @@
       "price": 325,
       "currency": "TRY",
       "unit": "numune",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Reaksiyon Hazırlığı - Cihaz Kullanımı",
@@ -635,7 +641,8 @@
       "price": 2100,
       "currency": "TRY",
       "unit": "saat",
-      "notes": ""
+      "notes": "",
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Kan, doku ve bakteri gibi biyolojik örneklerden DNA ve RNA izolasyonu",
