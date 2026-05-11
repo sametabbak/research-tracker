@@ -183,7 +183,7 @@
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "Formwar/Karbon Grid Üzerine Çözeltiden Numune Hazırlama",
@@ -228,7 +228,7 @@
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "Sertifikalı Eğitim Paketi (Teorik ve Uygulama İçeren) İçin Günlük (8 Saat) Laboratuvar Kullanımı*****",
@@ -237,7 +237,7 @@
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Konfokal Mikroskop ile Görüntüleme*",
@@ -291,7 +291,7 @@
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Toz Kırınım Deseni (Toz Numune)",
@@ -390,7 +390,7 @@
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "XRF Analizi / Katı Numune",
@@ -642,7 +642,7 @@
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "Kızdırma Kaybı",
@@ -768,7 +768,7 @@
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "TOCSY NMR Analizi",
@@ -840,7 +840,7 @@
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Sıvı NMR Temel Kullanıcı Eğitimi",
@@ -867,7 +867,7 @@
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Al NMR Analizi 4 Saat",
@@ -1065,7 +1065,7 @@
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "19F NMR Analizi",
@@ -1128,7 +1128,7 @@
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Si NMR Analizi 4 Saat",
@@ -1200,7 +1200,7 @@
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Hücre Kültürü Laboratuvarı Kullanımı**",
@@ -1317,7 +1317,7 @@
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Primer Hücre Kültürü*******",
@@ -1335,7 +1335,7 @@
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Annexin V , Dead Cell Kit",
@@ -1362,7 +1362,7 @@
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Cell Cycle Kit",
@@ -1371,7 +1371,7 @@
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Autophagy LC3-antibody based Kit",
@@ -1380,7 +1380,7 @@
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Elisa Reader",
@@ -1488,7 +1488,7 @@
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "-80 Dondurucu Kullanımı",
@@ -1497,7 +1497,7 @@
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Otoklav",
@@ -1515,7 +1515,7 @@
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "STA Analizi (25 °C – 900 °C) 1 Saat",
