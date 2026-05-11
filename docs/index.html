@@ -1082,46 +1082,68 @@ function selAll(cid){
 
 /* ═══ KW GROUP EDITING ═══════════════════════════════════════════════════════ */
 function addKwG(name,grp,cid){
-  if(!rKW[name])rKW[name]=[];
-  if(rKW[name].indexOf(grp)===-1)rKW[name].push(grp);
-  /* Write to analysis entry */
+  /* Replace — one group per analysis matches the data model */
+  rKW[name]=[grp];
   if(cid){
     var sf=sMap[cid];
-    if(sf&&sf.content&&sf.content.analyses){
-      var e=sf.content.analyses.find(function(a){return a.name===name;});
-      if(e)e.keyword_group=grp;
+    var entry=sf&&sf.content&&sf.content.analyses
+      ?sf.content.analyses.find(function(a){return a.name===name;})
+      :null;
+    if(entry){
+      entry.keyword_group=grp;
+      var pid=entry._pid;
+      if(pid){
+        if(!pE[cid])pE[cid]={};
+        if(!pE[cid][pid])pE[cid][pid]={};
+        pE[cid][pid].keyword_group=grp;
+      }
     }
-    if(!pE[cid])pE[cid]={};if(!pE[cid][name])pE[cid][name]={};
-    pE[cid][name].keyword_group=grp;
   }
-  updApvBtn();updSum();
+  updApvBtn();updSum();updCtrApvBtn(cid);
   if(kwCtx)renderKwList(document.getElementById('kwSearch').value.toLowerCase());
   refrKwCell(name,cid);
 }
 function removeKwG(name,grp,cid){
-  if(rKW[name])rKW[name]=rKW[name].filter(function(g){return g!==grp;});
+  rKW[name]=[];
   if(cid){
     var sf=sMap[cid];
-    if(sf&&sf.content&&sf.content.analyses){
-      var e=sf.content.analyses.find(function(a){return a.name===name;});
-      if(e)e.keyword_group=rKW[name].length>0?rKW[name][0]:null;
+    var entry=sf&&sf.content&&sf.content.analyses
+      ?sf.content.analyses.find(function(a){return a.name===name;})
+      :null;
+    if(entry){
+      entry.keyword_group=null;
+      var pid=entry._pid;
+      if(pid){
+        if(!pE[cid])pE[cid]={};
+        if(!pE[cid][pid])pE[cid][pid]={};
+        pE[cid][pid].keyword_group=null;
+      }
     }
-    if(!pE[cid])pE[cid]={};if(!pE[cid][name])pE[cid][name]={};
-    pE[cid][name].keyword_group=rKW[name].length>0?rKW[name][0]:null;
   }
-  updApvBtn();updSum();
+  updApvBtn();updSum();updCtrApvBtn(cid);
   if(kwCtx)renderKwList(document.getElementById('kwSearch').value.toLowerCase());
   refrKwCell(name,cid);
 }
 function refrKwCell(name,cid){
-  var rid=sid2(cid)+'__'+sid2(name);
-  var row=document.getElementById('tr-'+rid);if(!row)return;
+  /* Find the row by _pid — name-based IDs no longer match */
+  var sf=sMap[cid];
+  var entry=sf&&sf.content&&sf.content.analyses
+    ?sf.content.analyses.find(function(a){return a.name===name;})
+    :null;
+  if(!entry||!entry._pid)return;
+  var row=document.getElementById('tr-'+sid2(entry._pid));
+  if(!row)return;
   var cell=row.querySelector('.kw-cell');if(!cell)return;
-  var kg=rKW[name]&&rKW[name].length?rKW[name][0]:'';
+  var kg=entry.keyword_group||'';
   var html='';
-  if(!kg)html='<span class="ug-warn">⚠️ Grupsuz</span> ';
-  else html='<span class="kw-badge">'+esc(kg.length>30?kg.substring(0,28)+'…':kg)+'<span class="kw-x" onclick="removeKwG(\''+jsS(name)+'\',\''+jsS(kg)+'\',\''+jsS(cid)+'\')">✕</span></span>';
-  html+='<button class="kw-add" onclick="openKwPicker(\''+jsS(name)+'\',\''+jsS(cid)+'\')">+ grup</button>';
+  if(!kg){
+    html='<span class="ug-warn">⚠️ Grupsuz</span> ';
+  } else {
+    var ks=kg.length>40?kg.substring(0,38)+'…':kg;
+    html='<span class="kw-badge" title="'+esc(kg)+'">'+esc(ks)
+      +'<span class="kw-x" onclick="removeKwG(\''+jsS(name)+'\',\''+jsS(kg)+'\',\''+jsS(cid)+'\')" title="Gruptan çıkar">✕</span></span>';
+  }
+  html+='<button class="kw-add" onclick="openKwPicker(\''+jsS(name)+'\',\''+jsS(cid)+'\')" title="Grubu değiştir">✎ grup</button>';
   cell.innerHTML=html;
 }
 
