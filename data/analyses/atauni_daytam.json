@@ -457,24 +457,24 @@
     },
     {
       "name": "Oda Sıcaklığında Spektrum",
-      "category": "",
+      "category": "FOTOLÜMİNESANS",
       "price": 390,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
-      "keyword_group": "UV-VIS Spektrofotometri"
+      "keyword_group": "FOTOLÜMİNESANS"
     },
     {
       "name": "Sıcaklığına Bağlı Spektrum (10-350 Kelvin)",
-      "category": "",
+      "category": "FOTOLÜMİNESANS",
       "price": 2450,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
-      "keyword_group": "Floresans ve Fotolüminesans Spektroskopi"
+      "keyword_group": "FOTOLÜMİNESANS"
     },
     {
-      "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
+      "name": "PL-03 Analiz Sonuçlarının Yorumlanması ve Raporlama",
       "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
       "price": 2000,
       "currency": "TRY",
@@ -511,7 +511,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
+      "category": "FOTOLÜMİNESANS",
       "price": 1050,
       "currency": "TRY",
       "unit": "adet",
@@ -556,7 +556,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
+      "category": "FOTOLÜMİNESANS",
       "price": 500,
       "currency": "TRY",
       "unit": "adet",
@@ -601,7 +601,7 @@
     },
     {
       "name": "Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
+      "category": "FOTOLÜMİNESANS",
       "price": 2500,
       "currency": "TRY",
       "unit": "adet",
