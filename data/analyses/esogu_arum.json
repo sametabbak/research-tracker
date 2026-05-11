@@ -8,7 +8,7 @@
     {
       "name": "Biyolojik Dokulardan SEM İçin Numune Hazırlama",
       "category": "",
-      "price": 2400.0,
+      "price": 2400,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -17,7 +17,7 @@
     {
       "name": "Numune Kaplama (Altın/Paladyum , Karbon)*",
       "category": "",
-      "price": 400.0,
+      "price": 400,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -26,7 +26,7 @@
     {
       "name": "Kritik Nokta Kurutma Cihazı ile Numune Hazırlama",
       "category": "",
-      "price": 700.0,
+      "price": 700,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -35,7 +35,7 @@
     {
       "name": "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
       "category": "",
-      "price": 3800.0,
+      "price": 3800,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -44,7 +44,7 @@
     {
       "name": "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
       "category": "",
-      "price": 3800.0,
+      "price": 3800,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -53,7 +53,7 @@
     {
       "name": "SEM / EBSD Analizi**",
       "category": "",
-      "price": 3800.0,
+      "price": 3800,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -62,7 +62,7 @@
     {
       "name": "SEM / STEM Analizi**",
       "category": "",
-      "price": 3800.0,
+      "price": 3800,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -71,7 +71,7 @@
     {
       "name": "Biyolojik Dokulardan SEM İçin Numune Hazırlama Eğitimi***",
       "category": "",
-      "price": 2700.0,
+      "price": 2700,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -80,7 +80,7 @@
     {
       "name": "SEM Cihaz Kullanımı Eğitimi****",
       "category": "",
-      "price": 5600.0,
+      "price": 5600,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -89,7 +89,7 @@
     {
       "name": "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı *",
       "category": "",
-      "price": 14000.0,
+      "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -98,7 +98,7 @@
     {
       "name": "Biyolojik Dokulardan TEM İçin Numune Hazırlama",
       "category": "",
-      "price": 3200.0,
+      "price": 3200,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -107,7 +107,7 @@
     {
       "name": "Ultramikrotomda Yarı İnce Kesit Alma",
       "category": "",
-      "price": 1250.0,
+      "price": 1250,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -116,7 +116,7 @@
     {
       "name": "Histokimyasal Boyama; Yarı İnce Kesit Boyama",
       "category": "",
-      "price": 1400.0,
+      "price": 1400,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -125,7 +125,7 @@
     {
       "name": "Ultramikrotomda Tam İnce Kesit Alma",
       "category": "",
-      "price": 1600.0,
+      "price": 1600,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -134,7 +134,7 @@
     {
       "name": "Tam İnce Kesit Boyama (Uranil Asetat / Kurşun Sitrat ile)",
       "category": "",
-      "price": 1800.0,
+      "price": 1800,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -143,7 +143,7 @@
     {
       "name": "Biyolojik Dokulardan Kriyo-TEM İçin Numune Hazırlama*",
       "category": "",
-      "price": 4000.0,
+      "price": 4000,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -152,7 +152,7 @@
     {
       "name": "Kriyo-Ultramikrotomda Tam İnce Kesit Alma*",
       "category": "",
-      "price": 4100.0,
+      "price": 4100,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -161,7 +161,7 @@
     {
       "name": "Çözelti / Hücre Süspansiyonlarından Grid Üzerine Kriyo Hazırlık*",
       "category": "",
-      "price": 6500.0,
+      "price": 6500,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -170,7 +170,7 @@
     {
       "name": "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
       "category": "",
-      "price": 4000.0,
+      "price": 3800,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -179,7 +179,7 @@
     {
       "name": "Kriyojenik Örnekler İçin İnceleme ve Görüntü Alma**",
       "category": "",
-      "price": 4500.0,
+      "price": 4500,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -188,7 +188,7 @@
     {
       "name": "Formwar/Karbon Grid Üzerine Çözeltiden Numune Hazırlama",
       "category": "",
-      "price": 1400.0,
+      "price": 1400,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -197,7 +197,7 @@
     {
       "name": "Biyolojik Dokulardan TEM İçin Numune Hazırlama Eğitimi***",
       "category": "",
-      "price": 4100.0,
+      "price": 4100,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -206,7 +206,7 @@
     {
       "name": "TEM Cihaz Kullanımı Eğitimi***",
       "category": "",
-      "price": 6500.0,
+      "price": 6500,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -215,7 +215,7 @@
     {
       "name": "İmmunogold Boyama İçin Numune Hazırlama",
       "category": "",
-      "price": 3250.0,
+      "price": 3250,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -224,7 +224,7 @@
     {
       "name": "İmmunogold Etiketleme****",
       "category": "",
-      "price": 3250.0,
+      "price": 3250,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -233,7 +233,7 @@
     {
       "name": "Sertifikalı Eğitim Paketi (Teorik ve Uygulama İçeren) İçin Günlük (8 Saat) Laboratuvar Kullanımı*****",
       "category": "",
-      "price": 14000.0,
+      "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -242,7 +242,7 @@
     {
       "name": "Konfokal Mikroskop ile Görüntüleme*",
       "category": "",
-      "price": 2350.0,
+      "price": 2350,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -251,7 +251,7 @@
     {
       "name": "Görüntü Analiz İşlemleri",
       "category": "",
-      "price": 1750.0,
+      "price": 1750,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -260,7 +260,7 @@
     {
       "name": "Inverted Mikroskop ile Görüntüleme*",
       "category": "",
-      "price": 675.0,
+      "price": 675,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -269,7 +269,7 @@
     {
       "name": "Floresan Ataçmanlı Mikroskop ile Görüntüleme*",
       "category": "",
-      "price": 1350.0,
+      "price": 1350,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -278,7 +278,7 @@
     {
       "name": "Stereomikroskop ile Görüntüleme*",
       "category": "",
-      "price": 500.0,
+      "price": 500,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -287,7 +287,7 @@
     {
       "name": "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı**",
       "category": "",
-      "price": 14000.0,
+      "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -296,7 +296,7 @@
     {
       "name": "Toz Kırınım Deseni (Toz Numune)",
       "category": "",
-      "price": 1050.0,
+      "price": 1050,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -305,7 +305,7 @@
     {
       "name": "İnce Film Analizi",
       "category": "",
-      "price": 3150.0,
+      "price": 3150,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -314,7 +314,7 @@
     {
       "name": "SAXS Analizi",
       "category": "",
-      "price": 5250.0,
+      "price": 5250,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -323,7 +323,7 @@
     {
       "name": "Kalitatif Mineral Analiz",
       "category": "",
-      "price": 3150.0,
+      "price": 3150,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -332,7 +332,7 @@
     {
       "name": "Yüksek Sıcaklık Kırınım Deseni",
       "category": "",
-      "price": 5250.0,
+      "price": 5250,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -341,7 +341,7 @@
     {
       "name": "Rietveld Analizi",
       "category": "",
-      "price": 10500.0,
+      "price": 10500,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -350,7 +350,7 @@
     {
       "name": "Kalıntı Gerilme Analizi",
       "category": "",
-      "price": 10500.0,
+      "price": 10500,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -359,7 +359,7 @@
     {
       "name": "XRD Temel Kullanıcı Eğitimi",
       "category": "",
-      "price": 15750.0,
+      "price": 15750,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -368,7 +368,7 @@
     {
       "name": "XRR Analizi",
       "category": "",
-      "price": 420.0,
+      "price": 420,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -377,7 +377,7 @@
     {
       "name": "Numune Hazırlama",
       "category": "",
-      "price": 10500.0,
+      "price": 10500,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -386,7 +386,7 @@
     {
       "name": "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
       "category": "",
-      "price": 14000.0,
+      "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -395,7 +395,7 @@
     {
       "name": "XRF Analizi / Katı Numune",
       "category": "",
-      "price": 1575.0,
+      "price": 1575,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -404,7 +404,7 @@
     {
       "name": "Eritiş Cihazı ile Numune Hazırlama",
       "category": "",
-      "price": 800.0,
+      "price": 800,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -413,7 +413,7 @@
     {
       "name": "Kırma ve Öğütme",
       "category": "",
-      "price": 485.0,
+      "price": 485,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -422,7 +422,7 @@
     {
       "name": "Presleme",
       "category": "",
-      "price": 420.0,
+      "price": 420,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -431,7 +431,7 @@
     {
       "name": "Kızdırma Kaybı",
       "category": "",
-      "price": 315.0,
+      "price": 315,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -440,7 +440,7 @@
     {
       "name": "XRF Analizi / Sıvı Numune*",
       "category": "",
-      "price": 2100.0,
+      "price": 2100,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -449,7 +449,7 @@
     {
       "name": "XRF Temel Kullanıcı Eğitimi**",
       "category": "",
-      "price": 15750.0,
+      "price": 15750,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -458,7 +458,7 @@
     {
       "name": "ICP-MS 1 Element Analizi",
       "category": "",
-      "price": 1150.0,
+      "price": 1150,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -467,7 +467,7 @@
     {
       "name": "ICP-MS 2-5 Element Analizi",
       "category": "",
-      "price": 1350.0,
+      "price": 1350,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -476,7 +476,7 @@
     {
       "name": "ICP-MS 6-10 Element Analizi",
       "category": "",
-      "price": 1650.0,
+      "price": 1650,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -485,7 +485,7 @@
     {
       "name": "ICP-MS 11-15 Element Analizi",
       "category": "",
-      "price": 1900.0,
+      "price": 1900,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -494,7 +494,7 @@
     {
       "name": "ICP-MS 16-20 Element Analizi",
       "category": "",
-      "price": 2150.0,
+      "price": 2150,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -503,7 +503,7 @@
     {
       "name": "ICP-MS 21-30 Element Analizi",
       "category": "",
-      "price": 2625.0,
+      "price": 2625,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -512,7 +512,7 @@
     {
       "name": "ICP-MS 31-40 Element Analizi",
       "category": "",
-      "price": 3150.0,
+      "price": 3150,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -521,7 +521,7 @@
     {
       "name": "ICP-MS 41-50 Element Analizi",
       "category": "",
-      "price": 3690.0,
+      "price": 3690,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -530,7 +530,7 @@
     {
       "name": "ICP-MS 51 ve üzeri element Analizi",
       "category": "",
-      "price": 4325.0,
+      "price": 4325,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -539,7 +539,7 @@
     {
       "name": "ICP-MS 1 Nadir Toprak Elementi Analizi*",
       "category": "",
-      "price": 1200.0,
+      "price": 1200,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -548,7 +548,7 @@
     {
       "name": "ICP-MS 2-10 Nadir Toprak Elementi Analizi*",
       "category": "",
-      "price": 1690.0,
+      "price": 1690,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -557,7 +557,7 @@
     {
       "name": "ICP-MS 11-18 Nadir Toprak Elementi Analizi*",
       "category": "",
-      "price": 2220.0,
+      "price": 2220,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -566,7 +566,7 @@
     {
       "name": "Mikrodalga ile Numune Hazırlama (Nitik asit ile)",
       "category": "",
-      "price": 750.0,
+      "price": 750,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -575,7 +575,7 @@
     {
       "name": "Mikrodalga ile Numune Hazırlama (Kral Suyu ile)",
       "category": "",
-      "price": 865.0,
+      "price": 865,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -584,7 +584,7 @@
     {
       "name": "Mikrodalga ile Numune Hazırlama (H2O2 içeren karışım)",
       "category": "",
-      "price": 900.0,
+      "price": 900,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -593,7 +593,7 @@
     {
       "name": "Mikrodalga ile Numune Hazırlama (HF içeren karışım)",
       "category": "",
-      "price": 940.0,
+      "price": 940,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -602,7 +602,7 @@
     {
       "name": "Mikrodalga ile Numune Hazırlama (Çoklu asit içeren karışım)",
       "category": "",
-      "price": 1020.0,
+      "price": 1020,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -611,7 +611,7 @@
     {
       "name": "Ön Hazırlık (Kırma. Öğütme vb.)",
       "category": "",
-      "price": 345.0,
+      "price": 345,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -620,7 +620,7 @@
     {
       "name": "Ön Hazırlık (Yakma. Kurutma vb.)",
       "category": "",
-      "price": 375.0,
+      "price": 375,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -629,7 +629,7 @@
     {
       "name": "Ön Hazırlık (Süzme. Santrifüj vb,)",
       "category": "",
-      "price": 280.0,
+      "price": 280,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -638,7 +638,7 @@
     {
       "name": "Ön Hazırlık (Açıktan Çözeltiye Alma)",
       "category": "",
-      "price": 375.0,
+      "price": 375,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -647,7 +647,7 @@
     {
       "name": "Kızdırma Kaybı",
       "category": "",
-      "price": 280.0,
+      "price": 315,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -656,7 +656,7 @@
     {
       "name": "1H (Proton) NMR Analizi",
       "category": "",
-      "price": 780.0,
+      "price": 780,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -665,7 +665,7 @@
     {
       "name": "13C (Karbon) NMR Analizi",
       "category": "",
-      "price": 975.0,
+      "price": 975,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -674,7 +674,7 @@
     {
       "name": "13C APT NMR Analizi",
       "category": "",
-      "price": 975.0,
+      "price": 975,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -683,7 +683,7 @@
     {
       "name": "13C DEPT (45,90,135) NMR Analizi",
       "category": "",
-      "price": 975.0,
+      "price": 975,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -692,7 +692,7 @@
     {
       "name": "COSY NMR Analizi",
       "category": "",
-      "price": 1170.0,
+      "price": 1170,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -701,7 +701,7 @@
     {
       "name": "HETCOR NMR Analizi",
       "category": "",
-      "price": 1170.0,
+      "price": 1170,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -710,7 +710,7 @@
     {
       "name": "HMBC NMR Analizi",
       "category": "",
-      "price": 1170.0,
+      "price": 1170,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -719,7 +719,7 @@
     {
       "name": "HMQC NMR Analizi",
       "category": "",
-      "price": 1170.0,
+      "price": 1170,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -728,7 +728,7 @@
     {
       "name": "NOESY NMR Analizi",
       "category": "",
-      "price": 1170.0,
+      "price": 1170,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -737,7 +737,7 @@
     {
       "name": "31P NMR Analizi",
       "category": "",
-      "price": 1170.0,
+      "price": 1170,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -746,7 +746,7 @@
     {
       "name": "19F NMR Analizi",
       "category": "",
-      "price": 880.0,
+      "price": 880,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -755,7 +755,7 @@
     {
       "name": "11B NMR Analizi",
       "category": "",
-      "price": 1250.0,
+      "price": 1250,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -764,7 +764,7 @@
     {
       "name": "Sıcaklık Deneyleri",
       "category": "",
-      "price": 975.0,
+      "price": 975,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -773,7 +773,7 @@
     {
       "name": "TOCSY NMR Analizi",
       "category": "",
-      "price": 1465.0,
+      "price": 1465,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -782,7 +782,7 @@
     {
       "name": "15N NMR Analizi",
       "category": "",
-      "price": 2925.0,
+      "price": 2925,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -791,7 +791,7 @@
     {
       "name": "Si NMR Analizi",
       "category": "",
-      "price": 1465.0,
+      "price": 1465,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -800,7 +800,7 @@
     {
       "name": "NOE NMR Analizi",
       "category": "",
-      "price": 1950.0,
+      "price": 1950,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -809,7 +809,7 @@
     {
       "name": "Water-Gated NMR Analizi",
       "category": "",
-      "price": 3420.0,
+      "price": 3420,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -818,7 +818,7 @@
     {
       "name": "HSQC NMR Analizi",
       "category": "",
-      "price": 975.0,
+      "price": 975,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -827,7 +827,7 @@
     {
       "name": "INADEQUATE NMR Analizi",
       "category": "",
-      "price": 1465.0,
+      "price": 1465,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -836,7 +836,7 @@
     {
       "name": "Relaxation Time Ölçümleri",
       "category": "",
-      "price": 1465.0,
+      "price": 1465,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -845,7 +845,7 @@
     {
       "name": "Sıvı NMR Temel Kullanıcı Eğitimi",
       "category": "",
-      "price": 9750.0,
+      "price": 9750,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -854,7 +854,7 @@
     {
       "name": "Dötoro Çözücü",
       "category": "",
-      "price": 295.0,
+      "price": 295,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -863,7 +863,7 @@
     {
       "name": "Tüp",
       "category": "",
-      "price": 100.0,
+      "price": 100,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -872,7 +872,7 @@
     {
       "name": "Al NMR Analizi 4 Saat",
       "category": "",
-      "price": 3375.0,
+      "price": 3375,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -881,7 +881,7 @@
     {
       "name": "Al NMR Analizi 8 Saat",
       "category": "",
-      "price": 4050.0,
+      "price": 4050,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -890,7 +890,7 @@
     {
       "name": "Al NMR Analizi 16 Saat",
       "category": "",
-      "price": 4500.0,
+      "price": 4500,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -899,7 +899,7 @@
     {
       "name": "Al NMR Analizi 27 Saat",
       "category": "",
-      "price": 5625.0,
+      "price": 5625,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -908,7 +908,7 @@
     {
       "name": "13C CP MAS NMR Analizi 4 Saat",
       "category": "",
-      "price": 3375.0,
+      "price": 3375,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -917,7 +917,7 @@
     {
       "name": "13C CP MAS NMR Analizi 8 Saat",
       "category": "",
-      "price": 4050.0,
+      "price": 4050,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -926,7 +926,7 @@
     {
       "name": "13C CP MAS NMR Analizi 16 Saat",
       "category": "",
-      "price": 4500.0,
+      "price": 4500,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -935,7 +935,7 @@
     {
       "name": "13C CP MAS NMR Analizi 27 Saat",
       "category": "",
-      "price": 5625.0,
+      "price": 5625,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -944,7 +944,7 @@
     {
       "name": "1H NMR Analizi",
       "category": "",
-      "price": 1800.0,
+      "price": 1800,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -953,7 +953,7 @@
     {
       "name": "11B NMR Analizi 4 Saat",
       "category": "",
-      "price": 3375.0,
+      "price": 3375,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -962,7 +962,7 @@
     {
       "name": "11B NMR Analizi 8 Saat",
       "category": "",
-      "price": 4050.0,
+      "price": 4050,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -971,7 +971,7 @@
     {
       "name": "11B NMR Analizi 16 Saat",
       "category": "",
-      "price": 4500.0,
+      "price": 4500,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -980,7 +980,7 @@
     {
       "name": "11B NMR Analizi 27 Saat",
       "category": "",
-      "price": 5625.0,
+      "price": 5625,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -989,7 +989,7 @@
     {
       "name": "15N NMR Analizi 4 Saat",
       "category": "",
-      "price": 4815.0,
+      "price": 4815,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -998,7 +998,7 @@
     {
       "name": "15N NMR Analizi 8 Saat",
       "category": "",
-      "price": 5355.0,
+      "price": 5355,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1007,7 +1007,7 @@
     {
       "name": "15N NMR Analizi 16 Saat",
       "category": "",
-      "price": 6188.0,
+      "price": 6188,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1016,7 +1016,7 @@
     {
       "name": "15N NMR Analizi 27 Saat",
       "category": "",
-      "price": 7315.0,
+      "price": 7315,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1025,7 +1025,7 @@
     {
       "name": "HETCOR NMR Analizi 4 Saat",
       "category": "",
-      "price": 3375.0,
+      "price": 3375,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1034,7 +1034,7 @@
     {
       "name": "HETCOR NMR Analizi 8 Saat",
       "category": "",
-      "price": 4050.0,
+      "price": 4050,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1043,7 +1043,7 @@
     {
       "name": "HETCOR NMR Analizi 16 Saat",
       "category": "",
-      "price": 4500.0,
+      "price": 4500,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1052,7 +1052,7 @@
     {
       "name": "HETCOR NMR Analizi 27 Saat",
       "category": "",
-      "price": 5625.0,
+      "price": 5625,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1061,7 +1061,7 @@
     {
       "name": "Sıcaklık Deneyleri",
       "category": "",
-      "price": 3375.0,
+      "price": 975,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1070,7 +1070,7 @@
     {
       "name": "19F NMR Analizi",
       "category": "",
-      "price": 1690.0,
+      "price": 880,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1079,7 +1079,7 @@
     {
       "name": "31P NMR Analizi 4 Saat",
       "category": "",
-      "price": 3375.0,
+      "price": 3375,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1088,7 +1088,7 @@
     {
       "name": "31P NMR Analizi 8 Saat",
       "category": "",
-      "price": 4050.0,
+      "price": 4050,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1097,7 +1097,7 @@
     {
       "name": "31P NMR Analizi 16 Saat",
       "category": "",
-      "price": 4500.0,
+      "price": 4500,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1106,7 +1106,7 @@
     {
       "name": "31P NMR Analizi 27 Saat",
       "category": "",
-      "price": 5625.0,
+      "price": 5625,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1115,7 +1115,7 @@
     {
       "name": "Katı NMR Temel Kullanıcı Eğitimi",
       "category": "",
-      "price": 16875.0,
+      "price": 16875,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -1124,7 +1124,7 @@
     {
       "name": "Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
       "category": "",
-      "price": 14000.0,
+      "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -1133,7 +1133,7 @@
     {
       "name": "Si NMR Analizi 4 Saat",
       "category": "",
-      "price": 3750.0,
+      "price": 3750,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1142,7 +1142,7 @@
     {
       "name": "Si NMR Analizi 8 Saat",
       "category": "",
-      "price": 4500.0,
+      "price": 4500,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1151,7 +1151,7 @@
     {
       "name": "Si NMR Analizi 16 Saat",
       "category": "",
-      "price": 5250.0,
+      "price": 5250,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1160,7 +1160,7 @@
     {
       "name": "Si NMR Analizi 27 Saat",
       "category": "",
-      "price": 6750.0,
+      "price": 6750,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1169,7 +1169,7 @@
     {
       "name": "Raman Spektrumu Eldesi",
       "category": "",
-      "price": 525.0,
+      "price": 525,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -1178,7 +1178,7 @@
     {
       "name": "Alan Analizi - Haritalama",
       "category": "",
-      "price": 2100.0,
+      "price": 2100,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -1187,7 +1187,7 @@
     {
       "name": "Derinlik Profili",
       "category": "",
-      "price": 2100.0,
+      "price": 2100,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
@@ -1196,7 +1196,7 @@
     {
       "name": "Eğitim",
       "category": "",
-      "price": 10500.0,
+      "price": 10500,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -1205,7 +1205,7 @@
     {
       "name": "Hücre Kültürü Laboratuvarı Kullanımı**",
       "category": "",
-      "price": 14000.0,
+      "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -1214,7 +1214,7 @@
     {
       "name": "Otomatik Hücre Sayımı Cihazı Kullanımı",
       "category": "",
-      "price": 420.0,
+      "price": 420,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1223,7 +1223,7 @@
     {
       "name": "Hücre Serisi Stoklama (6 Ay Stoklama)",
       "category": "",
-      "price": 1365.0,
+      "price": 1365,
       "currency": "TRY",
       "unit": "Vial",
       "notes": "",
@@ -1232,7 +1232,7 @@
     {
       "name": "Hücre Serisi Dondurulması (Temel Sarflar Dahil, 6 Ay Stoklama) ***",
       "category": "",
-      "price": 1890.0,
+      "price": 1890,
       "currency": "TRY",
       "unit": "Vial",
       "notes": "",
@@ -1241,7 +1241,7 @@
     {
       "name": "Biyogüvenlik Kabini Kullanımı****",
       "category": "",
-      "price": 630.0,
+      "price": 630,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -1250,7 +1250,7 @@
     {
       "name": "Soğutmalı Santrifüj Kullanımı****",
       "category": "",
-      "price": 630.0,
+      "price": 630,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -1259,7 +1259,7 @@
     {
       "name": "Hücre Kültürlerinde Mikoplazma Kontrolü-DAPI ile",
       "category": "",
-      "price": 2100.0,
+      "price": 2100,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1268,7 +1268,7 @@
     {
       "name": "Hücre açma. pasajlama, hücre sayımı (25T Flask)",
       "category": "",
-      "price": 1890.0,
+      "price": 1890,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1277,7 +1277,7 @@
     {
       "name": "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, Tek saat dilimi ) ****",
       "category": "",
-      "price": 7840.0,
+      "price": 7840,
       "currency": "TRY",
       "unit": "Test",
       "notes": "",
@@ -1286,7 +1286,7 @@
     {
       "name": "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, İki farklı saat dilimi ) ****",
       "category": "",
-      "price": 8190.0,
+      "price": 8190,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1295,7 +1295,7 @@
     {
       "name": "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, Üç farklı saat dilimi ) ****",
       "category": "",
-      "price": 8540.0,
+      "price": 8540,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1304,7 +1304,7 @@
     {
       "name": "MTT veya eşdeğeri sitotoksisite testi (5 konsantrasyon dışında ek her konsantrasyon)",
       "category": "",
-      "price": 525.0,
+      "price": 525,
       "currency": "TRY",
       "unit": "Test",
       "notes": "",
@@ -1313,7 +1313,7 @@
     {
       "name": "IC50 değeri hesaplama (Bir örnek için) ******",
       "category": "",
-      "price": 3150.0,
+      "price": 3150,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1322,7 +1322,7 @@
     {
       "name": "Primer Hücre Kültürü*******",
       "category": "",
-      "price": 2100.0,
+      "price": 2100,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -1331,7 +1331,7 @@
     {
       "name": "Muse Cihaz Kulanımı",
       "category": "",
-      "price": 1400.0,
+      "price": 1400,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1340,7 +1340,7 @@
     {
       "name": "Annexin V , Dead Cell Kit",
       "category": "",
-      "price": 2100.0,
+      "price": 2100,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1349,7 +1349,7 @@
     {
       "name": "Caspase-3/7 Kit",
       "category": "",
-      "price": 1785.0,
+      "price": 1785,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1358,7 +1358,7 @@
     {
       "name": "Oxidative Stress Kit",
       "category": "",
-      "price": 2100.0,
+      "price": 2100,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1367,7 +1367,7 @@
     {
       "name": "Cell Cycle Kit",
       "category": "",
-      "price": 1750.0,
+      "price": 1750,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1376,7 +1376,7 @@
     {
       "name": "Autophagy LC3-antibody based Kit",
       "category": "",
-      "price": 2100.0,
+      "price": 2100,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1385,7 +1385,7 @@
     {
       "name": "Elisa Reader",
       "category": "",
-      "price": 840.0,
+      "price": 840,
       "currency": "TRY",
       "unit": "Plaka",
       "notes": "",
@@ -1394,7 +1394,7 @@
     {
       "name": "Tip I Biyogüvenlik Kabini",
       "category": "",
-      "price": 1050.0,
+      "price": 1050,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -1403,7 +1403,7 @@
     {
       "name": "Liyofilizatör Kullanımı",
       "category": "",
-      "price": 1680.0,
+      "price": 1680,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -1412,7 +1412,7 @@
     {
       "name": "PCR Cihaz Kullanımı",
       "category": "",
-      "price": 630.0,
+      "price": 630,
       "currency": "TRY",
       "unit": "Döngü",
       "notes": "",
@@ -1421,7 +1421,7 @@
     {
       "name": "Soğutmalı Santrifüj*",
       "category": "",
-      "price": 800.0,
+      "price": 800,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
@@ -1430,7 +1430,7 @@
     {
       "name": "Mini Dikey Jel Elektroforezi (Cihaz Kullanımı)**",
       "category": "",
-      "price": 1575.0,
+      "price": 1575,
       "currency": "TRY",
       "unit": "Kaset",
       "notes": "",
@@ -1439,7 +1439,7 @@
     {
       "name": "Maxi Dikey Jel Elektroforezi (Cihaz Kullanımı)**",
       "category": "",
-      "price": 2625.0,
+      "price": 2625,
       "currency": "TRY",
       "unit": "Kaset",
       "notes": "",
@@ -1448,7 +1448,7 @@
     {
       "name": "Mini Yatay Jel Elektroforezi  (Cihaz Kullanımı)**",
       "category": "",
-      "price": 420.0,
+      "price": 420,
       "currency": "TRY",
       "unit": "Kaset",
       "notes": "",
@@ -1457,7 +1457,7 @@
     {
       "name": "Semi-Dry Blotlama",
       "category": "",
-      "price": 3150.0,
+      "price": 3150,
       "currency": "TRY",
       "unit": "Kaset",
       "notes": "",
@@ -1466,7 +1466,7 @@
     {
       "name": "Jel Görüntüleme ve Dökümantasyon Sistemi Kullanımı (UV)**",
       "category": "",
-      "price": 525.0,
+      "price": 525,
       "currency": "TRY",
       "unit": "Kaset",
       "notes": "",
@@ -1475,7 +1475,7 @@
     {
       "name": "Jel Görüntüleme ve Dökümantasyon Sistemi Kullanımı (Kemilüminesans)**",
       "category": "",
-      "price": 1575.0,
+      "price": 1575,
       "currency": "TRY",
       "unit": "Kaset",
       "notes": "",
@@ -1484,7 +1484,7 @@
     {
       "name": "-40 Dondurucu Kulanımı",
       "category": "",
-      "price": 300.0,
+      "price": 300,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -1493,7 +1493,7 @@
     {
       "name": "-80 Dondurucu Kullanımı",
       "category": "",
-      "price": 315.0,
+      "price": 315,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -1502,7 +1502,7 @@
     {
       "name": "Otoklav",
       "category": "",
-      "price": 315.0,
+      "price": 315,
       "currency": "TRY",
       "unit": "Döngü",
       "notes": "",
@@ -1511,7 +1511,7 @@
     {
       "name": "Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı***",
       "category": "",
-      "price": 14000.0,
+      "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
@@ -1520,7 +1520,7 @@
     {
       "name": "STA Analizi (25 °C – 900 °C) 1 Saat",
       "category": "",
-      "price": 1000.0,
+      "price": 1000,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1529,7 +1529,7 @@
     {
       "name": "STA Analizi (25 °C – 900 °C) 2 Saat",
       "category": "",
-      "price": 1250.0,
+      "price": 1250,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1538,7 +1538,7 @@
     {
       "name": "STA Analizi (25 °C – 900 °C) 3 Saat",
       "category": "",
-      "price": 1470.0,
+      "price": 1470,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1547,7 +1547,7 @@
     {
       "name": "STA Analizi (25 °C – 900 °C) 3-7 Saat",
       "category": "",
-      "price": 2025.0,
+      "price": 2025,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1556,7 +1556,7 @@
     {
       "name": "STA Analizi (25 °C – 900 °C) 7-14 Saat",
       "category": "",
-      "price": 4050.0,
+      "price": 4050,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1565,7 +1565,7 @@
     {
       "name": "HPLC-Kantitatif: Tek Bileşen (Metot Bildirilmişse)",
       "category": "",
-      "price": 1365.0,
+      "price": 1365,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1574,7 +1574,7 @@
     {
       "name": "HPLC- Kantitatif: İki veya Daha Fazla Bileşenli Numunelerde Her Bir Ek Bileşen Başına",
       "category": "",
-      "price": 300.0,
+      "price": 300,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1583,7 +1583,7 @@
     {
       "name": "HPLC-Kalitatif: Tek Bileşen (Metot Bildirilmişse)",
       "category": "",
-      "price": 1170.0,
+      "price": 1170,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1592,7 +1592,7 @@
     {
       "name": "HPLC-Kalitatif: İki veya Daha Fazla Bileşenli Numunelerde Her Bir Ek Bileşen Başına",
       "category": "",
-      "price": 200.0,
+      "price": 200,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1601,7 +1601,7 @@
     {
       "name": "HPLC-Metot geliştirme (2 bileşen)",
       "category": "",
-      "price": 5850.0,
+      "price": 5850,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1610,7 +1610,7 @@
     {
       "name": "HPLC-Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
       "category": "",
-      "price": 390.0,
+      "price": 390,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1619,7 +1619,7 @@
     {
       "name": "Uyuşturucu Madde Analizi İçin Mikroskobik İnceleme ve Raporlanması",
       "category": "",
-      "price": 5600.0,
+      "price": 5600,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1628,7 +1628,7 @@
     {
       "name": "Uyuşturucu ve Uyarıcı Madde Analizi (LC-MS veya GC-MS ile) Ve Raporlama",
       "category": "",
-      "price": 6300.0,
+      "price": 6300,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
@@ -1637,28 +1637,29 @@
     {
       "name": "Alkol Analizleri ve Raporlanması",
       "category": "",
-      "price": 2500.0,
+      "price": 2500,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
       "keyword_group": "Raporlama ve Metot Geliştirme"
     },
     {
-      "name": "78.01",
-      "category": "",
-      "price": 15000.0,
-      "currency": "TRY",
-      "unit": "Adet",
-      "notes": ""
-    },
-    {
       "name": "Sıvı Azot",
       "category": "",
-      "price": 225.0,
+      "price": 225,
       "currency": "TRY",
       "unit": "Litre",
       "notes": "",
       "keyword_group": "Sıvı Azot ve Saf Su"
+    },
+    {
+      "name": "Analiz Sonucunun Yorumlanması ve Rapor Oluşturulması",
+      "category": "",
+      "price": 15000,
+      "currency": "TRY",
+      "unit": "Adet",
+      "notes": "",
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     }
   ]
 }
