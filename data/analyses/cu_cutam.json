@@ -435,7 +435,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "Termal Analizler (TGA, DSC, DTA, STA)"
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "1-2 saat",
@@ -444,7 +444,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "Termal Analizler (TGA, DSC, DTA, STA)"
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": ">2 saat",
@@ -453,7 +453,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "Termal Analizler (TGA, DSC, DTA, STA)"
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "1H-NMR",
