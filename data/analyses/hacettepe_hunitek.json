@@ -237,7 +237,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "Termal Analizler (TGA, DSC, DTA, STA)"
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "25°C – 700 °C",
@@ -246,7 +246,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "Termal Analizler (TGA, DSC, DTA, STA)"
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "25°C – 1000 °C arası Termal Gravimetrik Analiz -Simultane DSC",
