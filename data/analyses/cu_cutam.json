@@ -452,7 +452,7 @@
       "price": 150,
       "currency": "TRY",
       "unit": "saat",
-      "notes": "",
+      "notes": "2 saatin üzerindeki her 1 saat için ücrettir.",
       "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
