@@ -1,14 +1,14 @@
 {
   "center_id": "neu_bitam",
   "center_name": "NEÜ BİTAM",
-  "last_updated": "2026-05-11",
+  "last_updated": "2026-05-18",
   "source_url": "https://erbakan.edu.tr/tr/birim/bitam/sayfa/analiz-ucretleri",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
     {
       "name": "Temassız Mod (10 μm x 10 μm 256 Piksel)",
       "category": "ATOMİK KUVVET MİKROSKOBU (AFM) GÖRÜNTÜLEME",
-      "price": 1600,
+      "price": 1600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -17,7 +17,7 @@
     {
       "name": "Temassız Mod (20 μm x 20 μm 256 Piksel)",
       "category": "ATOMİK KUVVET MİKROSKOBU (AFM) GÖRÜNTÜLEME",
-      "price": 1600,
+      "price": 1600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -26,7 +26,7 @@
     {
       "name": "Temaslı Mod (10 μm x 10 μm 512 Piksel)",
       "category": "ATOMİK KUVVET MİKROSKOBU (AFM) GÖRÜNTÜLEME",
-      "price": 1600,
+      "price": 1600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -35,7 +35,7 @@
     {
       "name": "Nanoindentasyon (Yumuşak yüzeyler)",
       "category": "ATOMİK KUVVET MİKROSKOBU (AFM) GÖRÜNTÜLEME",
-      "price": 2000,
+      "price": 2000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -44,7 +44,7 @@
     {
       "name": "Manyetik Kuvvet Ölçümü (MFM)",
       "category": "ATOMİK KUVVET MİKROSKOBU (AFM) GÖRÜNTÜLEME",
-      "price": 2000,
+      "price": 2000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -53,7 +53,7 @@
     {
       "name": "Kelvin Probe (KFM)",
       "category": "ATOMİK KUVVET MİKROSKOBU (AFM) GÖRÜNTÜLEME",
-      "price": 2500,
+      "price": 2500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -62,7 +62,7 @@
     {
       "name": "SEM Görüntüleme",
       "category": "TARAMALI ELEKTRON MİKROSKUBU ANALİZİ (SEM)",
-      "price": 1200,
+      "price": 1200.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -71,7 +71,7 @@
     {
       "name": "SEM Görüntüleme - EDS Analizi",
       "category": "TARAMALI ELEKTRON MİKROSKUBU ANALİZİ (SEM)",
-      "price": 1500,
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -80,7 +80,7 @@
     {
       "name": "Altın/Paladyum Kaplama",
       "category": "TARAMALI ELEKTRON MİKROSKUBU ANALİZİ (SEM)",
-      "price": 200,
+      "price": 200.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -89,7 +89,7 @@
     {
       "name": "FE-SEM Görüntüleme",
       "category": "ALAN EMİSYONLU TARAMALI ELEKTRON MİKROSKOBU ANALİZİ (FE-SEM)",
-      "price": 3600,
+      "price": 3600.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -98,7 +98,7 @@
     {
       "name": "FE-SEM Görüntüleme - EDS Analizi",
       "category": "ALAN EMİSYONLU TARAMALI ELEKTRON MİKROSKOBU ANALİZİ (FE-SEM)",
-      "price": 3800,
+      "price": 3800.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -107,7 +107,7 @@
     {
       "name": "FE-SEM Görüntüleme - EBSD Analizi",
       "category": "ALAN EMİSYONLU TARAMALI ELEKTRON MİKROSKOBU ANALİZİ (FE-SEM)",
-      "price": 6000,
+      "price": 6000.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -116,7 +116,7 @@
     {
       "name": "Elektro Parlatma Numune Hazırlama**",
       "category": "ALAN EMİSYONLU TARAMALI ELEKTRON MİKROSKOBU ANALİZİ (FE-SEM)",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -125,7 +125,7 @@
     {
       "name": "Hassas İridyum Kaplama",
       "category": "ALAN EMİSYONLU TARAMALI ELEKTRON MİKROSKOBU ANALİZİ (FE-SEM)",
-      "price": 180,
+      "price": 180.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -134,7 +134,7 @@
     {
       "name": "Kritik Nokta Kurutma (Biyolojik Numune)***",
       "category": "ALAN EMİSYONLU TARAMALI ELEKTRON MİKROSKOBU ANALİZİ (FE-SEM)",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -143,7 +143,7 @@
     {
       "name": "STEM Görüntüleme",
       "category": "ALAN EMİSYONLU TARAMALI ELEKTRON MİKROSKOBU ANALİZİ (FE-SEM)",
-      "price": 3500,
+      "price": 3500.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -152,7 +152,7 @@
     {
       "name": "Görüntü Renklendirme",
       "category": "ALAN EMİSYONLU TARAMALI ELEKTRON MİKROSKOBU ANALİZİ (FE-SEM)",
-      "price": 4200,
+      "price": 4200.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -161,7 +161,7 @@
     {
       "name": "Raman Spektrumu (1 lazerle geniş alan tarama, 2 atım)",
       "category": "KONFOKAL RAMAN ANALİZİ",
-      "price": 500,
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -170,7 +170,7 @@
     {
       "name": "Raman Spektrumu (1 lazerle geniş alan tarama,10 atım)",
       "category": "KONFOKAL RAMAN ANALİZİ",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -179,7 +179,7 @@
     {
       "name": "Derinlik Profili (1 lazer)*",
       "category": "KONFOKAL RAMAN ANALİZİ",
-      "price": 1500,
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -188,7 +188,7 @@
     {
       "name": "Haritalama (1 lazer)*",
       "category": "KONFOKAL RAMAN ANALİZİ",
-      "price": 1500,
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -197,7 +197,7 @@
     {
       "name": "Hacim Tarama*",
       "category": "KONFOKAL RAMAN ANALİZİ",
-      "price": 1500,
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -206,7 +206,7 @@
     {
       "name": "Görüntüleme",
       "category": "TARAMALI ELEKTRON MİKROSKUBU ANALİZİ (SEM)",
-      "price": 900,
+      "price": 900.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -215,7 +215,7 @@
     {
       "name": "Görüntüleme (Maksimum 6 saat)",
       "category": "KONFOKAL MİKROSKOP",
-      "price": 4500,
+      "price": 4500.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -224,7 +224,7 @@
     {
       "name": "Raman Spektrumu *",
       "category": "KONFOKAL RAMAN ANALİZİ",
-      "price": 4000,
+      "price": 4000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -233,7 +233,7 @@
     {
       "name": "Termal Görüntü Çekimi*",
       "category": "TERMAL KAMERA",
-      "price": 1000,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -242,7 +242,7 @@
     {
       "name": "Üç Boyutlu Yüzey Profili (2 mm x 2 mm) (Tek Alan)",
       "category": "OPTİK PROFİLOMETRE GÖRÜNTÜLEME",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -251,7 +251,7 @@
     {
       "name": "Üç Boyutlu Yüzey Profili (2 mm x 2 mm) (İki Alan)",
       "category": "OPTİK PROFİLOMETRE GÖRÜNTÜLEME",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -260,7 +260,7 @@
     {
       "name": "Üç Boyutlu Yüzey Profili (2 mm x 2 mm) (Üç Alan)",
       "category": "OPTİK PROFİLOMETRE GÖRÜNTÜLEME",
-      "price": 650,
+      "price": 650.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -269,7 +269,7 @@
     {
       "name": "Geniş Alan Haritalama ve Görüntü Birleştirme İşlemi",
       "category": "OPTİK PROFİLOMETRE GÖRÜNTÜLEME",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -278,7 +278,7 @@
     {
       "name": "Pürüzlülük Ölçümü",
       "category": "YÜZEY PÜRÜZLÜLÜK CİHAZI",
-      "price": 140,
+      "price": 140.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -287,7 +287,7 @@
     {
       "name": "Nanoindentasyon (5 iz)",
       "category": "ATOMİK KUVVET MİKROSKOBU (AFM) GÖRÜNTÜLEME",
-      "price": 1200,
+      "price": 1200.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -296,7 +296,7 @@
     {
       "name": "Nanoindentasyon (10x10 matriks)*",
       "category": "ATOMİK KUVVET MİKROSKOBU (AFM) GÖRÜNTÜLEME",
-      "price": 1800,
+      "price": 1800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -305,7 +305,7 @@
     {
       "name": "Nanoindentasyon (15x15 matriks)*",
       "category": "ATOMİK KUVVET MİKROSKOBU (AFM) GÖRÜNTÜLEME",
-      "price": 3000,
+      "price": 3000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -314,7 +314,7 @@
     {
       "name": "Nanoindentasyon (20x20 matriks)*",
       "category": "ATOMİK KUVVET MİKROSKOBU (AFM) GÖRÜNTÜLEME",
-      "price": 4500,
+      "price": 4500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -323,7 +323,7 @@
     {
       "name": "Metod Geliştirme**",
       "category": "NANOİNDENTASYON ANALİZİ",
-      "price": 5000,
+      "price": 5000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -332,7 +332,7 @@
     {
       "name": "Vickers-Brinell ve Rockwell Sertik Testi*",
       "category": "MEKANİK TESTLER",
-      "price": 900,
+      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -341,7 +341,7 @@
     {
       "name": "Kompakt Ters Tip Metalurjik Mikroskop Analizi",
       "category": "MEKANİK TESTLER",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -350,7 +350,7 @@
     {
       "name": "ÇekmeTesti (0-1 saat)",
       "category": "MEKANİK TESTLER",
-      "price": 1000,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -359,7 +359,7 @@
     {
       "name": "Çekme Testi (1-5 saat)",
       "category": "MEKANİK TESTLER",
-      "price": 1200,
+      "price": 1200.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -368,7 +368,7 @@
     {
       "name": "Çekme Testi (5 saat ve üzeri her ek saat)",
       "category": "MEKANİK TESTLER",
-      "price": 250,
+      "price": 250.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -377,7 +377,7 @@
     {
       "name": "Basma Testi",
       "category": "MEKANİK TESTLER",
-      "price": 1000,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -386,7 +386,7 @@
     {
       "name": "Üç Nokta Eğme Testi",
       "category": "MEKANİK TESTLER",
-      "price": 1000,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -395,7 +395,7 @@
     {
       "name": "Çekme Mukavemeti Tayini / TS EN ISO 6892-1",
       "category": "AKREDİTASYON KAPSAMINDAKİ CİHAZLAR",
-      "price": 1800,
+      "price": 1800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -404,7 +404,7 @@
     {
       "name": "Dinamik Mekanik Analiz – (25 – 400 oC)",
       "category": "DİNAMİK-MEKANİK ANALİZ (DMA)",
-      "price": 1200,
+      "price": 1200.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -413,7 +413,7 @@
     {
       "name": "Dinamik Mekanik Analiz – (-100 – 400 oC)",
       "category": "DİNAMİK-MEKANİK ANALİZ (DMA)",
-      "price": 1500,
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -422,7 +422,7 @@
     {
       "name": "Termogravimetrik Analiz (TGA) (1 saat)",
       "category": "TERMAL ANALİZ (TGA – DSC)",
-      "price": 950,
+      "price": 950.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -431,7 +431,7 @@
     {
       "name": "TGA (1 – 3 saat)",
       "category": "TERMAL ANALİZ (TGA – DSC)",
-      "price": 1150,
+      "price": 1150.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -440,7 +440,7 @@
     {
       "name": "TGA (3 – 7 saat)",
       "category": "TERMAL ANALİZ (TGA – DSC)",
-      "price": 1350,
+      "price": 1350.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -449,7 +449,7 @@
     {
       "name": "TGA (7 – 15 saat)",
       "category": "TERMAL ANALİZ (TGA – DSC)",
-      "price": 1550,
+      "price": 1550.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -458,7 +458,7 @@
     {
       "name": "TGA - Diferansiyel Taramalı Kalorimetri (DSC) (1 saat)",
       "category": "",
-      "price": 1150,
+      "price": 1150.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -467,7 +467,7 @@
     {
       "name": "TGA - DSC (1 – 3 saat)",
       "category": "TERMAL ANALİZ (TGA – DSC)",
-      "price": 1350,
+      "price": 1350.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -476,7 +476,7 @@
     {
       "name": "TGA - DSC (3 – 7 saat)",
       "category": "TERMAL ANALİZ (TGA – DSC)",
-      "price": 1550,
+      "price": 1550.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -485,7 +485,7 @@
     {
       "name": "TGA - DSC (7 – 15 saat)",
       "category": "TERMAL ANALİZ (TGA – DSC)",
-      "price": 1750,
+      "price": 1750.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -494,7 +494,7 @@
     {
       "name": "Boyut Analizi (Yaş)*",
       "category": "PARTİKÜL BOYUT ANALİZİ",
-      "price": 750,
+      "price": 750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -503,7 +503,7 @@
     {
       "name": "Boyut Analizi (Kuru)",
       "category": "PARTİKÜL BOYUT ANALİZİ",
-      "price": 750,
+      "price": 750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -512,7 +512,7 @@
     {
       "name": "Partikül Boyutu Analizi",
       "category": "NANOPARTİKÜL BOYUT ANALİZİ VE ZETA POTANSİYEL ÖLÇÜMÜ",
-      "price": 750,
+      "price": 750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -521,7 +521,7 @@
     {
       "name": "Zeta Potansiyel Ölçümü",
       "category": "NANOPARTİKÜL BOYUT ANALİZİ VE ZETA POTANSİYEL ÖLÇÜMÜ",
-      "price": 750,
+      "price": 750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -530,7 +530,7 @@
     {
       "name": "Yüzeylerde temas açısı ölçümü",
       "category": "TEMAS AÇISI ÖLÇÜMÜ",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -539,7 +539,7 @@
     {
       "name": "Yüzeylerde serbest yüzey enerjisi ölçümü*",
       "category": "TEMAS AÇISI ÖLÇÜMÜ",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -548,7 +548,7 @@
     {
       "name": "Sıvılarda yüzey gerilimi ölçümü",
       "category": "TEMAS AÇISI ÖLÇÜMÜ",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -557,7 +557,7 @@
     {
       "name": "İnce Film Kalınlık Ölçümü (1nm-60 um)*",
       "category": "İNCE FİLM KALINLIK ÖLÇÜMÜ",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -566,7 +566,7 @@
     {
       "name": "Hall Etkisi (Oda Sıcaklığı)*",
       "category": "HALL ETKİSİ ÖLÇÜMÜ",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -575,7 +575,7 @@
     {
       "name": "Hall Etkisi (77K)*",
       "category": "HALL ETKİSİ ÖLÇÜMÜ",
-      "price": 1200,
+      "price": 1200.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -584,7 +584,7 @@
     {
       "name": "Yoğunluk Ölçümü",
       "category": "HELYUM PİKNOMETRESİ YOĞUNLUK ANALİZİ",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -593,7 +593,7 @@
     {
       "name": "Tek noktalı BET Analizi",
       "category": "BET YÜZEY ALANI VE GÖZENEK BOYUTU ANALİZİ",
-      "price": 850,
+      "price": 850.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -602,7 +602,7 @@
     {
       "name": "Çok noktalı BET Analizi",
       "category": "BET YÜZEY ALANI VE GÖZENEK BOYUTU ANALİZİ",
-      "price": 950,
+      "price": 950.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -611,7 +611,7 @@
     {
       "name": "Çok noktalı BET Analizi - Gözenek Boyutu (N gaz 2 adsorbsiyonu)",
       "category": "BET YÜZEY ALANI VE GÖZENEK BOYUTU ANALİZİ",
-      "price": 1000,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -620,7 +620,7 @@
     {
       "name": "Toz ve Yığın Analizi**",
       "category": "X – IŞINI DİFRAKTOMETRESİ ANALİZİ (XRD)",
-      "price": 1200,
+      "price": 1200.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -629,7 +629,7 @@
     {
       "name": "İnce Film Analizi",
       "category": "X – IŞINI DİFRAKTOMETRESİ ANALİZİ (XRD)",
-      "price": 1500,
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -638,7 +638,7 @@
     {
       "name": "Rietveld Analizi",
       "category": "X – IŞINI DİFRAKTOMETRESİ ANALİZİ (XRD)",
-      "price": 5000,
+      "price": 5000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -647,7 +647,7 @@
     {
       "name": "XRR Analizi (Roughness Ölçümü*** - Analiz)",
       "category": "X – IŞINI DİFRAKTOMETRESİ ANALİZİ (XRD)",
-      "price": 7000,
+      "price": 7000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -656,7 +656,7 @@
     {
       "name": "FT-IR Spektrumu",
       "category": "FOURIER DÖNÜŞÜMLÜ KIZILÖTESİ SPEKTROMETRESİ (FT-IR)",
-      "price": 300,
+      "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -665,7 +665,7 @@
     {
       "name": "FT-IR Spektrumu - Database Taraması",
       "category": "FOURIER DÖNÜŞÜMLÜ KIZILÖTESİ SPEKTROMETRESİ (FT-IR)",
-      "price": 450,
+      "price": 450.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -674,7 +674,7 @@
     {
       "name": "UV-VIS-NIR Spektrumu (Sıvı Numune)",
       "category": "VIS-NIR)",
-      "price": 180,
+      "price": 180.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -683,7 +683,7 @@
     {
       "name": "UV-VIS-NIR Spektrumu (Sıvı Numune)*",
       "category": "VIS-NIR)",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -692,7 +692,7 @@
     {
       "name": "UV-VIS-NIR Spektrumu (Katı Numune)",
       "category": "VIS-NIR)",
-      "price": 250,
+      "price": 250.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -701,7 +701,7 @@
     {
       "name": "UV-VIS-NIR Spektrumu (Katı Numune)*",
       "category": "VIS-NIR)",
-      "price": 750,
+      "price": 750.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -710,7 +710,7 @@
     {
       "name": "Reflektans",
       "category": "VIS-NIR)",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -719,7 +719,7 @@
     {
       "name": "Floresans Ölçümü",
       "category": "FLORESANS SPEKTROMETRESİ",
-      "price": 250,
+      "price": 250.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -728,7 +728,7 @@
     {
       "name": "Floresans Ölçümü*",
       "category": "FLORESANS SPEKTROMETRESİ",
-      "price": 750,
+      "price": 750.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -737,7 +737,7 @@
     {
       "name": "Elementel Analiz",
       "category": "X – IŞINLARI FLORESANS SPEKTOMETRESİ (XRF)",
-      "price": 750,
+      "price": 750.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
@@ -746,7 +746,7 @@
     {
       "name": "Eritiş Numune Hazırlama",
       "category": "X – IŞINLARI FLORESANS SPEKTOMETRESİ (XRF)",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -755,7 +755,7 @@
     {
       "name": "Mekanik Numune Hazırlama (Öğütme, presleme vb.)",
       "category": "X – IŞINLARI FLORESANS SPEKTOMETRESİ (XRF)",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -764,7 +764,7 @@
     {
       "name": "Genel Tarama",
       "category": "İNDÜKTİF EŞLEŞMİŞ PLAZMA KÜTLE SPEKTROMETRESİ (ICP-MS)",
-      "price": 900,
+      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -773,7 +773,7 @@
     {
       "name": "1-5 Element",
       "category": "İNDÜKTİF EŞLEŞMİŞ PLAZMA KÜTLE SPEKTROMETRESİ (ICP-MS)",
-      "price": 900,
+      "price": 900.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
@@ -782,7 +782,7 @@
     {
       "name": "6-10 Element",
       "category": "İNDÜKTİF EŞLEŞMİŞ PLAZMA KÜTLE SPEKTROMETRESİ (ICP-MS)",
-      "price": 1000,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
@@ -791,7 +791,7 @@
     {
       "name": "11-15 Element",
       "category": "İNDÜKTİF EŞLEŞMİŞ PLAZMA KÜTLE SPEKTROMETRESİ (ICP-MS)",
-      "price": 1100,
+      "price": 1100.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
@@ -800,7 +800,7 @@
     {
       "name": "16-20 Element",
       "category": "İNDÜKTİF EŞLEŞMİŞ PLAZMA KÜTLE SPEKTROMETRESİ (ICP-MS)",
-      "price": 1200,
+      "price": 1200.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
@@ -809,7 +809,7 @@
     {
       "name": "21-30 Element",
       "category": "İNDÜKTİF EŞLEŞMİŞ PLAZMA KÜTLE SPEKTROMETRESİ (ICP-MS)",
-      "price": 1300,
+      "price": 1300.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
@@ -818,7 +818,7 @@
     {
       "name": "31-40 Element",
       "category": "İNDÜKTİF EŞLEŞMİŞ PLAZMA KÜTLE SPEKTROMETRESİ (ICP-MS)",
-      "price": 1400,
+      "price": 1400.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
@@ -827,7 +827,7 @@
     {
       "name": "ASE ile Ekstraksiyon**",
       "category": "HIZLANDIRILMIŞ ÇÖZÜCÜ EKSTRAKSİYONU (ASE)",
-      "price": 1500,
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -836,7 +836,7 @@
     {
       "name": "Kantitatif: Her Bir Numunede Tek Bileşen",
       "category": "YÜKSEK PERFORMANSLI SIVI KROMATOGRAFİSİ (UHPLC)",
-      "price": 1200,
+      "price": 1200.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -845,7 +845,7 @@
     {
       "name": "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (1-9 bileşen)",
       "category": "GCMSMS04",
-      "price": 550,
+      "price": 550.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -854,7 +854,7 @@
     {
       "name": "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (10-19 bileşen)",
       "category": "GCMSMS04",
-      "price": 500,
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -863,7 +863,7 @@
     {
       "name": "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (20-29 bileşen)",
       "category": "GCMSMS04",
-      "price": 500,
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -872,7 +872,7 @@
     {
       "name": "Kantitatif: Numunedeki İlave Her Bir Bileşen İçin (30 ve daha fazla sayıda bileşen)",
       "category": "GCMSMS04",
-      "price": 450,
+      "price": 450.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -881,7 +881,7 @@
     {
       "name": "Kalitatif: Her Bir Numune İçin",
       "category": "YÜKSEK PERFORMANSLI SIVI KROMATOGRAFİSİ (UHPLC)",
-      "price": 1000,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -890,7 +890,7 @@
     {
       "name": "Metot geliştirme**",
       "category": "YÜKSEK PERFORMANSLI SIVI KROMATOGRAFİSİ (UHPLC)",
-      "price": 15000,
+      "price": 15000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -899,7 +899,7 @@
     {
       "name": "Numune Hazırlama",
       "category": "ALAN EMİSYONLU TARAMALI ELEKTRON MİKROSKOBU ANALİZİ (FE-SEM)",
-      "price": 100,
+      "price": 100.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -908,7 +908,7 @@
     {
       "name": "Tam Kütle Tayini Tek Enjeksiyon (Kolonsuz saf numune analizi)",
       "category": "MERKEZİ (BİTAM)",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -917,7 +917,7 @@
     {
       "name": "Tam Kütle Tayini (Kolon kullanılarak numune analizi)",
       "category": "MERKEZİ (BİTAM)",
-      "price": 3000,
+      "price": 3000.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -926,7 +926,7 @@
     {
       "name": "Metot Geliştirme",
       "category": "YÜKSEK PERFORMANSLI SIVI KROMATOGRAFİSİ (UHPLC)",
-      "price": 15000,
+      "price": 15000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -935,7 +935,7 @@
     {
       "name": "GPC analizi (mobil faz THF)",
       "category": "JEL GEÇİRGENLİK KROMATOGRAFİSİ (GPC)",
-      "price": 1500,
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -944,7 +944,7 @@
     {
       "name": "GPC analizi numune hazırlama",
       "category": "",
-      "price": 300,
+      "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -953,7 +953,7 @@
     {
       "name": "Gerçek Zamanlı PCR Cihazı*",
       "category": "BİYOTEKNOLOJİ CİHAZLARI",
-      "price": 300,
+      "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -962,7 +962,7 @@
     {
       "name": "Hücre Akış Sitometrisi",
       "category": "BİYOTEKNOLOJİ CİHAZLARI",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -971,7 +971,7 @@
     {
       "name": "Jel Görüntüleme ve Dökümentasyon Sistemi (UV)**",
       "category": "BİYOTEKNOLOJİ CİHAZLARI",
-      "price": 60,
+      "price": 60.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -980,7 +980,7 @@
     {
       "name": "3 Boyutlu Ürün Üretimi (Polyjet)*",
       "category": "ÜÇ BOYUTLU TASARIM VE PROTOTİP ÜRETİMİ",
-      "price": 8000,
+      "price": 8000.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -989,7 +989,7 @@
     {
       "name": "3 Boyutlu Ürün Üretimi (FDM)*",
       "category": "ÜÇ BOYUTLU TASARIM VE PROTOTİP ÜRETİMİ",
-      "price": 4000,
+      "price": 4000.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -998,7 +998,7 @@
     {
       "name": "3 Boyutlu Tarama (Data Tarama/Yüzeylendirme)**",
       "category": "ÜÇ BOYUTLU TASARIM VE PROTOTİP ÜRETİMİ",
-      "price": 720,
+      "price": 720.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -1007,7 +1007,7 @@
     {
       "name": "3 Boyutlu Tarama (CAD-YenidenTasarlama)",
       "category": "ÜÇ BOYUTLU TASARIM VE PROTOTİP ÜRETİMİ",
-      "price": 6000,
+      "price": 6000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1016,7 +1016,7 @@
     {
       "name": "3 Boyutlu Ürün Üretimi (DLP) 0-4 cm’ye kadar olan numunlerin kürlemesiz",
       "category": "ÜÇ BOYUTLU TASARIM VE PROTOTİP ÜRETİMİ",
-      "price": 1200,
+      "price": 1200.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -1025,7 +1025,7 @@
     {
       "name": "3 Boyutlu Ürün Üretimi (DLP) 0-4 cm’ye kadar olan numunlerin kürlemeli",
       "category": "ÜÇ BOYUTLU TASARIM VE PROTOTİP ÜRETİMİ",
-      "price": 1500,
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -1034,7 +1034,7 @@
     {
       "name": "3 Boyutlu Ürün Üretimi (DLP) 4-12 cm’ye kadar olan numunlerin kürlemesiz",
       "category": "ÜÇ BOYUTLU TASARIM VE PROTOTİP ÜRETİMİ",
-      "price": 1800,
+      "price": 1800.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -1043,7 +1043,7 @@
     {
       "name": "3 Boyutlu Ürün Üretimi (DLP) 4-12 cm’ye kadar olan numunlerin kürlemeli",
       "category": "ÜÇ BOYUTLU TASARIM VE PROTOTİP ÜRETİMİ",
-      "price": 2100,
+      "price": 2100.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -1052,7 +1052,7 @@
     {
       "name": "Soğuk Plazma (O gazı)** 2",
       "category": "SOĞUK PLAZMA (YÜZEY TEMİZLEME / AKTİVASYON)",
-      "price": 200,
+      "price": 200.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1061,7 +1061,7 @@
     {
       "name": "pH Tayini",
       "category": "SOĞUK PLAZMA (YÜZEY TEMİZLEME / AKTİVASYON)",
-      "price": 80,
+      "price": 80.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1070,7 +1070,7 @@
     {
       "name": "Liyofilizasyon Numune Kurutma",
       "category": "LİYOFİLİZATÖR",
-      "price": 1500,
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1079,7 +1079,7 @@
     {
       "name": "Sıvı Azot",
       "category": "SIVI AZOT ÜRETİM CİHAZI",
-      "price": 50,
+      "price": 50.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1088,7 +1088,7 @@
     {
       "name": "1H-NMR (Ölçüme hazır gelen numune)",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 350,
+      "price": 350.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1097,7 +1097,7 @@
     {
       "name": "13C-NMR (100 tarama)",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1106,7 +1106,7 @@
     {
       "name": "13C-NMR (1 saat)",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 450,
+      "price": 450.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -1115,7 +1115,7 @@
     {
       "name": "13C-NMR (3 saat)",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 550,
+      "price": 550.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -1124,7 +1124,7 @@
     {
       "name": "13C-NMR (gece)",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 900,
+      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1133,25 +1133,24 @@
     {
       "name": "13C-NMR (coupled)",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 900,
+      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
       "keyword_group": "NMR Analizleri"
     },
     {
-      "name": "D2O Exchange",
-      "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 350,
+      "name": "D O Exchange 2",
+      "category": "",
+      "price": 350.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "",
-      "keyword_group": "NMR Analizleri"
+      "notes": ""
     },
     {
       "name": "Full Analiz Paketi (1H-NMR, 13C-NMR, APT, DEPT-90, DEPT-135, COSY, HMBC, HMQC, HSQC",
       "category": "",
-      "price": 3800,
+      "price": 3800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1160,7 +1159,7 @@
     {
       "name": "APT",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 450,
+      "price": 450.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1169,7 +1168,7 @@
     {
       "name": "DEPT-90",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 450,
+      "price": 450.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1178,7 +1177,7 @@
     {
       "name": "DEPT-135",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 450,
+      "price": 450.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1187,7 +1186,7 @@
     {
       "name": "COSY",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 500,
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1196,7 +1195,7 @@
     {
       "name": "HMQC",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 500,
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1205,7 +1204,7 @@
     {
       "name": "HSQC",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 500,
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1214,7 +1213,7 @@
     {
       "name": "HMBC",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 500,
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1223,7 +1222,7 @@
     {
       "name": "NOE",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 750,
+      "price": 750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1232,7 +1231,7 @@
     {
       "name": "NOESY",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 750,
+      "price": 750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1241,7 +1240,7 @@
     {
       "name": "ROESY",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 750,
+      "price": 750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1250,7 +1249,7 @@
     {
       "name": "TOCSY",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 750,
+      "price": 750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1259,7 +1258,7 @@
     {
       "name": "19F-NMR",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1268,7 +1267,7 @@
     {
       "name": "31P-NMR",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1277,7 +1276,7 @@
     {
       "name": "17O-NMR",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1286,7 +1285,7 @@
     {
       "name": "15N-NMR",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1295,7 +1294,7 @@
     {
       "name": "11B-NMR",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1304,7 +1303,7 @@
     {
       "name": "29Si-NMR",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1313,7 +1312,7 @@
     {
       "name": "Sıcaklık Deneyleri (0-4 sa.)",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 2000,
+      "price": 2000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1322,7 +1321,7 @@
     {
       "name": "Çözücü Ücreti***/****: CDCl 3",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 120,
+      "price": 120.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1331,7 +1330,7 @@
     {
       "name": "Çözücü Ücreti: DMSO-D6, D O, ACETONE-D6 2",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 240,
+      "price": 240.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1340,7 +1339,7 @@
     {
       "name": "Çözücü Ücreti: MeOH-D4",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1349,7 +1348,7 @@
     {
       "name": "Uzman Değerlendirmesi* (Genel)",
       "category": "UZMAN DEĞERLENDİRMESİ (GENEL)",
-      "price": 10000,
+      "price": 10000.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
