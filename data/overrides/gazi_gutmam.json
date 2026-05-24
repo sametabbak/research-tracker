@@ -21,20 +21,11 @@
       "manual": true
     },
     {
-      "name": "\"İletken olmayan numuneler için Altın/Palladyum",
-      "price": 0,
-      "unit": "numune",
-      "category": "",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true
-    },
-    {
-      "name": "kaplama (1 set, 6 adet numuneyi içerir.)\"",
+      "name": "İletken olmayan numuneler için Altın/Palladyum Kaplama",
       "price": 1000,
-      "unit": "1 set",
+      "unit": "set",
       "category": "GÖRÜNTÜLEME LABORATUVARI",
-      "notes": "",
+      "notes": "1 set, 6 adet numuneyi içerir.",
       "currency": "TRY",
       "manual": true
     },
