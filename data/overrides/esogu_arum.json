@@ -15,7 +15,7 @@
       "name": "35.05 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı**",
       "price": 14000,
       "unit": "Gün",
-      "category": "",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true
@@ -24,7 +24,7 @@
       "name": "41.25 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
       "price": 14000,
       "unit": "Gün",
-      "category": "",
+      "category": "Sıvı NMR",
       "notes": "",
       "currency": "TRY",
       "manual": true
@@ -33,7 +33,7 @@
       "name": "43.06 Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
       "price": 14000,
       "unit": "Gün",
-      "category": "",
+      "category": "Katı NMR",
       "notes": "",
       "currency": "TRY",
       "manual": true
@@ -42,7 +42,7 @@
       "name": "44.01 FTIR Spektrum Analizi (KBr ile)",
       "price": 800,
       "unit": "Numune",
-      "category": "",
+      "category": "FTIR-Fourier Dönüşümlü Kızılötesi Spektrometre",
       "notes": "",
       "currency": "TRY",
       "manual": true
