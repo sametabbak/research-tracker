@@ -9,7 +9,8 @@
       "category": "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)",
       "notes": "(TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
       "name": "FE-SEM-EDX Analizi",
@@ -18,7 +19,8 @@
       "category": "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)",
       "notes": "(TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "STEM",
@@ -27,7 +29,8 @@
       "category": "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)",
       "notes": "(TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "STEM Sıvı Numune Hazırlık",
@@ -36,7 +39,8 @@
       "category": "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)",
       "notes": "(TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "Mapping",
@@ -45,7 +49,8 @@
       "category": "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)",
       "notes": "(TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "Line Scan",
@@ -54,10 +59,11 @@
       "category": "Alan Emisyonlu Elektron Mikroskobu (FE-SEM)",
       "notes": "(TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
-      "name": "Analiz (ilk element)",
+      "name": "AAS Analizi (ilk element)",
       "price": 300,
       "unit": "Element",
       "category": "AAS (Atomik Absorpsiyon Spektrometresi)",
@@ -66,7 +72,7 @@
       "manual": true
     },
     {
-      "name": "Sonraki Elementlerin Her Biri için",
+      "name": "AAS Analizi (Sonraki Elementlerin Her Biri için)",
       "price": 200,
       "unit": "Element",
       "category": "AAS (Atomik Absorpsiyon Spektrometresi)",
