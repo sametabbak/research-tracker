@@ -1703,7 +1703,8 @@ async function submitCtr(){
     await apiWrite('data/overrides/'+id+'.json',{center_id:id,center_name:name,overrides:[]},null,'feat: overrides — '+name);
     centers.push(nc);
     var sf=await apiRead(STAGING,'data/analyses/'+id+'.json');if(sf)sMap[id]=sf;
-    mMap[id]={analyses:[]};
+    var ov=await apiRead(STAGING,'data/overrides/'+id+'.json');if(ov)ovMap[id]=ov;
+    mMap[id]={center_id:id,center_name:name,analyses:[]};
     hideModal('ctrOv');buildDLs();renderCatalog();updSum();
     setTimeout(function(){var el=document.querySelector('[data-cid="'+id+'"]');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},150);
   }catch(e){err.textContent='Hata: '+e.message;err.style.display='block';}
