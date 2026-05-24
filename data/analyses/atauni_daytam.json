@@ -1325,7 +1325,8 @@
       "unit": "adet",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Ekstraksiyon ile Örnek Hazırlama",
@@ -1335,7 +1336,8 @@
       "unit": "numune",
       "notes": "Daytamla Görüşülecek.",
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LC MS/MS-01 Örnek Hazırlama (Tam Kütle Tayini, Vial+Çözücü+Pipet Ucu+Ependorf)",
@@ -1345,7 +1347,8 @@
       "unit": "adet",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LC MS/MS-13 Ekstraksiyon ile Örnek Hazırlama",
@@ -1355,11 +1358,23 @@
       "unit": "numune",
       "notes": "Daytamla Görüşülecek.",
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-01 Örnek Hazırlama",
       "category": "YÜKSEK BASINÇLI SIVI KROMATOGRAFİSİ",
+      "price": 0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": "Daytamla Görüşülecek.",
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)",
+      "manual": true,
+      "_isOv": false
+    },
+    {
+      "name": "GC-MS-02 Ekstraksiyon ile Örnek Hazırlama",
+      "category": "GAZ KROMATOGRAFİSİ-KÜTLE SPEKTROMETRESİ",
       "price": 0,
       "currency": "TRY",
       "unit": "numune",
