@@ -603,11 +603,7 @@ function getA(cid){
   var sf=sMap[cid];
   var analyses=sf?(sf.content&&sf.content.analyses?sf.content.analyses:[]):(mMap[cid]?mMap[cid].analyses||[]:[]);
   var ov=ovMap[cid];
-  /* Exclude overrides already present in analyses (merged on last approve) */
-  var aNameSet={}; analyses.forEach(function(a){aNameSet[a.name]=1;});
-  var overrides=(ov&&ov.content&&ov.content.overrides)
-    ?ov.content.overrides.filter(function(a){return !aNameSet[a.name];})
-    :[];
+  var overrides=(ov&&ov.content&&ov.content.overrides)?ov.content.overrides:[];
   /* Pending adds: show immediately before approve, skip duplicates */
   var pending=(pA[cid]||[]).filter(function(a){
     return !overrides.some(function(o){return o.name===a.name;})&&
@@ -1282,9 +1278,8 @@ function renGrp(old){
       getA(c.id).forEach(function(a){
         if(a.keyword_group===old){
           a.keyword_group=nw;
-          var rpid=a._pid||(c.id+'__'+a.name);
-          if(!pE[c.id])pE[c.id]={};if(!pE[c.id][rpid])pE[c.id][rpid]={};
-          pE[c.id][rpid].keyword_group=nw;
+          if(!pE[c.id])pE[c.id]={};if(!pE[c.id][a.name])pE[c.id][a.name]={};
+          pE[c.id][a.name].keyword_group=nw;
         }
       });
     });
@@ -1648,12 +1643,7 @@ function applyBatch(){
   var ncur=document.getElementById('batchCur').value;
   var sf=sMap[cid];
   pids.forEach(function(pid){
-    /* Find entry in analyses or overrides */
     var entry=sf&&sf.content&&sf.content.analyses?sf.content.analyses.find(function(a){return a._pid===pid;}):null;
-    if(!entry){
-      var bov=ovMap[cid];
-      entry=bov&&bov.content&&bov.content.overrides?bov.content.overrides.find(function(a){return a._pid===pid;}):null;
-    }
     if(!entry)return;
     if(!pE[cid])pE[cid]={};if(!pE[cid][pid])pE[cid][pid]={};
     if(ncat){pE[cid][pid].category=ncat;entry.category=ncat;}
@@ -1773,12 +1763,6 @@ async function doApprove(){
       if(pE[cid])newA=newA.map(function(a){var p=pE[cid][a._pid];return(p&&a._pid&&a._pid.indexOf('_ov_')===-1)?Object.assign({},a,p):a;});
       if(pD[cid]&&pD[cid].size)newA=newA.filter(function(a){return!(pD[cid].has(a._pid)&&a._pid&&a._pid.indexOf('_ov_')===-1);});
       newA=newA.map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;});
-      /* Merge overrides so mobile app sees all entries */
-      var ovEnt=ovMap[cid]&&ovMap[cid].content&&ovMap[cid].content.overrides
-        ?ovMap[cid].content.overrides.map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;})
-        :[];
-      var aNms={}; newA.forEach(function(a){aNms[a.name]=1;});
-      newA=newA.concat(ovEnt.filter(function(a){return !aNms[a.name];}));
       var nc=Object.assign({},sf.content,{analyses:newA});
       var cn=centers.find(function(c){return c.id===cid;});
       var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf.sha,'fix: panel düzenlemesi — '+(cn?cn.name:cid));
@@ -2000,14 +1984,7 @@ async function approveCtr(cid){
       if(pE[cid])newA=newA.map(function(a){var p=pE[cid][a._pid];return p?Object.assign({},a,p):a;});
       if(pD[cid]&&pD[cid].size)newA=newA.filter(function(a){return!pD[cid].has(a._pid);});
       newA=newA.map(function(a){var x=Object.assign({},a);delete x._pid;return x;});
-      /* Merge overrides into analyses so mobile app sees all entries */
-      var ovEntries=ovMap[cid]&&ovMap[cid].content&&ovMap[cid].content.overrides
-        ?ovMap[cid].content.overrides.map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;})
-        :[];
-      /* Dedup: skip overrides whose name is already in tracker analyses */
-      var aNames={}; newA.forEach(function(a){aNames[a.name]=1;});
-      var newOvMerge=ovEntries.filter(function(a){return !aNames[a.name];});
-      var nc=Object.assign({},sf.content,{analyses:newA.concat(newOvMerge)});
+      var nc=Object.assign({},sf.content,{analyses:newA});
       var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf.sha,'fix: '+(c?c.name:cid)+' güncellendi');
       sMap[cid]={content:nc,sha:(wa&&wa.content)?wa.content.sha:sf.sha};
       sMap[cid].content.analyses.forEach(function(a,i){a._pid=cid+'_'+i;a._isOv=false;});
@@ -2131,8 +2108,6 @@ async function importBackup(){
 
 /* ═══ MOVE ROWS ═════════════════════════════════════════════════════════════ */
 function moveRow(cid,pid,dir){
-  /* Overrides cannot be reordered within the analyses list — skip silently */
-  if(pid.indexOf('_ov_')!==-1)return;
   var sf=sMap[cid];
   if(!sf||!sf.content||!sf.content.analyses)return;
   var arr=sf.content.analyses;
