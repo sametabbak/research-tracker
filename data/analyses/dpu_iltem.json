@@ -33,6 +33,16 @@
       "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
+      "name": "SEM/STEM/TEM Numune Hazırlama",
+      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
+      "price": 1,
+      "currency": "TRY",
+      "unit": "adet",
+      "notes": "Merkezimizden fiyat sorunuz.",
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
+      "manual": true
+    },
+    {
       "name": "SEM Altın (Au,Pd), Karbon Kaplama",
       "category": "",
       "price": 300,
@@ -616,16 +626,6 @@
       "unit": "numune",
       "notes": "",
       "keyword_group": "Mekanik Numune Hazırlama"
-    },
-    {
-      "name": "SEM/STEM/TEM Numune Hazırlama",
-      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
-      "price": 1,
-      "currency": "TRY",
-      "unit": "adet",
-      "notes": "Merkezimizden fiyat sorunuz.",
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "manual": true
     }
   ]
 }
