@@ -1146,13 +1146,19 @@ function selAll(cid){
 
 /* ═══ KW GROUP EDITING ═══════════════════════════════════════════════════════ */
 function addKwG(name,grp,cid){
-  /* Replace — one group per analysis matches the data model */
   rKW[name]=[grp];
   if(cid){
+    /* Look in analyses first, then overrides */
     var sf=sMap[cid];
     var entry=sf&&sf.content&&sf.content.analyses
       ?sf.content.analyses.find(function(a){return a.name===name;})
       :null;
+    if(!entry){
+      var ov=ovMap[cid];
+      entry=ov&&ov.content&&ov.content.overrides
+        ?ov.content.overrides.find(function(a){return a.name===name;})
+        :null;
+    }
     if(entry){
       entry.keyword_group=grp;
       var pid=entry._pid;
@@ -1174,6 +1180,12 @@ function removeKwG(name,grp,cid){
     var entry=sf&&sf.content&&sf.content.analyses
       ?sf.content.analyses.find(function(a){return a.name===name;})
       :null;
+    if(!entry){
+      var ov=ovMap[cid];
+      entry=ov&&ov.content&&ov.content.overrides
+        ?ov.content.overrides.find(function(a){return a.name===name;})
+        :null;
+    }
     if(entry){
       entry.keyword_group=null;
       var pid=entry._pid;
@@ -1189,11 +1201,17 @@ function removeKwG(name,grp,cid){
   refrKwCell(name,cid);
 }
 function refrKwCell(name,cid){
-  /* Find the row by _pid — name-based IDs no longer match */
+  /* Find the row by _pid — check both analyses and overrides */
   var sf=sMap[cid];
   var entry=sf&&sf.content&&sf.content.analyses
     ?sf.content.analyses.find(function(a){return a.name===name;})
     :null;
+  if(!entry){
+    var ov=ovMap[cid];
+    entry=ov&&ov.content&&ov.content.overrides
+      ?ov.content.overrides.find(function(a){return a.name===name;})
+      :null;
+  }
   if(!entry||!entry._pid)return;
   var row=document.getElementById('tr-'+sid2(entry._pid));
   if(!row)return;
