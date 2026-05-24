@@ -720,8 +720,7 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     },
     {
       "name": "(Ra-226, Th-232, K-40, Cs- 137)\"",
@@ -730,8 +729,7 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     },
     {
       "name": "\"Sularda ve gıdalarda",
@@ -740,8 +738,7 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     },
     {
       "name": "(Cs-137, Cs-134)\"",
@@ -750,8 +747,7 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     },
     {
       "name": "\"Yapı malzemeleri, sanayi ürünleri ve hammaddelerinde",
@@ -760,8 +756,7 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     },
     {
       "name": "(Ra-226, Th-232, K-40, Ac-228, Cs-137)\"",
@@ -770,8 +765,7 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     },
     {
       "name": "\"Gama ışını Lineer Azalım Katsayısı (LAC) tespiti",
@@ -780,8 +774,7 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     },
     {
       "name": "(Am-241, Mn-54, Co-57, Co-60 ve Cs-137 kaynakları için)\"",
@@ -790,8 +783,7 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     },
     {
       "name": "\"Mikrogözenek Analizi ve Detaylı Full İzoterm Analizi",
@@ -800,8 +792,7 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     },
     {
       "name": "(BET Yüzey Alanı analizini kapsar)\"",
@@ -810,8 +801,7 @@
       "category": "Yüzey Alanı ve Gözeneklilik Ölçüm Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     }
   ]
 }
