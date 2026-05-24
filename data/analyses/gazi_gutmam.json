@@ -13,7 +13,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
       "name": "Yüzey görüntüsü alma (FE- SEM/EDS/MAPPING)",
@@ -23,7 +24,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "İletken olmayan numuneler için Altın/Palladyum Kaplama",
@@ -33,7 +35,8 @@
       "notes": "1 set, 6 adet numuneyi içerir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
     {
       "name": "STEM Görüntüleme",
@@ -43,7 +46,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "Grid Kullanımı",
@@ -53,7 +57,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "1H (Proton)",
@@ -63,7 +68,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "13C (Karbon) – 3 saat",
@@ -73,7 +79,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "13C APT – 3 saat",
@@ -83,7 +90,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "13C DEPT (45,90,135)",
@@ -93,7 +101,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "13C (Karbon) Spektrumuna ek her saat",
@@ -103,7 +112,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "COSY",
@@ -113,7 +123,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HETCOR",
@@ -123,7 +134,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HMBC",
@@ -133,7 +145,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HMQC",
@@ -143,7 +156,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "NOESY",
@@ -153,7 +167,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "NOESY (Metabolomik için)",
@@ -163,7 +178,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Diğer 2D Analizler",
@@ -173,7 +189,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "31P",
@@ -183,7 +200,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "19F",
@@ -193,7 +211,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "11B",
@@ -203,7 +222,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "14N",
@@ -213,7 +233,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HSQC",
@@ -223,7 +244,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Kloroform-d1",
@@ -233,7 +255,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "DMSO-d6",
@@ -243,7 +266,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Deuterium Oxide",
@@ -253,7 +277,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Metanol-d4",
@@ -263,7 +288,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "TFA ilavesi (0,1 ml)",
@@ -273,7 +299,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "D2O ilavesi (0,1 ml)",
@@ -283,7 +310,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "\"Çevresel örnekler ve toprakta (Ra-226, Th-232, K-40, Cs- 137)\"",
@@ -692,7 +720,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "(Ra-226, Th-232, K-40, Cs- 137)\"",
@@ -701,7 +730,8 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "\"Sularda ve gıdalarda",
@@ -710,7 +740,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "(Cs-137, Cs-134)\"",
@@ -719,7 +750,8 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "\"Yapı malzemeleri, sanayi ürünleri ve hammaddelerinde",
@@ -728,7 +760,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "(Ra-226, Th-232, K-40, Ac-228, Cs-137)\"",
@@ -737,7 +770,8 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "\"Gama ışını Lineer Azalım Katsayısı (LAC) tespiti",
@@ -746,7 +780,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "(Am-241, Mn-54, Co-57, Co-60 ve Cs-137 kaynakları için)\"",
@@ -755,7 +790,8 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "\"Mikrogözenek Analizi ve Detaylı Full İzoterm Analizi",
@@ -764,7 +800,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "(BET Yüzey Alanı analizini kapsar)\"",
@@ -773,7 +810,8 @@
       "category": "Yüzey Alanı ve Gözeneklilik Ölçüm Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     }
   ]
 }
