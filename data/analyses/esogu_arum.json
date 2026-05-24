@@ -394,7 +394,7 @@
     },
     {
       "name": "XRF Analizi / Katı Numune",
-      "category": "",
+      "category": "XRF-X-Işını Floresans",
       "price": 1575,
       "currency": "TRY",
       "unit": "Adet",
@@ -403,7 +403,7 @@
     },
     {
       "name": "Eritiş Cihazı ile Numune Hazırlama",
-      "category": "",
+      "category": "XRF-X-Işını Floresans",
       "price": 800,
       "currency": "TRY",
       "unit": "Adet",
@@ -411,8 +411,8 @@
       "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı"
     },
     {
-      "name": "Kırma ve Öğütme",
-      "category": "",
+      "name": "32.03 Kırma ve Öğütme",
+      "category": "XRF-X-Işını Floresans",
       "price": 485,
       "currency": "TRY",
       "unit": "Adet",
@@ -420,8 +420,8 @@
       "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
-      "name": "Presleme",
-      "category": "",
+      "name": "32.04 Presleme",
+      "category": "XRF-X-Işını Floresans",
       "price": 420,
       "currency": "TRY",
       "unit": "Adet",
@@ -429,8 +429,8 @@
       "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
-      "name": "Kızdırma Kaybı",
-      "category": "",
+      "name": "32.05 Kızdırma Kaybı",
+      "category": "XRF-X-Işını Floresans",
       "price": 315,
       "currency": "TRY",
       "unit": "Adet",
@@ -439,7 +439,7 @@
     },
     {
       "name": "XRF Analizi / Sıvı Numune*",
-      "category": "",
+      "category": "XRF-X-Işını Floresans",
       "price": 2100,
       "currency": "TRY",
       "unit": "Adet",
@@ -448,7 +448,7 @@
     },
     {
       "name": "XRF Temel Kullanıcı Eğitimi**",
-      "category": "",
+      "category": "XRF-X-Işını Floresans",
       "price": 15750,
       "currency": "TRY",
       "unit": "Gün",
