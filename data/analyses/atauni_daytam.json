@@ -317,7 +317,7 @@
     },
     {
       "name": "XRD Numune Hazırlama",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
@@ -536,12 +536,12 @@
       "_isOv": false
     },
     {
-      "name": "Örnek Hazırlama Adet Daytamla",
-      "category": "",
-      "price": 6250,
+      "name": "IC-01 Örnek Hazırlama",
+      "category": "İYON KROMATOGRAFİSİ",
+      "price": 0,
       "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
+      "unit": "adet",
+      "notes": "Daytamla Görüşülecek.",
       "keyword_group": "Genel Numune Hazırlama",
       "_isOv": false
     },
@@ -576,11 +576,11 @@
       "_isOv": false
     },
     {
-      "name": "Örnek Hazırlama Adet Daytamla",
-      "category": "",
-      "price": 6250,
+      "name": "GC-MS-01 Örnek Hazırlama",
+      "category": "GAZ KROMATOGRAFİSİ-KÜTLE SPEKTROMETRESİ",
+      "price": 750,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama",
       "_isOv": false
