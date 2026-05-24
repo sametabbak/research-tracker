@@ -837,8 +837,7 @@
       "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     },
     {
       "name": "İlave element analizi için",
@@ -847,8 +846,7 @@
       "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     },
     {
       "name": "Mikrodalga Çözme İşlemi",
@@ -857,8 +855,7 @@
       "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     },
     {
       "name": "Çoklu Asit İle Çözme İşlemi",
@@ -867,8 +864,7 @@
       "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     },
     {
       "name": "Değerli Metaller 1-10 Element (Au, Pd, Pt, Ag, Rh vb.)",
@@ -877,8 +873,7 @@
       "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
       "notes": "",
       "currency": "TRY",
-      "manual": true,
-      "_isOv": false
+      "manual": true
     }
   ]
 }
