@@ -480,7 +480,7 @@
       "category": "DSC",
       "price": 500,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "numune",
       "notes": "",
       "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)",
       "_isOv": false
@@ -490,7 +490,7 @@
       "category": "DSC",
       "price": 650,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "numune",
       "notes": "",
       "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)",
       "_isOv": false
@@ -501,7 +501,7 @@
       "price": 150,
       "currency": "TRY",
       "unit": "saat",
-      "notes": "",
+      "notes": "2 saat üzerindeki her 1 saat için.",
       "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)",
       "_isOv": false
     },
