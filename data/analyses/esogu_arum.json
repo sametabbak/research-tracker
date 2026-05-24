@@ -231,7 +231,7 @@
       "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
-      "name": "Sertifikalı Eğitim Paketi (Teorik ve Uygulama İçeren) İçin Günlük (8 Saat) Laboratuvar Kullanımı*****",
+      "name": "12.16 Sertifikalı Eğitim Paketi (Teorik ve Uygulama İçeren) İçin Günlük (8 Saat) Laboratuvar Kullanımı*****",
       "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 14000,
       "currency": "TRY",
@@ -241,7 +241,7 @@
     },
     {
       "name": "Konfokal Mikroskop ile Görüntüleme*",
-      "category": "",
+      "category": "İLERİ MİKROSKOBİ BİRİMİ",
       "price": 2350,
       "currency": "TRY",
       "unit": "Saat",
@@ -250,7 +250,7 @@
     },
     {
       "name": "Görüntü Analiz İşlemleri",
-      "category": "",
+      "category": "İLERİ MİKROSKOBİ BİRİMİ",
       "price": 1750,
       "currency": "TRY",
       "unit": "Numune",
@@ -259,7 +259,7 @@
     },
     {
       "name": "Inverted Mikroskop ile Görüntüleme*",
-      "category": "",
+      "category": "İLERİ MİKROSKOBİ BİRİMİ",
       "price": 675,
       "currency": "TRY",
       "unit": "Saat",
@@ -268,7 +268,7 @@
     },
     {
       "name": "Floresan Ataçmanlı Mikroskop ile Görüntüleme*",
-      "category": "",
+      "category": "İLERİ MİKROSKOBİ BİRİMİ",
       "price": 1350,
       "currency": "TRY",
       "unit": "Saat",
@@ -277,7 +277,7 @@
     },
     {
       "name": "Stereomikroskop ile Görüntüleme*",
-      "category": "",
+      "category": "İLERİ MİKROSKOBİ BİRİMİ",
       "price": 500,
       "currency": "TRY",
       "unit": "Saat",
@@ -285,8 +285,8 @@
       "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
-      "name": "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı**",
-      "category": "",
+      "name": "21.06 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı**",
+      "category": "İLERİ MİKROSKOBİ BİRİMİ",
       "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
@@ -295,7 +295,7 @@
     },
     {
       "name": "Toz Kırınım Deseni (Toz Numune)",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 1050,
       "currency": "TRY",
       "unit": "Adet",
@@ -304,7 +304,7 @@
     },
     {
       "name": "İnce Film Analizi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 3150,
       "currency": "TRY",
       "unit": "Adet",
@@ -313,7 +313,7 @@
     },
     {
       "name": "SAXS Analizi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 5250,
       "currency": "TRY",
       "unit": "Adet",
@@ -322,7 +322,7 @@
     },
     {
       "name": "Kalitatif Mineral Analiz",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 3150,
       "currency": "TRY",
       "unit": "Adet",
@@ -331,7 +331,7 @@
     },
     {
       "name": "Yüksek Sıcaklık Kırınım Deseni",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 5250,
       "currency": "TRY",
       "unit": "Adet",
@@ -340,7 +340,7 @@
     },
     {
       "name": "Rietveld Analizi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 10500,
       "currency": "TRY",
       "unit": "Adet",
@@ -349,7 +349,7 @@
     },
     {
       "name": "Kalıntı Gerilme Analizi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 10500,
       "currency": "TRY",
       "unit": "Adet",
@@ -358,7 +358,7 @@
     },
     {
       "name": "XRD Temel Kullanıcı Eğitimi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 15750,
       "currency": "TRY",
       "unit": "Gün",
@@ -367,7 +367,7 @@
     },
     {
       "name": "XRR Analizi",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 420,
       "currency": "TRY",
       "unit": "Adet",
@@ -376,7 +376,7 @@
     },
     {
       "name": "Numune Hazırlama",
-      "category": "",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 10500,
       "currency": "TRY",
       "unit": "Adet",
@@ -384,8 +384,8 @@
       "keyword_group": "Genel Numune Hazırlama"
     },
     {
-      "name": "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
-      "category": "",
+      "name": "31.11 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
+      "category": "XRD-X-Işını Kırınımı",
       "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
