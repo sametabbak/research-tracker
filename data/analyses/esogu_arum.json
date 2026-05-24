@@ -1168,7 +1168,7 @@
     },
     {
       "name": "Raman Spektrumu Eldesi",
-      "category": "",
+      "category": "Raman Spektroskopi",
       "price": 525,
       "currency": "TRY",
       "unit": "Adet",
@@ -1177,7 +1177,7 @@
     },
     {
       "name": "Alan Analizi - Haritalama",
-      "category": "",
+      "category": "Raman Spektroskopi",
       "price": 2100,
       "currency": "TRY",
       "unit": "Adet",
@@ -1186,7 +1186,7 @@
     },
     {
       "name": "Derinlik Profili",
-      "category": "",
+      "category": "Raman Spektroskopi",
       "price": 2100,
       "currency": "TRY",
       "unit": "Adet",
@@ -1194,8 +1194,8 @@
       "keyword_group": "Raman Spektroskopi"
     },
     {
-      "name": "Eğitim",
-      "category": "",
+      "name": "43.05 Eğitim",
+      "category": "Raman Spektroskopi",
       "price": 10500,
       "currency": "TRY",
       "unit": "Gün",
@@ -1204,7 +1204,7 @@
     },
     {
       "name": "Hücre Kültürü Laboratuvarı Kullanımı**",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
@@ -1213,7 +1213,7 @@
     },
     {
       "name": "Otomatik Hücre Sayımı Cihazı Kullanımı",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 420,
       "currency": "TRY",
       "unit": "Numune",
@@ -1222,7 +1222,7 @@
     },
     {
       "name": "Hücre Serisi Stoklama (6 Ay Stoklama)",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 1365,
       "currency": "TRY",
       "unit": "Vial",
@@ -1231,7 +1231,7 @@
     },
     {
       "name": "Hücre Serisi Dondurulması (Temel Sarflar Dahil, 6 Ay Stoklama) ***",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 1890,
       "currency": "TRY",
       "unit": "Vial",
@@ -1240,7 +1240,7 @@
     },
     {
       "name": "Biyogüvenlik Kabini Kullanımı****",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 630,
       "currency": "TRY",
       "unit": "Saat",
@@ -1249,7 +1249,7 @@
     },
     {
       "name": "Soğutmalı Santrifüj Kullanımı****",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 630,
       "currency": "TRY",
       "unit": "Saat",
@@ -1258,7 +1258,7 @@
     },
     {
       "name": "Hücre Kültürlerinde Mikoplazma Kontrolü-DAPI ile",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 2100,
       "currency": "TRY",
       "unit": "Numune",
@@ -1267,7 +1267,7 @@
     },
     {
       "name": "Hücre açma. pasajlama, hücre sayımı (25T Flask)",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 1890,
       "currency": "TRY",
       "unit": "Numune",
@@ -1276,7 +1276,7 @@
     },
     {
       "name": "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, Tek saat dilimi ) ****",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 7840,
       "currency": "TRY",
       "unit": "Test",
@@ -1285,7 +1285,7 @@
     },
     {
       "name": "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, İki farklı saat dilimi ) ****",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 8190,
       "currency": "TRY",
       "unit": "Numune",
@@ -1294,7 +1294,7 @@
     },
     {
       "name": "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, Üç farklı saat dilimi ) ****",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 8540,
       "currency": "TRY",
       "unit": "Numune",
@@ -1303,7 +1303,7 @@
     },
     {
       "name": "MTT veya eşdeğeri sitotoksisite testi (5 konsantrasyon dışında ek her konsantrasyon)",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 525,
       "currency": "TRY",
       "unit": "Test",
@@ -1312,7 +1312,7 @@
     },
     {
       "name": "IC50 değeri hesaplama (Bir örnek için) ******",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 3150,
       "currency": "TRY",
       "unit": "Numune",
@@ -1321,7 +1321,7 @@
     },
     {
       "name": "Primer Hücre Kültürü*******",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 2100,
       "currency": "TRY",
       "unit": "Gün",
@@ -1330,7 +1330,7 @@
     },
     {
       "name": "Muse Cihaz Kulanımı",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 1400,
       "currency": "TRY",
       "unit": "Numune",
@@ -1339,7 +1339,7 @@
     },
     {
       "name": "Annexin V , Dead Cell Kit",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 2100,
       "currency": "TRY",
       "unit": "Numune",
@@ -1348,7 +1348,7 @@
     },
     {
       "name": "Caspase-3/7 Kit",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 1785,
       "currency": "TRY",
       "unit": "Numune",
@@ -1357,7 +1357,7 @@
     },
     {
       "name": "Oxidative Stress Kit",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 2100,
       "currency": "TRY",
       "unit": "Numune",
@@ -1366,7 +1366,7 @@
     },
     {
       "name": "Cell Cycle Kit",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 1750,
       "currency": "TRY",
       "unit": "Numune",
@@ -1375,7 +1375,7 @@
     },
     {
       "name": "Autophagy LC3-antibody based Kit",
-      "category": "",
+      "category": "Hücre Kültürü Laboratuvarı",
       "price": 2100,
       "currency": "TRY",
       "unit": "Numune",
@@ -1384,7 +1384,7 @@
     },
     {
       "name": "Elisa Reader",
-      "category": "",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 840,
       "currency": "TRY",
       "unit": "Plaka",
@@ -1393,7 +1393,7 @@
     },
     {
       "name": "Tip I Biyogüvenlik Kabini",
-      "category": "",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 1050,
       "currency": "TRY",
       "unit": "Saat",
@@ -1402,7 +1402,7 @@
     },
     {
       "name": "Liyofilizatör Kullanımı",
-      "category": "",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 1680,
       "currency": "TRY",
       "unit": "Gün",
@@ -1411,7 +1411,7 @@
     },
     {
       "name": "PCR Cihaz Kullanımı",
-      "category": "",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 630,
       "currency": "TRY",
       "unit": "Döngü",
@@ -1420,7 +1420,7 @@
     },
     {
       "name": "Soğutmalı Santrifüj*",
-      "category": "",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 800,
       "currency": "TRY",
       "unit": "Saat",
@@ -1429,7 +1429,7 @@
     },
     {
       "name": "Mini Dikey Jel Elektroforezi (Cihaz Kullanımı)**",
-      "category": "",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 1575,
       "currency": "TRY",
       "unit": "Kaset",
@@ -1438,7 +1438,7 @@
     },
     {
       "name": "Maxi Dikey Jel Elektroforezi (Cihaz Kullanımı)**",
-      "category": "",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 2625,
       "currency": "TRY",
       "unit": "Kaset",
@@ -1447,7 +1447,7 @@
     },
     {
       "name": "Mini Yatay Jel Elektroforezi  (Cihaz Kullanımı)**",
-      "category": "",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 420,
       "currency": "TRY",
       "unit": "Kaset",
@@ -1456,7 +1456,7 @@
     },
     {
       "name": "Semi-Dry Blotlama",
-      "category": "",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 3150,
       "currency": "TRY",
       "unit": "Kaset",
@@ -1465,7 +1465,7 @@
     },
     {
       "name": "Jel Görüntüleme ve Dökümantasyon Sistemi Kullanımı (UV)**",
-      "category": "",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 525,
       "currency": "TRY",
       "unit": "Kaset",
@@ -1474,7 +1474,7 @@
     },
     {
       "name": "Jel Görüntüleme ve Dökümantasyon Sistemi Kullanımı (Kemilüminesans)**",
-      "category": "",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 1575,
       "currency": "TRY",
       "unit": "Kaset",
@@ -1483,7 +1483,7 @@
     },
     {
       "name": "-40 Dondurucu Kulanımı",
-      "category": "",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 300,
       "currency": "TRY",
       "unit": "Gün",
@@ -1492,7 +1492,7 @@
     },
     {
       "name": "-80 Dondurucu Kullanımı",
-      "category": "",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 315,
       "currency": "TRY",
       "unit": "Gün",
@@ -1500,8 +1500,8 @@
       "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
-      "name": "Otoklav",
-      "category": "",
+      "name": "52.17 Otoklav",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 315,
       "currency": "TRY",
       "unit": "Döngü",
@@ -1509,8 +1509,8 @@
       "keyword_group": "Genel Numune Hazırlama"
     },
     {
-      "name": "Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı***",
-      "category": "",
+      "name": "52.18 Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı***",
+      "category": "Biyoteknoloji Laboratuvarı",
       "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
