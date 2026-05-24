@@ -837,16 +837,18 @@
       "category": "X-Işını Toz Difraksiyonu (XRD)",
       "notes": "\"(max. 30",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "X-Işını difraksiyon paterni çekimi (toz numune)",
-      "price": 800,
+      "price": 500,
       "unit": "Adet",
       "category": "X-Işını Toz Difraksiyonu (XRD)",
       "notes": "\"(max. 60",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "X-Işını difraksiyon paterni çekimi (ince film)",
@@ -855,7 +857,8 @@
       "category": "X-Işını Toz Difraksiyonu (XRD)",
       "notes": "\"(max. 60",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Numune analizi 1-10 element için",
@@ -864,7 +867,8 @@
       "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "İlave element analizi için",
@@ -873,7 +877,8 @@
       "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Mikrodalga Çözme İşlemi",
@@ -882,7 +887,8 @@
       "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Çoklu Asit İle Çözme İşlemi",
@@ -891,7 +897,8 @@
       "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Değerli Metaller 1-10 Element (Au, Pd, Pt, Ag, Rh vb.)",
@@ -900,7 +907,8 @@
       "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     }
   ]
 }
