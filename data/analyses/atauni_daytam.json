@@ -996,16 +996,6 @@
       "_isOv": false
     },
     {
-      "name": "Çalkalayıcı İnkübatör Kullanımı",
-      "category": "",
-      "price": 150,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "Cihaz Kullanımı",
-      "_isOv": false
-    },
-    {
       "name": "TEM-01 HR (malzeme örnekleri) veya HC (biyolojik örnekler) modunda",
       "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 700,
