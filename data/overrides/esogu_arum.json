@@ -12,6 +12,16 @@
       "keyword_group": "XRF (X-Işını Floresans) Analizleri",
       "_pid": "esogu_arum_49",
       "manual": true
+    },
+    {
+      "name": "32.08 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
+      "category": "XRF-X-Işını Floresans",
+      "price": 14000,
+      "currency": "TRY",
+      "unit": "gün",
+      "notes": "",
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
+      "manual": true
     }
   ]
 }
