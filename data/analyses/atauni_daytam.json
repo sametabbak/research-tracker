@@ -116,11 +116,11 @@
       "_isOv": false
     },
     {
-      "name": "Numune Hazırlama",
-      "category": "",
+      "name": "SEM-07 - Numune Hazırlama",
+      "category": "TARAMALI ELEKTRON MİKROSKOPU",
       "price": 2300,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "set",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama",
       "_isOv": false
@@ -217,7 +217,7 @@
     },
     {
       "name": "Yüzey Elementel Haritalama",
-      "category": "",
+      "category": "X-IŞINI FOTOELEKTRON SPEKTROSKOPİ",
       "price": 1960,
       "currency": "TRY",
       "unit": "element",
@@ -1314,7 +1314,8 @@
       "unit": "numune",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     }
   ]
 }
