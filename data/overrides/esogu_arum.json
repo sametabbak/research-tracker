@@ -9,7 +9,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_0",
+      "_isOv": true
     },
     {
       "name": "35.05 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı**",
@@ -18,7 +20,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_1",
+      "_isOv": true
     },
     {
       "name": "41.25 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
@@ -27,7 +31,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_2",
+      "_isOv": true
     },
     {
       "name": "43.06 Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
@@ -36,7 +42,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_3",
+      "_isOv": true
     },
     {
       "name": "44.01 FTIR Spektrum Analizi (KBr ile)",
@@ -45,7 +53,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_4",
+      "_isOv": true
     },
     {
       "name": "44.02 FTIR Spektrum Analizi (Elmas ATR ile)",
@@ -54,7 +64,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_5",
+      "_isOv": true
     },
     {
       "name": "44.03 FTIR Spektrum Analizi (Germanyum ATR ile)",
@@ -63,7 +75,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_6",
+      "_isOv": true
     },
     {
       "name": "45.01 UV Spektrum Analizi / Sıvı Numune",
@@ -72,7 +86,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_7",
+      "_isOv": true
     },
     {
       "name": "45.02 UV Spektrum Analizi / Katı Numune",
@@ -81,7 +97,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_8",
+      "_isOv": true
     },
     {
       "name": "46.01 Floresan Analizi / Sıvı Numune",
@@ -90,7 +108,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_9",
+      "_isOv": true
     },
     {
       "name": "46.02 Floresan Analizi / Katı Numune",
@@ -99,7 +119,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_10",
+      "_isOv": true
     },
     {
       "name": "62.01 DSC Analizi (25 °C – 600 °C) 1 Saat",
@@ -108,7 +130,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_11",
+      "_isOv": true
     },
     {
       "name": "DSC Analizi (25 °C – 600 °C) 2 Saat",
@@ -117,7 +141,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_12",
+      "_isOv": true
     },
     {
       "name": "DSC Analizi (25 °C – 600 °C) 3 Saat",
@@ -126,7 +152,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_13",
+      "_isOv": true
     },
     {
       "name": "DSC Analizi (25 °C – 600 °C) 3-7 Saat",
@@ -135,7 +163,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_14",
+      "_isOv": true
     },
     {
       "name": "DSC Analizi (25 °C – 600 °C) 7-14 Saat",
@@ -144,7 +174,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_15",
+      "_isOv": true
     },
     {
       "name": "62.02 DSC Analizi (-150 °C – 600 °C) 1 Saat",
@@ -153,7 +185,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_16",
+      "_isOv": true
     },
     {
       "name": "DSC Analizi (-150 °C – 600 °C) 2 Saat",
@@ -162,7 +196,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_17",
+      "_isOv": true
     },
     {
       "name": "DSC Analizi (-150 °C – 600 °C) 3 Saat",
@@ -171,7 +207,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_18",
+      "_isOv": true
     },
     {
       "name": "DSC Analizi (-150 °C – 600 °C) 3-7 Saat",
@@ -180,7 +218,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_19",
+      "_isOv": true
     },
     {
       "name": "DSC Analizi (-150 °C – 600 °C) 7-14 Saat",
@@ -189,7 +229,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_20",
+      "_isOv": true
     },
     {
       "name": "63.01 DMA Analizi (25 °C – 400 °C) 1 Saat",
@@ -198,7 +240,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_21",
+      "_isOv": true
     },
     {
       "name": "DMA Analizi (25 °C – 400 °C) 2 Saat",
@@ -207,7 +251,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_22",
+      "_isOv": true
     },
     {
       "name": "DMA Analizi (25 °C – 400 °C) 3 Saat",
@@ -216,7 +262,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_23",
+      "_isOv": true
     },
     {
       "name": "DMA Analizi (25 °C – 400 °C) 3-5 Saat",
@@ -225,7 +273,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_24",
+      "_isOv": true
     },
     {
       "name": "63.02 DMA Analizi (-150 °C – 400 °C) 1 Saat",
@@ -234,7 +284,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_25",
+      "_isOv": true
     },
     {
       "name": "DMA Analizi (-150 °C – 400 °C) 2 Saat",
@@ -243,7 +295,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_26",
+      "_isOv": true
     },
     {
       "name": "DMA Analizi (-150 °C – 400 °C) 3 Saat",
@@ -252,7 +306,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_27",
+      "_isOv": true
     },
     {
       "name": "DMA Analizi (-150 °C – 400 °C) 3-5 Saat",
@@ -261,7 +317,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_28",
+      "_isOv": true
     },
     {
       "name": "63.03 Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
@@ -270,7 +328,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_29",
+      "_isOv": true
     },
     {
       "name": "72.01 LC-MS/MS Kalitatif Analiz",
@@ -279,7 +339,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_30",
+      "_isOv": true
     },
     {
       "name": "72.02 LC-MS/MS Kantitatif Analiz",
@@ -288,7 +350,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_31",
+      "_isOv": true
     },
     {
       "name": "72.03 LC-MS/MS Kantitatif (İlave Bileşen Başına)",
@@ -297,7 +361,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_32",
+      "_isOv": true
     },
     {
       "name": "72.04 Numune Hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
@@ -306,7 +372,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_33",
+      "_isOv": true
     },
     {
       "name": "72.05 Metot Geliştirme",
@@ -315,7 +383,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_34",
+      "_isOv": true
     },
     {
       "name": "75.01 GC-Kalitatif Analiz",
@@ -324,7 +394,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_35",
+      "_isOv": true
     },
     {
       "name": "75.02 GC-Kantitatif Analiz (Tek Bileşen)",
@@ -333,7 +405,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_36",
+      "_isOv": true
     },
     {
       "name": "75.03 GC-Kantitatif Analiz (İlave Her Bir Bileşen)",
@@ -342,7 +416,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_37",
+      "_isOv": true
     },
     {
       "name": "75.04 GC Metot geliştirme (2 Bileşen)",
@@ -351,7 +427,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_38",
+      "_isOv": true
     },
     {
       "name": "75.05 Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
@@ -360,7 +438,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_39",
+      "_isOv": true
     },
     {
       "name": "76.01 GC/MS-Kalitatif",
@@ -369,7 +449,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_40",
+      "_isOv": true
     },
     {
       "name": "76.02 GC/MS-Kantitatif (Tek Bileşen)",
@@ -378,7 +460,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_41",
+      "_isOv": true
     },
     {
       "name": "76.03 GC/MS-Kantitatif (İlave Her Bir Bileşen)",
@@ -387,7 +471,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_42",
+      "_isOv": true
     },
     {
       "name": "76.04 GC/MS Metot Geliştirme (2 Bileşen)",
@@ -396,7 +482,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_43",
+      "_isOv": true
     },
     {
       "name": "76.05 Katı Faz Mikro Ekstraksiyon (SPME) Uygulamaları (Metot- Adsorban Bildirilmiş İse)",
@@ -405,7 +493,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_44",
+      "_isOv": true
     },
     {
       "name": "76.06 SPME Uygulamaları (Metot Geliştirme, 2 Bileşen)",
@@ -414,7 +504,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_45",
+      "_isOv": true
     },
     {
       "name": "76.07 Kütle Spektrumu Kütüphane Taraması (Bileşen Başı)",
@@ -423,7 +515,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_46",
+      "_isOv": true
     },
     {
       "name": "76.08 Uçucu Yağ Bileşenleri, % Bağıl Miktarları ile Birlikte (2 Ana Bileşen)",
@@ -432,7 +526,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_47",
+      "_isOv": true
     },
     {
       "name": "76.09 Yağ asitleri bileşenleri-Kalitatif (Türevlendirme Yapılmış Hazır",
@@ -441,7 +537,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_48",
+      "_isOv": true
     },
     {
       "name": "76.10 GC-MS Headspace Kalitatif (Tek Bileşen)",
@@ -450,7 +548,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_49",
+      "_isOv": true
     },
     {
       "name": "76.11 GC-MS Headspace Kantitatif (Tek Bileşen)",
@@ -459,7 +559,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_50",
+      "_isOv": true
     },
     {
       "name": "76.12 GC-MS Headspace Kalitatif/Kantitatif (Her Bir İlave Bileşen)",
@@ -468,7 +570,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_51",
+      "_isOv": true
     },
     {
       "name": "76.13 Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemler) *",
@@ -477,7 +581,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_52",
+      "_isOv": true
     },
     {
       "name": "76.14 Clevenger yöntemi ile uçucu yağ eldesi:50 gr numuneye kadar",
@@ -486,7 +592,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_53",
+      "_isOv": true
     },
     {
       "name": "76.15 Soxhlet cihazı ile ekstrasiyon: 20 gr. numuneye kadar",
@@ -495,7 +603,9 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_pid": "esogu_arum_ov_54",
+      "_isOv": true
     },
     {
       "name": "76.16 Soxhlet cihazı ile ekstradsiyon ilave her 0-20 gr numune için",
@@ -504,6 +614,18 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
+      "manual": true,
+      "_pid": "esogu_arum_ov_55",
+      "_isOv": true
+    },
+    {
+      "name": "Soxhlet cihazı ile ekstradsiyon ilave her 0-20 gr numune için",
+      "category": "",
+      "price": 1950,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": "",
+      "keyword_group": null,
       "manual": true
     }
   ]
