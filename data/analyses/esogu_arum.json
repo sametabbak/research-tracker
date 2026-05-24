@@ -457,7 +457,7 @@
     },
     {
       "name": "ICP-MS 1 Element Analizi",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 1150,
       "currency": "TRY",
       "unit": "Numune",
@@ -466,7 +466,7 @@
     },
     {
       "name": "ICP-MS 2-5 Element Analizi",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 1350,
       "currency": "TRY",
       "unit": "Numune",
@@ -475,7 +475,7 @@
     },
     {
       "name": "ICP-MS 6-10 Element Analizi",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 1650,
       "currency": "TRY",
       "unit": "Numune",
@@ -484,7 +484,7 @@
     },
     {
       "name": "ICP-MS 11-15 Element Analizi",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 1900,
       "currency": "TRY",
       "unit": "Numune",
@@ -493,7 +493,7 @@
     },
     {
       "name": "ICP-MS 16-20 Element Analizi",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 2150,
       "currency": "TRY",
       "unit": "Numune",
@@ -502,7 +502,7 @@
     },
     {
       "name": "ICP-MS 21-30 Element Analizi",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 2625,
       "currency": "TRY",
       "unit": "Numune",
@@ -511,7 +511,7 @@
     },
     {
       "name": "ICP-MS 31-40 Element Analizi",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 3150,
       "currency": "TRY",
       "unit": "Numune",
@@ -520,7 +520,7 @@
     },
     {
       "name": "ICP-MS 41-50 Element Analizi",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 3690,
       "currency": "TRY",
       "unit": "Numune",
@@ -529,7 +529,7 @@
     },
     {
       "name": "ICP-MS 51 ve üzeri element Analizi",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 4325,
       "currency": "TRY",
       "unit": "Numune",
@@ -538,7 +538,7 @@
     },
     {
       "name": "ICP-MS 1 Nadir Toprak Elementi Analizi*",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 1200,
       "currency": "TRY",
       "unit": "Numune",
@@ -547,7 +547,7 @@
     },
     {
       "name": "ICP-MS 2-10 Nadir Toprak Elementi Analizi*",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 1690,
       "currency": "TRY",
       "unit": "Numune",
@@ -556,7 +556,7 @@
     },
     {
       "name": "ICP-MS 11-18 Nadir Toprak Elementi Analizi*",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 2220,
       "currency": "TRY",
       "unit": "Numune",
@@ -565,7 +565,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (Nitik asit ile)",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 750,
       "currency": "TRY",
       "unit": "Numune",
@@ -574,7 +574,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (Kral Suyu ile)",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 865,
       "currency": "TRY",
       "unit": "Numune",
@@ -583,7 +583,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (H2O2 içeren karışım)",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 900,
       "currency": "TRY",
       "unit": "Numune",
@@ -592,7 +592,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (HF içeren karışım)",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 940,
       "currency": "TRY",
       "unit": "Numune",
@@ -601,7 +601,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (Çoklu asit içeren karışım)",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 1020,
       "currency": "TRY",
       "unit": "Numune",
@@ -610,7 +610,7 @@
     },
     {
       "name": "Ön Hazırlık (Kırma. Öğütme vb.)",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 345,
       "currency": "TRY",
       "unit": "Numune",
@@ -619,7 +619,7 @@
     },
     {
       "name": "Ön Hazırlık (Yakma. Kurutma vb.)",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 375,
       "currency": "TRY",
       "unit": "Numune",
@@ -628,7 +628,7 @@
     },
     {
       "name": "Ön Hazırlık (Süzme. Santrifüj vb,)",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 280,
       "currency": "TRY",
       "unit": "Numune",
@@ -637,7 +637,7 @@
     },
     {
       "name": "Ön Hazırlık (Açıktan Çözeltiye Alma)",
-      "category": "",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
       "price": 375,
       "currency": "TRY",
       "unit": "Numune",
@@ -645,9 +645,9 @@
       "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
-      "name": "Kızdırma Kaybı",
-      "category": "",
-      "price": 315,
+      "name": "35.04 Kızdırma Kaybı",
+      "category": "ELEMENTEL ANALİZ BİRİMİ",
+      "price": 280,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
