@@ -121,8 +121,8 @@
       "price": 2300,
       "currency": "TRY",
       "unit": "set",
-      "notes": "",
-      "keyword_group": "Genel Numune Hazırlama",
+      "notes": "İletken olmayan numuneler için altın ve/veya paladyum kaplama işlemi: bir set işlemde 6 numune kaplanabilmektedir.",
+      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)",
       "_isOv": false
     },
     {
