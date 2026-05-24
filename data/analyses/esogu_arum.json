@@ -39,7 +39,7 @@
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": null
+      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
       "name": "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
@@ -165,7 +165,7 @@
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
+      "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
       "name": "12.09 İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
@@ -174,7 +174,7 @@
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "Kriyojenik Örnekler İçin İnceleme ve Görüntü Alma**",
