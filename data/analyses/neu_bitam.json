@@ -898,7 +898,7 @@
     },
     {
       "name": "Numune Hazırlama",
-      "category": "ALAN EMİSYONLU TARAMALI ELEKTRON MİKROSKOBU ANALİZİ (FE-SEM)",
+      "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
       "price": 100,
       "currency": "TRY",
       "unit": "numune",
@@ -1150,7 +1150,7 @@
     },
     {
       "name": "Full Analiz Paketi (1H-NMR, 13C-NMR, APT, DEPT-90, DEPT-135, COSY, HMBC, HMQC, HSQC",
-      "category": "",
+      "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
       "price": 3800,
       "currency": "TRY",
       "unit": "numune",
@@ -1320,7 +1320,7 @@
       "keyword_group": "NMR Analizleri"
     },
     {
-      "name": "Çözücü Ücreti***/****: CDCl 3",
+      "name": "Çözücü Ücreti***/****: CDCl3",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
       "price": 120,
       "currency": "TRY",
@@ -1329,7 +1329,7 @@
       "keyword_group": "NMR Analizleri"
     },
     {
-      "name": "Çözücü Ücreti: DMSO-D6, D O, ACETONE-D6 2",
+      "name": "Çözücü Ücreti: DMSO-D6, D2O, ACETONE-D6",
       "category": "NÜKLEER MANYETİK RESONANS SPEKTROSKOPİSİ (NMR)",
       "price": 240,
       "currency": "TRY",
@@ -1352,7 +1352,7 @@
       "price": 10000,
       "currency": "TRY",
       "unit": "saat",
-      "notes": "",
+      "notes": "Talep edilmeden önce uzman ile iletişime geçilmelidir.",
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     }
   ]
