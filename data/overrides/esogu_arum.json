@@ -1,16 +1,5 @@
 {
   "center_id": "esogu_arum",
   "center_name": "ESOGÜ ARUM",
-  "overrides": [
-    {
-      "name": "32.08 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
-      "category": "XRF-X-Işını Floresans",
-      "price": 14000,
-      "currency": "TRY",
-      "unit": "gün",
-      "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "manual": true
-    }
-  ]
+  "overrides": []
 }
