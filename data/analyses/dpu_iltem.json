@@ -388,7 +388,7 @@
     },
     {
       "name": "ATR – FTIR Spektrumu",
-      "category": "",
+      "category": "SPEKTROSKOPİ LABORATUVARI",
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
@@ -397,8 +397,8 @@
       "_isOv": false
     },
     {
-      "name": "Kırma-Öğütme",
-      "category": "",
+      "name": "SL - Kırma-Öğütme",
+      "category": "SPEKTROSKOPİ LABORATUVARI",
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
@@ -408,7 +408,7 @@
     },
     {
       "name": "LC/MS Analizi (Kalitatif)",
-      "category": "",
+      "category": "Yüksek Çözünürlüklü Kütle Spektrometresi",
       "price": 700,
       "currency": "TRY",
       "unit": "numune",
@@ -418,7 +418,7 @@
     },
     {
       "name": "LC/MS Analizi (Kantitatif) *",
-      "category": "",
+      "category": "Yüksek Çözünürlüklü Kütle Spektrometresi",
       "price": 900,
       "currency": "TRY",
       "unit": "numune",
@@ -428,7 +428,7 @@
     },
     {
       "name": "LC/MS/MS",
-      "category": "",
+      "category": "Yüksek Çözünürlüklü Kütle Spektrometresi",
       "price": 1250,
       "currency": "TRY",
       "unit": "numune",
@@ -438,7 +438,7 @@
     },
     {
       "name": "LC/MS QTOF (HRMS) Tam Kütle Tayini",
-      "category": "",
+      "category": "Yüksek Çözünürlüklü Kütle Spektrometresi",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -448,7 +448,7 @@
     },
     {
       "name": "HPLC (Kalitatif)",
-      "category": "",
+      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
       "price": 750,
       "currency": "TRY",
       "unit": "numune",
@@ -458,7 +458,7 @@
     },
     {
       "name": "HPLC (Kantitatif) *",
-      "category": "",
+      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
       "price": 900,
       "currency": "TRY",
       "unit": "numune",
@@ -468,7 +468,7 @@
     },
     {
       "name": "Şeker Analizi (Tek Şeker)",
-      "category": "",
+      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
       "price": 1050,
       "currency": "TRY",
       "unit": "numune",
@@ -478,7 +478,7 @@
     },
     {
       "name": "Şeker Analizi (Grup Şeker)",
-      "category": "",
+      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
       "price": 1225,
       "currency": "TRY",
       "unit": "numune",
@@ -488,7 +488,7 @@
     },
     {
       "name": "Pestisit Analizi (Tek Pestisit)",
-      "category": "",
+      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
       "price": 1050,
       "currency": "TRY",
       "unit": "numune",
@@ -498,7 +498,7 @@
     },
     {
       "name": "Pestisit Analizi (Grup Pestisit)",
-      "category": "",
+      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -508,7 +508,7 @@
     },
     {
       "name": "İnteraktif Cihaz Kullanımı (HPLC Analizi-Vial-Çözücü-Pipet Ucu)",
-      "category": "",
+      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
       "price": 1000,
       "currency": "TRY",
       "unit": "numune",
@@ -518,7 +518,7 @@
     },
     {
       "name": "GC/MS (Kalitatif)",
-      "category": "",
+      "category": "Gaz Kromatografisi – Kütle Spektrometresi (GC-MS)",
       "price": 800,
       "currency": "TRY",
       "unit": "numune",
@@ -528,7 +528,7 @@
     },
     {
       "name": "GC/MS (Kantitatif) *",
-      "category": "",
+      "category": "Gaz Kromatografisi – Kütle Spektrometresi (GC-MS)",
       "price": 1050,
       "currency": "TRY",
       "unit": "numune",
