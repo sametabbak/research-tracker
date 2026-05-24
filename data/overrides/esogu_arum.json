@@ -11,6 +11,16 @@
       "notes": "",
       "keyword_group": "XRF (X-Işını Floresans) Analizleri",
       "manual": true
+    },
+    {
+      "name": "32.08 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
+      "category": "XRF-X-Işını Floresans",
+      "price": 14000,
+      "currency": "TRY",
+      "unit": "Gün",
+      "notes": "",
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
+      "manual": true
     }
   ]
 }
