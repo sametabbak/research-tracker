@@ -67,7 +67,7 @@
       "_isOv": false
     },
     {
-      "name": "Kesme",
+      "name": "MSL Kesme",
       "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 400,
       "currency": "TRY",
@@ -77,7 +77,7 @@
       "_isOv": false
     },
     {
-      "name": "Zımparalama ve Parlatma",
+      "name": "MSL Zımparalama ve Parlatma",
       "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 600,
       "currency": "TRY",
@@ -87,7 +87,7 @@
       "_isOv": false
     },
     {
-      "name": "Kimyasal Dağlama (Seramik Malzemeler)",
+      "name": "MSL Kimyasal Dağlama (Seramik Malzemeler)",
       "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 400,
       "currency": "TRY",
@@ -97,7 +97,7 @@
       "_isOv": false
     },
     {
-      "name": "Termal Dağlama",
+      "name": "MSL Termal Dağlama",
       "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 1500,
       "currency": "TRY",
@@ -177,7 +177,7 @@
       "_isOv": false
     },
     {
-      "name": "Kesme",
+      "name": "MAL Kesme",
       "category": "MİNERALOJİK ANALİZ LABORATUVARI",
       "price": 500,
       "currency": "TRY",
