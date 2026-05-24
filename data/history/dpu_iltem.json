@@ -2,6 +2,23 @@
   "center_id": "dpu_iltem",
   "events": [
     {
+      "date": "2026-05-18",
+      "type": "changed",
+      "added_rows": [
+        [
+          "İnteraktif Cihaz Kullanımı (HPLC Analizi+Vial+Çözücü+Pipet Ucu)",
+          "1000 / kişi"
+        ]
+      ],
+      "removed_rows": [
+        [
+          "İnteraktif Cihaz Kullanımı (Tam Kütle Tayini+Vial+Çözücü+Pipet Ucu)",
+          "Merkezimizden fiyat sorunuz."
+        ]
+      ],
+      "analysis_count": 69
+    },
+    {
       "date": "2026-05-04",
       "type": "changed",
       "added_rows": [

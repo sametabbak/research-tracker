@@ -1,7 +1,7 @@
 {
   "center_id": "atauni_daytam",
   "center_name": "ATAÜNİ DAYTAM",
-  "last_updated": "2026-05-11",
+  "last_updated": "2026-05-18",
   "source_url": "https://daytam.atauni.edu.tr/hizmet-bedelleri/",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
@@ -16,25 +16,25 @@
     },
     {
       "name": "EDS modu ile Element Tayini",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
+      "category": "",
       "price": 1400,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "element",
       "notes": "",
       "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "EDS modu ile Noktasal, Çizgisel ve Bölgesel Haritalama",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
+      "category": "",
       "price": 1400,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "numune",
       "notes": "",
       "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "AFM Numune İnceleme",
-      "category": "AFM (Atomik Kuvvet Mikroskobu)",
+      "category": "",
       "price": 1100,
       "currency": "TRY",
       "unit": "numune",
@@ -43,7 +43,7 @@
     },
     {
       "name": "Manyetik Kuvvet Mikroskop",
-      "category": "AFM (Atomik Kuvvet Mikroskobu)",
+      "category": "",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Temas Modunda Analiz",
-      "category": "AFM (Atomik Kuvvet Mikroskobu)",
+      "category": "",
       "price": 2000,
       "currency": "TRY",
       "unit": "numune",
@@ -61,7 +61,7 @@
     },
     {
       "name": "Kelvin Prob Mikroskop",
-      "category": "AFM (Atomik Kuvvet Mikroskobu)",
+      "category": "",
       "price": 2000,
       "currency": "TRY",
       "unit": "numune",
@@ -70,7 +70,7 @@
     },
     {
       "name": "FE-SEM /EDS ile Yarı Kantitatif Analiz",
-      "category": "SEM (Taramalı Elektron Mikroskop)",
+      "category": "",
       "price": 2700,
       "currency": "TRY",
       "unit": "numune",
@@ -79,7 +79,7 @@
     },
     {
       "name": "FE-SEM /EDS ile Haritalama",
-      "category": "SEM (Taramalı Elektron Mikroskop)",
+      "category": "",
       "price": 2900,
       "currency": "TRY",
       "unit": "numune",
@@ -88,7 +88,7 @@
     },
     {
       "name": "FE-SEM /EDS ile Noktasal ve Çizgisel Analiz",
-      "category": "SEM (Taramalı Elektron Mikroskop)",
+      "category": "",
       "price": 2700,
       "currency": "TRY",
       "unit": "numune",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Metalik Kalıntı Analizi ve Raporlama",
-      "category": "SEM (Taramalı Elektron Mikroskop)",
+      "category": "",
       "price": 18000,
       "currency": "TRY",
       "unit": "numune",
@@ -106,7 +106,7 @@
     },
     {
       "name": "Numune Hazırlama",
-      "category": "SEM (Taramalı Elektron Mikroskop)",
+      "category": "",
       "price": 2300,
       "currency": "TRY",
       "unit": "numune",
@@ -511,7 +511,7 @@
     },
     {
       "name": "Preparatif HPLC",
-      "category": "YÜKSEK BASINÇLI SIVI KROMATOGRAFİSİ",
+      "category": "",
       "price": 1350,
       "currency": "TRY",
       "unit": "numune",
@@ -574,7 +574,7 @@
     },
     {
       "name": "İlave Bileşen)",
-      "category": "İYON KROMOTOGRAFİ (IC)",
+      "category": "",
       "price": 1000,
       "currency": "TRY",
       "unit": "numune",
@@ -682,7 +682,7 @@
     },
     {
       "name": "Beckman Coulter Cytoflex cihaz konfigurasyonuna uygun",
-      "category": "AKAN HÜCRE ÖLÇER (AKIŞ SİTOMETRİ)",
+      "category": "",
       "price": 9000,
       "currency": "TRY",
       "unit": "numune",
@@ -895,15 +895,6 @@
       "unit": "numune",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama"
-    },
-    {
-      "name": "Liyofilizatör kullanımı (Gün-Dondurulmuş)",
-      "category": "ÖRNEK HAZIRLAMA",
-      "price": 750,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Kriyostat ile kesit alma",
@@ -1210,6 +1201,16 @@
       "unit": "numune",
       "notes": "",
       "keyword_group": "Cihaz Kullanımı"
+    },
+    {
+      "name": "Liyofilizatör kullanımı (Gün-Dondurulmuş)",
+      "category": "ÖRNEK HAZIRLAMA",
+      "price": 750,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": "",
+      "keyword_group": null,
+      "manual": true
     }
   ]
 }
