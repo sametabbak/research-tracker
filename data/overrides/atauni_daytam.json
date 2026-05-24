@@ -1,5 +1,16 @@
 {
   "center_id": "atauni_daytam",
   "center_name": "ATAÜNİ DAYTAM",
-  "overrides": []
+  "overrides": [
+    {
+      "name": "Liyofilizatör kullanımı (Gün-Dondurulmamış)",
+      "category": "ÖRNEK HAZIRLAMA",
+      "price": 900,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": "",
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
+      "manual": true
+    }
+  ]
 }
