@@ -33,13 +33,13 @@
       "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
-      "name": "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
+      "name": "11.04 İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
       "category": "SEM-Taramalı Elektron Mikroskobu",
       "price": 3800,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
+      "keyword_group": null
     },
     {
       "name": "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
@@ -87,7 +87,7 @@
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
-      "name": "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı *",
+      "name": "11.10 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı *",
       "category": "SEM-Taramalı Elektron Mikroskobu",
       "price": 14000,
       "currency": "TRY",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Biyolojik Dokulardan TEM İçin Numune Hazırlama",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 3200,
       "currency": "TRY",
       "unit": "Adet",
@@ -106,7 +106,7 @@
     },
     {
       "name": "Ultramikrotomda Yarı İnce Kesit Alma",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1250,
       "currency": "TRY",
       "unit": "Adet",
@@ -115,7 +115,7 @@
     },
     {
       "name": "Histokimyasal Boyama; Yarı İnce Kesit Boyama",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1400,
       "currency": "TRY",
       "unit": "Adet",
@@ -124,7 +124,7 @@
     },
     {
       "name": "Ultramikrotomda Tam İnce Kesit Alma",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1600,
       "currency": "TRY",
       "unit": "Adet",
@@ -133,7 +133,7 @@
     },
     {
       "name": "Tam İnce Kesit Boyama (Uranil Asetat / Kurşun Sitrat ile)",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1800,
       "currency": "TRY",
       "unit": "Adet",
@@ -142,7 +142,7 @@
     },
     {
       "name": "Biyolojik Dokulardan Kriyo-TEM İçin Numune Hazırlama*",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 4000,
       "currency": "TRY",
       "unit": "Adet",
@@ -151,7 +151,7 @@
     },
     {
       "name": "Kriyo-Ultramikrotomda Tam İnce Kesit Alma*",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 4100,
       "currency": "TRY",
       "unit": "Adet",
@@ -160,7 +160,7 @@
     },
     {
       "name": "Çözelti / Hücre Süspansiyonlarından Grid Üzerine Kriyo Hazırlık*",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 6500,
       "currency": "TRY",
       "unit": "Adet",
@@ -168,8 +168,8 @@
       "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
-      "name": "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
-      "category": "",
+      "name": "12.09 İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 3800,
       "currency": "TRY",
       "unit": "Saat",
@@ -178,7 +178,7 @@
     },
     {
       "name": "Kriyojenik Örnekler İçin İnceleme ve Görüntü Alma**",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 4500,
       "currency": "TRY",
       "unit": "Saat",
@@ -187,7 +187,7 @@
     },
     {
       "name": "Formwar/Karbon Grid Üzerine Çözeltiden Numune Hazırlama",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 1400,
       "currency": "TRY",
       "unit": "Adet",
@@ -196,7 +196,7 @@
     },
     {
       "name": "Biyolojik Dokulardan TEM İçin Numune Hazırlama Eğitimi***",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 4100,
       "currency": "TRY",
       "unit": "Saat",
@@ -205,7 +205,7 @@
     },
     {
       "name": "TEM Cihaz Kullanımı Eğitimi***",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 6500,
       "currency": "TRY",
       "unit": "Saat",
@@ -214,7 +214,7 @@
     },
     {
       "name": "İmmunogold Boyama İçin Numune Hazırlama",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 3250,
       "currency": "TRY",
       "unit": "Adet",
@@ -223,7 +223,7 @@
     },
     {
       "name": "İmmunogold Etiketleme****",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 3250,
       "currency": "TRY",
       "unit": "Adet",
@@ -232,7 +232,7 @@
     },
     {
       "name": "Sertifikalı Eğitim Paketi (Teorik ve Uygulama İçeren) İçin Günlük (8 Saat) Laboratuvar Kullanımı*****",
-      "category": "",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
       "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
