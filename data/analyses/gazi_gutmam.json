@@ -12,7 +12,8 @@
       "category": "GÖRÜNTÜLEME LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Yüzey görüntüsü alma (FE- SEM/EDS/MAPPING)",
@@ -21,7 +22,8 @@
       "category": "GÖRÜNTÜLEME LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "İletken olmayan numuneler için Altın/Palladyum Kaplama",
@@ -30,16 +32,8 @@
       "category": "GÖRÜNTÜLEME LABORATUVARI",
       "notes": "1 set, 6 adet numuneyi içerir.",
       "currency": "TRY",
-      "manual": true
-    },
-    {
-      "name": "",
-      "price": 1000,
-      "unit": "1 set",
-      "category": "GÖRÜNTÜLEME LABORATUVARI",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "STEM Görüntüleme",
@@ -48,7 +42,8 @@
       "category": "GÖRÜNTÜLEME LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Grid Kullanımı",
@@ -57,7 +52,8 @@
       "category": "GÖRÜNTÜLEME LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "1H (Proton)",
@@ -66,7 +62,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "13C (Karbon) – 3 saat",
@@ -75,7 +72,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "13C APT – 3 saat",
@@ -84,7 +82,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "13C DEPT (45,90,135)",
@@ -93,7 +92,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "13C (Karbon) Spektrumuna ek her saat",
@@ -102,7 +102,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "COSY",
@@ -111,7 +112,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HETCOR",
@@ -120,7 +122,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HMBC",
@@ -129,7 +132,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HMQC",
@@ -138,7 +142,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "NOESY",
@@ -147,7 +152,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "NOESY (Metabolomik için)",
@@ -156,7 +162,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Diğer 2D Analizler",
@@ -165,7 +172,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "31P",
@@ -174,7 +182,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "19F",
@@ -183,7 +192,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "11B",
@@ -192,7 +202,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "14N",
@@ -201,7 +212,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HSQC",
@@ -210,7 +222,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Kloroform-d1",
@@ -219,7 +232,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "DMSO-d6",
@@ -228,7 +242,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Deuterium Oxide",
@@ -237,7 +252,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Metanol-d4",
@@ -246,7 +262,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "TFA ilavesi (0,1 ml)",
@@ -255,7 +272,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "D2O ilavesi (0,1 ml)",
@@ -264,7 +282,8 @@
       "category": "NMR LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "\"Çevresel örnekler ve toprakta",
@@ -273,7 +292,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "(Ra-226, Th-232, K-40, Cs- 137)\"",
@@ -282,7 +302,8 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "\"Sularda ve gıdalarda",
@@ -291,7 +312,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "(Cs-137, Cs-134)\"",
@@ -300,7 +322,8 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "\"Yapı malzemeleri, sanayi ürünleri ve hammaddelerinde",
@@ -309,7 +332,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "(Ra-226, Th-232, K-40, Ac-228, Cs-137)\"",
@@ -318,7 +342,8 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Diğer numunelerde (Ra-226, Th-232, K-40, Ac-228, Cs-137, Cs-134, Th-228)",
@@ -327,7 +352,8 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Toprak ve sedimentte Pb-210 ve Cs-137 tarihlendirme",
@@ -336,7 +362,8 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "\"Gama ışını Lineer Azalım Katsayısı (LAC) tespiti",
@@ -345,7 +372,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "(Am-241, Mn-54, Co-57, Co-60 ve Cs-137 kaynakları için)\"",
@@ -354,7 +382,8 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Aynı numune için ilave analiz raporu",
@@ -363,7 +392,8 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Özel amaçlı radyoaktivite analizi**",
@@ -372,7 +402,8 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Yapı malzemeleri için çevre ve insan sağlığı açısından doz değerlendirmesi",
@@ -381,7 +412,8 @@
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "BET Yüzey Alanı Analizi",
@@ -390,7 +422,8 @@
       "category": "Yüzey Alanı ve Gözeneklilik Ölçüm Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Hızlı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
@@ -399,7 +432,8 @@
       "category": "Yüzey Alanı ve Gözeneklilik Ölçüm Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
@@ -408,7 +442,8 @@
       "category": "Yüzey Alanı ve Gözeneklilik Ölçüm Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Mikrogözenek Analizi ve BET Yüzey Alanı Analizi",
@@ -417,7 +452,8 @@
       "category": "Yüzey Alanı ve Gözeneklilik Ölçüm Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "\"Mikrogözenek Analizi ve Detaylı Full İzoterm Analizi",
@@ -426,7 +462,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "(BET Yüzey Alanı analizini kapsar)\"",
@@ -435,7 +472,8 @@
       "category": "Yüzey Alanı ve Gözeneklilik Ölçüm Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Yoğunluk Ölçümü",
@@ -444,7 +482,8 @@
       "category": "Yüzey Alanı ve Gözeneklilik Ölçüm Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRF analizi/Katı numune",
@@ -453,7 +492,8 @@
       "category": "ELEMENTEL ANALİZ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRF analizi/Sıvı numune",
@@ -462,7 +502,8 @@
       "category": "ELEMENTEL ANALİZ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Tek Element",
@@ -471,7 +512,8 @@
       "category": "ELEMENTEL ANALİZ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Mikrodalga yakma",
@@ -480,7 +522,8 @@
       "category": "ELEMENTEL ANALİZ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Ek Element",
@@ -489,7 +532,8 @@
       "category": "ELEMENTEL ANALİZ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Hg",
@@ -498,7 +542,8 @@
       "category": "ELEMENTEL ANALİZ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Se",
@@ -507,7 +552,8 @@
       "category": "ELEMENTEL ANALİZ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "As",
@@ -516,7 +562,8 @@
       "category": "ELEMENTEL ANALİZ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Spektrum Taraması (Absorbans/Transmittans)",
@@ -525,7 +572,8 @@
       "category": "UV-VIS Spektrofotometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Raman Genel Spektrum",
@@ -534,7 +582,8 @@
       "category": "Konfokal Raman Spektrofotometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Raman Haritalama",
@@ -543,7 +592,8 @@
       "category": "Konfokal Raman Spektrofotometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Raman Derinlik Profili",
@@ -552,7 +602,8 @@
       "category": "Konfokal Raman Spektrofotometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "STA 0-1 saat",
@@ -561,7 +612,8 @@
       "category": "Termal Analiz Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "STA 1-2 saat",
@@ -570,7 +622,8 @@
       "category": "Termal Analiz Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "STA 2-3 saat",
@@ -579,7 +632,8 @@
       "category": "Termal Analiz Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "STA 3-4 saat",
@@ -588,7 +642,8 @@
       "category": "Termal Analiz Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "STA 4 saat ve üstü",
@@ -597,7 +652,8 @@
       "category": "Termal Analiz Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Isı Kapasitesi Ölçümü (Cp)",
@@ -606,7 +662,8 @@
       "category": "Termal Analiz Laboratuvarı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Çeneli kırıcı ile kırma",
@@ -615,7 +672,8 @@
       "category": "NUMUNE HAZIRLAMA EKİPMANLARI",
       "notes": "Radyoaktivite analiz talebinde bulunulan kırılmamış,öğütülmemiş numuneler için",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Halkalı öğütücü ile öğütme",
@@ -624,7 +682,8 @@
       "category": "NUMUNE HAZIRLAMA EKİPMANLARI",
       "notes": "Radyoaktivite analiz talebinde bulunulan numune boyutu (<0,1 mm) uygun olmayan numuneler için XRF analiz talebinde bulunulan numune boyutu (<0,1 mm) uygun olmayan numuneler için",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Bilyeli öğütücü ile öğütme",
@@ -633,7 +692,8 @@
       "category": "NUMUNE HAZIRLAMA EKİPMANLARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Presleme",
@@ -642,7 +702,8 @@
       "category": "NUMUNE HAZIRLAMA EKİPMANLARI",
       "notes": "XRF analiz talebinde bulunulan numunelerin hazırlığı için",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Kül Fırın",
@@ -651,7 +712,8 @@
       "category": "NUMUNE HAZIRLAMA EKİPMANLARI",
       "notes": "XRF analiz talebinde bulunulan numunelerin hazırlığı için sıcaklık ve süre belirtiniz",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Etüv",
@@ -660,7 +722,8 @@
       "category": "NUMUNE HAZIRLAMA EKİPMANLARI",
       "notes": "Kurutulması gereken numunelerin hazırlığı için",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "Mikrodalga Yakma Cihazı (Speedwave Entry)",
@@ -669,7 +732,8 @@
       "category": "NUMUNE HAZIRLAMA EKİPMANLARI",
       "notes": "ICP-OES analiz talebinde bulunulan numunelerin hazırlığı için",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     }
   ]
 }
