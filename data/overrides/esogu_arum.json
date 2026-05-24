@@ -9,7 +9,8 @@
       "category": "XRF-X-Işını Floresans",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "35.05 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı**",
@@ -18,7 +19,8 @@
       "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "41.25 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
@@ -27,7 +29,8 @@
       "category": "Sıvı NMR",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "43.06 Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
@@ -36,7 +39,8 @@
       "category": "Katı NMR",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "44.01 FTIR Spektrum Analizi (KBr ile)",
