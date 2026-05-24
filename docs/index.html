@@ -559,7 +559,10 @@ async function loadAll(){
   centers.forEach(function(c){
     var sf=sMap[c.id];
     if(sf&&sf.content&&sf.content.analyses)
-      sf.content.analyses.forEach(function(a,i){a._pid=c.id+'_'+i;});
+      sf.content.analyses.forEach(function(a,i){a._pid=c.id+'_'+i;a._isOv=false;});
+    var ov=ovMap[c.id];
+    if(ov&&ov.content&&ov.content.overrides)
+      ov.content.overrides.forEach(function(a,i){a._pid=c.id+'_ov_'+i;a._isOv=true;});
   });
 
   buildRKW();buildA2C();buildAllCats();buildDLs();
