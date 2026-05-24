@@ -1,0 +1,17 @@
+{
+  "center_id": "esogu_arum",
+  "center_name": "ESOGÜ ARUM",
+  "overrides": [
+    {
+      "name": "XRF Temel Kullanıcı Eğitimi**",
+      "category": "",
+      "price": 15750,
+      "currency": "TRY",
+      "unit": "Gün",
+      "notes": "",
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri",
+      "_pid": "esogu_arum_49",
+      "manual": true
+    }
+  ]
+}
