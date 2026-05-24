@@ -1030,6 +1030,18 @@ function edCell(td,cid,pid,field){
   } else {
     var sf=sMap[cid];
     entry=sf&&sf.content&&sf.content.analyses?sf.content.analyses.find(function(a){return a._pid===pid;}):null;
+    /* Fallback: if not in sMap (e.g. un-stamped override), try ovMap */
+    if(!entry){
+      var ovf2=ovMap[cid];
+      entry=ovf2&&ovf2.content&&ovf2.content.overrides?ovf2.content.overrides.find(function(a){return a._pid===pid||(a.name&&(cid+'__'+a.name)===pid);}):null;
+      if(entry){
+        /* Fix the pid — re-stamp it correctly so future lookups work */
+        var ovArr=ovf2.content.overrides;
+        ovArr.forEach(function(a,i){if(!a._pid||a._pid===pid){a._pid=cid+'_ov_'+i;a._isOv=true;}})
+        /* Update pid in local scope so pE key is correct */
+        pid=entry._pid;
+      }
+    }
   }
   var commit=function(){
     var val=field==='price'?parseFloat(inp.value):inp.value.trim();
@@ -1680,6 +1692,7 @@ async function doApprove(){
   hideModal('apvOv');
   var btn=document.getElementById('apvBtn');
   btn.disabled=true;btn.textContent='⏳ Kaydediliyor...';
+  var writeErrors=[];
   try{
     /* 0. Center edits */
     if(Object.keys(pCE).length){
@@ -1694,6 +1707,12 @@ async function doApprove(){
     var cids=Object.keys(pE).concat(Object.keys(pD).filter(function(k){return!pE[k];})).concat(pOrderArr);
     for(var i=0;i<cids.length;i++){
       var cid=cids[i];var sf=sMap[cid];if(!sf)continue;
+      /* Skip if this center only has override-level edits — handled in section 2a */
+      var hasAnalysisEdit=false;
+      if(pE[cid])Object.keys(pE[cid]).forEach(function(p){if(p.indexOf('_ov_')===-1)hasAnalysisEdit=true;});
+      if(pD[cid])pD[cid].forEach(function(p){if(p.indexOf('_ov_')===-1)hasAnalysisEdit=true;});
+      if(pOrder.has(cid))hasAnalysisEdit=true;
+      if(!hasAnalysisEdit)continue;
       var newA=sf.content.analyses.slice();
       /* Apply only analysis-level edits/deletes (override entries handled separately) */
       if(pE[cid])newA=newA.map(function(a){var p=pE[cid][a._pid];return(p&&a._pid&&a._pid.indexOf('_ov_')===-1)?Object.assign({},a,p):a;});
@@ -1748,6 +1767,8 @@ async function doApprove(){
       var nc2={center_id:acid,center_name:ac?ac.name:acid,overrides:exOv.concat(adds)};
       var wo=await apiWrite('data/overrides/'+acid+'.json',nc2,ex?ex.sha:null,'feat: manuel analiz — '+(ac?ac.name:acid));
       ovMap[acid]={content:nc2,sha:(wo&&wo.content)?wo.content.sha:(ex?ex.sha:null)};
+      /* Stamp _pid so edits to these overrides work in the same session */
+      ovMap[acid].content.overrides.forEach(function(a,i){a._pid=acid+'_ov_'+i;a._isOv=true;});
     }
 
     /* 3. Keyword group structural changes only (renames/deletes/new) */
@@ -1940,6 +1961,8 @@ async function approveCtr(cid){
       var nc2={center_id:cid,center_name:c?c.name:cid,overrides:exOv.concat(pA[cid])};
       var wo=await apiWrite('data/overrides/'+cid+'.json',nc2,ex?ex.sha:null,'feat: manuel analiz — '+(c?c.name:cid));
       ovMap[cid]={content:nc2,sha:(wo&&wo.content)?wo.content.sha:(ex?ex.sha:null)};
+      /* Stamp _pid so edits to these overrides work in the same session */
+      ovMap[cid].content.overrides.forEach(function(a,i){a._pid=cid+'_ov_'+i;a._isOv=true;});
     }
     await triggerMerge((c?c.name:cid)+' analiz güncellemesi');
     delete pE[cid];delete pD[cid];delete pA[cid];if(pCE[cid])delete pCE[cid];
