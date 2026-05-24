@@ -49,25 +49,28 @@
       "category": "FTIR-Fourier Dönüşümlü Kızılötesi Spektrometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "44.02 FTIR Spektrum Analizi (Elmas ATR ile)",
       "price": 675,
       "unit": "Numune",
-      "category": "",
+      "category": "FTIR-Fourier Dönüşümlü Kızılötesi Spektrometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "44.03 FTIR Spektrum Analizi (Germanyum ATR ile)",
       "price": 1050,
       "unit": "Numune",
-      "category": "",
+      "category": "FTIR-Fourier Dönüşümlü Kızılötesi Spektrometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "45.01 UV Spektrum Analizi / Sıvı Numune",
