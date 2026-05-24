@@ -2179,261 +2179,287 @@
       "name": "72.01 LC-MS/MS Kalitatif Analiz",
       "price": 1560,
       "unit": "Numune",
-      "category": "",
+      "category": "Sıvı Kromatografi-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "72.02 LC-MS/MS Kantitatif Analiz",
       "price": 1720,
       "unit": "Numune",
-      "category": "",
+      "category": "Sıvı Kromatografi-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "72.03 LC-MS/MS Kantitatif (İlave Bileşen Başına)",
       "price": 390,
       "unit": "Numune",
-      "category": "",
+      "category": "Sıvı Kromatografi-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "72.04 Numune Hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
       "price": 390,
       "unit": "Numune",
-      "category": "",
+      "category": "Sıvı Kromatografi-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "72.05 Metot Geliştirme",
       "price": 6850,
       "unit": "Numune",
-      "category": "",
+      "category": "Sıvı Kromatografi-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "75.01 GC-Kalitatif Analiz",
       "price": 1150,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografisi",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "75.02 GC-Kantitatif Analiz (Tek Bileşen)",
       "price": 1150,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografisi",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "75.03 GC-Kantitatif Analiz (İlave Her Bir Bileşen)",
       "price": 295,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografisi",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "75.04 GC Metot geliştirme (2 Bileşen)",
       "price": 3900,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografisi",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "75.05 Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
       "price": 390,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografisi",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "76.01 GC/MS-Kalitatif",
       "price": 1150,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.02 GC/MS-Kantitatif (Tek Bileşen)",
       "price": 1150,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.03 GC/MS-Kantitatif (İlave Her Bir Bileşen)",
       "price": 295,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.04 GC/MS Metot Geliştirme (2 Bileşen)",
       "price": 2930,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.05 Katı Faz Mikro Ekstraksiyon (SPME) Uygulamaları (Metot- Adsorban Bildirilmiş İse)",
       "price": 975,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.06 SPME Uygulamaları (Metot Geliştirme, 2 Bileşen)",
       "price": 4875,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.07 Kütle Spektrumu Kütüphane Taraması (Bileşen Başı)",
       "price": 160,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.08 Uçucu Yağ Bileşenleri, % Bağıl Miktarları ile Birlikte (2 Ana Bileşen)",
       "price": 1250,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.09 Yağ asitleri bileşenleri-Kalitatif (Türevlendirme Yapılmış Hazır",
       "price": 1250,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.10 GC-MS Headspace Kalitatif (Tek Bileşen)",
       "price": 1560,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.11 GC-MS Headspace Kantitatif (Tek Bileşen)",
       "price": 1560,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.12 GC-MS Headspace Kalitatif/Kantitatif (Her Bir İlave Bileşen)",
       "price": 195,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.13 Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemler) *",
       "price": 390,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.14 Clevenger yöntemi ile uçucu yağ eldesi:50 gr numuneye kadar",
       "price": 2340,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.15 Soxhlet cihazı ile ekstrasiyon: 20 gr. numuneye kadar",
       "price": 2535,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "76.16 Soxhlet cihazı ile ekstradsiyon ilave her 0-20 gr numune için",
       "price": 1950,
       "unit": "Numune",
-      "category": "",
+      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     }
   ]
 }
