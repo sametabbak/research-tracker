@@ -67,7 +67,7 @@
       "_isOv": false
     },
     {
-      "name": "MSL Kesme",
+      "name": "MSL - Kesme",
       "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 400,
       "currency": "TRY",
@@ -77,7 +77,7 @@
       "_isOv": false
     },
     {
-      "name": "MSL Zımparalama ve Parlatma",
+      "name": "MSL - Zımparalama ve Parlatma",
       "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 600,
       "currency": "TRY",
@@ -87,7 +87,7 @@
       "_isOv": false
     },
     {
-      "name": "MSL Kimyasal Dağlama (Seramik Malzemeler)",
+      "name": "MSL - Kimyasal Dağlama (Seramik Malzemeler)",
       "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 400,
       "currency": "TRY",
@@ -97,7 +97,7 @@
       "_isOv": false
     },
     {
-      "name": "MSL Termal Dağlama",
+      "name": "MSL - Termal Dağlama",
       "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 1500,
       "currency": "TRY",
@@ -107,7 +107,7 @@
       "_isOv": false
     },
     {
-      "name": "Sıcak Kalıplama (Bakalit)",
+      "name": "MSL - Sıcak Kalıplama (Bakalit)",
       "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 300,
       "currency": "TRY",
@@ -117,7 +117,7 @@
       "_isOv": false
     },
     {
-      "name": "Soğuk Kalıplama (Reçine)",
+      "name": "MSL - Soğuk Kalıplama (Reçine)",
       "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 300,
       "currency": "TRY",
@@ -127,7 +127,7 @@
       "_isOv": false
     },
     {
-      "name": "Metal Mikroskobu",
+      "name": "MSL - Metal Mikroskobu",
       "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
       "price": 400,
       "currency": "TRY",
@@ -177,7 +177,7 @@
       "_isOv": false
     },
     {
-      "name": "MAL Kesme",
+      "name": "XRD - Kesme",
       "category": "MİNERALOJİK ANALİZ LABORATUVARI",
       "price": 500,
       "currency": "TRY",
@@ -187,7 +187,7 @@
       "_isOv": false
     },
     {
-      "name": "Kırma, Öğütme",
+      "name": "XRD - Kırma, Öğütme",
       "category": "MİNERALOJİK ANALİZ LABORATUVARI",
       "price": 500,
       "currency": "TRY",
@@ -217,8 +217,8 @@
       "_isOv": false
     },
     {
-      "name": "Yarı Kantitatif Element Analizi",
-      "category": "",
+      "name": "XRF - Yarı Kantitatif Element Analizi",
+      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
       "price": 850,
       "currency": "TRY",
       "unit": "element",
@@ -227,8 +227,8 @@
       "_isOv": false
     },
     {
-      "name": "İz Element Analizi (Pro-Trace Çekim Modu)",
-      "category": "",
+      "name": "XRF - İz Element Analizi (Pro-Trace Çekim Modu)",
+      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
       "price": 2750,
       "currency": "TRY",
       "unit": "element",
@@ -237,8 +237,8 @@
       "_isOv": false
     },
     {
-      "name": "Kızdırma Kaybı",
-      "category": "",
+      "name": "XRF - Kızdırma Kaybı",
+      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
       "price": 400,
       "currency": "TRY",
       "unit": "numune",
@@ -247,8 +247,8 @@
       "_isOv": false
     },
     {
-      "name": "Eritiş İle Numune Hazırlama",
-      "category": "",
+      "name": "XRF - Eritiş İle Numune Hazırlama",
+      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
@@ -257,8 +257,8 @@
       "_isOv": false
     },
     {
-      "name": "Press İle Numune Hazırlama",
-      "category": "",
+      "name": "XRF - Press İle Numune Hazırlama",
+      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
       "price": 400,
       "currency": "TRY",
       "unit": "numune",
@@ -268,7 +268,7 @@
     },
     {
       "name": "Alevli AAS ile ppm (mg/L) seviyesinde analiz (Tek Çekim)",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 750,
       "currency": "TRY",
       "unit": "numune",
@@ -278,7 +278,7 @@
     },
     {
       "name": "Alevli AAS ile ppm (mg/L) seviyesinde analiz (3 Tekrar Çekim)",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -288,7 +288,7 @@
     },
     {
       "name": "Hidrür AAS ile ppb (mg/L) seviyesinde analiz",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -298,7 +298,7 @@
     },
     {
       "name": "Grafit AAS ile ppb (mg/L) seviyesinde analiz",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 1500,
       "currency": "TRY",
       "unit": "numune",
@@ -308,7 +308,7 @@
     },
     {
       "name": "AAS Numune Hazırlama",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 450,
       "currency": "TRY",
       "unit": "numune",
@@ -318,7 +318,7 @@
     },
     {
       "name": "AAS Numune Hazırlama (3 Tekrar)",
-      "category": "",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 1250,
       "currency": "TRY",
       "unit": "numune",
@@ -327,8 +327,8 @@
       "_isOv": false
     },
     {
-      "name": "Saf Su",
-      "category": "",
+      "name": "AAS Saf Su",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 30,
       "currency": "TRY",
       "unit": "numune",
@@ -337,8 +337,8 @@
       "_isOv": false
     },
     {
-      "name": "Ultra Saf Su",
-      "category": "",
+      "name": "AAS Ultra Saf Su",
+      "category": "Atomik Absorpsiyon Spektrofotometresi",
       "price": 50,
       "currency": "TRY",
       "unit": "numune",
