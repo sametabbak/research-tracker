@@ -1774,11 +1774,14 @@ async function doApprove(){
         newOv=newOv.map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;});
         var nco=Object.assign({},ovf.content,{overrides:newOv});
         var oc=centers.find(function(c){return c.id===ok;});
+        console.log('Writing overrides for',ok,'sha:',ovf.sha,'overrides count:',newOv.length);
         var wro=await apiWrite('data/overrides/'+ok+'.json',nco,ovf.sha,'fix: manuel girdi güncellendi — '+(oc?oc.name:ok));
+        console.log('Override write success for',ok,'new sha:',(wro&&wro.content)?wro.content.sha:'(no sha)');
         ovMap[ok]={content:nco,sha:(wro&&wro.content)?wro.content.sha:ovf.sha};
         ovMap[ok].content.overrides.forEach(function(a,i){a._pid=ok+'_ov_'+i;a._isOv=true;});
       }catch(oe){
         var ocn=centers.find(function(c){return c.id===ok;});
+        console.error('Override write error for',ok,':',oe);
         writeErrors.push((ocn?ocn.name:ok)+' override edit: '+oe.message);
       }
     }
@@ -1811,6 +1814,10 @@ async function doApprove(){
     }
 
     /* 4. Merge */
+    if(writeErrors.length){
+      alert('Bazı kayıtlar başarısız oldu:\n'+writeErrors.join('\n')+'\n\nMerge iptal edildi.');
+      btn.textContent='✓ Onayla ve Yayınla';btn.disabled=false;return;
+    }
     btn.textContent='⏳ Yayınlanıyor...';
     await triggerMerge('İnceleme panelinden onaylandı');
 
@@ -1977,7 +1984,9 @@ async function approveCtr(cid){
         if(pD[cid])newOvC=newOvC.filter(function(a){return!(pD[cid].has(a._pid)&&a._pid&&a._pid.indexOf('_ov_')!==-1);});
         newOvC=newOvC.map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;});
         var ncoC=Object.assign({},ovfC.content,{overrides:newOvC});
+        console.log('approveCtr writing overrides for',cid,'sha:',ovfC.sha);
         var wroC=await apiWrite('data/overrides/'+cid+'.json',ncoC,ovfC.sha,'fix: manuel girdi güncellendi — '+(c?c.name:cid));
+        console.log('approveCtr override write success sha:',(wroC&&wroC.content)?wroC.content.sha:'(no sha)');
         ovMap[cid]={content:ncoC,sha:(wroC&&wroC.content)?wroC.content.sha:ovfC.sha};
         ovMap[cid].content.overrides.forEach(function(a,i){a._pid=cid+'_ov_'+i;a._isOv=true;});
       }
