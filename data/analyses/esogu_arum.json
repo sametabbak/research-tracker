@@ -507,7 +507,7 @@
     },
     {
       "name": "ICP-MS 1 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 1150,
       "currency": "TRY",
       "unit": "Numune",
@@ -517,7 +517,7 @@
     },
     {
       "name": "ICP-MS 2-5 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 1350,
       "currency": "TRY",
       "unit": "Numune",
@@ -527,7 +527,7 @@
     },
     {
       "name": "ICP-MS 6-10 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 1650,
       "currency": "TRY",
       "unit": "Numune",
@@ -537,7 +537,7 @@
     },
     {
       "name": "ICP-MS 11-15 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 1900,
       "currency": "TRY",
       "unit": "Numune",
@@ -547,7 +547,7 @@
     },
     {
       "name": "ICP-MS 16-20 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 2150,
       "currency": "TRY",
       "unit": "Numune",
@@ -557,7 +557,7 @@
     },
     {
       "name": "ICP-MS 21-30 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 2625,
       "currency": "TRY",
       "unit": "Numune",
@@ -567,7 +567,7 @@
     },
     {
       "name": "ICP-MS 31-40 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 3150,
       "currency": "TRY",
       "unit": "Numune",
@@ -577,7 +577,7 @@
     },
     {
       "name": "ICP-MS 41-50 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 3690,
       "currency": "TRY",
       "unit": "Numune",
@@ -587,7 +587,7 @@
     },
     {
       "name": "ICP-MS 51 ve üzeri element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 4325,
       "currency": "TRY",
       "unit": "Numune",
@@ -597,7 +597,7 @@
     },
     {
       "name": "ICP-MS 1 Nadir Toprak Elementi Analizi*",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 1200,
       "currency": "TRY",
       "unit": "Numune",
@@ -607,7 +607,7 @@
     },
     {
       "name": "ICP-MS 2-10 Nadir Toprak Elementi Analizi*",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 1690,
       "currency": "TRY",
       "unit": "Numune",
@@ -617,7 +617,7 @@
     },
     {
       "name": "ICP-MS 11-18 Nadir Toprak Elementi Analizi*",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 2220,
       "currency": "TRY",
       "unit": "Numune",
@@ -627,7 +627,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (Nitik asit ile)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 750,
       "currency": "TRY",
       "unit": "Numune",
@@ -637,7 +637,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (Kral Suyu ile)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 865,
       "currency": "TRY",
       "unit": "Numune",
@@ -647,7 +647,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (H2O2 içeren karışım)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 900,
       "currency": "TRY",
       "unit": "Numune",
@@ -657,7 +657,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (HF içeren karışım)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 940,
       "currency": "TRY",
       "unit": "Numune",
@@ -667,7 +667,7 @@
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (Çoklu asit içeren karışım)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 1020,
       "currency": "TRY",
       "unit": "Numune",
@@ -677,7 +677,7 @@
     },
     {
       "name": "Ön Hazırlık (Kırma. Öğütme vb.)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 345,
       "currency": "TRY",
       "unit": "Numune",
@@ -687,7 +687,7 @@
     },
     {
       "name": "Ön Hazırlık (Yakma. Kurutma vb.)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 375,
       "currency": "TRY",
       "unit": "Numune",
@@ -697,7 +697,7 @@
     },
     {
       "name": "Ön Hazırlık (Süzme. Santrifüj vb,)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 280,
       "currency": "TRY",
       "unit": "Numune",
@@ -707,7 +707,7 @@
     },
     {
       "name": "Ön Hazırlık (Açıktan Çözeltiye Alma)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 375,
       "currency": "TRY",
       "unit": "Numune",
@@ -717,7 +717,7 @@
     },
     {
       "name": "35.04 Kızdırma Kaybı",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi",
+      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
       "price": 280,
       "currency": "TRY",
       "unit": "Numune",
