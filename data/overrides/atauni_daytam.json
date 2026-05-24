@@ -10,7 +10,9 @@
       "unit": "numune",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "manual": true
+      "manual": true,
+      "_pid": "atauni_daytam_ov_0",
+      "_isOv": true
     },
     {
       "name": "Örnek Hazırlama (Tam Kütle Tayini, Vial+Çözücü+Pipet Ucu+Ependorf)",
@@ -20,7 +22,9 @@
       "unit": "adet",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "manual": true
+      "manual": true,
+      "_pid": "atauni_daytam_ov_1",
+      "_isOv": true
     },
     {
       "name": "Ekstraksiyon ile Örnek Hazırlama",
@@ -30,7 +34,9 @@
       "unit": "numune",
       "notes": "Daytamla Görüşülecek.",
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "manual": true
+      "manual": true,
+      "_pid": "atauni_daytam_ov_2",
+      "_isOv": true
     },
     {
       "name": "LC MS/MS-01 Örnek Hazırlama (Tam Kütle Tayini, Vial+Çözücü+Pipet Ucu+Ependorf)",
@@ -40,7 +46,9 @@
       "unit": "adet",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "manual": true
+      "manual": true,
+      "_pid": "atauni_daytam_ov_3",
+      "_isOv": true
     },
     {
       "name": "LC MS/MS-13 Ekstraksiyon ile Örnek Hazırlama",
@@ -50,7 +58,9 @@
       "unit": "numune",
       "notes": "Daytamla Görüşülecek.",
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "manual": true
+      "manual": true,
+      "_pid": "atauni_daytam_ov_4",
+      "_isOv": true
     },
     {
       "name": "HPLC-01 Örnek Hazırlama",
@@ -60,6 +70,18 @@
       "unit": "numune",
       "notes": "Daytamla Görüşülecek.",
       "keyword_group": "Kromatografi (HPLC, GC, GPC)",
+      "manual": true,
+      "_pid": "atauni_daytam_ov_5",
+      "_isOv": true
+    },
+    {
+      "name": "GC-MS-02 Ekstraksiyon ile Örnek Hazırlama",
+      "category": "GAZ KROMATOGRAFİSİ-KÜTLE SPEKTROMETRESİ",
+      "price": 0,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": "Daytamla Görüşülecek.",
+      "keyword_group": null,
       "manual": true
     }
   ]
