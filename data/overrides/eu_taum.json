@@ -90,33 +90,6 @@
       "manual": true
     },
     {
-      "name": "X-Işını difraksiyon paterni çekimi (toz numune)",
-      "price": 500,
-      "unit": "Adet",
-      "category": "X-Işını Toz Difraksiyonu (XRD)",
-      "notes": "\"(max. 30",
-      "currency": "TRY",
-      "manual": true
-    },
-    {
-      "name": "X-Işını difraksiyon paterni çekimi (toz numune)",
-      "price": 800,
-      "unit": "Adet",
-      "category": "X-Işını Toz Difraksiyonu (XRD)",
-      "notes": "\"(max. 60",
-      "currency": "TRY",
-      "manual": true
-    },
-    {
-      "name": "X-Işını difraksiyon paterni çekimi (ince film)",
-      "price": 1200,
-      "unit": "Adet",
-      "category": "X-Işını Toz Difraksiyonu (XRD)",
-      "notes": "\"(max. 60",
-      "currency": "TRY",
-      "manual": true
-    },
-    {
       "name": "Mineral analiz",
       "price": 1100,
       "unit": "Adet",
