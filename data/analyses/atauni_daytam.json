@@ -277,7 +277,7 @@
     },
     {
       "name": "Kalitatif Böbrek Taşı Analizi",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 1000,
       "currency": "TRY",
       "unit": "numune",
@@ -287,30 +287,30 @@
     },
     {
       "name": "Kalitatif Analiz (Toz, bulk ve ince film)",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 2000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "XRD (X-Işını Kırınım) Analizleri",
       "_isOv": false
     },
     {
       "name": "XRR (Reflectivity) Analizi",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 6000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "XRR (X-Işını Yansıma) Analizleri",
       "_isOv": false
     },
     {
       "name": "Kalıntı Gerilme Analizi",
-      "category": "",
+      "category": "X-IŞINI KIRINIMI",
       "price": 6000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)",
       "_isOv": false
@@ -327,7 +327,7 @@
     },
     {
       "name": "Katı ve İnce Film Numunelerde Ölçüm",
-      "category": "",
+      "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
       "price": 200,
       "currency": "TRY",
       "unit": "numune",
@@ -337,7 +337,7 @@
     },
     {
       "name": "Sıvı Numunelerde Ölçüm",
-      "category": "",
+      "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
       "price": 300,
       "currency": "TRY",
       "unit": "numune",
@@ -347,7 +347,7 @@
     },
     {
       "name": "Toz Numunelerde Ölçüm",
-      "category": "",
+      "category": "UV-VIS-NIR SPEKTROFOTOMETRE",
       "price": 300,
       "currency": "TRY",
       "unit": "numune",
@@ -377,7 +377,7 @@
     },
     {
       "name": "Parçacık Boyut Analizi",
-      "category": "",
+      "category": "Tane Büyüklüğü ve Zeta Potansiyel",
       "price": 550,
       "currency": "TRY",
       "unit": "numune",
@@ -387,7 +387,7 @@
     },
     {
       "name": "Zeta Potansiyeli Analizi",
-      "category": "",
+      "category": "Tane Büyüklüğü ve Zeta Potansiyel",
       "price": 550,
       "currency": "TRY",
       "unit": "numune",
@@ -397,7 +397,7 @@
     },
     {
       "name": "Molekül ağırlığı tayini (Işık Saçınımı ile)",
-      "category": "",
+      "category": "Tane Büyüklüğü ve Zeta Potansiyel",
       "price": 840,
       "currency": "TRY",
       "unit": "numune",
@@ -437,7 +437,7 @@
     },
     {
       "name": "Temas Açısı Ölçümü",
-      "category": "",
+      "category": "TEMAS AÇISI ÖLÇÜMÜ",
       "price": 230,
       "currency": "TRY",
       "unit": "numune",
@@ -457,7 +457,7 @@
     },
     {
       "name": "Yüzey Gerilimi Analizi",
-      "category": "",
+      "category": "TEMAS AÇISI ÖLÇÜMÜ",
       "price": 700,
       "currency": "TRY",
       "unit": "numune",
@@ -467,7 +467,7 @@
     },
     {
       "name": "Serbest Yüzey Enerjisi Analizi",
-      "category": "",
+      "category": "TEMAS AÇISI ÖLÇÜMÜ",
       "price": 700,
       "currency": "TRY",
       "unit": "numune",
@@ -477,7 +477,7 @@
     },
     {
       "name": "Yüzey Pürüzlülüğü Ölçümü",
-      "category": "",
+      "category": "DOKUNARAK TARAMALI PROFİLOMETRE",
       "price": 400,
       "currency": "TRY",
       "unit": "numune",
@@ -486,31 +486,31 @@
       "_isOv": false
     },
     {
-      "name": "Ölçüm",
-      "category": "",
+      "name": "UV-01 Ölçüm",
+      "category": "UV-VIS SPEKTROFOTOMETRİ",
       "price": 125,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Su Kalitesi ve Çevre Analizleri",
       "_isOv": false
     },
     {
-      "name": "Ölçüm",
-      "category": "",
-      "price": 125,
+      "name": "UV-02 Ölçüm",
+      "category": "UV-VIS SPEKTROFOTOMETRİ",
+      "price": 1250,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "Su Kalitesi ve Çevre Analizleri",
       "_isOv": false
     },
     {
       "name": "Mikrodalga Sistemi İle Numune Hazırlama",
-      "category": "",
+      "category": "İNDÜKTİF OLARAK EŞLEŞTİRİLMİŞ PLAZMA-KÜTLE SPEKTROMETRESİ",
       "price": 450,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "adet",
       "notes": "",
       "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı",
       "_isOv": false
@@ -557,10 +557,10 @@
     },
     {
       "name": "Preparatif HPLC",
-      "category": "",
+      "category": "YÜKSEK BASINÇLI SIVI KROMATOGRAFİSİ",
       "price": 1350,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "Kromatografi (HPLC, GPC)",
       "_isOv": false
@@ -587,7 +587,7 @@
     },
     {
       "name": "Anyon, Katyon Kantitatif Analiz (Tek İyon)",
-      "category": "",
+      "category": "İYON KROMATOGRAFİSİ",
       "price": 800,
       "currency": "TRY",
       "unit": "numune",
@@ -597,7 +597,7 @@
     },
     {
       "name": "Anyon, Katyon Kantitatif Analiz İlave Bileşen",
-      "category": "",
+      "category": "İYON KROMATOGRAFİSİ",
       "price": 125,
       "currency": "TRY",
       "unit": "numune",
@@ -607,7 +607,7 @@
     },
     {
       "name": "Anyon, Katyon Kalitatif Analiz (Tek İyon)",
-      "category": "",
+      "category": "İYON KROMATOGRAFİSİ",
       "price": 450,
       "currency": "TRY",
       "unit": "numune",
@@ -626,8 +626,8 @@
       "_isOv": false
     },
     {
-      "name": "İlave Bileşen)",
-      "category": "",
+      "name": "Anyon, Katyon Kalitatif Analiz (Tek İyon Metot Geliştirme İlave Bileşen)",
+      "category": "İYON KROMATOGRAFİSİ",
       "price": 1000,
       "currency": "TRY",
       "unit": "numune",
