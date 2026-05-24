@@ -192,7 +192,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
   </div>
   <div class="hdr-right">
     <div class="tok bad" id="tokBadge" onclick="openTokModal(null)">🔑 Token gir</div>
-    <button class="btn btn-sec" onclick="loadAll()">↻ Yenile</button>
+    <button class="btn btn-sec" onclick="safeReload()">↻ Yenile</button>
     <button class="btn btn-sec" onclick="showModal('bkpOv')">💾 Yedek</button>
     <button class="btn btn-ok" id="apvBtn" onclick="approve()" disabled>✓ Onayla ve Yayınla</button>
   </div>
@@ -519,6 +519,33 @@ async function stagingDate(){
 }
 
 /* ═══ LOAD ═══════════════════════════════════════════════════════════════════ */
+function hasPending(){
+  var hasE=Object.keys(pE).some(function(k){return Object.keys(pE[k]).length>0;});
+  var hasA=Object.keys(pA).some(function(k){return pA[k].length>0;});
+  var hasD=Object.keys(pD).some(function(k){return pD[k].size>0;});
+  var hasR=Object.keys(pRej).some(function(k){return Object.keys(pRej[k]).length>0;});
+  return hasE||hasA||hasD||hasR||pOrder.size>0;
+}
+
+function safeReload(){
+  if(!hasPending()){loadAll();return;}
+  /* Count pending items for a clear message */
+  var edits=Object.keys(pE).reduce(function(s,k){return s+Object.keys(pE[k]).length;},0);
+  var adds =Object.keys(pA).reduce(function(s,k){return s+pA[k].length;},0);
+  var dels =Object.keys(pD).reduce(function(s,k){return s+pD[k].size;},0);
+  var rejs =Object.keys(pRej).reduce(function(s,k){return s+Object.keys(pRej[k]).length;},0);
+  var parts=[];
+  if(edits)parts.push(edits+' düzenle');
+  if(adds) parts.push(adds+' yeni ekleme');
+  if(dels) parts.push(dels+' silme');
+  if(rejs) parts.push(rejs+' reddetme');
+  var msg='Kaydedilmemiş değişiklikler var: '+parts.join(', ')+'.\n\nYenilenirse bu değişiklikler kaybolur. Devam edilsin mi?';
+
+
+
+  if(confirm(msg))loadAll();
+}
+
 async function loadAll(){
   ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
     document.getElementById(id).innerHTML='<div class="loader"><div class="spin"></div><p style="margin-top:12px">Yükleniyor...</p></div>';
