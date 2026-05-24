@@ -1519,7 +1519,7 @@
     },
     {
       "name": "STA Analizi (25 °C – 900 °C) 1 Saat",
-      "category": "",
+      "category": "STA- Simültane Termal Analizör",
       "price": 1000,
       "currency": "TRY",
       "unit": "Numune",
@@ -1528,7 +1528,7 @@
     },
     {
       "name": "STA Analizi (25 °C – 900 °C) 2 Saat",
-      "category": "",
+      "category": "STA- Simültane Termal Analizör",
       "price": 1250,
       "currency": "TRY",
       "unit": "Numune",
@@ -1537,7 +1537,7 @@
     },
     {
       "name": "STA Analizi (25 °C – 900 °C) 3 Saat",
-      "category": "",
+      "category": "STA- Simültane Termal Analizör",
       "price": 1470,
       "currency": "TRY",
       "unit": "Numune",
@@ -1546,7 +1546,7 @@
     },
     {
       "name": "STA Analizi (25 °C – 900 °C) 3-7 Saat",
-      "category": "",
+      "category": "STA- Simültane Termal Analizör",
       "price": 2025,
       "currency": "TRY",
       "unit": "Numune",
@@ -1555,7 +1555,7 @@
     },
     {
       "name": "STA Analizi (25 °C – 900 °C) 7-14 Saat",
-      "category": "",
+      "category": "STA- Simültane Termal Analizör",
       "price": 4050,
       "currency": "TRY",
       "unit": "Numune",
@@ -1564,7 +1564,7 @@
     },
     {
       "name": "HPLC-Kantitatif: Tek Bileşen (Metot Bildirilmişse)",
-      "category": "",
+      "category": "Yüksek Basınçlı Sıvı Kromatografi",
       "price": 1365,
       "currency": "TRY",
       "unit": "Numune",
@@ -1573,7 +1573,7 @@
     },
     {
       "name": "HPLC- Kantitatif: İki veya Daha Fazla Bileşenli Numunelerde Her Bir Ek Bileşen Başına",
-      "category": "",
+      "category": "Yüksek Basınçlı Sıvı Kromatografi",
       "price": 300,
       "currency": "TRY",
       "unit": "Numune",
@@ -1582,7 +1582,7 @@
     },
     {
       "name": "HPLC-Kalitatif: Tek Bileşen (Metot Bildirilmişse)",
-      "category": "",
+      "category": "Yüksek Basınçlı Sıvı Kromatografi",
       "price": 1170,
       "currency": "TRY",
       "unit": "Numune",
@@ -1591,7 +1591,7 @@
     },
     {
       "name": "HPLC-Kalitatif: İki veya Daha Fazla Bileşenli Numunelerde Her Bir Ek Bileşen Başına",
-      "category": "",
+      "category": "Yüksek Basınçlı Sıvı Kromatografi",
       "price": 200,
       "currency": "TRY",
       "unit": "Numune",
@@ -1600,7 +1600,7 @@
     },
     {
       "name": "HPLC-Metot geliştirme (2 bileşen)",
-      "category": "",
+      "category": "Yüksek Basınçlı Sıvı Kromatografi",
       "price": 5850,
       "currency": "TRY",
       "unit": "Numune",
@@ -1609,7 +1609,7 @@
     },
     {
       "name": "HPLC-Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
-      "category": "",
+      "category": "Yüksek Basınçlı Sıvı Kromatografi",
       "price": 390,
       "currency": "TRY",
       "unit": "Numune",
@@ -1618,7 +1618,7 @@
     },
     {
       "name": "Uyuşturucu Madde Analizi İçin Mikroskobik İnceleme ve Raporlanması",
-      "category": "",
+      "category": "Yasaklı Madde Analizi",
       "price": 5600,
       "currency": "TRY",
       "unit": "Numune",
@@ -1627,7 +1627,7 @@
     },
     {
       "name": "Uyuşturucu ve Uyarıcı Madde Analizi (LC-MS veya GC-MS ile) Ve Raporlama",
-      "category": "",
+      "category": "Yasaklı Madde Analizi",
       "price": 6300,
       "currency": "TRY",
       "unit": "Numune",
@@ -1636,7 +1636,7 @@
     },
     {
       "name": "Alkol Analizleri ve Raporlanması",
-      "category": "",
+      "category": "Yasaklı Madde Analizi",
       "price": 2500,
       "currency": "TRY",
       "unit": "Numune",
@@ -1645,7 +1645,7 @@
     },
     {
       "name": "Sıvı Azot",
-      "category": "",
+      "category": "Sıvı Azot ve Saf Su",
       "price": 225,
       "currency": "TRY",
       "unit": "Litre",
@@ -1654,7 +1654,7 @@
     },
     {
       "name": "Analiz Sonucunun Yorumlanması ve Rapor Oluşturulması",
-      "category": "",
+      "category": "Raporlama",
       "price": 15000,
       "currency": "TRY",
       "unit": "Adet",
