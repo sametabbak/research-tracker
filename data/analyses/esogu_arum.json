@@ -655,7 +655,7 @@
     },
     {
       "name": "1H (Proton) NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 780,
       "currency": "TRY",
       "unit": "Adet",
@@ -664,7 +664,7 @@
     },
     {
       "name": "13C (Karbon) NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 975,
       "currency": "TRY",
       "unit": "Adet",
@@ -673,7 +673,7 @@
     },
     {
       "name": "13C APT NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 975,
       "currency": "TRY",
       "unit": "Adet",
@@ -682,7 +682,7 @@
     },
     {
       "name": "13C DEPT (45,90,135) NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 975,
       "currency": "TRY",
       "unit": "Adet",
@@ -691,7 +691,7 @@
     },
     {
       "name": "COSY NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 1170,
       "currency": "TRY",
       "unit": "Adet",
@@ -700,7 +700,7 @@
     },
     {
       "name": "HETCOR NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 1170,
       "currency": "TRY",
       "unit": "Adet",
@@ -709,7 +709,7 @@
     },
     {
       "name": "HMBC NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 1170,
       "currency": "TRY",
       "unit": "Adet",
@@ -718,7 +718,7 @@
     },
     {
       "name": "HMQC NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 1170,
       "currency": "TRY",
       "unit": "Adet",
@@ -727,7 +727,7 @@
     },
     {
       "name": "NOESY NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 1170,
       "currency": "TRY",
       "unit": "Adet",
@@ -736,7 +736,7 @@
     },
     {
       "name": "31P NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 1170,
       "currency": "TRY",
       "unit": "Adet",
@@ -745,7 +745,7 @@
     },
     {
       "name": "19F NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 880,
       "currency": "TRY",
       "unit": "Adet",
@@ -754,7 +754,7 @@
     },
     {
       "name": "11B NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 1250,
       "currency": "TRY",
       "unit": "Adet",
@@ -763,7 +763,7 @@
     },
     {
       "name": "Sıcaklık Deneyleri",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 975,
       "currency": "TRY",
       "unit": "Adet",
@@ -772,7 +772,7 @@
     },
     {
       "name": "TOCSY NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 1465,
       "currency": "TRY",
       "unit": "Adet",
@@ -781,7 +781,7 @@
     },
     {
       "name": "15N NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 2925,
       "currency": "TRY",
       "unit": "Adet",
@@ -790,7 +790,7 @@
     },
     {
       "name": "Si NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 1465,
       "currency": "TRY",
       "unit": "Adet",
@@ -799,7 +799,7 @@
     },
     {
       "name": "NOE NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 1950,
       "currency": "TRY",
       "unit": "Adet",
@@ -808,7 +808,7 @@
     },
     {
       "name": "Water-Gated NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 3420,
       "currency": "TRY",
       "unit": "Adet",
@@ -817,7 +817,7 @@
     },
     {
       "name": "HSQC NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 975,
       "currency": "TRY",
       "unit": "Adet",
@@ -826,7 +826,7 @@
     },
     {
       "name": "INADEQUATE NMR Analizi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 1465,
       "currency": "TRY",
       "unit": "Adet",
@@ -835,7 +835,7 @@
     },
     {
       "name": "Relaxation Time Ölçümleri",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 1465,
       "currency": "TRY",
       "unit": "Adet",
@@ -844,7 +844,7 @@
     },
     {
       "name": "Sıvı NMR Temel Kullanıcı Eğitimi",
-      "category": "",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 9750,
       "currency": "TRY",
       "unit": "Gün",
@@ -852,8 +852,8 @@
       "keyword_group": "NMR Analizleri"
     },
     {
-      "name": "Dötoro Çözücü",
-      "category": "",
+      "name": "41.24 Dötoro Çözücü",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 295,
       "currency": "TRY",
       "unit": "Adet",
@@ -861,8 +861,8 @@
       "keyword_group": "NMR Analizleri"
     },
     {
-      "name": "Tüp",
-      "category": "",
+      "name": "41.26 Tüp",
+      "category": "SPEKTROSKOPİ ANALİZ BİRİMİ",
       "price": 100,
       "currency": "TRY",
       "unit": "Adet",
@@ -871,7 +871,7 @@
     },
     {
       "name": "Al NMR Analizi 4 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 3375,
       "currency": "TRY",
       "unit": "Numune",
@@ -880,7 +880,7 @@
     },
     {
       "name": "Al NMR Analizi 8 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 4050,
       "currency": "TRY",
       "unit": "Numune",
@@ -889,7 +889,7 @@
     },
     {
       "name": "Al NMR Analizi 16 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 4500,
       "currency": "TRY",
       "unit": "Numune",
@@ -898,7 +898,7 @@
     },
     {
       "name": "Al NMR Analizi 27 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 5625,
       "currency": "TRY",
       "unit": "Numune",
@@ -907,7 +907,7 @@
     },
     {
       "name": "13C CP MAS NMR Analizi 4 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 3375,
       "currency": "TRY",
       "unit": "Numune",
@@ -916,7 +916,7 @@
     },
     {
       "name": "13C CP MAS NMR Analizi 8 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 4050,
       "currency": "TRY",
       "unit": "Numune",
@@ -925,7 +925,7 @@
     },
     {
       "name": "13C CP MAS NMR Analizi 16 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 4500,
       "currency": "TRY",
       "unit": "Numune",
@@ -934,7 +934,7 @@
     },
     {
       "name": "13C CP MAS NMR Analizi 27 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 5625,
       "currency": "TRY",
       "unit": "Numune",
@@ -943,7 +943,7 @@
     },
     {
       "name": "1H NMR Analizi",
-      "category": "",
+      "category": "Katı NMR",
       "price": 1800,
       "currency": "TRY",
       "unit": "Numune",
@@ -952,7 +952,7 @@
     },
     {
       "name": "11B NMR Analizi 4 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 3375,
       "currency": "TRY",
       "unit": "Numune",
@@ -961,7 +961,7 @@
     },
     {
       "name": "11B NMR Analizi 8 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 4050,
       "currency": "TRY",
       "unit": "Numune",
@@ -970,7 +970,7 @@
     },
     {
       "name": "11B NMR Analizi 16 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 4500,
       "currency": "TRY",
       "unit": "Numune",
@@ -979,7 +979,7 @@
     },
     {
       "name": "11B NMR Analizi 27 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 5625,
       "currency": "TRY",
       "unit": "Numune",
@@ -988,7 +988,7 @@
     },
     {
       "name": "15N NMR Analizi 4 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 4815,
       "currency": "TRY",
       "unit": "Numune",
@@ -997,7 +997,7 @@
     },
     {
       "name": "15N NMR Analizi 8 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 5355,
       "currency": "TRY",
       "unit": "Numune",
@@ -1006,7 +1006,7 @@
     },
     {
       "name": "15N NMR Analizi 16 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 6188,
       "currency": "TRY",
       "unit": "Numune",
@@ -1015,7 +1015,7 @@
     },
     {
       "name": "15N NMR Analizi 27 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 7315,
       "currency": "TRY",
       "unit": "Numune",
@@ -1024,7 +1024,7 @@
     },
     {
       "name": "HETCOR NMR Analizi 4 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 3375,
       "currency": "TRY",
       "unit": "Numune",
@@ -1033,7 +1033,7 @@
     },
     {
       "name": "HETCOR NMR Analizi 8 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 4050,
       "currency": "TRY",
       "unit": "Numune",
@@ -1042,7 +1042,7 @@
     },
     {
       "name": "HETCOR NMR Analizi 16 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 4500,
       "currency": "TRY",
       "unit": "Numune",
@@ -1051,7 +1051,7 @@
     },
     {
       "name": "HETCOR NMR Analizi 27 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 5625,
       "currency": "TRY",
       "unit": "Numune",
@@ -1060,7 +1060,7 @@
     },
     {
       "name": "Sıcaklık Deneyleri",
-      "category": "",
+      "category": "Katı NMR",
       "price": 975,
       "currency": "TRY",
       "unit": "Numune",
@@ -1069,7 +1069,7 @@
     },
     {
       "name": "19F NMR Analizi",
-      "category": "",
+      "category": "Katı NMR",
       "price": 880,
       "currency": "TRY",
       "unit": "Numune",
@@ -1078,7 +1078,7 @@
     },
     {
       "name": "31P NMR Analizi 4 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 3375,
       "currency": "TRY",
       "unit": "Numune",
@@ -1087,7 +1087,7 @@
     },
     {
       "name": "31P NMR Analizi 8 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 4050,
       "currency": "TRY",
       "unit": "Numune",
@@ -1096,7 +1096,7 @@
     },
     {
       "name": "31P NMR Analizi 16 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 4500,
       "currency": "TRY",
       "unit": "Numune",
@@ -1105,7 +1105,7 @@
     },
     {
       "name": "31P NMR Analizi 27 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 5625,
       "currency": "TRY",
       "unit": "Numune",
@@ -1114,7 +1114,7 @@
     },
     {
       "name": "Katı NMR Temel Kullanıcı Eğitimi",
-      "category": "",
+      "category": "Katı NMR",
       "price": 16875,
       "currency": "TRY",
       "unit": "Gün",
@@ -1122,8 +1122,8 @@
       "keyword_group": "NMR Analizleri"
     },
     {
-      "name": "Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
-      "category": "",
+      "name": "42.12 Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
+      "category": "Katı NMR",
       "price": 14000,
       "currency": "TRY",
       "unit": "Gün",
@@ -1132,7 +1132,7 @@
     },
     {
       "name": "Si NMR Analizi 4 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 3750,
       "currency": "TRY",
       "unit": "Numune",
@@ -1141,7 +1141,7 @@
     },
     {
       "name": "Si NMR Analizi 8 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 4500,
       "currency": "TRY",
       "unit": "Numune",
@@ -1150,7 +1150,7 @@
     },
     {
       "name": "Si NMR Analizi 16 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 5250,
       "currency": "TRY",
       "unit": "Numune",
@@ -1159,7 +1159,7 @@
     },
     {
       "name": "Si NMR Analizi 27 Saat",
-      "category": "",
+      "category": "Katı NMR",
       "price": 6750,
       "currency": "TRY",
       "unit": "Numune",
