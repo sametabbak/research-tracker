@@ -10,9 +10,7 @@
       "unit": "numune",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "manual": true,
-      "_pid": "atauni_daytam_ov_0",
-      "_isOv": true
+      "manual": true
     },
     {
       "name": "Örnek Hazırlama (Tam Kütle Tayini, Vial+Çözücü+Pipet Ucu+Ependorf)",
