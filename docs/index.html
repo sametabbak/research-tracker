@@ -187,12 +187,12 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 <!-- HEADER -->
 <div class="hdr">
   <div>
-    <h1>🔬 Analiz Bul — İnceleme Paneli</h1>
+    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:12px;font-weight:400;color:var(--muted);vertical-align:middle;"></span></h1>
     <div class="hdr-meta" id="hdrMeta">Yükleniyor...</div>
   </div>
   <div class="hdr-right">
     <div class="tok bad" id="tokBadge" onclick="openTokModal(null)">🔑 Token gir</div>
-    <button class="btn btn-sec" onclick="safeReload()">↻ Yenile</button>
+    <span style="font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums;border:1px solid var(--border);border-radius:4px;padding:2px 7px;background:var(--bg);">v2.5</span><button class="btn btn-sec" onclick="safeReload()">↻ Yenile</button>
     <button class="btn btn-sec" onclick="showModal('bkpOv')">💾 Yedek</button>
     <button class="btn btn-ok" id="apvBtn" onclick="approve()" disabled>✓ Onayla ve Yayınla</button>
   </div>
@@ -443,6 +443,16 @@ var stagOk=false,chgFilter='all';
 var colState={},sortCfg={},selRows={};
 var pE={},pA={},pD={},pCE={};             /* pending: edits, adds, deletes, center edits */
 var pRej={};  /* pending rejections: {cid:{name:type}} */
+var PANEL_VERSION='v2025.05';  /* bump when deploying updates */
+
+/* Fetch with a 15-second abort timeout — prevents indefinite spinner */
+function fetchT(url,opts){
+  var ctrl=new AbortController();
+  var id=setTimeout(function(){ctrl.abort();},15000);
+  return fetch(url,Object.assign({},opts||{},{signal:ctrl.signal}))
+    .then(function(r){clearTimeout(id);return r;})
+    .catch(function(e){clearTimeout(id);throw e;});
+}
 var pOrder=new Set(),pOrderSnap={};  /* pending order changes + undo snapshots */
 var pKwR=[],pKwDel=[],pKwNew=[];
 var fCat='',fKwg='';  /* active catalog filters */          /* pending kw renames/deletes/new */
@@ -480,11 +490,11 @@ updTokBadge();
 function gh(){var h={'Accept':'application/vnd.github.v3+json'};if(tok)h['Authorization']='token '+tok;return h;}
 
 async function rawRead(branch,path){
-  var r=await fetch('https://raw.githubusercontent.com/'+REPO+'/'+branch+'/'+path+'?t='+Date.now());
+  var r=await fetchT('https://raw.githubusercontent.com/'+REPO+'/'+branch+'/'+path+'?t='+Date.now());
   return r.ok?r.json():null;
 }
 async function apiRead(branch,path){
-  var r=await fetch('https://api.github.com/repos/'+REPO+'/contents/'+path+'?ref='+branch,
+  var r=await fetchT('https://api.github.com/repos/'+REPO+'/contents/'+path+'?ref='+branch,
     {headers:gh(),cache:'no-store'});
   if(!r.ok)return null;
   var d=await r.json();
@@ -512,7 +522,7 @@ async function triggerMerge(note){
   if(r.status!==204){var e=await r.json().catch(function(){return{};});throw new Error(e.message||'HTTP '+r.status);}
 }
 async function stagingDate(){
-  var r=await fetch('https://api.github.com/repos/'+REPO+'/branches/'+STAGING,{headers:gh()});
+  var r=await fetchT('https://api.github.com/repos/'+REPO+'/branches/'+STAGING,{headers:gh()});
   if(!r.ok)return null;
   var d=await r.json();
   return d&&d.commit&&d.commit.commit&&d.commit.commit.committer?d.commit.commit.committer.date:null;
@@ -551,10 +561,19 @@ async function loadAll(){
     document.getElementById(id).innerHTML='<div class="loader"><div class="spin"></div><p style="margin-top:12px">Yükleniyor...</p></div>';
   });
   document.getElementById('apvBtn').disabled=true;
+  /* Show retry button if loading takes > 20s */
+  var loadGuard=setTimeout(function(){
+    ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(el&&el.querySelector('.spin'))
+        el.innerHTML='<div class="warn-box">Yükleme zaman aşımına uğradı.'
+          +'<button class="btn btn-sec" style="margin-left:8px" onclick="safeReload()">↻ Tekrar Dene</button></div>';
+    });
+  },20000);
   sMap={};mMap={};ovMap={};pE={};pA={};pD={};pCE={};pKwR=[];pKwDel=[];pKwNew=[];pRej={};pOrder=new Set();pOrderSnap={};selRows={};colState={};a2c={};
 
   var misc=await Promise.all([
-    rawRead(MAIN,'data/centers.json'),
+    rawRead(MAIN,'data/centers.json').catch(function(){return null;}),
     rawRead(MAIN,'data/keywords.json').catch(function(){return null;}),
     stagingDate().catch(function(){return null;}),
     apiRead(MAIN,'data/centers.json').catch(function(){return null;})
@@ -566,11 +585,17 @@ async function loadAll(){
   var sd=misc[2];
   document.getElementById('hdrMeta').textContent=sd?'staging son güncelleme: '+new Date(sd).toLocaleString('tr-TR'):'tarih alınamadı';
   document.getElementById('hdrMeta').style.color='';
-  if(!centers.length){document.getElementById('changesContent').innerHTML='<div class="warn-box">centers.json okunamadı.</div>';return;}
+  if(!centers.length){
+    ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
+      document.getElementById(id).innerHTML='<div class="warn-box">centers.json okunamadı veya boş.</div>';
+    });
+    return;
+  }
 
   var ids=centers.map(function(c){return c.id;});
+  try{
   var res=await Promise.all([
-    Promise.all(ids.map(function(id){return apiRead(STAGING,'data/analyses/'+id+'.json').then(function(r){return[id,r];});})),
+    Promise.all(ids.map(function(id){return apiRead(STAGING,'data/analyses/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});})),
     Promise.all(ids.map(function(id){return apiRead(MAIN,'data/analyses/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});})),
     Promise.all(ids.map(function(id){return apiRead(STAGING,'data/overrides/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});})),
     apiRead(STAGING,'data/keywords.json').catch(function(){return null;})
@@ -594,8 +619,22 @@ async function loadAll(){
 
   buildRKW();buildA2C();buildAllCats();buildDLs();
   updSum();renderChanges();renderCatalog();renderOverride();renderClassify();
+  clearTimeout(loadGuard);
+  var vEl=document.getElementById('panelVer');
+  if(vEl)vEl.textContent=PANEL_VERSION;
+  document.getElementById('hdrMeta').title='Panel sürümü: '+PANEL_VERSION;
   updApvBtn();collapseAll();
   window.scrollTo({top:0,behavior:'instant'});
+  }catch(loadErr){
+    console.error('loadAll error:',loadErr);
+    var errHtml='<div class="warn-box">Yükleme hatası: '+loadErr.message+'<br>'
+      +'<button class="btn btn-sec" style="margin-top:8px" onclick="safeReload()">↻ Tekrar Dene</button></div>';
+    clearTimeout(loadGuard);
+    ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(el&&el.querySelector('.spin'))el.innerHTML=errHtml;
+    });
+  }
 }
 
 /* ─── Build helpers ─────────────────────────────────────────────────────── */
