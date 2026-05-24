@@ -677,30 +677,30 @@
     },
     {
       "name": "Hücre Kültürü Laboratuvarı Kullanımı",
-      "category": "",
+      "category": "HÜCRE KÜLTÜRÜ ANALİZLERİ",
       "price": 650,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "günlük",
       "notes": "",
       "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
       "_isOv": false
     },
     {
       "name": "Hücre açma, çoğaltma, stoklama (20 gün)",
-      "category": "",
+      "category": "HÜCRE KÜLTÜRÜ ANALİZLERİ",
       "price": 4500,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "Vial / Flask",
       "notes": "",
       "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
       "_isOv": false
     },
     {
       "name": "MTT ile Sitotoksisite testleri: Tek tip hücre ile 1 örnek için 1 plaka başına 7 konsantrasyon (dilüsyon) - 1 Kontrol için (tek saat dilimi, 24 veya 48 veya 72 saatlik)",
-      "category": "",
+      "category": "HÜCRE KÜLTÜRÜ ANALİZLERİ",
       "price": 4000,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "örnek",
       "notes": "",
       "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
       "_isOv": false
@@ -710,7 +710,7 @@
       "category": "HÜCRE KÜLTÜRÜ ANALİZLERİ",
       "price": 6000,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "örnek",
       "notes": "",
       "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
       "_isOv": false
@@ -720,7 +720,7 @@
       "category": "HÜCRE KÜLTÜRÜ ANALİZLERİ",
       "price": 7500,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "örnek",
       "notes": "",
       "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
       "_isOv": false
@@ -737,32 +737,32 @@
     },
     {
       "name": "Annexin-PI ile apoptoz-nekroz hücre analizi (Annexin V-",
-      "category": "",
+      "category": "Akan Hücre Ölçer",
       "price": 350,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "Tüp",
       "notes": "",
       "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
       "_isOv": false
     },
     {
       "name": "Beckman Coulter Cytoflex cihaz konfigurasyonuna uygun",
-      "category": "",
+      "category": "Akan Hücre Ölçer",
       "price": 9000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "örnek",
       "notes": "",
       "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
       "_isOv": false
     },
     {
-      "name": "Flow sonuçlarının analizi ve yorumlanması Analiz",
-      "category": "",
+      "name": "Flow sonuçlarının analizi ve yorumlanması",
+      "category": "Akan Hücre Ölçer",
       "price": 9000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "analiz",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
       "_isOv": false
     },
     {
@@ -966,31 +966,31 @@
       "_isOv": false
     },
     {
-      "name": "Ultrasantrifüj Kullanımı Tek Kullanım",
-      "category": "",
+      "name": "Ultrasantrifüj Kullanımı",
+      "category": "ÖRNEK HAZIRLAMA",
       "price": 550,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "Tek Kullanım",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama",
       "_isOv": false
     },
     {
-      "name": "Bilyeli homojenizatör Tek Kullanım",
-      "category": "",
+      "name": "Bilyeli Homojenizatör",
+      "category": "ÖRNEK HAZIRLAMA",
       "price": 900,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "Tek Kullanım",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama",
       "_isOv": false
     },
     {
       "name": "Ultrasonik homojenizatör",
-      "category": "",
+      "category": "ÖRNEK HAZIRLAMA",
       "price": 400,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "örnek",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama",
       "_isOv": false
@@ -1267,8 +1267,8 @@
     },
     {
       "name": "WD-01 İşlem",
-      "category": "",
-      "price": 700,
+      "category": "HASSAS DİLİMLEME",
+      "price": 1000,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -1380,7 +1380,8 @@
       "unit": "numune",
       "notes": "Daytamla Görüşülecek.",
       "keyword_group": "Kromatografi (HPLC, GC, GPC)",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     }
   ]
 }
