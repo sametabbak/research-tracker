@@ -187,12 +187,12 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 <!-- HEADER -->
 <div class="hdr">
   <div>
-    <h1>🔬 Analiz Bul — İnceleme Paneli</h1>
+    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:12px;font-weight:400;color:var(--muted);vertical-align:middle;"></span></h1>
     <div class="hdr-meta" id="hdrMeta">Yükleniyor...</div>
   </div>
   <div class="hdr-right">
     <div class="tok bad" id="tokBadge" onclick="openTokModal(null)">🔑 Token gir</div>
-    <button class="btn btn-sec" onclick="safeReload()">↻ Yenile</button>
+    <span style="font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums;border:1px solid var(--border);border-radius:4px;padding:2px 7px;background:var(--bg);">v2.5</span><button class="btn btn-sec" onclick="safeReload()">↻ Yenile</button>
     <button class="btn btn-sec" onclick="showModal('bkpOv')">💾 Yedek</button>
     <button class="btn btn-ok" id="apvBtn" onclick="approve()" disabled>✓ Onayla ve Yayınla</button>
   </div>
@@ -443,6 +443,16 @@ var stagOk=false,chgFilter='all';
 var colState={},sortCfg={},selRows={};
 var pE={},pA={},pD={},pCE={};             /* pending: edits, adds, deletes, center edits */
 var pRej={};  /* pending rejections: {cid:{name:type}} */
+var PANEL_VERSION='v2025.05';  /* bump when deploying updates */
+
+/* Fetch with a 15-second abort timeout — prevents indefinite spinner */
+function fetchT(url,opts){
+  var ctrl=new AbortController();
+  var id=setTimeout(function(){ctrl.abort();},15000);
+  return fetch(url,Object.assign({},opts||{},{signal:ctrl.signal}))
+    .then(function(r){clearTimeout(id);return r;})
+    .catch(function(e){clearTimeout(id);throw e;});
+}
 var pOrder=new Set(),pOrderSnap={};  /* pending order changes + undo snapshots */
 var pKwR=[],pKwDel=[],pKwNew=[];
 var fCat='',fKwg='';  /* active catalog filters */          /* pending kw renames/deletes/new */
@@ -480,11 +490,11 @@ updTokBadge();
 function gh(){var h={'Accept':'application/vnd.github.v3+json'};if(tok)h['Authorization']='token '+tok;return h;}
 
 async function rawRead(branch,path){
-  var r=await fetch('https://raw.githubusercontent.com/'+REPO+'/'+branch+'/'+path+'?t='+Date.now());
+  var r=await fetchT('https://raw.githubusercontent.com/'+REPO+'/'+branch+'/'+path+'?t='+Date.now());
   return r.ok?r.json():null;
 }
 async function apiRead(branch,path){
-  var r=await fetch('https://api.github.com/repos/'+REPO+'/contents/'+path+'?ref='+branch,
+  var r=await fetchT('https://api.github.com/repos/'+REPO+'/contents/'+path+'?ref='+branch,
     {headers:gh(),cache:'no-store'});
   if(!r.ok)return null;
   var d=await r.json();
@@ -512,7 +522,7 @@ async function triggerMerge(note){
   if(r.status!==204){var e=await r.json().catch(function(){return{};});throw new Error(e.message||'HTTP '+r.status);}
 }
 async function stagingDate(){
-  var r=await fetch('https://api.github.com/repos/'+REPO+'/branches/'+STAGING,{headers:gh()});
+  var r=await fetchT('https://api.github.com/repos/'+REPO+'/branches/'+STAGING,{headers:gh()});
   if(!r.ok)return null;
   var d=await r.json();
   return d&&d.commit&&d.commit.commit&&d.commit.commit.committer?d.commit.commit.committer.date:null;
@@ -551,10 +561,19 @@ async function loadAll(){
     document.getElementById(id).innerHTML='<div class="loader"><div class="spin"></div><p style="margin-top:12px">Yükleniyor...</p></div>';
   });
   document.getElementById('apvBtn').disabled=true;
+  /* Show retry button if loading takes > 20s */
+  var loadGuard=setTimeout(function(){
+    ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(el&&el.querySelector('.spin'))
+        el.innerHTML='<div class="warn-box">Yükleme zaman aşımına uğradı.'
+          +'<button class="btn btn-sec" style="margin-left:8px" onclick="safeReload()">↻ Tekrar Dene</button></div>';
+    });
+  },20000);
   sMap={};mMap={};ovMap={};pE={};pA={};pD={};pCE={};pKwR=[];pKwDel=[];pKwNew=[];pRej={};pOrder=new Set();pOrderSnap={};selRows={};colState={};a2c={};
 
   var misc=await Promise.all([
-    rawRead(MAIN,'data/centers.json'),
+    rawRead(MAIN,'data/centers.json').catch(function(){return null;}),
     rawRead(MAIN,'data/keywords.json').catch(function(){return null;}),
     stagingDate().catch(function(){return null;}),
     apiRead(MAIN,'data/centers.json').catch(function(){return null;})
@@ -566,11 +585,17 @@ async function loadAll(){
   var sd=misc[2];
   document.getElementById('hdrMeta').textContent=sd?'staging son güncelleme: '+new Date(sd).toLocaleString('tr-TR'):'tarih alınamadı';
   document.getElementById('hdrMeta').style.color='';
-  if(!centers.length){document.getElementById('changesContent').innerHTML='<div class="warn-box">centers.json okunamadı.</div>';return;}
+  if(!centers.length){
+    ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
+      document.getElementById(id).innerHTML='<div class="warn-box">centers.json okunamadı veya boş.</div>';
+    });
+    return;
+  }
 
   var ids=centers.map(function(c){return c.id;});
+  try{
   var res=await Promise.all([
-    Promise.all(ids.map(function(id){return apiRead(STAGING,'data/analyses/'+id+'.json').then(function(r){return[id,r];});})),
+    Promise.all(ids.map(function(id){return apiRead(STAGING,'data/analyses/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});})),
     Promise.all(ids.map(function(id){return apiRead(MAIN,'data/analyses/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});})),
     Promise.all(ids.map(function(id){return apiRead(STAGING,'data/overrides/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});})),
     apiRead(STAGING,'data/keywords.json').catch(function(){return null;})
@@ -594,8 +619,24 @@ async function loadAll(){
 
   buildRKW();buildA2C();buildAllCats();buildDLs();
   updSum();renderChanges();renderCatalog();renderOverride();renderClassify();
-  updApvBtn();collapseAll();
+  clearTimeout(loadGuard);
+  var vEl=document.getElementById('panelVer');
+  if(vEl)vEl.textContent=PANEL_VERSION;
+  document.getElementById('hdrMeta').title='Panel sürümü: '+PANEL_VERSION;
+  updApvBtn();
+  /* Leave sections open on first load so data is immediately visible.
+     collapseAll() is still available for manual use. */
   window.scrollTo({top:0,behavior:'instant'});
+  }catch(loadErr){
+    console.error('loadAll error:',loadErr);
+    var errHtml='<div class="warn-box">Yükleme hatası: '+loadErr.message+'<br>'
+      +'<button class="btn btn-sec" style="margin-top:8px" onclick="safeReload()">↻ Tekrar Dene</button></div>';
+    clearTimeout(loadGuard);
+    ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(el&&el.querySelector('.spin'))el.innerHTML=errHtml;
+    });
+  }
 }
 
 /* ─── Build helpers ─────────────────────────────────────────────────────── */
@@ -603,7 +644,11 @@ function getA(cid){
   var sf=sMap[cid];
   var analyses=sf?(sf.content&&sf.content.analyses?sf.content.analyses:[]):(mMap[cid]?mMap[cid].analyses||[]:[]);
   var ov=ovMap[cid];
-  var overrides=(ov&&ov.content&&ov.content.overrides)?ov.content.overrides:[];
+  /* Exclude overrides already present in analyses (merged on last approve) */
+  var aNameSet={}; analyses.forEach(function(a){aNameSet[a.name]=1;});
+  var overrides=(ov&&ov.content&&ov.content.overrides)
+    ?ov.content.overrides.filter(function(a){return !aNameSet[a.name];})
+    :[];
   /* Pending adds: show immediately before approve, skip duplicates */
   var pending=(pA[cid]||[]).filter(function(a){
     return !overrides.some(function(o){return o.name===a.name;})&&
@@ -858,7 +903,7 @@ function sortList(list,cid){
 function renderCatalog(){
   var el=document.getElementById('catalogContent');var html='';
   centers.forEach(function(c){
-    var raw=getA(c.id);var list=sortList(raw,c.id);var list=sortList(raw,c.id);
+    var raw=getA(c.id);var list=sortList(raw,c.id);
     var sid=sid2(c.id);var col=colState[sid]||false;
     var d=getDiff(c.id);
     var hasE=(pE[c.id]&&Object.keys(pE[c.id]).length)||(pD[c.id]&&pD[c.id].size);
@@ -910,29 +955,6 @@ function renderCatalog(){
   });
   el.innerHTML=html;
 }
-
-function sb(cid,field,label){
-  var sc=sortCfg[cid]||{};var on=sc.field===field;
-  var arr=on?(sc.dir===1?' ↑':' ↓'):'';
-  return'<button class="sort-btn'+(on?' on':'')+'" onclick="setSort(\''+jsS(cid)+'\',\''+field+'\')">'+label+arr+'</button>';
-}
-function setSort(cid,field){
-  var sc=sortCfg[cid]||{field:null,dir:1};
-  if(sc.field===field)sc.dir=sc.dir===1?-1:1;else{sc.field=field;sc.dir=1;}
-  sortCfg[cid]=sc;renderCatalog();
-}
-function sortList(list,cid){
-  var sc=sortCfg[cid];if(!sc||!sc.field)return list;
-  return list.slice().sort(function(a,b){
-    var va,vb;
-    if(sc.field==='name'){va=(a.name||'').toLowerCase();vb=(b.name||'').toLowerCase();}
-    else if(sc.field==='price'){va=a.price||0;vb=b.price||0;}
-    else if(sc.field==='category'){va=(a.category||'').toLowerCase();vb=(b.category||'').toLowerCase();}
-    else if(sc.field==='kw'){va=(a.keyword_group||'').toLowerCase();vb=(b.keyword_group||'').toLowerCase();}
-    if(va<vb)return-sc.dir;if(va>vb)return sc.dir;return 0;
-  });
-}
-
 function catRow(cid,a){
   var pid=a._pid||(cid+'__'+a.name);
   var isDel=pD[cid]&&pD[cid].has(pid);
@@ -1278,8 +1300,9 @@ function renGrp(old){
       getA(c.id).forEach(function(a){
         if(a.keyword_group===old){
           a.keyword_group=nw;
-          if(!pE[c.id])pE[c.id]={};if(!pE[c.id][a.name])pE[c.id][a.name]={};
-          pE[c.id][a.name].keyword_group=nw;
+          var rpid=a._pid||(c.id+'__'+a.name);
+          if(!pE[c.id])pE[c.id]={};if(!pE[c.id][rpid])pE[c.id][rpid]={};
+          pE[c.id][rpid].keyword_group=nw;
         }
       });
     });
@@ -1643,7 +1666,12 @@ function applyBatch(){
   var ncur=document.getElementById('batchCur').value;
   var sf=sMap[cid];
   pids.forEach(function(pid){
+    /* Find entry in analyses or overrides */
     var entry=sf&&sf.content&&sf.content.analyses?sf.content.analyses.find(function(a){return a._pid===pid;}):null;
+    if(!entry){
+      var bov=ovMap[cid];
+      entry=bov&&bov.content&&bov.content.overrides?bov.content.overrides.find(function(a){return a._pid===pid;}):null;
+    }
     if(!entry)return;
     if(!pE[cid])pE[cid]={};if(!pE[cid][pid])pE[cid][pid]={};
     if(ncat){pE[cid][pid].category=ncat;entry.category=ncat;}
@@ -1693,7 +1721,8 @@ async function submitCtr(){
     await apiWrite('data/overrides/'+id+'.json',{center_id:id,center_name:name,overrides:[]},null,'feat: overrides — '+name);
     centers.push(nc);
     var sf=await apiRead(STAGING,'data/analyses/'+id+'.json');if(sf)sMap[id]=sf;
-    mMap[id]={analyses:[]};
+    var ov=await apiRead(STAGING,'data/overrides/'+id+'.json');if(ov)ovMap[id]=ov;
+    mMap[id]={center_id:id,center_name:name,analyses:[]};
     hideModal('ctrOv');buildDLs();renderCatalog();updSum();
     setTimeout(function(){var el=document.querySelector('[data-cid="'+id+'"]');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},150);
   }catch(e){err.textContent='Hata: '+e.message;err.style.display='block';}
@@ -1763,6 +1792,12 @@ async function doApprove(){
       if(pE[cid])newA=newA.map(function(a){var p=pE[cid][a._pid];return(p&&a._pid&&a._pid.indexOf('_ov_')===-1)?Object.assign({},a,p):a;});
       if(pD[cid]&&pD[cid].size)newA=newA.filter(function(a){return!(pD[cid].has(a._pid)&&a._pid&&a._pid.indexOf('_ov_')===-1);});
       newA=newA.map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;});
+      /* Merge overrides so mobile app sees all entries */
+      var ovEnt=ovMap[cid]&&ovMap[cid].content&&ovMap[cid].content.overrides
+        ?ovMap[cid].content.overrides.map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;})
+        :[];
+      var aNms={}; newA.forEach(function(a){aNms[a.name]=1;});
+      newA=newA.concat(ovEnt.filter(function(a){return !aNms[a.name];}));
       var nc=Object.assign({},sf.content,{analyses:newA});
       var cn=centers.find(function(c){return c.id===cid;});
       var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf.sha,'fix: panel düzenlemesi — '+(cn?cn.name:cid));
@@ -1984,7 +2019,14 @@ async function approveCtr(cid){
       if(pE[cid])newA=newA.map(function(a){var p=pE[cid][a._pid];return p?Object.assign({},a,p):a;});
       if(pD[cid]&&pD[cid].size)newA=newA.filter(function(a){return!pD[cid].has(a._pid);});
       newA=newA.map(function(a){var x=Object.assign({},a);delete x._pid;return x;});
-      var nc=Object.assign({},sf.content,{analyses:newA});
+      /* Merge overrides into analyses so mobile app sees all entries */
+      var ovEntries=ovMap[cid]&&ovMap[cid].content&&ovMap[cid].content.overrides
+        ?ovMap[cid].content.overrides.map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;})
+        :[];
+      /* Dedup: skip overrides whose name is already in tracker analyses */
+      var aNames={}; newA.forEach(function(a){aNames[a.name]=1;});
+      var newOvMerge=ovEntries.filter(function(a){return !aNames[a.name];});
+      var nc=Object.assign({},sf.content,{analyses:newA.concat(newOvMerge)});
       var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf.sha,'fix: '+(c?c.name:cid)+' güncellendi');
       sMap[cid]={content:nc,sha:(wa&&wa.content)?wa.content.sha:sf.sha};
       sMap[cid].content.analyses.forEach(function(a,i){a._pid=cid+'_'+i;a._isOv=false;});
@@ -2108,6 +2150,8 @@ async function importBackup(){
 
 /* ═══ MOVE ROWS ═════════════════════════════════════════════════════════════ */
 function moveRow(cid,pid,dir){
+  /* Overrides cannot be reordered within the analyses list — skip silently */
+  if(pid.indexOf('_ov_')!==-1)return;
   var sf=sMap[cid];
   if(!sf||!sf.content||!sf.content.analyses)return;
   var arr=sf.content.analyses;
