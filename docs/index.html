@@ -571,7 +571,15 @@ async function loadAll(){
 /* ─── Build helpers ─────────────────────────────────────────────────────── */
 function getA(cid){
   var sf=sMap[cid];
-  return sf?(sf.content&&sf.content.analyses?sf.content.analyses:[]):(mMap[cid]?mMap[cid].analyses||[]:[]);
+  var analyses=sf?(sf.content&&sf.content.analyses?sf.content.analyses:[]):(mMap[cid]?mMap[cid].analyses||[]:[]);
+  var ov=ovMap[cid];
+  var overrides=(ov&&ov.content&&ov.content.overrides)?ov.content.overrides:[];
+  /* Pending adds: show immediately before approve, skip duplicates */
+  var pending=(pA[cid]||[]).filter(function(a){
+    return !overrides.some(function(o){return o.name===a.name;})&&
+           !analyses.some(function(o){return o.name===a.name;});
+  });
+  return analyses.concat(overrides).concat(pending);
 }
 
 /* KEY: reverseKW reads from keyword_group field in analyses data — single source of truth */
@@ -899,7 +907,7 @@ function catRow(cid,a){
   var pid=a._pid||(cid+'__'+a.name);
   var isDel=pD[cid]&&pD[cid].has(pid);
   var isSel=selRows[cid]&&selRows[cid].has(pid);
-  var cls=isDel?'r-del':isSel?'r-sel':'';
+  var cls=isDel?'r-del':isSel?'r-sel':(a._isOv?'r-man':'');
   var rid=sid2(pid);
   var sym=SYM[a.currency||'TRY']||'₺';
   var canMove=!(sortCfg[cid]&&sortCfg[cid].field);
