@@ -361,7 +361,7 @@
       "price": 1750,
       "currency": "TRY",
       "unit": "saat",
-      "notes": "",
+      "notes": "SEM analizleri 1 saat ve katları olarak hesaplanır.",
       "keyword_group": "SEM-EDX ve EBSD Analizleri",
       "_isOv": false
     },
@@ -371,7 +371,7 @@
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "",
+      "notes": "TEM Grid getirenlerden alınmaz.",
       "keyword_group": "Genel Numune Hazırlama",
       "_isOv": false
     },
@@ -476,7 +476,7 @@
       "_isOv": false
     },
     {
-      "name": "0-1 saat",
+      "name": "DSC 0-1 saat",
       "category": "DSC",
       "price": 500,
       "currency": "TRY",
@@ -486,7 +486,7 @@
       "_isOv": false
     },
     {
-      "name": "1-2 saat",
+      "name": "DSC 1-2 saat",
       "category": "DSC",
       "price": 650,
       "currency": "TRY",
@@ -496,7 +496,7 @@
       "_isOv": false
     },
     {
-      "name": ">2 saat",
+      "name": "DSC >2 saat",
       "category": "DSC",
       "price": 150,
       "currency": "TRY",
