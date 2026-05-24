@@ -1853,7 +1853,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
+      "_isOv": false
     },
     {
       "name": "35.05 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı**",
@@ -1863,7 +1864,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
+      "_isOv": false
     },
     {
       "name": "41.25 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
@@ -1873,7 +1875,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
+      "_isOv": false
     },
     {
       "name": "43.06 Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
@@ -1883,7 +1886,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
+      "_isOv": false
     },
     {
       "name": "44.01 FTIR Spektrum Analizi (KBr ile)",
@@ -1893,7 +1897,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
+      "_isOv": false
     },
     {
       "name": "44.02 FTIR Spektrum Analizi (Elmas ATR ile)",
@@ -1903,7 +1908,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
+      "_isOv": false
     },
     {
       "name": "44.03 FTIR Spektrum Analizi (Germanyum ATR ile)",
@@ -1913,214 +1919,261 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
+      "_isOv": false
     },
     {
       "name": "45.01 UV Spektrum Analizi / Sıvı Numune",
       "price": 315,
       "unit": "Numune",
-      "category": "",
+      "category": "UV-VIS-NIR Morötesi-Görünür Işık Spektrofotometresi",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "45.02 UV Spektrum Analizi / Katı Numune",
       "price": 800,
       "unit": "Numune",
-      "category": "",
+      "category": "UV-VIS-NIR Morötesi-Görünür Işık Spektrofotometresi",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "46.01 Floresan Analizi / Sıvı Numune",
       "price": 420,
       "unit": "Numune",
-      "category": "",
+      "category": "Floresans Spektrofotometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "46.02 Floresan Analizi / Katı Numune",
       "price": 630,
       "unit": "Numune",
-      "category": "",
+      "category": "Floresans Spektrofotometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "62.01 DSC Analizi (25 °C – 600 °C) 1 Saat",
       "price": 1000,
       "unit": "Numune",
-      "category": "",
+      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "DSC Analizi (25 °C – 600 °C) 2 Saat",
       "price": 1250,
       "unit": "Numune",
-      "category": "",
+      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "DSC Analizi (25 °C – 600 °C) 3 Saat",
       "price": 1470,
       "unit": "Numune",
-      "category": "",
+      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "DSC Analizi (25 °C – 600 °C) 3-7 Saat",
       "price": 2025,
       "unit": "Numune",
-      "category": "",
+      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "DSC Analizi (25 °C – 600 °C) 7-14 Saat",
       "price": 4050,
       "unit": "Numune",
-      "category": "",
+      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "62.02 DSC Analizi (-150 °C – 600 °C) 1 Saat",
       "price": 1440,
       "unit": "Numune",
-      "category": "",
+      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "DSC Analizi (-150 °C – 600 °C) 2 Saat",
       "price": 1690,
       "unit": "Numune",
-      "category": "",
+      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "DSC Analizi (-150 °C – 600 °C) 3 Saat",
       "price": 1980,
       "unit": "Numune",
-      "category": "",
+      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "DSC Analizi (-150 °C – 600 °C) 3-7 Saat",
       "price": 2565,
       "unit": "Numune",
-      "category": "",
+      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "DSC Analizi (-150 °C – 600 °C) 7-14 Saat",
       "price": 3375,
       "unit": "Numune",
-      "category": "",
+      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "63.01 DMA Analizi (25 °C – 400 °C) 1 Saat",
       "price": 1690,
       "unit": "Numune",
-      "category": "",
+      "category": "DMA-Dinamik Mekanik Analizör",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Termal Analizler"
     },
     {
       "name": "DMA Analizi (25 °C – 400 °C) 2 Saat",
       "price": 2250,
       "unit": "Numune",
-      "category": "",
+      "category": "DMA-Dinamik Mekanik Analizör",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Termal Analizler"
     },
     {
       "name": "DMA Analizi (25 °C – 400 °C) 3 Saat",
       "price": 2800,
       "unit": "Numune",
-      "category": "",
+      "category": "DMA-Dinamik Mekanik Analizör",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Termal Analizler"
     },
     {
       "name": "DMA Analizi (25 °C – 400 °C) 3-5 Saat",
       "price": 4230,
       "unit": "Numune",
-      "category": "",
+      "category": "DMA-Dinamik Mekanik Analizör",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Termal Analizler"
     },
     {
       "name": "63.02 DMA Analizi (-150 °C – 400 °C) 1 Saat",
       "price": 1980,
       "unit": "Numune",
-      "category": "",
+      "category": "DMA-Dinamik Mekanik Analizör",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Termal Analizler"
     },
     {
       "name": "DMA Analizi (-150 °C – 400 °C) 2 Saat",
       "price": 2565,
       "unit": "Numune",
-      "category": "",
+      "category": "DMA-Dinamik Mekanik Analizör",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Termal Analizler"
     },
     {
       "name": "DMA Analizi (-150 °C – 400 °C) 3 Saat",
       "price": 3105,
       "unit": "Numune",
-      "category": "",
+      "category": "DMA-Dinamik Mekanik Analizör",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Termal Analizler"
     },
     {
       "name": "DMA Analizi (-150 °C – 400 °C) 3-5 Saat",
       "price": 4500,
       "unit": "Numune",
-      "category": "",
+      "category": "DMA-Dinamik Mekanik Analizör",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Termal Analizler"
     },
     {
       "name": "63.03 Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
       "price": 14000,
       "unit": "Gün",
-      "category": "",
+      "category": "DMA-Dinamik Mekanik Analizör",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Termal Analizler"
     },
     {
       "name": "72.01 LC-MS/MS Kalitatif Analiz",
@@ -2129,7 +2182,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "72.02 LC-MS/MS Kantitatif Analiz",
@@ -2138,7 +2192,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "72.03 LC-MS/MS Kantitatif (İlave Bileşen Başına)",
@@ -2147,7 +2202,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "72.04 Numune Hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
@@ -2156,7 +2212,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "72.05 Metot Geliştirme",
@@ -2165,7 +2222,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "75.01 GC-Kalitatif Analiz",
@@ -2174,7 +2232,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "75.02 GC-Kantitatif Analiz (Tek Bileşen)",
@@ -2183,7 +2242,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "75.03 GC-Kantitatif Analiz (İlave Her Bir Bileşen)",
@@ -2192,7 +2252,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "75.04 GC Metot geliştirme (2 Bileşen)",
@@ -2201,7 +2262,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "75.05 Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
@@ -2210,7 +2272,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.01 GC/MS-Kalitatif",
@@ -2219,7 +2282,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.02 GC/MS-Kantitatif (Tek Bileşen)",
@@ -2228,7 +2292,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.03 GC/MS-Kantitatif (İlave Her Bir Bileşen)",
@@ -2237,7 +2302,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.04 GC/MS Metot Geliştirme (2 Bileşen)",
@@ -2246,7 +2312,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.05 Katı Faz Mikro Ekstraksiyon (SPME) Uygulamaları (Metot- Adsorban Bildirilmiş İse)",
@@ -2255,7 +2322,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.06 SPME Uygulamaları (Metot Geliştirme, 2 Bileşen)",
@@ -2264,7 +2332,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.07 Kütle Spektrumu Kütüphane Taraması (Bileşen Başı)",
@@ -2273,7 +2342,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.08 Uçucu Yağ Bileşenleri, % Bağıl Miktarları ile Birlikte (2 Ana Bileşen)",
@@ -2282,7 +2352,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.09 Yağ asitleri bileşenleri-Kalitatif (Türevlendirme Yapılmış Hazır",
@@ -2291,7 +2362,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.10 GC-MS Headspace Kalitatif (Tek Bileşen)",
@@ -2300,7 +2372,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.11 GC-MS Headspace Kantitatif (Tek Bileşen)",
@@ -2309,7 +2382,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.12 GC-MS Headspace Kalitatif/Kantitatif (Her Bir İlave Bileşen)",
@@ -2318,7 +2392,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.13 Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemler) *",
@@ -2327,7 +2402,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.14 Clevenger yöntemi ile uçucu yağ eldesi:50 gr numuneye kadar",
@@ -2336,7 +2412,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.15 Soxhlet cihazı ile ekstrasiyon: 20 gr. numuneye kadar",
@@ -2345,7 +2422,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "76.16 Soxhlet cihazı ile ekstradsiyon ilave her 0-20 gr numune için",
@@ -2354,7 +2432,8 @@
       "category": "",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     }
   ]
 }
