@@ -6,8 +6,8 @@
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
     {
-      "name": "STEM ile uygun numunelerde karanlık alan görüntülemesi (düşük çözünürlükte görüntü)",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
+      "name": "TEM-03 STEM ile uygun numunelerde karanlık alan görüntülemesi (düşük çözünürlükte görüntü)",
+      "category": "GEÇİRİMLİ ELEKTRON MİKROSKOPU",
       "price": 1400,
       "currency": "TRY",
       "unit": "saat",
@@ -37,40 +37,40 @@
     },
     {
       "name": "AFM Numune İnceleme",
-      "category": "",
+      "category": "ATOMİK KUVVET MİKROSKOPU",
       "price": 1100,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri",
       "_isOv": false
     },
     {
       "name": "Manyetik Kuvvet Mikroskop",
-      "category": "",
+      "category": "ATOMİK KUVVET MİKROSKOPU",
       "price": 1500,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri",
       "_isOv": false
     },
     {
       "name": "Temas Modunda Analiz",
-      "category": "",
+      "category": "ATOMİK KUVVET MİKROSKOPU",
       "price": 2000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri",
       "_isOv": false
     },
     {
       "name": "Kelvin Prob Mikroskop",
-      "category": "",
+      "category": "ATOMİK KUVVET MİKROSKOPU",
       "price": 2000,
       "currency": "TRY",
-      "unit": "numune",
+      "unit": "saat",
       "notes": "",
       "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri",
       "_isOv": false
@@ -127,7 +127,7 @@
     },
     {
       "name": "Genel Spektrum",
-      "category": "",
+      "category": "MİKRO RAMAN SPEKTROSKOPİ",
       "price": 590,
       "currency": "TRY",
       "unit": "numune",
@@ -137,8 +137,8 @@
     },
     {
       "name": "Haritalama",
-      "category": "",
-      "price": 1300,
+      "category": "MİKRO RAMAN SPEKTROSKOPİ",
+      "price": 700,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -157,7 +157,7 @@
     },
     {
       "name": "Polarize Edilmiş Spektrum",
-      "category": "",
+      "category": "MİKRO RAMAN SPEKTROSKOPİ",
       "price": 590,
       "currency": "TRY",
       "unit": "numune",
@@ -357,7 +357,7 @@
     },
     {
       "name": "Oda Sıcaklığında Spektrum",
-      "category": "",
+      "category": "FOTOLÜMİNESANS",
       "price": 390,
       "currency": "TRY",
       "unit": "numune",
@@ -367,7 +367,7 @@
     },
     {
       "name": "Sıcaklığına Bağlı Spektrum (10-350 Kelvin)",
-      "category": "",
+      "category": "FOTOLÜMİNESANS",
       "price": 2450,
       "currency": "TRY",
       "unit": "numune",
@@ -407,7 +407,7 @@
     },
     {
       "name": "BET Yüzey Alanı (N adsorpsiyonu) Ölçümü",
-      "category": "",
+      "category": "YÜZEY ALANI VE MİKROGÖZENEK BOYUTU ÖLÇÜMÜ",
       "price": 1100,
       "currency": "TRY",
       "unit": "numune",
@@ -417,7 +417,7 @@
     },
     {
       "name": "Kemisorpsiyon Ölçümü",
-      "category": "",
+      "category": "YÜZEY ALANI VE MİKROGÖZENEK BOYUTU ÖLÇÜMÜ",
       "price": 1900,
       "currency": "TRY",
       "unit": "numune",
@@ -427,7 +427,7 @@
     },
     {
       "name": "H Adsorpsiyonu Ölçümü",
-      "category": "",
+      "category": "YÜZEY ALANI VE MİKROGÖZENEK BOYUTU ÖLÇÜMÜ",
       "price": 1100,
       "currency": "TRY",
       "unit": "numune",
@@ -447,7 +447,7 @@
     },
     {
       "name": "Yüzey Porozitesi (Topografya) Analizi",
-      "category": "",
+      "category": "YÜZEY ALANI VE MİKROGÖZENEK BOYUTU ÖLÇÜMÜ",
       "price": 800,
       "currency": "TRY",
       "unit": "numune",
@@ -483,16 +483,6 @@
       "unit": "numune",
       "notes": "",
       "keyword_group": "Yüzey Pürüzlülüğü ve Profilometri",
-      "_isOv": false
-    },
-    {
-      "name": "Haritalama",
-      "category": "",
-      "price": 1300,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
       "_isOv": false
     },
     {
@@ -936,6 +926,16 @@
       "_isOv": false
     },
     {
+      "name": "TEM-01 HR (malzeme örnekleri) veya HC (biyolojik örnekler) modunda",
+      "category": "TEM-Geçirimli Elektron Mikroskobu",
+      "price": 700,
+      "currency": "TRY",
+      "unit": "adet",
+      "notes": "",
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri",
+      "_isOv": false
+    },
+    {
       "name": "Kamera entegreli ters (inverted) ışık mikroskobu",
       "category": "",
       "price": 200,
@@ -993,16 +993,6 @@
       "unit": "numune",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama",
-      "_isOv": false
-    },
-    {
-      "name": "TEM-01 HR (malzeme örnekleri) veya HC (biyolojik örnekler) modunda",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 700,
-      "currency": "TRY",
-      "unit": "adet",
-      "notes": "",
-      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri",
       "_isOv": false
     },
     {
@@ -1067,8 +1057,8 @@
     },
     {
       "name": "PM-02 Haritalama",
-      "category": "MİKRO RAMAN SPEKTROSKOPİ",
-      "price": 700,
+      "category": "DOKUNARAK TARAMALI PROFİLOMETRE",
+      "price": 1300,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -1207,7 +1197,7 @@
     },
     {
       "name": "PM-03 Analiz Sonuçlarının Yorumlanması ve Raporlama",
-      "category": "",
+      "category": "DOKUNARAK TARAMALI PROFİLOMETRE",
       "price": 2000,
       "currency": "TRY",
       "unit": "numune",
@@ -1217,7 +1207,7 @@
     },
     {
       "name": "PM-04 Temel Kullanıcı Eğitimi",
-      "category": "",
+      "category": "DOKUNARAK TARAMALI PROFİLOMETRE",
       "price": 2000,
       "currency": "TRY",
       "unit": "numune",
@@ -1237,7 +1227,7 @@
     },
     {
       "name": "PS-02 Sıcaklığa Bağlı Ölçüm",
-      "category": "",
+      "category": "PROB İSTASYONU",
       "price": 1300,
       "currency": "TRY",
       "unit": "numune",
@@ -1247,7 +1237,7 @@
     },
     {
       "name": "WD-02 Temel Kullanıcı Eğitimi",
-      "category": "",
+      "category": "HASSAS DİLİMLEME",
       "price": 2600,
       "currency": "TRY",
       "unit": "numune",
@@ -1257,7 +1247,7 @@
     },
     {
       "name": "WB-01 Ölçüm",
-      "category": "",
+      "category": "TEL BAĞLAMA",
       "price": 600,
       "currency": "TRY",
       "unit": "numune",
@@ -1267,7 +1257,7 @@
     },
     {
       "name": "PS-03 Temel Kullanıcı Eğitimi",
-      "category": "",
+      "category": "PROB İSTASYONU",
       "price": 1300,
       "currency": "TRY",
       "unit": "numune",
@@ -1287,7 +1277,7 @@
     },
     {
       "name": "WB-02 Temel Kullanıcı Eğitimi",
-      "category": "",
+      "category": "TEL BAĞLAMA",
       "price": 2700,
       "currency": "TRY",
       "unit": "numune",
@@ -1297,7 +1287,7 @@
     },
     {
       "name": "RTP-01 İşlem",
-      "category": "",
+      "category": "HIZLI ISIL İŞLEMCİ",
       "price": 1200,
       "currency": "TRY",
       "unit": "numune",
@@ -1315,6 +1305,16 @@
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
       "manual": true,
       "_isOv": false
+    },
+    {
+      "name": "Liyofilizatör kullanımı (Gün-Dondurulmamış)",
+      "category": "ÖRNEK HAZIRLAMA",
+      "price": 900,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": "",
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
+      "manual": true
     }
   ]
 }
