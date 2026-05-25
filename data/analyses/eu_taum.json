@@ -325,7 +325,7 @@
       "_isOv": false
     },
     {
-      "name": "FT-IR Karakterizasyon (Spektrum + Kütüphane)",
+      "name": "FT-IR Karakterizasyon (Spektrum - Kütüphane)",
       "price": 900,
       "unit": "Adet",
       "category": "FT-IR Analizleri",
@@ -424,7 +424,7 @@
       "_isOv": false
     },
     {
-      "name": "Çok noktalı BET Makro-Mezogözenek (2-50 nm) Analizi + Gözenek Boyutu",
+      "name": "Çok noktalı BET Makro-Mezogözenek (2-50 nm) Analizi - Gözenek Boyutu",
       "price": 1600,
       "unit": "Adet",
       "category": "BET Yüzey Alanı ve Porozite (Gözenek boyutu) Analizi",
@@ -435,7 +435,7 @@
       "_isOv": false
     },
     {
-      "name": "Çok noktalı BET Mikrogözenek (<2 nm) Analizi + Gözenek Boyutu",
+      "name": "Çok noktalı BET Mikrogözenek (<2 nm) Analizi - Gözenek Boyutu",
       "price": 2100,
       "unit": "Adet",
       "category": "BET Yüzey Alanı ve Porozite (Gözenek boyutu) Analizi",
