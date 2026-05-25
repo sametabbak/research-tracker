@@ -321,7 +321,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Radyoaktivite Ölçümleri"
     },
     {
       "name": "Sularda ve gıdalarda (Cs-137, Cs-134)",
@@ -331,7 +332,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Radyoaktivite Ölçümleri"
     },
     {
       "name": "Yapı malzemeleri, sanayi ürünleri ve hammaddelerinde (Ra-226, Th-232, K-40, Ac-228, Cs-137)",
@@ -341,7 +343,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Radyoaktivite Ölçümleri"
     },
     {
       "name": "Diğer numunelerde (Ra-226, Th-232, K-40, Ac-228, Cs-137, Cs-134, Th-228)",
@@ -351,7 +354,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Radyoaktivite Ölçümleri"
     },
     {
       "name": "Toprak ve sedimentte Pb-210 ve Cs-137 tarihlendirme",
@@ -361,7 +365,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Radyoaktivite Ölçümleri"
     },
     {
       "name": "Gama ışını Lineer Azalım Katsayısı (LAC) tespiti (Am-241, Mn-54, Co-57, Co-60 ve Cs-137 kaynakları için)",
@@ -371,7 +376,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Radyoaktivite Ölçümleri"
     },
     {
       "name": "Aynı numune için ilave analiz raporu",
@@ -381,7 +387,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Radyoaktivite Ölçümleri"
     },
     {
       "name": "Özel amaçlı radyoaktivite analizi**",
@@ -391,7 +398,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Radyoaktivite Ölçümleri"
     },
     {
       "name": "Yapı malzemeleri için çevre ve insan sağlığı açısından doz değerlendirmesi",
@@ -401,7 +409,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Radyoaktivite Ölçümleri"
     },
     {
       "name": "BET Yüzey Alanı Analizi",
@@ -411,7 +420,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "Hızlı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
@@ -421,7 +431,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
@@ -431,7 +442,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "Mikrogözenek Analizi ve BET Yüzey Alanı Analizi",
@@ -441,7 +453,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "Mikrogözenek Analizi ve Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
@@ -451,7 +464,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "Yoğunluk Ölçümü",
@@ -461,7 +475,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "XRF analizi/Katı numune",
@@ -471,7 +486,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "XRF analizi/Sıvı numune",
@@ -481,7 +497,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "Tek Element",
@@ -491,7 +508,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "Mikrodalga yakma",
@@ -501,7 +519,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "Ek Element",
@@ -511,7 +530,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "Hg",
@@ -521,7 +541,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "Se",
@@ -531,7 +552,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "As",
@@ -541,7 +563,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "Spektrum Taraması (Absorbans/Transmittans)",
@@ -551,7 +574,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Raman Genel Spektrum",
@@ -561,7 +585,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Raman Haritalama",
@@ -571,7 +596,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Raman Derinlik Profili",
@@ -581,7 +607,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "STA 0-1 saat",
@@ -591,7 +618,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "STA 1-2 saat",
@@ -601,7 +629,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "STA 2-3 saat",
@@ -611,7 +640,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "STA 3-4 saat",
@@ -621,7 +651,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "STA 4 saat ve üstü",
@@ -631,7 +662,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "Isı Kapasitesi Ölçümü (Cp)",
@@ -641,7 +673,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "Çeneli kırıcı ile kırma",
@@ -651,7 +684,8 @@
       "notes": "Radyoaktivite analiz talebinde bulunulan kırılmamış,öğütülmemiş numuneler için",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Halkalı öğütücü ile öğütme",
@@ -661,7 +695,8 @@
       "notes": "Radyoaktivite analiz talebinde bulunulan numune boyutu (<0,1 mm) uygun olmayan numuneler için XRF analiz talebinde bulunulan numune boyutu (<0,1 mm) uygun olmayan numuneler için",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Bilyeli öğütücü ile öğütme",
@@ -671,7 +706,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Presleme",
@@ -681,7 +717,8 @@
       "notes": "XRF analiz talebinde bulunulan numunelerin hazırlığı için",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Kül Fırın",
@@ -691,7 +728,8 @@
       "notes": "XRF analiz talebinde bulunulan numunelerin hazırlığı için sıcaklık ve süre belirtiniz",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Etüv",
@@ -701,7 +739,8 @@
       "notes": "Kurutulması gereken numunelerin hazırlığı için",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Mikrodalga Yakma Cihazı (Speedwave Entry)",
@@ -711,7 +750,8 @@
       "notes": "ICP-OES analiz talebinde bulunulan numunelerin hazırlığı için",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     }
   ]
 }
