@@ -3,5 +3,350 @@
   "center_name": "DEÜ EMUM",
   "last_updated": "2026-05-25",
   "source_url": "https://emum.deu.edu.tr/wp-content/uploads/2026/01/EMUM-Fiyat-Listesi-2026.pdf",
-  "analyses": []
+  "analyses": [
+    {
+      "name": "XPS Genel ve Kısmi Tarama (4 element)",
+      "price": 2300,
+      "unit": "adet",
+      "category": "X-Işını Fotoelektron Spektroskopisi (XPS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true,
+      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
+    },
+    {
+      "name": "XPS Genel ve Kısmi Tarama (5 ve üzeri element)",
+      "price": 2900,
+      "unit": "adet",
+      "category": "X-Işını Fotoelektron Spektroskopisi (XPS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true,
+      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
+    },
+    {
+      "name": "XPS Çizgi / Alan Analizi (4 element)",
+      "price": 3000,
+      "unit": "saat",
+      "category": "X-Işını Fotoelektron Spektroskopisi (XPS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XPS Çizgi/Alan Analizi (5 ve üzeri element)",
+      "price": 3500,
+      "unit": "saat",
+      "category": "X-Işını Fotoelektron Spektroskopisi (XPS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XPS Derinlik Profili (4 element)",
+      "price": 3500,
+      "unit": "saat",
+      "category": "X-Işını Fotoelektron Spektroskopisi (XPS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XPS Derinlik Profili (5 ve üzeri element)",
+      "price": 4000,
+      "unit": "saat",
+      "category": "X-Işını Fotoelektron Spektroskopisi (XPS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XPS Deconvolution (XPS Fitting) işlemi",
+      "price": 500,
+      "unit": "adet",
+      "category": "X-Işını Fotoelektron Spektroskopisi (XPS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HIP sistemi ile malzemelerin preslenmesi (1000 - 15000 psi)",
+      "price": 3250,
+      "unit": "saat",
+      "category": "Sıcak İzostatik Presleme (HIP)",
+      "notes": "Sarf malzeme ücreti ilave edilir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HIP sistemi ile malzemelerin preslenmesi (15000 - 30000 psi)",
+      "price": 3750,
+      "unit": "saat",
+      "category": "Sıcak İzostatik Presleme (HIP)",
+      "notes": "Sarf malzeme ücreti ilave edilir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "CIP ile malzemelerin preslenmesi",
+      "price": 2500,
+      "unit": "saat",
+      "category": "Soğuk İzostatik Pres (CIP)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "FSP sistemi ile nanopartiküllerin üretimi",
+      "price": 3500,
+      "unit": "saat",
+      "category": "Alev Sprey Piroliz Sistemi (FSP)",
+      "notes": "Sarf malzeme ücreti ilave edilir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Yanmazlık (Alev geciktirme) testi (UL 94 standardı)",
+      "price": 1750,
+      "unit": "adet",
+      "category": "Alev Sprey Piroliz Sistemi (FSP)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD patern taraması (bulk ve toz)",
+      "price": 1000,
+      "unit": "adet",
+      "category": "X-Işını Difraktometresi (XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Fotolüminesans (PL) (yayılım, uyarım) ölçümü",
+      "price": 800,
+      "unit": "adet",
+      "category": "Zaman Çözümlemeli Spektrometre",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Floresans Decay zaman ölçümü (piko, nano ve mikro saniye aralıklarında)",
+      "price": 1000,
+      "unit": "adet",
+      "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Fourier Dönüşümlü Kızılötesi Spektroskopisi (FTIR) analizi",
+      "price": 450,
+      "unit": "adet",
+      "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Nanopartikül boyut ölçümü",
+      "price": 700,
+      "unit": "adet",
+      "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Zeta potansiyel ölçümü",
+      "price": 800,
+      "unit": "adet",
+      "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "UV-Vis Spektrofotometre cihazı ile absorbans, geçirgenlik, yansıma analizi İnce Film",
+      "price": 400,
+      "unit": "adet",
+      "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "UV-Vis Spektrofotometre cihazı ile absorbans, geçirgenlik, yansıma analizi Toz",
+      "price": 500,
+      "unit": "adet",
+      "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "UV-Vis Spektrofotometre cihazı ile absorbans, geçirgenlik, yansıma analizi Sıvı",
+      "price": 350,
+      "unit": "adet",
+      "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Termogravimetrik ve Diferansiyel Termal (DTA – TG) Analizi",
+      "price": 800,
+      "unit": "saat",
+      "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Temas Açısı Ölçümü",
+      "price": 400,
+      "unit": "adet",
+      "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "AFM analizi",
+      "price": 2400,
+      "unit": "saat",
+      "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Taramalı Elektron Mikroskobu (SEM) ile mikroyapı görüntüleme",
+      "price": 1300,
+      "unit": "saat",
+      "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "SEM analizi için numune hazırlama (altın kaplama)",
+      "price": 700,
+      "unit": "set",
+      "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "ICP-OES Analizi",
+      "price": 400,
+      "unit": "element",
+      "category": "İndüktif Eşleşmiş Plazma / Optik Emisyon Spektrometresi (ICP-OES)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "VSM Analizi",
+      "price": 1500,
+      "unit": "adet",
+      "category": "ELEKTRİK - ELEKTRONİK ÖLÇÜM LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Hall etkisi ölçümü",
+      "price": 1000,
+      "unit": "adet",
+      "category": "ELEKTRİK - ELEKTRONİK ÖLÇÜM LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Özdirenç ölçümü",
+      "price": 1000,
+      "unit": "adet",
+      "category": "ELEKTRİK - ELEKTRONİK ÖLÇÜM LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "İnce film optik kalınlık ölçümü",
+      "price": 650,
+      "unit": "adet",
+      "category": "ELEKTRİK - ELEKTRONİK ÖLÇÜM LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Vektörel Network (VNA) Analizi",
+      "price": 1000,
+      "unit": "adet",
+      "category": "ELEKTRİK - ELEKTRONİK ÖLÇÜM LABORATUVARI",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Magnetron sistemi ile film biriktirme",
+      "price": 3000,
+      "unit": "saat",
+      "category": "RF & DC GÜÇ KAYNAKLI MAGNETRON SAÇTIRMA SİSTEMİ",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Termal Evaporatör (Fiziksel Buhar Biriktirme) sistemi ile film biriktirme",
+      "price": 2000,
+      "unit": "saat",
+      "category": "RF & DC GÜÇ KAYNAKLI MAGNETRON SAÇTIRMA SİSTEMİ",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Tüp fırın kullanılarak ısıl işlem yapılması",
+      "price": 2000,
+      "unit": "saat",
+      "category": "FIRINLAR",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Spin kaplama kullanılarak kaplama yapılması",
+      "price": 1500,
+      "unit": "saat",
+      "category": "DİĞER CİHAZLAR",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Bilyeli öğütücü kullanılarak toz üretme",
+      "price": 2000,
+      "unit": "saat",
+      "category": "DİĞER CİHAZLAR",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Santrifüj ile ayırma",
+      "price": 1000,
+      "unit": "saat",
+      "category": "DİĞER CİHAZLAR",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    }
+  ]
 }
