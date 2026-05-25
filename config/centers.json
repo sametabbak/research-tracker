@@ -232,5 +232,24 @@
     ],
     "active": true,
     "reference": false
+  },
+  {
+    "id": "deu_emum",
+    "name": "DEÜ EMUM",
+    "university": "Dokuz Eylül Üniversitesi",
+    "city": "İzmir",
+    "url": "https://emum.deu.edu.tr",
+    "pricing_url": "https://emum.deu.edu.tr/wp-content/uploads/2026/01/EMUM-Fiyat-Listesi-2026.pdf",
+    "fetch_method": "manual",
+    "active": true,
+    "reference": false,
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ]
   }
 ]
