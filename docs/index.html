@@ -187,7 +187,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 <!-- HEADER -->
 <div class="hdr">
   <div>
-    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:2px;vertical-align:middle;">…</span></h1>
+    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:2px;vertical-align:middle;">…</span> <span style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:4px;">v2025.05b</span></h1>
     <div class="hdr-meta" id="hdrMeta">Yükleniyor...</div>
   </div>
   <div class="hdr-right">
@@ -430,7 +430,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 
 <script>
 /* ═══ CONFIG ════════════════════════════════════════════════════════════════ */
-var PANEL_VERSION='2025.06a';
+var PANEL_VERSION='2025.06b';
 var REPO='sametabbak/research-tracker',STAGING='staging',MAIN='main';
 var SYM={TRY:'₺',USD:'$',EUR:'€'};
 var NOTES=[
@@ -591,10 +591,10 @@ async function loadAll(){
   var _mainArr=(misc[3]&&misc[3].content)||misc[4]||null;
   var _base=_stagArr||_mainArr||[];
   var _cSeen={};
-  centers=_base.filter(function(c){return c.active!==false;});
+  centers=_base.slice(); /* load ALL centers — passive ones still need to be editable */
   centers.forEach(function(c){_cSeen[c.id]=1;});
   if(_mainArr&&_stagArr){
-    _mainArr.filter(function(c){return c.active!==false&&!_cSeen[c.id];}).forEach(function(c){
+    _mainArr.filter(function(c){return!_cSeen[c.id];}).forEach(function(c){
       _cSeen[c.id]=1;centers.push(c);
     });
   }
@@ -731,6 +731,7 @@ function getDiff(cid){
 function updSum(){
   var tot=0,nw=0,dl=0,ch=0,ug=0;
   centers.forEach(function(c){
+    if(c.active===false)return; /* passive centers don't count in summary */
     var d=getDiff(c.id);tot+=d.all.length;nw+=d.added.length;dl+=d.deleted.length;ch+=d.changed.length;
     var ov=ovMap[c.id];
     tot+=(ov&&ov.content&&ov.content.overrides)?ov.content.overrides.length:0;
@@ -797,6 +798,7 @@ function renderChanges(){
 
   var html=rejBar,any=false;
   centers.forEach(function(c){
+    if(c.active===false)return; /* skip passive centers in changes view */
     var d=getDiff(c.id);
     var crej=pRej[c.id]||{};
     var rows=[];
@@ -922,9 +924,10 @@ function renderCatalog(){
     var sel=selRows[c.id]?selRows[c.id].size:0;
     var isAct=c.active!==false;
 
-    html+='<div class="sec" data-cid="'+esc(c.id)+'">'
+    html+='<div class="sec" data-cid="'+esc(c.id)+'"'+(isAct?'':' style="opacity:.55;"')+'>'
       +'<h2 class="sec-h" onclick="togSec(\''+sid+'\')">'
       +esc(c.name)+' <span class="cnt">'+esc(c.city)+'</span>'
+      +(isAct?'':' <span class="badge" style="background:#f3f4f6;color:#6b7280;border:1px solid #d1d5db;">Pasif</span>')
       +' <span class="cnt">'+list.length+' analiz</span>'
       +(ug?' <span class="cnt cnt-warn">⚠️ '+ug+' grupsuz</span>':'')
       +'<button class="act-tog '+(isAct?'act-on':'act-off')+'" onclick="event.stopPropagation();togAct(\''+jsS(c.id)+'\')">'+(isAct?'Aktif':'Pasif')+'</button>'
