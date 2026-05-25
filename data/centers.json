@@ -150,12 +150,6 @@
     "city": "İzmir",
     "url": "https://merkeziarastirmalab.ikcu.edu.tr",
     "pricing_url": "https://merkeziarastirmalab.ikcu.edu.tr/S/15286/ucretlendirme",
-    "fetch_method": "manual",
-    "check_months": [
-      1,
-      6,
-      12
-    ],
     "active": true,
     "reference": false
   }
