@@ -12,7 +12,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
+      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri",
+      "_isOv": false
     },
     {
       "name": "XPS Genel ve Kısmi Tarama (5 ve üzeri element)",
@@ -22,7 +23,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
+      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri",
+      "_isOv": false
     },
     {
       "name": "XPS Çizgi / Alan Analizi (4 element)",
@@ -31,7 +33,9 @@
       "category": "X-Işını Fotoelektron Spektroskopisi (XPS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
     {
       "name": "XPS Çizgi/Alan Analizi (5 ve üzeri element)",
@@ -40,7 +44,9 @@
       "category": "X-Işını Fotoelektron Spektroskopisi (XPS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
     {
       "name": "XPS Derinlik Profili (4 element)",
@@ -49,7 +55,9 @@
       "category": "X-Işını Fotoelektron Spektroskopisi (XPS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
     {
       "name": "XPS Derinlik Profili (5 ve üzeri element)",
@@ -58,7 +66,9 @@
       "category": "X-Işını Fotoelektron Spektroskopisi (XPS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
     {
       "name": "XPS Deconvolution (XPS Fitting) işlemi",
@@ -67,7 +77,9 @@
       "category": "X-Işını Fotoelektron Spektroskopisi (XPS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
     {
       "name": "HIP sistemi ile malzemelerin preslenmesi (1000 - 15000 psi)",
@@ -76,7 +88,9 @@
       "category": "Sıcak İzostatik Presleme (HIP)",
       "notes": "Sarf malzeme ücreti ilave edilir.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
       "name": "HIP sistemi ile malzemelerin preslenmesi (15000 - 30000 psi)",
@@ -85,7 +99,9 @@
       "category": "Sıcak İzostatik Presleme (HIP)",
       "notes": "Sarf malzeme ücreti ilave edilir.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
       "name": "CIP ile malzemelerin preslenmesi",
@@ -94,7 +110,9 @@
       "category": "Soğuk İzostatik Pres (CIP)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
       "name": "FSP sistemi ile nanopartiküllerin üretimi",
@@ -103,7 +121,9 @@
       "category": "Alev Sprey Piroliz Sistemi (FSP)",
       "notes": "Sarf malzeme ücreti ilave edilir.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Kalori, Kömür ve Yanmazlık Testleri"
     },
     {
       "name": "Yanmazlık (Alev geciktirme) testi (UL 94 standardı)",
@@ -112,7 +132,9 @@
       "category": "Alev Sprey Piroliz Sistemi (FSP)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Kalori, Kömür ve Yanmazlık Testleri"
     },
     {
       "name": "XRD patern taraması (bulk ve toz)",
@@ -121,7 +143,9 @@
       "category": "X-Işını Difraktometresi (XRD)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Fotolüminesans (PL) (yayılım, uyarım) ölçümü",
@@ -130,7 +154,9 @@
       "category": "Zaman Çözümlemeli Spektrometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "FOTOLÜMİNESANS"
     },
     {
       "name": "Floresans Decay zaman ölçümü (piko, nano ve mikro saniye aralıklarında)",
@@ -139,7 +165,9 @@
       "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Fourier Dönüşümlü Kızılötesi Spektroskopisi (FTIR) analizi",
@@ -148,7 +176,9 @@
       "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Nanopartikül boyut ölçümü",
@@ -157,7 +187,9 @@
       "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Zeta potansiyel ölçümü",
@@ -166,7 +198,9 @@
       "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "UV-Vis Spektrofotometre cihazı ile absorbans, geçirgenlik, yansıma analizi İnce Film",
@@ -175,7 +209,9 @@
       "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "UV-Vis Spektrofotometre cihazı ile absorbans, geçirgenlik, yansıma analizi Toz",
@@ -184,7 +220,9 @@
       "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "UV-Vis Spektrofotometre cihazı ile absorbans, geçirgenlik, yansıma analizi Sıvı",
@@ -193,7 +231,9 @@
       "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Termogravimetrik ve Diferansiyel Termal (DTA – TG) Analizi",
@@ -202,7 +242,9 @@
       "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "Temas Açısı Ölçümü",
@@ -211,7 +253,9 @@
       "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "AFM analizi",
@@ -220,7 +264,9 @@
       "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
       "name": "Taramalı Elektron Mikroskobu (SEM) ile mikroyapı görüntüleme",
@@ -229,7 +275,9 @@
       "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
       "name": "SEM analizi için numune hazırlama (altın kaplama)",
@@ -238,7 +286,9 @@
       "category": "İLERİ NANOTEKNOLOJİ LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
     {
       "name": "ICP-OES Analizi",
@@ -247,7 +297,9 @@
       "category": "İndüktif Eşleşmiş Plazma / Optik Emisyon Spektrometresi (ICP-OES)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "VSM Analizi",
@@ -256,7 +308,9 @@
       "category": "ELEKTRİK - ELEKTRONİK ÖLÇÜM LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Elektriksel Ölçümler"
     },
     {
       "name": "Hall etkisi ölçümü",
@@ -265,7 +319,9 @@
       "category": "ELEKTRİK - ELEKTRONİK ÖLÇÜM LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Elektriksel Ölçümler"
     },
     {
       "name": "Özdirenç ölçümü",
@@ -274,7 +330,9 @@
       "category": "ELEKTRİK - ELEKTRONİK ÖLÇÜM LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Elektriksel Ölçümler"
     },
     {
       "name": "İnce film optik kalınlık ölçümü",
@@ -283,7 +341,9 @@
       "category": "ELEKTRİK - ELEKTRONİK ÖLÇÜM LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Vektörel Network (VNA) Analizi",
@@ -292,7 +352,9 @@
       "category": "ELEKTRİK - ELEKTRONİK ÖLÇÜM LABORATUVARI",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Elektriksel Ölçümler"
     },
     {
       "name": "Magnetron sistemi ile film biriktirme",
@@ -301,7 +363,9 @@
       "category": "RF & DC GÜÇ KAYNAKLI MAGNETRON SAÇTIRMA SİSTEMİ",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Elektriksel Ölçümler"
     },
     {
       "name": "Termal Evaporatör (Fiziksel Buhar Biriktirme) sistemi ile film biriktirme",
@@ -310,7 +374,9 @@
       "category": "RF & DC GÜÇ KAYNAKLI MAGNETRON SAÇTIRMA SİSTEMİ",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Elektriksel Ölçümler"
     },
     {
       "name": "Tüp fırın kullanılarak ısıl işlem yapılması",
@@ -319,7 +385,9 @@
       "category": "FIRINLAR",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Termal Analizler"
     },
     {
       "name": "Spin kaplama kullanılarak kaplama yapılması",
@@ -328,7 +396,9 @@
       "category": "DİĞER CİHAZLAR",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
     {
       "name": "Bilyeli öğütücü kullanılarak toz üretme",
@@ -337,7 +407,9 @@
       "category": "DİĞER CİHAZLAR",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
       "name": "Santrifüj ile ayırma",
@@ -346,7 +418,9 @@
       "category": "DİĞER CİHAZLAR",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Mekanik Numune Hazırlama"
     }
   ]
 }
