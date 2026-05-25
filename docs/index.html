@@ -187,7 +187,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 <!-- HEADER -->
 <div class="hdr">
   <div>
-    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:2px;vertical-align:middle;">…</span></h1>
+    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:2px;vertical-align:middle;">…</span> <span style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:4px;">v2025.05b</span></h1>
     <div class="hdr-meta" id="hdrMeta">Yükleniyor...</div>
   </div>
   <div class="hdr-right">
@@ -430,7 +430,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 
 <script>
 /* ═══ CONFIG ════════════════════════════════════════════════════════════════ */
-var PANEL_VERSION='2025.06b';
+var PANEL_VERSION='2026.01';
 var REPO='sametabbak/research-tracker',STAGING='staging',MAIN='main';
 var SYM={TRY:'₺',USD:'$',EUR:'€'};
 var NOTES=[
@@ -1787,6 +1787,7 @@ function renderCenters(){
     +'<th>Fiyat URL</th>'
     +'<th style="text-align:center">Durum</th>'
     +'<th style="text-align:right">Analiz</th>'
+    +'<th></th>'
     +'</tr></thead><tbody>';
   centers.forEach(function(c){
     var p=pCE[c.id]||{};
@@ -1797,6 +1798,8 @@ function renderCenters(){
     var purl=p.pricing_url!==undefined?p.pricing_url:(c.pricing_url||'');
     var active=p.active!==undefined?p.active:(c.active!==false);
     var cnt=getA(c.id).length;
+    var _ov=ovMap[c.id];
+    var ovCnt=(_ov&&_ov.content&&_ov.content.overrides)?_ov.content.overrides.length:0;
     var hasE=Object.keys(p).length>0;
     var rowCls=hasE?'r-chg':'';
     html+='<tr class="'+rowCls+'">'
@@ -1815,6 +1818,9 @@ function renderCenters(){
       +'<button class="act-tog '+(active?'act-on':'act-off')+'" onclick="togActCtr(\''+jsS(c.id)+'\')">'+(active?'Aktif':'Pasif')+'</button>'
       +'</td>'
       +'<td style="text-align:right;color:var(--muted);font-size:12px">'+cnt+'</td>'
+      +(ovCnt>0
+        ?'<td style="padding:4px 8px;"><button class="btn btn-sm" style="background:#e0f2fe;border:1px solid #7dd3fc;color:#0369a1;white-space:nowrap;" onclick="migrateOverrides(\''+jsS(c.id)+'\')" title="Overrides→Analyses taşı">📥 Taşı ('+ovCnt+')</button></td>'
+        :'<td></td>')
       +'</tr>';
   });
   html+='</tbody></table></div>'
@@ -1847,6 +1853,46 @@ function togActCtr(cid){
   if(!pCE[cid])pCE[cid]={};pCE[cid].active=c.active;
   renderCenters();renderCatalog();updApvBtn();updCtrApvBtn(cid);
 }
+function migrateOverrides(cid){
+  var ov=ovMap[cid];
+  if(!ov||!ov.content||!ov.content.overrides||!ov.content.overrides.length){
+    alert('Bu merkezde taşınacak analiz yok.');return;
+  }
+  var cnt=ov.content.overrides.length;
+  if(!confirm(cnt+' analizi overrides→analyses klasörüne taşımak istiyor musunuz?\nBu işlem geri alınamaz.'))return;
+  var c=centers.find(function(x){return x.id===cid;});
+  var sf=sMap[cid];
+  var existA=sf&&sf.content&&sf.content.analyses?sf.content.analyses.slice():[];
+  var existNames={};existA.forEach(function(a){if(a.name)existNames[a.name.toLowerCase()]=1;});
+  var toMove=ov.content.overrides
+    .filter(function(a){return a.name&&!existNames[a.name.toLowerCase()];})
+    .map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;});
+  var skipped=cnt-toMove.length;
+  var newA=existA.concat(toMove);
+  var ncA=sf?Object.assign({},sf.content,{analyses:newA}):{center_id:cid,center_name:c?c.name:cid,analyses:newA};
+  var btn=event&&event.target?event.target:null;if(btn){btn.disabled=true;btn.textContent='...';}
+  apiWrite('data/analyses/'+cid+'.json',ncA,sf?sf.sha:null,'migrate: overrides->analyses '+(c?c.name:cid))
+  .then(function(wa){
+    sMap[cid]={content:ncA,sha:wa&&wa.content?wa.content.sha:sf?sf.sha:null};
+    sMap[cid].content.analyses.forEach(function(a,i){a._pid=cid+'_'+i;a._isOv=false;});
+    mMap[cid]=ncA;
+    var clearOv=Object.assign({},ov.content,{overrides:[]});
+    return apiWrite('data/overrides/'+cid+'.json',clearOv,ov.sha,'migrate: clear overrides '+(c?c.name:cid))
+    .then(function(wo){
+      ovMap[cid]={content:clearOv,sha:wo&&wo.content?wo.content.sha:ov.sha};
+      return triggerMerge();
+    });
+  })
+  .then(function(){
+    renderCenters();renderCatalog();updSum();
+    alert(toMove.length+' analiz taşındı.'+(skipped?' '+skipped+' adet zaten mevcut, atladı.':''));
+  })
+  .catch(function(e){
+    alert('Hata: '+e.message);
+    if(btn){btn.disabled=false;btn.textContent='Tası';}
+  });
+}
+
 /* ═══ DUPLICATE DETECTION ════════════════════════════════════════════════════ */
 function findDupes(){
   /* Returns {cid: [{name, count, pids}]} for within-center duplicates */
@@ -1868,29 +1914,28 @@ function showDupes(selCid){
   var dupes=findDupes();
   var dupIds=Object.keys(dupes);
   var el=document.getElementById('dupContent');
-  /* Render center selector */
-  var selHtml='<div style="margin-bottom:12px;">';
-  selHtml+='<label style="font-size:12px;font-weight:600;margin-right:8px;">Hedef Merkez:</label>';
-  selHtml+='<select id="dupCtrSel" onchange="showDupes(this.value)" style="font-size:13px;padding:4px 8px;border:1px solid var(--border);border-radius:6px;">';
-  selHtml+='<option value="">— Tüm Merkezler ('+dupIds.length+') —</option>';
+  /* Pill buttons — no native <select> direction issues */
+  var pillHtml='<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;">';
+  var allActive=!selCid;
+  pillHtml+='<button class="btn btn-sm'+(allActive?' on':'')+'" data-cid="" onclick="showDupes(this.dataset.cid)">Tümü ('+dupIds.length+')</button>';
   centers.forEach(function(c){
     if(!dupes[c.id])return;
-    selHtml+='<option value="'+esc(c.id)+'"'+(selCid===c.id?' selected':'')+'>'+esc(c.name)+' ('+dupes[c.id].length+')</option>';
+    var active=(selCid===c.id);
+    pillHtml+='<button class="btn btn-sm'+(active?' on':'')+'" data-cid="'+esc(c.id)+'" onclick="showDupes(this.dataset.cid)">'+esc(c.name)+' ('+dupes[c.id].length+')</button>';
   });
-  selHtml+='</select></div>';
-  /* Render duplicate list for selected center(s) */
-  var listCids=selCid?[selCid]:dupIds;
-  if(!listCids.length||!dupIds.length){
-    el.innerHTML=selHtml+'<div class="ok-box">✅ Seçili merkezde tekrar eden analiz yok.</div>';
-    showModal('dupOv');return;
+  pillHtml+='</div>';
+  if(!dupIds.length){
+    el.innerHTML=pillHtml+'<div class="ok-box">✅ Tekrar eden analiz yok.</div>';
+    showModal('tekrarOv');return;
   }
-  var html=selHtml;
+  var listCids=selCid?[selCid]:dupIds;
+  var html=pillHtml;
   listCids.forEach(function(cid){
     if(!dupes[cid])return;
     var c=centers.find(function(x){return x.id===cid;});if(!c)return;
     html+='<div style="margin-bottom:14px;">';
-    if(!selCid)html+='<strong>'+esc(c.name)+'</strong>';
-    html+='<table style="width:100%;font-size:12px;margin-top:4px;"><thead><tr>'
+    if(!selCid||listCids.length>1)html+='<strong style="font-size:13px;">'+esc(c.name)+'</strong>';
+    html+='<table style="width:100%;font-size:12px;margin-top:6px;"><thead><tr>'
       +'<th style="text-align:left;padding:4px 8px;">Analiz Adı</th>'
       +'<th style="text-align:center;padding:4px 8px;">Kopya</th>'
       +'<th style="padding:4px 8px;"></th></tr></thead><tbody>';
@@ -1898,13 +1943,15 @@ function showDupes(selCid){
       html+='<tr style="border-bottom:1px solid var(--border);">'
         +'<td style="padding:5px 8px;">'+esc(d.name)+'</td>'
         +'<td style="text-align:center;padding:5px 8px;"><span class="badge b-del">'+d.pids.length+'×</span></td>'
-        +'<td style="padding:5px 8px;"><button class="btn btn-del btn-sm" onclick="deleteDupe(\''+jsS(cid)+'\',\''+jsS(d.name)+'\',this)">Tekilleştir</button></td>'
+        +'<td style="padding:5px 8px;"><button class="btn btn-del btn-sm"'
+        +' data-cid="'+esc(cid)+'" data-name="'+esc(d.name)+'"'
+        +' onclick="deleteDupe(this.dataset.cid,this.dataset.name,this)">Tekilleştir</button></td>'
         +'</tr>';
     });
     html+='</tbody></table></div>';
   });
   el.innerHTML=html;
-  showModal('dupOv');
+  showModal('tekrarOv');
 }
 function deleteDupe(cid,name,btn){
   /* Keep the first occurrence, delete the rest */
@@ -2195,14 +2242,16 @@ async function approveCtr(cid){
   if(btn){btn.disabled=true;btn.textContent='⏳ Kaydediliyor...';}
   try{
     var sf=sMap[cid];
-    if(sf){
-      var newA=sf.content.analyses.slice();
+    var _paClean=(pA[cid]||[]).map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;});
+    if(sf||_paClean.length){
+      var newA=sf?sf.content.analyses.slice():[];
       if(pE[cid])newA=newA.map(function(a){var p=pE[cid][a._pid];return p?Object.assign({},a,p):a;});
       if(pD[cid]&&pD[cid].size)newA=newA.filter(function(a){return!pD[cid].has(a._pid);});
       newA=newA.map(function(a){var x=Object.assign({},a);delete x._pid;return x;});
-      var nc=Object.assign({},sf.content,{analyses:newA});
-      var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf.sha,'fix: '+(c?c.name:cid)+' güncellendi');
-      sMap[cid]={content:nc,sha:(wa&&wa.content)?wa.content.sha:sf.sha};
+      newA=newA.concat(_paClean);
+      var nc=sf?Object.assign({},sf.content,{analyses:newA}):{center_id:cid,center_name:c?c.name:cid,analyses:newA};
+      var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf?sf.sha:null,'fix: '+(c?c.name:cid)+' güncellendi');
+      sMap[cid]={content:nc,sha:(wa&&wa.content)?wa.content.sha:sf?sf.sha:null};
       sMap[cid].content.analyses.forEach(function(a,i){a._pid=cid+'_'+i;a._isOv=false;});
       mMap[cid]=nc;
     }
@@ -2223,20 +2272,7 @@ async function approveCtr(cid){
         ovMap[cid].content.overrides.forEach(function(a,i){a._pid=cid+'_ov_'+i;a._isOv=true;});
       }
     }
-    if(pA[cid]&&pA[cid].length){
-      var ex=ovMap[cid];
-      /* If ovMap is stale/missing, re-fetch the SHA to avoid write conflict */
-      if(!ex||!ex.sha){
-        ex=await apiRead(STAGING,'data/overrides/'+cid+'.json').catch(function(){return null;});
-        if(ex)ovMap[cid]=ex;
-      }
-      var exOv=(ex&&ex.content&&ex.content.overrides)?ex.content.overrides:[];
-      var nc2={center_id:cid,center_name:c?c.name:cid,overrides:exOv.concat(pA[cid])};
-      var wo=await apiWrite('data/overrides/'+cid+'.json',nc2,ex?ex.sha:null,'feat: manuel analiz — '+(c?c.name:cid));
-      ovMap[cid]={content:nc2,sha:(wo&&wo.content)?wo.content.sha:(ex?ex.sha:null)};
-      /* Stamp _pid so edits to these overrides work in the same session */
-      ovMap[cid].content.overrides.forEach(function(a,i){a._pid=cid+'_ov_'+i;a._isOv=true;});
-    }
+    /* pA entries now written to analyses in Step 1 */
     await triggerMerge((c?c.name:cid)+' analiz güncellemesi');
     delete pE[cid];delete pD[cid];delete pA[cid];if(pCE[cid])delete pCE[cid];
     pOrder.delete(cid);delete pOrderSnap[cid];
@@ -2516,7 +2552,7 @@ loadAll();
 
 
 <!-- Duplicate Finder Modal -->
-<div class="modal-ov hidden" id="dupOv" onclick="if(event.target===this)hideModal('dupOv')">
+<div class="modal-ov hidden" id="tekrarOv" onclick="if(event.target===this)hideModal('dupOv')">
   <div class="modal" style="max-width:600px">
     <h3 style="margin-bottom:12px">🔍 Tekrar Eden Analizler</h3>
     <p style="font-size:12px;color:var(--muted);margin-bottom:12px">
@@ -2525,7 +2561,7 @@ loadAll();
     </p>
     <div id="dupContent"></div>
     <div style="margin-top:14px;text-align:right">
-      <button class="btn btn-sec" onclick="hideModal('dupOv')">Kapat</button>
+      <button class="btn btn-sec" onclick="hideModal('tekrarOv')">Kapat</button>
     </div>
   </div>
 </div>
