@@ -829,51 +829,6 @@
       "manual": true,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
       "_isOv": false
-    },
-    {
-      "name": "Numune analizi 1-10 element için",
-      "price": 800,
-      "unit": "Adet",
-      "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true
-    },
-    {
-      "name": "İlave element analizi için",
-      "price": 150,
-      "unit": "Element",
-      "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true
-    },
-    {
-      "name": "Mikrodalga Çözme İşlemi",
-      "price": 550,
-      "unit": "Adet",
-      "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true
-    },
-    {
-      "name": "Çoklu Asit İle Çözme İşlemi",
-      "price": 650,
-      "unit": "Adet",
-      "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true
-    },
-    {
-      "name": "Değerli Metaller 1-10 Element (Au, Pd, Pt, Ag, Rh vb.)",
-      "price": 1600,
-      "unit": "Adet",
-      "category": "ICP-MS Analizleri (İndüktif Eşleşmiş Plazma - Kütle Spektrometresi)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true
     }
   ]
 }
