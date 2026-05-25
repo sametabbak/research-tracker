@@ -187,7 +187,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 <!-- HEADER -->
 <div class="hdr">
   <div>
-    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:4px;">v2025.05</span></h1>
+    <h1>🔬 Analiz Bul — İnceleme Paneli <span style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:4px;">v2025.05b</span></h1>
     <div class="hdr-meta" id="hdrMeta">Yükleniyor...</div>
   </div>
   <div class="hdr-right">
@@ -479,26 +479,13 @@ updTokBadge();
 /* ═══ API ════════════════════════════════════════════════════════════════════ */
 function gh(){var h={'Accept':'application/vnd.github.v3+json'};if(tok)h['Authorization']='token '+tok;return h;}
 
-async function fetchT(url,opts){
-  /* Abort after 30 s; fall back to plain fetch if AbortController unavailable */
-  try{
-    var ctrl=new AbortController();
-    var tid=setTimeout(function(){ctrl.abort();},30000);
-    return fetch(url,Object.assign({},opts||{},{signal:ctrl.signal}))
-      .then(function(r){clearTimeout(tid);return r;})
-      .catch(function(e){clearTimeout(tid);throw e;});
-  }catch(e){ return fetch(url,opts||{}); }
-}
 async function rawRead(branch,path){
-  try{
-    var r=await fetchT('https://raw.githubusercontent.com/'+REPO+'/'+branch+'/'+path+'?t='+Date.now());
-    return r.ok?r.json():null;
-  }catch(e){return null;}
+  var r=await fetch('https://raw.githubusercontent.com/'+REPO+'/'+branch+'/'+path+'?t='+Date.now());
+  return r.ok?r.json():null;
 }
 async function apiRead(branch,path){
-  var r;
-  try{r=await fetchT('https://api.github.com/repos/'+REPO+'/contents/'+path+'?ref='+branch,
-    {headers:gh(),cache:'no-store'});}catch(e){return null;}
+  var r=await fetch('https://api.github.com/repos/'+REPO+'/contents/'+path+'?ref='+branch,
+    {headers:gh(),cache:'no-store'});
   if(!r.ok)return null;
   var d=await r.json();
   try{
@@ -566,18 +553,18 @@ async function loadAll(){
   document.getElementById('apvBtn').disabled=true;
   sMap={};mMap={};ovMap={};pE={};pA={};pD={};pCE={};pKwR=[];pKwDel=[];pKwNew=[];pRej={};pOrder=new Set();pOrderSnap={};selRows={};colState={};a2c={};
 
-  /* Show a retry option after 25 s if still loading */
-  var _guard=setTimeout(function(){
-    var msg='<div class="warn-box" style="text-align:center">'
-      +'<strong>Yükleme çok uzun sürdü.</strong><br>'
-      +'Bağlantınızı veya token\'ınızı kontrol edin.<br>'
-      +'<button class="btn btn-sec" style="margin-top:8px" onclick="loadAll()">↻ Tekrar Dene</button></div>';
+  /* 20-second guard — shows retry button if still loading */
+  var _lg=setTimeout(function(){
     ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
       var el=document.getElementById(id);
-      if(el)el.innerHTML=msg;
+      if(el&&el.innerHTML.indexOf('spin')!==-1)
+        el.innerHTML='<div class="warn-box" style="text-align:center">'
+          +'<strong>Yükleme zaman aşımına uğradı.</strong><br>'
+          +'Token\'ınızı kontrol edip tekrar deneyin.<br>'
+          +'<button class="btn btn-sec" style="margin-top:8px" onclick="loadAll()">'
+          +'↻ Tekrar Dene</button></div>';
     });
-  },25000);
-
+  },20000);
   try{
   var misc=await Promise.all([
     rawRead(MAIN,'data/centers.json').catch(function(){return null;}),
@@ -585,33 +572,16 @@ async function loadAll(){
     stagingDate().catch(function(){return null;}),
     apiRead(MAIN,'data/centers.json').catch(function(){return null;})
   ]);
-  /* Fallback chain: rawRead(main) → apiRead(main).content → rawRead(staging) */
-  var centersRaw=misc[0]
-    ||(misc[3]&&misc[3].content?misc[3].content:null)
-    ||(await rawRead(STAGING,'data/centers.json').catch(function(){return null;}));
-  centers=(centersRaw||[]).filter(function(c){return c.active!==false;});
+  centers=(misc[0]||[]).filter(function(c){return c.active!==false;});
   kwGrps=misc[1]||{};
   cats=Object.keys(kwGrps);
   ctxSha=misc[3]?misc[3].sha:null;
   var sd=misc[2];
-  var hdrM=document.getElementById('hdrMeta');
-  if(hdrM){hdrM.textContent=sd?'staging son güncelleme: '+new Date(sd).toLocaleString('tr-TR'):'tarih alınamadı';hdrM.style.color='';}
-  if(!centers.length){
-    clearTimeout(_guard);
-    ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
-      var el=document.getElementById(id);
-      var _dbg='raw='+(misc[0]?'ok':'null')+' api='+(misc[3]?'ok (sha='+misc[3].sha+')':'null')+' staging=(checking fallback)';
-      if(el)el.innerHTML='<div class="warn-box">'
-        +'<strong>centers.json yüklenemedi.</strong><br>'
-        +'Token\'ı kontrol edin — sağ üstteki 🔑 düğmesine tıklayın.<br>'
-        +'<small style="color:var(--muted)">Tanı: '+esc(_dbg)+'</small><br>'
-        +'<button class="btn btn-sec" style="margin-top:8px" onclick="loadAll()">↻ Tekrar Dene</button></div>';
-    });
-    return;
-  }
+  document.getElementById('hdrMeta').textContent=sd?'staging son güncelleme: '+new Date(sd).toLocaleString('tr-TR'):'tarih alınamadı';
+  document.getElementById('hdrMeta').style.color='';
+  if(!centers.length){document.getElementById('changesContent').innerHTML='<div class="warn-box">centers.json okunamadı.</div>';return;}
 
   var ids=centers.map(function(c){return c.id;});
-  /* Each center fetch is independent — one failure won't kill the rest */
   var res=await Promise.all([
     Promise.all(ids.map(function(id){return apiRead(STAGING,'data/analyses/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});})),
     Promise.all(ids.map(function(id){return apiRead(MAIN,'data/analyses/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});})),
@@ -619,12 +589,13 @@ async function loadAll(){
     apiRead(STAGING,'data/keywords.json').catch(function(){return null;})
   ]);
   res[0].forEach(function(p){if(p[1])sMap[p[0]]=p[1];});
-  res[1].forEach(function(p){if(p[1])mMap[p[0]]=p[1].content||p[1];});
+  res[1].forEach(function(p){if(p[1])mMap[p[0]]=p[1].content||p[1];});  /* apiRead wraps in .content */
   res[2].forEach(function(p){if(p[1])ovMap[p[0]]=p[1];});
   if(res[3])kwSha=res[3].sha;
 
   stagOk=Object.keys(sMap).length>0;
 
+  /* Stamp stable _pid so same-name analyses in same center don't collide */
   centers.forEach(function(c){
     var sf=sMap[c.id];
     if(sf&&sf.content&&sf.content.analyses)
@@ -636,16 +607,18 @@ async function loadAll(){
 
   buildRKW();buildA2C();buildAllCats();buildDLs();
   updSum();renderChanges();renderCatalog();renderOverride();renderClassify();
-  clearTimeout(_guard);
+  clearTimeout(_lg);
   updApvBtn();collapseAll();
   window.scrollTo({top:0,behavior:'instant'});
-  }catch(err){
-    clearTimeout(_guard);
-    console.error('loadAll error:',err);
-    var em='<div class="warn-box"><strong>Yükleme hatası:</strong> '+esc(String(err.message||err))+'<br>'
-      +'<button class="btn btn-sec" style="margin-top:8px" onclick="loadAll()">↻ Tekrar Dene</button></div>';
+  }catch(_err){
+    clearTimeout(_lg);
+    console.error('loadAll:',_err);
+    var _em='<div class="warn-box" style="text-align:center">'
+      +'<strong>Yükleme hatası:</strong> '+String(_err.message||_err)+'<br>'
+      +'<button class="btn btn-sec" style="margin-top:8px" onclick="loadAll()">'
+      +'↻ Tekrar Dene</button></div>';
     ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
-      var el=document.getElementById(id);if(el)el.innerHTML=em;
+      var el=document.getElementById(id);if(el)el.innerHTML=_em;
     });
   }
 }
