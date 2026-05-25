@@ -1,700 +1,621 @@
 {
   "center_id": "dpu_iltem",
   "center_name": "DPÜ İLTEM",
-  "last_updated": "2026-05-18",
+  "last_updated": "2026-05-25",
   "source_url": "https://dpuiltem.com.tr/analiz-ucretleri/",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
     {
       "name": "FE-SEM Görüntüleme (EDX, ETD, TLD, DBS, LVD, GAD, Helix)",
-      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
-      "price": 2500,
+      "category": "",
+      "price": 2500.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "SEM-EDX ve EBSD Analizleri",
-      "_isOv": false
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "EBSD Nokta Analizi ve Haritalama",
-      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
-      "price": 3750,
+      "category": "",
+      "price": 3750.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "SEM-EDX ve EBSD Analizleri",
-      "_isOv": false
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "SEM-Katodolüminesans (SEM-CL)",
-      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
-      "price": 3750,
+      "category": "",
+      "price": 3750.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri",
-      "_isOv": false
-    },
-    {
-      "name": "SEM/STEM/TEM Numune Hazırlama",
-      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
-      "price": 1,
-      "currency": "TRY",
-      "unit": "adet",
-      "notes": "Merkezimizden fiyat sorunuz.",
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "manual": true,
-      "_isOv": false
+      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
       "name": "SEM Altın (Au,Pd), Karbon Kaplama",
-      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
-      "price": 300,
+      "category": "",
+      "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)",
-      "_isOv": false
+      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
     {
       "name": "SEM-EBIC Dedektörü",
-      "category": "ELEKTRON MİKROSKOBU LABORATUVARI",
-      "price": 3750,
+      "category": "",
+      "price": 3750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri",
-      "_isOv": false
+      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
-      "name": "MSL - Kesme",
-      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
-      "price": 400,
+      "name": "Kesme",
+      "category": "",
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mekanik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
-      "name": "MSL - Zımparalama ve Parlatma",
-      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
-      "price": 600,
+      "name": "Zımparalama ve Parlatma",
+      "category": "",
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mekanik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
-      "name": "MSL - Kimyasal Dağlama (Seramik Malzemeler)",
-      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
-      "price": 400,
+      "name": "Kimyasal Dağlama (Seramik Malzemeler)",
+      "category": "",
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Elektriksel ve Dielektrik Ölçümler",
-      "_isOv": false
+      "keyword_group": null
     },
     {
-      "name": "MSL - Termal Dağlama",
-      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
-      "price": 1500,
+      "name": "Termal Dağlama",
+      "category": "",
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": null
     },
     {
-      "name": "MSL - Sıcak Kalıplama (Bakalit)",
-      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
-      "price": 300,
+      "name": "Sıcak Kalıplama (Bakalit)",
+      "category": "",
+      "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mekanik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
-      "name": "MSL - Soğuk Kalıplama (Reçine)",
-      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
-      "price": 300,
+      "name": "Soğuk Kalıplama (Reçine)",
+      "category": "",
+      "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mekanik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
-      "name": "MSL - Metal Mikroskobu",
-      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
-      "price": 400,
+      "name": "Metal Mikroskobu",
+      "category": "",
+      "price": 400.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "Optik Mikroskopi ve Görüntüleme",
-      "_isOv": false
+      "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
       "name": "Mikro Sertlik Ölçümü (Vickers Yöntemi 3 – Indent)",
-      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
-      "price": 500,
+      "category": "",
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mikrosertlik ve Makrosertlik Testleri",
-      "_isOv": false
+      "keyword_group": "Mikrosertlik ve Makrosertlik Testleri"
     },
     {
       "name": "Mikro Sertlik Ölçümü (Vickers Yöntemi 5 – Indent)",
-      "category": "METALOGRAFİ ve SERAMOGRAFİ LABORATUVARI",
-      "price": 600,
+      "category": "",
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mikrosertlik ve Makrosertlik Testleri",
-      "_isOv": false
+      "keyword_group": "Mikrosertlik ve Makrosertlik Testleri"
     },
     {
       "name": "Standart X-Işını Kırınım Deseni (XRD)",
-      "category": "MİNERALOJİK ANALİZ LABORATUVARI",
-      "price": 750,
+      "category": "",
+      "price": 750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "XRD (X-Işını Kırınım) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "Standart XRD Çekimi - Kalitatif Analiz",
-      "category": "MİNERALOJİK ANALİZ LABORATUVARI",
-      "price": 1125,
+      "category": "",
+      "price": 1125.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "XRD (X-Işını Kırınım) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
-      "name": "XRD - Kesme",
-      "category": "MİNERALOJİK ANALİZ LABORATUVARI",
-      "price": 500,
+      "name": "Kesme",
+      "category": "",
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mekanik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
-      "name": "XRD - Kırma, Öğütme",
-      "category": "MİNERALOJİK ANALİZ LABORATUVARI",
-      "price": 500,
+      "name": "Kırma, Öğütme",
+      "category": "",
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mekanik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
       "name": "Böbrek Taşı Analizi (XRD)",
-      "category": "MİNERALOJİK ANALİZ LABORATUVARI",
-      "price": 300,
+      "category": "",
+      "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "XRD (X-Işını Kırınım) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "Rietveld Analizi",
-      "category": "MİNERALOJİK ANALİZ LABORATUVARI",
-      "price": 9000,
+      "category": "",
+      "price": 9000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "XRD (X-Işını Kırınım) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
-      "name": "XRF - Yarı Kantitatif Element Analizi",
-      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
-      "price": 850,
+      "name": "Yarı Kantitatif Element Analizi",
+      "category": "",
+      "price": 850.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": "XRF (X-Işını Floresans) Analizleri",
-      "_isOv": false
+      "keyword_group": null
     },
     {
-      "name": "XRF - İz Element Analizi (Pro-Trace Çekim Modu)",
-      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
-      "price": 2750,
+      "name": "İz Element Analizi (Pro-Trace Çekim Modu)",
+      "category": "",
+      "price": 2750.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": "XRF (X-Işını Floresans) Analizleri",
-      "_isOv": false
+      "keyword_group": null
     },
     {
-      "name": "XRF - Kızdırma Kaybı",
-      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
-      "price": 400,
+      "name": "Kızdırma Kaybı",
+      "category": "",
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": null
     },
     {
-      "name": "XRF - Eritiş İle Numune Hazırlama",
-      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
-      "price": 500,
+      "name": "Eritiş İle Numune Hazırlama",
+      "category": "",
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
-      "name": "XRF - Press İle Numune Hazırlama",
-      "category": "X-Işınları Floresans Spektroskopisi (XRF)",
-      "price": 400,
+      "name": "Press İle Numune Hazırlama",
+      "category": "",
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mekanik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "Alevli AAS ile ppm (mg/L) seviyesinde analiz (Tek Çekim)",
-      "category": "Atomik Absorpsiyon Spektrofotometresi",
-      "price": 750,
+      "category": "",
+      "price": 750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri",
-      "_isOv": false
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "Alevli AAS ile ppm (mg/L) seviyesinde analiz (3 Tekrar Çekim)",
-      "category": "Atomik Absorpsiyon Spektrofotometresi",
-      "price": 1500,
+      "category": "",
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri",
-      "_isOv": false
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "Hidrür AAS ile ppb (mg/L) seviyesinde analiz",
-      "category": "Atomik Absorpsiyon Spektrofotometresi",
-      "price": 1500,
+      "category": "",
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri",
-      "_isOv": false
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "Grafit AAS ile ppb (mg/L) seviyesinde analiz",
-      "category": "Atomik Absorpsiyon Spektrofotometresi",
-      "price": 1500,
+      "category": "",
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri",
-      "_isOv": false
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "AAS Numune Hazırlama",
-      "category": "Atomik Absorpsiyon Spektrofotometresi",
-      "price": 450,
+      "category": "",
+      "price": 450.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "AAS Numune Hazırlama (3 Tekrar)",
-      "category": "Atomik Absorpsiyon Spektrofotometresi",
-      "price": 1250,
+      "category": "",
+      "price": 1250.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
-      "name": "AAS Saf Su",
-      "category": "Atomik Absorpsiyon Spektrofotometresi",
-      "price": 30,
+      "name": "Saf Su",
+      "category": "",
+      "price": 30.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Sıvı Azot, Saf Su",
-      "_isOv": false
+      "keyword_group": null
     },
     {
-      "name": "AAS Ultra Saf Su",
-      "category": "Atomik Absorpsiyon Spektrofotometresi",
-      "price": 50,
+      "name": "Ultra Saf Su",
+      "category": "",
+      "price": 50.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Sıvı Azot, Saf Su",
-      "_isOv": false
+      "keyword_group": null
     },
     {
       "name": "TMA (Termo-Mekanik Analiz) Spektrumu",
-      "category": "TERMAL ANALİZ LABORATUVARI",
-      "price": 1750,
+      "category": "",
+      "price": 1750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Termal Analizler (STA, DMA, TMA)",
-      "_isOv": false
+      "keyword_group": "Termal Analizler (STA, DMA, TMA)"
     },
     {
       "name": "TG/DTA/DSC Spektrumu (Max. 1500 °C)",
-      "category": "TERMAL ANALİZ LABORATUVARI",
-      "price": 1500,
+      "category": "",
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)",
-      "_isOv": false
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "Isı Kapasitesi (C P ) Analizi",
-      "category": "TERMAL ANALİZ LABORATUVARI",
-      "price": 3000,
+      "category": "",
+      "price": 3000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "DTA (Diferansiyel Termal Analiz)",
-      "_isOv": false
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "Alümina/Platin Kroze Hasar Bedeli *",
-      "category": "TERMAL ANALİZ LABORATUVARI",
-      "price": 10000,
+      "category": "",
+      "price": 10000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Sarf Malzeme",
-      "_isOv": false
+      "keyword_group": "Sarf Malzeme"
     },
     {
       "name": "ATR – FTIR Spektrumu",
-      "category": "SPEKTROSKOPİ LABORATUVARI",
-      "price": 500,
+      "category": "",
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "FTIR ve IR Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR ve IR Spektroskopi"
     },
     {
-      "name": "SL - Kırma-Öğütme",
-      "category": "SPEKTROSKOPİ LABORATUVARI",
-      "price": 500,
+      "name": "Kırma-Öğütme",
+      "category": "",
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mekanik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
       "name": "LC/MS Analizi (Kalitatif)",
-      "category": "Yüksek Çözünürlüklü Kütle Spektrometresi",
-      "price": 700,
+      "category": "",
+      "price": 700.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LC/MS Analizi (Kantitatif) *",
-      "category": "Yüksek Çözünürlüklü Kütle Spektrometresi",
-      "price": 900,
+      "category": "",
+      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LC/MS/MS",
-      "category": "Yüksek Çözünürlüklü Kütle Spektrometresi",
-      "price": 1250,
+      "category": "",
+      "price": 1250.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LC/MS QTOF (HRMS) Tam Kütle Tayini",
-      "category": "Yüksek Çözünürlüklü Kütle Spektrometresi",
-      "price": 1500,
+      "category": "",
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "HPLC (Kalitatif)",
-      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
-      "price": 750,
+      "category": "",
+      "price": 750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kromatografi (HPLC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GPC)"
     },
     {
       "name": "HPLC (Kantitatif) *",
-      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
-      "price": 900,
+      "category": "",
+      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kromatografi (HPLC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GPC)"
     },
     {
       "name": "Şeker Analizi (Tek Şeker)",
-      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
-      "price": 1050,
+      "category": "",
+      "price": 1050.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Kimya ve Gıda Analizleri",
-      "_isOv": false
+      "keyword_group": "Genel Kimya ve Gıda Analizleri"
     },
     {
       "name": "Şeker Analizi (Grup Şeker)",
-      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
-      "price": 1225,
+      "category": "",
+      "price": 1225.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Kimya ve Gıda Analizleri",
-      "_isOv": false
+      "keyword_group": "Genel Kimya ve Gıda Analizleri"
     },
     {
       "name": "Pestisit Analizi (Tek Pestisit)",
-      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
-      "price": 1050,
+      "category": "",
+      "price": 1050.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Kimya ve Gıda Analizleri",
-      "_isOv": false
+      "keyword_group": "Genel Kimya ve Gıda Analizleri"
     },
     {
       "name": "Pestisit Analizi (Grup Pestisit)",
-      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
-      "price": 1500,
+      "category": "",
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Kimya ve Gıda Analizleri",
-      "_isOv": false
+      "keyword_group": "Genel Kimya ve Gıda Analizleri"
     },
     {
       "name": "İnteraktif Cihaz Kullanımı (HPLC Analizi-Vial-Çözücü-Pipet Ucu)",
-      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC)",
-      "price": 1000,
+      "category": "",
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kromatografi (HPLC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GPC)"
     },
     {
       "name": "GC/MS (Kalitatif)",
-      "category": "Gaz Kromatografisi – Kütle Spektrometresi (GC-MS)",
-      "price": 800,
+      "category": "",
+      "price": 800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GC/MS (Kantitatif) *",
-      "category": "Gaz Kromatografisi – Kütle Spektrometresi (GC-MS)",
-      "price": 1050,
+      "category": "",
+      "price": 1050.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "Faz Kontrast-Fluoresan Ataçmanlı Mikroskop",
-      "category": "GÖRÜNTÜLEME LABORATUVARI",
-      "price": 750,
+      "category": "",
+      "price": 750.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "Optik Mikroskopi ve Görüntüleme",
-      "_isOv": false
+      "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
       "name": "Stereo Zoom Mikroskop",
-      "category": "GÖRÜNTÜLEME LABORATUVARI",
-      "price": 400,
+      "category": "",
+      "price": 400.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "Optik Mikroskopi ve Görüntüleme",
-      "_isOv": false
+      "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
       "name": "3-Boyutlu Modelleme",
-      "category": "TERSİNE MÜHENDİSLİK ve EKLEMELİ İMALAT LABORATUVARI",
-      "price": 750,
+      "category": "",
+      "price": 750.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "3 Boyutlu Tarama ve Üretim",
-      "_isOv": false
+      "keyword_group": "3 Boyutlu Tarama ve Üretim"
     },
     {
       "name": "3-Boyutlu Optik Tarayıcı",
-      "category": "TERSİNE MÜHENDİSLİK ve EKLEMELİ İMALAT LABORATUVARI",
-      "price": 750,
+      "category": "",
+      "price": 750.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "3 Boyutlu Tarama ve Üretim",
-      "_isOv": false
+      "keyword_group": "3 Boyutlu Tarama ve Üretim"
     },
     {
       "name": "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Toz Formunda",
-      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
-      "price": 1500,
+      "category": "",
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)",
-      "_isOv": false
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Plastisite Ölçümü (Pfefferkorn Yöntemi)-Sucuk Formunda",
-      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
-      "price": 3125,
+      "category": "",
+      "price": 3125.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)",
-      "_isOv": false
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Tane Boyut Dağılımı (Lazer tekniği ile su ortamında) *",
-      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
-      "price": 900,
+      "category": "",
+      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri",
-      "_isOv": false
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Tane Boyut Dağılımı (Yaş / Kuru elek analizi)",
-      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
-      "price": 900,
+      "category": "",
+      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri",
-      "_isOv": false
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Tane Boyut Dağılımı (2 mikron altı analizi)",
-      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
-      "price": 3750,
+      "category": "",
+      "price": 3750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri",
-      "_isOv": false
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Fırın Kullanımı (Kutu tipi, 1500 o C’ye kadar)",
-      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
-      "price": 1750,
+      "category": "",
+      "price": 1750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Cihaz Kullanımı",
-      "_isOv": false
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "pH Ölçümü",
-      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
-      "price": 150,
+      "category": "",
+      "price": 150.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Su Kalitesi ve Çevre Analizleri",
-      "_isOv": false
+      "keyword_group": "Su Kalitesi ve Çevre Analizleri"
     },
     {
       "name": "Rutubet (Nem) Tayini",
-      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
-      "price": 150,
+      "category": "",
+      "price": 150.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Kimya ve Gıda Analizleri",
-      "_isOv": false
+      "keyword_group": "Genel Kimya ve Gıda Analizleri"
     },
     {
       "name": "Etüv Kullanımı",
-      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
-      "price": 450,
+      "category": "",
+      "price": 450.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Cihaz Kullanımı",
-      "_isOv": false
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "Sıvı Piknometre ile Tozlarda Kütle Yoğunluğu Tayini",
-      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
-      "price": 300,
+      "category": "",
+      "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Yoğunluk ve Fiziksel Özellikler",
-      "_isOv": false
+      "keyword_group": "Yoğunluk ve Fiziksel Özellikler"
     },
     {
       "name": "Kuru Öğütme",
-      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
-      "price": 500,
+      "category": "",
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mekanik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
       "name": "Kuru Presleme",
-      "category": "SİLİKAT BAZLI SERAMİK MALZEMELERİ LABORATUVARI",
-      "price": 500,
+      "category": "",
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Mekanik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Mekanik Numune Hazırlama"
     }
   ]
 }

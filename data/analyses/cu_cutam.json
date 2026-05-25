@@ -1,649 +1,582 @@
 {
   "center_id": "cu_cutam",
   "center_name": "CÜ CUTAM",
-  "last_updated": "2026-05-18",
+  "last_updated": "2026-05-25",
   "source_url": "https://cutam.cumhuriyet.edu.tr/16-analiz-fiyatlari",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
     {
       "name": "pH Ölçümü",
       "category": "FİZİKSEL/KİMYASAL TESTLER",
-      "price": 150,
+      "price": 150.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Su Kalitesi ve Çevre Analizleri",
-      "_isOv": false
+      "keyword_group": "Su Kalitesi ve Çevre Analizleri"
     },
     {
       "name": "Bulanıklık (türbidimetrik yöntem)",
       "category": "FİZİKSEL/KİMYASAL TESTLER",
-      "price": 150,
+      "price": 150.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Su Kalitesi ve Çevre Analizleri",
-      "_isOv": false
+      "keyword_group": "Su Kalitesi ve Çevre Analizleri"
     },
     {
       "name": "Renk Tayini (spektrofotometrik)",
       "category": "FİZİKSEL/KİMYASAL TESTLER",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Kimya ve Gıda Analizleri",
-      "_isOv": false
+      "keyword_group": "Genel Kimya ve Gıda Analizleri"
     },
     {
       "name": "Yoğunluk",
       "category": "FİZİKSEL/KİMYASAL TESTLER",
-      "price": 200,
+      "price": 200.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Yoğunluk ve Fiziksel Özellikler",
-      "_isOv": false
+      "keyword_group": "Yoğunluk ve Fiziksel Özellikler"
     },
     {
       "name": "Sıcaklık",
       "category": "FİZİKSEL/KİMYASAL TESTLER",
-      "price": 100,
+      "price": 100.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler",
-      "_isOv": false
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Çözünmüş Oksijen",
       "category": "FİZİKSEL/KİMYASAL TESTLER",
-      "price": 125,
+      "price": 125.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Su Kalitesi ve Çevre Analizleri",
-      "_isOv": false
+      "keyword_group": "Su Kalitesi ve Çevre Analizleri"
     },
     {
       "name": "Toplam Çözünmüş Madde Miktarı (TDS)",
       "category": "FİZİKSEL/KİMYASAL TESTLER",
-      "price": 125,
+      "price": 125.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Su Kalitesi ve Çevre Analizleri",
-      "_isOv": false
+      "keyword_group": "Su Kalitesi ve Çevre Analizleri"
     },
     {
       "name": "Elektriksel İletkenlik (EC)",
       "category": "FİZİKSEL/KİMYASAL TESTLER",
-      "price": 125,
+      "price": 125.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Radyoaktivite Analizleri",
-      "_isOv": false
+      "keyword_group": "Radyoaktivite Analizleri"
     },
     {
       "name": "Tuzluluk",
       "category": "FİZİKSEL/KİMYASAL TESTLER",
-      "price": 125,
+      "price": 125.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Su Kalitesi ve Çevre Analizleri",
-      "_isOv": false
+      "keyword_group": "Su Kalitesi ve Çevre Analizleri"
     },
     {
       "name": "Nem Tayini",
       "category": "FİZİKSEL/KİMYASAL TESTLER",
-      "price": 250,
+      "price": 250.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Kimya ve Gıda Analizleri",
-      "_isOv": false
+      "keyword_group": "Genel Kimya ve Gıda Analizleri"
     },
     {
       "name": "Toplam Sertlik (Ca-Mg)",
       "category": "FİZİKSEL/KİMYASAL TESTLER",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Su Kalitesi ve Çevre Analizleri",
-      "_isOv": false
+      "keyword_group": "Su Kalitesi ve Çevre Analizleri"
     },
     {
       "name": "Anyon Analizi (Cl-, F-, Br-, SO 2-, SO 2- H PO 3-, NO -, NO -) 4 3 2 4 3 2",
       "category": "İYON KROMOTOGRAFİ (IC)",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "İyon Kromatografisi",
-      "_isOv": false
+      "keyword_group": "İyon Kromatografisi"
     },
     {
       "name": "Kalitatif Analiz",
       "category": "HPLC",
-      "price": 700,
+      "price": 700.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "XRD (X-Işını Kırınım) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "Kantitatif Analiz Tek Bileşen",
       "category": "HPLC",
-      "price": 700,
+      "price": 700.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kromatografi (HPLC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GPC)"
     },
     {
       "name": "Kantitatif Analiz İlave Bileşen Başına",
       "category": "HPLC",
-      "price": 300,
+      "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kromatografi (HPLC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GPC)"
     },
     {
       "name": "Numune Hazırlama",
       "category": "HPLC",
-      "price": 350,
+      "price": 350.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "Raporlama",
       "category": "HPLC",
-      "price": 2500,
+      "price": 2500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Raporlama ve Metot Geliştirme",
-      "_isOv": false
+      "keyword_group": "Raporlama ve Metot Geliştirme"
     },
     {
       "name": "GC-MS Kalitatif Analiz GC-FID Kalitatif Analiz",
       "category": "GC-MS/GC-FID",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GC-MS Kantitatif Analiz Tek Bileşen/İlave Bileşen Başına GC-FID Kantitatif Analiz Tek Bileşen/İlave Bileşen Başına",
       "category": "GC-MS/GC-FID",
-      "price": 900,
+      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "Kütüphane Tarama",
       "category": "GC-MS/GC-FID",
-      "price": 300,
+      "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kromatografi (HPLC, GC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Yağ asitleri Kompozisyonu % bağıl miktar",
       "category": "GC-MS/GC-FID",
-      "price": 1000,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Kimya ve Gıda Analizleri",
-      "_isOv": false
+      "keyword_group": "Genel Kimya ve Gıda Analizleri"
     },
     {
       "name": "Uçucu Yağ Analizi",
       "category": "GC-MS/GC-FID",
-      "price": 700,
+      "price": 700.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Kimya ve Gıda Analizleri",
-      "_isOv": false
+      "keyword_group": "Genel Kimya ve Gıda Analizleri"
     },
     {
       "name": "Aroma Analizi",
       "category": "GC-MS/GC-FID",
-      "price": 700,
+      "price": 700.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "Numune Hazırlama",
       "category": "GC-MS/GC-FID",
-      "price": 350,
+      "price": 170.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "Raporlama",
       "category": "GC-MS/GC-FID",
-      "price": 2500,
+      "price": 1400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Raporlama ve Metot Geliştirme",
-      "_isOv": false
+      "keyword_group": "Raporlama ve Metot Geliştirme"
     },
     {
       "name": "Kalitatif Analiz",
       "category": "Q-TOF LC-MS",
-      "price": 700,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "XRD (X-Işını Kırınım) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "Kantitatif Analiz Tek Bileşen",
       "category": "Q-TOF LC-MS",
-      "price": 700,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kromatografi (HPLC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GPC)"
     },
     {
       "name": "Kantitatif Analiz İlave Bileşen Başına",
       "category": "Q-TOF LC-MS",
-      "price": 300,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kromatografi (HPLC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GPC)"
     },
     {
       "name": "Raporlama",
       "category": "Q-TOF LC-MS",
-      "price": 2500,
+      "price": 2000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Raporlama ve Metot Geliştirme",
-      "_isOv": false
+      "keyword_group": "Raporlama ve Metot Geliştirme"
     },
     {
       "name": "Analiz (ATR)",
       "category": "FT-IR SPEKTRUMU",
-      "price": 300,
+      "price": 300.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Analiz (KBr Pellet)",
       "category": "FT-IR SPEKTRUMU",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "FTIR ve IR Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR ve IR Spektroskopi"
     },
     {
       "name": "Tek Dalga Boyunda Ölçüm",
       "category": "UV-Vis SPEKTROFOTOMETRE",
-      "price": 200,
+      "price": 200.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "UV-VIS Spektrofotometri",
-      "_isOv": false
+      "keyword_group": "UV-VIS Spektrofotometri"
     },
     {
       "name": "Spektrum Tarama",
       "category": "UV-Vis SPEKTROFOTOMETRE",
-      "price": 200,
+      "price": 200.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Altın Kaplama (Yalıtkan Numuneler için, 1set-6 numune)",
       "category": "SEM",
-      "price": 200,
+      "price": 200.0,
       "currency": "TRY",
-      "unit": "set",
+      "unit": "numune",
       "notes": "",
-      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)",
-      "_isOv": false
+      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
     {
       "name": "Kritik Noktada Kurutma",
       "category": "SEM",
-      "price": 500,
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Termal Analizler (STA, DMA, TMA)",
-      "_isOv": false
+      "keyword_group": "Termal Analizler (STA, DMA, TMA)"
     },
     {
       "name": "FE-SEM *EDX Analizi",
       "category": "SEM",
-      "price": 1750,
+      "price": 1750.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": "SEM analizleri 1 saat ve katları olarak hesaplanır.",
-      "keyword_group": "SEM-EDX ve EBSD Analizleri",
-      "_isOv": false
+      "notes": "",
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "STEM sıvı numune hazırlık**",
       "category": "SEM",
-      "price": 500,
+      "price": 500.0,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "TEM Grid getirenlerden alınmaz.",
-      "keyword_group": "Genel Numune Hazırlama",
-      "_isOv": false
+      "notes": "",
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "STEM Dedektörü ile İnceleme",
       "category": "SEM",
-      "price": 2000,
+      "price": 2000.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri",
-      "_isOv": false
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "Raporlama",
       "category": "SEM",
-      "price": 2500,
+      "price": 4000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Raporlama ve Metot Geliştirme",
-      "_isOv": false
+      "keyword_group": "Raporlama ve Metot Geliştirme"
     },
     {
       "name": "Tek Numune",
       "category": "ICP-MS",
-      "price": 100,
+      "price": 100.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "Özel elementler (Hg, Au, Ag, Al, Pt)",
       "category": "ICP-MS",
-      "price": 1000,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": "Genel Elementel Analizler (CHNS vb.)",
-      "_isOv": false
+      "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
     },
     {
       "name": "Element grubu (Ca, Mg, K, Na, Zn)",
       "category": "ICP-MS",
-      "price": 500,
+      "price": 500.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": "Genel Elementel Analizler (CHNS vb.)",
-      "_isOv": false
+      "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
     },
     {
       "name": "1-5 element",
       "category": "ICP-MS",
-      "price": 500,
+      "price": 500.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "6-10 element",
       "category": "ICP-MS",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "11-15 element",
       "category": "ICP-MS",
-      "price": 700,
+      "price": 700.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "16-20 element",
       "category": "ICP-MS",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "element",
       "notes": "",
-      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "Numune hazırlığı (asit ile mikro dalga yakma/yaş yakma)",
       "category": "ICP-MS",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı",
-      "_isOv": false
+      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı"
     },
     {
-      "name": "DSC 0-1 saat",
+      "name": "0-1 saat",
       "category": "DSC",
-      "price": 500,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)",
-      "_isOv": false
-    },
-    {
-      "name": "DSC 1-2 saat",
-      "category": "DSC",
-      "price": 650,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)",
-      "_isOv": false
-    },
-    {
-      "name": "DSC >2 saat",
-      "category": "DSC",
-      "price": 150,
+      "price": 500.0,
       "currency": "TRY",
       "unit": "saat",
-      "notes": "2 saat üzerindeki her 1 saat için.",
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)",
-      "_isOv": false
+      "notes": ""
+    },
+    {
+      "name": "1-2 saat",
+      "category": "DSC",
+      "price": 650.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
+    },
+    {
+      "name": ">2 saat",
+      "category": "DSC",
+      "price": 150.0,
+      "currency": "TRY",
+      "unit": "saat",
+      "notes": ""
     },
     {
       "name": "1H-NMR",
       "category": "NMR (400 MHz)",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "13C-NMR",
       "category": "NMR (400 MHz)",
-      "price": 600,
+      "price": 600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "D O Değişimi 2",
       "category": "NMR (400 MHz)",
-      "price": 400,
+      "price": 400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "APT",
       "category": "NMR (400 MHz)",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "DEPT (45-90-135)",
       "category": "NMR (400 MHz)",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "COSY",
       "category": "NMR (400 MHz)",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HMBC",
       "category": "NMR (400 MHz)",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HSQC",
       "category": "NMR (400 MHz)",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HMQC",
       "category": "NMR (400 MHz)",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "19F-NMR",
       "category": "NMR (400 MHz)",
-      "price": 900,
+      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "15N-NMR",
       "category": "NMR (400 MHz)",
-      "price": 900,
+      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "31P-NMR",
       "category": "NMR (400 MHz)",
-      "price": 900,
+      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Analiz Çözeltisi Hazırlama",
       "category": "NMR (400 MHz)",
-      "price": 200,
+      "price": 200.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "Numune yakma, damıtma ve titrasyon",
       "category": "AZOT -PROTEİN TAYİNİ (KJELDAHL YAKMA)",
-      "price": 750,
+      "price": 750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı",
-      "_isOv": false
+      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı"
     }
   ]
 }

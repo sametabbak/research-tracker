@@ -1,14 +1,14 @@
 {
   "center_id": "hacettepe_hunitek",
   "center_name": "HÜNİTEK",
-  "last_updated": "2026-05-18",
+  "last_updated": "2026-05-25",
   "source_url": "https://hunitek.hacettepe.edu.tr/wp-content/uploads/2026/01/2026_hunitek_hizmet-bedelleri.pdf",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
     {
       "name": "Su Temas Açısı- Islanabilirlik",
       "category": "Gönyemetre – Temas Açısı",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -17,7 +17,7 @@
     {
       "name": "Yüzey Gerilimi Ölçümü (Sıvı/Sıvı, Sıvı/Hava)",
       "category": "Gönyemetre – Temas Açısı",
-      "price": 800,
+      "price": 800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -26,7 +26,7 @@
     {
       "name": "Yüzey Serbest Enerjisi Hesaplama",
       "category": "Gönyemetre – Temas Açısı",
-      "price": 1650,
+      "price": 1650.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -35,7 +35,7 @@
     {
       "name": "Tek Noktalı BET Yüzey Alanı",
       "category": "BET Yüzey Alanı ve Gözeneklilik",
-      "price": 875,
+      "price": 875.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -44,7 +44,7 @@
     {
       "name": "20 Noktalı BET Yüzey Alanı",
       "category": "BET Yüzey Alanı ve Gözeneklilik",
-      "price": 1050,
+      "price": 1050.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -53,7 +53,7 @@
     {
       "name": "40 Noktalı BET Yüzey Alanı",
       "category": "BET Yüzey Alanı ve Gözeneklilik",
-      "price": 1250,
+      "price": 1250.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -62,7 +62,7 @@
     {
       "name": "Micro Gözeneklilik Analizi",
       "category": "BET Yüzey Alanı ve Gözeneklilik",
-      "price": 1950,
+      "price": 1950.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -71,7 +71,7 @@
     {
       "name": "Parçacık Boyutu ve Boyut Dağılımı",
       "category": "Dinamik Işık Saçılması (DLS) – Zetasizer",
-      "price": 1050,
+      "price": 1050.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -80,7 +80,7 @@
     {
       "name": "Parçacık Zeta Potansiyeli",
       "category": "Dinamik Işık Saçılması (DLS) – Zetasizer",
-      "price": 1050,
+      "price": 1050.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -89,7 +89,7 @@
     {
       "name": "Parçacık Boyutu Ve Boyut Dağılımı",
       "category": "Statik Işık Saçılması (SLS) – Mastersizer",
-      "price": 1150,
+      "price": 1150.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -98,7 +98,7 @@
     {
       "name": "Nano Boyutta Partikül İzleme",
       "category": "Nanosight NS300",
-      "price": 2500,
+      "price": 2500.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -107,7 +107,7 @@
     {
       "name": "Yüzey Karakterizasyonu",
       "category": "Optik Profilometre",
-      "price": 750,
+      "price": 750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -116,7 +116,7 @@
     {
       "name": "Yoğunluk Ölçümü",
       "category": "Piknometre",
-      "price": 900,
+      "price": 900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -125,7 +125,7 @@
     {
       "name": "Görüntüleme1",
       "category": "SEM (Taramalı Elektron Mikroskop)",
-      "price": 3600,
+      "price": 3600.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -134,7 +134,7 @@
     {
       "name": "EDS Enerji Dağıtıcı X-Işını Spektroskopisi) / CL Çalışması",
       "category": "SEM (Taramalı Elektron Mikroskop)",
-      "price": 3850,
+      "price": 3850.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -143,7 +143,7 @@
     {
       "name": "Kaplama",
       "category": "SEM (Taramalı Elektron Mikroskop)",
-      "price": 660,
+      "price": 660.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -152,7 +152,7 @@
     {
       "name": "FIB (Odaklanmış İyon Demeti) Çalışması",
       "category": "SEM (Taramalı Elektron Mikroskop)",
-      "price": 6750,
+      "price": 6750.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -161,7 +161,7 @@
     {
       "name": "Tarama ve Yeniden Yapılandırma2",
       "category": "Mikro CT (Mikro Tomografi)",
-      "price": 3250,
+      "price": 3250.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -170,7 +170,7 @@
     {
       "name": "Konfokal Görüntüleme",
       "category": "Konfokal/Multifoton Mikroskop",
-      "price": 1560,
+      "price": 1560.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -179,7 +179,7 @@
     {
       "name": "Multifoton Görüntüleme",
       "category": "Konfokal/Multifoton Mikroskop",
-      "price": 1950,
+      "price": 1950.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -188,7 +188,7 @@
     {
       "name": "Topografik Görüntüleme",
       "category": "AFM (Atomik Kuvvet Mikroskobu)",
-      "price": 3250,
+      "price": 3250.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -197,7 +197,7 @@
     {
       "name": "Elektrometrik Metot ile pH Tayini",
       "category": "pH Ölçümü",
-      "price": 160,
+      "price": 160.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -206,7 +206,7 @@
     {
       "name": "Sularda pH Tayini",
       "category": "TS EN ISO 10523 Metodu",
-      "price": 160,
+      "price": 160.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -215,7 +215,7 @@
     {
       "name": "Sularda Elektriksel İletkenlik Tayini",
       "category": "TS 9748 EN 27888 Metodu",
-      "price": 160,
+      "price": 160.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -224,7 +224,7 @@
     {
       "name": "Elektrometrik Metot ile Elektriksel İletkenlik Tayini",
       "category": "Elektriksel İletkenlik Ölçümü",
-      "price": 160,
+      "price": 160.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -233,7 +233,7 @@
     {
       "name": "50°C – 400 °C",
       "category": "DSC (Diferansiyel Taramalı Kalorimetri)",
-      "price": 1440,
+      "price": 1440.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -242,7 +242,7 @@
     {
       "name": "25°C – 700 °C",
       "category": "DSC (Diferansiyel Taramalı Kalorimetri)",
-      "price": 1440,
+      "price": 1440.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -251,7 +251,7 @@
     {
       "name": "25°C – 1000 °C arası Termal Gravimetrik Analiz -Simultane DSC",
       "category": "TGA (Termogravimetrik Analiz)",
-      "price": 1150,
+      "price": 1150.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -260,7 +260,7 @@
     {
       "name": "Termal Gravimetrik Analiz - Diferensiyal Termal Analiz",
       "category": "TGA (Termogravimetrik Analiz)",
-      "price": 1650,
+      "price": 1650.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -269,7 +269,7 @@
     {
       "name": "C, H, N, S Analizi",
       "category": "Elementel Analiz",
-      "price": 1700,
+      "price": 1700.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -278,7 +278,7 @@
     {
       "name": "IR Spektrumu",
       "category": "ATR-FTIR-NIR Spektroskopi",
-      "price": 550,
+      "price": 550.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -287,7 +287,7 @@
     {
       "name": "Cihaz Kullanımı",
       "category": "Potansiyostat/Galvanostat",
-      "price": 780,
+      "price": 780.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -296,7 +296,7 @@
     {
       "name": "Ayrıntılı Elektokimyasal Davranışın Belirlenmesi",
       "category": "Potansiyostat/Galvanostat",
-      "price": 850,
+      "price": 850.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -305,7 +305,7 @@
     {
       "name": "Elektroanalitik Yöntem Geliştirilmesi ve Validasyonu",
       "category": "Potansiyostat/Galvanostat",
-      "price": 850,
+      "price": 850.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -314,7 +314,7 @@
     {
       "name": "Elektrokimyasal Aktifliğin Belirlenmesi",
       "category": "Potansiyostat/Galvanostat",
-      "price": 850,
+      "price": 850.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -323,7 +323,7 @@
     {
       "name": "Viskozite Ölçümü",
       "category": "Reometre",
-      "price": 1750,
+      "price": 1750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -332,7 +332,7 @@
     {
       "name": "Frekans Taraması",
       "category": "Reometre",
-      "price": 1750,
+      "price": 1750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -341,7 +341,7 @@
     {
       "name": "Gerinim Taraması",
       "category": "Reometre",
-      "price": 1750,
+      "price": 1750.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -350,7 +350,7 @@
     {
       "name": "Sıcaklık Taraması (-40°C-200°C arası)",
       "category": "Reometre",
-      "price": 2300,
+      "price": 2300.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -359,7 +359,7 @@
     {
       "name": "Örnek Hazırlama (Bilyalı Öğütücü)",
       "category": "X-Işını Kırınım Difraktometresi",
-      "price": 480,
+      "price": 480.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -368,7 +368,7 @@
     {
       "name": "Genel Tarama",
       "category": "X-Işını Kırınım Difraktometresi",
-      "price": 1200,
+      "price": 1200.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -377,7 +377,7 @@
     {
       "name": "Genel Tarama",
       "category": "X-Işını Floresans Spektrometresi",
-      "price": 1200,
+      "price": 1800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -386,7 +386,7 @@
     {
       "name": "Sıvı Numune Ölçümü",
       "category": "Floresans Spektroskopisi",
-      "price": 1000,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -395,7 +395,7 @@
     {
       "name": "Katı Numune Ölçümü",
       "category": "Floresans Spektroskopisi",
-      "price": 1000,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -404,7 +404,7 @@
     {
       "name": "Lüminesans Ölçümü",
       "category": "Floresans Spektroskopisi",
-      "price": 1000,
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -413,7 +413,7 @@
     {
       "name": "Kantitatif ve Kalitatif Analiz",
       "category": "Sıvı Kromatografisi - Kuadrupol Tandem Kütle Spektrometrisi (LC-MS/MS)",
-      "price": 2900,
+      "price": 2900.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -422,7 +422,7 @@
     {
       "name": "Metot Geliştirme",
       "category": "Sıvı Kromatografisi - Kuadrupol Tandem Kütle Spektrometrisi (LC-MS/MS)",
-      "price": 11400,
+      "price": 11400.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -431,7 +431,7 @@
     {
       "name": "Kantitatif ve Kalitatif GC-MS Analizi",
       "category": "Gaz Kromatografisi-Kütle Spektrometrisi (GC-MS)",
-      "price": 3600,
+      "price": 3600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -440,7 +440,7 @@
     {
       "name": "Katı Prob Analizi",
       "category": "Gaz Kromatografisi-Kütle Spektrometrisi (GC-MS)",
-      "price": 3600,
+      "price": 3600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -449,7 +449,7 @@
     {
       "name": "Metot Geliştirme",
       "category": "Gaz Kromatografisi-Kütle Spektrometrisi (GC-MS)",
-      "price": 11400,
+      "price": 9600.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -458,7 +458,7 @@
     {
       "name": "Kantitatif ve Kalitatif Analiz",
       "category": "Yüksek Performans Sıvı Kromatografisi (HPLC-PDA Dedektörlü)",
-      "price": 2900,
+      "price": 1800.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -467,7 +467,7 @@
     {
       "name": "Metot Geliştirme",
       "category": "Yüksek Performans Sıvı Kromatografisi (HPLC-PDA Dedektörlü)",
-      "price": 11400,
+      "price": 6000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -476,7 +476,7 @@
     {
       "name": "Yüksek Çözünürlüklü (HRMS) Kütle Analizi",
       "category": "Yüksek Çözünürlüklü Kütle Spektrometrisi ve Sıvı Kromatografisi (LC-QTOF-MS)",
-      "price": 1500,
+      "price": 1500.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -485,7 +485,7 @@
     {
       "name": "Protein Tanımlama",
       "category": "Yüksek Çözünürlüklü Kütle Spektrometrisi ve Sıvı Kromatografisi (LC-QTOF-MS)",
-      "price": 9000,
+      "price": 9000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -494,7 +494,7 @@
     {
       "name": "Moleküler Kütle Tayini (Yüksek Çözünürlüklü)",
       "category": "Matriks-yardımlı Lazer Desorpsiyon/İyonlaştırmalı- Uçuş Zamanlı-Kütle Spektrometrisi (MALDI-TOF/TOF-MS)",
-      "price": 4350,
+      "price": 4350.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -503,7 +503,7 @@
     {
       "name": "Sentetik Polimer ve Diğer Makromoleküllerin Analizleri",
       "category": "Matriks-yardımlı Lazer Desorpsiyon/İyonlaştırmalı- Uçuş Zamanlı-Kütle Spektrometrisi (MALDI-TOF/TOF-MS)",
-      "price": 4350,
+      "price": 4350.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -512,7 +512,7 @@
     {
       "name": "Protein Tanımlama",
       "category": "Matriks-yardımlı Lazer Desorpsiyon/İyonlaştırmalı- Uçuş Zamanlı-Kütle Spektrometrisi (MALDI-TOF/TOF-MS)",
-      "price": 9000,
+      "price": 6000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -521,7 +521,7 @@
     {
       "name": "Direkt veya İndirekt Sitotoksisite (ISO10993-5)",
       "category": "Hücre Kültür Çalışması",
-      "price": 5650,
+      "price": 5650.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -530,7 +530,7 @@
     {
       "name": "Mikroplazma Testi",
       "category": "Hücre Kültür Çalışması",
-      "price": 3000,
+      "price": 3000.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -539,7 +539,7 @@
     {
       "name": "Örnek Hazırlama",
       "category": "Soğutmalı Santrifüj",
-      "price": 250,
+      "price": 250.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -548,7 +548,7 @@
     {
       "name": "Dondurarak Kurutma (Bakteri örnekleri çalışılmamaktadır)",
       "category": "Liyofilizatör",
-      "price": 1150,
+      "price": 1150.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -557,7 +557,7 @@
     {
       "name": "UV-Vis Spektrometrik Ölçüm",
       "category": "Mikroplaka Okuyucu",
-      "price": 775,
+      "price": 775.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -566,7 +566,7 @@
     {
       "name": "Tüp hacmi 30 ml'dir. Tek bir santrifüj işlemi için maksimum 6 tüp kullanılabilmektedir.",
       "category": "Ultrasantrifüj",
-      "price": 480,
+      "price": 480.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -575,7 +575,7 @@
     {
       "name": "Kalitatif/Kantitatif Analiz Cihaz Kullanımı",
       "category": "Gerçek Zamanlı PCR (RT-PCR)",
-      "price": 1100,
+      "price": 1100.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -584,7 +584,7 @@
     {
       "name": "Reaksiyon Hazırlığı (45 örnek ve altı) - Cihaz Kullanımı",
       "category": "Gerçek Zamanlı PCR (RT-PCR)",
-      "price": 1350,
+      "price": 1350.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -593,7 +593,7 @@
     {
       "name": "Reaksiyon Hazırlığı (45 örnek ve üstü) - Cihaz Kullanımı",
       "category": "Gerçek Zamanlı PCR (RT-PCR)",
-      "price": 1950,
+      "price": 1950.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -602,7 +602,7 @@
     {
       "name": "Kalitatif/Kantitatif Analiz Cihaz Kullanım",
       "category": "PCR",
-      "price": 325,
+      "price": 325.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -611,7 +611,7 @@
     {
       "name": "Reaksiyon Hazırlığı - Cihaz Kullanımı",
       "category": "PCR",
-      "price": 550,
+      "price": 550.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -620,7 +620,7 @@
     {
       "name": "Agaroz Jel (DNA) - Görüntüleme",
       "category": "Elektroforez ve Jel Görüntüleme",
-      "price": 700,
+      "price": 700.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -629,7 +629,7 @@
     {
       "name": "PCR, RT-PCR ve DNA Dizi Analizi için Primer Dizaynı Gerçekleştirilir.",
       "category": "Primer Dizaynı",
-      "price": 475,
+      "price": 475.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
@@ -638,7 +638,7 @@
     {
       "name": "Kalitatif/Kantitatif Analiz",
       "category": "Akan Hücre Ölçer",
-      "price": 2100,
+      "price": 2100.0,
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
@@ -647,7 +647,7 @@
     {
       "name": "Kan, doku ve bakteri gibi biyolojik örneklerden DNA ve RNA izolasyonu",
       "category": "DNA/RNA İzolasyonu",
-      "price": 160,
+      "price": 160.0,
       "currency": "TRY",
       "unit": "numune",
       "notes": "",

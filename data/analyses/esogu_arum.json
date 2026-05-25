@@ -1,2465 +1,1665 @@
 {
   "center_id": "esogu_arum",
   "center_name": "ESOGÜ ARUM",
-  "last_updated": "2026-05-18",
+  "last_updated": "2026-05-25",
   "source_url": "https://arum.ogu.edu.tr/Sayfa/Index/148/analiz-ucretleri/",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
     {
       "name": "Biyolojik Dokulardan SEM İçin Numune Hazırlama",
-      "category": "SEM-Taramalı Elektron Mikroskobu",
-      "price": 2400,
+      "category": "",
+      "price": 2400.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
       "name": "Numune Kaplama (Altın/Paladyum , Karbon)*",
-      "category": "SEM-Taramalı Elektron Mikroskobu",
-      "price": 400,
+      "category": "",
+      "price": 400.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)",
-      "_isOv": false
+      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
     {
       "name": "Kritik Nokta Kurutma Cihazı ile Numune Hazırlama",
-      "category": "SEM-Taramalı Elektron Mikroskobu",
-      "price": 700,
+      "category": "",
+      "price": 700.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
-      "name": "11.04 İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
-      "category": "SEM-Taramalı Elektron Mikroskobu",
-      "price": 3800,
+      "name": "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
+      "category": "",
+      "price": 3800.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri",
-      "_isOv": false
+      "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
       "name": "SEM / EDS Yarı Kantitatif Analiz veya haritalama**",
-      "category": "SEM-Taramalı Elektron Mikroskobu",
-      "price": 3800,
+      "category": "",
+      "price": 3800.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "SEM-EDX ve EBSD Analizleri",
-      "_isOv": false
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "SEM / EBSD Analizi**",
-      "category": "SEM-Taramalı Elektron Mikroskobu",
-      "price": 3800,
+      "category": "",
+      "price": 3800.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "SEM-EDX ve EBSD Analizleri",
-      "_isOv": false
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "SEM / STEM Analizi**",
-      "category": "SEM-Taramalı Elektron Mikroskobu",
-      "price": 3800,
+      "category": "",
+      "price": 3800.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri",
-      "_isOv": false
+      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
       "name": "Biyolojik Dokulardan SEM İçin Numune Hazırlama Eğitimi***",
-      "category": "SEM-Taramalı Elektron Mikroskobu",
-      "price": 2700,
+      "category": "",
+      "price": 2700.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "SEM Cihaz Kullanımı Eğitimi****",
-      "category": "SEM-Taramalı Elektron Mikroskobu",
-      "price": 5600,
+      "category": "",
+      "price": 5600.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
-      "name": "11.10 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı *",
-      "category": "SEM-Taramalı Elektron Mikroskobu",
-      "price": 14000,
+      "name": "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı *",
+      "category": "",
+      "price": 14000.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
       "name": "Biyolojik Dokulardan TEM İçin Numune Hazırlama",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 3200,
+      "category": "",
+      "price": 3200.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
       "name": "Ultramikrotomda Yarı İnce Kesit Alma",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 1250,
+      "category": "",
+      "price": 1250.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
       "name": "Histokimyasal Boyama; Yarı İnce Kesit Boyama",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 1400,
+      "category": "",
+      "price": 1400.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Ultramikrotomda Tam İnce Kesit Alma",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 1600,
+      "category": "",
+      "price": 1600.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
       "name": "Tam İnce Kesit Boyama (Uranil Asetat / Kurşun Sitrat ile)",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 1800,
+      "category": "",
+      "price": 1800.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Biyolojik Dokulardan Kriyo-TEM İçin Numune Hazırlama*",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 4000,
+      "category": "",
+      "price": 4000.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
       "name": "Kriyo-Ultramikrotomda Tam İnce Kesit Alma*",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 4100,
+      "category": "",
+      "price": 4100.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
       "name": "Çözelti / Hücre Süspansiyonlarından Grid Üzerine Kriyo Hazırlık*",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 6500,
+      "category": "",
+      "price": 6500.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
-      "name": "12.09 İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 3800,
+      "name": "İnceleme ve Görüntü Alma (Yüksek Çözünürlük Modu)**",
+      "category": "",
+      "price": 4000.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri",
-      "_isOv": false
+      "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
       "name": "Kriyojenik Örnekler İçin İnceleme ve Görüntü Alma**",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 4500,
+      "category": "",
+      "price": 4500.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri",
-      "_isOv": false
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "Formwar/Karbon Grid Üzerine Çözeltiden Numune Hazırlama",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 1400,
+      "category": "",
+      "price": 1400.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "Biyolojik Dokulardan TEM İçin Numune Hazırlama Eğitimi***",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 4100,
+      "category": "",
+      "price": 4100.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "TEM Cihaz Kullanımı Eğitimi***",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 6500,
+      "category": "",
+      "price": 6500.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "İmmunogold Boyama İçin Numune Hazırlama",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 3250,
+      "category": "",
+      "price": 3250.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "İmmunogold Etiketleme****",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 3250,
+      "category": "",
+      "price": 3250.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri",
-      "_isOv": false
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
-      "name": "12.16 Sertifikalı Eğitim Paketi (Teorik ve Uygulama İçeren) İçin Günlük (8 Saat) Laboratuvar Kullanımı*****",
-      "category": "TEM-Geçirimli Elektron Mikroskobu",
-      "price": 14000,
+      "name": "Sertifikalı Eğitim Paketi (Teorik ve Uygulama İçeren) İçin Günlük (8 Saat) Laboratuvar Kullanımı*****",
+      "category": "",
+      "price": 14000.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
       "name": "Konfokal Mikroskop ile Görüntüleme*",
-      "category": "İLERİ MİKROSKOBİ BİRİMİ",
-      "price": 2350,
+      "category": "",
+      "price": 2350.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Optik Mikroskopi ve Görüntüleme",
-      "_isOv": false
+      "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
       "name": "Görüntü Analiz İşlemleri",
-      "category": "İLERİ MİKROSKOBİ BİRİMİ",
-      "price": 1750,
+      "category": "",
+      "price": 1750.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Optik Mikroskopi ve Görüntüleme",
-      "_isOv": false
+      "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
       "name": "Inverted Mikroskop ile Görüntüleme*",
-      "category": "İLERİ MİKROSKOBİ BİRİMİ",
-      "price": 675,
+      "category": "",
+      "price": 675.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Optik Mikroskopi ve Görüntüleme",
-      "_isOv": false
+      "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
       "name": "Floresan Ataçmanlı Mikroskop ile Görüntüleme*",
-      "category": "İLERİ MİKROSKOBİ BİRİMİ",
-      "price": 1350,
+      "category": "",
+      "price": 1350.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Optik Mikroskopi ve Görüntüleme",
-      "_isOv": false
+      "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
       "name": "Stereomikroskop ile Görüntüleme*",
-      "category": "İLERİ MİKROSKOBİ BİRİMİ",
-      "price": 500,
+      "category": "",
+      "price": 500.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Optik Mikroskopi ve Görüntüleme",
-      "_isOv": false
+      "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
-      "name": "21.06 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı**",
-      "category": "İLERİ MİKROSKOBİ BİRİMİ",
-      "price": 14000,
+      "name": "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı**",
+      "category": "",
+      "price": 14000.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
       "name": "Toz Kırınım Deseni (Toz Numune)",
-      "category": "XRD-X-Işını Kırınımı",
-      "price": 1050,
+      "category": "",
+      "price": 1050.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "XRD (X-Işını Kırınım) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "İnce Film Analizi",
-      "category": "XRD-X-Işını Kırınımı",
-      "price": 3150,
+      "category": "",
+      "price": 3150.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "SAXS Analizi",
-      "category": "XRD-X-Işını Kırınımı",
-      "price": 5250,
+      "category": "",
+      "price": 5250.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "XRD (X-Işını Kırınım) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "Kalitatif Mineral Analiz",
-      "category": "XRD-X-Işını Kırınımı",
-      "price": 3150,
+      "category": "",
+      "price": 3150.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "XRD (X-Işını Kırınım) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "Yüksek Sıcaklık Kırınım Deseni",
-      "category": "XRD-X-Işını Kırınımı",
-      "price": 5250,
+      "category": "",
+      "price": 5250.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "XRD (X-Işını Kırınım) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "Rietveld Analizi",
-      "category": "XRD-X-Işını Kırınımı",
-      "price": 10500,
+      "category": "",
+      "price": 10500.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "XRD (X-Işını Kırınım) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) Analizleri"
     },
     {
       "name": "Kalıntı Gerilme Analizi",
-      "category": "XRD-X-Işını Kırınımı",
-      "price": 10500,
+      "category": "",
+      "price": 10500.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)",
-      "_isOv": false
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "XRD Temel Kullanıcı Eğitimi",
-      "category": "XRD-X-Işını Kırınımı",
-      "price": 15750,
+      "category": "",
+      "price": 15750.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "XRR Analizi",
-      "category": "XRD-X-Işını Kırınımı",
-      "price": 420,
+      "category": "",
+      "price": 420.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "XRR (X-Işını Yansıma) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRR (X-Işını Yansıma) Analizleri"
     },
     {
       "name": "Numune Hazırlama",
-      "category": "XRD-X-Işını Kırınımı",
-      "price": 10500,
+      "category": "",
+      "price": 10500.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
-      "name": "31.11 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
-      "category": "XRD-X-Işını Kırınımı",
-      "price": 14000,
+      "name": "Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
+      "category": "",
+      "price": 14000.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
       "name": "XRF Analizi / Katı Numune",
-      "category": "XRF-X-Işını Floresans",
-      "price": 1575,
+      "category": "",
+      "price": 1575.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "XRF (X-Işını Floresans) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "Eritiş Cihazı ile Numune Hazırlama",
-      "category": "XRF-X-Işını Floresans",
-      "price": 800,
+      "category": "",
+      "price": 800.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı",
-      "_isOv": false
+      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı"
     },
     {
-      "name": "32.03 Kırma ve Öğütme",
-      "category": "XRF-X-Işını Floresans",
-      "price": 485,
+      "name": "Kırma ve Öğütme",
+      "category": "",
+      "price": 485.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Mekanik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
-      "name": "32.04 Presleme",
-      "category": "XRF-X-Işını Floresans",
-      "price": 420,
+      "name": "Presleme",
+      "category": "",
+      "price": 420.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Mekanik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
-      "name": "32.05 Kızdırma Kaybı",
-      "category": "XRF-X-Işını Floresans",
-      "price": 315,
+      "name": "Kızdırma Kaybı",
+      "category": "",
+      "price": 315.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Genel Kimya ve Gıda Analizleri",
-      "_isOv": false
+      "keyword_group": null
     },
     {
       "name": "XRF Analizi / Sıvı Numune*",
-      "category": "XRF-X-Işını Floresans",
-      "price": 2100,
+      "category": "",
+      "price": 2100.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "XRF (X-Işını Floresans) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "XRF Temel Kullanıcı Eğitimi**",
-      "category": "XRF-X-Işını Floresans",
-      "price": 15750,
+      "category": "",
+      "price": 15750.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "XRF (X-Işını Floresans) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "ICP-MS 1 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 1150,
+      "category": "",
+      "price": 1150.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "ICP-MS Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP-MS Analizleri"
     },
     {
       "name": "ICP-MS 2-5 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 1350,
+      "category": "",
+      "price": 1350.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "ICP-MS Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP-MS Analizleri"
     },
     {
       "name": "ICP-MS 6-10 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 1650,
+      "category": "",
+      "price": 1650.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "ICP-MS Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP-MS Analizleri"
     },
     {
       "name": "ICP-MS 11-15 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 1900,
+      "category": "",
+      "price": 1900.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "ICP-MS Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP-MS Analizleri"
     },
     {
       "name": "ICP-MS 16-20 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 2150,
+      "category": "",
+      "price": 2150.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "ICP-MS Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP-MS Analizleri"
     },
     {
       "name": "ICP-MS 21-30 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 2625,
+      "category": "",
+      "price": 2625.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "ICP-MS Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP-MS Analizleri"
     },
     {
       "name": "ICP-MS 31-40 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 3150,
+      "category": "",
+      "price": 3150.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "ICP-MS Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP-MS Analizleri"
     },
     {
       "name": "ICP-MS 41-50 Element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 3690,
+      "category": "",
+      "price": 3690.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "ICP-MS Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP-MS Analizleri"
     },
     {
       "name": "ICP-MS 51 ve üzeri element Analizi",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 4325,
+      "category": "",
+      "price": 4325.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "ICP-MS Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP-MS Analizleri"
     },
     {
       "name": "ICP-MS 1 Nadir Toprak Elementi Analizi*",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 1200,
+      "category": "",
+      "price": 1200.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "ICP-MS Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP-MS Analizleri"
     },
     {
       "name": "ICP-MS 2-10 Nadir Toprak Elementi Analizi*",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 1690,
+      "category": "",
+      "price": 1690.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "ICP-MS Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP-MS Analizleri"
     },
     {
       "name": "ICP-MS 11-18 Nadir Toprak Elementi Analizi*",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 2220,
+      "category": "",
+      "price": 2220.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "ICP-MS Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP-MS Analizleri"
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (Nitik asit ile)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 750,
+      "category": "",
+      "price": 750.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı",
-      "_isOv": false
+      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı"
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (Kral Suyu ile)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 865,
+      "category": "",
+      "price": 865.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı",
-      "_isOv": false
+      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı"
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (H2O2 içeren karışım)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 900,
+      "category": "",
+      "price": 900.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı",
-      "_isOv": false
+      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı"
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (HF içeren karışım)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 940,
+      "category": "",
+      "price": 940.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı",
-      "_isOv": false
+      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı"
     },
     {
       "name": "Mikrodalga ile Numune Hazırlama (Çoklu asit içeren karışım)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 1020,
+      "category": "",
+      "price": 1020.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı",
-      "_isOv": false
+      "keyword_group": "Kimyasal Çözme ve Numune Hazırlığı"
     },
     {
       "name": "Ön Hazırlık (Kırma. Öğütme vb.)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 345,
+      "category": "",
+      "price": 345.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Mekanik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Mekanik Numune Hazırlama"
     },
     {
       "name": "Ön Hazırlık (Yakma. Kurutma vb.)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 375,
+      "category": "",
+      "price": 375.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Termal Analizler (STA, DMA, TMA)",
-      "_isOv": false
+      "keyword_group": "Termal Analizler (STA, DMA, TMA)"
     },
     {
       "name": "Ön Hazırlık (Süzme. Santrifüj vb,)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 280,
+      "category": "",
+      "price": 280.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "Ön Hazırlık (Açıktan Çözeltiye Alma)",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 375,
+      "category": "",
+      "price": 375.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
-      "name": "35.04 Kızdırma Kaybı",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
-      "price": 280,
+      "name": "Kızdırma Kaybı",
+      "category": "",
+      "price": 280.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Genel Kimya ve Gıda Analizleri",
-      "_isOv": false
+      "keyword_group": null
     },
     {
       "name": "1H (Proton) NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 780,
+      "category": "",
+      "price": 780.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "13C (Karbon) NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 975,
+      "category": "",
+      "price": 975.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "13C APT NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 975,
+      "category": "",
+      "price": 975.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "13C DEPT (45,90,135) NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 975,
+      "category": "",
+      "price": 975.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "COSY NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 1170,
+      "category": "",
+      "price": 1170.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HETCOR NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 1170,
+      "category": "",
+      "price": 1170.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HMBC NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 1170,
+      "category": "",
+      "price": 1170.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HMQC NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 1170,
+      "category": "",
+      "price": 1170.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "NOESY NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 1170,
+      "category": "",
+      "price": 1170.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "31P NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 1170,
+      "category": "",
+      "price": 1170.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "19F NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 880,
+      "category": "",
+      "price": 880.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "11B NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 1250,
+      "category": "",
+      "price": 1250.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Sıcaklık Deneyleri",
-      "category": "Sıvı NMR",
-      "price": 975,
+      "category": "",
+      "price": 975.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "TOCSY NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 1465,
+      "category": "",
+      "price": 1465.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "15N NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 2925,
+      "category": "",
+      "price": 2925.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Si NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 1465,
+      "category": "",
+      "price": 1465.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "NOE NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 1950,
+      "category": "",
+      "price": 1950.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Water-Gated NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 3420,
+      "category": "",
+      "price": 3420.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HSQC NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 975,
+      "category": "",
+      "price": 975.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "INADEQUATE NMR Analizi",
-      "category": "Sıvı NMR",
-      "price": 1465,
+      "category": "",
+      "price": 1465.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Relaxation Time Ölçümleri",
-      "category": "Sıvı NMR",
-      "price": 1465,
+      "category": "",
+      "price": 1465.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Sıvı NMR Temel Kullanıcı Eğitimi",
-      "category": "Sıvı NMR",
-      "price": 9750,
+      "category": "",
+      "price": 9750.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
-      "name": "41.24 Dötoro Çözücü",
-      "category": "Sıvı NMR",
-      "price": 295,
+      "name": "Dötoro Çözücü",
+      "category": "",
+      "price": 295.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": null
     },
     {
-      "name": "41.26 Tüp",
-      "category": "Sıvı NMR",
-      "price": 100,
+      "name": "Tüp",
+      "category": "",
+      "price": 100.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": null
     },
     {
       "name": "Al NMR Analizi 4 Saat",
-      "category": "Katı NMR",
-      "price": 3375,
+      "category": "",
+      "price": 3375.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Al NMR Analizi 8 Saat",
-      "category": "Katı NMR",
-      "price": 4050,
+      "category": "",
+      "price": 4050.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Al NMR Analizi 16 Saat",
-      "category": "Katı NMR",
-      "price": 4500,
+      "category": "",
+      "price": 4500.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Al NMR Analizi 27 Saat",
-      "category": "Katı NMR",
-      "price": 5625,
+      "category": "",
+      "price": 5625.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "13C CP MAS NMR Analizi 4 Saat",
-      "category": "Katı NMR",
-      "price": 3375,
+      "category": "",
+      "price": 3375.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "13C CP MAS NMR Analizi 8 Saat",
-      "category": "Katı NMR",
-      "price": 4050,
+      "category": "",
+      "price": 4050.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "13C CP MAS NMR Analizi 16 Saat",
-      "category": "Katı NMR",
-      "price": 4500,
+      "category": "",
+      "price": 4500.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "13C CP MAS NMR Analizi 27 Saat",
-      "category": "Katı NMR",
-      "price": 5625,
+      "category": "",
+      "price": 5625.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "1H NMR Analizi",
-      "category": "Katı NMR",
-      "price": 1800,
+      "category": "",
+      "price": 1800.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "11B NMR Analizi 4 Saat",
-      "category": "Katı NMR",
-      "price": 3375,
+      "category": "",
+      "price": 3375.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "11B NMR Analizi 8 Saat",
-      "category": "Katı NMR",
-      "price": 4050,
+      "category": "",
+      "price": 4050.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "11B NMR Analizi 16 Saat",
-      "category": "Katı NMR",
-      "price": 4500,
+      "category": "",
+      "price": 4500.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "11B NMR Analizi 27 Saat",
-      "category": "Katı NMR",
-      "price": 5625,
+      "category": "",
+      "price": 5625.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "15N NMR Analizi 4 Saat",
-      "category": "Katı NMR",
-      "price": 4815,
+      "category": "",
+      "price": 4815.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "15N NMR Analizi 8 Saat",
-      "category": "Katı NMR",
-      "price": 5355,
+      "category": "",
+      "price": 5355.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "15N NMR Analizi 16 Saat",
-      "category": "Katı NMR",
-      "price": 6188,
+      "category": "",
+      "price": 6188.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "15N NMR Analizi 27 Saat",
-      "category": "Katı NMR",
-      "price": 7315,
+      "category": "",
+      "price": 7315.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HETCOR NMR Analizi 4 Saat",
-      "category": "Katı NMR",
-      "price": 3375,
+      "category": "",
+      "price": 3375.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HETCOR NMR Analizi 8 Saat",
-      "category": "Katı NMR",
-      "price": 4050,
+      "category": "",
+      "price": 4050.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HETCOR NMR Analizi 16 Saat",
-      "category": "Katı NMR",
-      "price": 4500,
+      "category": "",
+      "price": 4500.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "HETCOR NMR Analizi 27 Saat",
-      "category": "Katı NMR",
-      "price": 5625,
+      "category": "",
+      "price": 5625.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Sıcaklık Deneyleri",
-      "category": "Katı NMR",
-      "price": 975,
+      "category": "",
+      "price": 3375.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "19F NMR Analizi",
-      "category": "Katı NMR",
-      "price": 880,
+      "category": "",
+      "price": 1690.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "31P NMR Analizi 4 Saat",
-      "category": "Katı NMR",
-      "price": 3375,
+      "category": "",
+      "price": 3375.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "31P NMR Analizi 8 Saat",
-      "category": "Katı NMR",
-      "price": 4050,
+      "category": "",
+      "price": 4050.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "31P NMR Analizi 16 Saat",
-      "category": "Katı NMR",
-      "price": 4500,
+      "category": "",
+      "price": 4500.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "31P NMR Analizi 27 Saat",
-      "category": "Katı NMR",
-      "price": 5625,
+      "category": "",
+      "price": 5625.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Katı NMR Temel Kullanıcı Eğitimi",
-      "category": "Katı NMR",
-      "price": 16875,
+      "category": "",
+      "price": 16875.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
-      "name": "42.12 Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
-      "category": "Katı NMR",
-      "price": 14000,
+      "name": "Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
+      "category": "",
+      "price": 14000.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
       "name": "Si NMR Analizi 4 Saat",
-      "category": "Katı NMR",
-      "price": 3750,
+      "category": "",
+      "price": 3750.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Si NMR Analizi 8 Saat",
-      "category": "Katı NMR",
-      "price": 4500,
+      "category": "",
+      "price": 4500.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Si NMR Analizi 16 Saat",
-      "category": "Katı NMR",
-      "price": 5250,
+      "category": "",
+      "price": 5250.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Si NMR Analizi 27 Saat",
-      "category": "Katı NMR",
-      "price": 6750,
+      "category": "",
+      "price": 6750.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Raman Spektrumu Eldesi",
-      "category": "Raman Spektroskopi",
-      "price": 525,
+      "category": "",
+      "price": 525.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Raman Spektroskopi",
-      "_isOv": false
+      "keyword_group": "Raman Spektroskopi"
     },
     {
       "name": "Alan Analizi - Haritalama",
-      "category": "Raman Spektroskopi",
-      "price": 2100,
+      "category": "",
+      "price": 2100.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Raman Spektroskopi",
-      "_isOv": false
+      "keyword_group": "Raman Spektroskopi"
     },
     {
       "name": "Derinlik Profili",
-      "category": "Raman Spektroskopi",
-      "price": 2100,
+      "category": "",
+      "price": 2100.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Raman Spektroskopi",
-      "_isOv": false
+      "keyword_group": "Raman Spektroskopi"
     },
     {
-      "name": "43.05 Eğitim",
-      "category": "Raman Spektroskopi",
-      "price": 10500,
+      "name": "Eğitim",
+      "category": "",
+      "price": 10500.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
       "name": "Hücre Kültürü Laboratuvarı Kullanımı**",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 14000,
+      "category": "",
+      "price": 14000.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Otomatik Hücre Sayımı Cihazı Kullanımı",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 420,
+      "category": "",
+      "price": 420.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Hücre Serisi Stoklama (6 Ay Stoklama)",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 1365,
+      "category": "",
+      "price": 1365.0,
       "currency": "TRY",
       "unit": "Vial",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Hücre Serisi Dondurulması (Temel Sarflar Dahil, 6 Ay Stoklama) ***",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 1890,
+      "category": "",
+      "price": 1890.0,
       "currency": "TRY",
       "unit": "Vial",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Biyogüvenlik Kabini Kullanımı****",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 630,
+      "category": "",
+      "price": 630.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Soğutmalı Santrifüj Kullanımı****",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 630,
+      "category": "",
+      "price": 630.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
       "name": "Hücre Kültürlerinde Mikoplazma Kontrolü-DAPI ile",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 2100,
+      "category": "",
+      "price": 2100.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Hücre açma. pasajlama, hücre sayımı (25T Flask)",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 1890,
+      "category": "",
+      "price": 1890.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, Tek saat dilimi ) ****",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 7840,
+      "category": "",
+      "price": 7840.0,
       "currency": "TRY",
       "unit": "Test",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, İki farklı saat dilimi ) ****",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 8190,
+      "category": "",
+      "price": 8190.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "MTT veya eşdeğeri sitotoksisite testi (Tek hücre hattı için. 5 farklı konsantrasyon. 1 pozitif kontrol, 1 negatif kontrol, Üç farklı saat dilimi ) ****",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 8540,
+      "category": "",
+      "price": 8540.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "MTT veya eşdeğeri sitotoksisite testi (5 konsantrasyon dışında ek her konsantrasyon)",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 525,
+      "category": "",
+      "price": 525.0,
       "currency": "TRY",
       "unit": "Test",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "IC50 değeri hesaplama (Bir örnek için) ******",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 3150,
+      "category": "",
+      "price": 3150.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Primer Hücre Kültürü*******",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 2100,
+      "category": "",
+      "price": 2100.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Muse Cihaz Kulanımı",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 1400,
+      "category": "",
+      "price": 1400.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Annexin V , Dead Cell Kit",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 2100,
+      "category": "",
+      "price": 2100.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Caspase-3/7 Kit",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 1785,
+      "category": "",
+      "price": 1785.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Oxidative Stress Kit",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 2100,
+      "category": "",
+      "price": 2100.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Cell Cycle Kit",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 1750,
+      "category": "",
+      "price": 1750.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Autophagy LC3-antibody based Kit",
-      "category": "Hücre Kültürü Laboratuvarı",
-      "price": 2100,
+      "category": "",
+      "price": 2100.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Elisa Reader",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 840,
+      "category": "",
+      "price": 840.0,
       "currency": "TRY",
       "unit": "Plaka",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Tip I Biyogüvenlik Kabini",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 1050,
+      "category": "",
+      "price": 1050.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "Liyofilizatör Kullanımı",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 1680,
+      "category": "",
+      "price": 1680.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
       "name": "PCR Cihaz Kullanımı",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 630,
+      "category": "",
+      "price": 630.0,
       "currency": "TRY",
       "unit": "Döngü",
       "notes": "",
-      "keyword_group": "Moleküler Genetik ve PCR Analizleri",
-      "_isOv": false
+      "keyword_group": "Moleküler Genetik ve PCR Analizleri"
     },
     {
       "name": "Soğutmalı Santrifüj*",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 800,
+      "category": "",
+      "price": 800.0,
       "currency": "TRY",
       "unit": "Saat",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
       "name": "Mini Dikey Jel Elektroforezi (Cihaz Kullanımı)**",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 1575,
+      "category": "",
+      "price": 1575.0,
       "currency": "TRY",
       "unit": "Kaset",
       "notes": "",
-      "keyword_group": "Moleküler Genetik ve PCR Analizleri",
-      "_isOv": false
+      "keyword_group": "Moleküler Genetik ve PCR Analizleri"
     },
     {
       "name": "Maxi Dikey Jel Elektroforezi (Cihaz Kullanımı)**",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 2625,
+      "category": "",
+      "price": 2625.0,
       "currency": "TRY",
       "unit": "Kaset",
       "notes": "",
-      "keyword_group": "Moleküler Genetik ve PCR Analizleri",
-      "_isOv": false
+      "keyword_group": "Moleküler Genetik ve PCR Analizleri"
     },
     {
       "name": "Mini Yatay Jel Elektroforezi  (Cihaz Kullanımı)**",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 420,
+      "category": "",
+      "price": 420.0,
       "currency": "TRY",
       "unit": "Kaset",
       "notes": "",
-      "keyword_group": "Moleküler Genetik ve PCR Analizleri",
-      "_isOv": false
+      "keyword_group": "Moleküler Genetik ve PCR Analizleri"
     },
     {
       "name": "Semi-Dry Blotlama",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 3150,
+      "category": "",
+      "price": 3150.0,
       "currency": "TRY",
       "unit": "Kaset",
       "notes": "",
-      "keyword_group": "Biyolojik Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Biyolojik Numune Hazırlama"
     },
     {
       "name": "Jel Görüntüleme ve Dökümantasyon Sistemi Kullanımı (UV)**",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 525,
+      "category": "",
+      "price": 525.0,
       "currency": "TRY",
       "unit": "Kaset",
       "notes": "",
-      "keyword_group": "Moleküler Genetik ve PCR Analizleri",
-      "_isOv": false
+      "keyword_group": "Moleküler Genetik ve PCR Analizleri"
     },
     {
       "name": "Jel Görüntüleme ve Dökümantasyon Sistemi Kullanımı (Kemilüminesans)**",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 1575,
+      "category": "",
+      "price": 1575.0,
       "currency": "TRY",
       "unit": "Kaset",
       "notes": "",
-      "keyword_group": "Floresans ve Fotolüminesans Spektroskopi",
-      "_isOv": false
+      "keyword_group": "Floresans ve Fotolüminesans Spektroskopi"
     },
     {
       "name": "-40 Dondurucu Kulanımı",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 300,
+      "category": "",
+      "price": 300.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
       "name": "-80 Dondurucu Kullanımı",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 315,
+      "category": "",
+      "price": 315.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler",
-      "_isOv": false
+      "keyword_group": "Hücre Kültürü ve Biyolojik Analizler"
     },
     {
-      "name": "52.17 Otoklav",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 315,
+      "name": "Otoklav",
+      "category": "",
+      "price": 315.0,
       "currency": "TRY",
       "unit": "Döngü",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
-      "name": "52.18 Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı***",
-      "category": "Biyoteknoloji Laboratuvarı",
-      "price": 14000,
+      "name": "Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı***",
+      "category": "",
+      "price": 14000.0,
       "currency": "TRY",
       "unit": "Gün",
       "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
       "name": "STA Analizi (25 °C – 900 °C) 1 Saat",
-      "category": "STA- Simültane Termal Analizör",
-      "price": 1000,
+      "category": "",
+      "price": 1000.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)",
-      "_isOv": false
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "STA Analizi (25 °C – 900 °C) 2 Saat",
-      "category": "STA- Simültane Termal Analizör",
-      "price": 1250,
+      "category": "",
+      "price": 1250.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)",
-      "_isOv": false
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "STA Analizi (25 °C – 900 °C) 3 Saat",
-      "category": "STA- Simültane Termal Analizör",
-      "price": 1470,
+      "category": "",
+      "price": 1470.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)",
-      "_isOv": false
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "STA Analizi (25 °C – 900 °C) 3-7 Saat",
-      "category": "STA- Simültane Termal Analizör",
-      "price": 2025,
+      "category": "",
+      "price": 2025.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)",
-      "_isOv": false
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "STA Analizi (25 °C – 900 °C) 7-14 Saat",
-      "category": "STA- Simültane Termal Analizör",
-      "price": 4050,
+      "category": "",
+      "price": 4050.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)",
-      "_isOv": false
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "HPLC-Kantitatif: Tek Bileşen (Metot Bildirilmişse)",
-      "category": "Yüksek Basınçlı Sıvı Kromatografi",
-      "price": 1365,
+      "category": "",
+      "price": 1365.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Kromatografi (HPLC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GPC)"
     },
     {
       "name": "HPLC- Kantitatif: İki veya Daha Fazla Bileşenli Numunelerde Her Bir Ek Bileşen Başına",
-      "category": "Yüksek Basınçlı Sıvı Kromatografi",
-      "price": 300,
+      "category": "",
+      "price": 300.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Kromatografi (HPLC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GPC)"
     },
     {
       "name": "HPLC-Kalitatif: Tek Bileşen (Metot Bildirilmişse)",
-      "category": "Yüksek Basınçlı Sıvı Kromatografi",
-      "price": 1170,
+      "category": "",
+      "price": 1170.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Kromatografi (HPLC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GPC)"
     },
     {
       "name": "HPLC-Kalitatif: İki veya Daha Fazla Bileşenli Numunelerde Her Bir Ek Bileşen Başına",
-      "category": "Yüksek Basınçlı Sıvı Kromatografi",
-      "price": 200,
+      "category": "",
+      "price": 200.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Kromatografi (HPLC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GPC)"
     },
     {
       "name": "HPLC-Metot geliştirme (2 bileşen)",
-      "category": "Yüksek Basınçlı Sıvı Kromatografi",
-      "price": 5850,
+      "category": "",
+      "price": 5850.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Kromatografi (HPLC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GPC)"
     },
     {
       "name": "HPLC-Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
-      "category": "Yüksek Basınçlı Sıvı Kromatografi",
-      "price": 390,
+      "category": "",
+      "price": 390.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama"
     },
     {
       "name": "Uyuşturucu Madde Analizi İçin Mikroskobik İnceleme ve Raporlanması",
-      "category": "Yasaklı Madde Analizi",
-      "price": 5600,
+      "category": "",
+      "price": 5600.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Yasaklı Madde Analizi",
-      "_isOv": false
+      "keyword_group": "Yasaklı Madde Analizi"
     },
     {
       "name": "Uyuşturucu ve Uyarıcı Madde Analizi (LC-MS veya GC-MS ile) Ve Raporlama",
-      "category": "Yasaklı Madde Analizi",
-      "price": 6300,
+      "category": "",
+      "price": 6300.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "Alkol Analizleri ve Raporlanması",
-      "category": "Yasaklı Madde Analizi",
-      "price": 2500,
+      "category": "",
+      "price": 2500.0,
       "currency": "TRY",
       "unit": "Numune",
       "notes": "",
-      "keyword_group": "Raporlama ve Metot Geliştirme",
-      "_isOv": false
+      "keyword_group": "Raporlama ve Metot Geliştirme"
     },
     {
-      "name": "Sıvı Azot",
-      "category": "Sıvı Azot ve Saf Su",
-      "price": 225,
-      "currency": "TRY",
-      "unit": "Litre",
-      "notes": "",
-      "keyword_group": "Sıvı Azot ve Saf Su",
-      "_isOv": false
-    },
-    {
-      "name": "Analiz Sonucunun Yorumlanması ve Rapor Oluşturulması",
-      "category": "Raporlama",
-      "price": 15000,
+      "name": "78.01",
+      "category": "",
+      "price": 15000.0,
       "currency": "TRY",
       "unit": "Adet",
       "notes": "",
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": null
     },
     {
-      "name": "32.08 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
-      "price": 14000,
-      "unit": "Gün",
-      "category": "XRF-X-Işını Floresans",
-      "notes": "",
+      "name": "Sıvı Azot",
+      "category": "",
+      "price": 225.0,
       "currency": "TRY",
-      "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
-    },
-    {
-      "name": "35.05 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı**",
-      "price": 14000,
-      "unit": "Gün",
-      "category": "İndüktif Eşleşmiş Plazma Kütle Spektrometresi (ICP-MS)",
+      "unit": "Litre",
       "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
-    },
-    {
-      "name": "41.25 Sertifikalı Eğitim Paketleri (Teorik ve uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
-      "price": 14000,
-      "unit": "Gün",
-      "category": "Sıvı NMR",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
-    },
-    {
-      "name": "43.06 Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
-      "price": 14000,
-      "unit": "Gün",
-      "category": "Katı NMR",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
-    },
-    {
-      "name": "44.01 FTIR Spektrum Analizi (KBr ile)",
-      "price": 800,
-      "unit": "Numune",
-      "category": "FTIR-Fourier Dönüşümlü Kızılötesi Spektrometre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
-    },
-    {
-      "name": "44.02 FTIR Spektrum Analizi (Elmas ATR ile)",
-      "price": 675,
-      "unit": "Numune",
-      "category": "FTIR-Fourier Dönüşümlü Kızılötesi Spektrometre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
-    },
-    {
-      "name": "44.03 FTIR Spektrum Analizi (Germanyum ATR ile)",
-      "price": 1050,
-      "unit": "Numune",
-      "category": "FTIR-Fourier Dönüşümlü Kızılötesi Spektrometre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
-    },
-    {
-      "name": "45.01 UV Spektrum Analizi / Sıvı Numune",
-      "price": 315,
-      "unit": "Numune",
-      "category": "UV-VIS-NIR Morötesi-Görünür Işık Spektrofotometresi",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
-    },
-    {
-      "name": "45.02 UV Spektrum Analizi / Katı Numune",
-      "price": 800,
-      "unit": "Numune",
-      "category": "UV-VIS-NIR Morötesi-Görünür Işık Spektrofotometresi",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
-    },
-    {
-      "name": "46.01 Floresan Analizi / Sıvı Numune",
-      "price": 420,
-      "unit": "Numune",
-      "category": "Floresans Spektrofotometre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
-    },
-    {
-      "name": "46.02 Floresan Analizi / Katı Numune",
-      "price": 630,
-      "unit": "Numune",
-      "category": "Floresans Spektrofotometre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
-    },
-    {
-      "name": "62.01 DSC Analizi (25 °C – 600 °C) 1 Saat",
-      "price": 1000,
-      "unit": "Numune",
-      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
-    },
-    {
-      "name": "DSC Analizi (25 °C – 600 °C) 2 Saat",
-      "price": 1250,
-      "unit": "Numune",
-      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
-    },
-    {
-      "name": "DSC Analizi (25 °C – 600 °C) 3 Saat",
-      "price": 1470,
-      "unit": "Numune",
-      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
-    },
-    {
-      "name": "DSC Analizi (25 °C – 600 °C) 3-7 Saat",
-      "price": 2025,
-      "unit": "Numune",
-      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
-    },
-    {
-      "name": "DSC Analizi (25 °C – 600 °C) 7-14 Saat",
-      "price": 4050,
-      "unit": "Numune",
-      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
-    },
-    {
-      "name": "62.02 DSC Analizi (-150 °C – 600 °C) 1 Saat",
-      "price": 1440,
-      "unit": "Numune",
-      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
-    },
-    {
-      "name": "DSC Analizi (-150 °C – 600 °C) 2 Saat",
-      "price": 1690,
-      "unit": "Numune",
-      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
-    },
-    {
-      "name": "DSC Analizi (-150 °C – 600 °C) 3 Saat",
-      "price": 1980,
-      "unit": "Numune",
-      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
-    },
-    {
-      "name": "DSC Analizi (-150 °C – 600 °C) 3-7 Saat",
-      "price": 2565,
-      "unit": "Numune",
-      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
-    },
-    {
-      "name": "DSC Analizi (-150 °C – 600 °C) 7-14 Saat",
-      "price": 3375,
-      "unit": "Numune",
-      "category": "DSC-Diferansiyel Taramalı Kalorimetre",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
-    },
-    {
-      "name": "63.01 DMA Analizi (25 °C – 400 °C) 1 Saat",
-      "price": 1690,
-      "unit": "Numune",
-      "category": "DMA-Dinamik Mekanik Analizör",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Termal Analizler"
-    },
-    {
-      "name": "DMA Analizi (25 °C – 400 °C) 2 Saat",
-      "price": 2250,
-      "unit": "Numune",
-      "category": "DMA-Dinamik Mekanik Analizör",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Termal Analizler"
-    },
-    {
-      "name": "DMA Analizi (25 °C – 400 °C) 3 Saat",
-      "price": 2800,
-      "unit": "Numune",
-      "category": "DMA-Dinamik Mekanik Analizör",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Termal Analizler"
-    },
-    {
-      "name": "DMA Analizi (25 °C – 400 °C) 3-5 Saat",
-      "price": 4230,
-      "unit": "Numune",
-      "category": "DMA-Dinamik Mekanik Analizör",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Termal Analizler"
-    },
-    {
-      "name": "63.02 DMA Analizi (-150 °C – 400 °C) 1 Saat",
-      "price": 1980,
-      "unit": "Numune",
-      "category": "DMA-Dinamik Mekanik Analizör",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Termal Analizler"
-    },
-    {
-      "name": "DMA Analizi (-150 °C – 400 °C) 2 Saat",
-      "price": 2565,
-      "unit": "Numune",
-      "category": "DMA-Dinamik Mekanik Analizör",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Termal Analizler"
-    },
-    {
-      "name": "DMA Analizi (-150 °C – 400 °C) 3 Saat",
-      "price": 3105,
-      "unit": "Numune",
-      "category": "DMA-Dinamik Mekanik Analizör",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Termal Analizler"
-    },
-    {
-      "name": "DMA Analizi (-150 °C – 400 °C) 3-5 Saat",
-      "price": 4500,
-      "unit": "Numune",
-      "category": "DMA-Dinamik Mekanik Analizör",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Termal Analizler"
-    },
-    {
-      "name": "63.03 Sertifikalı Eğitim Paketleri (Teorik ve Uygulama İçeren) İçin Günlük (8 saat) Laboratuvar Kullanımı*",
-      "price": 14000,
-      "unit": "Gün",
-      "category": "DMA-Dinamik Mekanik Analizör",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Termal Analizler"
-    },
-    {
-      "name": "72.01 LC-MS/MS Kalitatif Analiz",
-      "price": 1560,
-      "unit": "Numune",
-      "category": "Sıvı Kromatografi-Kütle Spektrometresi (LC-MS/MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "72.02 LC-MS/MS Kantitatif Analiz",
-      "price": 1720,
-      "unit": "Numune",
-      "category": "Sıvı Kromatografi-Kütle Spektrometresi (LC-MS/MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "72.03 LC-MS/MS Kantitatif (İlave Bileşen Başına)",
-      "price": 390,
-      "unit": "Numune",
-      "category": "Sıvı Kromatografi-Kütle Spektrometresi (LC-MS/MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "72.04 Numune Hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
-      "price": 390,
-      "unit": "Numune",
-      "category": "Sıvı Kromatografi-Kütle Spektrometresi (LC-MS/MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "72.05 Metot Geliştirme",
-      "price": 6850,
-      "unit": "Numune",
-      "category": "Sıvı Kromatografi-Kütle Spektrometresi (LC-MS/MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "75.01 GC-Kalitatif Analiz",
-      "price": 1150,
-      "unit": "Numune",
-      "category": "Gaz Kromatografisi",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
-    },
-    {
-      "name": "75.02 GC-Kantitatif Analiz (Tek Bileşen)",
-      "price": 1150,
-      "unit": "Numune",
-      "category": "Gaz Kromatografisi",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
-    },
-    {
-      "name": "75.03 GC-Kantitatif Analiz (İlave Her Bir Bileşen)",
-      "price": 295,
-      "unit": "Numune",
-      "category": "Gaz Kromatografisi",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
-    },
-    {
-      "name": "75.04 GC Metot geliştirme (2 Bileşen)",
-      "price": 3900,
-      "unit": "Numune",
-      "category": "Gaz Kromatografisi",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
-    },
-    {
-      "name": "75.05 Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemeler) *",
-      "price": 390,
-      "unit": "Numune",
-      "category": "Gaz Kromatografisi",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
-    },
-    {
-      "name": "76.01 GC/MS-Kalitatif",
-      "price": 1150,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.02 GC/MS-Kantitatif (Tek Bileşen)",
-      "price": 1150,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.03 GC/MS-Kantitatif (İlave Her Bir Bileşen)",
-      "price": 295,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.04 GC/MS Metot Geliştirme (2 Bileşen)",
-      "price": 2930,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.05 Katı Faz Mikro Ekstraksiyon (SPME) Uygulamaları (Metot- Adsorban Bildirilmiş İse)",
-      "price": 975,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.06 SPME Uygulamaları (Metot Geliştirme, 2 Bileşen)",
-      "price": 4875,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.07 Kütle Spektrumu Kütüphane Taraması (Bileşen Başı)",
-      "price": 160,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.08 Uçucu Yağ Bileşenleri, % Bağıl Miktarları ile Birlikte (2 Ana Bileşen)",
-      "price": 1250,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.09 Yağ asitleri bileşenleri-Kalitatif (Türevlendirme Yapılmış Hazır",
-      "price": 1250,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.10 GC-MS Headspace Kalitatif (Tek Bileşen)",
-      "price": 1560,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.11 GC-MS Headspace Kantitatif (Tek Bileşen)",
-      "price": 1560,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.12 GC-MS Headspace Kalitatif/Kantitatif (Her Bir İlave Bileşen)",
-      "price": 195,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.13 Numune hazırlama (Filtreleme, seyreltme, santrifüj vb, temel işlemler) *",
-      "price": 390,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.14 Clevenger yöntemi ile uçucu yağ eldesi:50 gr numuneye kadar",
-      "price": 2340,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.15 Soxhlet cihazı ile ekstrasiyon: 20 gr. numuneye kadar",
-      "price": 2535,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
-    },
-    {
-      "name": "76.16 Soxhlet cihazı ile ekstradsiyon ilave her 0-20 gr numune için",
-      "price": 1950,
-      "unit": "Numune",
-      "category": "Gaz Kromatografi-Kütle Spektrometresi (GC-MS)",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true,
-      "_isOv": false,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
+      "keyword_group": "Sıvı Azot ve Saf Su"
     }
   ]
 }
