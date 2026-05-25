@@ -9,7 +9,8 @@
       "category": "X-Işını Fotoelektron Spektroskopisi (XPS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri"
     },
     {
       "name": "XPS Genel ve Kısmi Tarama (5 ve üzeri element)",
