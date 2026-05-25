@@ -9,7 +9,8 @@
       "category": "Taramalı Elektron Mikroskobu (SEM)",
       "notes": "1) Cihaza 9 adet numune aynı anda yerleştirilebilir. 2) Cihaz ile 1 saat içerisinde en fazla 9 adet numuneye bakılabilir. 3) Analizi yapılacak numuneler ıslak olmamalı ve nem içermemelidir. 4) Kaplama cihazı ile tek seferde en fazla 6 adet numuneye kaplama yapılabilmektedir. 5) EDS analizlerinde numune kalınlığı 1 cm'yi geçmemelidir. 6) STEM detektörü ile incelemelerde 9 adet numune cihaza yerleştirilebilir. 7) STEM analizlerinde STEM gridleri ile hazır getirilmelidir. 8) 1 saatten az yapılan analizlerde 1 saatlik ücret alınır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "Stem Dedektörü Analizi",
