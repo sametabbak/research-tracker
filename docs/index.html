@@ -187,12 +187,12 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 <!-- HEADER -->
 <div class="hdr">
   <div>
-    <h1>🔬 Analiz Bul — İnceleme Paneli</h1>
+    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:4px;">v2025.05</span></h1>
     <div class="hdr-meta" id="hdrMeta">Yükleniyor...</div>
   </div>
   <div class="hdr-right">
     <div class="tok bad" id="tokBadge" onclick="openTokModal(null)">🔑 Token gir</div>
-    <button class="btn btn-sec" onclick="loadAll()">↻ Yenile</button>
+    <button class="btn btn-sec" onclick="safeReload()">↻ Yenile</button>
     <button class="btn btn-sec" onclick="showModal('bkpOv')">💾 Yedek</button>
     <button class="btn btn-ok" id="apvBtn" onclick="approve()" disabled>✓ Onayla ve Yayınla</button>
   </div>
@@ -479,13 +479,24 @@ updTokBadge();
 /* ═══ API ════════════════════════════════════════════════════════════════════ */
 function gh(){var h={'Accept':'application/vnd.github.v3+json'};if(tok)h['Authorization']='token '+tok;return h;}
 
+async function fetchT(url,opts){
+  /* Abort after 30 s so a hanging request never locks the panel */
+  var ctrl=new AbortController();
+  var tid=setTimeout(function(){ctrl.abort();},30000);
+  return fetch(url,Object.assign({},opts||{},{signal:ctrl.signal}))
+    .then(function(r){clearTimeout(tid);return r;})
+    .catch(function(e){clearTimeout(tid);throw e;});
+}
 async function rawRead(branch,path){
-  var r=await fetch('https://raw.githubusercontent.com/'+REPO+'/'+branch+'/'+path+'?t='+Date.now());
-  return r.ok?r.json():null;
+  try{
+    var r=await fetchT('https://raw.githubusercontent.com/'+REPO+'/'+branch+'/'+path+'?t='+Date.now());
+    return r.ok?r.json():null;
+  }catch(e){return null;}
 }
 async function apiRead(branch,path){
-  var r=await fetch('https://api.github.com/repos/'+REPO+'/contents/'+path+'?ref='+branch,
-    {headers:gh(),cache:'no-store'});
+  var r;
+  try{r=await fetchT('https://api.github.com/repos/'+REPO+'/contents/'+path+'?ref='+branch,
+    {headers:gh(),cache:'no-store'});}catch(e){return null;}
   if(!r.ok)return null;
   var d=await r.json();
   try{
@@ -519,6 +530,33 @@ async function stagingDate(){
 }
 
 /* ═══ LOAD ═══════════════════════════════════════════════════════════════════ */
+function hasPending(){
+  var hasE=Object.keys(pE).some(function(k){return Object.keys(pE[k]).length>0;});
+  var hasA=Object.keys(pA).some(function(k){return pA[k].length>0;});
+  var hasD=Object.keys(pD).some(function(k){return pD[k].size>0;});
+  var hasR=Object.keys(pRej).some(function(k){return Object.keys(pRej[k]).length>0;});
+  return hasE||hasA||hasD||hasR||pOrder.size>0;
+}
+
+function safeReload(){
+  if(!hasPending()){loadAll();return;}
+  /* Count pending items for a clear message */
+  var edits=Object.keys(pE).reduce(function(s,k){return s+Object.keys(pE[k]).length;},0);
+  var adds =Object.keys(pA).reduce(function(s,k){return s+pA[k].length;},0);
+  var dels =Object.keys(pD).reduce(function(s,k){return s+pD[k].size;},0);
+  var rejs =Object.keys(pRej).reduce(function(s,k){return s+Object.keys(pRej[k]).length;},0);
+  var parts=[];
+  if(edits)parts.push(edits+' düzenle');
+  if(adds) parts.push(adds+' yeni ekleme');
+  if(dels) parts.push(dels+' silme');
+  if(rejs) parts.push(rejs+' reddetme');
+  var msg='Kaydedilmemiş değişiklikler var: '+parts.join(', ')+'.\n\nYenilenirse bu değişiklikler kaybolur. Devam edilsin mi?';
+
+
+
+  if(confirm(msg))loadAll();
+}
+
 async function loadAll(){
   ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
     document.getElementById(id).innerHTML='<div class="loader"><div class="spin"></div><p style="margin-top:12px">Yükleniyor...</p></div>';
@@ -526,8 +564,21 @@ async function loadAll(){
   document.getElementById('apvBtn').disabled=true;
   sMap={};mMap={};ovMap={};pE={};pA={};pD={};pCE={};pKwR=[];pKwDel=[];pKwNew=[];pRej={};pOrder=new Set();pOrderSnap={};selRows={};colState={};a2c={};
 
+  /* Show a retry option after 25 s if still loading */
+  var _guard=setTimeout(function(){
+    var msg='<div class="warn-box" style="text-align:center">'
+      +'<strong>Yükleme çok uzun sürdü.</strong><br>'
+      +'Bağlantınızı veya token\'ınızı kontrol edin.<br>'
+      +'<button class="btn btn-sec" style="margin-top:8px" onclick="loadAll()">↻ Tekrar Dene</button></div>';
+    ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(el)el.innerHTML=msg;
+    });
+  },25000);
+
+  try{
   var misc=await Promise.all([
-    rawRead(MAIN,'data/centers.json'),
+    rawRead(MAIN,'data/centers.json').catch(function(){return null;}),
     rawRead(MAIN,'data/keywords.json').catch(function(){return null;}),
     stagingDate().catch(function(){return null;}),
     apiRead(MAIN,'data/centers.json').catch(function(){return null;})
@@ -537,41 +588,70 @@ async function loadAll(){
   cats=Object.keys(kwGrps);
   ctxSha=misc[3]?misc[3].sha:null;
   var sd=misc[2];
-  document.getElementById('hdrMeta').textContent=sd?'staging son güncelleme: '+new Date(sd).toLocaleString('tr-TR'):'tarih alınamadı';
-  document.getElementById('hdrMeta').style.color='';
-  if(!centers.length){document.getElementById('changesContent').innerHTML='<div class="warn-box">centers.json okunamadı.</div>';return;}
+  var hdrM=document.getElementById('hdrMeta');
+  if(hdrM){hdrM.textContent=sd?'staging son güncelleme: '+new Date(sd).toLocaleString('tr-TR'):'tarih alınamadı';hdrM.style.color='';}
+  if(!centers.length){
+    clearTimeout(_guard);
+    ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(el)el.innerHTML='<div class="warn-box">centers.json okunamadı. Token\'ı ve bağlantıyı kontrol edin.<br>'
+        +'<button class="btn btn-sec" style="margin-top:8px" onclick="loadAll()">↻ Tekrar Dene</button></div>';
+    });
+    return;
+  }
 
   var ids=centers.map(function(c){return c.id;});
+  /* Each center fetch is independent — one failure won't kill the rest */
   var res=await Promise.all([
-    Promise.all(ids.map(function(id){return apiRead(STAGING,'data/analyses/'+id+'.json').then(function(r){return[id,r];});})),
+    Promise.all(ids.map(function(id){return apiRead(STAGING,'data/analyses/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});})),
     Promise.all(ids.map(function(id){return apiRead(MAIN,'data/analyses/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});})),
     Promise.all(ids.map(function(id){return apiRead(STAGING,'data/overrides/'+id+'.json').then(function(r){return[id,r];}).catch(function(){return[id,null];});})),
     apiRead(STAGING,'data/keywords.json').catch(function(){return null;})
   ]);
   res[0].forEach(function(p){if(p[1])sMap[p[0]]=p[1];});
-  res[1].forEach(function(p){if(p[1])mMap[p[0]]=p[1].content||p[1];});  /* apiRead wraps in .content */
+  res[1].forEach(function(p){if(p[1])mMap[p[0]]=p[1].content||p[1];});
   res[2].forEach(function(p){if(p[1])ovMap[p[0]]=p[1];});
   if(res[3])kwSha=res[3].sha;
 
   stagOk=Object.keys(sMap).length>0;
 
-  /* Stamp stable _pid so same-name analyses in same center don't collide */
   centers.forEach(function(c){
     var sf=sMap[c.id];
     if(sf&&sf.content&&sf.content.analyses)
-      sf.content.analyses.forEach(function(a,i){a._pid=c.id+'_'+i;});
+      sf.content.analyses.forEach(function(a,i){a._pid=c.id+'_'+i;a._isOv=false;});
+    var ov=ovMap[c.id];
+    if(ov&&ov.content&&ov.content.overrides)
+      ov.content.overrides.forEach(function(a,i){a._pid=c.id+'_ov_'+i;a._isOv=true;});
   });
 
   buildRKW();buildA2C();buildAllCats();buildDLs();
   updSum();renderChanges();renderCatalog();renderOverride();renderClassify();
+  clearTimeout(_guard);
   updApvBtn();collapseAll();
   window.scrollTo({top:0,behavior:'instant'});
+  }catch(err){
+    clearTimeout(_guard);
+    console.error('loadAll error:',err);
+    var em='<div class="warn-box"><strong>Yükleme hatası:</strong> '+esc(String(err.message||err))+'<br>'
+      +'<button class="btn btn-sec" style="margin-top:8px" onclick="loadAll()">↻ Tekrar Dene</button></div>';
+    ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
+      var el=document.getElementById(id);if(el)el.innerHTML=em;
+    });
+  }
 }
 
 /* ─── Build helpers ─────────────────────────────────────────────────────── */
 function getA(cid){
   var sf=sMap[cid];
-  return sf?(sf.content&&sf.content.analyses?sf.content.analyses:[]):(mMap[cid]?mMap[cid].analyses||[]:[]);
+  var analyses=sf?(sf.content&&sf.content.analyses?sf.content.analyses:[]):(mMap[cid]?mMap[cid].analyses||[]:[]);
+  var ov=ovMap[cid];
+  var overrides=(ov&&ov.content&&ov.content.overrides)?ov.content.overrides:[];
+  /* Pending adds: show immediately before approve, skip duplicates */
+  var pending=(pA[cid]||[]).filter(function(a){
+    return !overrides.some(function(o){return o.name===a.name;})&&
+           !analyses.some(function(o){return o.name===a.name;});
+  });
+  return analyses.concat(overrides).concat(pending);
 }
 
 /* KEY: reverseKW reads from keyword_group field in analyses data — single source of truth */
@@ -899,7 +979,7 @@ function catRow(cid,a){
   var pid=a._pid||(cid+'__'+a.name);
   var isDel=pD[cid]&&pD[cid].has(pid);
   var isSel=selRows[cid]&&selRows[cid].has(pid);
-  var cls=isDel?'r-del':isSel?'r-sel':'';
+  var cls=isDel?'r-del':isSel?'r-sel':(a._isOv?'r-man':'');
   var rid=sid2(pid);
   var sym=SYM[a.currency||'TRY']||'₺';
   var canMove=!(sortCfg[cid]&&sortCfg[cid].field);
@@ -1010,24 +1090,43 @@ function edCell(td,cid,pid,field){
     inp.value=field==='price'?parseFloat(td.textContent.replace(/[^0-9.,]/g,'').replace(',','.'))||0:(td.textContent.trim()==='—'?'':td.textContent.trim());
     if(field==='price'){inp.min='0';inp.step='0.01';}
   }
+  /* Find the entry — could be in sMap (analysis) or ovMap (override) based on pid */
+  var isOv=pid.indexOf('_ov_')!==-1;
+  var entry;
+  if(isOv){
+    var ovf=ovMap[cid];
+    entry=ovf&&ovf.content&&ovf.content.overrides?ovf.content.overrides.find(function(a){return a._pid===pid;}):null;
+  } else {
+    var sf=sMap[cid];
+    entry=sf&&sf.content&&sf.content.analyses?sf.content.analyses.find(function(a){return a._pid===pid;}):null;
+    /* Fallback: if not in sMap (e.g. un-stamped override), try ovMap */
+    if(!entry){
+      var ovf2=ovMap[cid];
+      entry=ovf2&&ovf2.content&&ovf2.content.overrides?ovf2.content.overrides.find(function(a){return a._pid===pid||(a.name&&(cid+'__'+a.name)===pid);}):null;
+      if(entry){
+        /* Fix the pid — re-stamp it correctly so future lookups work */
+        var ovArr=ovf2.content.overrides;
+        ovArr.forEach(function(a,i){if(!a._pid||a._pid===pid){a._pid=cid+'_ov_'+i;a._isOv=true;}})
+        /* Update pid in local scope so pE key is correct */
+        pid=entry._pid;
+      }
+    }
+  }
   var commit=function(){
     var val=field==='price'?parseFloat(inp.value):inp.value.trim();
     if(!pE[cid])pE[cid]={};if(!pE[cid][pid])pE[cid][pid]={};
     pE[cid][pid][field]=val;
-    /* Update sMap so re-renders are instant */
-    var sf=sMap[cid];
-    if(sf&&sf.content&&sf.content.analyses){
-      var entry=sf.content.analyses.find(function(a){return a._pid===pid;});
-      if(entry)entry[field]=val;
+    /* Mutate the in-memory entry so the UI reflects the change instantly */
+    if(entry)entry[field]=val;
+    /* Update the cell display */
+    if(field==='price'){
+      var cur=entry?(entry.currency||'TRY'):'TRY';
+      td.textContent=Number(val).toLocaleString('tr-TR')+' '+(SYM[cur]||'₺');
+    } else if(field==='notes'&&!val){
+      td.innerHTML='<span style="color:var(--muted);font-style:italic">—</span>';
+    } else {
+      td.textContent=val;
     }
-    /* If the name field changed, migrate pE key so subsequent
-       edits on this row still accumulate under the new name */
-    if(field==='name'&&val&&val!==name){
-      /* name changed — pid still points to the same entry */
-    }
-    if(field==='price'){var sy=SYM[pE[cid][name].currency||'TRY']||'₺';td.textContent=Number(val).toLocaleString('tr-TR')+' '+sy;}
-    else if(field==='notes'&&!val){td.innerHTML='<span style="color:var(--muted);font-style:italic">—</span>';}
-    else td.textContent=val;
     updApvBtn();updSum();updCtrApvBtn(cid);
   };
   inp.onblur=commit;inp.onkeydown=function(e){if(e.key==='Enter')inp.blur();};
@@ -1037,8 +1136,15 @@ function edCell(td,cid,pid,field){
 function togDel(cid,pid){
   if(!pD[cid])pD[cid]=new Set();
   var s=pD[cid];s.has(pid)?s.delete(pid):s.add(pid);
-  var sf=sMap[cid];
-  var a=sf&&sf.content&&sf.content.analyses?sf.content.analyses.find(function(x){return x._pid===pid;}):null;
+  var isOv=pid.indexOf('_ov_')!==-1;
+  var a;
+  if(isOv){
+    var ov=ovMap[cid];
+    a=ov&&ov.content&&ov.content.overrides?ov.content.overrides.find(function(x){return x._pid===pid;}):null;
+  } else {
+    var sf=sMap[cid];
+    a=sf&&sf.content&&sf.content.analyses?sf.content.analyses.find(function(x){return x._pid===pid;}):null;
+  }
   if(!a)return;
   var old=document.getElementById('tr-'+sid2(pid));
   if(old){var tmp=document.createElement('tbody');tmp.innerHTML=catRow(cid,a);old.replaceWith(tmp.firstElementChild);}
@@ -1655,6 +1761,7 @@ async function doApprove(){
   hideModal('apvOv');
   var btn=document.getElementById('apvBtn');
   btn.disabled=true;btn.textContent='⏳ Kaydediliyor...';
+  var writeErrors=[];
   try{
     /* 0. Center edits */
     if(Object.keys(pCE).length){
@@ -1669,10 +1776,17 @@ async function doApprove(){
     var cids=Object.keys(pE).concat(Object.keys(pD).filter(function(k){return!pE[k];})).concat(pOrderArr);
     for(var i=0;i<cids.length;i++){
       var cid=cids[i];var sf=sMap[cid];if(!sf)continue;
+      /* Skip if this center only has override-level edits — handled in section 2a */
+      var hasAnalysisEdit=false;
+      if(pE[cid])Object.keys(pE[cid]).forEach(function(p){if(p.indexOf('_ov_')===-1)hasAnalysisEdit=true;});
+      if(pD[cid])pD[cid].forEach(function(p){if(p.indexOf('_ov_')===-1)hasAnalysisEdit=true;});
+      if(pOrder.has(cid))hasAnalysisEdit=true;
+      if(!hasAnalysisEdit)continue;
       var newA=sf.content.analyses.slice();
-      if(pE[cid])newA=newA.map(function(a){var p=pE[cid][a._pid];return p?Object.assign({},a,p):a;});
-      if(pD[cid]&&pD[cid].size)newA=newA.filter(function(a){return!pD[cid].has(a._pid);});
-      newA=newA.map(function(a){var x=Object.assign({},a);delete x._pid;return x;});
+      /* Apply only analysis-level edits/deletes (override entries handled separately) */
+      if(pE[cid])newA=newA.map(function(a){var p=pE[cid][a._pid];return(p&&a._pid&&a._pid.indexOf('_ov_')===-1)?Object.assign({},a,p):a;});
+      if(pD[cid]&&pD[cid].size)newA=newA.filter(function(a){return!(pD[cid].has(a._pid)&&a._pid&&a._pid.indexOf('_ov_')===-1);});
+      newA=newA.map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;});
       var nc=Object.assign({},sf.content,{analyses:newA});
       var cn=centers.find(function(c){return c.id===cid;});
       var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf.sha,'fix: panel düzenlemesi — '+(cn?cn.name:cid));
@@ -1681,7 +1795,37 @@ async function doApprove(){
       pOrder.delete(cid);delete pOrderSnap[cid];
     }
 
-    /* 2. Override additions */
+    /* 2a. Override edits + deletes (from catalog tab) */
+    btn.textContent='⏳ Manuel girdiler güncelleniyor...';
+    var ovCidsToWrite={};
+    Object.keys(pE).forEach(function(c){
+      Object.keys(pE[c]).forEach(function(p){if(p.indexOf('_ov_')!==-1)ovCidsToWrite[c]=true;});
+    });
+    Object.keys(pD).forEach(function(c){
+      pD[c].forEach(function(p){if(p.indexOf('_ov_')!==-1)ovCidsToWrite[c]=true;});
+    });
+    var ovEditCids=Object.keys(ovCidsToWrite);
+    for(var oi=0;oi<ovEditCids.length;oi++){
+      var ok=ovEditCids[oi];
+      try{
+        var ovf=ovMap[ok];
+        if(!ovf||!ovf.content){continue;}
+        var newOv=ovf.content.overrides.slice();
+        if(pE[ok])newOv=newOv.map(function(a){var p=pE[ok][a._pid];return(p&&a._pid&&a._pid.indexOf('_ov_')!==-1)?Object.assign({},a,p):a;});
+        if(pD[ok])newOv=newOv.filter(function(a){return!(pD[ok].has(a._pid)&&a._pid&&a._pid.indexOf('_ov_')!==-1);});
+        newOv=newOv.map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;});
+        var nco=Object.assign({},ovf.content,{overrides:newOv});
+        var oc=centers.find(function(c){return c.id===ok;});
+        var wro=await apiWrite('data/overrides/'+ok+'.json',nco,ovf.sha,'fix: manuel girdi güncellendi — '+(oc?oc.name:ok));
+        ovMap[ok]={content:nco,sha:(wro&&wro.content)?wro.content.sha:ovf.sha};
+        ovMap[ok].content.overrides.forEach(function(a,i){a._pid=ok+'_ov_'+i;a._isOv=true;});
+      }catch(oe){
+        var ocn=centers.find(function(c){return c.id===ok;});
+        writeErrors.push((ocn?ocn.name:ok)+' override edit: '+oe.message);
+      }
+    }
+
+    /* 2b. Override additions (from Yeni Analiz modal / quick-add) */
     btn.textContent='⏳ Manuel eklemeler...';
     var addIds=Object.keys(pA);
     for(var j=0;j<addIds.length;j++){
@@ -1692,6 +1836,8 @@ async function doApprove(){
       var nc2={center_id:acid,center_name:ac?ac.name:acid,overrides:exOv.concat(adds)};
       var wo=await apiWrite('data/overrides/'+acid+'.json',nc2,ex?ex.sha:null,'feat: manuel analiz — '+(ac?ac.name:acid));
       ovMap[acid]={content:nc2,sha:(wo&&wo.content)?wo.content.sha:(ex?ex.sha:null)};
+      /* Stamp _pid so edits to these overrides work in the same session */
+      ovMap[acid].content.overrides.forEach(function(a,i){a._pid=acid+'_ov_'+i;a._isOv=true;});
     }
 
     /* 3. Keyword group structural changes only (renames/deletes/new) */
@@ -1858,8 +2004,25 @@ async function approveCtr(cid){
       var nc=Object.assign({},sf.content,{analyses:newA});
       var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf.sha,'fix: '+(c?c.name:cid)+' güncellendi');
       sMap[cid]={content:nc,sha:(wa&&wa.content)?wa.content.sha:sf.sha};
-      sMap[cid].content.analyses.forEach(function(a,i){a._pid=cid+'_'+i;});
+      sMap[cid].content.analyses.forEach(function(a,i){a._pid=cid+'_'+i;a._isOv=false;});
       mMap[cid]=nc;
+    }
+    /* Override edits/deletes for this center */
+    var hasOvEdit=false;
+    if(pE[cid])Object.keys(pE[cid]).forEach(function(p){if(p.indexOf('_ov_')!==-1)hasOvEdit=true;});
+    if(pD[cid])pD[cid].forEach(function(p){if(p.indexOf('_ov_')!==-1)hasOvEdit=true;});
+    if(hasOvEdit){
+      var ovfC=ovMap[cid];
+      if(ovfC&&ovfC.content){
+        var newOvC=ovfC.content.overrides.slice();
+        if(pE[cid])newOvC=newOvC.map(function(a){var p=pE[cid][a._pid];return(p&&a._pid&&a._pid.indexOf('_ov_')!==-1)?Object.assign({},a,p):a;});
+        if(pD[cid])newOvC=newOvC.filter(function(a){return!(pD[cid].has(a._pid)&&a._pid&&a._pid.indexOf('_ov_')!==-1);});
+        newOvC=newOvC.map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;});
+        var ncoC=Object.assign({},ovfC.content,{overrides:newOvC});
+        var wroC=await apiWrite('data/overrides/'+cid+'.json',ncoC,ovfC.sha,'fix: manuel girdi güncellendi — '+(c?c.name:cid));
+        ovMap[cid]={content:ncoC,sha:(wroC&&wroC.content)?wroC.content.sha:ovfC.sha};
+        ovMap[cid].content.overrides.forEach(function(a,i){a._pid=cid+'_ov_'+i;a._isOv=true;});
+      }
     }
     if(pA[cid]&&pA[cid].length){
       var ex=ovMap[cid];
@@ -1867,6 +2030,8 @@ async function approveCtr(cid){
       var nc2={center_id:cid,center_name:c?c.name:cid,overrides:exOv.concat(pA[cid])};
       var wo=await apiWrite('data/overrides/'+cid+'.json',nc2,ex?ex.sha:null,'feat: manuel analiz — '+(c?c.name:cid));
       ovMap[cid]={content:nc2,sha:(wo&&wo.content)?wo.content.sha:(ex?ex.sha:null)};
+      /* Stamp _pid so edits to these overrides work in the same session */
+      ovMap[cid].content.overrides.forEach(function(a,i){a._pid=cid+'_ov_'+i;a._isOv=true;});
     }
     await triggerMerge((c?c.name:cid)+' analiz güncellemesi');
     delete pE[cid];delete pD[cid];delete pA[cid];if(pCE[cid])delete pCE[cid];
