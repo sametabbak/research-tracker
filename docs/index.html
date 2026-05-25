@@ -567,24 +567,30 @@ async function loadAll(){
     });
   },20000);
   try{
+  /* Fetch centers from three sources.
+     Priority: staging API (no CDN cache) > main API > main CDN */
   var misc=await Promise.all([
-    rawRead(MAIN,'data/centers.json').catch(function(){return null;}),
     rawRead(MAIN,'data/keywords.json').catch(function(){return null;}),
     stagingDate().catch(function(){return null;}),
+    apiRead(STAGING,'data/centers.json').catch(function(){return null;}),
     apiRead(MAIN,'data/centers.json').catch(function(){return null;}),
-    apiRead(STAGING,'data/centers.json').catch(function(){return null;}) /* staging centers — picks up newly added */
+    rawRead(MAIN,'data/centers.json').catch(function(){return null;})
   ]);
-  centers=(misc[0]||[]).filter(function(c){return c.active!==false;});
-  /* Merge staging centers: any center in staging but not main is newly-added and should be visible */
-  var _stagCtr=misc[4]&&misc[4].content?misc[4].content:null;
-  if(_stagCtr){
-    var _mainIds={};centers.forEach(function(c){_mainIds[c.id]=1;});
-    _stagCtr.filter(function(c){return!_mainIds[c.id]&&c.active!==false;}).forEach(function(c){centers.push(c);});
+  /* misc[2]=staging API (freshest), misc[3]=main API, misc[4]=main CDN (stale-prone) */
+  var _stagArr=misc[2]&&misc[2].content?misc[2].content:null;
+  var _mainArr=(misc[3]&&misc[3].content)||misc[4]||null;
+  var _base=_stagArr||_mainArr||[];
+  var _cSeen={};
+  centers=_base.filter(function(c){return c.active!==false;});
+  centers.forEach(function(c){_cSeen[c.id]=1;});
+  if(_mainArr&&_stagArr){
+    _mainArr.filter(function(c){return c.active!==false&&!_cSeen[c.id];}).forEach(function(c){
+      _cSeen[c.id]=1;centers.push(c);
+    });
   }
-  kwGrps=misc[1]||{};
+  kwGrps=misc[0]||{};
   cats=Object.keys(kwGrps);
-  /* Use staging SHA for centers writes (new centers land on staging first) */
-  ctxSha=misc[4]?misc[4].sha:(misc[3]?misc[3].sha:null);
+  ctxSha=misc[2]?misc[2].sha:(misc[3]?misc[3].sha:null);
   var sd=misc[2];
   document.getElementById('hdrMeta').textContent=sd?'staging son güncelleme: '+new Date(sd).toLocaleString('tr-TR'):'tarih alınamadı';
   document.getElementById('hdrMeta').style.color='';
