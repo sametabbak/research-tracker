@@ -130,21 +130,5 @@
     "reference": false,
     "analysis_count": 38,
     "last_updated": "2026-05-25"
-  },
-  {
-    "id": "deu_emum",
-    "name": "DEÜ EMUM",
-    "university": "Dokuz Eylül Üniversitesi",
-    "city": "İzmir",
-    "url": "https://merkeziarastirmalab.ikcu.edu.tr",
-    "pricing_url": "https://merkeziarastirmalab.ikcu.edu.tr/S/15286/ucretlendirme",
-    "fetch_method": "manual",
-    "check_months": [
-      1,
-      6,
-      12
-    ],
-    "active": false,
-    "reference": false
   }
 ]
