@@ -187,7 +187,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 <!-- HEADER -->
 <div class="hdr">
   <div>
-    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:2px;vertical-align:middle;">…</span> <span style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:4px;">v2025.05b</span></h1>
+    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:2px;vertical-align:middle;">…</span></h1>
     <div class="hdr-meta" id="hdrMeta">Yükleniyor...</div>
   </div>
   <div class="hdr-right">
@@ -430,7 +430,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 
 <script>
 /* ═══ CONFIG ════════════════════════════════════════════════════════════════ */
-var PANEL_VERSION='2026.01';
+var PANEL_VERSION='2026.02';
 var REPO='sametabbak/research-tracker',STAGING='staging',MAIN='main';
 var SYM={TRY:'₺',USD:'$',EUR:'€'};
 var NOTES=[
@@ -448,7 +448,7 @@ var NOTES=[
 var tok='',tokCb=null;
 var centers=[],sMap={},mMap={},ovMap={};  /* staging/main/override maps */
 var kwGrps={},kwSha=null,rKW={};          /* keyword groups + reverse index */
-var ctxSha=null;                           /* centers.json sha */
+var ctxSha=null,cfgCtxSha=null;                           /* centers.json sha */
 var cats=[],allCats=[];                    /* kw group names, center-internal cats */
 var stagOk=false,chgFilter='all';
 var colState={},sortCfg={},selRows={};
@@ -1760,6 +1760,23 @@ async function submitCtr(){
     var updated=centers.concat([nc]);
     var wr=await apiWrite('data/centers.json',updated,ctxSha,'feat: yeni merkez — '+name);
     if(wr&&wr.content)ctxSha=wr.content.sha;
+    /* Register in config/centers.json so tracker never silently drops this center */
+    try{
+      var cfgF=await apiRead(STAGING,'config/centers.json').catch(function(){return null;})
+        ||await apiRead(MAIN,'config/centers.json').catch(function(){return null;});
+      if(cfgF&&cfgF.content){
+        var cfgArr=Array.isArray(cfgF.content)?cfgF.content:[];
+        if(!cfgArr.some(function(x){return x.id===id;})){
+          cfgArr=cfgArr.concat([{id:id,name:name,
+            university:nc.university||'',city:nc.city||'',
+            url:nc.url||'',pricing_url:nc.pricing_url||null,
+            fetch_method:'manual',active:true,reference:false,
+            check_months:[12,1,2,5,6,7]}]);
+          var wc=await apiWrite('config/centers.json',cfgArr,cfgF.sha,'feat: register manual center — '+name);
+          if(wc&&wc.content)cfgCtxSha=wc.content.sha;
+        }
+      }
+    }catch(cfgErr){console.warn('config/centers.json write skipped:',cfgErr.message);}
     var today=new Date().toISOString().slice(0,10);
     await apiWrite('data/analyses/'+id+'.json',{center_id:id,center_name:name,last_updated:today,source_url:nc.pricing_url||nc.url,analyses:[]},null,'feat: analyses — '+name);
     await apiWrite('data/overrides/'+id+'.json',{center_id:id,center_name:name,overrides:[]},null,'feat: overrides — '+name);
