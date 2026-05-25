@@ -528,43 +528,68 @@ def _parse_pdf_text(raw_text: str) -> list[dict]:
 
 def _rebuild_centers_index() -> None:
     """
-    Writes data/centers.json — the file the mobile app reads.
-    Only includes active centers. Inactive centers are excluded so the
-    app never sees placeholder or unsupported entries.
+    Writes data/centers.json — the file the panel and mobile app read.
+
+    Sources (merged in order):
+    1. Active centers in config/centers.json  (tracker-managed, full config)
+    2. Centers present in the current data/centers.json that are NOT in
+       config/centers.json — these are panel-added manual centers that must
+       be preserved across tracker runs.
     """
     config_path = Path(__file__).parent / "config" / "centers.json"
     centers_cfg = json.loads(config_path.read_text(encoding="utf-8"))
+    cfg_ids     = {c["id"] for c in centers_cfg}
 
-    index = []
-    for c in centers_cfg:
-        if not c.get("active", False):
-            continue
+    out_path = DATA_DIR / "centers.json"
 
-        analyses_path  = DATA_DIR / "analyses" / f"{c['id']}.json"
-        analysis_count = 0
-        last_updated   = None
+    # Collect panel-added centers (in data/centers.json but not in config)
+    panel_only: list[dict] = []
+    if out_path.exists():
+        try:
+            existing   = json.loads(out_path.read_text(encoding="utf-8"))
+            panel_only = [c for c in existing if c["id"] not in cfg_ids]
+        except Exception:
+            pass  # corrupted file — start fresh from config
 
+    def _build_entry(c: dict, *, active: bool = True) -> dict:
+        cid           = c["id"]
+        analyses_path = DATA_DIR / "analyses" / f"{cid}.json"
+        analysis_count, last_updated = 0, None
         if analyses_path.exists():
-            data           = json.loads(analyses_path.read_text(encoding="utf-8"))
-            analysis_count = len(data.get("analyses", []))
-            last_updated   = data.get("last_updated")
-
-        index.append({
-            "id":             c["id"],
-            "name":           c["name"],
-            "university":     c["university"],
-            "city":           c["city"],
-            "url":            c["url"],
+            try:
+                data           = json.loads(analyses_path.read_text(encoding="utf-8"))
+                analysis_count = len(data.get("analyses", []))
+                last_updated   = data.get("last_updated")
+            except Exception:
+                pass
+        return {
+            "id":             cid,
+            "name":           c.get("name", cid),
+            "university":     c.get("university", ""),
+            "city":           c.get("city", ""),
+            "url":            c.get("url", ""),
             "pricing_url":    c.get("pricing_url"),
-            "active":         True,
+            "active":         active,
             "reference":      c.get("reference", False),
             "analysis_count": analysis_count,
             "last_updated":   last_updated,
-        })
+        }
 
-    out = DATA_DIR / "centers.json"
-    out.write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"📋 Merkez indeksi güncellendi ({len(index)} aktif merkez) → {out}")
+    # 1. Tracker-managed centers (config/centers.json)
+    index = [
+        _build_entry(c)
+        for c in centers_cfg
+        if c.get("active", False)
+    ]
+
+    # 2. Panel-added centers not in config — preserve them as-is
+    for c in panel_only:
+        if c.get("active", True):
+            index.append(_build_entry(c, active=c.get("active", True)))
+
+    out_path.write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
+    note = f", {len(panel_only)} panel-eklenen korundu" if panel_only else ""
+    print(f"📋 Merkez indeksi güncellendi ({len(index)} aktif merkez{note}) → {out_path}")
 
 
 def _rebuild_keywords() -> None:
