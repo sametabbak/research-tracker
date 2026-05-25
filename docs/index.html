@@ -81,6 +81,7 @@ th:hover{color:var(--p);}
 td{padding:7px 9px;border-bottom:1px solid var(--border);vertical-align:middle;}
 tr:last-child td{border-bottom:none;}
 .r-rej{background:#fdf4ff;opacity:.75;}
+.r-acc{background:#f0fdf4;}
 .r-add{background:#f0fdf4;} .r-del{background:#fef2f2;opacity:.75;} .r-chg{background:#fff7ed;}
 .r-man{background:#f0f9ff;} .r-qa{background:#fffbeb;} .r-sel{background:#e0f2fe!important;}
 .badge{display:inline-block;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600;white-space:nowrap;}
@@ -187,14 +188,16 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 <!-- HEADER -->
 <div class="hdr">
   <div>
-    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:2px;vertical-align:middle;">…</span></h1>
+    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:2px;vertical-align:middle;">…</span> <span style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:4px;">v2025.05b</span></h1>
     <div class="hdr-meta" id="hdrMeta">Yükleniyor...</div>
+    <div id="driftBadge" style="font-size:11px;margin-top:2px;display:none;"></div>
   </div>
   <div class="hdr-right">
     <div class="tok bad" id="tokBadge" onclick="openTokModal(null)">🔑 Token gir</div>
+    <button class="btn btn-sec" id="undoBtn" onclick="undoAction()" disabled title="Son eylemi geri al (Ctrl+Z)">↩ Geri Al</button>
     <button class="btn btn-sec" onclick="safeReload()">↻ Yenile</button>
     <button class="btn btn-sec" onclick="showModal('bkpOv')">💾 Yedek</button>
-    <button class="btn btn-sec" onclick="showDupes()">🔍 Tekrarlar</button>
+    <button class="btn btn-sec" id="tekrarBtn" onclick="showDupes()">🔍 Tekrarlar</button>
     <button class="btn btn-ok" id="apvBtn" onclick="approve()" disabled>✓ Onayla ve Yayınla</button>
   </div>
 </div>
@@ -430,7 +433,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 
 <script>
 /* ═══ CONFIG ════════════════════════════════════════════════════════════════ */
-var PANEL_VERSION='2026.02';
+var PANEL_VERSION='2026.03';
 var REPO='sametabbak/research-tracker',STAGING='staging',MAIN='main';
 var SYM={TRY:'₺',USD:'$',EUR:'€'};
 var NOTES=[
@@ -635,6 +638,19 @@ async function loadAll(){
   clearTimeout(_lg);
   (function(){var v=document.getElementById('panelVer');if(v)v.textContent=PANEL_VERSION;})();
   updApvBtn();collapseAll();
+  /* Item 9: restore last tab */
+  var _lt=sessionStorage.getItem('lastTab');
+  if(_lt&&['changes','catalog','override','classify','centers','test'].indexOf(_lt)>=0)showTab(_lt);
+  /* Items 3,6,11,7: health checks */
+  checkTokenHealth();
+  preflightCheck().catch(function(e){console.warn('Preflight:',e);});
+  checkStagingDrift();
+  (function(){
+    var _d=findDupes();var _dc=Object.keys(_d).reduce(function(s,k){return s+_d[k].length;},0);
+    var _tb=document.getElementById('tekrarBtn');
+    if(_tb)_tb.innerHTML='🔍 Tekrarlar'
+      +(_dc>0?' <span style="background:#ef4444;color:#fff;border-radius:8px;padding:0 5px;font-size:10px;">'+_dc+'</span>':'');
+  })();
   window.scrollTo({top:0,behavior:'instant'});
   }catch(_err){
     clearTimeout(_lg);
@@ -1838,6 +1854,8 @@ function renderCenters(){
       +(ovCnt>0
         ?'<td style="padding:4px 8px;"><button class="btn btn-sm" style="background:#e0f2fe;border:1px solid #7dd3fc;color:#0369a1;white-space:nowrap;" onclick="migrateOverrides(\''+jsS(c.id)+'\')" title="Overrides→Analyses taşı">📥 Taşı ('+ovCnt+')</button></td>'
         :'<td></td>')
+      
+      +'<td style="padding:4px 8px;"><button class="btn btn-del btn-sm" onclick="openHardDelete(\''+jsS(c.id)+'\')" title="Kalıcı sil">🗑</button></td>'
       +'</tr>';
   });
   html+='</tbody></table></div>'
@@ -1987,6 +2005,221 @@ function deleteDupe(cid,name,btn){
   updApvBtn();updCtrApvBtn(cid);renderCatalog();
 }
 
+
+/* ═══ NEW FEATURES: UNDO · QUALITY · ACCEPT · TOKEN · DRIFT · PREVIEW · PREFLIGHT · REVERT · HARD-DELETE ═══ */
+var undoStack=[];
+function pushUndo(a){undoStack.push(a);updateUndoBtn();}
+function updateUndoBtn(){
+  var b=document.getElementById('undoBtn');if(!b)return;
+  b.disabled=!undoStack.length;
+  b.title=undoStack.length?'Geri al: '+undoStack[undoStack.length-1].desc+' ('+undoStack.length+')':'Geri alacak eylem yok';
+}
+function undoAction(){
+  if(!undoStack.length)return;
+  var a=undoStack.pop();
+  try{
+    if(a.type==='edit'){if(!pE[a.cid])pE[a.cid]={};
+      if(a.before===undefined){delete pE[a.cid][a.pid];if(!Object.keys(pE[a.cid]).length)delete pE[a.cid];}
+      else{if(!pE[a.cid][a.pid])pE[a.cid][a.pid]={};pE[a.cid][a.pid][a.field]=a.before;}}
+    else if(a.type==='add'){if(pA[a.cid]&&pA[a.cid].length)pA[a.cid].pop();if(pA[a.cid]&&!pA[a.cid].length)delete pA[a.cid];}
+    else if(a.type==='del'){if(pD[a.cid])pD[a.cid].delete(a.pid);if(pD[a.cid]&&!pD[a.cid].size)delete pD[a.cid];}
+    else if(a.type==='acc'){if(a.name==='__all__')pAcc={};else if(pAcc[a.cid])delete pAcc[a.cid][a.name];}
+    else if(a.type==='rej'){if(pRej[a.cid])delete pRej[a.cid][a.name];}
+  }catch(e){console.warn('undo:',e);}
+  updateUndoBtn();updApvBtn();renderChanges();renderCatalog();updSum();
+}
+document.addEventListener('keydown',function(e){
+  if((e.ctrlKey||e.metaKey)&&e.key==='z'&&!e.shiftKey){e.preventDefault();undoAction();}
+});
+function qualityIssues(cid){
+  var issues=[],seen={};
+  getA(cid).forEach(function(a){
+    if(!a.name)return;
+    if(seen[a.name.toLowerCase()])issues.push('Tekrar: '+a.name);
+    seen[a.name.toLowerCase()]=1;
+    if(!a.category||!a.category.trim())issues.push('Kategori eksik: '+a.name);
+    if(!a.keyword_group)issues.push('Grup eksik: '+a.name);
+    if(!a.price)issues.push('Sıfır/eksik fiyat: '+a.name);
+  });
+  return issues;
+}
+function togAcc(cid,name,type){
+  if(!pAcc[cid])pAcc[cid]={};
+  if(pAcc[cid][name]){delete pAcc[cid][name];if(!Object.keys(pAcc[cid]).length)delete pAcc[cid];
+    pushUndo({type:'acc',cid:cid,name:name,desc:'Onay geri al: '+name});}
+  else{if(pRej[cid])delete pRej[cid][name];pAcc[cid][name]=type;
+    pushUndo({type:'acc',cid:cid,name:name,desc:'Onayla: '+name});}
+  updApvBtn();renderChanges();
+}
+function acceptCenter(cid){
+  var d=getDiff(cid);if(!pAcc[cid])pAcc[cid]={};
+  d.added.forEach(function(a){pAcc[cid][a.name]='add';});
+  d.deleted.forEach(function(a){pAcc[cid][a.name]='del';});
+  d.changed.forEach(function(a){pAcc[cid][a.name]='chg';});
+  pushUndo({type:'acc',cid:cid,name:'__all__',desc:'Tümünü onayla: '+cid});
+  renderChanges();updApvBtn();
+}
+function clearAcc(){pushUndo({type:'acc',cid:'__all__',name:'__all__',desc:'Tüm onay geri al'});pAcc={};renderChanges();}
+function showTokBanner(type,extra){
+  var el=document.getElementById('tokBanner');if(!el)return;
+  var msgs={missing:'⚠️ Token girilmemiş.',invalid:'⚠️ Token geçersiz veya süresi dolmuş.',
+    ratelimit:'⚠️ GitHub API rate limit aşıldı.',warn:'⚠️ API kotanız azaldı: '+(extra||'')+' istek kaldı.'};
+  var bgs={missing:'#fef2f2',invalid:'#fef2f2',ratelimit:'#fff7ed',warn:'#fefce8'};
+  var cols={missing:'#dc2626',invalid:'#dc2626',ratelimit:'#c2410c',warn:'#a16207'};
+  if(!msgs[type])return;
+  el.style.cssText='display:block;background:'+bgs[type]+';color:'+cols[type]+';padding:6px 16px;font-size:12px;font-weight:600;text-align:center;z-index:9999;position:fixed;top:0;left:0;right:0;';
+  el.innerHTML=msgs[type]
+    +' <button onclick="openTokModal(null)" style="margin-left:8px;font-size:11px;border:1px solid currentColor;border-radius:4px;padding:2px 8px;background:transparent;color:inherit;cursor:pointer;">Token Yenile</button>'
+    +' <button onclick="this.parentElement.style.display=\'none\'" style="margin-left:4px;border:none;background:transparent;cursor:pointer;color:inherit;">✕</button>';
+}
+async function checkTokenHealth(){
+  if(!tok){showTokBanner('missing');return;}
+  try{var r=await fetch('https://api.github.com/rate_limit',{headers:gh()});
+    if(r.status===401){showTokBanner('invalid');return;}
+    if(r.status===403){showTokBanner('ratelimit');return;}
+    if(r.ok){var d=await r.json();if(d&&d.rate&&d.rate.remaining<50)showTokBanner('warn',d.rate.remaining);}
+  }catch(e){}
+}
+async function checkStagingDrift(){
+  var el=document.getElementById('driftBadge');if(!el||!tok)return;
+  try{var r=await fetch('https://api.github.com/repos/'+REPO+'/compare/main...staging',{headers:gh()});
+    if(!r.ok){el.style.display='none';return;}
+    var d=await r.json();var ahead=d.ahead_by||0;
+    el.style.display='block';
+    el.innerHTML=ahead>0?'⚠️ <strong>'+ahead+' onaylanmamış commit</strong>':'✓ Staging güncel.';
+    el.style.color=ahead>0?'#d97706':'#16a34a';
+  }catch(e){el.style.display='none';}
+}
+function showApprovePreview(){
+  if(!tok){openTokModal(showApprovePreview);return;}
+  var el=document.getElementById('diffPreviewContent');if(!el){doApprove();return;}
+  var html='',totAdd=0,totDel=0,totChg=0,totAcc=0,totRej=0;
+  centers.forEach(function(c){
+    if(c.active===false)return;
+    var d=getDiff(c.id);var hasPa=pA[c.id]&&pA[c.id].length;
+    if(!d.added.length&&!d.deleted.length&&!d.changed.length&&!hasPa
+       &&!Object.keys(pE[c.id]||{}).length&&!(pD[c.id]&&pD[c.id].size)&&!pCE[c.id])return;
+    var cacc=pAcc[c.id]||{};var crej=pRej[c.id]||{};
+    html+='<div style="margin-bottom:12px;border:1px solid var(--border);border-radius:8px;overflow:hidden;">'
+      +'<div style="background:var(--bg2);padding:8px 12px;font-weight:600;font-size:13px;">'+esc(c.name)+'</div>'
+      +'<table style="width:100%;font-size:12px;"><tbody>';
+    d.added.map(function(a){return{a:a,t:'add'};}).concat(
+      d.deleted.map(function(a){return{a:a,t:'del'};}),
+      d.changed.map(function(a){return{a:a,t:'chg'};})
+    ).forEach(function(row){
+      var a=row.a;var t=row.t;var isAcc=!!cacc[a.name];var isRej=!!crej[a.name];
+      var st=isRej?'<span style="color:#7e22ce;">✕ Reddedildi</span>'
+        :isAcc?'<span style="color:#166534;">✓ Onaylandı</span>'
+        :'<span style="color:var(--muted);">Gözden geçirilmedi</span>';
+      var tl=t==='add'?'<span style="color:#16a34a;">+Yeni</span>'
+        :t==='del'?'<span style="color:#dc2626;">−Silindi</span>'
+        :'<span style="color:#d97706;">ΔFiyat</span>';
+      if(!isRej){if(isAcc)totAcc++;else if(t==='add')totAdd++;else if(t==='del')totDel++;else totChg++;}
+      else totRej++;
+      html+='<tr style="border-bottom:1px solid var(--border);"><td style="padding:5px 12px;width:70px;">'+tl+'</td>'
+        +'<td style="padding:5px 8px;">'+esc(a.name)+'</td><td style="padding:5px 12px;text-align:right;">'+st+'</td></tr>';
+    });
+    if(hasPa)pA[c.id].forEach(function(a){totAdd++;
+      html+='<tr style="background:#f0fdf4;border-bottom:1px solid var(--border);">'
+        +'<td style="padding:5px 12px;color:#16a34a;font-size:11px;">+Manuel</td>'
+        +'<td style="padding:5px 8px;">'+esc(a.name)+'</td>'
+        +'<td style="padding:5px 12px;text-align:right;"><span style="color:#166534;">✓ Eklenecek</span></td></tr>';
+    });
+    html+='</tbody></table></div>';
+  });
+  if(Object.keys(pCE).length)html+='<div class="pend" style="margin-bottom:10px;">'+Object.keys(pCE).length+' merkez bilgisi güncellenecek.</div>';
+  if(!html)html='<div class="ok-box">✅ Yayınlanacak değişiklik yok.</div>';
+  else html='<div class="pend" style="margin-bottom:12px;">'
+    +[totAdd?'+'+totAdd+' yeni':'',totDel?totDel+' silindi':'',totChg?totChg+' fiyat':'',
+      totAcc?totAcc+' onaylandı':'',totRej?totRej+' reddedildi':''].filter(Boolean).join(' • ')+'</div>'+html;
+  el.innerHTML=html;showModal('diffOv');
+}
+var _delCtrId=null;
+function openHardDelete(cid){
+  _delCtrId=cid;var c=centers.find(function(x){return x.id===cid;});
+  document.getElementById('delCtrMsg').innerHTML='<strong style="color:#dc2626;">'+esc(c?c.name:cid)+'</strong> kalıcı olarak silinecek.'
+    +'<br><small style="color:var(--muted);">Analiz dosyaları silinmez (arşiv olarak kalır).</small>'
+    +'<br><br>Onaylamak için <strong>'+esc(cid)+'</strong> yazın:';
+  document.getElementById('delCtrConfirmInput').value='';showModal('delCtrOv');
+}
+async function confirmHardDelete(){
+  if(document.getElementById('delCtrConfirmInput').value.trim()!==_delCtrId){alert('Merkez ID eşleşmedi.');return;}
+  var cid=_delCtrId;var c=centers.find(function(x){return x.id===cid;});
+  var btn=document.getElementById('delCtrConfirmBtn');btn.disabled=true;btn.textContent='...';
+  try{
+    var newC=centers.filter(function(x){return x.id!==cid;});
+    var wc=await apiWrite('data/centers.json',newC,ctxSha,'feat: merkez silindi — '+cid);
+    if(wc&&wc.content)ctxSha=wc.content.sha;
+    var cfgF=await apiRead(STAGING,'config/centers.json').catch(function(){return null;})
+      ||await apiRead(MAIN,'config/centers.json').catch(function(){return null;});
+    if(cfgF&&cfgF.content){
+      var wf=await apiWrite('config/centers.json',cfgF.content.filter(function(x){return x.id!==cid;}),cfgF.sha,'feat: merkez silindi — '+cid);
+      if(wf&&wf.content)cfgCtxSha=wf.content.sha;
+    }
+    await triggerMerge();
+    centers=newC;delete sMap[cid];delete mMap[cid];delete ovMap[cid];
+    hideModal('delCtrOv');renderCenters();renderCatalog();renderChanges();updSum();updApvBtn();
+    alert((c?c.name:cid)+' silindi.');
+  }catch(e){alert('Hata: '+e.message);}
+  finally{btn.disabled=false;btn.textContent='🗑 Kalıcı Sil';}
+}
+async function preflightCheck(){
+  if(!tok)return;
+  for(var i=0;i<centers.length;i++){
+    var c=centers[i];if(c.active===false)continue;
+    if(!sMap[c.id])try{
+      var init={center_id:c.id,center_name:c.name,analyses:[],last_updated:null};
+      var r=await apiWrite('data/analyses/'+c.id+'.json',init,null,'chore: init analyses');
+      sMap[c.id]={content:init,sha:r&&r.content?r.content.sha:null};
+    }catch(e){console.warn('Preflight analyses:',c.id,e.message);}
+    if(!ovMap[c.id])try{
+      var initOv={center_id:c.id,center_name:c.name,overrides:[]};
+      var r2=await apiWrite('data/overrides/'+c.id+'.json',initOv,null,'chore: init overrides');
+      ovMap[c.id]={content:initOv,sha:r2&&r2.content?r2.content.sha:null};
+    }catch(e){console.warn('Preflight overrides:',c.id,e.message);}
+  }
+}
+var _preApprovalShas={},_revertTimer=null;
+function storePreApprovalShas(){
+  _preApprovalShas={};
+  Object.keys(sMap).forEach(function(cid){if(sMap[cid])_preApprovalShas['a_'+cid]=sMap[cid].sha;});
+  _preApprovalShas._ctxSha=ctxSha;
+}
+function showRevertBtn(){
+  var btn=document.getElementById('revertApvBtn');
+  if(!btn){btn=document.createElement('button');btn.id='revertApvBtn';
+    btn.className='btn btn-del';btn.style.marginLeft='6px';btn.onclick=revertLastApproval;
+    var hdr=document.querySelector('.hdr-right');if(hdr)hdr.insertBefore(btn,hdr.firstChild);}
+  btn.textContent='↩ Son Onayı Geri Al';btn.style.display='inline-block';
+  if(_revertTimer)clearTimeout(_revertTimer);
+  _revertTimer=setTimeout(function(){btn.style.display='none';_preApprovalShas={};},30*60*1000);
+}
+async function revertLastApproval(){
+  if(!Object.keys(_preApprovalShas).length){alert('Geri alınacak bilgi yok.');return;}
+  if(!confirm('Son onaylama işlemini geri almak istiyor musunuz?'))return;
+  var btn=document.getElementById('revertApvBtn');if(btn){btn.disabled=true;btn.textContent='...';}
+  var errors=[];
+  try{
+    var proms=[];
+    Object.keys(_preApprovalShas).forEach(function(k){
+      if(!k.startsWith('a_'))return;
+      var cid=k.slice(2);var sha=_preApprovalShas[k];if(!sha||!sMap[cid])return;
+      var curSha=sMap[cid].sha;
+      proms.push(fetch('https://api.github.com/repos/'+REPO+'/git/blobs/'+sha,{headers:gh()})
+        .then(function(r){return r.json();})
+        .then(function(pd){
+          var prev=JSON.parse(decodeURIComponent(escape(atob(pd.content.replace(/\s/g,'')))));
+          return apiWrite('data/analyses/'+cid+'.json',prev,curSha,'revert: son onay geri alındı');
+        }).then(function(wr){if(sMap[cid])sMap[cid].sha=wr&&wr.content?wr.content.sha:sMap[cid].sha;})
+        .catch(function(e){errors.push('analyses/'+cid+': '+e.message);}));
+    });
+    await Promise.all(proms);await triggerMerge();
+    _preApprovalShas={};if(_revertTimer)clearTimeout(_revertTimer);if(btn)btn.style.display='none';
+    buildRKW();buildAllCats();buildDLs();updSum();renderChanges();renderCatalog();renderOverride();updApvBtn();
+    alert('Geri alma tamamlandı.'+(errors.length?'\n\nHatalar:\n'+errors.join('\n'):''));
+  }catch(e){alert('Hata: '+e.message);}
+  finally{if(btn){btn.disabled=false;btn.textContent='↩ Son Onayı Geri Al';}}
+}
 /* ═══ APPROVE ════════════════════════════════════════════════════════════════ */
 function approve(){
   if(!tok){openTokModal(approve);return;}
@@ -2579,6 +2812,28 @@ loadAll();
     <div id="dupContent"></div>
     <div style="margin-top:14px;text-align:right">
       <button class="btn btn-sec" onclick="hideModal('tekrarOv')">Kapat</button>
+    </div>
+  </div>
+</div>
+<div id="tokBanner" style="display:none;position:fixed;top:0;left:0;right:0;z-index:9999;padding:6px 16px;font-size:12px;font-weight:600;text-align:center;"></div>
+<div class="modal-ov hidden" id="diffOv" onclick="if(event.target===this)hideModal('diffOv')">
+  <div class="modal" style="max-width:700px;max-height:80vh;overflow-y:auto;">
+    <h3 style="margin-bottom:12px">ℹ️ Yayınlamadan Önce İncele</h3>
+    <div id="diffPreviewContent"></div>
+    <div style="margin-top:16px;display:flex;justify-content:flex-end;gap:8px;">
+      <button class="btn btn-sec" onclick="hideModal('diffOv')">✕ İptal</button>
+      <button class="btn btn-ok" onclick="hideModal('diffOv');doApprove()">✓ Onayla ve Yayınla</button>
+    </div>
+  </div>
+</div>
+<div class="modal-ov hidden" id="delCtrOv" onclick="if(event.target===this)hideModal('delCtrOv')">
+  <div class="modal" style="max-width:460px;">
+    <h3 style="color:#dc2626;margin-bottom:12px">⚠️ Merkezi Kalıcı Sil</h3>
+    <p id="delCtrMsg" style="margin-bottom:8px;font-size:13px;"></p>
+    <input id="delCtrConfirmInput" type="text" placeholder="merkez_id" style="width:100%;border:1px solid #fca5a5;border-radius:6px;padding:6px 10px;font-size:13px;margin-bottom:14px;box-sizing:border-box;">
+    <div style="display:flex;justify-content:flex-end;gap:8px;">
+      <button class="btn btn-sec" onclick="hideModal('delCtrOv')">İptal</button>
+      <button class="btn btn-del" id="delCtrConfirmBtn" onclick="confirmHardDelete()">🗑 Kalıcı Sil</button>
     </div>
   </div>
 </div>
