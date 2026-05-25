@@ -251,6 +251,13 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
   <div id="tab-override" class="hidden">
     <div id="overrideContent"><div class="loader"><div class="spin"></div></div></div>
   </div>
+  <div id="tab-centers" class="hidden">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+      <h3 style="margin:0">🏢 Merkezler</h3>
+      <button class="btn btn-p" onclick="showModal('ctrOv')">+ Yeni Merkez</button>
+    </div>
+    <div id="centersContent"></div>
+  </div>
   <div id="tab-test" class="hidden">
     <div id="testContent"></div>
   </div>
@@ -621,7 +628,7 @@ async function loadAll(){
   });
 
   buildRKW();buildA2C();buildAllCats();buildDLs();
-  updSum();renderChanges();renderCatalog();renderOverride();renderClassify();
+  updSum();renderChanges();renderCatalog();renderOverride();renderClassify();renderCenters();
   clearTimeout(_lg);
   updApvBtn();collapseAll();
   window.scrollTo({top:0,behavior:'instant'});
@@ -731,6 +738,7 @@ function updSum(){
   document.getElementById('sDel').textContent=dl;
   document.getElementById('sChg').textContent=ch;
   document.getElementById('sUg').textContent=ug;
+  var cEl=document.getElementById('sCenters');if(cEl)cEl.textContent=centers.length;
   var dc=nw+dl+ch;
   var bdg=document.getElementById('chgBadge');
   if(bdg){bdg.textContent=dc;bdg.className=dc>0?'':'hidden';}
@@ -752,6 +760,7 @@ function cardClick(t){
   var el=document.getElementById('cd-'+t);if(el)el.classList.add('sel');
   if(t==='total'){showTab('catalog');}
   else if(t==='ug'){showTab('classify');}
+  else if(t==='centers'){showTab('centers');}
   else{showTab('changes');setFilter(t==='added'?'added':t==='deleted'?'deleted':'changed');}
 }
 function setFilter(f){
@@ -761,7 +770,8 @@ function setFilter(f){
 }
 function showTab(name){
   if(name==='test')renderTest();
-  ['changes','catalog','override','classify','test'].forEach(function(t){
+  if(name==='centers')renderCenters();
+  ['changes','catalog','override','classify','centers','test'].forEach(function(t){
     document.getElementById('tab-'+t).className=t===name?'':'hidden';
     document.getElementById('t-'+t).className='tab'+(t===name?' on':'');
   });
@@ -1737,6 +1747,78 @@ async function submitCtr(){
 }
 
 
+/* ═══ CENTERS TAB ══════════════════════════════════════════════════════════════════════════════ */
+function renderCenters(){
+  var el=document.getElementById('centersContent');if(!el)return;
+  if(!centers.length){el.innerHTML='<div class="empty">Merkez bulunamadı.</div>';return;}
+  var html='<div class="tw"><table><thead><tr>'
+    +'<th style="min-width:160px">Merkez Adı</th>'
+    +'<th>Üniversite</th>'
+    +'<th>Şehir</th>'
+    +'<th>Web URL</th>'
+    +'<th>Fiyat URL</th>'
+    +'<th style="text-align:center">Durum</th>'
+    +'<th style="text-align:right">Analiz</th>'
+    +'</tr></thead><tbody>';
+  centers.forEach(function(c){
+    var p=pCE[c.id]||{};
+    var name=p.name!==undefined?p.name:(c.name||'');
+    var uni=p.university!==undefined?p.university:(c.university||'');
+    var city=p.city!==undefined?p.city:(c.city||'');
+    var url=p.url!==undefined?p.url:(c.url||'');
+    var purl=p.pricing_url!==undefined?p.pricing_url:(c.pricing_url||'');
+    var active=p.active!==undefined?p.active:(c.active!==false);
+    var cnt=getA(c.id).length;
+    var hasE=Object.keys(p).length>0;
+    var rowCls=hasE?'r-chg':'';
+    html+='<tr class="'+rowCls+'">'
+      +'<td class="ed" onclick="edCtr(this,\''+jsS(c.id)+'\',\'name\')" title="Tıkla: düzenle">'
+      +'<strong>'+esc(name)+'</strong>'+(hasE?' <span style="font-size:10px;color:#d97706">✏️</span>':'')
+      +'<div style="font-size:10px;color:var(--muted)">'+esc(c.id)+'</div></td>'
+      +'<td class="ed" onclick="edCtr(this,\''+jsS(c.id)+'\',\'university\')">'+esc(uni||'—')+'</td>'
+      +'<td class="ed" onclick="edCtr(this,\''+jsS(c.id)+'\',\'city\')">'+esc(city||'—')+'</td>'
+      +'<td class="ed" onclick="edCtr(this,\''+jsS(c.id)+'\',\'url\')" title="'+esc(url)+'">'
+      +(url?'<a href="'+esc(url)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="font-size:11px;color:var(--p)">'+esc(url.replace(/^https?:\/\//,'').substring(0,30))+(url.replace(/^https?:\/\//,'').length>30?'…':'')+'</a>':'<span style="color:var(--muted)">—</span>')
+      +'</td>'
+      +'<td class="ed" onclick="edCtr(this,\''+jsS(c.id)+'\',\'pricing_url\')" title="'+esc(purl)+'">'
+      +(purl?'<a href="'+esc(purl)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="font-size:11px;color:var(--p)">'+esc(purl.replace(/^https?:\/\//,'').substring(0,30))+(purl.replace(/^https?:\/\//,'').length>30?'…':'')+'</a>':'<span style="color:var(--muted)">—</span>')
+      +'</td>'
+      +'<td style="text-align:center">'
+      +'<button class="act-tog '+(active?'act-on':'act-off')+'" onclick="togActCtr(\''+jsS(c.id)+'\')">'+(active?'Aktif':'Pasif')+'</button>'
+      +'</td>'
+      +'<td style="text-align:right;color:var(--muted);font-size:12px">'+cnt+'</td>'
+      +'</tr>';
+  });
+  html+='</tbody></table></div>'
+    +'<p style="font-size:11px;color:var(--muted);margin-top:8px">'
+    +'Hücreye tıklayarak düzenleyin. Değişiklikler “Onayla ve Yayınla” ile kaydedilir.</p>';
+  el.innerHTML=html;
+}
+function edCtr(td,cid,field){
+  if(td.querySelector('input'))return;
+  var c=centers.find(function(x){return x.id===cid;});if(!c)return;
+  var p=pCE[cid]||{};
+  var cur=p[field]!==undefined?p[field]:(c[field]||'');
+  var inp=document.createElement('input');
+  inp.type='text';inp.value=cur;
+  inp.style.cssText='width:100%;min-width:100px;border:1px solid var(--p);border-radius:4px;padding:4px 6px;font-size:12px;font-family:inherit;box-sizing:border-box;';
+  var commit=function(){
+    var val=inp.value.trim();
+    if(!pCE[cid])pCE[cid]={};
+    if(val===(c[field]||'')){delete pCE[cid][field];if(!Object.keys(pCE[cid]).length)delete pCE[cid];}
+    else pCE[cid][field]=val;
+    renderCenters();updApvBtn();updCtrApvBtn(cid);
+  };
+  inp.onblur=commit;
+  inp.onkeydown=function(e){if(e.key==='Enter')inp.blur();if(e.key==='Escape'){inp.value=cur;inp.blur();}};
+  td.innerHTML='';td.appendChild(inp);inp.focus();inp.select();
+}
+function togActCtr(cid){
+  var c=centers.find(function(x){return x.id===cid;});if(!c)return;
+  c.active=!c.active;
+  if(!pCE[cid])pCE[cid]={};pCE[cid].active=c.active;
+  renderCenters();renderCatalog();updApvBtn();updCtrApvBtn(cid);
+}
 /* ═══ DUPLICATE DETECTION ════════════════════════════════════════════════════ */
 function findDupes(){
   /* Returns {cid: [{name, count, pids}]} for within-center duplicates */
