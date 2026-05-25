@@ -480,12 +480,14 @@ updTokBadge();
 function gh(){var h={'Accept':'application/vnd.github.v3+json'};if(tok)h['Authorization']='token '+tok;return h;}
 
 async function fetchT(url,opts){
-  /* Abort after 30 s so a hanging request never locks the panel */
-  var ctrl=new AbortController();
-  var tid=setTimeout(function(){ctrl.abort();},30000);
-  return fetch(url,Object.assign({},opts||{},{signal:ctrl.signal}))
-    .then(function(r){clearTimeout(tid);return r;})
-    .catch(function(e){clearTimeout(tid);throw e;});
+  /* Abort after 30 s; fall back to plain fetch if AbortController unavailable */
+  try{
+    var ctrl=new AbortController();
+    var tid=setTimeout(function(){ctrl.abort();},30000);
+    return fetch(url,Object.assign({},opts||{},{signal:ctrl.signal}))
+      .then(function(r){clearTimeout(tid);return r;})
+      .catch(function(e){clearTimeout(tid);throw e;});
+  }catch(e){ return fetch(url,opts||{}); }
 }
 async function rawRead(branch,path){
   try{
@@ -583,7 +585,11 @@ async function loadAll(){
     stagingDate().catch(function(){return null;}),
     apiRead(MAIN,'data/centers.json').catch(function(){return null;})
   ]);
-  centers=(misc[0]||[]).filter(function(c){return c.active!==false;});
+  /* Fallback chain: rawRead(main) → apiRead(main).content → rawRead(staging) */
+  var centersRaw=misc[0]
+    ||(misc[3]&&misc[3].content?misc[3].content:null)
+    ||(await rawRead(STAGING,'data/centers.json').catch(function(){return null;}));
+  centers=(centersRaw||[]).filter(function(c){return c.active!==false;});
   kwGrps=misc[1]||{};
   cats=Object.keys(kwGrps);
   ctxSha=misc[3]?misc[3].sha:null;
@@ -594,7 +600,11 @@ async function loadAll(){
     clearTimeout(_guard);
     ['changesContent','catalogContent','overrideContent','classifyContent'].forEach(function(id){
       var el=document.getElementById(id);
-      if(el)el.innerHTML='<div class="warn-box">centers.json okunamadı. Token\'ı ve bağlantıyı kontrol edin.<br>'
+      var _dbg='raw='+(misc[0]?'ok':'null')+' api='+(misc[3]?'ok (sha='+misc[3].sha+')':'null')+' staging=(checking fallback)';
+      if(el)el.innerHTML='<div class="warn-box">'
+        +'<strong>centers.json yüklenemedi.</strong><br>'
+        +'Token\'ı kontrol edin — sağ üstteki 🔑 düğmesine tıklayın.<br>'
+        +'<small style="color:var(--muted)">Tanı: '+esc(_dbg)+'</small><br>'
         +'<button class="btn btn-sec" style="margin-top:8px" onclick="loadAll()">↻ Tekrar Dene</button></div>';
     });
     return;
