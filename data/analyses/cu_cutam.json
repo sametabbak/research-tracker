@@ -1,7 +1,7 @@
 {
   "center_id": "cu_cutam",
   "center_name": "CÜ CUTAM",
-  "last_updated": "2026-05-18",
+  "last_updated": "2026-05-25",
   "source_url": "https://cutam.cumhuriyet.edu.tr/16-analiz-fiyatlari",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
@@ -340,7 +340,7 @@
       "category": "SEM",
       "price": 200,
       "currency": "TRY",
-      "unit": "set",
+      "unit": "numune",
       "notes": "",
       "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)",
       "_isOv": false
@@ -361,7 +361,7 @@
       "price": 1750,
       "currency": "TRY",
       "unit": "saat",
-      "notes": "SEM analizleri 1 saat ve katları olarak hesaplanır.",
+      "notes": "",
       "keyword_group": "SEM-EDX ve EBSD Analizleri",
       "_isOv": false
     },
@@ -371,7 +371,7 @@
       "price": 500,
       "currency": "TRY",
       "unit": "numune",
-      "notes": "TEM Grid getirenlerden alınmaz.",
+      "notes": "",
       "keyword_group": "Genel Numune Hazırlama",
       "_isOv": false
     },

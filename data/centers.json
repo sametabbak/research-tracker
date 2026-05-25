@@ -9,7 +9,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 40,
-    "last_updated": "2026-05-18"
+    "last_updated": "2026-05-25"
   },
   {
     "id": "esogu_arum",
@@ -21,7 +21,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 184,
-    "last_updated": "2026-05-18"
+    "last_updated": "2026-05-25"
   },
   {
     "id": "dpu_iltem",
@@ -32,8 +32,8 @@
     "pricing_url": "https://dpuiltem.com.tr/analiz-ucretleri/",
     "active": true,
     "reference": false,
-    "analysis_count": 69,
-    "last_updated": "2026-05-18"
+    "analysis_count": 68,
+    "last_updated": "2026-05-25"
   },
   {
     "id": "atauni_daytam",
@@ -44,8 +44,8 @@
     "pricing_url": "https://daytam.atauni.edu.tr/hizmet-bedelleri/",
     "active": true,
     "reference": false,
-    "analysis_count": 133,
-    "last_updated": "2026-05-18"
+    "analysis_count": 132,
+    "last_updated": "2026-05-25"
   },
   {
     "id": "eu_taum",
@@ -57,7 +57,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 23,
-    "last_updated": "2026-05-18"
+    "last_updated": "2026-05-25"
   },
   {
     "id": "cu_cutam",
@@ -69,7 +69,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 64,
-    "last_updated": "2026-05-18"
+    "last_updated": "2026-05-25"
   },
   {
     "id": "neu_bitam",
@@ -81,7 +81,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 150,
-    "last_updated": "2026-05-18"
+    "last_updated": "2026-05-25"
   },
   {
     "id": "gazi_gutmam",
@@ -93,7 +93,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 18,
-    "last_updated": "2026-05-18"
+    "last_updated": "2026-05-25"
   },
   {
     "id": "hacettepe_hunitek",
@@ -105,7 +105,7 @@
     "active": true,
     "reference": false,
     "analysis_count": 72,
-    "last_updated": "2026-05-18"
+    "last_updated": "2026-05-25"
   },
   {
     "id": "gaun_ulutem",
@@ -117,18 +117,6 @@
     "active": true,
     "reference": false,
     "analysis_count": 95,
-    "last_updated": "2026-05-18"
-  },
-  {
-    "id": "deu_emum",
-    "name": "DEÜ EMUM",
-    "university": "Dokuz Eylül Üniversitesi",
-    "city": "İzmir",
-    "url": "https://emum.deu.edu.tr",
-    "pricing_url": "https://emum.deu.edu.tr/wp-content/uploads/2026/01/EMUM-Fiyat-Listesi-2026.pdf",
-    "active": true,
-    "reference": false,
-    "analysis_count": 38,
     "last_updated": "2026-05-25"
   }
 ]
