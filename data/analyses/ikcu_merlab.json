@@ -3,5 +3,1177 @@
   "center_name": "İKÇÜ MERLAB",
   "last_updated": "2026-05-25",
   "source_url": "https://merkeziarastirmalab.ikcu.edu.tr/S/15286/ucretlendirme",
-  "analyses": []
+  "analyses": [
+    {
+      "name": "Taramalı Elektron Mikroskobu Analizi (SEM, EDS, SE, BSD)",
+      "price": 2000,
+      "unit": "TL / Saat",
+      "category": "Taramalı Elektron Mikroskobu (SEM)",
+      "notes": "1) Cihaza 9 adet numune aynı anda yerleştirilebilir. 2) Cihaz ile 1 saat içerisinde en fazla 9 adet numuneye bakılabilir. 3) Analizi yapılacak numuneler ıslak olmamalı ve nem içermemelidir. 4) Kaplama cihazı ile tek seferde en fazla 6 adet numuneye kaplama yapılabilmektedir. 5) EDS analizlerinde numune kalınlığı 1 cm'yi geçmemelidir. 6) STEM detektörü ile incelemelerde 9 adet numune cihaza yerleştirilebilir. 7) STEM analizlerinde STEM gridleri ile hazır getirilmelidir. 8) 1 saatten az yapılan analizlerde 1 saatlik ücret alınır.",
+      "currency": "TRY",
+      "manual": true,
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
+    },
+    {
+      "name": "Stem Dedektörü Analizi",
+      "price": 2250,
+      "unit": "TL / Saat",
+      "category": "Taramalı Elektron Mikroskobu (SEM)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Numune Kaplama (Au)",
+      "price": 1000,
+      "unit": "TL / Set",
+      "category": "Taramalı Elektron Mikroskobu (SEM)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (SEM)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Taramalı Elektron Mikroskobu (SEM)",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Atomik Kuvvet Mikroskobu Analizi",
+      "price": 1500,
+      "unit": "TL / Saat",
+      "category": "Atomik Kuvvet Mikroskobu (AFM)",
+      "notes": "1) Numune 1cmx1cmx0.5cm boyutlarında olmalıdır. 2) Yüzey pürüzlülüğü 5µm'yi geçmemelidir. 3) AFM sıvı hücre analizlerinde numuneden kaynaklı cihaz hasarı olması durumunda gönderen sorumlu tutulur. 4) STM analizinde numune iletken olmalıdır. 5) 1 saatten az yapılan analizlerde 1 saatlik ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "AFM Sıvı Hücre Analizi",
+      "price": 2000,
+      "unit": "TL / Saat",
+      "category": "Atomik Kuvvet Mikroskobu (AFM)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (AFM)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Atomik Kuvvet Mikroskobu (AFM)",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Spektrum Analizi",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "X Işınları Kırınımı (XRD)",
+      "notes": "1) Toz numune parçacık boyutu 20 mikrondan küçük olmalıdır. 2) Toz numune miktarı en az 1 g olmalıdır. 3) Patern tayini için numune içeriği biliniyorsa belirtilmelidir. 4) Theta ölçüm açısı aralığı belirtilmelidir. 5) Plaka/ince film numuneleri en az 1 cm çapında, kalınlık <3 mm olmalıdır. 6) 30 dakika sonrasında her yarım saat için 300 TL ilave edilir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Patern Tayini",
+      "price": 1250,
+      "unit": "TL / Numune (En fazla 1 saat)",
+      "category": "X Işınları Kırınımı (XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Yüzey Stres Ölçümü",
+      "price": 5000,
+      "unit": "TL / Numune",
+      "category": "X Işınları Kırınımı (XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Standart Numune Hazırlama (XRD)",
+      "price": 500,
+      "unit": "TL / Numune",
+      "category": "X Işınları Kırınımı (XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (XRD)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "X Işınları Kırınımı (XRD)",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Çok Noktalı BET (Mikro)",
+      "price": 1500,
+      "unit": "TL / Numune",
+      "category": "Özgül Yüzey Alanı-Gözeneklilik (BET)",
+      "notes": "1) Toz numune miktarı en az 1 gr olmalıdır. Katı numuneler 1 cm çaplı cam tüpten geçecek boyutlarda olmalıdır. 2) Sıvı numunelerde ölçüm yapılamamaktadır. 3) Analizden önce degaz koşulları belirtilmelidir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Çok Noktalı BET (Mikro) + Gözenek Boyut Dağılım Analizi",
+      "price": 1750,
+      "unit": "TL / Numune",
+      "category": "Özgül Yüzey Alanı-Gözeneklilik (BET)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (BET)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Özgül Yüzey Alanı-Gözeneklilik (BET)",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TGA / DTA",
+      "price": 1000,
+      "unit": "TL / Saat",
+      "category": "Termal Analizler (TGA, DTA, DSC)",
+      "notes": "1) Numune miktarı en az 1 g olmalıdır. 2) STA cihazı en fazla 1400°C sıcaklığa çıkabilir. 3) Yüksek sıcaklıklarda alümina pan 3000 TL, platin pan 4500 TL, safir pan 3500 TL ekstra ödeme alınır. 4) 1 saatten az süren analizlerden 1 saat ücreti alınır. 5) Aşırı asidik/patlayıcı maddeden kaynaklanan zararı gönderen karşılar.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (TGA/DTA)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Termal Analizler (TGA, DTA, DSC)",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DSC",
+      "price": 1200,
+      "unit": "TL / Saat",
+      "category": "Termal Analizler (TGA, DTA, DSC)",
+      "notes": "1) Numune miktarı en az 1 g olmalıdır. 2) DSC cihazı -75°C ile 550°C arasında çalışır. 3) 1 saatten az süren analizlerden 1 saat ücreti alınır. 4) Aşırı asidik/patlayıcı maddeden kaynaklanan zararı gönderen karşılar.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (DSC)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Termal Analizler (TGA, DTA, DSC)",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "CHNS Analizi",
+      "price": 1200,
+      "unit": "TL / Numune",
+      "category": "Elemental Analiz",
+      "notes": "1) Numune miktarı en az 20 mg ependorf tüpte olmalıdır. 2) CHNS analizi için en az 20 numune olduğunda analize başlanır. 3) Oksijen analizi için en az 40 numune olduğunda analize başlanır. 4) S analizi isteniyorsa beklenen % S içeriği formda belirtilmelidir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Oksijen Analizi",
+      "price": 1600,
+      "unit": "TL / Numune",
+      "category": "Elemental Analiz",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (Elemental)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Elemental Analiz",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Zeta Potansiyel Ölçümü",
+      "price": 1250,
+      "unit": "TL / Numune",
+      "category": "Nano Parçacık Boyut Dağılımı / Zeta Potansiyeli",
+      "notes": "1) Dispersant olarak saf su kullanılmaktadır. 2) Numuneler en az 3 mL olmalıdır. 3) Reaktif indeksi ve absorbsiyon değerleri verilmelidir. 4) 5 adetten fazla numunelerde %20, 10 adetten fazla numunelerde %30 indirim uygulanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Nano Parçacık Boyut Analizi",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Nano Parçacık Boyut Dağılımı / Zeta Potansiyeli",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Parçacık Boyut Numune Hazırlama",
+      "price": 600,
+      "unit": "TL / Numune",
+      "category": "Nano Parçacık Boyut Dağılımı / Zeta Potansiyeli",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Mikro Parçacık Boyut Dağılım Analizi (Hava İçinde)",
+      "price": 1250,
+      "unit": "TL / Numune (kuru)",
+      "category": "Mikro Parçacık Boyut Dağılımı",
+      "notes": "1) Sıvı içerisindeki dağılmış katılar, kolloidler ve emülsiyonlar analiz edilebilir. 2) Reaktif indeksi ve absorbsiyon değerleri verilmelidir. 3) Numune miktarı en az 10 g olmalıdır. 4) Dispersantlar çözücüleri ile birlikte verilmelidir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Mikro Parçacık Boyut Dağılım Analizi (Su İçinde)",
+      "price": 1250,
+      "unit": "TL / Numune (ıslak)",
+      "category": "Mikro Parçacık Boyut Dağılımı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Mikro Parçacık Boyut Dağılım Analizi (Organik Çözücü İçinde)",
+      "price": 1500,
+      "unit": "TL / Numune",
+      "category": "Mikro Parçacık Boyut Dağılımı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (Mikro Parçacık)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Mikro Parçacık Boyut Dağılımı",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "UV-Vis / NIR Spektrum Analizi (Dalga Boyu Tarama)",
+      "price": 750,
+      "unit": "TL / Numune",
+      "category": "Spektral Analiz (UV-Vis-NIR)",
+      "notes": "1) Sıvılar için en az 10 mL, katılar için en az 10 g olmalıdır. 2) Miktar (Konsantrasyon) Tayini için açıklama yapılmalıdır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Miktar (Konsantrasyon) Tayini (5 Standart için)",
+      "price": 1500,
+      "unit": "TL / Numune",
+      "category": "Spektral Analiz (UV-Vis-NIR)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Sıvı Numune Hazırlama (UV-Vis)",
+      "price": 500,
+      "unit": "TL / Numune",
+      "category": "Spektral Analiz (UV-Vis-NIR)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Toz Numune Hazırlama (UV-Vis)",
+      "price": 500,
+      "unit": "TL / Numune",
+      "category": "Spektral Analiz (UV-Vis-NIR)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Reflektans Tayini",
+      "price": 750,
+      "unit": "TL / Numune",
+      "category": "Spektral Analiz (UV-Vis-NIR)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Transmitans Tayini",
+      "price": 750,
+      "unit": "TL / Numune",
+      "category": "Spektral Analiz (UV-Vis-NIR)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Absorbans Tayini",
+      "price": 750,
+      "unit": "TL / Numune",
+      "category": "Spektral Analiz (UV-Vis-NIR)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Toz Numune Spektrum Analizi",
+      "price": 750,
+      "unit": "TL / Numune",
+      "category": "Spektral Analiz (UV-Vis-NIR)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Katı, İnce Film Spektrum Analizi",
+      "price": 750,
+      "unit": "TL / Numune",
+      "category": "Spektral Analiz (UV-Vis-NIR)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Açıklık Faktörü (Openness Factor)",
+      "price": 4000,
+      "unit": "TL / Numune",
+      "category": "Spektral Analiz (UV-Vis-NIR)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Açıklık Faktörü Blockout",
+      "price": 3000,
+      "unit": "TL / Numune",
+      "category": "Spektral Analiz (UV-Vis-NIR)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (UV-Vis)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Spektral Analiz (UV-Vis-NIR)",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Reolojik Analiz",
+      "price": 1200,
+      "unit": "TL / Saat",
+      "category": "Reolojik Analiz",
+      "notes": "1) Sıvı numuneler en az 60 mL, katı/jel numuneler en az 20 g olmalıdır. 2) HTC sistemi ile RT'dan 280°C'ye kadar analiz yapılabilir. 3) HTC sistemde farklı gaz kullanımında ekstra ücret alınır (N2: 400 TL/saat, Ar: 600 TL/saat). 4) Peltier Plate sistemi -20 ile 200°C arasında çalışır. 5) Viskozite analizleri oda sıcaklığında yapılır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Viskozite Analizi",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Reolojik Analiz",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Genlik Analizi",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Reolojik Analiz",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Frekans Analizi",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Reolojik Analiz",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "İnce Film Analizi",
+      "price": 1250,
+      "unit": "TL / Numune",
+      "category": "Reolojik Analiz",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Sürtünme Analizi",
+      "price": 1800,
+      "unit": "TL / Numune",
+      "category": "Reolojik Analiz",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Yüksek Sıcaklık Polimer Akış Analizi",
+      "price": 2000,
+      "unit": "TL / Numune",
+      "category": "Reolojik Analiz",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Çekme-Basma Testi (60 N)",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Reolojik Analiz",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (Reolojik)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Reolojik Analiz",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Yüzey Gerilim Ölçümü (Sıvı Numune)",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Yüzey Gerilimi Ölçümü",
+      "notes": "1) Sıvı numuneler en az 50 mL olmalıdır. 2) Numunenin yoğunluk değeri verilmelidir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Yoğunluk Ölçümü",
+      "price": 1200,
+      "unit": "TL / Numune",
+      "category": "Yüzey Gerilimi Ölçümü",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Dinamik Temas Açısı Ölçümü",
+      "price": 1200,
+      "unit": "TL / Numune",
+      "category": "Yüzey Gerilimi Ölçümü",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Ara Faz Yüzey Gerilimi Ölçümü",
+      "price": 1600,
+      "unit": "TL / Numune",
+      "category": "Yüzey Gerilimi Ölçümü",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Islanabilirlik Ölçümü",
+      "price": 1600,
+      "unit": "TL / Numune",
+      "category": "Yüzey Gerilimi Ölçümü",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (Yüzey Gerilimi)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Yüzey Gerilimi Ölçümü",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Temas Açısı Ölçümü (Katı Yüzey)",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Temas Açısı Ölçümü",
+      "notes": "1) Numunenin en az bir yüzü düz olmalıdır. 2) Numune boyutları en az 1x1 cm tercih edilmektedir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Kayma Temas Açısı Ölçümü",
+      "price": 1200,
+      "unit": "TL / Numune",
+      "category": "Temas Açısı Ölçümü",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Yüzey Serbest Enerjisi Hesaplaması",
+      "price": 2000,
+      "unit": "TL / Numune",
+      "category": "Temas Açısı Ölçümü",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (Temas Açısı)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Temas Açısı Ölçümü",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "5x, 20x, 50x, 100x Optik Büyütme Altında Her Bir Spektrum",
+      "price": 1000,
+      "unit": "TL / Spektrum",
+      "category": "Konfokal Raman Mikroskobu",
+      "notes": "1) Numune miktarı en az 0.5 g olmalıdır. 2) Analiz için numune yüksekliği en fazla 1 cm olmalıdır. 3) Kullanılacak lazer kaynağı ve kırınım ağı önceden belirtilmelidir. 4) Kör denemelerde saatlik ücret alınır. 5) Her spektrum için dijital kamera görüntüsü ücretsiz verilir. 6) RUFF Kütüphanesi karşılaştırması: 50 TL/spektrum; Organik kütüphane: 100 TL/spektrum.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Yüzey Haritalaması ve Derinlik Analizi",
+      "price": 2000,
+      "unit": "TL / Saat",
+      "category": "Konfokal Raman Mikroskobu",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (Raman)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Konfokal Raman Mikroskobu",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Spektrum Analiz (Emission & Excitation)",
+      "price": 10002000,
+      "unit": "TL / Numune / TL/Saat (En az 5 Numune)",
+      "category": "Floresans–Fosforesans Spektrumu (Spektroflorometre)",
+      "notes": "1) LifeTime Analizi için lazer kaynağı 360 ± 10 nm'dir. 2) Sıvılar için en az 10 mL, katılar için en az 10 g olmalıdır. 3) Özel çözücü gerekiyorsa numune ile birlikte gönderilmelidir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LifeTime Analizi",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Floresans–Fosforesans Spektrumu (Spektroflorometre)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (Floresans)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Floresans–Fosforesans Spektrumu (Spektroflorometre)",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Spektrum Analiz (ATR-FTIR)",
+      "price": 700,
+      "unit": "TL / Numune",
+      "category": "ATR-FTIR",
+      "notes": "1) Kütüphane taraması istenirse ilave 300 TL/numune alınır. 2) KBr cell hazırlanması gerekiyorsa ilave 500 TL/numune alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (ATR-FTIR)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "ATR-FTIR",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "1–5 Element",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "ICP-MS",
+      "notes": "1) Analiz edilebilecek element listesi ICP-MS Analiz İstek Formundan ulaşılabilir. 2) Referans metot isteniyorsa form ile birlikte teslim edilmelidir. 3) Özel kimyasallar numune ile birlikte teslim edilmelidir. 4) Su haricindeki numuneler için Mikro Dalga Numune Hazırlama seçeneği işaretlenmelidir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "6–10 Element",
+      "price": 1250,
+      "unit": "TL / Numune",
+      "category": "ICP-MS",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "11–15 Element",
+      "price": 1500,
+      "unit": "TL / Numune",
+      "category": "ICP-MS",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "16–20 Element",
+      "price": 1750,
+      "unit": "TL / Numune",
+      "category": "ICP-MS",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": ">20 Element",
+      "price": 2000,
+      "unit": "TL / Numune",
+      "category": "ICP-MS",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Silisyum (Si) Tayini",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "ICP-MS",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Civa (Hg) Tayini",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "ICP-MS",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Kükürt (S) ve Fosfor (P) Tayini",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "ICP-MS",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "İzotop Oranı Tayini",
+      "price": 1500,
+      "unit": "TL / Numune",
+      "category": "ICP-MS",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Nitel Analiz (Element Kütle Taraması)",
+      "price": 1250,
+      "unit": "TL / Numune",
+      "category": "ICP-MS",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Mikro Dalga Numune Hazırlama",
+      "price": 750,
+      "unit": "TL / Numune",
+      "category": "ICP-MS",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (ICP-MS)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "ICP-MS",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "1-3 Bileşik (HPLC)",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "HPLC - FLD / DAD",
+      "notes": "1) Mevcut olmayan standart/kimyasal/sarf malzeme talep eden kişi/kuruluş tarafından temin edilmelidir. 2) Metot validasyonu numune sayısına göre fiyatlandırılır. 3) 21-70 numune için %20, >70 numune için %30 indirim uygulanır. 4) Numune hazırlama ve yeni metot geliştirme için uzman personel ile görüşünüz.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "4-6 Bileşik (HPLC)",
+      "price": 1250,
+      "unit": "TL / Numune",
+      "category": "HPLC - FLD / DAD",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "6-10 Bileşik (HPLC)",
+      "price": 1750,
+      "unit": "TL / Numune",
+      "category": "HPLC - FLD / DAD",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Folik Asit (B12 Vitamini) Tayini",
+      "price": 1750,
+      "unit": "TL / Numune",
+      "category": "HPLC - FLD / DAD",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Akrilamit Tayini",
+      "price": 1750,
+      "unit": "TL / Numune",
+      "category": "HPLC - FLD / DAD",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Yeni Metot Geliştirme (HPLC)",
+      "price": 7500,
+      "unit": "TL / Numune",
+      "category": "HPLC - FLD / DAD",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Numune Hazırlama - Ekstraksiyon (HPLC)",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "HPLC - FLD / DAD",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC Metot Validasyonu (1-20 numune)",
+      "price": 2000,
+      "unit": "TL",
+      "category": "HPLC - FLD / DAD",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC Metot Validasyonu (20-70 numune)",
+      "price": 15000,
+      "unit": "TL",
+      "category": "HPLC - FLD / DAD",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC Metot Validasyonu (>70 numune)",
+      "price": 10000,
+      "unit": "TL",
+      "category": "HPLC - FLD / DAD",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (HPLC)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "HPLC - FLD / DAD",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "1–3 Bileşik (GC-FID)",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "GC - FID",
+      "notes": "1) Mevcut olmayan standart/kimyasal/sarf malzeme talep eden kişi/kuruluş tarafından temin edilmelidir. 2) Numune hazırlama ve yeni metot geliştirme için uzman personel ile görüşünüz.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "4–6 Bileşik (GC-FID)",
+      "price": 1200,
+      "unit": "TL / Numune",
+      "category": "GC - FID",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "6–10 Bileşik (GC-FID)",
+      "price": 1750,
+      "unit": "TL / Numune",
+      "category": "GC - FID",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Numune Hazırlama - Ekstraksiyon (GC-FID)",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "GC - FID",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (GC-FID)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "GC - FID",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Yüzey Sertliği",
+      "price": 500,
+      "unit": "TL / Numune",
+      "category": "Mikro Sertlik Analizi",
+      "notes": "1) Numune en az 1cmx1cm yüzeye sahip olmalıdır. 2) Numune yüksekliği en fazla 5 mm olmalıdır. 3) Analizler 100, 200, 500, 1000 ve 2000 gram yükler ile yapılabilir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "İz Görüntüsü (40X)",
+      "price": 200,
+      "unit": "TL / Numune",
+      "category": "Mikro Sertlik Analizi",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Gerçek Yoğunluk / Hacim Ölçümü",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Helyum Piknometresi",
+      "notes": "Analiz numune kapları 10, 35, 100 cc standart silindirik kaplardır. Numune miktarı ve boyutları bu kaplardan birine uyacak şekilde olmalıdır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Tanecik Boyut Analizi",
+      "price": 500,
+      "unit": "TL / Numune",
+      "category": "Optik Mikroskop Fotoğraf Çekimi",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Direnç Ölçümü",
+      "price": 400,
+      "unit": "TL / Numune",
+      "category": "Dört Nokta Elektriksel Ölçüm Cihazı",
+      "notes": "1) Numune en az 1cm x 1cm yüzeye sahip olmalıdır. 2) Numune yüksekliği en fazla 1 cm olmalıdır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "CV Ölçümü",
+      "price": 500,
+      "unit": "TL / Numune",
+      "category": "Potansiyostat / Galvanostat",
+      "notes": "Numune en az 20 mg ve çözücüsü ile gönderilmelidir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Elektrokimyasal Davranışın Belirlenmesi",
+      "price": 1000,
+      "unit": "TL / Saat",
+      "category": "Potansiyostat / Galvanostat",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Çekme Testi (10 kN)",
+      "price": 250,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Cihazı (10 kN)",
+      "notes": "1) Numuneler ASTM, ISO veya DIN standartlarına uygun olmalıdır. 2) 10 adet üzeri %10 indirim, 20 adet üzeri %20 indirim yapılır. 3) Raporlandırma imzalı, kaşeli ve antetli kağıda basılı hazırlanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Basma Testi (10 kN)",
+      "price": 250,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Cihazı (10 kN)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Üç Nokta Eğme Testi (10 kN)",
+      "price": 250,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Cihazı (10 kN)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Dört Nokta Eğme Testi (10 kN)",
+      "price": 250,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Cihazı (10 kN)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (Mekanik 10 kN)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Mekanik Test Cihazı (10 kN)",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Çekme Testi (20 kN)",
+      "price": 750,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Cihazı (20 kN)",
+      "notes": "1) Numuneler ASTM, ISO veya DIN standartlarına uygun olmalıdır. 2) 10 adet üzeri %10 indirim, 20 adet üzeri %20 indirim yapılır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Basma Testi (20 kN)",
+      "price": 750,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Cihazı (20 kN)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Üç Nokta Eğme Testi (20 kN)",
+      "price": 750,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Cihazı (20 kN)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Dört Nokta Eğme Testi (20 kN)",
+      "price": 750,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Cihazı (20 kN)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (Mekanik 20 kN)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Mekanik Test Cihazı (20 kN)",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Çekme Testi (300 kN)",
+      "price": 2500,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Cihazı (300 kN)",
+      "notes": "1) Numuneler ASTM, ISO veya DIN standartlarına uygun olmalıdır. 2) 10 adet üzeri %10 indirim, 20 adet üzeri %20 indirim yapılır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Basma Testi (300 kN)",
+      "price": 2500,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Cihazı (300 kN)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Üç Nokta Eğme Testi (300 kN)",
+      "price": 2500,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Cihazı (300 kN)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Dört Nokta Eğme Testi (300 kN)",
+      "price": 2500,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Cihazı (300 kN)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (Mekanik 300 kN)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Mekanik Test Cihazı (300 kN)",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Tersine Mühendislik",
+      "price": 50000,
+      "unit": "TL / Numune",
+      "category": "Tersine Mühendislik (Bilinmeyen Numune Analizi)",
+      "notes": "1) Araştırılmak istenen malzeme hakkında detaylı bilgi verilmelidir. 2) Yapılacak analizlere uzman karar verir. 3) Analiz raporlandırma süresi 45–60 gündür. 4) Analiz sonuçlarına raporlandırma ücreti dahildir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Kaba Kesme",
+      "price": 750,
+      "unit": "TL / Numune",
+      "category": "Metalografi Testleri",
+      "notes": "1) Kaba kesim numuneleri: en fazla 10 cm genişlik, 1 cm yükseklik, 5 cm boy. 2) Hassas kesim numuneleri: 1 cm genişlik, 0.5 cm yükseklik, 5 cm boy. 3) Doğrudan bakalite alınacak malzemeler: kesit alanı en çok 2 cm², yükseklik 0.5 cm.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Hassas Kesme",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Metalografi Testleri",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Bakalite Alma (Kalıplama)",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Metalografi Testleri",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Zımparalama (180-2500 lük zımpara kağıdı)",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Metalografi Testleri",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Parlatma (15-3 Mikronluk solüsyon)",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Metalografi Testleri",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Raporlandırma (Metalografi)",
+      "price": 7500,
+      "unit": "TL",
+      "category": "Metalografi Testleri",
+      "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Döner Buharlaştırıcı (Rotary Evaporatör)",
+      "price": 500,
+      "unit": "TL / Numune",
+      "category": "Numune Hazırlama",
+      "notes": "Analiz İstek formunda numuneler hakkında açıklayıcı bilgiler yer almalıdır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "pH / İletkenlik Ölçer",
+      "price": 150,
+      "unit": "TL / Numune",
+      "category": "Numune Hazırlama",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Soğutmalı Santrifüj",
+      "price": 300,
+      "unit": "TL / 1 Set",
+      "category": "Numune Hazırlama",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Saf Su",
+      "price": 15,
+      "unit": "TL / Litre",
+      "category": "Saf Su",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Ultra Saf Su",
+      "price": 25,
+      "unit": "TL / Litre",
+      "category": "Saf Su",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    }
+  ]
 }
