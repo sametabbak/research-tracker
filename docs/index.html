@@ -214,6 +214,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
   <div class="tab"     id="t-catalog"  onclick="showTab('catalog')">Tüm Analizler</div>
   <div class="tab"     id="t-override" onclick="showTab('override')">Manuel Eklemeler</div>
   <div class="tab"     id="t-classify" onclick="showTab('classify')">🏷️ Sınıflandırma</div>
+  <div class="tab"     id="t-centers"  onclick="showTab('centers')">🏢 Merkezler</div>
   <div class="tab"     id="t-test"     onclick="showTab('test')">🧪 Test</div>
 </div>
 
@@ -295,7 +296,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
     <div class="fld"><label>Karşılaştırma Grubu</label><input id="addKwg" list="kwDl" placeholder="Otomatik belirlenecek..."></div>
     <div class="fld-row">
       <div class="fld"><label>Fiyat *</label><input type="number" id="addPrice" placeholder="1500" min="0" step="0.01"></div>
-      <div class="fld"><label>Para Birimi</label><select id="addCur"><option value="TRY">TRY ₺</option><option value="USD">USD $</option><option value="EUR">EUR €</option></select></div>
+      
       <div class="fld"><label>Birim</label><input id="addUnit" list="unitDl" value="numune"></div>
     </div>
     <div class="fld"><label>Not</label>
@@ -354,7 +355,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
     <div class="fld"><label>Hedef Merkez</label><select id="dupCtr"></select></div>
     <div class="fld-row">
       <div class="fld"><label>Fiyat (boş=aynı)</label><input type="number" id="dupPrice" placeholder="Opsiyonel" min="0" step="0.01"></div>
-      <div class="fld"><label>Para Birimi</label><select id="dupCur"><option value="TRY">TRY ₺</option><option value="USD">USD $</option><option value="EUR">EUR €</option></select></div>
+      
     </div>
     <div class="m-btns">
       <button class="btn btn-p" onclick="confirmDup()">Kopyala</button>
@@ -371,7 +372,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
     <div class="fld"><label>Kategori (boş=değiştirme)</label><input id="batchCat" list="catDl" placeholder="— Değiştirme —"></div>
     <div class="fld"><label>Karşılaştırma Grubu (boş=değiştirme)</label><input id="batchKwg" list="kwDl" placeholder="— Değiştirme —"></div>
     <div class="fld"><label>Fiyat çarpanı (örn: 1.2 = %20 zam)</label><input type="number" id="batchMult" placeholder="1.0" step="0.01" min="0"></div>
-    <div class="fld"><label>Para Birimi (boş=değiştirme)</label><select id="batchCur"><option value="">— Değiştirme —</option><option value="TRY">TRY ₺</option><option value="USD">USD $</option><option value="EUR">EUR €</option></select></div>
+    
     <div class="m-btns">
       <button class="btn btn-p" onclick="applyBatch()">Uygula</button>
       <button class="btn btn-ghost" onclick="hideModal('batchOv')">İptal</button>
@@ -598,7 +599,7 @@ async function loadAll(){
   kwGrps=misc[0]||{};
   cats=Object.keys(kwGrps);
   ctxSha=misc[2]?misc[2].sha:(misc[3]?misc[3].sha:null);
-  var sd=misc[2];
+  var sd=misc[1];
   document.getElementById('hdrMeta').textContent=sd?'staging son güncelleme: '+new Date(sd).toLocaleString('tr-TR'):'tarih alınamadı';
   document.getElementById('hdrMeta').style.color='';
   if(!centers.length){document.getElementById('changesContent').innerHTML='<div class="warn-box">centers.json okunamadı.</div>';return;}
@@ -1673,7 +1674,7 @@ function openBatch(cid){
   document.getElementById('batchCount').textContent=cnt+' analiz seçili';
   ['batchCat','batchKwg'].forEach(function(id){document.getElementById(id).value='';});
   document.getElementById('batchMult').value='';
-  document.getElementById('batchCur').value='';
+  /* batchCur removed */
   document.getElementById('batchOv').dataset.cid=cid;
   showModal('batchOv');
 }
@@ -1684,7 +1685,7 @@ function applyBatch(){
   var ncat=document.getElementById('batchCat').value.trim();
   var nkwg=document.getElementById('batchKwg').value.trim();
   var mult=parseFloat(document.getElementById('batchMult').value);
-  var ncur=document.getElementById('batchCur').value;
+  var ncur='';
   var sf=sMap[cid];
   pids.forEach(function(pid){
     var entry=sf&&sf.content&&sf.content.analyses?sf.content.analyses.find(function(a){return a._pid===pid;}):null;
@@ -1836,20 +1837,42 @@ function findDupes(){
   });
   return result;
 }
-function showDupes(){
+function showDupes(selCid){
   var dupes=findDupes();
-  var total=Object.values(dupes).reduce(function(s,arr){return s+arr.length;},0);
+  var dupIds=Object.keys(dupes);
   var el=document.getElementById('dupContent');
-  if(!total){
-    el.innerHTML='<div class="ok-box">✅ Tekrar eden analiz yok.</div>';
-    showModal('dupOv');return;
-  }
-  var html='';
+  /* Render center selector */
+  var selHtml='<div style="margin-bottom:12px;">';
+  selHtml+='<label style="font-size:12px;font-weight:600;margin-right:8px;">Hedef Merkez:</label>';
+  selHtml+='<select id="dupCtrSel" onchange="showDupes(this.value)" style="font-size:13px;padding:4px 8px;border:1px solid var(--border);border-radius:6px;">';
+  selHtml+='<option value="">— Tüm Merkezler ('+dupIds.length+') —</option>';
   centers.forEach(function(c){
     if(!dupes[c.id])return;
-    html+='<div style="margin-bottom:14px;"><strong>'+esc(c.name)+'</strong><table style="width:100%;font-size:12px;margin-top:4px;"><thead><tr><th>Analiz Adı</th><th>Adet</th><th></th></tr></thead><tbody>';
-    dupes[c.id].forEach(function(d){
-      html+='<tr>'        +'<td>'+esc(d.name)+'</td>'        +'<td><span class="badge b-del">'+d.pids.length+'x</span></td>'        +'<td><button class="btn btn-del btn-sm" onclick="deleteDupe(\''+jsS(c.id)+'\',\''+jsS(d.name)+'\',this)">Tekilleştir</button></td>'        +'</tr>';
+    selHtml+='<option value="'+esc(c.id)+'"'+(selCid===c.id?' selected':'')+'>'+esc(c.name)+' ('+dupes[c.id].length+')</option>';
+  });
+  selHtml+='</select></div>';
+  /* Render duplicate list for selected center(s) */
+  var listCids=selCid?[selCid]:dupIds;
+  if(!listCids.length||!dupIds.length){
+    el.innerHTML=selHtml+'<div class="ok-box">✅ Seçili merkezde tekrar eden analiz yok.</div>';
+    showModal('dupOv');return;
+  }
+  var html=selHtml;
+  listCids.forEach(function(cid){
+    if(!dupes[cid])return;
+    var c=centers.find(function(x){return x.id===cid;});if(!c)return;
+    html+='<div style="margin-bottom:14px;">';
+    if(!selCid)html+='<strong>'+esc(c.name)+'</strong>';
+    html+='<table style="width:100%;font-size:12px;margin-top:4px;"><thead><tr>'
+      +'<th style="text-align:left;padding:4px 8px;">Analiz Adı</th>'
+      +'<th style="text-align:center;padding:4px 8px;">Kopya</th>'
+      +'<th style="padding:4px 8px;"></th></tr></thead><tbody>';
+    dupes[cid].forEach(function(d){
+      html+='<tr style="border-bottom:1px solid var(--border);">'
+        +'<td style="padding:5px 8px;">'+esc(d.name)+'</td>'
+        +'<td style="text-align:center;padding:5px 8px;"><span class="badge b-del">'+d.pids.length+'×</span></td>'
+        +'<td style="padding:5px 8px;"><button class="btn btn-del btn-sm" onclick="deleteDupe(\''+jsS(cid)+'\',\''+jsS(d.name)+'\',this)">Tekilleştir</button></td>'
+        +'</tr>';
     });
     html+='</tbody></table></div>';
   });
@@ -2175,6 +2198,11 @@ async function approveCtr(cid){
     }
     if(pA[cid]&&pA[cid].length){
       var ex=ovMap[cid];
+      /* If ovMap is stale/missing, re-fetch the SHA to avoid write conflict */
+      if(!ex||!ex.sha){
+        ex=await apiRead(STAGING,'data/overrides/'+cid+'.json').catch(function(){return null;});
+        if(ex)ovMap[cid]=ex;
+      }
       var exOv=(ex&&ex.content&&ex.content.overrides)?ex.content.overrides:[];
       var nc2={center_id:cid,center_name:c?c.name:cid,overrides:exOv.concat(pA[cid])};
       var wo=await apiWrite('data/overrides/'+cid+'.json',nc2,ex?ex.sha:null,'feat: manuel analiz — '+(c?c.name:cid));
