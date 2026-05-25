@@ -324,7 +324,7 @@
       "_isOv": false
     },
     {
-      "name": "\"Sularda ve gıdalarda (Cs-137, Cs-134)\"",
+      "name": "Sularda ve gıdalarda (Cs-137, Cs-134)",
       "price": 6500,
       "unit": "numune",
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
@@ -334,7 +334,7 @@
       "_isOv": false
     },
     {
-      "name": "\"Yapı malzemeleri, sanayi ürünleri ve hammaddelerinde (Ra-226, Th-232, K-40, Ac-228, Cs-137)\"",
+      "name": "Yapı malzemeleri, sanayi ürünleri ve hammaddelerinde (Ra-226, Th-232, K-40, Ac-228, Cs-137)",
       "price": 6500,
       "unit": "numune",
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
@@ -364,7 +364,7 @@
       "_isOv": false
     },
     {
-      "name": "\"Gama ışını Lineer Azalım Katsayısı (LAC) tespiti (Am-241, Mn-54, Co-57, Co-60 ve Cs-137 kaynakları için)\"",
+      "name": "Gama ışını Lineer Azalım Katsayısı (LAC) tespiti (Am-241, Mn-54, Co-57, Co-60 ve Cs-137 kaynakları için)",
       "price": 12000,
       "unit": "numune",
       "category": "RADYOAKTİVİTE ÖLÇÜM, ANALİZ ve DOZİMETRİ LABORATUVARI",
@@ -444,7 +444,7 @@
       "_isOv": false
     },
     {
-      "name": "\"Mikrogözenek Analizi ve Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)\"",
+      "name": "Mikrogözenek Analizi ve Detaylı Full İzoterm Analizi (BET Yüzey Alanı analizini kapsar)",
       "price": 2500,
       "unit": "numune",
       "category": "Yüzey Alanı ve Gözeneklilik Ölçüm Laboratuvarı",
