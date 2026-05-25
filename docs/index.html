@@ -194,6 +194,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
     <div class="tok bad" id="tokBadge" onclick="openTokModal(null)">🔑 Token gir</div>
     <button class="btn btn-sec" onclick="safeReload()">↻ Yenile</button>
     <button class="btn btn-sec" onclick="showModal('bkpOv')">💾 Yedek</button>
+    <button class="btn btn-sec" onclick="showDupes()">🔍 Tekrarlar</button>
     <button class="btn btn-ok" id="apvBtn" onclick="approve()" disabled>✓ Onayla ve Yayınla</button>
   </div>
 </div>
@@ -566,16 +567,30 @@ async function loadAll(){
     });
   },20000);
   try{
+  /* Fetch centers from three sources.
+     Priority: staging API (no CDN cache) > main API > main CDN */
   var misc=await Promise.all([
-    rawRead(MAIN,'data/centers.json').catch(function(){return null;}),
     rawRead(MAIN,'data/keywords.json').catch(function(){return null;}),
     stagingDate().catch(function(){return null;}),
-    apiRead(MAIN,'data/centers.json').catch(function(){return null;})
+    apiRead(STAGING,'data/centers.json').catch(function(){return null;}),
+    apiRead(MAIN,'data/centers.json').catch(function(){return null;}),
+    rawRead(MAIN,'data/centers.json').catch(function(){return null;})
   ]);
-  centers=(misc[0]||[]).filter(function(c){return c.active!==false;});
-  kwGrps=misc[1]||{};
+  /* misc[2]=staging API (freshest), misc[3]=main API, misc[4]=main CDN (stale-prone) */
+  var _stagArr=misc[2]&&misc[2].content?misc[2].content:null;
+  var _mainArr=(misc[3]&&misc[3].content)||misc[4]||null;
+  var _base=_stagArr||_mainArr||[];
+  var _cSeen={};
+  centers=_base.filter(function(c){return c.active!==false;});
+  centers.forEach(function(c){_cSeen[c.id]=1;});
+  if(_mainArr&&_stagArr){
+    _mainArr.filter(function(c){return c.active!==false&&!_cSeen[c.id];}).forEach(function(c){
+      _cSeen[c.id]=1;centers.push(c);
+    });
+  }
+  kwGrps=misc[0]||{};
   cats=Object.keys(kwGrps);
-  ctxSha=misc[3]?misc[3].sha:null;
+  ctxSha=misc[2]?misc[2].sha:(misc[3]?misc[3].sha:null);
   var sd=misc[2];
   document.getElementById('hdrMeta').textContent=sd?'staging son güncelleme: '+new Date(sd).toLocaleString('tr-TR'):'tarih alınamadı';
   document.getElementById('hdrMeta').style.color='';
@@ -1315,6 +1330,9 @@ function qaAdd(cid){
   var kwg=document.getElementById('qa-k-'+s).value.trim();
   if(!name){alert('Analiz adı gereklidir.');return;}
   if(isNaN(price)||price<0){alert('Geçerli bir fiyat girin.');return;}
+  /* Duplicate check */
+  var _dupA=getA(cid).find(function(a){return(a.name||'').trim().toLowerCase()===name.trim().toLowerCase();});
+  if(_dupA&&!confirm('⚠️ Bu merkezde "'+name+'" adlı analiz zaten mevcut ('+Number(_dupA.price||0).toLocaleString('tr-TR')+' ₺).\n\nYine de eklensin mi?'))return;
   var entry={name:name,category:cat,price:price,currency:'TRY',unit:unit,notes:notes,keyword_group:kwg||null,manual:true};
   if(!pA[cid])pA[cid]=[];pA[cid].push(entry);
   if(kwg)addKwG(name,kwg,cid);
@@ -1624,6 +1642,15 @@ function submitAdd(){
   var err=document.getElementById('addErr');
   if(!name){err.textContent='Analiz adı gereklidir.';err.style.display='block';return;}
   if(isNaN(price)||price<0){err.textContent='Geçerli bir fiyat girin.';err.style.display='block';return;}
+  /* Duplicate check */
+  var _dupB=getA(cid).find(function(a){return(a.name||'').trim().toLowerCase()===name.trim().toLowerCase();});
+  if(_dupB){
+    err.textContent='⚠️ Bu merkezde "'+name+'" zaten mevcut ('+Number(_dupB.price||0).toLocaleString('tr-TR')+' ₺). Eklemek için tekrar tıklayın.';
+    err.style.display='block';
+    err.dataset.confirmed='1';
+    if(err.dataset.confirmed!=='done'){err.onclick=function(){err.dataset.confirmed='done';submitAdd();};return;}
+    err.onclick=null;
+  }
   var entry={name:name,category:cat,price:price,currency:cur,unit:unit,notes:notes,keyword_group:kwg||null,manual:true};
   if(!pA[cid])pA[cid]=[];pA[cid].push(entry);
   if(kwg)addKwG(name,kwg,cid);
@@ -1701,10 +1728,67 @@ async function submitCtr(){
     centers.push(nc);
     var sf=await apiRead(STAGING,'data/analyses/'+id+'.json');if(sf)sMap[id]=sf;
     mMap[id]={analyses:[]};
+    /* Immediately merge to main so the center survives a panel refresh */
+    try{await triggerMerge();}catch(me){console.warn('Merge skipped:',me.message);}
     hideModal('ctrOv');buildDLs();renderCatalog();updSum();
     setTimeout(function(){var el=document.querySelector('[data-cid="'+id+'"]');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},150);
   }catch(e){err.textContent='Hata: '+e.message;err.style.display='block';}
   btn.disabled=false;btn.textContent='Kaydet';
+}
+
+
+/* ═══ DUPLICATE DETECTION ════════════════════════════════════════════════════ */
+function findDupes(){
+  /* Returns {cid: [{name, count, pids}]} for within-center duplicates */
+  var result={};
+  centers.forEach(function(c){
+    var seen={};
+    getA(c.id).forEach(function(a){
+      var key=(a.name||'').trim().toLowerCase();
+      if(!key)return;
+      if(!seen[key])seen[key]={name:a.name,pids:[]};
+      seen[key].pids.push(a._pid||(c.id+'__'+a.name));
+    });
+    var dupes=Object.values(seen).filter(function(x){return x.pids.length>1;});
+    if(dupes.length)result[c.id]=dupes;
+  });
+  return result;
+}
+function showDupes(){
+  var dupes=findDupes();
+  var total=Object.values(dupes).reduce(function(s,arr){return s+arr.length;},0);
+  var el=document.getElementById('dupContent');
+  if(!total){
+    el.innerHTML='<div class="ok-box">✅ Tekrar eden analiz yok.</div>';
+    showModal('dupOv');return;
+  }
+  var html='';
+  centers.forEach(function(c){
+    if(!dupes[c.id])return;
+    html+='<div style="margin-bottom:14px;"><strong>'+esc(c.name)+'</strong><table style="width:100%;font-size:12px;margin-top:4px;"><thead><tr><th>Analiz Adı</th><th>Adet</th><th></th></tr></thead><tbody>';
+    dupes[c.id].forEach(function(d){
+      html+='<tr>'        +'<td>'+esc(d.name)+'</td>'        +'<td><span class="badge b-del">'+d.pids.length+'x</span></td>'        +'<td><button class="btn btn-del btn-sm" onclick="deleteDupe(\''+jsS(c.id)+'\',\''+jsS(d.name)+'\',this)">Tekilleştir</button></td>'        +'</tr>';
+    });
+    html+='</tbody></table></div>';
+  });
+  el.innerHTML=html;
+  showModal('dupOv');
+}
+function deleteDupe(cid,name,btn){
+  /* Keep the first occurrence, delete the rest */
+  var sf=sMap[cid];var ov=ovMap[cid];
+  var kept=false;
+  var target=name.trim().toLowerCase();
+  /* Mark duplicates for deletion via pD */
+  getA(cid).forEach(function(a){
+    if((a.name||'').trim().toLowerCase()!==target)return;
+    if(!kept){kept=true;return;}
+    var pid=a._pid;if(!pid)return;
+    if(!pD[cid])pD[cid]=new Set();
+    pD[cid].add(pid);
+  });
+  btn.textContent='✓ İşaretlendi';btn.disabled=true;
+  updApvBtn();updCtrApvBtn(cid);renderCatalog();
 }
 
 /* ═══ APPROVE ════════════════════════════════════════════════════════════════ */
@@ -2293,5 +2377,20 @@ loadAll();
   </div>
 </div>
 
+
+<!-- Duplicate Finder Modal -->
+<div class="modal-ov hidden" id="dupOv" onclick="if(event.target===this)hideModal('dupOv')">
+  <div class="modal" style="max-width:600px">
+    <h3 style="margin-bottom:12px">🔍 Tekrar Eden Analizler</h3>
+    <p style="font-size:12px;color:var(--muted);margin-bottom:12px">
+      Aynı merkezde aynı isimle birden fazla kaydedilmiş analizler gösterilir.
+      "Tekilleştir" ile fazla kopyaları silme listesine ekleyin, ardından onaylayın.
+    </p>
+    <div id="dupContent"></div>
+    <div style="margin-top:14px;text-align:right">
+      <button class="btn btn-sec" onclick="hideModal('dupOv')">Kapat</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
