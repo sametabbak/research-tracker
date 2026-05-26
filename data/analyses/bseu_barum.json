@@ -67,7 +67,8 @@
       "notes": "Ticari indirim kapsamı dışındadır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "GC-07 Yorumlu Teknik Rapor",
@@ -77,7 +78,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "GCMS-01 Kalitatif Analiz",
@@ -219,7 +221,8 @@
       "notes": "Ticari indirim kapsamı dışındadır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "GCMS-14 Yorumlu Teknik Rapor",
@@ -229,7 +232,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "HPLC-01 Kantitatif Analiz (Tek Bileşen)",
@@ -393,7 +397,8 @@
       "notes": "Ticari indirim kapsamı dışındadır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "HPLC-16 Yorumlu Teknik Rapor",
@@ -403,7 +408,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "LCMS-01 Kalitatif Analiz",
@@ -534,7 +540,8 @@
       "notes": "Ticari indirim kapsamı dışındadır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "LCMS-13 Yorumlu Teknik Rapor",
@@ -544,7 +551,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "FESEM-01 Au veya Pt Kaplama (1 set en fazla 9 numune)",
@@ -587,7 +595,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "BET-01 Tek Noktalı BET Analizi",
@@ -641,7 +650,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "HGP-01 Gerçek Hacim ve Yoğunluk Ölçümü",
@@ -662,7 +672,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "CP-01 Bağıl Yoğunluk Ölçümü",
@@ -683,7 +694,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "ZET-01 Zeta Potansiyeli Ölçümü",
@@ -737,7 +749,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "MSZ-01 Mikropartikül Boyutu Ölçümü (200 nm – 2000 µm)",
@@ -758,7 +771,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "CHNS-01 C, H ve N Analizi",
@@ -801,7 +815,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "AAS-01 Numune Hazırlama (Yaş Yakma)",
@@ -921,7 +936,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "FTIR-01 Potasyum Bromür (KBr) Pelet Yöntemi",
@@ -975,7 +991,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "XRF-01 Eritiş Cihazı ile Numune Hazırlama",
@@ -1040,7 +1057,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "XRD-01 Numune Hazırlama (Kesme, Öğütme vb.)",
@@ -1160,7 +1178,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "MHT-01 Vickers veya Knopp Yöntemi ile Sertlik Ölçümü (1g – 10 kg yük aralığı)",
@@ -1181,7 +1200,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "MKD-01 Bitki / Tarımsal Numuneler",
@@ -1323,7 +1343,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "CRCT-01 TQC CC2000 Çapraz Kesim Yapışma Testi",
@@ -1344,7 +1365,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "BGA-01 Baca Gazı Analizi (CO, NO, NO2, SO2)",
@@ -1365,7 +1387,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "SM-01 Kullanım",
@@ -1386,7 +1409,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "RF-01 Numune Hazırlama",
@@ -1429,7 +1453,8 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "PH-01 pH Ölçümü",
