@@ -1101,7 +1101,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
       "name": "Direnç Ölçümü",
@@ -1111,7 +1112,8 @@
       "notes": "1) Numune en az 1cm x 1cm yüzeye sahip olmalıdır. 2) Numune yüksekliği en fazla 1 cm olmalıdır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Elektriksel Ölçümler"
     },
     {
       "name": "CV Ölçümü",
@@ -1121,7 +1123,8 @@
       "notes": "Numune en az 20 mg ve çözücüsü ile gönderilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Elektriksel Ölçümler"
     },
     {
       "name": "Elektrokimyasal Davranışın Belirlenmesi",
@@ -1131,7 +1134,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Elektriksel Ölçümler"
     },
     {
       "name": "Çekme Testi (10 kN)",
@@ -1141,7 +1145,8 @@
       "notes": "1) Numuneler ASTM, ISO veya DIN standartlarına uygun olmalıdır. 2) 10 adet üzeri %10 indirim, 20 adet üzeri %20 indirim yapılır. 3) Raporlandırma imzalı, kaşeli ve antetli kağıda basılı hazırlanır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Basma Testi (10 kN)",
@@ -1151,7 +1156,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Üç Nokta Eğme Testi (10 kN)",
@@ -1161,7 +1167,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Dört Nokta Eğme Testi (10 kN)",
@@ -1171,7 +1178,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Raporlandırma (Mekanik 10 kN)",
@@ -1191,7 +1199,8 @@
       "notes": "1) Numuneler ASTM, ISO veya DIN standartlarına uygun olmalıdır. 2) 10 adet üzeri %10 indirim, 20 adet üzeri %20 indirim yapılır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Basma Testi (20 kN)",
@@ -1201,7 +1210,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Üç Nokta Eğme Testi (20 kN)",
@@ -1211,7 +1221,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Dört Nokta Eğme Testi (20 kN)",
@@ -1221,7 +1232,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Raporlandırma (Mekanik 20 kN)",
@@ -1241,7 +1253,8 @@
       "notes": "1) Numuneler ASTM, ISO veya DIN standartlarına uygun olmalıdır. 2) 10 adet üzeri %10 indirim, 20 adet üzeri %20 indirim yapılır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Basma Testi (300 kN)",
@@ -1251,7 +1264,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Üç Nokta Eğme Testi (300 kN)",
@@ -1261,7 +1275,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Dört Nokta Eğme Testi (300 kN)",
@@ -1271,7 +1286,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Raporlandırma (Mekanik 300 kN)",
@@ -1291,7 +1307,8 @@
       "notes": "1) Araştırılmak istenen malzeme hakkında detaylı bilgi verilmelidir. 2) Yapılacak analizlere uzman karar verir. 3) Analiz raporlandırma süresi 45–60 gündür. 4) Analiz sonuçlarına raporlandırma ücreti dahildir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Diğer Analiz Türleri"
     },
     {
       "name": "Kaba Kesme",
@@ -1301,7 +1318,8 @@
       "notes": "1) Kaba kesim numuneleri: en fazla 10 cm genişlik, 1 cm yükseklik, 5 cm boy. 2) Hassas kesim numuneleri: 1 cm genişlik, 0.5 cm yükseklik, 5 cm boy. 3) Doğrudan bakalite alınacak malzemeler: kesit alanı en çok 2 cm², yükseklik 0.5 cm.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Hassas Kesme",
@@ -1311,7 +1329,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Bakalite Alma (Kalıplama)",
@@ -1321,7 +1340,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Zımparalama (180-2500 lük zımpara kağıdı)",
@@ -1331,7 +1351,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Parlatma (15-3 Mikronluk solüsyon)",
@@ -1341,7 +1362,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Raporlandırma (Metalografi)",
@@ -1351,7 +1373,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Döner Buharlaştırıcı (Rotary Evaporatör)",
@@ -1361,7 +1384,8 @@
       "notes": "Analiz İstek formunda numuneler hakkında açıklayıcı bilgiler yer almalıdır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Diğer Analiz Türleri"
     },
     {
       "name": "pH / İletkenlik Ölçer",
@@ -1371,7 +1395,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Diğer Analiz Türleri"
     },
     {
       "name": "Soğutmalı Santrifüj",
@@ -1381,7 +1406,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Diğer Analiz Türleri"
     },
     {
       "name": "Saf Su",
@@ -1391,7 +1417,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Sıvı Azot, Saf Su"
     },
     {
       "name": "Ultra Saf Su",
@@ -1401,7 +1428,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Sıvı Azot, Saf Su"
     }
   ]
 }
