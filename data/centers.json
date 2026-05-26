@@ -12,16 +12,56 @@
     "last_updated": "2026-05-18"
   },
   {
-    "id": "esogu_arum",
-    "name": "ESOGÜ ARUM",
-    "university": "Eskişehir Osmangazi Üniversitesi",
-    "city": "Eskişehir",
-    "url": "https://arum.ogu.edu.tr",
-    "pricing_url": "https://arum.ogu.edu.tr/Sayfa/Index/148/analiz-ucretleri/",
+    "id": "atauni_daytam",
+    "name": "ATAÜNİ DAYTAM",
+    "university": "Atatürk Üniversitesi",
+    "city": "Erzurum",
+    "url": "https://daytam.atauni.edu.tr",
+    "pricing_url": "https://daytam.atauni.edu.tr/hizmet-bedelleri/",
     "active": true,
     "reference": false,
-    "analysis_count": 184,
+    "analysis_count": 133,
     "last_updated": "2026-05-18"
+  },
+  {
+    "id": "bseu_barum",
+    "name": "BŞEU BARUM",
+    "university": "Bilecik Şeyh Edebali Üniversitesi",
+    "city": "Bilecik",
+    "url": "https://bilecik.edu.tr/barum/",
+    "pricing_url": "https://www.bilecik.edu.tr/dosya/18153_1212_BARUM%20Fiyat%20Listesi%202026.pdf",
+    "fetch_method": "manual",
+    "check_months": [
+      1,
+      6,
+      12
+    ],
+    "active": true,
+    "reference": false
+  },
+  {
+    "id": "cu_cutam",
+    "name": "CÜ CUTAM",
+    "university": "Cumhuriyet Üniversitesi",
+    "city": "Sivas",
+    "url": "https://cutam.cumhuriyet.edu.tr",
+    "pricing_url": "https://cutam.cumhuriyet.edu.tr/16-analiz-fiyatlari",
+    "active": true,
+    "reference": false,
+    "analysis_count": 64,
+    "last_updated": "2026-05-18"
+  },
+  {
+    "id": "deu_emum",
+    "name": "DEÜ EMUM",
+    "university": "Dokuz Eylül Üniversitesi",
+    "city": "İzmir",
+    "url": "https://emum.deu.edu.tr",
+    "pricing_url": "https://emum.deu.edu.tr/wp-content/uploads/2026/01/EMUM-Fiyat-Listesi-2026.pdf",
+    "active": true,
+    "reference": false,
+    "analysis_count": 38,
+    "last_updated": "2026-05-25"
   },
   {
     "id": "dpu_iltem",
@@ -33,18 +73,6 @@
     "active": true,
     "reference": false,
     "analysis_count": 69,
-    "last_updated": "2026-05-18"
-  },
-  {
-    "id": "atauni_daytam",
-    "name": "ATAÜNİ DAYTAM",
-    "university": "Atatürk Üniversitesi",
-    "city": "Erzurum",
-    "url": "https://daytam.atauni.edu.tr",
-    "pricing_url": "https://daytam.atauni.edu.tr/hizmet-bedelleri/",
-    "active": true,
-    "reference": false,
-    "analysis_count": 133,
     "last_updated": "2026-05-18"
   },
   {
@@ -60,27 +88,27 @@
     "last_updated": "2026-05-18"
   },
   {
-    "id": "cu_cutam",
-    "name": "CÜ CUTAM",
-    "university": "Cumhuriyet Üniversitesi",
-    "city": "Sivas",
-    "url": "https://cutam.cumhuriyet.edu.tr",
-    "pricing_url": "https://cutam.cumhuriyet.edu.tr/16-analiz-fiyatlari",
+    "id": "esogu_arum",
+    "name": "ESOGÜ ARUM",
+    "university": "Eskişehir Osmangazi Üniversitesi",
+    "city": "Eskişehir",
+    "url": "https://arum.ogu.edu.tr",
+    "pricing_url": "https://arum.ogu.edu.tr/Sayfa/Index/148/analiz-ucretleri/",
     "active": true,
     "reference": false,
-    "analysis_count": 64,
+    "analysis_count": 184,
     "last_updated": "2026-05-18"
   },
   {
-    "id": "neu_bitam",
-    "name": "NEÜ BİTAM",
-    "university": "Necmettin Erbakan Üniversitesi",
-    "city": "Konya",
-    "url": "https://erbakan.edu.tr/tr/birim/bitam",
-    "pricing_url": "https://erbakan.edu.tr/tr/birim/bitam/sayfa/analiz-ucretleri",
+    "id": "gaun_ulutem",
+    "name": "GAÜN ULUTEM",
+    "university": "Gaziantep Üniversitesi",
+    "city": "Gaziantep",
+    "url": "https://ulutem.gaziantep.edu.tr/index.php",
+    "pricing_url": "https://ulutem.gaziantep.edu.tr/pages.php?url=ulutem-analiz-ucretleri-61",
     "active": true,
     "reference": false,
-    "analysis_count": 150,
+    "analysis_count": 95,
     "last_updated": "2026-05-18"
   },
   {
@@ -108,30 +136,6 @@
     "last_updated": "2026-05-18"
   },
   {
-    "id": "gaun_ulutem",
-    "name": "GAÜN ULUTEM",
-    "university": "Gaziantep Üniversitesi",
-    "city": "Gaziantep",
-    "url": "https://ulutem.gaziantep.edu.tr/index.php",
-    "pricing_url": "https://ulutem.gaziantep.edu.tr/pages.php?url=ulutem-analiz-ucretleri-61",
-    "active": true,
-    "reference": false,
-    "analysis_count": 95,
-    "last_updated": "2026-05-18"
-  },
-  {
-    "id": "deu_emum",
-    "name": "DEÜ EMUM",
-    "university": "Dokuz Eylül Üniversitesi",
-    "city": "İzmir",
-    "url": "https://emum.deu.edu.tr",
-    "pricing_url": "https://emum.deu.edu.tr/wp-content/uploads/2026/01/EMUM-Fiyat-Listesi-2026.pdf",
-    "active": true,
-    "reference": false,
-    "analysis_count": 38,
-    "last_updated": "2026-05-25"
-  },
-  {
     "id": "ikcu_merlab",
     "name": "İKÇÜ MERLAB",
     "university": "İzmir Katip Çelebi Üniversitesi",
@@ -145,19 +149,15 @@
     "last_updated": "2026-05-26"
   },
   {
-    "id": "bseu_barum",
-    "name": "BŞEU BARUM",
-    "university": "Bilecik Şeyh Edebali Üniversitesi",
-    "city": "Bilecik",
-    "url": "https://bilecik.edu.tr/barum/",
-    "pricing_url": "https://www.bilecik.edu.tr/dosya/18153_1212_BARUM%20Fiyat%20Listesi%202026.pdf",
-    "fetch_method": "manual",
-    "check_months": [
-      1,
-      6,
-      12
-    ],
+    "id": "neu_bitam",
+    "name": "NEÜ BİTAM",
+    "university": "Necmettin Erbakan Üniversitesi",
+    "city": "Konya",
+    "url": "https://erbakan.edu.tr/tr/birim/bitam",
+    "pricing_url": "https://erbakan.edu.tr/tr/birim/bitam/sayfa/analiz-ucretleri",
     "active": true,
-    "reference": false
+    "reference": false,
+    "analysis_count": 150,
+    "last_updated": "2026-05-18"
   }
 ]
