@@ -56,7 +56,8 @@
       "notes": "1) Numune 1cmx1cmx0.5cm boyutlarında olmalıdır. 2) Yüzey pürüzlülüğü 5µm'yi geçmemelidir. 3) AFM sıvı hücre analizlerinde numuneden kaynaklı cihaz hasarı olması durumunda gönderen sorumlu tutulur. 4) STM analizinde numune iletken olmalıdır. 5) 1 saatten az yapılan analizlerde 1 saatlik ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
       "name": "AFM Sıvı Hücre Analizi",
@@ -66,7 +67,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
       "name": "Raporlandırma (AFM)",
@@ -76,7 +78,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Spektrum Analizi",
@@ -86,7 +89,8 @@
       "notes": "1) Toz numune parçacık boyutu 20 mikrondan küçük olmalıdır. 2) Toz numune miktarı en az 1 g olmalıdır. 3) Patern tayini için numune içeriği biliniyorsa belirtilmelidir. 4) Theta ölçüm açısı aralığı belirtilmelidir. 5) Plaka/ince film numuneleri en az 1 cm çapında, kalınlık <3 mm olmalıdır. 6) 30 dakika sonrasında her yarım saat için 300 TL ilave edilir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Patern Tayini",
@@ -96,7 +100,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Yüzey Stres Ölçümü",
@@ -106,7 +111,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Standart Numune Hazırlama (XRD)",
@@ -116,7 +122,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Raporlandırma (XRD)",
@@ -126,7 +133,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Çok Noktalı BET (Mikro)",
@@ -136,7 +144,8 @@
       "notes": "1) Toz numune miktarı en az 1 gr olmalıdır. Katı numuneler 1 cm çaplı cam tüpten geçecek boyutlarda olmalıdır. 2) Sıvı numunelerde ölçüm yapılamamaktadır. 3) Analizden önce degaz koşulları belirtilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "Çok Noktalı BET (Mikro) + Gözenek Boyut Dağılım Analizi",
@@ -146,7 +155,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "Raporlandırma (BET)",
@@ -156,7 +166,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "TGA / DTA",
@@ -166,7 +177,8 @@
       "notes": "1) Numune miktarı en az 1 g olmalıdır. 2) STA cihazı en fazla 1400°C sıcaklığa çıkabilir. 3) Yüksek sıcaklıklarda alümina pan 3000 TL, platin pan 4500 TL, safir pan 3500 TL ekstra ödeme alınır. 4) 1 saatten az süren analizlerden 1 saat ücreti alınır. 5) Aşırı asidik/patlayıcı maddeden kaynaklanan zararı gönderen karşılar.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "Raporlandırma (TGA/DTA)",
@@ -176,7 +188,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "DSC",
@@ -186,7 +199,8 @@
       "notes": "1) Numune miktarı en az 1 g olmalıdır. 2) DSC cihazı -75°C ile 550°C arasında çalışır. 3) 1 saatten az süren analizlerden 1 saat ücreti alınır. 4) Aşırı asidik/patlayıcı maddeden kaynaklanan zararı gönderen karşılar.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "Raporlandırma (DSC)",
@@ -196,7 +210,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "CHNS Analizi",
@@ -206,7 +221,8 @@
       "notes": "1) Numune miktarı en az 20 mg ependorf tüpte olmalıdır. 2) CHNS analizi için en az 20 numune olduğunda analize başlanır. 3) Oksijen analizi için en az 40 numune olduğunda analize başlanır. 4) S analizi isteniyorsa beklenen % S içeriği formda belirtilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
     },
     {
       "name": "Oksijen Analizi",
@@ -216,7 +232,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
     },
     {
       "name": "Raporlandırma (Elemental)",
@@ -226,7 +243,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Zeta Potansiyel Ölçümü",
@@ -236,7 +254,8 @@
       "notes": "1) Dispersant olarak saf su kullanılmaktadır. 2) Numuneler en az 3 mL olmalıdır. 3) Reaktif indeksi ve absorbsiyon değerleri verilmelidir. 4) 5 adetten fazla numunelerde %20, 10 adetten fazla numunelerde %30 indirim uygulanır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Nano Parçacık Boyut Analizi",
@@ -246,7 +265,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Parçacık Boyut Numune Hazırlama",
@@ -256,7 +276,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Mikro Parçacık Boyut Dağılım Analizi (Hava İçinde)",
@@ -266,7 +287,8 @@
       "notes": "1) Sıvı içerisindeki dağılmış katılar, kolloidler ve emülsiyonlar analiz edilebilir. 2) Reaktif indeksi ve absorbsiyon değerleri verilmelidir. 3) Numune miktarı en az 10 g olmalıdır. 4) Dispersantlar çözücüleri ile birlikte verilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Mikro Parçacık Boyut Dağılım Analizi (Su İçinde)",
@@ -276,7 +298,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Mikro Parçacık Boyut Dağılım Analizi (Organik Çözücü İçinde)",
@@ -286,7 +309,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Raporlandırma (Mikro Parçacık)",
