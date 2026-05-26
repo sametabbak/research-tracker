@@ -350,5 +350,24 @@
     ],
     "active": true,
     "reference": false
+  },
+  {
+    "id": "ikcu_merlab",
+    "name": "İKÇÜ MERLAB",
+    "university": "İzmir Katip Çelebi Üniversitesi",
+    "city": "İzmir",
+    "url": "https://merkeziarastirmalab.ikcu.edu.tr/",
+    "pricing_url": "https://merkeziarastirmalab.ikcu.edu.tr/S/15286/ucretlendirme",
+    "fetch_method": "manual",
+    "active": true,
+    "reference": false,
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ]
   }
 ]
