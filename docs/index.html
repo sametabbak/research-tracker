@@ -433,7 +433,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 
 <script>
 /* ═══ CONFIG ════════════════════════════════════════════════════════════════ */
-var PANEL_VERSION='2026.03';
+var PANEL_VERSION='2026.04';
 var REPO='sametabbak/research-tracker',STAGING='staging',MAIN='main';
 var SYM={TRY:'₺',USD:'$',EUR:'€'};
 var NOTES=[
@@ -1758,28 +1758,53 @@ function acAutoId(){
   document.getElementById('acId').value=id;
 }
 async function submitCtr(){
+  console.log('[submitCtr] start');
   if(!tok){hideModal('ctrOv');openTokModal(submitCtr);return;}
   var name=document.getElementById('acName').value.trim();
   var id=document.getElementById('acId').value.trim().toLowerCase();
   var err=document.getElementById('acErr');
   if(!name){err.textContent='Merkez adı gereklidir.';err.style.display='block';return;}
-  if(!id||!/^[a-z0-9_]+$/.test(id)){err.textContent='Geçersiz ID.';err.style.display='block';return;}
+  if(!id||!/^[a-z0-9_]+$/.test(id)){err.textContent='Geçersiz ID. Sadece küçük harf, rakam, alt çizgi.';err.style.display='block';return;}
   if(centers.some(function(c){return c.id===id;})){err.textContent='Bu ID zaten kullanımda.';err.style.display='block';return;}
   var months=document.getElementById('acMonths').value.split(',').map(function(m){return parseInt(m.trim(),10);}).filter(function(m){return!isNaN(m)&&m>=1&&m<=12;});
   var btn=document.querySelector('#ctrOv .btn-p');btn.disabled=true;btn.textContent='⏳ Kaydediliyor...';
+  err.style.display='none';
+  function fail(msg){
+    console.error('[submitCtr]',msg);
+    err.innerHTML='<strong>Hata:</strong> '+msg+'<br><small>Konsol detaylar için F12.</small>';
+    err.style.display='block';
+    btn.disabled=false;btn.textContent='Kaydet';
+  }
   try{
-    var nc={id:id,name:name,university:document.getElementById('acUni').value.trim(),
-      city:document.getElementById('acCity').value.trim(),url:document.getElementById('acUrl').value.trim(),
+    var nc={id:id,name:name,
+      university:document.getElementById('acUni').value.trim(),
+      city:document.getElementById('acCity').value.trim(),
+      url:document.getElementById('acUrl').value.trim(),
       pricing_url:document.getElementById('acPurl').value.trim(),
       fetch_method:document.getElementById('acMethod').value,
-      check_months:months.length?months:[1,6,12],active:true,reference:false};
-    var updated=centers.concat([nc]);
-    var wr=await apiWrite('data/centers.json',updated,ctxSha,'feat: yeni merkez — '+name);
+      check_months:months.length?months:[1,6,12],
+      active:true,reference:false};
+    console.log('[submitCtr] new center:',nc);
+
+    /* Step 1: Always re-fetch latest centers.json SHA (defensive against stale state) */
+    console.log('[submitCtr] re-fetching centers.json SHA...');
+    var freshCtx=await apiRead(STAGING,'data/centers.json').catch(function(){return null;});
+    if(!freshCtx)freshCtx=await apiRead(MAIN,'data/centers.json').catch(function(){return null;});
+    if(!freshCtx){fail('data/centers.json okunamadı. Token veya bağlantı kontrolü yapın.');return;}
+    var existingCenters=Array.isArray(freshCtx.content)?freshCtx.content:[];
+    /* Double-check duplicate against fresh data */
+    if(existingCenters.some(function(c){return c.id===id;})){fail('Bu ID staging/main\'de zaten var.');return;}
+    var updated=existingCenters.concat([nc]);
+    console.log('[submitCtr] writing centers.json with SHA',freshCtx.sha);
+    var wr=await apiWrite('data/centers.json',updated,freshCtx.sha,'feat: yeni merkez — '+name);
     if(wr&&wr.content)ctxSha=wr.content.sha;
-    /* Register in config/centers.json so tracker never silently drops this center */
+    console.log('[submitCtr] centers.json OK, new SHA',ctxSha);
+
+    /* Step 2: config/centers.json (best-effort, doesn't fail the whole flow) */
     try{
-      var cfgF=await apiRead(STAGING,'config/centers.json').catch(function(){return null;})
-        ||await apiRead(MAIN,'config/centers.json').catch(function(){return null;});
+      console.log('[submitCtr] updating config/centers.json...');
+      var cfgF=await apiRead(STAGING,'config/centers.json').catch(function(){return null;});
+      if(!cfgF)cfgF=await apiRead(MAIN,'config/centers.json').catch(function(){return null;});
       if(cfgF&&cfgF.content){
         var cfgArr=Array.isArray(cfgF.content)?cfgF.content:[];
         if(!cfgArr.some(function(x){return x.id===id;})){
@@ -1790,21 +1815,66 @@ async function submitCtr(){
             check_months:[12,1,2,5,6,7]}]);
           var wc=await apiWrite('config/centers.json',cfgArr,cfgF.sha,'feat: register manual center — '+name);
           if(wc&&wc.content)cfgCtxSha=wc.content.sha;
+          console.log('[submitCtr] config/centers.json updated');
         }
+      } else {
+        console.warn('[submitCtr] config/centers.json not readable, skipping');
       }
-    }catch(cfgErr){console.warn('config/centers.json write skipped:',cfgErr.message);}
+    }catch(cfgErr){console.warn('[submitCtr] config write skipped:',cfgErr.message);}
+
+    /* Step 3: Create analyses file (may already exist if previous attempt partially succeeded) */
     var today=new Date().toISOString().slice(0,10);
-    await apiWrite('data/analyses/'+id+'.json',{center_id:id,center_name:name,last_updated:today,source_url:nc.pricing_url||nc.url,analyses:[]},null,'feat: analyses — '+name);
-    await apiWrite('data/overrides/'+id+'.json',{center_id:id,center_name:name,overrides:[]},null,'feat: overrides — '+name);
+    var analysesContent={center_id:id,center_name:name,last_updated:today,source_url:nc.pricing_url||nc.url,analyses:[]};
+    console.log('[submitCtr] creating analyses file...');
+    try{
+      await apiWrite('data/analyses/'+id+'.json',analysesContent,null,'feat: analyses — '+name);
+    }catch(aErr){
+      /* If file exists (422), fetch SHA and try update instead */
+      console.warn('[submitCtr] analyses create failed, retry with SHA:',aErr.message);
+      var existA=await apiRead(STAGING,'data/analyses/'+id+'.json').catch(function(){return null;});
+      if(existA&&existA.sha){
+        await apiWrite('data/analyses/'+id+'.json',analysesContent,existA.sha,'feat: analyses — '+name);
+      } else {
+        throw aErr;
+      }
+    }
+
+    /* Step 4: Create overrides file */
+    var overridesContent={center_id:id,center_name:name,overrides:[]};
+    console.log('[submitCtr] creating overrides file...');
+    try{
+      await apiWrite('data/overrides/'+id+'.json',overridesContent,null,'feat: overrides — '+name);
+    }catch(oErr){
+      console.warn('[submitCtr] overrides create failed, retry with SHA:',oErr.message);
+      var existO=await apiRead(STAGING,'data/overrides/'+id+'.json').catch(function(){return null;});
+      if(existO&&existO.sha){
+        await apiWrite('data/overrides/'+id+'.json',overridesContent,existO.sha,'feat: overrides — '+name);
+      } else {
+        throw oErr;
+      }
+    }
+
+    /* Step 5: Update in-memory state */
     centers.push(nc);
-    var sf=await apiRead(STAGING,'data/analyses/'+id+'.json');if(sf)sMap[id]=sf;
+    var sf=await apiRead(STAGING,'data/analyses/'+id+'.json').catch(function(){return null;});
+    if(sf){sMap[id]=sf;sf.content.analyses.forEach(function(a,i){a._pid=id+'_'+i;a._isOv=false;});}
+    var ovF=await apiRead(STAGING,'data/overrides/'+id+'.json').catch(function(){return null;});
+    if(ovF)ovMap[id]=ovF;
     mMap[id]={analyses:[]};
-    /* Immediately merge to main so the center survives a panel refresh */
-    try{await triggerMerge();}catch(me){console.warn('Merge skipped:',me.message);}
-    hideModal('ctrOv');buildDLs();renderCatalog();updSum();
+
+    /* Step 6: Trigger merge (non-blocking on failure) */
+    try{await triggerMerge();console.log('[submitCtr] merge triggered');}
+    catch(me){console.warn('[submitCtr] merge skipped:',me.message);}
+
+    /* Step 7: Update UI */
+    hideModal('ctrOv');
+    buildDLs();renderCatalog();renderCenters();updSum();
+    console.log('[submitCtr] success — center added:',id);
     setTimeout(function(){var el=document.querySelector('[data-cid="'+id+'"]');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},150);
-  }catch(e){err.textContent='Hata: '+e.message;err.style.display='block';}
-  btn.disabled=false;btn.textContent='Kaydet';
+    btn.disabled=false;btn.textContent='Kaydet';
+  }catch(e){
+    fail(e.message||String(e));
+  }
 }
 
 
@@ -2164,20 +2234,15 @@ async function confirmHardDelete(){
   finally{btn.disabled=false;btn.textContent='🗑 Kalıcı Sil';}
 }
 async function preflightCheck(){
+  /* Just log missing files; do NOT auto-write — that was causing race conditions */
   if(!tok)return;
+  var missing=[];
   for(var i=0;i<centers.length;i++){
     var c=centers[i];if(c.active===false)continue;
-    if(!sMap[c.id])try{
-      var init={center_id:c.id,center_name:c.name,analyses:[],last_updated:null};
-      var r=await apiWrite('data/analyses/'+c.id+'.json',init,null,'chore: init analyses');
-      sMap[c.id]={content:init,sha:r&&r.content?r.content.sha:null};
-    }catch(e){console.warn('Preflight analyses:',c.id,e.message);}
-    if(!ovMap[c.id])try{
-      var initOv={center_id:c.id,center_name:c.name,overrides:[]};
-      var r2=await apiWrite('data/overrides/'+c.id+'.json',initOv,null,'chore: init overrides');
-      ovMap[c.id]={content:initOv,sha:r2&&r2.content?r2.content.sha:null};
-    }catch(e){console.warn('Preflight overrides:',c.id,e.message);}
+    if(!sMap[c.id])missing.push('analyses/'+c.id);
+    if(!ovMap[c.id])missing.push('overrides/'+c.id);
   }
+  if(missing.length)console.warn('[preflight] missing files:',missing);
 }
 var _preApprovalShas={},_revertTimer=null;
 function storePreApprovalShas(){
