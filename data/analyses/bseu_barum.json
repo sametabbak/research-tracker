@@ -768,7 +768,8 @@
       "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
     },
     {
       "name": "CHNS-02 C, H, N ve S Analizi",
@@ -778,7 +779,8 @@
       "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
     },
     {
       "name": "CHNS-03 S Analizi",
@@ -788,7 +790,8 @@
       "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
     },
     {
       "name": "CHNS-04 Yorumlu Teknik Rapor",
@@ -808,7 +811,8 @@
       "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır. Lambalar ayrı ayrı ücretlendirilecektir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "AAS-02 Numune Hazırlama (Mikrodalga)",
@@ -818,7 +822,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "AAS-03 Alevli Analiz (Asetilen+Hava) – 1-5 Element, Element Başı",
@@ -828,7 +833,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "AAS-04 Alevli Analiz (Asetilen+Hava) – 6 ve Üstü Element, Element Başı",
@@ -838,7 +844,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "AAS-05 Alevli Analiz (N2O+Hava) – 1-5 Element, Element Başı",
@@ -848,7 +855,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "AAS-06 Alevli Analiz (N2O+Hava) – 6 ve Üstü Element, Element Başı",
@@ -858,7 +866,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "AAS-07 Grafit Fırın ile Analiz – 1-5 Element, Element Başı",
@@ -868,7 +877,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "AAS-08 Grafit Fırın ile Analiz – 6 ve Üstü Element, Element Başı",
@@ -878,7 +888,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "AAS-09 Hidrür Yöntemi ile Analiz – 1-5 Element, Element Başı",
@@ -888,7 +899,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "AAS-10 Hidrür Yöntemi ile Analiz – 6 ve Üstü Element, Element Başı",
@@ -898,7 +910,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "AAS-11 Yorumlu Teknik Rapor",
@@ -918,7 +931,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "FTIR-02 Azaltılmış Toplam Yansıma (ATR) Yöntemi",
@@ -928,7 +942,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "FTIR-03 Azot Gazı Altında ATR Yöntemi",
@@ -938,7 +953,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "FTIR-04 Kütüphane Taraması",
@@ -948,7 +964,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "FTIR-05 Yorumlu Teknik Rapor",
@@ -968,7 +985,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "XRF-02 Kırma, Öğütme ve Presleme",
@@ -978,7 +996,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "XRF-03 Kızdırma Kaybı Bulma",
@@ -988,7 +1007,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "XRF-04 Katı Numune Analizi",
@@ -998,7 +1018,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "XRF-05 Sıvı Numune Analizi",
@@ -1008,7 +1029,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "XRF-06 Yorumlu Teknik Rapor",
@@ -1028,7 +1050,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "XRD-02 XRD Patern Çekim (11-20°/dk tarama hızı)",
@@ -1038,7 +1061,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "XRD-03 XRD Patern Çekim (6-10°/dk tarama hızı)",
@@ -1048,7 +1072,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "XRD-04 XRD Patern Çekim (3-5°/dk tarama hızı)",
@@ -1058,7 +1083,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "XRD-05 XRD Patern Çekim (1-2°/dk tarama hızı)",
@@ -1068,7 +1094,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "XRD-06 Kalitatif Faz Analizi / Patern Tayini (11-20°/dk)",
@@ -1078,7 +1105,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "XRD-07 Kalitatif Faz Analizi / Patern Tayini (6-10°/dk)",
@@ -1088,7 +1116,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "XRD-08 Kalitatif Faz Analizi / Patern Tayini (3-5°/dk)",
@@ -1098,7 +1127,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "XRD-09 Kalitatif Faz Analizi / Patern Tayini (1-2°/dk)",
@@ -1108,7 +1138,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "XRD-10 Daha Sonradan İstenen Kütüphane Taramaları",
@@ -1118,7 +1149,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "XRD-11 Yorumlu Teknik Rapor",
@@ -1138,7 +1170,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrosertlik ve Makrosertlik Testleri"
     },
     {
       "name": "MHT-02 Yorumlu Teknik Rapor",
@@ -1158,7 +1191,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
       "name": "MKD-02 Katalizör-Pigment Numuneleri",
@@ -1168,7 +1202,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
       "name": "MKD-03 Seramik-Refrakter Numuneleri",
@@ -1178,7 +1213,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
       "name": "MKD-04 Kimyasal Numuneler",
@@ -1188,7 +1224,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
       "name": "MKD-05 Biyolojik / Klinik Numuneler",
@@ -1198,7 +1235,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
       "name": "MKD-06 Çevresel Kirletici Numuneleri",
@@ -1208,7 +1246,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
       "name": "MKD-07 Gıda Numuneleri",
@@ -1218,7 +1257,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
       "name": "MKD-08 Yem Numuneleri",
@@ -1228,7 +1268,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
       "name": "MKD-09 Jeolojik Numuneler",
@@ -1238,7 +1279,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
       "name": "MKD-10 Metal ve Alaşım Numuneleri",
@@ -1248,7 +1290,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
       "name": "MKD-11 Petrokimya Numuneleri",
@@ -1258,7 +1301,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
       "name": "MKD-12 Plastik ve Polimer Numuneleri",
@@ -1268,7 +1312,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
       "name": "MKD-13 Yorumlu Teknik Rapor",
@@ -1288,7 +1333,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Diğer Analiz Türleri"
     },
     {
       "name": "CRCT-02 Yorumlu Teknik Rapor",
@@ -1308,7 +1354,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Diğer Analiz Türleri"
     },
     {
       "name": "BGA-02 Yorumlu Teknik Rapor",
@@ -1328,7 +1375,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
       "name": "SM-02 Yorumlu Teknik Rapor",
@@ -1348,7 +1396,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "RF-02 Refraktif İndeks Ölçümü",
@@ -1358,7 +1407,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "RF-03 Briks Ölçümü",
@@ -1368,7 +1418,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "RF-04 Yorumlu Teknik Rapor",
@@ -1388,7 +1439,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Diğer Analiz Türleri"
     },
     {
       "name": "SR-01 Sıvı Numune Sertlik Ölçümü",
@@ -1398,7 +1450,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Diğer Analiz Türleri"
     },
     {
       "name": "KF-01 Kullanım",
@@ -1408,7 +1461,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "ET-01 Kullanım",
@@ -1418,7 +1472,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Cihaz Kullanımı"
     },
     {
       "name": "SS-01 Saf Su",
@@ -1428,7 +1483,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Sıvı Azot, Saf Su"
     },
     {
       "name": "SS-02 Ultra Saf Su",
@@ -1438,7 +1494,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Sıvı Azot, Saf Su"
     }
   ]
 }
