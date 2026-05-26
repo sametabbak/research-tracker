@@ -12,7 +12,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)",
+      "_isOv": false
     },
     {
       "name": "GC-02 Kantitatif Analiz (İlave Her Bileşen)",
@@ -21,7 +22,9 @@
       "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "GC-03 Numune Hazırlama (Filtreleme, Seyreltme, Santrifüj vb. Temel İşlemler)",
@@ -30,7 +33,9 @@
       "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "GC-04 Yağ Asidi Analiz Paketi (FAME 37 Mix)",
@@ -39,7 +44,9 @@
       "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
       "notes": "Paket içeriği: Supelco 37 Component FAME Mix-CRM47885",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "GC-05 Kısa Zincirli Yağ Asidi (SCFA) Analiz Paketi",
@@ -48,7 +55,9 @@
       "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
       "notes": "Paket içeriği: Supelco-Volatile Free Acid Mix-CRM46975",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "GC-06 Metot Geliştirme",
@@ -57,7 +66,8 @@
       "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
       "notes": "Ticari indirim kapsamı dışındadır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GC-07 Yorumlu Teknik Rapor",
@@ -66,7 +76,8 @@
       "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-01 Kalitatif Analiz",
@@ -75,7 +86,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-02 Kantitatif Analiz (Tek Bileşen)",
@@ -84,7 +96,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-03 Kantitatif Analiz (İlave Her Bileşen)",
@@ -93,7 +106,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-04 Fitalat Analiz Paketi",
@@ -102,7 +116,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "Paket içeriği: ASM-146",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-05 Pestisit Analiz Paketi",
@@ -111,7 +126,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "Paket içeriği: TCLP-PES-1",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-06 Mikroplastik Maksi Analiz Paketi (Tüm paket içeriği)",
@@ -120,7 +136,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "Paket içeriği: Polycarbonat, Polyethylene, PET, Polypropilen, PVC, Polystyrene, Synthetic rubber, Natural rubber",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-07 Mikroplastik Midi Analiz Paketi (Paketten 6 adet mikroplastik)",
@@ -129,7 +146,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "Mikroplastik paket içeriğinden seçilecek 6 adet mikroplastiğin analizi",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-08 Mikroplastik Mini Analiz Paketi (Paketten 3 adet mikroplastik)",
@@ -138,7 +156,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "Mikroplastik paket içeriğinden seçilecek 3 adet mikroplastiğin analizi",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-09 Nitrozamin Analiz Paketi",
@@ -147,7 +166,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "Paket içeriği: N-Nitrosodimethylamine, N-Nitrosodibutylamine, N-Nitrosodi-n-propylamine, N-Nitrosomethylethylamine, N-Nitrosodiethylamine, 1-Nitrosopyrrolidine, 1-Nitrosopiperidine",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-10 Piroliz İşlemli Analiz",
@@ -156,7 +176,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-11 Numune Hazırlama (Filtreleme, Seyreltme, Santrifüj vb. Temel İşlemler)",
@@ -165,7 +186,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-12 Kütle Spektrumu Kütüphane Taraması",
@@ -174,7 +196,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-13 Metot Geliştirme",
@@ -183,7 +206,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "Ticari indirim kapsamı dışındadır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "GCMS-14 Yorumlu Teknik Rapor",
@@ -192,7 +216,8 @@
       "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-01 Kantitatif Analiz (Tek Bileşen)",
@@ -201,7 +226,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-02 Kantitatif Analiz (İlave Her Bileşen)",
@@ -210,7 +236,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-03 Numune Hazırlama (Filtreleme, Seyreltme, Santrifüj vb. Temel İşlemler)",
@@ -219,7 +246,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-04 Peptid Analiz Paketi",
@@ -228,7 +256,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "Paket içeriği: Supelco H2016",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-05 Fenol Bileşikleri Analiz Paketi",
@@ -237,7 +266,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "Paket içeriği: Supelco 861253",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-06 Polisiklik Aromatik Hidrokarbon (PAH) Analiz Paketi",
@@ -246,7 +276,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "Paket içeriği: Supelco 861291",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-07 Maleik Asit Analizi",
@@ -255,7 +286,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-08 Oleropin (Oleuropein) Analizi",
@@ -264,7 +296,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-09 Toluen Analizi",
@@ -273,7 +306,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-10 Quercetin (Kuarsetin) Analizi",
@@ -282,7 +316,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-11 Gallik Asit Analizi",
@@ -291,7 +326,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-12 İzoflavonoid Analiz Paketi",
@@ -300,7 +336,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "Paket içeriği: Diadzin, Genistin, Genistein",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-13 Furanokumarin Analiz Paketi",
@@ -309,7 +346,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "Paket içeriği: Psoralen, Angelicin",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-14 SN38 (7-ethyl-10-hydroxycamptothecin) Topoizomeraz I İnhibitörü",
@@ -318,7 +356,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-15 Metot Geliştirme",
@@ -327,7 +366,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "Ticari indirim kapsamı dışındadır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HPLC-16 Yorumlu Teknik Rapor",
@@ -336,7 +376,8 @@
       "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LCMS-01 Kalitatif Analiz",
@@ -345,7 +386,8 @@
       "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LCMS-02 Kantitatif Analiz (Tek Bileşen)",
@@ -354,7 +396,8 @@
       "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LCMS-03 Kantitatif Analiz (İlave Her Bileşen)",
@@ -363,7 +406,8 @@
       "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LCMS-04 Numune Hazırlama (Filtreleme, Seyreltme, Santrifüj vb. Temel İşlemler)",
@@ -372,7 +416,8 @@
       "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LCMS-05 Bisfenol A (BPA) Analizi",
@@ -381,7 +426,8 @@
       "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LCMS-06 İndol Propionik Asit (İPA) Analizi",
@@ -390,7 +436,8 @@
       "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LCMS-07 İndol Asetik Asit (İAA) Analizi",
@@ -399,7 +446,8 @@
       "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LCMS-08 Perfloroalkil ve Polifloroalkil (PFAS) Analizi",
@@ -408,7 +456,8 @@
       "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "Paket içeriği: Perfluorobutanoic acid, Pentadecafluorooctanoic acid",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LCMS-09 Aminoasit Analiz Paketi",
@@ -417,7 +466,8 @@
       "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "Paket içeriği: Supelco AAS18",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LCMS-10 Jasmonik Asit Analizi",
@@ -426,7 +476,8 @@
       "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LCMS-11 Kütüphane Taraması",
@@ -435,7 +486,8 @@
       "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LCMS-12 Metot Geliştirme",
@@ -444,7 +496,8 @@
       "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "Ticari indirim kapsamı dışındadır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "LCMS-13 Yorumlu Teknik Rapor",
@@ -453,7 +506,8 @@
       "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "FESEM-01 Au veya Pt Kaplama (1 set en fazla 9 numune)",
@@ -462,7 +516,8 @@
       "category": "Alan Emisyonlu Taramalı Elektron Mikroskobu (FESEM-EDX)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "FESEM-02 Görüntüleme",
@@ -471,7 +526,8 @@
       "category": "Alan Emisyonlu Taramalı Elektron Mikroskobu (FESEM-EDX)",
       "notes": "Numune hazırlama analizi talep edene aittir. 30 dakikada bir hizmet bedelinin yarısı olarak ücretlendirilir.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "FESEM-03 EDX Haritalandırma / Yarı Kantitatif Element Analizi",
@@ -480,7 +536,8 @@
       "category": "Alan Emisyonlu Taramalı Elektron Mikroskobu (FESEM-EDX)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "FESEM-04 Yorumlu Teknik Rapor",
@@ -489,7 +546,8 @@
       "category": "Alan Emisyonlu Taramalı Elektron Mikroskobu (FESEM-EDX)",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "BET-01 Tek Noktalı BET Analizi",
@@ -498,7 +556,8 @@
       "category": "BET Yüzey Alanı ve Mikrogözenek Boyutu Analizatörü",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "BET-02 Çok Noktalı BET Analizi",
@@ -507,7 +566,8 @@
       "category": "BET Yüzey Alanı ve Mikrogözenek Boyutu Analizatörü",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "BET-03 Mikrogözenek Analizi + Adsorpsiyon İzotermi (Çok Noktalı BET, Gözenek Boyutu Dağılımı, Ortalama Gözenek Boyutu, Toplam Gözenek Hacmi)",
@@ -516,7 +576,8 @@
       "category": "BET Yüzey Alanı ve Mikrogözenek Boyutu Analizatörü",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "BET-04 Mikrogözenek Analizi + Full İzoterm (Çok Noktalı BET, Gözenek Boyutu Dağılımı, Ortalama Gözenek Boyutu, Toplam Gözenek Hacmi)",
@@ -525,7 +586,8 @@
       "category": "BET Yüzey Alanı ve Mikrogözenek Boyutu Analizatörü",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "BET-05 Yorumlu Teknik Rapor",
@@ -534,7 +596,8 @@
       "category": "BET Yüzey Alanı ve Mikrogözenek Boyutu Analizatörü",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HGP-01 Gerçek Hacim ve Yoğunluk Ölçümü",
@@ -543,7 +606,8 @@
       "category": "Helyum (He) Gaz Piknometresi",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "HGP-02 Yorumlu Teknik Rapor",
@@ -552,7 +616,8 @@
       "category": "Helyum (He) Gaz Piknometresi",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "CP-01 Bağıl Yoğunluk Ölçümü",
@@ -561,7 +626,8 @@
       "category": "Cam Tipi Piknometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "CP-02 Yorumlu Teknik Rapor",
@@ -570,7 +636,8 @@
       "category": "Cam Tipi Piknometre",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "ZET-01 Zeta Potansiyeli Ölçümü",
@@ -579,7 +646,8 @@
       "category": "Zeta Potansiyometresi (DLS Tekniği)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "ZET-02 Nanopartikül Boyutu Ölçümü (Nanosizer / 0.6 nm – 5.0 µm)",
@@ -588,7 +656,8 @@
       "category": "Zeta Potansiyometresi (DLS Tekniği)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "ZET-03 pH'a Bağlı Zeta Potansiyeli Ölçümü (5 noktaya kadar)",
@@ -597,7 +666,8 @@
       "category": "Zeta Potansiyometresi (DLS Tekniği)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "ZET-04 pH'a Bağlı Zeta Potansiyeli Ölçümü (İlave Her Nokta)",
@@ -606,7 +676,8 @@
       "category": "Zeta Potansiyometresi (DLS Tekniği)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "ZET-05 Yorumlu Teknik Rapor",
@@ -615,7 +686,8 @@
       "category": "Zeta Potansiyometresi (DLS Tekniği)",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MSZ-01 Mikropartikül Boyutu Ölçümü (200 nm – 2000 µm)",
@@ -624,7 +696,8 @@
       "category": "Partikül Boyut Ölçüm Cihazı (Mastersizer, Lazer Kırınım)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MSZ-02 Yorumlu Teknik Rapor",
@@ -633,7 +706,8 @@
       "category": "Partikül Boyut Ölçüm Cihazı (Mastersizer, Lazer Kırınım)",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "CHNS-01 C, H ve N Analizi",
@@ -642,7 +716,8 @@
       "category": "Elementel Analiz Cihazı (CHN-S)",
       "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "CHNS-02 C, H, N ve S Analizi",
@@ -651,7 +726,8 @@
       "category": "Elementel Analiz Cihazı (CHN-S)",
       "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "CHNS-03 S Analizi",
@@ -660,7 +736,8 @@
       "category": "Elementel Analiz Cihazı (CHN-S)",
       "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "CHNS-04 Yorumlu Teknik Rapor",
@@ -669,7 +746,8 @@
       "category": "Elementel Analiz Cihazı (CHN-S)",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "AAS-01 Numune Hazırlama (Yaş Yakma)",
@@ -678,7 +756,8 @@
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır. Lambalar ayrı ayrı ücretlendirilecektir.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "AAS-02 Numune Hazırlama (Mikrodalga)",
@@ -687,7 +766,8 @@
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "AAS-03 Alevli Analiz (Asetilen+Hava) – 1-5 Element, Element Başı",
@@ -696,7 +776,8 @@
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "AAS-04 Alevli Analiz (Asetilen+Hava) – 6 ve Üstü Element, Element Başı",
@@ -705,7 +786,8 @@
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "AAS-05 Alevli Analiz (N2O+Hava) – 1-5 Element, Element Başı",
@@ -714,7 +796,8 @@
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "AAS-06 Alevli Analiz (N2O+Hava) – 6 ve Üstü Element, Element Başı",
@@ -723,7 +806,8 @@
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "AAS-07 Grafit Fırın ile Analiz – 1-5 Element, Element Başı",
@@ -732,7 +816,8 @@
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "AAS-08 Grafit Fırın ile Analiz – 6 ve Üstü Element, Element Başı",
@@ -741,7 +826,8 @@
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "AAS-09 Hidrür Yöntemi ile Analiz – 1-5 Element, Element Başı",
@@ -750,7 +836,8 @@
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "AAS-10 Hidrür Yöntemi ile Analiz – 6 ve Üstü Element, Element Başı",
@@ -759,7 +846,8 @@
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "AAS-11 Yorumlu Teknik Rapor",
@@ -768,7 +856,8 @@
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "FTIR-01 Potasyum Bromür (KBr) Pelet Yöntemi",
@@ -777,7 +866,8 @@
       "category": "Fourier Dönüşümlü Kızılötesi (FTIR) Spektrometresi",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "FTIR-02 Azaltılmış Toplam Yansıma (ATR) Yöntemi",
@@ -786,7 +876,8 @@
       "category": "Fourier Dönüşümlü Kızılötesi (FTIR) Spektrometresi",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "FTIR-03 Azot Gazı Altında ATR Yöntemi",
@@ -795,7 +886,8 @@
       "category": "Fourier Dönüşümlü Kızılötesi (FTIR) Spektrometresi",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "FTIR-04 Kütüphane Taraması",
@@ -804,7 +896,8 @@
       "category": "Fourier Dönüşümlü Kızılötesi (FTIR) Spektrometresi",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "FTIR-05 Yorumlu Teknik Rapor",
@@ -813,7 +906,8 @@
       "category": "Fourier Dönüşümlü Kızılötesi (FTIR) Spektrometresi",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRF-01 Eritiş Cihazı ile Numune Hazırlama",
@@ -822,7 +916,8 @@
       "category": "Dalga Boyu Dağılımlı X-Işını Floresans Spektrometresi (WD-XRF)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRF-02 Kırma, Öğütme ve Presleme",
@@ -831,7 +926,8 @@
       "category": "Dalga Boyu Dağılımlı X-Işını Floresans Spektrometresi (WD-XRF)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRF-03 Kızdırma Kaybı Bulma",
@@ -840,7 +936,8 @@
       "category": "Dalga Boyu Dağılımlı X-Işını Floresans Spektrometresi (WD-XRF)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRF-04 Katı Numune Analizi",
@@ -849,7 +946,8 @@
       "category": "Dalga Boyu Dağılımlı X-Işını Floresans Spektrometresi (WD-XRF)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRF-05 Sıvı Numune Analizi",
@@ -858,7 +956,8 @@
       "category": "Dalga Boyu Dağılımlı X-Işını Floresans Spektrometresi (WD-XRF)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRF-06 Yorumlu Teknik Rapor",
@@ -867,7 +966,8 @@
       "category": "Dalga Boyu Dağılımlı X-Işını Floresans Spektrometresi (WD-XRF)",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRD-01 Numune Hazırlama (Kesme, Öğütme vb.)",
@@ -876,7 +976,8 @@
       "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRD-02 XRD Patern Çekim (11-20°/dk tarama hızı)",
@@ -885,7 +986,8 @@
       "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRD-03 XRD Patern Çekim (6-10°/dk tarama hızı)",
@@ -894,7 +996,8 @@
       "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRD-04 XRD Patern Çekim (3-5°/dk tarama hızı)",
@@ -903,7 +1006,8 @@
       "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRD-05 XRD Patern Çekim (1-2°/dk tarama hızı)",
@@ -912,7 +1016,8 @@
       "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRD-06 Kalitatif Faz Analizi / Patern Tayini (11-20°/dk)",
@@ -921,7 +1026,8 @@
       "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRD-07 Kalitatif Faz Analizi / Patern Tayini (6-10°/dk)",
@@ -930,7 +1036,8 @@
       "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRD-08 Kalitatif Faz Analizi / Patern Tayini (3-5°/dk)",
@@ -939,7 +1046,8 @@
       "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRD-09 Kalitatif Faz Analizi / Patern Tayini (1-2°/dk)",
@@ -948,7 +1056,8 @@
       "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRD-10 Daha Sonradan İstenen Kütüphane Taramaları",
@@ -957,7 +1066,8 @@
       "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "XRD-11 Yorumlu Teknik Rapor",
@@ -966,7 +1076,8 @@
       "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MHT-01 Vickers veya Knopp Yöntemi ile Sertlik Ölçümü (1g – 10 kg yük aralığı)",
@@ -975,7 +1086,8 @@
       "category": "Mikrosertlik Ölçüm Cihazı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MHT-02 Yorumlu Teknik Rapor",
@@ -984,7 +1096,8 @@
       "category": "Mikrosertlik Ölçüm Cihazı",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MKD-01 Bitki / Tarımsal Numuneler",
@@ -993,7 +1106,8 @@
       "category": "Mikrodalga Ekstraksiyon Cihazı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MKD-02 Katalizör-Pigment Numuneleri",
@@ -1002,7 +1116,8 @@
       "category": "Mikrodalga Ekstraksiyon Cihazı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MKD-03 Seramik-Refrakter Numuneleri",
@@ -1011,7 +1126,8 @@
       "category": "Mikrodalga Ekstraksiyon Cihazı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MKD-04 Kimyasal Numuneler",
@@ -1020,7 +1136,8 @@
       "category": "Mikrodalga Ekstraksiyon Cihazı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MKD-05 Biyolojik / Klinik Numuneler",
@@ -1029,7 +1146,8 @@
       "category": "Mikrodalga Ekstraksiyon Cihazı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MKD-06 Çevresel Kirletici Numuneleri",
@@ -1038,7 +1156,8 @@
       "category": "Mikrodalga Ekstraksiyon Cihazı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MKD-07 Gıda Numuneleri",
@@ -1047,7 +1166,8 @@
       "category": "Mikrodalga Ekstraksiyon Cihazı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MKD-08 Yem Numuneleri",
@@ -1056,7 +1176,8 @@
       "category": "Mikrodalga Ekstraksiyon Cihazı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MKD-09 Jeolojik Numuneler",
@@ -1065,7 +1186,8 @@
       "category": "Mikrodalga Ekstraksiyon Cihazı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MKD-10 Metal ve Alaşım Numuneleri",
@@ -1074,7 +1196,8 @@
       "category": "Mikrodalga Ekstraksiyon Cihazı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MKD-11 Petrokimya Numuneleri",
@@ -1083,7 +1206,8 @@
       "category": "Mikrodalga Ekstraksiyon Cihazı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MKD-12 Plastik ve Polimer Numuneleri",
@@ -1092,7 +1216,8 @@
       "category": "Mikrodalga Ekstraksiyon Cihazı",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "MKD-13 Yorumlu Teknik Rapor",
@@ -1101,7 +1226,8 @@
       "category": "Mikrodalga Ekstraksiyon Cihazı",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "CRCT-01 TQC CC2000 Çapraz Kesim Yapışma Testi",
@@ -1110,7 +1236,8 @@
       "category": "Cross-Cut (Kaplama Çapraz Kesim Testi)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "CRCT-02 Yorumlu Teknik Rapor",
@@ -1119,7 +1246,8 @@
       "category": "Cross-Cut (Kaplama Çapraz Kesim Testi)",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "BGA-01 Baca Gazı Analizi (CO, NO, NO2, SO2)",
@@ -1128,7 +1256,8 @@
       "category": "Baca Gazı Analizatörü",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "BGA-02 Yorumlu Teknik Rapor",
@@ -1137,7 +1266,8 @@
       "category": "Baca Gazı Analizatörü",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "SM-01 Kullanım",
@@ -1146,7 +1276,8 @@
       "category": "Stereo (Diseksiyon) Mikroskop",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "SM-02 Yorumlu Teknik Rapor",
@@ -1155,7 +1286,8 @@
       "category": "Stereo (Diseksiyon) Mikroskop",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "RF-01 Numune Hazırlama",
@@ -1164,7 +1296,8 @@
       "category": "Refraktometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "RF-02 Refraktif İndeks Ölçümü",
@@ -1173,7 +1306,8 @@
       "category": "Refraktometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "RF-03 Briks Ölçümü",
@@ -1182,7 +1316,8 @@
       "category": "Refraktometre",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "RF-04 Yorumlu Teknik Rapor",
@@ -1191,7 +1326,8 @@
       "category": "Refraktometre",
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "PH-01 pH Ölçümü",
@@ -1200,7 +1336,8 @@
       "category": "pH Metre ve Sıvı Örnek Sertlik Ölçümleri",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "SR-01 Sıvı Numune Sertlik Ölçümü",
@@ -1209,7 +1346,8 @@
       "category": "pH Metre ve Sıvı Örnek Sertlik Ölçümleri",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "KF-01 Kullanım",
@@ -1218,7 +1356,8 @@
       "category": "Kül Fırını",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "ET-01 Kullanım",
@@ -1227,7 +1366,8 @@
       "category": "Etüv / İnkübatör",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "SS-01 Saf Su",
@@ -1236,7 +1376,8 @@
       "category": "Saf / Ultra Saf Su",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     },
     {
       "name": "SS-02 Ultra Saf Su",
@@ -1245,7 +1386,8 @@
       "category": "Saf / Ultra Saf Su",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "_isOv": false
     }
   ]
 }
