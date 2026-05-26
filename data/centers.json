@@ -143,5 +143,21 @@
     "reference": false,
     "analysis_count": 130,
     "last_updated": "2026-05-26"
+  },
+  {
+    "id": "bseu_barum",
+    "name": "BSEU BARUM",
+    "university": "Bilecik Şeyh Edebali Üniversitesi",
+    "city": "Bilecik",
+    "url": "https://bilecik.edu.tr/barum/",
+    "pricing_url": "https://www.bilecik.edu.tr/dosya/18153_1212_BARUM%20Fiyat%20Listesi%202026.pdf",
+    "fetch_method": "manual",
+    "check_months": [
+      1,
+      6,
+      12
+    ],
+    "active": true,
+    "reference": false
   }
 ]
