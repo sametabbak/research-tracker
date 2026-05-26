@@ -881,7 +881,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "1-3 Bileşik (HPLC)",
@@ -891,7 +892,8 @@
       "notes": "1) Mevcut olmayan standart/kimyasal/sarf malzeme talep eden kişi/kuruluş tarafından temin edilmelidir. 2) Metot validasyonu numune sayısına göre fiyatlandırılır. 3) 21-70 numune için %20, >70 numune için %30 indirim uygulanır. 4) Numune hazırlama ve yeni metot geliştirme için uzman personel ile görüşünüz.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "4-6 Bileşik (HPLC)",
@@ -901,7 +903,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "6-10 Bileşik (HPLC)",
@@ -911,7 +914,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Folik Asit (B12 Vitamini) Tayini",
@@ -921,7 +925,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Akrilamit Tayini",
@@ -931,7 +936,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Yeni Metot Geliştirme (HPLC)",
@@ -941,7 +947,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Numune Hazırlama - Ekstraksiyon (HPLC)",
@@ -951,7 +958,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC Metot Validasyonu (1-20 numune)",
@@ -961,7 +969,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC Metot Validasyonu (20-70 numune)",
@@ -971,7 +980,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC Metot Validasyonu (>70 numune)",
@@ -981,7 +991,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Raporlandırma (HPLC)",
@@ -991,7 +1002,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "1–3 Bileşik (GC-FID)",
@@ -1001,7 +1013,8 @@
       "notes": "1) Mevcut olmayan standart/kimyasal/sarf malzeme talep eden kişi/kuruluş tarafından temin edilmelidir. 2) Numune hazırlama ve yeni metot geliştirme için uzman personel ile görüşünüz.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "4–6 Bileşik (GC-FID)",
@@ -1011,7 +1024,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "6–10 Bileşik (GC-FID)",
@@ -1021,7 +1035,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Numune Hazırlama - Ekstraksiyon (GC-FID)",
@@ -1031,7 +1046,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Raporlandırma (GC-FID)",
@@ -1041,7 +1057,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Yüzey Sertliği",
@@ -1051,7 +1068,8 @@
       "notes": "1) Numune en az 1cmx1cm yüzeye sahip olmalıdır. 2) Numune yüksekliği en fazla 5 mm olmalıdır. 3) Analizler 100, 200, 500, 1000 ve 2000 gram yükler ile yapılabilir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrosertlik ve Makrosertlik Testleri"
     },
     {
       "name": "İz Görüntüsü (40X)",
@@ -1061,7 +1079,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Mikrosertlik ve Makrosertlik Testleri"
     },
     {
       "name": "Gerçek Yoğunluk / Hacim Ölçümü",
@@ -1071,7 +1090,8 @@
       "notes": "Analiz numune kapları 10, 35, 100 cc standart silindirik kaplardır. Numune miktarı ve boyutları bu kaplardan birine uyacak şekilde olmalıdır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Yoğunluk ve Fiziksel Özellikler"
     },
     {
       "name": "Tanecik Boyut Analizi",
