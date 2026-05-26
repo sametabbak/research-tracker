@@ -188,12 +188,13 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 <!-- HEADER -->
 <div class="hdr">
   <div>
-    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:2px;vertical-align:middle;">…</span> <span style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:4px;">v2025.05b</span></h1>
+    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:2px;vertical-align:middle;">…</span></h1>
     <div class="hdr-meta" id="hdrMeta">Yükleniyor...</div>
     <div id="driftBadge" style="font-size:11px;margin-top:2px;display:none;"></div>
   </div>
   <div class="hdr-right">
     <div class="tok bad" id="tokBadge" onclick="openTokModal(null)">🔑 Token gir</div>
+    <button class="btn btn-sec" onclick="diagnoseToken()" title="Token ve yetki teşhisi" style="background:#fef3c7;border-color:#fcd34d;">🩺 Teşhis</button>
     <button class="btn btn-sec" id="undoBtn" onclick="undoAction()" disabled title="Son eylemi geri al (Ctrl+Z)">↩ Geri Al</button>
     <button class="btn btn-sec" onclick="safeReload()">↻ Yenile</button>
     <button class="btn btn-sec" onclick="showModal('bkpOv')">💾 Yedek</button>
@@ -433,7 +434,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 
 <script>
 /* ═══ CONFIG ════════════════════════════════════════════════════════════════ */
-var PANEL_VERSION='2026.04';
+var PANEL_VERSION='2026.06';
 var REPO='sametabbak/research-tracker',STAGING='staging',MAIN='main';
 var SYM={TRY:'₺',USD:'$',EUR:'€'};
 var NOTES=[
@@ -520,10 +521,41 @@ async function apiWrite(path,content,sha,msg){
 }
 async function triggerMerge(note){
   if(!tok)throw new Error('Token gerekli.');
-  var r=await fetch('https://api.github.com/repos/'+REPO+'/actions/workflows/merge-staging.yml/dispatches',
+  /* Primary: workflow_dispatch (uses --strategy-option=theirs from yml) */
+  try{
+    var r=await fetch('https://api.github.com/repos/'+REPO+'/actions/workflows/merge-staging.yml/dispatches',
+      {method:'POST',headers:Object.assign({},gh(),{'Content-Type':'application/json'}),
+       body:JSON.stringify({ref:'main',inputs:{message:note||'chore: panel onayı'}})});
+    if(r.status===204){console.log('[triggerMerge] workflow dispatch OK');return;}
+    var e=await r.json().catch(function(){return{};});
+    var msg=e.message||'HTTP '+r.status;
+    /* If 403/404, the token likely lacks workflow scope — try direct merge fallback */
+    if(r.status===403||r.status===404){
+      console.warn('[triggerMerge] workflow dispatch failed ('+msg+') — falling back to direct merge API');
+      return await directMerge(note);
+    }
+    throw new Error(msg);
+  }catch(e){
+    /* If this is the synthesized "directMerge failed" or a network error, rethrow with helpful guidance */
+    if(/workflow|scope|permission|403|404/i.test(e.message)){
+      throw new Error('Workflow tetiklenemedi: '+e.message
+        +'\n\nÇözüm: GitHub token\'ının "workflow" yetkisi olmalı.'
+        +'\nGitHub → Settings → Developer settings → Personal access tokens → Edit token → "workflow" kutusunu işaretleyin.');
+    }
+    throw e;
+  }
+}
+
+/* Fallback: direct branch merge via GitHub merge API (no strategy options) */
+async function directMerge(note){
+  console.log('[directMerge] attempting POST /merges main ← staging');
+  var r=await fetch('https://api.github.com/repos/'+REPO+'/merges',
     {method:'POST',headers:Object.assign({},gh(),{'Content-Type':'application/json'}),
-     body:JSON.stringify({ref:'main',inputs:{message:note}})});
-  if(r.status!==204){var e=await r.json().catch(function(){return{};});throw new Error(e.message||'HTTP '+r.status);}
+     body:JSON.stringify({base:'main',head:'staging',commit_message:note||'chore: panel onayı (direct merge)'})});
+  if(r.status===201||r.status===204){console.log('[directMerge] success');return;}
+  var e=await r.json().catch(function(){return{};});
+  if(r.status===409){throw new Error('Merge conflict: staging ile main arasında çakışma var. Manuel merge gerekli.');}
+  throw new Error(e.message||'HTTP '+r.status);
 }
 async function stagingDate(){
   var r=await fetch('https://api.github.com/repos/'+REPO+'/branches/'+STAGING,{headers:gh()});
@@ -2076,6 +2108,88 @@ function deleteDupe(cid,name,btn){
 }
 
 
+
+async function diagnoseToken(){
+  if(!tok){alert('Token girilmemiş. Önce token girin.');return;}
+  var log=[];
+  log.push('═══ TOKEN TEŞHİS ═══');
+  log.push('Token: '+tok.slice(0,4)+'…'+tok.slice(-4)+' ('+tok.length+' karakter)');
+  log.push('Repo: '+REPO);
+  log.push('');
+  /* 1. Verify token is valid */
+  try{
+    var r=await fetch('https://api.github.com/user',{headers:gh()});
+    log.push('1. /user endpoint: '+r.status+' '+r.statusText);
+    if(r.ok){
+      var u=await r.json();
+      log.push('   ✓ Token geçerli — kullanıcı: '+u.login);
+      var scopes=r.headers.get('X-OAuth-Scopes')||'(yok)';
+      log.push('   Scopes: '+scopes);
+      if(scopes.indexOf('workflow')>=0)log.push('   ✓ workflow scope MEVCUT');
+      else log.push('   ✗ workflow scope EKSİK — Onayla ve Yayınla çalışmaz!');
+      if(scopes.indexOf('repo')>=0)log.push('   ✓ repo scope MEVCUT');
+      else log.push('   ✗ repo scope EKSİK — yazma işlemleri çalışmaz!');
+    } else {
+      log.push('   ✗ Token reddedildi: '+r.status);
+    }
+  }catch(e){log.push('1. ✗ Bağlantı hatası: '+e.message);}
+  log.push('');
+  /* 2. Verify workflow file exists on main */
+  try{
+    var r2=await fetch('https://api.github.com/repos/'+REPO+'/contents/.github/workflows/merge-staging.yml?ref=main',{headers:gh()});
+    log.push('2. merge-staging.yml on main: '+r2.status);
+    if(r2.ok)log.push('   ✓ Workflow dosyası main branch\'de mevcut');
+    else log.push('   ✗ Workflow dosyası main\'de bulunamadı (HTTP '+r2.status+')');
+  }catch(e){log.push('2. ✗ Bağlantı hatası: '+e.message);}
+  log.push('');
+  /* 3. Try the dispatch endpoint (with a no-op probe) */
+  try{
+    var r3=await fetch('https://api.github.com/repos/'+REPO+'/actions/workflows',{headers:gh()});
+    log.push('3. /actions/workflows endpoint: '+r3.status);
+    if(r3.ok){
+      var wfd=await r3.json();
+      var msf=wfd.workflows.find(function(w){return w.path.indexOf('merge-staging')>=0;});
+      if(msf){
+        log.push('   ✓ merge-staging workflow bulundu (id='+msf.id+', state='+msf.state+')');
+        if(msf.state!=='active')log.push('   ✗ Workflow DEAKTIF! Actions tab\'ında etkinleştirin.');
+      } else {
+        log.push('   ✗ merge-staging workflow listesinde yok');
+      }
+    } else {
+      var ed=await r3.json().catch(function(){return{};});
+      log.push('   ✗ '+(ed.message||'Erişim reddedildi'));
+    }
+  }catch(e){log.push('3. ✗ Bağlantı hatası: '+e.message);}
+  log.push('');
+  /* 4. Try actual dispatch as a dry-run probe */
+  try{
+    var r4=await fetch('https://api.github.com/repos/'+REPO+'/actions/workflows/merge-staging.yml/dispatches',
+      {method:'POST',headers:Object.assign({},gh(),{'Content-Type':'application/json'}),
+       body:JSON.stringify({ref:'main',inputs:{message:'teşhis testi'}})});
+    log.push('4. Workflow dispatch testi: '+r4.status);
+    if(r4.status===204){
+      log.push('   ✓ Dispatch BAŞARILI! Asıl publish artık çalışmalı.');
+      log.push('   (Test merge\'i Actions sekmesinden iptal edebilirsiniz.)');
+    } else {
+      var ed4=await r4.json().catch(function(){return{};});
+      log.push('   ✗ Hata: '+(ed4.message||'HTTP '+r4.status));
+      if(r4.status===403)log.push('   → Token\'da workflow scope eksik veya repo erişim yok');
+      if(r4.status===404)log.push('   → Workflow main branch\'de bulunamadı VEYA repo erişim yok');
+      if(r4.status===422)log.push('   → Workflow\'da workflow_dispatch trigger yok VEYA ref hatalı');
+    }
+  }catch(e){log.push('4. ✗ Bağlantı hatası: '+e.message);}
+  log.push('');
+  /* 5. Try direct merge API */
+  try{
+    var r5=await fetch('https://api.github.com/repos/'+REPO+'/merges',{headers:gh()});
+    log.push('5. /merges endpoint erişim: '+r5.status);
+    if(r5.status===405||r5.status===404)log.push('   ✓ Endpoint erişilebilir (POST gerekli)');
+    else if(r5.status===403)log.push('   ✗ /merges erişimi yok');
+  }catch(e){log.push('5. ✗ Bağlantı hatası: '+e.message);}
+  console.log(log.join('\n'));
+  alert(log.join('\n'));
+}
+
 /* ═══ NEW FEATURES: UNDO · QUALITY · ACCEPT · TOKEN · DRIFT · PREVIEW · PREFLIGHT · REVERT · HARD-DELETE ═══ */
 var undoStack=[];
 function pushUndo(a){undoStack.push(a);updateUndoBtn();}
@@ -2144,11 +2258,27 @@ function showTokBanner(type,extra){
 }
 async function checkTokenHealth(){
   if(!tok){showTokBanner('missing');return;}
-  try{var r=await fetch('https://api.github.com/rate_limit',{headers:gh()});
+  try{
+    var r=await fetch('https://api.github.com/rate_limit',{headers:gh()});
     if(r.status===401){showTokBanner('invalid');return;}
     if(r.status===403){showTokBanner('ratelimit');return;}
-    if(r.ok){var d=await r.json();if(d&&d.rate&&d.rate.remaining<50)showTokBanner('warn',d.rate.remaining);}
-  }catch(e){}
+    if(r.ok){
+      /* Check OAuth scopes — workflow scope is needed to publish (trigger merge) */
+      var scopes=r.headers.get('X-OAuth-Scopes')||'';
+      console.log('[token] scopes:',scopes);
+      if(scopes&&scopes.indexOf('workflow')===-1){
+        var el=document.getElementById('tokBanner');
+        if(el){
+          el.style.cssText='display:block;background:#fff7ed;color:#c2410c;padding:6px 16px;font-size:12px;font-weight:600;text-align:center;z-index:9999;position:fixed;top:0;left:0;right:0;';
+          el.innerHTML='⚠️ Token\'da <strong>workflow</strong> yetkisi eksik — "Onayla ve Yayınla" çalışmaz. '
+            +'<button onclick="openTokModal(null)" style="margin-left:8px;font-size:11px;border:1px solid currentColor;border-radius:4px;padding:2px 8px;background:transparent;color:inherit;cursor:pointer;">Token Yenile</button>'
+            +'<button onclick="this.parentElement.style.display=\'none\'" style="margin-left:4px;border:none;background:transparent;cursor:pointer;color:inherit;">✕</button>';
+        }
+      }
+      var d=await r.json();
+      if(d&&d.rate&&d.rate.remaining<50)showTokBanner('warn',d.rate.remaining);
+    }
+  }catch(e){console.warn('[checkTokenHealth]',e);}
 }
 async function checkStagingDrift(){
   var el=document.getElementById('driftBadge');if(!el||!tok)return;
