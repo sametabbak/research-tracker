@@ -188,7 +188,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 <!-- HEADER -->
 <div class="hdr">
   <div>
-    <h1>🔬 Analiz Bul — İnceleme Paneli <span id="panelVer" style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:2px;vertical-align:middle;">…</span></h1>
+    <h1>🔬 Analiz Bul — İnceleme Paneli <span style="font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:1px 8px;background:var(--bg);margin-left:4px;">v2025.05b</span></h1>
     <div class="hdr-meta" id="hdrMeta">Yükleniyor...</div>
     <div id="driftBadge" style="font-size:11px;margin-top:2px;display:none;"></div>
   </div>
@@ -434,7 +434,7 @@ tr.r-qa input:focus{outline:2px solid var(--p);border-color:transparent;}
 
 <script>
 /* ═══ CONFIG ════════════════════════════════════════════════════════════════ */
-var PANEL_VERSION='2026.06';
+var PANEL_VERSION='2026.07';
 var REPO='sametabbak/research-tracker',STAGING='staging',MAIN='main';
 var SYM={TRY:'₺',USD:'$',EUR:'€'};
 var NOTES=[
@@ -2545,6 +2545,7 @@ async function doApprove(){
 
     /* 4. Merge */
     btn.textContent='⏳ Yayınlanıyor...';
+    console.log('[doApprove] triggering merge...');
     await triggerMerge('İnceleme panelinden onaylandı');
 
     /* 5. Clear pending, re-render from updated sMap (no loadAll, no stale cache) */
@@ -2682,30 +2683,61 @@ function collapseAll(){
 /* ═══ PER-CENTER APPROVE ════════════════════════════════════════════════════ */
 async function approveCtr(cid){
   if(!tok){openTokModal(function(){approveCtr(cid);});return;}
+  console.log('[approveCtr]',cid,'start');
   var c=centers.find(function(x){return x.id===cid;});
   var btn=document.getElementById('apv-'+sid2(cid));
   if(btn){btn.disabled=true;btn.textContent='⏳ Kaydediliyor...';}
+  storePreApprovalShas();
   try{
-    var sf=sMap[cid];
     var _paClean=(pA[cid]||[]).map(function(a){var x=Object.assign({},a);delete x._pid;delete x._isOv;return x;});
-    if(sf||_paClean.length){
-      var newA=sf?sf.content.analyses.slice():[];
+    var hasAnyChange = (pE[cid]&&Object.keys(pE[cid]).length) || (pD[cid]&&pD[cid].size) || _paClean.length;
+    console.log('[approveCtr]',cid,'paClean='+_paClean.length,'pE='+Object.keys(pE[cid]||{}).length,'pD='+(pD[cid]?pD[cid].size:0));
+
+    if(hasAnyChange){
+      /* Always re-fetch the latest SHA right before writing (defensive) */
+      console.log('[approveCtr]',cid,'fetching latest analyses SHA...');
+      var freshSf=await apiRead(STAGING,'data/analyses/'+cid+'.json').catch(function(){return null;});
+      var sf=freshSf||sMap[cid]||null;
+      if(freshSf){
+        /* Re-stamp pids from fresh content */
+        if(freshSf.content&&freshSf.content.analyses){
+          freshSf.content.analyses.forEach(function(a,i){a._pid=cid+'_'+i;a._isOv=false;});
+        }
+        sMap[cid]=freshSf;
+      }
+
+      var newA=sf&&sf.content&&sf.content.analyses?sf.content.analyses.slice():[];
       if(pE[cid])newA=newA.map(function(a){var p=pE[cid][a._pid];return p?Object.assign({},a,p):a;});
       if(pD[cid]&&pD[cid].size)newA=newA.filter(function(a){return!pD[cid].has(a._pid);});
       newA=newA.map(function(a){var x=Object.assign({},a);delete x._pid;return x;});
       newA=newA.concat(_paClean);
-      var nc=sf?Object.assign({},sf.content,{analyses:newA}):{center_id:cid,center_name:c?c.name:cid,analyses:newA};
-      var wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf?sf.sha:null,'fix: '+(c?c.name:cid)+' güncellendi');
-      sMap[cid]={content:nc,sha:(wa&&wa.content)?wa.content.sha:sf?sf.sha:null};
+
+      var today=new Date().toISOString().slice(0,10);
+      var baseContent=sf&&sf.content?sf.content:{center_id:cid,center_name:c?c.name:cid,last_updated:today,analyses:[]};
+      var nc=Object.assign({},baseContent,{analyses:newA,last_updated:today});
+
+      console.log('[approveCtr]',cid,'writing analyses file ('+newA.length+' total)');
+      var wa;
+      try{
+        wa=await apiWrite('data/analyses/'+cid+'.json',nc,sf?sf.sha:null,'fix: '+(c?c.name:cid)+' güncellendi');
+      }catch(writeErr){
+        /* If write fails because file exists (422) OR sha mismatch, refetch and retry once */
+        console.warn('[approveCtr]',cid,'first write failed:',writeErr.message,'— refetching SHA and retrying');
+        var retrySf=await apiRead(STAGING,'data/analyses/'+cid+'.json').catch(function(){return null;});
+        wa=await apiWrite('data/analyses/'+cid+'.json',nc,retrySf?retrySf.sha:null,'fix: '+(c?c.name:cid)+' güncellendi (retry)');
+      }
+      sMap[cid]={content:nc,sha:(wa&&wa.content)?wa.content.sha:null};
       sMap[cid].content.analyses.forEach(function(a,i){a._pid=cid+'_'+i;a._isOv=false;});
       mMap[cid]=nc;
+      console.log('[approveCtr]',cid,'analyses written OK');
     }
+
     /* Override edits/deletes for this center */
     var hasOvEdit=false;
     if(pE[cid])Object.keys(pE[cid]).forEach(function(p){if(p.indexOf('_ov_')!==-1)hasOvEdit=true;});
     if(pD[cid])pD[cid].forEach(function(p){if(p.indexOf('_ov_')!==-1)hasOvEdit=true;});
     if(hasOvEdit){
-      var ovfC=ovMap[cid];
+      var ovfC=ovMap[cid]||(await apiRead(STAGING,'data/overrides/'+cid+'.json').catch(function(){return null;}));
       if(ovfC&&ovfC.content){
         var newOvC=ovfC.content.overrides.slice();
         if(pE[cid])newOvC=newOvC.map(function(a){var p=pE[cid][a._pid];return(p&&a._pid&&a._pid.indexOf('_ov_')!==-1)?Object.assign({},a,p):a;});
@@ -2717,16 +2749,30 @@ async function approveCtr(cid){
         ovMap[cid].content.overrides.forEach(function(a,i){a._pid=cid+'_ov_'+i;a._isOv=true;});
       }
     }
-    /* pA entries now written to analyses in Step 1 */
-    await triggerMerge((c?c.name:cid)+' analiz güncellemesi');
+
+    /* Trigger merge (workflow_dispatch with fallback to direct merge) */
+    console.log('[approveCtr]',cid,'triggering merge...');
+    try{
+      await triggerMerge((c?c.name:cid)+' analiz güncellemesi');
+      console.log('[approveCtr]',cid,'merge triggered OK');
+    }catch(mergeErr){
+      console.error('[approveCtr]',cid,'merge failed:',mergeErr.message);
+      /* Don't undo the staging write — just report */
+      alert('Staging başarıyla güncellendi, fakat main\'e merge başlatılamadı:\n\n'+mergeErr.message
+        +'\n\nDeğişiklikler staging branch\'inde kayıtlı. Actions sekmesinden manuel olarak Merge Staging to Main workflow\'unu çalıştırabilirsiniz.');
+    }
+
     delete pE[cid];delete pD[cid];delete pA[cid];if(pCE[cid])delete pCE[cid];
     pOrder.delete(cid);delete pOrderSnap[cid];
     buildRKW();buildAllCats();buildDLs();
     updSum();renderChanges();renderCatalog();renderOverride();updApvBtn();
+    showRevertBtn();checkStagingDrift();
     document.getElementById('hdrMeta').textContent=(c?c.name:cid)+' yayınlandı. Main 30-60 sn içinde güncellenecek.';
     document.getElementById('hdrMeta').style.color='#aaff88';
+    console.log('[approveCtr]',cid,'DONE');
   }catch(e){
-    alert('Hata: '+e.message);
+    console.error('[approveCtr]',cid,'FAILED:',e);
+    alert('Hata ('+cid+'): '+e.message+'\n\nKonsol detayları: F12');
     if(btn){btn.disabled=false;btn.textContent='✓ Bu Merkezi Yayınla';}
   }
 }
