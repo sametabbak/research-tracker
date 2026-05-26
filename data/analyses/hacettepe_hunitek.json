@@ -416,16 +416,6 @@
       "_isOv": false
     },
     {
-      "name": "Genel Tarama",
-      "category": "X-Işını Floresans Spektrometresi",
-      "price": 1200,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "XPS (X-Işını Fotoelektron Spektroskopisi) Analizleri",
-      "_isOv": false
-    },
-    {
       "name": "Sıvı Numune Ölçümü",
       "category": "Floresans Spektroskopisi",
       "price": 1000,
@@ -496,36 +486,6 @@
       "_isOv": false
     },
     {
-      "name": "Metot Geliştirme",
-      "category": "Gaz Kromatografisi-Kütle Spektrometrisi (GC-MS)",
-      "price": 11400,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
-    },
-    {
-      "name": "Kantitatif ve Kalitatif Analiz",
-      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC-PDA Dedektörlü)",
-      "price": 2900,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
-    },
-    {
-      "name": "Metot Geliştirme",
-      "category": "Yüksek Performans Sıvı Kromatografisi (HPLC-PDA Dedektörlü)",
-      "price": 11400,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
-    },
-    {
       "name": "Yüksek Çözünürlüklü (HRMS) Kütle Analizi",
       "category": "Yüksek Çözünürlüklü Kütle Spektrometrisi ve Sıvı Kromatografisi (LC-QTOF-MS)",
       "price": 1500,
@@ -563,16 +523,6 @@
       "unit": "numune",
       "notes": "",
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
-    },
-    {
-      "name": "Protein Tanımlama",
-      "category": "Matriks-yardımlı Lazer Desorpsiyon/İyonlaştırmalı- Uçuş Zamanlı-Kütle Spektrometrisi (MALDI-TOF/TOF-MS)",
-      "price": 9000,
-      "currency": "TRY",
-      "unit": "numune",
-      "notes": "",
-      "keyword_group": "Moleküler Genetik ve PCR Analizleri",
       "_isOv": false
     },
     {
