@@ -87,7 +87,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GCMS-02 Kantitatif Analiz (Tek Bileşen)",
@@ -97,7 +98,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GCMS-03 Kantitatif Analiz (İlave Her Bileşen)",
@@ -107,7 +109,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GCMS-04 Fitalat Analiz Paketi",
@@ -117,7 +120,8 @@
       "notes": "Paket içeriği: ASM-146",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GCMS-05 Pestisit Analiz Paketi",
@@ -127,7 +131,8 @@
       "notes": "Paket içeriği: TCLP-PES-1",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GCMS-06 Mikroplastik Maksi Analiz Paketi (Tüm paket içeriği)",
@@ -137,7 +142,8 @@
       "notes": "Paket içeriği: Polycarbonat, Polyethylene, PET, Polypropilen, PVC, Polystyrene, Synthetic rubber, Natural rubber",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GCMS-07 Mikroplastik Midi Analiz Paketi (Paketten 6 adet mikroplastik)",
@@ -147,7 +153,8 @@
       "notes": "Mikroplastik paket içeriğinden seçilecek 6 adet mikroplastiğin analizi",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GCMS-08 Mikroplastik Mini Analiz Paketi (Paketten 3 adet mikroplastik)",
@@ -157,7 +164,8 @@
       "notes": "Mikroplastik paket içeriğinden seçilecek 3 adet mikroplastiğin analizi",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GCMS-09 Nitrozamin Analiz Paketi",
@@ -167,7 +175,8 @@
       "notes": "Paket içeriği: N-Nitrosodimethylamine, N-Nitrosodibutylamine, N-Nitrosodi-n-propylamine, N-Nitrosomethylethylamine, N-Nitrosodiethylamine, 1-Nitrosopyrrolidine, 1-Nitrosopiperidine",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GCMS-10 Piroliz İşlemli Analiz",
@@ -177,7 +186,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GCMS-11 Numune Hazırlama (Filtreleme, Seyreltme, Santrifüj vb. Temel İşlemler)",
@@ -187,7 +197,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GCMS-12 Kütle Spektrumu Kütüphane Taraması",
@@ -197,7 +208,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "GCMS-13 Metot Geliştirme",
@@ -227,7 +239,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-02 Kantitatif Analiz (İlave Her Bileşen)",
@@ -237,7 +250,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-03 Numune Hazırlama (Filtreleme, Seyreltme, Santrifüj vb. Temel İşlemler)",
@@ -247,7 +261,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-04 Peptid Analiz Paketi",
@@ -257,7 +272,8 @@
       "notes": "Paket içeriği: Supelco H2016",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-05 Fenol Bileşikleri Analiz Paketi",
@@ -267,7 +283,8 @@
       "notes": "Paket içeriği: Supelco 861253",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-06 Polisiklik Aromatik Hidrokarbon (PAH) Analiz Paketi",
@@ -277,7 +294,8 @@
       "notes": "Paket içeriği: Supelco 861291",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-07 Maleik Asit Analizi",
@@ -287,7 +305,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-08 Oleropin (Oleuropein) Analizi",
@@ -297,7 +316,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-09 Toluen Analizi",
@@ -307,7 +327,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-10 Quercetin (Kuarsetin) Analizi",
@@ -317,7 +338,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-11 Gallik Asit Analizi",
@@ -327,7 +349,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-12 İzoflavonoid Analiz Paketi",
@@ -337,7 +360,8 @@
       "notes": "Paket içeriği: Diadzin, Genistin, Genistein",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-13 Furanokumarin Analiz Paketi",
@@ -347,7 +371,8 @@
       "notes": "Paket içeriği: Psoralen, Angelicin",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-14 SN38 (7-ethyl-10-hydroxycamptothecin) Topoizomeraz I İnhibitörü",
@@ -357,7 +382,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "HPLC-15 Metot Geliştirme",
@@ -387,7 +413,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LCMS-02 Kantitatif Analiz (Tek Bileşen)",
@@ -397,7 +424,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LCMS-03 Kantitatif Analiz (İlave Her Bileşen)",
@@ -407,7 +435,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LCMS-04 Numune Hazırlama (Filtreleme, Seyreltme, Santrifüj vb. Temel İşlemler)",
@@ -417,7 +446,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LCMS-05 Bisfenol A (BPA) Analizi",
@@ -427,7 +457,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LCMS-06 İndol Propionik Asit (İPA) Analizi",
@@ -437,7 +468,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LCMS-07 İndol Asetik Asit (İAA) Analizi",
@@ -447,7 +479,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LCMS-08 Perfloroalkil ve Polifloroalkil (PFAS) Analizi",
@@ -457,7 +490,8 @@
       "notes": "Paket içeriği: Perfluorobutanoic acid, Pentadecafluorooctanoic acid",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LCMS-09 Aminoasit Analiz Paketi",
@@ -467,7 +501,8 @@
       "notes": "Paket içeriği: Supelco AAS18",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LCMS-10 Jasmonik Asit Analizi",
@@ -477,7 +512,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LCMS-11 Kütüphane Taraması",
@@ -487,7 +523,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "LCMS-12 Metot Geliştirme",
@@ -517,7 +554,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
     {
       "name": "FESEM-02 Görüntüleme",
@@ -527,7 +565,8 @@
       "notes": "Numune hazırlama analizi talep edene aittir. 30 dakikada bir hizmet bedelinin yarısı olarak ücretlendirilir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
       "name": "FESEM-03 EDX Haritalandırma / Yarı Kantitatif Element Analizi",
@@ -537,7 +576,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "FESEM-04 Yorumlu Teknik Rapor",
@@ -557,7 +597,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "BET-02 Çok Noktalı BET Analizi",
@@ -567,7 +608,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "BET-03 Mikrogözenek Analizi + Adsorpsiyon İzotermi (Çok Noktalı BET, Gözenek Boyutu Dağılımı, Ortalama Gözenek Boyutu, Toplam Gözenek Hacmi)",
@@ -577,7 +619,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "BET-04 Mikrogözenek Analizi + Full İzoterm (Çok Noktalı BET, Gözenek Boyutu Dağılımı, Ortalama Gözenek Boyutu, Toplam Gözenek Hacmi)",
@@ -587,7 +630,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "BET-05 Yorumlu Teknik Rapor",
@@ -607,7 +651,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Yoğunluk ve Fiziksel Özellikler"
     },
     {
       "name": "HGP-02 Yorumlu Teknik Rapor",
@@ -627,7 +672,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Yoğunluk ve Fiziksel Özellikler"
     },
     {
       "name": "CP-02 Yorumlu Teknik Rapor",
@@ -647,7 +693,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "ZET-02 Nanopartikül Boyutu Ölçümü (Nanosizer / 0.6 nm – 5.0 µm)",
@@ -657,7 +704,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "ZET-03 pH'a Bağlı Zeta Potansiyeli Ölçümü (5 noktaya kadar)",
@@ -667,7 +715,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "ZET-04 pH'a Bağlı Zeta Potansiyeli Ölçümü (İlave Her Nokta)",
@@ -677,7 +726,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "ZET-05 Yorumlu Teknik Rapor",
@@ -697,7 +747,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "MSZ-02 Yorumlu Teknik Rapor",
