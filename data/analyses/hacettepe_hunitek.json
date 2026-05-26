@@ -76,7 +76,7 @@
       "_isOv": false
     },
     {
-      "name": "Parçacık Boyutu ve Boyut Dağılımı",
+      "name": "Parçacık Boyutu ve Boyut Dağılım (DLS)ı",
       "category": "Dinamik Işık Saçılması (DLS) – Zetasizer",
       "price": 1050,
       "currency": "TRY",
@@ -664,6 +664,16 @@
       "notes": "",
       "keyword_group": "Moleküler Genetik ve PCR Analizleri",
       "_isOv": false
+    },
+    {
+      "name": "Parçacık Boyutu ve Boyut Dağılımı (SLS)",
+      "category": "Statik Işık Saçılması (SLS) - Mastersizer",
+      "price": 1150,
+      "currency": "TRY",
+      "unit": "numune",
+      "notes": "",
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri",
+      "manual": true
     }
   ]
 }
