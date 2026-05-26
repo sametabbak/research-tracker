@@ -320,7 +320,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "UV-Vis / NIR Spektrum Analizi (Dalga Boyu Tarama)",
@@ -330,7 +331,8 @@
       "notes": "1) Sıvılar için en az 10 mL, katılar için en az 10 g olmalıdır. 2) Miktar (Konsantrasyon) Tayini için açıklama yapılmalıdır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Miktar (Konsantrasyon) Tayini (5 Standart için)",
@@ -340,7 +342,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Sıvı Numune Hazırlama (UV-Vis)",
@@ -350,7 +353,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Toz Numune Hazırlama (UV-Vis)",
@@ -360,7 +364,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Reflektans Tayini",
@@ -370,7 +375,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Transmitans Tayini",
@@ -380,7 +386,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Absorbans Tayini",
@@ -390,7 +397,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Toz Numune Spektrum Analizi",
@@ -400,7 +408,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Katı, İnce Film Spektrum Analizi",
@@ -410,7 +419,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Açıklık Faktörü (Openness Factor)",
@@ -420,7 +430,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Açıklık Faktörü Blockout",
@@ -430,7 +441,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Raporlandırma (UV-Vis)",
@@ -440,7 +452,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Reolojik Analiz",
@@ -450,7 +463,8 @@
       "notes": "1) Sıvı numuneler en az 60 mL, katı/jel numuneler en az 20 g olmalıdır. 2) HTC sistemi ile RT'dan 280°C'ye kadar analiz yapılabilir. 3) HTC sistemde farklı gaz kullanımında ekstra ücret alınır (N2: 400 TL/saat, Ar: 600 TL/saat). 4) Peltier Plate sistemi -20 ile 200°C arasında çalışır. 5) Viskozite analizleri oda sıcaklığında yapılır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Viskozite Analizi",
@@ -460,7 +474,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Genlik Analizi",
@@ -470,7 +485,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Frekans Analizi",
@@ -480,7 +496,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "İnce Film Analizi",
@@ -490,7 +507,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Sürtünme Analizi",
@@ -500,7 +518,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Yüksek Sıcaklık Polimer Akış Analizi",
@@ -510,7 +529,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Çekme-Basma Testi (60 N)",
@@ -520,7 +540,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Raporlandırma (Reolojik)",
@@ -530,7 +551,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Yüzey Gerilim Ölçümü (Sıvı Numune)",
@@ -540,7 +562,8 @@
       "notes": "1) Sıvı numuneler en az 50 mL olmalıdır. 2) Numunenin yoğunluk değeri verilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Yoğunluk Ölçümü",
@@ -550,7 +573,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Dinamik Temas Açısı Ölçümü",
@@ -560,7 +584,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Ara Faz Yüzey Gerilimi Ölçümü",
@@ -570,7 +595,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Islanabilirlik Ölçümü",
@@ -580,7 +606,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Raporlandırma (Yüzey Gerilimi)",
@@ -600,7 +627,8 @@
       "notes": "1) Numunenin en az bir yüzü düz olmalıdır. 2) Numune boyutları en az 1x1 cm tercih edilmektedir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Kayma Temas Açısı Ölçümü",
@@ -610,7 +638,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Yüzey Serbest Enerjisi Hesaplaması",
@@ -620,7 +649,8 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Raporlandırma (Temas Açısı)",
