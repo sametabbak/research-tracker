@@ -9,7 +9,8 @@
       "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
       "notes": "",
       "currency": "TRY",
-      "manual": true
+      "manual": true,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "GC-02 Kantitatif Analiz (İlave Her Bileşen)",
