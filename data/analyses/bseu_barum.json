@@ -3,7 +3,8 @@
   "center_name": "BSEU BARUM",
   "last_updated": "2026-05-26",
   "source_url": "https://www.bilecik.edu.tr/dosya/18153_1212_BARUM%20Fiyat%20Listesi%202026.pdf",
-  "analyses": [{
+  "analyses": [
+    {
       "name": "GC-01 Kantitatif Analiz (Tek Bileşen)",
       "price": 1300,
       "unit": "Adet",
