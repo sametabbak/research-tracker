@@ -3,5 +3,1249 @@
   "center_name": "BSEU BARUM",
   "last_updated": "2026-05-26",
   "source_url": "https://www.bilecik.edu.tr/dosya/18153_1212_BARUM%20Fiyat%20Listesi%202026.pdf",
-  "analyses": []
+  "analyses": [
+    {
+      "name": "GC-01 Kantitatif Analiz (Tek Bileşen)",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true,
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
+    },
+    {
+      "name": "GC-02 Kantitatif Analiz (İlave Her Bileşen)",
+      "price": 325,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GC-03 Numune Hazırlama (Filtreleme, Seyreltme, Santrifüj vb. Temel İşlemler)",
+      "price": 650,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GC-04 Yağ Asidi Analiz Paketi (FAME 37 Mix)",
+      "price": 6500,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
+      "notes": "Paket içeriği: Supelco 37 Component FAME Mix-CRM47885",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GC-05 Kısa Zincirli Yağ Asidi (SCFA) Analiz Paketi",
+      "price": 4550,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
+      "notes": "Paket içeriği: Supelco-Volatile Free Acid Mix-CRM46975",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GC-06 Metot Geliştirme",
+      "price": 7800,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
+      "notes": "Ticari indirim kapsamı dışındadır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GC-07 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Alev İyonlaşma Dedektörlü (GC-FID)",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-01 Kalitatif Analiz",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-02 Kantitatif Analiz (Tek Bileşen)",
+      "price": 1625,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-03 Kantitatif Analiz (İlave Her Bileşen)",
+      "price": 325,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-04 Fitalat Analiz Paketi",
+      "price": 6500,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "Paket içeriği: ASM-146",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-05 Pestisit Analiz Paketi",
+      "price": 6500,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "Paket içeriği: TCLP-PES-1",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-06 Mikroplastik Maksi Analiz Paketi (Tüm paket içeriği)",
+      "price": 15600,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "Paket içeriği: Polycarbonat, Polyethylene, PET, Polypropilen, PVC, Polystyrene, Synthetic rubber, Natural rubber",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-07 Mikroplastik Midi Analiz Paketi (Paketten 6 adet mikroplastik)",
+      "price": 11700,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "Mikroplastik paket içeriğinden seçilecek 6 adet mikroplastiğin analizi",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-08 Mikroplastik Mini Analiz Paketi (Paketten 3 adet mikroplastik)",
+      "price": 7800,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "Mikroplastik paket içeriğinden seçilecek 3 adet mikroplastiğin analizi",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-09 Nitrozamin Analiz Paketi",
+      "price": 4550,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "Paket içeriği: N-Nitrosodimethylamine, N-Nitrosodibutylamine, N-Nitrosodi-n-propylamine, N-Nitrosomethylethylamine, N-Nitrosodiethylamine, 1-Nitrosopyrrolidine, 1-Nitrosopiperidine",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-10 Piroliz İşlemli Analiz",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-11 Numune Hazırlama (Filtreleme, Seyreltme, Santrifüj vb. Temel İşlemler)",
+      "price": 650,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-12 Kütle Spektrumu Kütüphane Taraması",
+      "price": 0,
+      "unit": "Ücretsiz",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-13 Metot Geliştirme",
+      "price": 7800,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "Ticari indirim kapsamı dışındadır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "GCMS-14 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Gaz Kromatografisi-Kütle Spektrometresi (GC-MS)",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-01 Kantitatif Analiz (Tek Bileşen)",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-02 Kantitatif Analiz (İlave Her Bileşen)",
+      "price": 390,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-03 Numune Hazırlama (Filtreleme, Seyreltme, Santrifüj vb. Temel İşlemler)",
+      "price": 650,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-04 Peptid Analiz Paketi",
+      "price": 5200,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "Paket içeriği: Supelco H2016",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-05 Fenol Bileşikleri Analiz Paketi",
+      "price": 5200,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "Paket içeriği: Supelco 861253",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-06 Polisiklik Aromatik Hidrokarbon (PAH) Analiz Paketi",
+      "price": 6500,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "Paket içeriği: Supelco 861291",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-07 Maleik Asit Analizi",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-08 Oleropin (Oleuropein) Analizi",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-09 Toluen Analizi",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-10 Quercetin (Kuarsetin) Analizi",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-11 Gallik Asit Analizi",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-12 İzoflavonoid Analiz Paketi",
+      "price": 5200,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "Paket içeriği: Diadzin, Genistin, Genistein",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-13 Furanokumarin Analiz Paketi",
+      "price": 5200,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "Paket içeriği: Psoralen, Angelicin",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-14 SN38 (7-ethyl-10-hydroxycamptothecin) Topoizomeraz I İnhibitörü",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-15 Metot Geliştirme",
+      "price": 7800,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "Ticari indirim kapsamı dışındadır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC-16 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Yüksek Performanslı Sıvı Kromatografisi (HPLC)",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LCMS-01 Kalitatif Analiz",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LCMS-02 Kantitatif Analiz (Tek Bileşen)",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LCMS-03 Kantitatif Analiz (İlave Her Bileşen)",
+      "price": 390,
+      "unit": "Adet",
+      "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LCMS-04 Numune Hazırlama (Filtreleme, Seyreltme, Santrifüj vb. Temel İşlemler)",
+      "price": 650,
+      "unit": "Adet",
+      "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LCMS-05 Bisfenol A (BPA) Analizi",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LCMS-06 İndol Propionik Asit (İPA) Analizi",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LCMS-07 İndol Asetik Asit (İAA) Analizi",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LCMS-08 Perfloroalkil ve Polifloroalkil (PFAS) Analizi",
+      "price": 5200,
+      "unit": "Adet",
+      "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
+      "notes": "Paket içeriği: Perfluorobutanoic acid, Pentadecafluorooctanoic acid",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LCMS-09 Aminoasit Analiz Paketi",
+      "price": 7800,
+      "unit": "Adet",
+      "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
+      "notes": "Paket içeriği: Supelco AAS18",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LCMS-10 Jasmonik Asit Analizi",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LCMS-11 Kütüphane Taraması",
+      "price": 0,
+      "unit": "Ücretsiz",
+      "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LCMS-12 Metot Geliştirme",
+      "price": 7800,
+      "unit": "Adet",
+      "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
+      "notes": "Ticari indirim kapsamı dışındadır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "LCMS-13 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Sıvı Kromatografisi-Kütle-Kütle Spektrometresi (LC-MS/MS)",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "FESEM-01 Au veya Pt Kaplama (1 set en fazla 9 numune)",
+      "price": 260,
+      "unit": "Adet",
+      "category": "Alan Emisyonlu Taramalı Elektron Mikroskobu (FESEM-EDX)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "FESEM-02 Görüntüleme",
+      "price": 2600,
+      "unit": "Saat",
+      "category": "Alan Emisyonlu Taramalı Elektron Mikroskobu (FESEM-EDX)",
+      "notes": "Numune hazırlama analizi talep edene aittir. 30 dakikada bir hizmet bedelinin yarısı olarak ücretlendirilir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "FESEM-03 EDX Haritalandırma / Yarı Kantitatif Element Analizi",
+      "price": 2600,
+      "unit": "Saat",
+      "category": "Alan Emisyonlu Taramalı Elektron Mikroskobu (FESEM-EDX)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "FESEM-04 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Alan Emisyonlu Taramalı Elektron Mikroskobu (FESEM-EDX)",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "BET-01 Tek Noktalı BET Analizi",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "BET Yüzey Alanı ve Mikrogözenek Boyutu Analizatörü",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "BET-02 Çok Noktalı BET Analizi",
+      "price": 1625,
+      "unit": "Adet",
+      "category": "BET Yüzey Alanı ve Mikrogözenek Boyutu Analizatörü",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "BET-03 Mikrogözenek Analizi + Adsorpsiyon İzotermi (Çok Noktalı BET, Gözenek Boyutu Dağılımı, Ortalama Gözenek Boyutu, Toplam Gözenek Hacmi)",
+      "price": 2600,
+      "unit": "Adet",
+      "category": "BET Yüzey Alanı ve Mikrogözenek Boyutu Analizatörü",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "BET-04 Mikrogözenek Analizi + Full İzoterm (Çok Noktalı BET, Gözenek Boyutu Dağılımı, Ortalama Gözenek Boyutu, Toplam Gözenek Hacmi)",
+      "price": 3250,
+      "unit": "Adet",
+      "category": "BET Yüzey Alanı ve Mikrogözenek Boyutu Analizatörü",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "BET-05 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "BET Yüzey Alanı ve Mikrogözenek Boyutu Analizatörü",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HGP-01 Gerçek Hacim ve Yoğunluk Ölçümü",
+      "price": 975,
+      "unit": "Adet",
+      "category": "Helyum (He) Gaz Piknometresi",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HGP-02 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Helyum (He) Gaz Piknometresi",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "CP-01 Bağıl Yoğunluk Ölçümü",
+      "price": 975,
+      "unit": "Adet",
+      "category": "Cam Tipi Piknometre",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "CP-02 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Cam Tipi Piknometre",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "ZET-01 Zeta Potansiyeli Ölçümü",
+      "price": 780,
+      "unit": "Adet",
+      "category": "Zeta Potansiyometresi (DLS Tekniği)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "ZET-02 Nanopartikül Boyutu Ölçümü (Nanosizer / 0.6 nm – 5.0 µm)",
+      "price": 780,
+      "unit": "Adet",
+      "category": "Zeta Potansiyometresi (DLS Tekniği)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "ZET-03 pH'a Bağlı Zeta Potansiyeli Ölçümü (5 noktaya kadar)",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Zeta Potansiyometresi (DLS Tekniği)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "ZET-04 pH'a Bağlı Zeta Potansiyeli Ölçümü (İlave Her Nokta)",
+      "price": 390,
+      "unit": "Adet",
+      "category": "Zeta Potansiyometresi (DLS Tekniği)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "ZET-05 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Zeta Potansiyometresi (DLS Tekniği)",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MSZ-01 Mikropartikül Boyutu Ölçümü (200 nm – 2000 µm)",
+      "price": 780,
+      "unit": "Adet",
+      "category": "Partikül Boyut Ölçüm Cihazı (Mastersizer, Lazer Kırınım)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MSZ-02 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Partikül Boyut Ölçüm Cihazı (Mastersizer, Lazer Kırınım)",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "CHNS-01 C, H ve N Analizi",
+      "price": 975,
+      "unit": "Adet",
+      "category": "Elementel Analiz Cihazı (CHN-S)",
+      "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "CHNS-02 C, H, N ve S Analizi",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Elementel Analiz Cihazı (CHN-S)",
+      "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "CHNS-03 S Analizi",
+      "price": 780,
+      "unit": "Adet",
+      "category": "Elementel Analiz Cihazı (CHN-S)",
+      "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "CHNS-04 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Elementel Analiz Cihazı (CHN-S)",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "AAS-01 Numune Hazırlama (Yaş Yakma)",
+      "price": 520,
+      "unit": "Adet",
+      "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
+      "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır. Lambalar ayrı ayrı ücretlendirilecektir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "AAS-02 Numune Hazırlama (Mikrodalga)",
+      "price": 780,
+      "unit": "Adet",
+      "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "AAS-03 Alevli Analiz (Asetilen+Hava) – 1-5 Element, Element Başı",
+      "price": 780,
+      "unit": "Adet",
+      "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "AAS-04 Alevli Analiz (Asetilen+Hava) – 6 ve Üstü Element, Element Başı",
+      "price": 650,
+      "unit": "Adet",
+      "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "AAS-05 Alevli Analiz (N2O+Hava) – 1-5 Element, Element Başı",
+      "price": 780,
+      "unit": "Adet",
+      "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "AAS-06 Alevli Analiz (N2O+Hava) – 6 ve Üstü Element, Element Başı",
+      "price": 650,
+      "unit": "Adet",
+      "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "AAS-07 Grafit Fırın ile Analiz – 1-5 Element, Element Başı",
+      "price": 910,
+      "unit": "Adet",
+      "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "AAS-08 Grafit Fırın ile Analiz – 6 ve Üstü Element, Element Başı",
+      "price": 780,
+      "unit": "Adet",
+      "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "AAS-09 Hidrür Yöntemi ile Analiz – 1-5 Element, Element Başı",
+      "price": 910,
+      "unit": "Adet",
+      "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "AAS-10 Hidrür Yöntemi ile Analiz – 6 ve Üstü Element, Element Başı",
+      "price": 780,
+      "unit": "Adet",
+      "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "AAS-11 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "FTIR-01 Potasyum Bromür (KBr) Pelet Yöntemi",
+      "price": 780,
+      "unit": "Adet",
+      "category": "Fourier Dönüşümlü Kızılötesi (FTIR) Spektrometresi",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "FTIR-02 Azaltılmış Toplam Yansıma (ATR) Yöntemi",
+      "price": 520,
+      "unit": "Adet",
+      "category": "Fourier Dönüşümlü Kızılötesi (FTIR) Spektrometresi",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "FTIR-03 Azot Gazı Altında ATR Yöntemi",
+      "price": 780,
+      "unit": "Adet",
+      "category": "Fourier Dönüşümlü Kızılötesi (FTIR) Spektrometresi",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "FTIR-04 Kütüphane Taraması",
+      "price": 0,
+      "unit": "Ücretsiz",
+      "category": "Fourier Dönüşümlü Kızılötesi (FTIR) Spektrometresi",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "FTIR-05 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Fourier Dönüşümlü Kızılötesi (FTIR) Spektrometresi",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRF-01 Eritiş Cihazı ile Numune Hazırlama",
+      "price": 650,
+      "unit": "Adet",
+      "category": "Dalga Boyu Dağılımlı X-Işını Floresans Spektrometresi (WD-XRF)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRF-02 Kırma, Öğütme ve Presleme",
+      "price": 520,
+      "unit": "Adet",
+      "category": "Dalga Boyu Dağılımlı X-Işını Floresans Spektrometresi (WD-XRF)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRF-03 Kızdırma Kaybı Bulma",
+      "price": 520,
+      "unit": "Adet",
+      "category": "Dalga Boyu Dağılımlı X-Işını Floresans Spektrometresi (WD-XRF)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRF-04 Katı Numune Analizi",
+      "price": 975,
+      "unit": "Adet",
+      "category": "Dalga Boyu Dağılımlı X-Işını Floresans Spektrometresi (WD-XRF)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRF-05 Sıvı Numune Analizi",
+      "price": 975,
+      "unit": "Adet",
+      "category": "Dalga Boyu Dağılımlı X-Işını Floresans Spektrometresi (WD-XRF)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRF-06 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Dalga Boyu Dağılımlı X-Işını Floresans Spektrometresi (WD-XRF)",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD-01 Numune Hazırlama (Kesme, Öğütme vb.)",
+      "price": 520,
+      "unit": "Adet",
+      "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD-02 XRD Patern Çekim (11-20°/dk tarama hızı)",
+      "price": 975,
+      "unit": "Adet",
+      "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD-03 XRD Patern Çekim (6-10°/dk tarama hızı)",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD-04 XRD Patern Çekim (3-5°/dk tarama hızı)",
+      "price": 1625,
+      "unit": "Adet",
+      "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD-05 XRD Patern Çekim (1-2°/dk tarama hızı)",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD-06 Kalitatif Faz Analizi / Patern Tayini (11-20°/dk)",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD-07 Kalitatif Faz Analizi / Patern Tayini (6-10°/dk)",
+      "price": 1625,
+      "unit": "Adet",
+      "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD-08 Kalitatif Faz Analizi / Patern Tayini (3-5°/dk)",
+      "price": 1950,
+      "unit": "Adet",
+      "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD-09 Kalitatif Faz Analizi / Patern Tayini (1-2°/dk)",
+      "price": 2275,
+      "unit": "Adet",
+      "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD-10 Daha Sonradan İstenen Kütüphane Taramaları",
+      "price": 390,
+      "unit": "Adet",
+      "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD-11 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Yüksek Sıcaklık X-Işını Difraktometresi (HT-XRD)",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MHT-01 Vickers veya Knopp Yöntemi ile Sertlik Ölçümü (1g – 10 kg yük aralığı)",
+      "price": 650,
+      "unit": "Adet",
+      "category": "Mikrosertlik Ölçüm Cihazı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MHT-02 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Mikrosertlik Ölçüm Cihazı",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MKD-01 Bitki / Tarımsal Numuneler",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Mikrodalga Ekstraksiyon Cihazı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MKD-02 Katalizör-Pigment Numuneleri",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Mikrodalga Ekstraksiyon Cihazı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MKD-03 Seramik-Refrakter Numuneleri",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Mikrodalga Ekstraksiyon Cihazı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MKD-04 Kimyasal Numuneler",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Mikrodalga Ekstraksiyon Cihazı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MKD-05 Biyolojik / Klinik Numuneler",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Mikrodalga Ekstraksiyon Cihazı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MKD-06 Çevresel Kirletici Numuneleri",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Mikrodalga Ekstraksiyon Cihazı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MKD-07 Gıda Numuneleri",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Mikrodalga Ekstraksiyon Cihazı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MKD-08 Yem Numuneleri",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Mikrodalga Ekstraksiyon Cihazı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MKD-09 Jeolojik Numuneler",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Mikrodalga Ekstraksiyon Cihazı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MKD-10 Metal ve Alaşım Numuneleri",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Mikrodalga Ekstraksiyon Cihazı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MKD-11 Petrokimya Numuneleri",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Mikrodalga Ekstraksiyon Cihazı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MKD-12 Plastik ve Polimer Numuneleri",
+      "price": 1300,
+      "unit": "Adet",
+      "category": "Mikrodalga Ekstraksiyon Cihazı",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "MKD-13 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Mikrodalga Ekstraksiyon Cihazı",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "CRCT-01 TQC CC2000 Çapraz Kesim Yapışma Testi",
+      "price": 975,
+      "unit": "Adet",
+      "category": "Cross-Cut (Kaplama Çapraz Kesim Testi)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "CRCT-02 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Cross-Cut (Kaplama Çapraz Kesim Testi)",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "BGA-01 Baca Gazı Analizi (CO, NO, NO2, SO2)",
+      "price": 6500,
+      "unit": "Adet",
+      "category": "Baca Gazı Analizatörü",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "BGA-02 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Baca Gazı Analizatörü",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "SM-01 Kullanım",
+      "price": 520,
+      "unit": "Saat",
+      "category": "Stereo (Diseksiyon) Mikroskop",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "SM-02 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Stereo (Diseksiyon) Mikroskop",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "RF-01 Numune Hazırlama",
+      "price": 195,
+      "unit": "Adet",
+      "category": "Refraktometre",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "RF-02 Refraktif İndeks Ölçümü",
+      "price": 325,
+      "unit": "Adet",
+      "category": "Refraktometre",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "RF-03 Briks Ölçümü",
+      "price": 325,
+      "unit": "Adet",
+      "category": "Refraktometre",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "RF-04 Yorumlu Teknik Rapor",
+      "price": 20000,
+      "unit": "Adet",
+      "category": "Refraktometre",
+      "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "PH-01 pH Ölçümü",
+      "price": 195,
+      "unit": "Adet",
+      "category": "pH Metre ve Sıvı Örnek Sertlik Ölçümleri",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "SR-01 Sıvı Numune Sertlik Ölçümü",
+      "price": 195,
+      "unit": "Adet",
+      "category": "pH Metre ve Sıvı Örnek Sertlik Ölçümleri",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "KF-01 Kullanım",
+      "price": 975,
+      "unit": "Gün",
+      "category": "Kül Fırını",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "ET-01 Kullanım",
+      "price": 975,
+      "unit": "Gün",
+      "category": "Etüv / İnkübatör",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "SS-01 Saf Su",
+      "price": 52,
+      "unit": "Litre",
+      "category": "Saf / Ultra Saf Su",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "SS-02 Ultra Saf Su",
+      "price": 65,
+      "unit": "Litre",
+      "category": "Saf / Ultra Saf Su",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    }
+  ]
 }
