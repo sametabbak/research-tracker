@@ -1189,7 +1189,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Çekme Testi (20 kN)",
@@ -1243,7 +1244,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Çekme Testi (300 kN)",
@@ -1297,7 +1299,8 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false
+      "_isOv": false,
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Tersine Mühendislik",
