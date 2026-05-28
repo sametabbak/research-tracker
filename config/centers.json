@@ -329,5 +329,24 @@
       6,
       7
     ]
+  },
+  {
+    "id": "mcbu_defam",
+    "name": "MCBU DEFAM",
+    "university": "Manisa Celal Bayar Üniversitesi",
+    "city": "Manisa",
+    "url": "https://defam.mcbu.edu.tr/",
+    "pricing_url": "https://defam.mcbu.edu.tr/Sayfa/UCRETLENDIRME",
+    "fetch_method": "manual",
+    "active": true,
+    "reference": false,
+    "check_months": [
+      12,
+      1,
+      2,
+      5,
+      6,
+      7
+    ]
   }
 ]
