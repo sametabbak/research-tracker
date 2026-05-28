@@ -150,18 +150,6 @@
     "last_updated": "2026-05-26"
   },
   {
-    "id": "neu_bitam",
-    "name": "NEÜ BİTAM",
-    "university": "Necmettin Erbakan Üniversitesi",
-    "city": "Konya",
-    "url": "https://erbakan.edu.tr/tr/birim/bitam",
-    "pricing_url": "https://erbakan.edu.tr/tr/birim/bitam/sayfa/analiz-ucretleri",
-    "active": true,
-    "reference": false,
-    "analysis_count": 150,
-    "last_updated": "2026-05-18"
-  },
-  {
     "id": "mcbu_defam",
     "name": "MCBU DEFAM",
     "university": "Manisa Celal Bayar Üniversitesi",
@@ -175,6 +163,20 @@
       12
     ],
     "active": true,
-    "reference": false
+    "reference": false,
+    "analysis_count": 119,
+    "last_updated": "2026-05-28"
+  },
+  {
+    "id": "neu_bitam",
+    "name": "NEÜ BİTAM",
+    "university": "Necmettin Erbakan Üniversitesi",
+    "city": "Konya",
+    "url": "https://erbakan.edu.tr/tr/birim/bitam",
+    "pricing_url": "https://erbakan.edu.tr/tr/birim/bitam/sayfa/analiz-ucretleri",
+    "active": true,
+    "reference": false,
+    "analysis_count": 150,
+    "last_updated": "2026-05-18"
   }
 ]
