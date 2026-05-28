@@ -12,8 +12,7 @@
       "notes": "1) Cihaza 9 adet numune aynı anda yerleştirilebilir. 2) Cihaz ile 1 saat içerisinde en fazla 9 adet numuneye bakılabilir. 3) Analizi yapılacak numuneler ıslak olmamalı ve nem içermemelidir. 4) Kaplama cihazı ile tek seferde en fazla 6 adet numuneye kaplama yapılabilmektedir. 5) EDS analizlerinde numune kalınlığı 1 cm'yi geçmemelidir. 6) STEM detektörü ile incelemelerde 9 adet numune cihaza yerleştirilebilir. 7) STEM analizlerinde STEM gridleri ile hazır getirilmelidir. 8) 1 saatten az yapılan analizlerde 1 saatlik ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "SEM-EDX ve EBSD Analizleri",
-      "_isOv": false
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "Stem Dedektörü Analizi",
@@ -23,8 +22,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri",
-      "_isOv": false
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "Numune Kaplama (Au)",
@@ -34,8 +32,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)",
-      "_isOv": false
+      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
     {
       "name": "Raporlandırma (SEM)",
@@ -45,8 +42,7 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Atomik Kuvvet Mikroskobu Analizi",
@@ -56,8 +52,7 @@
       "notes": "1) Numune 1cmx1cmx0.5cm boyutlarında olmalıdır. 2) Yüzey pürüzlülüğü 5µm'yi geçmemelidir. 3) AFM sıvı hücre analizlerinde numuneden kaynaklı cihaz hasarı olması durumunda gönderen sorumlu tutulur. 4) STM analizinde numune iletken olmalıdır. 5) 1 saatten az yapılan analizlerde 1 saatlik ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri",
-      "_isOv": false
+      "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
       "name": "AFM Sıvı Hücre Analizi",
@@ -67,8 +62,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri",
-      "_isOv": false
+      "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
       "name": "Raporlandırma (AFM)",
@@ -78,8 +72,7 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Spektrum Analizi",
@@ -89,8 +82,7 @@
       "notes": "1) Toz numune parçacık boyutu 20 mikrondan küçük olmalıdır. 2) Toz numune miktarı en az 1 g olmalıdır. 3) Patern tayini için numune içeriği biliniyorsa belirtilmelidir. 4) Theta ölçüm açısı aralığı belirtilmelidir. 5) Plaka/ince film numuneleri en az 1 cm çapında, kalınlık <3 mm olmalıdır. 6) 30 dakika sonrasında her yarım saat için 300 TL ilave edilir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Patern Tayini",
@@ -100,8 +92,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Yüzey Stres Ölçümü",
@@ -111,8 +102,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Standart Numune Hazırlama (XRD)",
@@ -122,8 +112,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Raporlandırma (XRD)",
@@ -133,8 +122,7 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Çok Noktalı BET (Mikro)",
@@ -144,19 +132,17 @@
       "notes": "1) Toz numune miktarı en az 1 gr olmalıdır. Katı numuneler 1 cm çaplı cam tüpten geçecek boyutlarda olmalıdır. 2) Sıvı numunelerde ölçüm yapılamamaktadır. 3) Analizden önce degaz koşulları belirtilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri",
-      "_isOv": false
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
-      "name": "Çok Noktalı BET (Mikro) + Gözenek Boyut Dağılım Analizi",
+      "name": "Çok Noktalı BET (Mikro) - Gözenek Boyut Dağılım Analizi",
       "price": 1750,
       "unit": "Numune",
       "category": "Özgül Yüzey Alanı-Gözeneklilik (BET)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri",
-      "_isOv": false
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "Raporlandırma (BET)",
@@ -166,8 +152,7 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "TGA / DTA",
@@ -177,8 +162,7 @@
       "notes": "1) Numune miktarı en az 1 g olmalıdır. 2) STA cihazı en fazla 1400°C sıcaklığa çıkabilir. 3) Yüksek sıcaklıklarda alümina pan 3000 TL, platin pan 4500 TL, safir pan 3500 TL ekstra ödeme alınır. 4) 1 saatten az süren analizlerden 1 saat ücreti alınır. 5) Aşırı asidik/patlayıcı maddeden kaynaklanan zararı gönderen karşılar.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "DTA (Diferansiyel Termal Analiz)",
-      "_isOv": false
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "Raporlandırma (TGA/DTA)",
@@ -188,8 +172,7 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "DSC",
@@ -199,8 +182,7 @@
       "notes": "1) Numune miktarı en az 1 g olmalıdır. 2) DSC cihazı -75°C ile 550°C arasında çalışır. 3) 1 saatten az süren analizlerden 1 saat ücreti alınır. 4) Aşırı asidik/patlayıcı maddeden kaynaklanan zararı gönderen karşılar.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)",
-      "_isOv": false
+      "keyword_group": "DSC (Diferansiyel Taramalı Kalorimetri)"
     },
     {
       "name": "Raporlandırma (DSC)",
@@ -210,8 +192,7 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "CHNS Analizi",
@@ -221,8 +202,7 @@
       "notes": "1) Numune miktarı en az 20 mg ependorf tüpte olmalıdır. 2) CHNS analizi için en az 20 numune olduğunda analize başlanır. 3) Oksijen analizi için en az 40 numune olduğunda analize başlanır. 4) S analizi isteniyorsa beklenen % S içeriği formda belirtilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Genel Elementel Analizler (CHNS vb.)",
-      "_isOv": false
+      "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
     },
     {
       "name": "Oksijen Analizi",
@@ -232,8 +212,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Genel Elementel Analizler (CHNS vb.)",
-      "_isOv": false
+      "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
     },
     {
       "name": "Raporlandırma (Elemental)",
@@ -243,8 +222,7 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Zeta Potansiyel Ölçümü",
@@ -254,8 +232,7 @@
       "notes": "1) Dispersant olarak saf su kullanılmaktadır. 2) Numuneler en az 3 mL olmalıdır. 3) Reaktif indeksi ve absorbsiyon değerleri verilmelidir. 4) 5 adetten fazla numunelerde %20, 10 adetten fazla numunelerde %30 indirim uygulanır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri",
-      "_isOv": false
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Nano Parçacık Boyut Analizi",
@@ -265,8 +242,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri",
-      "_isOv": false
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Parçacık Boyut Numune Hazırlama",
@@ -276,8 +252,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri",
-      "_isOv": false
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Mikro Parçacık Boyut Dağılım Analizi (Hava İçinde)",
@@ -287,8 +262,7 @@
       "notes": "1) Sıvı içerisindeki dağılmış katılar, kolloidler ve emülsiyonlar analiz edilebilir. 2) Reaktif indeksi ve absorbsiyon değerleri verilmelidir. 3) Numune miktarı en az 10 g olmalıdır. 4) Dispersantlar çözücüleri ile birlikte verilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri",
-      "_isOv": false
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Mikro Parçacık Boyut Dağılım Analizi (Su İçinde)",
@@ -298,8 +272,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri",
-      "_isOv": false
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Mikro Parçacık Boyut Dağılım Analizi (Organik Çözücü İçinde)",
@@ -309,8 +282,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri",
-      "_isOv": false
+      "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
       "name": "Raporlandırma (Mikro Parçacık)",
@@ -320,8 +292,7 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "UV-Vis / NIR Spektrum Analizi (Dalga Boyu Tarama)",
@@ -331,8 +302,7 @@
       "notes": "1) Sıvılar için en az 10 mL, katılar için en az 10 g olmalıdır. 2) Miktar (Konsantrasyon) Tayini için açıklama yapılmalıdır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Miktar (Konsantrasyon) Tayini (5 Standart için)",
@@ -342,8 +312,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Sıvı Numune Hazırlama (UV-Vis)",
@@ -353,8 +322,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Toz Numune Hazırlama (UV-Vis)",
@@ -364,8 +332,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Reflektans Tayini",
@@ -375,8 +342,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Transmitans Tayini",
@@ -386,8 +352,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Absorbans Tayini",
@@ -397,8 +362,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Toz Numune Spektrum Analizi",
@@ -408,8 +372,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Katı, İnce Film Spektrum Analizi",
@@ -419,8 +382,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Açıklık Faktörü (Openness Factor)",
@@ -430,8 +392,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Açıklık Faktörü Blockout",
@@ -441,8 +402,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "Raporlandırma (UV-Vis)",
@@ -452,8 +412,7 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Reolojik Analiz",
@@ -463,8 +422,7 @@
       "notes": "1) Sıvı numuneler en az 60 mL, katı/jel numuneler en az 20 g olmalıdır. 2) HTC sistemi ile RT'dan 280°C'ye kadar analiz yapılabilir. 3) HTC sistemde farklı gaz kullanımında ekstra ücret alınır (N2: 400 TL/saat, Ar: 600 TL/saat). 4) Peltier Plate sistemi -20 ile 200°C arasında çalışır. 5) Viskozite analizleri oda sıcaklığında yapılır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Reoloji ve Viskozite Ölçümleri",
-      "_isOv": false
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Viskozite Analizi",
@@ -474,8 +432,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Reoloji ve Viskozite Ölçümleri",
-      "_isOv": false
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Genlik Analizi",
@@ -485,8 +442,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Reoloji ve Viskozite Ölçümleri",
-      "_isOv": false
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Frekans Analizi",
@@ -496,8 +452,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Reoloji ve Viskozite Ölçümleri",
-      "_isOv": false
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "İnce Film Analizi",
@@ -507,8 +462,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Reoloji ve Viskozite Ölçümleri",
-      "_isOv": false
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Sürtünme Analizi",
@@ -518,8 +472,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Reoloji ve Viskozite Ölçümleri",
-      "_isOv": false
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Yüksek Sıcaklık Polimer Akış Analizi",
@@ -529,8 +482,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Reoloji ve Viskozite Ölçümleri",
-      "_isOv": false
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Çekme-Basma Testi (60 N)",
@@ -540,8 +492,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Reoloji ve Viskozite Ölçümleri",
-      "_isOv": false
+      "keyword_group": "Reoloji ve Viskozite Ölçümleri"
     },
     {
       "name": "Raporlandırma (Reolojik)",
@@ -551,8 +502,7 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Yüzey Gerilim Ölçümü (Sıvı Numune)",
@@ -562,8 +512,7 @@
       "notes": "1) Sıvı numuneler en az 50 mL olmalıdır. 2) Numunenin yoğunluk değeri verilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler",
-      "_isOv": false
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Yoğunluk Ölçümü",
@@ -573,8 +522,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler",
-      "_isOv": false
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Dinamik Temas Açısı Ölçümü",
@@ -584,8 +532,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler",
-      "_isOv": false
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Ara Faz Yüzey Gerilimi Ölçümü",
@@ -595,8 +542,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler",
-      "_isOv": false
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Islanabilirlik Ölçümü",
@@ -606,8 +552,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler",
-      "_isOv": false
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Raporlandırma (Yüzey Gerilimi)",
@@ -617,8 +562,7 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "Temas Açısı Ölçümü (Katı Yüzey)",
@@ -628,8 +572,7 @@
       "notes": "1) Numunenin en az bir yüzü düz olmalıdır. 2) Numune boyutları en az 1x1 cm tercih edilmektedir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler",
-      "_isOv": false
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Kayma Temas Açısı Ölçümü",
@@ -639,8 +582,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler",
-      "_isOv": false
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Yüzey Serbest Enerjisi Hesaplaması",
@@ -650,8 +592,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler",
-      "_isOv": false
+      "keyword_group": "Yüzey Gerilimi, Temas Açısı ve Fiziksel Ölçümler"
     },
     {
       "name": "Raporlandırma (Temas Açısı)",
@@ -661,8 +602,7 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "5x, 20x, 50x, 100x Optik Büyütme Altında Her Bir Spektrum",
@@ -672,7 +612,6 @@
       "notes": "1) Numune miktarı en az 0.5 g olmalıdır. 2) Analiz için numune yüksekliği en fazla 1 cm olmalıdır. 3) Kullanılacak lazer kaynağı ve kırınım ağı önceden belirtilmelidir. 4) Kör denemelerde saatlik ücret alınır. 5) Her spektrum için dijital kamera görüntüsü ücretsiz verilir. 6) RUFF Kütüphanesi karşılaştırması: 50 TL/spektrum; Organik kütüphane: 100 TL/spektrum.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -683,7 +622,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -694,7 +632,6 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -705,7 +642,6 @@
       "notes": "1) LifeTime Analizi için lazer kaynağı 360 ± 10 nm'dir. 2) Sıvılar için en az 10 mL, katılar için en az 10 g olmalıdır. 3) Özel çözücü gerekiyorsa numune ile birlikte gönderilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -716,7 +652,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -727,7 +662,6 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -738,7 +672,6 @@
       "notes": "1) Kütüphane taraması istenirse ilave 300 TL/numune alınır. 2) KBr cell hazırlanması gerekiyorsa ilave 500 TL/numune alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -749,7 +682,6 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -760,7 +692,6 @@
       "notes": "1) Analiz edilebilecek element listesi ICP-MS Analiz İstek Formundan ulaşılabilir. 2) Referans metot isteniyorsa form ile birlikte teslim edilmelidir. 3) Özel kimyasallar numune ile birlikte teslim edilmelidir. 4) Su haricindeki numuneler için Mikro Dalga Numune Hazırlama seçeneği işaretlenmelidir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
@@ -771,7 +702,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
@@ -782,7 +712,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
@@ -793,7 +722,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
@@ -804,7 +732,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
@@ -815,7 +742,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
@@ -826,7 +752,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
@@ -837,7 +762,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
@@ -848,7 +772,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
@@ -859,7 +782,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
@@ -870,7 +792,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
@@ -881,7 +802,6 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -892,7 +812,6 @@
       "notes": "1) Mevcut olmayan standart/kimyasal/sarf malzeme talep eden kişi/kuruluş tarafından temin edilmelidir. 2) Metot validasyonu numune sayısına göre fiyatlandırılır. 3) 21-70 numune için %20, >70 numune için %30 indirim uygulanır. 4) Numune hazırlama ve yeni metot geliştirme için uzman personel ile görüşünüz.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -903,7 +822,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -914,7 +832,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -925,7 +842,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -936,7 +852,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -947,7 +862,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -958,7 +872,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -969,7 +882,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -980,7 +892,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -991,7 +902,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -1002,7 +912,6 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1013,7 +922,6 @@
       "notes": "1) Mevcut olmayan standart/kimyasal/sarf malzeme talep eden kişi/kuruluş tarafından temin edilmelidir. 2) Numune hazırlama ve yeni metot geliştirme için uzman personel ile görüşünüz.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -1024,7 +932,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -1035,7 +942,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -1046,7 +952,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -1057,7 +962,6 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1068,7 +972,6 @@
       "notes": "1) Numune en az 1cmx1cm yüzeye sahip olmalıdır. 2) Numune yüksekliği en fazla 5 mm olmalıdır. 3) Analizler 100, 200, 500, 1000 ve 2000 gram yükler ile yapılabilir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrosertlik ve Makrosertlik Testleri"
     },
     {
@@ -1079,7 +982,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrosertlik ve Makrosertlik Testleri"
     },
     {
@@ -1090,7 +992,6 @@
       "notes": "Analiz numune kapları 10, 35, 100 cc standart silindirik kaplardır. Numune miktarı ve boyutları bu kaplardan birine uyacak şekilde olmalıdır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Yoğunluk ve Fiziksel Özellikler"
     },
     {
@@ -1101,7 +1002,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
@@ -1112,7 +1012,6 @@
       "notes": "1) Numune en az 1cm x 1cm yüzeye sahip olmalıdır. 2) Numune yüksekliği en fazla 1 cm olmalıdır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Elektriksel Ölçümler"
     },
     {
@@ -1123,7 +1022,6 @@
       "notes": "Numune en az 20 mg ve çözücüsü ile gönderilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Elektriksel Ölçümler"
     },
     {
@@ -1134,7 +1032,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Elektriksel Ölçümler"
     },
     {
@@ -1145,7 +1042,6 @@
       "notes": "1) Numuneler ASTM, ISO veya DIN standartlarına uygun olmalıdır. 2) 10 adet üzeri %10 indirim, 20 adet üzeri %20 indirim yapılır. 3) Raporlandırma imzalı, kaşeli ve antetli kağıda basılı hazırlanır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
@@ -1156,7 +1052,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
@@ -1167,7 +1062,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
@@ -1178,7 +1072,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
@@ -1189,7 +1082,6 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1200,7 +1092,6 @@
       "notes": "1) Numuneler ASTM, ISO veya DIN standartlarına uygun olmalıdır. 2) 10 adet üzeri %10 indirim, 20 adet üzeri %20 indirim yapılır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
@@ -1211,7 +1102,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
@@ -1222,7 +1112,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
@@ -1233,7 +1122,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
@@ -1244,7 +1132,6 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1255,7 +1142,6 @@
       "notes": "1) Numuneler ASTM, ISO veya DIN standartlarına uygun olmalıdır. 2) 10 adet üzeri %10 indirim, 20 adet üzeri %20 indirim yapılır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
@@ -1266,7 +1152,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
@@ -1277,7 +1162,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
@@ -1288,7 +1172,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
@@ -1299,7 +1182,6 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1310,7 +1192,6 @@
       "notes": "1) Araştırılmak istenen malzeme hakkında detaylı bilgi verilmelidir. 2) Yapılacak analizlere uzman karar verir. 3) Analiz raporlandırma süresi 45–60 gündür. 4) Analiz sonuçlarına raporlandırma ücreti dahildir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Diğer Analiz Türleri"
     },
     {
@@ -1321,7 +1202,6 @@
       "notes": "1) Kaba kesim numuneleri: en fazla 10 cm genişlik, 1 cm yükseklik, 5 cm boy. 2) Hassas kesim numuneleri: 1 cm genişlik, 0.5 cm yükseklik, 5 cm boy. 3) Doğrudan bakalite alınacak malzemeler: kesit alanı en çok 2 cm², yükseklik 0.5 cm.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
@@ -1332,7 +1212,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
@@ -1343,7 +1222,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
@@ -1354,7 +1232,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
@@ -1365,7 +1242,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
@@ -1376,7 +1252,6 @@
       "notes": "Ham veri dışında ekstra uzman imzalı raporlandırmalarda ücret alınır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1387,7 +1262,6 @@
       "notes": "Analiz İstek formunda numuneler hakkında açıklayıcı bilgiler yer almalıdır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Diğer Analiz Türleri"
     },
     {
@@ -1398,7 +1272,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Diğer Analiz Türleri"
     },
     {
@@ -1409,7 +1282,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Diğer Analiz Türleri"
     },
     {
@@ -1420,7 +1292,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Sıvı Azot, Saf Su"
     },
     {
@@ -1431,7 +1302,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Sıvı Azot, Saf Su"
     }
   ]

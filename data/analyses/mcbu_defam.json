@@ -95,7 +95,7 @@
       "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
-      "name": "XRD Patterni (0-15 dak, her ilave 10 dak için +20 TL)",
+      "name": "XRD Patterni (0-15 dak, her ilave 10 dak için 20 TL ilave)",
       "price": 500,
       "unit": "Adet",
       "category": "XRD Laboratuvarı",
@@ -105,7 +105,7 @@
       "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
-      "name": "XRD Patterni + Faz Analizi",
+      "name": "XRD Patterni - Faz Analizi",
       "price": 600,
       "unit": "Adet",
       "category": "XRD Laboratuvarı",
