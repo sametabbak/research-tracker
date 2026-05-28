@@ -12,8 +12,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kromatografi (HPLC, GC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "GC-02 Kantitatif Analiz (İlave Her Bileşen)",
@@ -23,7 +22,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -34,7 +32,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -45,7 +42,6 @@
       "notes": "Paket içeriği: Supelco 37 Component FAME Mix-CRM47885",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -56,7 +52,6 @@
       "notes": "Paket içeriği: Supelco-Volatile Free Acid Mix-CRM46975",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -67,7 +62,6 @@
       "notes": "Ticari indirim kapsamı dışındadır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -78,7 +72,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -89,7 +82,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -100,7 +92,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -111,7 +102,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -122,7 +112,6 @@
       "notes": "Paket içeriği: ASM-146",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -133,7 +122,6 @@
       "notes": "Paket içeriği: TCLP-PES-1",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -144,7 +132,6 @@
       "notes": "Paket içeriği: Polycarbonat, Polyethylene, PET, Polypropilen, PVC, Polystyrene, Synthetic rubber, Natural rubber",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -155,7 +142,6 @@
       "notes": "Mikroplastik paket içeriğinden seçilecek 6 adet mikroplastiğin analizi",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -166,7 +152,6 @@
       "notes": "Mikroplastik paket içeriğinden seçilecek 3 adet mikroplastiğin analizi",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -177,7 +162,6 @@
       "notes": "Paket içeriği: N-Nitrosodimethylamine, N-Nitrosodibutylamine, N-Nitrosodi-n-propylamine, N-Nitrosomethylethylamine, N-Nitrosodiethylamine, 1-Nitrosopyrrolidine, 1-Nitrosopiperidine",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -188,7 +172,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -199,7 +182,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -210,7 +192,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -221,7 +202,6 @@
       "notes": "Ticari indirim kapsamı dışındadır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -232,7 +212,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -243,7 +222,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -254,7 +232,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -265,7 +242,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -276,7 +252,6 @@
       "notes": "Paket içeriği: Supelco H2016",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -287,7 +262,6 @@
       "notes": "Paket içeriği: Supelco 861253",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -298,7 +272,6 @@
       "notes": "Paket içeriği: Supelco 861291",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -309,7 +282,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -320,7 +292,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -331,7 +302,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -342,7 +312,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -353,7 +322,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -364,7 +332,6 @@
       "notes": "Paket içeriği: Diadzin, Genistin, Genistein",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -375,7 +342,6 @@
       "notes": "Paket içeriği: Psoralen, Angelicin",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -386,7 +352,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
@@ -397,7 +362,6 @@
       "notes": "Ticari indirim kapsamı dışındadır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -408,7 +372,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -419,7 +382,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -430,7 +392,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -441,7 +402,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -452,7 +412,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -463,7 +422,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -474,7 +432,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -485,7 +442,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -496,7 +452,6 @@
       "notes": "Paket içeriği: Perfluorobutanoic acid, Pentadecafluorooctanoic acid",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -507,7 +462,6 @@
       "notes": "Paket içeriği: Supelco AAS18",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -518,7 +472,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -529,7 +482,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
@@ -540,7 +492,6 @@
       "notes": "Ticari indirim kapsamı dışındadır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -551,7 +502,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -562,7 +512,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
     {
@@ -573,7 +522,6 @@
       "notes": "Numune hazırlama analizi talep edene aittir. 30 dakikada bir hizmet bedelinin yarısı olarak ücretlendirilir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
@@ -584,7 +532,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
@@ -595,7 +542,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -606,7 +552,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
@@ -617,29 +562,26 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
-      "name": "BET-03 Mikrogözenek Analizi + Adsorpsiyon İzotermi (Çok Noktalı BET, Gözenek Boyutu Dağılımı, Ortalama Gözenek Boyutu, Toplam Gözenek Hacmi)",
+      "name": "BET-03 Mikrogözenek Analizi - Adsorpsiyon İzotermi (Çok Noktalı BET, Gözenek Boyutu Dağılımı, Ortalama Gözenek Boyutu, Toplam Gözenek Hacmi)",
       "price": 2600,
       "unit": "Adet",
       "category": "BET Yüzey Alanı ve Mikrogözenek Boyutu Analizatörü",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
-      "name": "BET-04 Mikrogözenek Analizi + Full İzoterm (Çok Noktalı BET, Gözenek Boyutu Dağılımı, Ortalama Gözenek Boyutu, Toplam Gözenek Hacmi)",
+      "name": "BET-04 Mikrogözenek Analizi - Full İzoterm (Çok Noktalı BET, Gözenek Boyutu Dağılımı, Ortalama Gözenek Boyutu, Toplam Gözenek Hacmi)",
       "price": 3250,
       "unit": "Adet",
       "category": "BET Yüzey Alanı ve Mikrogözenek Boyutu Analizatörü",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
@@ -650,7 +592,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -661,7 +602,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Yoğunluk ve Fiziksel Özellikler"
     },
     {
@@ -672,7 +612,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -683,7 +622,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Yoğunluk ve Fiziksel Özellikler"
     },
     {
@@ -694,7 +632,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -705,7 +642,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
@@ -716,7 +652,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
@@ -727,7 +662,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
@@ -738,7 +672,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
@@ -749,7 +682,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -760,7 +692,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Tane Boyutu ve Zeta Potansiyeli Analizleri"
     },
     {
@@ -771,7 +702,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -782,7 +712,6 @@
       "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
     },
     {
@@ -793,7 +722,6 @@
       "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
     },
     {
@@ -804,7 +732,6 @@
       "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Genel Elementel Analizler (CHNS vb.)"
     },
     {
@@ -815,7 +742,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -826,7 +752,6 @@
       "notes": "Yeterli numune sayısına ulaşıldığında analiz yapılır. Lambalar ayrı ayrı ücretlendirilecektir.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
@@ -837,51 +762,46 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
-      "name": "AAS-03 Alevli Analiz (Asetilen+Hava) – 1-5 Element, Element Başı",
+      "name": "AAS-03 Alevli Analiz (Asetilen-Hava) – 1-5 Element, Element Başı",
       "price": 780,
       "unit": "Adet",
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
-      "name": "AAS-04 Alevli Analiz (Asetilen+Hava) – 6 ve Üstü Element, Element Başı",
+      "name": "AAS-04 Alevli Analiz (Asetilen-Hava) – 6 ve Üstü Element, Element Başı",
       "price": 650,
       "unit": "Adet",
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
-      "name": "AAS-05 Alevli Analiz (N2O+Hava) – 1-5 Element, Element Başı",
+      "name": "AAS-05 Alevli Analiz (N2O-Hava) – 1-5 Element, Element Başı",
       "price": 780,
       "unit": "Adet",
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
-      "name": "AAS-06 Alevli Analiz (N2O+Hava) – 6 ve Üstü Element, Element Başı",
+      "name": "AAS-06 Alevli Analiz (N2O-Hava) – 6 ve Üstü Element, Element Başı",
       "price": 650,
       "unit": "Adet",
       "category": "Atomik Absorpsiyon Spektrometresi (AAS)",
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
@@ -892,7 +812,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
@@ -903,7 +822,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
@@ -914,7 +832,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
@@ -925,7 +842,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
@@ -936,7 +852,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -947,7 +862,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -958,7 +872,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -969,7 +882,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -980,7 +892,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -991,7 +902,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1002,7 +912,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
@@ -1013,7 +922,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
@@ -1024,7 +932,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
@@ -1035,7 +942,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
@@ -1046,7 +952,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
@@ -1057,7 +962,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1068,7 +972,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
@@ -1079,7 +982,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
@@ -1090,7 +992,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
@@ -1101,7 +1002,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
@@ -1112,7 +1012,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
@@ -1123,7 +1022,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
@@ -1134,7 +1032,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
@@ -1145,7 +1042,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
@@ -1156,7 +1052,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
@@ -1167,7 +1062,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
@@ -1178,7 +1072,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1189,7 +1082,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrosertlik ve Makrosertlik Testleri"
     },
     {
@@ -1200,7 +1092,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1211,7 +1102,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
@@ -1222,7 +1112,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
@@ -1233,7 +1122,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
@@ -1244,7 +1132,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
@@ -1255,7 +1142,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
@@ -1266,7 +1152,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
@@ -1277,7 +1162,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
@@ -1288,7 +1172,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
@@ -1299,7 +1182,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
@@ -1310,7 +1192,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
@@ -1321,7 +1202,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
@@ -1332,7 +1212,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Mikrodalga Ekstraksiyon"
     },
     {
@@ -1343,7 +1222,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1354,7 +1232,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Diğer Analiz Türleri"
     },
     {
@@ -1365,7 +1242,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1376,7 +1252,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Diğer Analiz Türleri"
     },
     {
@@ -1387,7 +1262,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1398,7 +1272,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Optik Mikroskopi ve Görüntüleme"
     },
     {
@@ -1409,7 +1282,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1420,7 +1292,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
@@ -1431,7 +1302,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -1442,7 +1312,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
@@ -1453,7 +1322,6 @@
       "notes": "Alan uzmanı tarafından literatür destekli ve detaylı teknik analiz raporu hazırlanacaktır.",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
@@ -1464,7 +1332,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Diğer Analiz Türleri"
     },
     {
@@ -1475,7 +1342,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Diğer Analiz Türleri"
     },
     {
@@ -1486,7 +1352,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Cihaz Kullanımı"
     },
     {
@@ -1497,7 +1362,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Cihaz Kullanımı"
     },
     {
@@ -1508,7 +1372,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Sıvı Azot, Saf Su"
     },
     {
@@ -1519,7 +1382,6 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "_isOv": false,
       "keyword_group": "Sıvı Azot, Saf Su"
     }
   ]
