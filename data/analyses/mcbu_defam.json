@@ -167,33 +167,6 @@
       "manual": true
     },
     {
-      "name": "Metal Analizi – İlk Element (Katı veya Sıvı Numune)",
-      "price": 450,
-      "unit": "Numune",
-      "category": "ICP-OES Laboratuvarı",
-      "notes": "Numune çözelti halinde değilse mikrodalga bozundurma ön işlemi gereklidir. Metaller: Ca, K, Mg, Na, Li, Fe, Al, Mn, Ag, Au, Pt, Sn, Cr, Ni, Cu, Zn, Co, Pb, Cd, Hg, As, W, V, Sb, Sr, Se, Si, Cs, Be, B, Bi, Ba, Mo, Tl, Te, Ti, Ru, Th, U, Rb, Rh.",
-      "currency": "TRY",
-      "manual": true
-    },
-    {
-      "name": "Metal Analizi – İlave Her Bir Element",
-      "price": 60,
-      "unit": "Element",
-      "category": "ICP-OES Laboratuvarı",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true
-    },
-    {
-      "name": "Mikrodalga Örnek Bozundurma (Katı veya Sıvı Numuneleri Çözelti Fazına Alma)",
-      "price": 750,
-      "unit": "Numune",
-      "category": "ICP-OES Laboratuvarı",
-      "notes": "",
-      "currency": "TRY",
-      "manual": true
-    },
-    {
       "name": "TGA/DTA Analizi – TGA-1 (0-1 saat, 600°C'ye kadar)",
       "price": 800,
       "unit": "Numune",
