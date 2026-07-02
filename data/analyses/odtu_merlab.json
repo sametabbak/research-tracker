@@ -3,5 +3,2130 @@
   "center_name": "ODTÜ MERLAB",
   "last_updated": "2026-07-02",
   "source_url": "https://merlab.metu.edu.tr/tr/hizmet-bedelleri",
-  "analyses": []
+  "analyses": [
+    {
+      "name": "Su Örneklerinde ¹⁸O/¹⁶O Ölçümü",
+      "price": 1400,
+      "unit": "TL / Numune",
+      "category": "Duraylı İzotop Oranı Kütle Spektroskopi Lab. (DİL)",
+      "notes": "✔ AKREDİTE TEST | Başvuru yoğunluğu nedeniyle numunelerde birikim olabilir; analiz öncesinde DİL ile iletişime geçiniz.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Su Örneklerinde ²H/¹H Ölçümü",
+      "price": 1400,
+      "unit": "TL / Numune",
+      "category": "Duraylı İzotop Oranı Kütle Spektroskopi Lab. (DİL)",
+      "notes": "✔ AKREDİTE TEST | Başvuru öncesinde DİL ile iletişime geçiniz.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Su Örneklerinde ¹³C/¹²C – DIC Ölçümü",
+      "price": 1600,
+      "unit": "TL / Numune",
+      "category": "Duraylı İzotop Oranı Kütle Spektroskopi Lab. (DİL)",
+      "notes": "✔ AKREDİTE TEST | Başvuru öncesinde DİL ile iletişime geçiniz.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Katı Örneklerde ¹³C/¹²C – ¹⁸O/¹⁶O Karbonat Ölçümü",
+      "price": 1600,
+      "unit": "TL / Numune",
+      "category": "Duraylı İzotop Oranı Kütle Spektroskopi Lab. (DİL)",
+      "notes": "✔ AKREDİTE TEST | Başvuru öncesinde DİL ile iletişime geçiniz.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Atomik Kuvvet Mikroskobu (AFM) – Tip Getirilmezse",
+      "price": 3500,
+      "unit": "TL / Saat",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "Yeni tip kullanılması talep edildiğinde/kullanıldığında tip bedeli analiz ücretine eklenir. Tip bedeli 2500 TL'dir (indirimsiz).",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Barkhausen",
+      "price": 1200,
+      "unit": "TL / Saat",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Renk Spektrofotometresi – Renk Tayini",
+      "price": 900,
+      "unit": "TL / Numune",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Dijital Multimetre – Oda Sıcaklığında DC Direnç Ölçümü",
+      "price": 900,
+      "unit": "TL / Numune",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Empedans / Kazanç Faz Faktörü",
+      "price": 900,
+      "unit": "TL / Numune",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Yarı Statik C-V Metre",
+      "price": 900,
+      "unit": "TL / Numune",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Manyetik Histeresis Ölçümü (VSM)",
+      "price": 1900,
+      "unit": "TL / Numune",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Manyetik Alınganlık Ölçümü (Oda Sıcaklığı)",
+      "price": 1900,
+      "unit": "TL / Numune",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "VSM veya Manyetik Alınganlık Ölçümü (Oda Sıcaklığı – 150K)",
+      "price": 2400,
+      "unit": "TL / Numune",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "VSM veya Manyetik Alınganlık Ölçümü (150K – 2K)",
+      "price": 2750,
+      "unit": "TL / Numune",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "VSM veya Manyetik Alınganlık Ölçümü (Oda Sıcaklığı – 2K)",
+      "price": 2750,
+      "unit": "TL / Numune",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DC Direnç Ölçümü (Oda Sıcaklığı – 150K)",
+      "price": 2000,
+      "unit": "TL / Numune",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DC Direnç Ölçümü (150K – 2K)",
+      "price": 1400,
+      "unit": "TL / Numune",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DC Direnç Ölçümü (Oda Sıcaklığı – 2K)",
+      "price": 2000,
+      "unit": "TL / Numune",
+      "category": "Elektrik, Manyetik ve Optik Özellikler Ölçüm Lab. (EMOL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "EPMA – Saatlik Analiz",
+      "price": 900,
+      "unit": "TL / Saat",
+      "category": "Elektron Mikroskopi Lab. (EML)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "EPMA – Yarım Günlük Analiz",
+      "price": 1800,
+      "unit": "TL / Yarım Gün",
+      "category": "Elektron Mikroskopi Lab. (EML)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "EPMA – Günlük Analiz",
+      "price": 2600,
+      "unit": "TL / Gün",
+      "category": "Elektron Mikroskopi Lab. (EML)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "EPMA – Geceye Bırakılan Analiz",
+      "price": 500,
+      "unit": "TL / Saat (Maks. 2600 TL/Gece)",
+      "category": "Elektron Mikroskopi Lab. (EML)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "EPMA Numune Hazırlama – 4 Numuneye Kadar Karbon Kaplama",
+      "price": 130,
+      "unit": "TL / Set",
+      "category": "Elektron Mikroskopi Lab. (EML)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "FE-SEM - EDS (Her 60 Dakika)",
+      "price": 5400,
+      "unit": "TL / Saat",
+      "category": "Elektron Mikroskopi Lab. (EML)",
+      "notes": "6 numuneden sonrası için analiz süresi içinde kalmak şartıyla 900 TL/numune uygulanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "EBSD",
+      "price": 10800,
+      "unit": "TL / Saat",
+      "category": "Elektron Mikroskopi Lab. (EML)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "SEM Numune Hazırlama ve Kaplama (1 Set – 6 Numuneye Kadar)",
+      "price": 900,
+      "unit": "TL / Set",
+      "category": "Elektron Mikroskopi Lab. (EML)",
+      "notes": "İndirim uygulanmaz.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Oda Sıcaklığı ESR Analizi – 1 Saat",
+      "price": 600,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Oda Sıcaklığı ESR Analizi – 2 Saat",
+      "price": 720,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Oda Sıcaklığı ESR Analizi – 3 Saat",
+      "price": 800,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Oda Sıcaklığı ESR Analizi – 4 Saat",
+      "price": 1060,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Oda Sıcaklığı ESR Analizi – 5 Saat",
+      "price": 1150,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Oda Sıcaklığı ESR Analizi – 6 Saat",
+      "price": 1260,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Oda Sıcaklığı ESR Analizi – 7 Saat",
+      "price": 1350,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Oda Sıcaklığı ESR – Her Numune İçin",
+      "price": 600,
+      "unit": "TL / Numune",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Düşük Sıcaklık ESR Analizi – 1 Saat",
+      "price": 900,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Düşük Sıcaklık ESR Analizi – 2 Saat",
+      "price": 1000,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Düşük Sıcaklık ESR Analizi – 3 Saat",
+      "price": 1100,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Düşük Sıcaklık ESR Analizi – 4 Saat",
+      "price": 1200,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Düşük Sıcaklık ESR Analizi – 5 Saat",
+      "price": 1300,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Düşük Sıcaklık ESR Analizi – 6 Saat",
+      "price": 1400,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Düşük Sıcaklık ESR Analizi – 7 Saat",
+      "price": 1500,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "ESR Sıcaklık Taraması",
+      "price": 0,
+      "unit": "Sorunuz",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Radikal Sönümlenmesinin İncelenmesi – Birinci Analiz",
+      "price": 600,
+      "unit": "TL",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Radikal Sönümlenmesinin İncelenmesi – Her Bir Periyot İçin",
+      "price": 600,
+      "unit": "TL / Periyot",
+      "category": "Elektron Spin Rezonans Spektroskopi Lab. (ESRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "İklimlendirme Kabini – Cihaz Kullanımı",
+      "price": 1200,
+      "unit": "TL / Gün",
+      "category": "İklimlendirme Kabini",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Atomik Absorpsiyon Spektrometresi – Analiz",
+      "price": 800,
+      "unit": "TL / Element",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "ICP-MS – Tek Element",
+      "price": 1500,
+      "unit": "TL / Numune",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "Analiz öncesinde mlabkal@metu.edu.tr ile iletişime geçiniz. Her eklenen elemente 240 TL ek ücret. Hg, B, Ag, Ru, Rh, Pd, Ir, Pt, Au ayrıca ücretlendirilir. Çözeltiye alma ve ön işlemler dahil değildir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "ICP-MS – Genel Tarama",
+      "price": 2500,
+      "unit": "TL / Numune",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "Analiz öncesinde mlabkal@metu.edu.tr ile iletişime geçiniz. Çözeltiye alma ve ön işlemler dahil değildir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "ICP-OES – Tek Element",
+      "price": 1300,
+      "unit": "TL / Numune",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "Her eklenen elemente 160 TL ek ücret. Hg, B, Ag, Ru, Rh, Pd, Ir, Pt, Au ayrıca ücretlendirilir. Çözeltiye alma ve ön işlemler dahil değildir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "ICP-OES – Genel Tarama",
+      "price": 2000,
+      "unit": "TL / Numune",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "Çözeltiye alma ve ön işlemler dahil değildir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "UV-VIS Spektrofotometresi – Analiz",
+      "price": 400,
+      "unit": "TL / Numune",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "X-Işını Floresans Spektrometresi – Analiz",
+      "price": 2100,
+      "unit": "TL / Numune",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Mikrodalga Sistemi ile Çözeltiye Alma – Nitrik Asit (Kısmen)",
+      "price": 1600,
+      "unit": "TL / Numune",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Mikrodalga Sistemi ile Çözeltiye Alma – Aqua Regia (Kısmen)",
+      "price": 1800,
+      "unit": "TL / Numune",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Mikrodalga Sistemi ile Çözeltiye Alma – Çoklu Asit",
+      "price": 2000,
+      "unit": "TL / Numune",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Mikrodalga Sistemi ile Çözeltiye Alma – HF/Borik Asit Gerektiren İşlemler",
+      "price": 2600,
+      "unit": "TL / Numune",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "Aynı numunede BOR tayini istenirse ayrı çözeltiye alma işlemi uygulanır ve ayrıca ücretlendirilir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Numune Hazırlama – Kurutma",
+      "price": 70,
+      "unit": "TL / Numune",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "Laboratuvar içi hizmet.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Numune Hazırlama – Santrifüj",
+      "price": 220,
+      "unit": "TL / Numune",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "Laboratuvar içi hizmet.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Numune Hazırlama – Açıkta Çözeltiye Alma",
+      "price": 800,
+      "unit": "TL / Numune",
+      "category": "Kimyasal Analiz Lab. (KAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Dispersif Raman Spektrometresi – 1 Lazer ile Ölçüm",
+      "price": 1200,
+      "unit": "TL / Numune",
+      "category": "Kızıl Ötesi ve Raman Spektroskopi Lab. (KORL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Dispersif Raman Spektrometresi – Depth Profile (1 Lazer)",
+      "price": 1500,
+      "unit": "TL / Numune",
+      "category": "Kızıl Ötesi ve Raman Spektroskopi Lab. (KORL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Dispersif Raman Spektrometresi – Mapping (1 Lazer)",
+      "price": 1500,
+      "unit": "TL / Numune",
+      "category": "Kızıl Ötesi ve Raman Spektroskopi Lab. (KORL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "FTIR Spektrometresi – FTIR Spektrumu",
+      "price": 800,
+      "unit": "TL / Numune",
+      "category": "Kızıl Ötesi ve Raman Spektroskopi Lab. (KORL)",
+      "notes": "Far-IR bölgesi (FIR 700-40) çalışmamaktadır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "FTIR Mikroskop",
+      "price": 1500,
+      "unit": "TL / Saat",
+      "category": "Kızıl Ötesi ve Raman Spektroskopi Lab. (KORL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Darbe Test – Charpy / Penetrasyon (Oda Sıcaklığı)",
+      "price": 1150,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Lab. (MTL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Darbe Test – Charpy / Penetrasyon (Yüksek Sıcaklık)",
+      "price": 2250,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Lab. (MTL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Darbe Test – Charpy / Penetrasyon (Düşük Sıcaklık)",
+      "price": 2850,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Lab. (MTL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Üniversal Mikro Sertlik – Vickers Ölçümü",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Lab. (MTL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Üniversal Test (Instron) – Basma (Oda Sıcaklığı)",
+      "price": 1400,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Lab. (MTL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Üniversal Test (Instron) – Çekme (Oda Sıcaklığı)",
+      "price": 1400,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Lab. (MTL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Üniversal Test (Instron) – Yüksek Sıcaklık (1000°C'ye kadar)",
+      "price": 3400,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Lab. (MTL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Üniversal Test (Instron) – Düşük Sıcaklık",
+      "price": 3800,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Lab. (MTL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Üniversal Test (ZWICK) – Basma (Oda Sıcaklığı)",
+      "price": 1400,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Lab. (MTL)",
+      "notes": "30 ve üzeri aynı özellikte numunelerde %10 ek indirim uygulanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Üniversal Test (ZWICK) – Çekme (Oda Sıcaklığı)",
+      "price": 1400,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Lab. (MTL)",
+      "notes": "✔ AKREDİTE TEST | EN ISO 527-1/2/4, TS EN ISO 527-1/2/4 (Plastikler-Çekme); EN ISO 6892-1, TS EN ISO 6892-1 (Metalik Malzemeler-Çekme). | 30 ve üzeri numunede %10 ek indirim.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Üniversal Test (ZWICK) – 3 Nokta Eğme (Oda Sıcaklığı)",
+      "price": 1400,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Lab. (MTL)",
+      "notes": "30 ve üzeri aynı özellikte numunelerde %10 ek indirim uygulanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Üniversal Test (ZWICK) – 4 Nokta Eğme (Oda Sıcaklığı)",
+      "price": 1400,
+      "unit": "TL / Numune",
+      "category": "Mekanik Test Lab. (MTL)",
+      "notes": "30 ve üzeri aynı özellikte numunelerde %10 ek indirim uygulanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Nano-Mikro Mekanik Test – Mikro Çizik",
+      "price": 2000,
+      "unit": "TL / Numune",
+      "category": "Nano-Mekanik Test Lab. (NMTL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Nano veya Mikro İndentasyon (5 ize kadar)",
+      "price": 1800,
+      "unit": "TL / Numune",
+      "category": "Nano-Mekanik Test Lab. (NMTL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Nano veya Mikro İndentasyon (3×3 Matriks)",
+      "price": 2200,
+      "unit": "TL / Numune",
+      "category": "Nano-Mekanik Test Lab. (NMTL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Nano veya Mikro İndentasyon (4×4 Matriks)",
+      "price": 2400,
+      "unit": "TL / Numune",
+      "category": "Nano-Mekanik Test Lab. (NMTL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Nano veya Mikro İndentasyon (5×5 Matriks)",
+      "price": 2600,
+      "unit": "TL / Numune",
+      "category": "Nano-Mekanik Test Lab. (NMTL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Nano-Mekanik Analizlerle Birlikte AFM",
+      "price": 1500,
+      "unit": "TL / Numune",
+      "category": "Nano-Mekanik Test Lab. (NMTL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Katı NMR ¹³C MAS – 4 Saat",
+      "price": 1800,
+      "unit": "TL",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Katı NMR ¹³C MAS – 8 Saat",
+      "price": 2190,
+      "unit": "TL",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Katı NMR ¹³C MAS – 16 Saat",
+      "price": 2760,
+      "unit": "TL",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Katı NMR ¹³C MAS – 27 Saat",
+      "price": 3144,
+      "unit": "TL",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Katı NMR ¹³C MAS – Kontaminasyon Durumunda",
+      "price": 7920,
+      "unit": "TL",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Katı NMR ²⁹Si MAS / ²⁷Al MAS – 4 Saat",
+      "price": 2076,
+      "unit": "TL",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Katı NMR ²⁹Si MAS / ²⁷Al MAS – 8 Saat",
+      "price": 2628,
+      "unit": "TL",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Katı NMR ²⁹Si MAS / ²⁷Al MAS – 16 Saat",
+      "price": 3000,
+      "unit": "TL",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Katı NMR ²⁹Si MAS / ²⁷Al MAS – 27 Saat",
+      "price": 3744,
+      "unit": "TL",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Katı NMR ²⁹Si MAS / ²⁷Al MAS – Kontaminasyon Durumunda",
+      "price": 7920,
+      "unit": "TL",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Sıvı NMR – ¹H (Proton) Spektrumu",
+      "price": 624,
+      "unit": "TL / Numune",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Sıvı NMR – ¹³C (Coupled/Decoupled) Spektrumu (0-1 Saat)",
+      "price": 1050,
+      "unit": "TL / Numune",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Sıvı NMR – ¹³C (Coupled/Decoupled) Spektrumu (1-3 Saat)",
+      "price": 1242,
+      "unit": "TL / Numune",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Sıvı NMR – ¹³C (Coupled/Decoupled) Spektrumu (3-7 Saat)",
+      "price": 1440,
+      "unit": "TL / Numune",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Sıvı NMR – ¹³C (Coupled/Decoupled) Spektrumu (7-19 Saat)",
+      "price": 1872,
+      "unit": "TL / Numune",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Sıvı NMR – ³¹P Spektrumu",
+      "price": 1356,
+      "unit": "TL / Numune",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Sıvı NMR – ¹⁹F Spektrumu",
+      "price": 1356,
+      "unit": "TL / Numune",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "NMR Çözücü – Chloroform-D1",
+      "price": 120,
+      "unit": "TL",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "Diğer çözücüler (Acetone-D6, Benzene-D6, DMSO-D6, Pyridine-D5, Toluene-D8) kullanıcı tarafından temin edilir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "NMR Çözücü – Deuterium Oxide",
+      "price": 120,
+      "unit": "TL",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "NMR Çözücü – Dimethyl Sulfoxide-D6",
+      "price": 120,
+      "unit": "TL",
+      "category": "Nükleer Manyetik Rezonans Spektroskopi Lab. (NMRL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Mastersizer – Parçacık Boyutu Ölçümü Yaş Analiz (50 nm – 1 mm)",
+      "price": 1600,
+      "unit": "TL / Numune",
+      "category": "Parçacık Boyutu ve Zeta Potansiyel Ölçüm Lab. (PZL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Mastersizer – Parçacık Boyutu Ölçümü Kuru Analiz (50 nm – 1 mm)",
+      "price": 1800,
+      "unit": "TL / Numune",
+      "category": "Parçacık Boyutu ve Zeta Potansiyel Ölçüm Lab. (PZL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Zetasizer – Zeta Potansiyel Ölçümü",
+      "price": 1800,
+      "unit": "TL / Numune",
+      "category": "Parçacık Boyutu ve Zeta Potansiyel Ölçüm Lab. (PZL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Zetasizer – Boyut Ölçümü (2 nm – 1 µm)",
+      "price": 1600,
+      "unit": "TL / Numune",
+      "category": "Parçacık Boyutu ve Zeta Potansiyel Ölçüm Lab. (PZL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Büyüklükçe Ayırma Kromatografisi (SEC/GPC)",
+      "price": 2400,
+      "unit": "TL / Numune",
+      "category": "Polimer Analiz Lab. (PAL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı. | Numune belirtilen çözücüde tam çözünmezse analiz yapılamaz; çözme işlemi için 300 TL ücret alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Elementel Analiz – C, H, N, S Belirlenmesi",
+      "price": 1400,
+      "unit": "TL / Numune",
+      "category": "Polimer Analiz Lab. (PAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Dinamik Işık Saçınımı (DLS)",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Polimer Analiz Lab. (PAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Statik Işık Saçınımı (SLS)",
+      "price": 1900,
+      "unit": "TL / Numune",
+      "category": "Polimer Analiz Lab. (PAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Refraktif İndeks (n) – Tek Ölçüm (Sıvılar)",
+      "price": 500,
+      "unit": "TL / Numune",
+      "category": "Polimer Analiz Lab. (PAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Refraktif İndeks (dn/dc) Belirlenmesi",
+      "price": 700,
+      "unit": "TL / Numune",
+      "category": "Polimer Analiz Lab. (PAL)",
+      "notes": "En az 3 farklı derişim hazırlanması gereklidir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "⁸⁷Sr/⁸⁶Sr İzotop Oranı Analizi (Asitte Çözdürme - İyon Krom. ile Sr Ayrımı Dahil)",
+      "price": 5000,
+      "unit": "TL / Numune",
+      "category": "Radyojenik İzotop Lab. (RİL)",
+      "notes": "⚠ Bakım/onarım nedeniyle başvuru kabul edilmemektedir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "¹⁴³Nd/¹⁴⁴Nd İzotop Oranı Analizi (Asitte Çözdürme - İyon Krom. ile Nd Ayrımı Dahil)",
+      "price": 4500,
+      "unit": "TL / Numune",
+      "category": "Radyojenik İzotop Lab. (RİL)",
+      "notes": "⚠ Bakım/onarım nedeniyle başvuru kabul edilmemektedir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Kurşun İzotop Oranı Analizi (Asitte Çözdürme - İyon Krom. ile Pb Ayrımı Dahil)",
+      "price": 4500,
+      "unit": "TL / Numune",
+      "category": "Radyojenik İzotop Lab. (RİL)",
+      "notes": "⚠ Bakım/onarım nedeniyle başvuru kabul edilmemektedir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Kayaç Kırma ve Toz Numune Hazırlama (3 kg'a kadar kayaç kırma, 50 g toz öğütme)",
+      "price": 450,
+      "unit": "TL / Numune",
+      "category": "Radyojenik İzotop Lab. (RİL)",
+      "notes": "⚠ Bakım/onarım nedeniyle başvuru kabul edilmemektedir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Kapiler Reometre",
+      "price": 4000,
+      "unit": "TL / Numune",
+      "category": "Reolojik Karakterizasyon Lab. (RKL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Reometre – Sıcaklık Taraması (Oda Sıcaklığından Başlayarak)",
+      "price": 3500,
+      "unit": "TL / Numune",
+      "category": "Reolojik Karakterizasyon Lab. (RKL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Reometre – Gerinim (Strain) Taraması",
+      "price": 2400,
+      "unit": "TL / Numune",
+      "category": "Reolojik Karakterizasyon Lab. (RKL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Reometre – Frekans Taraması",
+      "price": 2400,
+      "unit": "TL / Numune",
+      "category": "Reolojik Karakterizasyon Lab. (RKL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Reometre – Viskozite Ölçümü",
+      "price": 2600,
+      "unit": "TL / Numune",
+      "category": "Reolojik Karakterizasyon Lab. (RKL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Reometre Yüksek Sıcaklık – Gerinim (Strain) Taraması",
+      "price": 2800,
+      "unit": "TL / Numune",
+      "category": "Reolojik Karakterizasyon Lab. (RKL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Reometre Yüksek Sıcaklık – Frekans Taraması",
+      "price": 2800,
+      "unit": "TL / Numune",
+      "category": "Reolojik Karakterizasyon Lab. (RKL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Reometre Yüksek Sıcaklık – Viskozite Ölçümü",
+      "price": 3000,
+      "unit": "TL / Numune",
+      "category": "Reolojik Karakterizasyon Lab. (RKL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DSC (-90°C – 550°C) – 1 Saat",
+      "price": 3000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "✔ AKREDİTE TEST | EN ISO 11357-1/2/3 (Plastikler-DSC: Genel prensipler, Camsı geçiş sıcaklığı, Kristalleşme ve erime entalpisi). Akredite deneyler için fiyata %20 akreditasyon ücreti eklenir. SDT kap ücreti 8000 TL. FTIR dalga boyu/Excel verisi gibi ek istekler -100 TL/numune.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DSC (-90°C – 550°C) – 2 Saat",
+      "price": 4000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "✔ AKREDİTE TEST | EN ISO 11357-1/2/3. Akredite deneyler için fiyata %20 akreditasyon ücreti eklenir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DSC (-90°C – 550°C) – 3 Saat",
+      "price": 5000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "✔ AKREDİTE TEST | EN ISO 11357-1/2/3. Akredite deneyler için fiyata %20 akreditasyon ücreti eklenir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DSC (-90°C – 550°C) – 4 Saat",
+      "price": 6500,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "✔ AKREDİTE TEST | EN ISO 11357-1/2/3. Akredite deneyler için fiyata %20 akreditasyon ücreti eklenir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DMA (25°C – 600°C) – 1 Saat",
+      "price": 3000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "Yoğunluktan dolayı gecikmeler yaşanabilir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DMA (25°C – 600°C) – 2 Saat",
+      "price": 4000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DMA (25°C – 600°C) – 3 Saat",
+      "price": 5000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DMA (25°C – 600°C) – 4 Saat",
+      "price": 6500,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DMA (-150°C – 600°C) – 1 Saat",
+      "price": 3500,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "Yoğunluktan dolayı gecikmeler yaşanabilir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DMA (-150°C – 600°C) – 2 Saat",
+      "price": 4500,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DMA (-150°C – 600°C) – 3 Saat",
+      "price": 5500,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "DMA (-150°C – 600°C) – 4 Saat",
+      "price": 7000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TGA (25°C – 950°C) – 1 Saat",
+      "price": 3000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "✔ AKREDİTE TEST | EN ISO 11358-1 (Plastikler-TGA). Akredite deneyler için fiyata %20 akreditasyon ücreti eklenir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TGA (25°C – 950°C) – 2 Saat",
+      "price": 4000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "✔ AKREDİTE TEST | EN ISO 11358-1. Akredite deneyler için fiyata %20 akreditasyon ücreti eklenir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TGA (25°C – 950°C) – 3 Saat",
+      "price": 5000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "✔ AKREDİTE TEST | EN ISO 11358-1. Akredite deneyler için fiyata %20 akreditasyon ücreti eklenir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TGA (25°C – 950°C) – 4 Saat",
+      "price": 6500,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "✔ AKREDİTE TEST | EN ISO 11358-1. Akredite deneyler için fiyata %20 akreditasyon ücreti eklenir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TGA-DSC (25°C – 1200°C) – 1 Saat",
+      "price": 3000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "SDT kap ücreti 8000 TL.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TGA-DSC (25°C – 1200°C) – 2 Saat",
+      "price": 4000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TGA-DSC (25°C – 1200°C) – 3 Saat",
+      "price": 5000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TGA-DSC (25°C – 1200°C) – 4 Saat",
+      "price": 6500,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TGA-FTIR (25°C – 950°C) – 1 Saat",
+      "price": 3000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TGA-FTIR (25°C – 950°C) – 2 Saat",
+      "price": 4000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TGA-FTIR (25°C – 950°C) – 3 Saat",
+      "price": 5000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TGA-FTIR (25°C – 950°C) – 4 Saat",
+      "price": 6500,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Termal İletkenlik Analizi – Tek Sıcaklık / 1 Saat",
+      "price": 3000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Termal İletkenlik Analizi – Tek Sıcaklık / 2 Saat",
+      "price": 4000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Termal İletkenlik Analizi – Tek Sıcaklık / 3 Saat ve Üzeri",
+      "price": 5000,
+      "unit": "TL / Numune",
+      "category": "Termal Analiz Lab. (TAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TEM – CTEM 120 kV",
+      "price": 7000,
+      "unit": "TL / Saat",
+      "category": "Transmisyon Elektron Mikroskopi Lab. (TEML)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TEM – RTEM 200 kV",
+      "price": 7000,
+      "unit": "TL / Saat",
+      "category": "Transmisyon Elektron Mikroskopi Lab. (TEML)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TEM Numune Hazırlama",
+      "price": 5500,
+      "unit": "TL / Saat",
+      "category": "Transmisyon Elektron Mikroskopi Lab. (TEML)",
+      "notes": "15 dakikadan az süren hazırlama için yalnızca sarf malzeme ücreti alınır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Ultramikrotom",
+      "price": 5500,
+      "unit": "TL / Saat",
+      "category": "Transmisyon Elektron Mikroskopi Lab. (TEML)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Izgara (Grid) Üzerinde Örnek Hazırlama",
+      "price": 450,
+      "unit": "TL / Numune",
+      "category": "Transmisyon Elektron Mikroskopi Lab. (TEML)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD – Toz Kırınım Deseni Standart Çekimi",
+      "price": 1500,
+      "unit": "TL / Numune",
+      "category": "X-Işını Difraksiyon Lab. (XRDL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD – İnce Film Kırınım Deseni Çekimi (1 Saate Kadar)",
+      "price": 1500,
+      "unit": "TL / Numune",
+      "category": "X-Işını Difraksiyon Lab. (XRDL)",
+      "notes": "Cihaz ayarları (~15 dk/numune) ve deneme ölçümleri ücretlendirilir. Ek her saat için -450 TL.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XRD – Nitel-Nicel Analiz",
+      "price": 1500,
+      "unit": "TL / Numune",
+      "category": "X-Işını Difraksiyon Lab. (XRDL)",
+      "notes": "Uygulanacak yöntemler müşteri ve laboratuvar ile teknik görüşme sonrası belirlenir. Fiyat indirimsiz birim bedel (1500 TL) üzerinden hesaplanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Tam Kütle Tayini (HRMS)",
+      "price": 1200,
+      "unit": "TL / Numune",
+      "category": "Yüksek Çözünürlüklü Kütle Spektroskopi Lab. (YKL)",
+      "notes": "Bir başvuruda en fazla 20 numune çalışılabilir. Her numune için bir bileşen incelenir; ekstra bileşen analizi 300 TL/bileşen. ESI analizinde pozitif ve negatif modlar birlikte talep edilirse her mod ayrı analiz olarak ücretlendirilir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TOF-SIMS Analizi",
+      "price": 6000,
+      "unit": "TL / Saat",
+      "category": "Yüzey Analiz Lab. (YAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "TOF-SIMS Görüntüleme",
+      "price": 7000,
+      "unit": "TL / Numune",
+      "category": "Yüzey Analiz Lab. (YAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XPS – Genel Tarama",
+      "price": 2500,
+      "unit": "TL / Numune",
+      "category": "Yüzey Analiz Lab. (YAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XPS – Kısmi Tarama",
+      "price": 3000,
+      "unit": "TL / Numune",
+      "category": "Yüzey Analiz Lab. (YAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XPS – Görüntüleme",
+      "price": 4000,
+      "unit": "TL / Numune",
+      "category": "Yüzey Analiz Lab. (YAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "UV-XPS",
+      "price": 4000,
+      "unit": "TL / Numune",
+      "category": "Yüzey Analiz Lab. (YAL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XPS Derinlik Profili (2-27 Katman)",
+      "price": 443017465,
+      "unit": "TL (Katman sayısına göre)",
+      "category": "Yüzey Analiz Lab. (YAL)",
+      "notes": "2 katman: 4430 TL | 5 katman: 6135 TL | 10 katman: 9500 TL | 15 katman: 12140 TL | 20 katman: 14480 TL | 27 katman: 17465 TL. Tam tablo için laboratuvar ile iletişime geçiniz.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "XPS Açı Sayısına Göre (1-20 Adet)",
+      "price": 219513240,
+      "unit": "TL (Açı sayısına göre)",
+      "category": "Yüzey Analiz Lab. (YAL)",
+      "notes": "1 adet: 2195 TL | 5 adet: 5275 TL | 10 adet: 8225 TL | 15 adet: 10845 TL | 20 adet: 13240 TL. Tam tablo için laboratuvar ile iletişime geçiniz.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Civa Porozimetresi – Düşük Basınç Gözeneklilik Ölçümü",
+      "price": 1700,
+      "unit": "TL / Numune",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "Yüksek basınçlı analizler yapılamamaktadır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Civa Porozimetresi – Düşük Basınç Gözenek Boyut Dağılımı Ölçümü",
+      "price": 1450,
+      "unit": "TL / Numune",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "Yüksek basınçlı analizler yapılamamaktadır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Civa Porozimetresi – Düşük Basınç Toplam Porozite Ölçümü",
+      "price": 2600,
+      "unit": "TL / Numune",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "Yüksek basınçlı analizler yapılamamaktadır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Civa Porozimetresi – Yüksek Basınç Gözenek Boyut Dağılımı Ölçümü",
+      "price": 0,
+      "unit": "-",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Civa Porozimetresi – Yüksek Basınç Toplam Porozite Ölçümü",
+      "price": 0,
+      "unit": "-",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Helyum Piknometresi",
+      "price": 800,
+      "unit": "TL / Numune",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Temas Açısı – Yüzeylerde Temas Açısı Ölçümü",
+      "price": 950,
+      "unit": "TL / Numune",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Temas Açısı – Yüzeylerde Serbest Yüzey Enerjisi Ölçümü",
+      "price": 3300,
+      "unit": "TL / Numune",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Temas Açısı – Sıvılarda Yüzey Gerilimi Ölçümü",
+      "price": 950,
+      "unit": "TL / Numune",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "BET – Tek Noktalı Analizi",
+      "price": 800,
+      "unit": "TL / Numune",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "BET – Çok Noktalı Analizi",
+      "price": 1200,
+      "unit": "TL / Numune",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "BET – Mezogözenek Analizi (Çok Noktalı BET - Gözenek Boyutu Dağılımı - Ortalama Gözenek Boyutu - Toplam Gözenek Hacmi)",
+      "price": 1700,
+      "unit": "TL / Numune",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "BET – Genişletilmiş Mezogözenek Analizi (Mezogözenekli ve Büyük Mikrogözenekli Yapılar)",
+      "price": 2000,
+      "unit": "TL / Numune",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "BET – Mikrogözenek Analizi / Adsorpsiyon İzotermi",
+      "price": 2000,
+      "unit": "TL / Numune",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "BET – Mikrogözenek Analizi / Adsorpsiyon - Desorpsiyon",
+      "price": 2500,
+      "unit": "TL / Numune",
+      "category": "Yüzey ve Gözenek Karakterizasyon Lab. (YGL)",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "SDS PAGE / NATIVE PAGE – Gümüş Boyama (1,5 mm 6×8 cm jel)",
+      "price": 11000,
+      "unit": "TL",
+      "category": "Elektroforez Sistem Lab. (ESL) – MBB AR-GE",
+      "notes": "Numune Kabul Kriterleri uygulanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "SDS PAGE / NATIVE PAGE – Coomassie Boyama (1,5 mm 6×8 cm jel)",
+      "price": 5500,
+      "unit": "TL",
+      "category": "Elektroforez Sistem Lab. (ESL) – MBB AR-GE",
+      "notes": "Numune Kabul Kriterleri uygulanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "IEF – Gümüş Boyama (0,5 mm 25×11 cm jel)",
+      "price": 16500,
+      "unit": "TL",
+      "category": "Elektroforez Sistem Lab. (ESL) – MBB AR-GE",
+      "notes": "Numune Kabul Kriterleri uygulanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "IEF – Coomassie Boyama (0,5 mm 25×11 cm jel)",
+      "price": 11000,
+      "unit": "TL",
+      "category": "Elektroforez Sistem Lab. (ESL) – MBB AR-GE",
+      "notes": "Numune Kabul Kriterleri uygulanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "PFGE – 15×15 cm jel",
+      "price": 12200,
+      "unit": "TL",
+      "category": "Elektroforez Sistem Lab. (ESL) – MBB AR-GE",
+      "notes": "Numune Kabul Kriterleri uygulanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "2D PAGE – Coomassie Boyama",
+      "price": 16500,
+      "unit": "TL",
+      "category": "Elektroforez Sistem Lab. (ESL) – MBB AR-GE",
+      "notes": "Numune Kabul Kriterleri uygulanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Preperatif Ultrasantrifüj",
+      "price": 2000,
+      "unit": "TL / Kullanım",
+      "category": "Genel Kullanım ve Örnek Hazırlama Lab. (GKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Rotary Evaporatör",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Genel Kullanım ve Örnek Hazırlama Lab. (GKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Soğutmalı Mikrotom",
+      "price": 2000,
+      "unit": "TL / Numune",
+      "category": "Genel Kullanım ve Örnek Hazırlama Lab. (GKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Soğutmalı Santrifüj",
+      "price": 800,
+      "unit": "TL / Kullanım",
+      "category": "Genel Kullanım ve Örnek Hazırlama Lab. (GKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Vakum Konsantrasyon (Vakum Konsantrasyon / Liyofilizasyon Cihazı)",
+      "price": 1500,
+      "unit": "TL / İş Günü",
+      "category": "Genel Kullanım ve Örnek Hazırlama Lab. (GKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Liyofilizasyon (Vakum Konsantrasyon / Liyofilizasyon Cihazı)",
+      "price": 1500,
+      "unit": "TL / İş Günü",
+      "category": "Genel Kullanım ve Örnek Hazırlama Lab. (GKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Vakumlu Kurutma Fırını",
+      "price": 800,
+      "unit": "TL / Numune",
+      "category": "Genel Kullanım ve Örnek Hazırlama Lab. (GKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Yüksek Hızlı Santrifüj",
+      "price": 2000,
+      "unit": "TL / Kullanım",
+      "category": "Genel Kullanım ve Örnek Hazırlama Lab. (GKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Yüksek Basınçlı Hücre Parçalayıcı",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Genel Kullanım ve Örnek Hazırlama Lab. (GKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Çalkalayıcı Bilyeli Öğütücü",
+      "price": 1000,
+      "unit": "TL / Numune",
+      "category": "Genel Kullanım ve Örnek Hazırlama Lab. (GKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Hücre Zarı Parçalayıcı 1",
+      "price": 800,
+      "unit": "TL / Numune",
+      "category": "Genel Kullanım ve Örnek Hazırlama Lab. (GKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Hücre Zarı Parçalayıcı 2",
+      "price": 800,
+      "unit": "TL / Numune",
+      "category": "Genel Kullanım ve Örnek Hazırlama Lab. (GKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Soğutmalı Çalkalayıcı İnkübatör",
+      "price": 400,
+      "unit": "TL / Saat",
+      "category": "Genel Kullanım ve Örnek Hazırlama Lab. (GKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "cDNA Sentezi – Kit Kullanıcı Tarafından Karşılanır",
+      "price": 800,
+      "unit": "TL / Numune",
+      "category": "Genom Analiz Lab. (GEN) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "cDNA Sentezi – Kit MERLAB Tarafından Karşılanır",
+      "price": 2000,
+      "unit": "TL / Numune",
+      "category": "Genom Analiz Lab. (GEN) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Biyoanalizör – Cihaz Kullanımı (DNA, RNA, Protein)",
+      "price": 1600,
+      "unit": "TL / Çip",
+      "category": "Genom Analiz Lab. (GEN) – MBB AR-GE",
+      "notes": "Analiz için gerekli kimyasallar, çip ve numune hazırlama kullanıcı tarafından sağlanır. İndirim uygulanmaz.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Düşük Hacimli Spektrofotometre – Konsantrasyon Tayini",
+      "price": 160,
+      "unit": "TL / Numune",
+      "category": "Genom Analiz Lab. (GEN) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Gerçek Zamanlı PCR – Gen İfadesi Analizi (SYBR Green / Hidroliz Probları)",
+      "price": 185,
+      "unit": "TL / Kuyucuk - Cihaz Kullanım Ücreti",
+      "category": "Genom Analiz Lab. (GEN) – MBB AR-GE",
+      "notes": "Primerler ve problar araştırmacı tarafından sağlanır. 96 Well Plate ücreti dahil değildir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Gerçek Zamanlı PCR – Cihaz Kullanımı",
+      "price": 2000,
+      "unit": "TL / Run",
+      "category": "Genom Analiz Lab. (GEN) – MBB AR-GE",
+      "notes": "96 Well Plate ücreti dahil değildir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "96 Well Plate",
+      "price": 600,
+      "unit": "TL / Adet",
+      "category": "Genom Analiz Lab. (GEN) – MBB AR-GE",
+      "notes": "İndirim uygulanmaz.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Hibridizasyon Fırını – Cihaz Kullanımı",
+      "price": 1100,
+      "unit": "TL / Saat",
+      "category": "Genom Analiz Lab. (GEN) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Mikroarray – Tam Kapsamlı Analiz (cRNA Sentezi - Hibridizasyon - Yıkama-Boyama - Tarama)",
+      "price": 20000,
+      "unit": "TL",
+      "category": "Genom Analiz Lab. (GEN) – MBB AR-GE",
+      "notes": "RNA, Fragmented cRNA için gerekli kitler ve gen çipi kullanıcı tarafından sağlanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Mikroarray – Yarı Kapsamlı Analiz (Hibridizasyon - Yıkama-Boyama - Tarama)",
+      "price": 10000,
+      "unit": "TL",
+      "category": "Genom Analiz Lab. (GEN) – MBB AR-GE",
+      "notes": "Fragmented cRNA ve gen çipi kullanıcı tarafından sağlanır.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Mikroarray – GeneSpring 7.3.1 Yazılımı Veri Analizi",
+      "price": 1000,
+      "unit": "TL / Saat",
+      "category": "Genom Analiz Lab. (GEN) – MBB AR-GE",
+      "notes": "Temel analiz.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "1L Fermentör Kullanımı – Başlangıç Maliyeti",
+      "price": 5500,
+      "unit": "TL",
+      "category": "Kromatografi ve Fermentasyon Lab. (KFL) – MBB AR-GE",
+      "notes": "O₂, N₂, CO₂ gazı kullanılacaksa gaz maliyeti ilave edilir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "1L Fermentör Kullanımı – Başlangıç Sonrası Her Saat",
+      "price": 180,
+      "unit": "TL / Saat",
+      "category": "Kromatografi ve Fermentasyon Lab. (KFL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "5L Fermentör Kullanımı – Başlangıç Maliyeti",
+      "price": 5500,
+      "unit": "TL",
+      "category": "Kromatografi ve Fermentasyon Lab. (KFL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "5L Fermentör Kullanımı – Başlangıç Sonrası Her Saat",
+      "price": 220,
+      "unit": "TL / Saat",
+      "category": "Kromatografi ve Fermentasyon Lab. (KFL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "20L Fermentör Kullanımı – Başlangıç Maliyeti",
+      "price": 9200,
+      "unit": "TL",
+      "category": "Kromatografi ve Fermentasyon Lab. (KFL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "20L Fermentör Kullanımı – Başlangıç Sonrası Her Saat",
+      "price": 330,
+      "unit": "TL / Saat",
+      "category": "Kromatografi ve Fermentasyon Lab. (KFL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC – Tekli Şeker/Organik Asit/Alkol/İlaç Hammaddesi Tayini (1 Madde)",
+      "price": 2200,
+      "unit": "TL",
+      "category": "Kromatografi ve Fermentasyon Lab. (KFL) – MBB AR-GE",
+      "notes": "Listede bulunmayan maddeler için standart temini durumunda analiz imkânları incelenir. 1'den fazla şeker için deney sorumluları ile görüşme gerekebilir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC – Şeker Kompozisyonu (5 Şeker)",
+      "price": 9500,
+      "unit": "TL",
+      "category": "Kromatografi ve Fermentasyon Lab. (KFL) – MBB AR-GE",
+      "notes": "Tablodan seçilecek 5 şeker için geçerlidir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "HPLC – Organik Asit Kompozisyonu (5 Organik Asit)",
+      "price": 9500,
+      "unit": "TL",
+      "category": "Kromatografi ve Fermentasyon Lab. (KFL) – MBB AR-GE",
+      "notes": "Tablodan seçilecek 5 organik asit için geçerlidir.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "KSL – Tekli Fenolik Madde Analizi (1 Madde / Numune)",
+      "price": 2500,
+      "unit": "TL",
+      "category": "Kütle Spektroskopi Lab. (KSL) – MBB AR-GE",
+      "notes": "Mevcut fenolik maddeler: Apigenin, Daidzein, EGCG, Elajik asit, Epigallokatekin, Epikatekin, Gallik asit, Genistein, Hesperidin, Kaempferol, Kafeik asit, Katekin, Klorogenik asit, Kumarin, Kuversetin, Luteolin, Mirisetin, p-Kumarik asit, Procyanidin-B2, Rutin, Salisilik asit, Skopoletin, Sinapik asit, Trans ferulik asit, Isorhamnetin, Naringenin ve diğerleri.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "KSL – Tekli Pestisit Analizi (1 Madde / Numune)",
+      "price": 2500,
+      "unit": "TL",
+      "category": "Kütle Spektroskopi Lab. (KSL) – MBB AR-GE",
+      "notes": "Listede bulunmayan analizler için standart temini durumunda analiz şartları görüşülür.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "KSL – Tekli Farmasötik Madde Analizi (1 Madde / Numune)",
+      "price": 2500,
+      "unit": "TL",
+      "category": "Kütle Spektroskopi Lab. (KSL) – MBB AR-GE",
+      "notes": "Amfetamin, Metamfetamin, Atenolol, Aspirin, Alprazolam, Caffeine, Clonazepam, MDMA, Diazepam, Diclofenac, Ibuprofen, Naproxen, Oxazepam, Sulfamethoxazole, Temazepam, Warfarin ve diğerleri.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "KSL – Genel Kütle Taraması (LCMS)",
+      "price": 3500,
+      "unit": "TL / Madde",
+      "category": "Kütle Spektroskopi Lab. (KSL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "KSL – MRM Optimizasyonu (LCMSMS)",
+      "price": 5000,
+      "unit": "TL / Madde",
+      "category": "Kütle Spektroskopi Lab. (KSL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "KSL – Kapiler Elektroforez / Tekli Madde Analizi (Şeker, Tatlandırıcı, Koruyucu, Anyon, Amino Asit)",
+      "price": 4000,
+      "unit": "TL",
+      "category": "Kütle Spektroskopi Lab. (KSL) – MBB AR-GE",
+      "notes": "Şeker bileşenleri: Glukoz, Fruktoz, Sukroz, Maltoz, Laktoz. Tatlandırıcı/Koruyucu: Aspartam, Sorbik Asit, Benzoik Asit, Sakkarin, Azesülfam-K. İnorganik Anyonlar: Bromid, Klorid, Nitrit, Nitrat, Sülfat, Fluorid, Fosfat.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "KSL – Kapiler Elektroforez Amino Asit Taraması",
+      "price": 24000,
+      "unit": "TL",
+      "category": "Kütle Spektroskopi Lab. (KSL) – MBB AR-GE",
+      "notes": "Tam amino asit profili taraması.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Lazer Taramalı Konfokal Mikroskop – 1 Saat",
+      "price": 790,
+      "unit": "TL / Saat",
+      "category": "Mikroskopi Lab. (MKL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "ELISA Okuyucu – 1 Run",
+      "price": 300,
+      "unit": "TL",
+      "category": "Spektroskopi Lab. (SPL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "UV-VIS Spektrofotometre – 1 Run",
+      "price": 600,
+      "unit": "TL",
+      "category": "Spektroskopi Lab. (SPL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "İzotermal Titrasyon Kalorimetresi – 0-3 Saat",
+      "price": 1000,
+      "unit": "TL",
+      "category": "Spektroskopi Lab. (SPL) – MBB AR-GE",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "İzotermal Titrasyon Kalorimetresi – 3 Saatten Sonra Her Saat",
+      "price": 500,
+      "unit": "TL / Saat (ek)",
+      "category": "Spektroskopi Lab. (SPL) – MBB AR-GE",
+      "notes": "⚠ Cihaz şu an arızalı / hizmet dışı.",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Zaman Tanımlı Floresans Spektrometre – 0-3 Saat",
+      "price": 1000,
+      "unit": "TL",
+      "category": "Spektroskopi Lab. (SPL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    },
+    {
+      "name": "Zaman Tanımlı Floresans Spektrometre – 3 Saatten Sonra Her Saat",
+      "price": 500,
+      "unit": "TL / Saat (ek)",
+      "category": "Spektroskopi Lab. (SPL) – MBB AR-GE",
+      "notes": "",
+      "currency": "TRY",
+      "manual": true
+    }
+  ]
 }
