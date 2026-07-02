@@ -178,5 +178,21 @@
     "reference": false,
     "analysis_count": 150,
     "last_updated": "2026-05-18"
+  },
+  {
+    "id": "odtu_merlab",
+    "name": "ODTÜ MERLAB",
+    "university": "ODTÜ",
+    "city": "Ankara",
+    "url": "https://merlab.metu.edu.tr/",
+    "pricing_url": "https://merlab.metu.edu.tr/tr/hizmet-bedelleri",
+    "fetch_method": "manual",
+    "check_months": [
+      1,
+      6,
+      12
+    ],
+    "active": true,
+    "reference": false
   }
 ]
