@@ -1,7 +1,7 @@
 {
   "center_id": "eu_taum",
   "center_name": "Erciyes TAUM",
-  "last_updated": "2026-05-25",
+  "last_updated": "2026-11-13",
   "source_url": "https://taum.erciyes.edu.tr/tr/analiz-ucretleri",
   "kdv_note": "Fiyatlara KDV dahil değildir.",
   "analyses": [
@@ -768,7 +768,7 @@
       "category": "",
       "price": 1000,
       "currency": "TRY",
-      "unit": "saat",
+      "unit": "mL/24 saat",
       "notes": "",
       "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
       "_isOv": false
