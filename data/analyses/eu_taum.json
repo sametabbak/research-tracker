@@ -13,8 +13,7 @@
       "notes": "(TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri",
-      "_isOv": false
+      "keyword_group": "SEM (Tarama Elektron Mikroskobu) Görüntüleme Analizleri"
     },
     {
       "name": "FE-SEM-EDX Analizi",
@@ -24,8 +23,7 @@
       "notes": "(TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "SEM-EDX ve EBSD Analizleri",
-      "_isOv": false
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "STEM",
@@ -35,8 +33,7 @@
       "notes": "(TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri",
-      "_isOv": false
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "STEM Sıvı Numune Hazırlık",
@@ -46,8 +43,7 @@
       "notes": "(TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri",
-      "_isOv": false
+      "keyword_group": "TEM ve STEM (Geçirimli Elektron Mikroskobu) Analizleri"
     },
     {
       "name": "Mapping",
@@ -57,8 +53,7 @@
       "notes": "(TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "SEM-EDX ve EBSD Analizleri",
-      "_isOv": false
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "Line Scan",
@@ -68,8 +63,7 @@
       "notes": "(TEM Grid getirenlerden hazırlık ücreti alınmaz.)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "SEM-EDX ve EBSD Analizleri",
-      "_isOv": false
+      "keyword_group": "SEM-EDX ve EBSD Analizleri"
     },
     {
       "name": "AAS Analizi (ilk element)",
@@ -79,8 +73,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri",
-      "_isOv": false
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "AAS Analizi (Sonraki Elementlerin Her Biri için)",
@@ -90,8 +83,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri",
-      "_isOv": false
+      "keyword_group": "AAS (Atomik Absorpsiyon Spektrometresi) Analizleri"
     },
     {
       "name": "Atomik Kuvvet Mikroskobu Yüzey Analizi",
@@ -101,8 +93,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri",
-      "_isOv": false
+      "keyword_group": "AFM (Atomik Kuvvet Mikroskobu) Analizleri"
     },
     {
       "name": "X-Işını difraksiyon paterni çekimi (toz numune) (max. 30 dak.)",
@@ -112,8 +103,7 @@
       "notes": "(max. 30 dak.)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "X-Işını difraksiyon paterni çekimi (toz numune) (max. 60 dak.)",
@@ -123,8 +113,7 @@
       "notes": "(max. 60 dak.)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "X-Işını difraksiyon paterni çekimi (ince film) (max. 60 dak.)",
@@ -134,8 +123,7 @@
       "notes": "(max. 60 dak.)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Mineral analiz",
@@ -145,8 +133,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Yüksek sıcaklık paterni çekimi",
@@ -156,8 +143,7 @@
       "notes": "(max. 60dak)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Rietveld analizi",
@@ -167,8 +153,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Kalıntı gerilme analizi",
@@ -178,8 +163,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "XRR analizi",
@@ -189,8 +173,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri",
-      "_isOv": false
+      "keyword_group": "XRD (X-Işını Kırınım) ve XRR Analizleri"
     },
     {
       "name": "Yarı Kantitatif element analizi (Öğütülmüş Örnek)",
@@ -200,8 +183,7 @@
       "notes": "(Rapor istenilen durumlarda ilave 1100 TL ücret alınacaktır.)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRF (X-Işını Floresans) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "Yarı Kantitatif element analizi (Maden Örnekleri)",
@@ -211,8 +193,7 @@
       "notes": "(Rapor istenilen durumlarda ilave 1100 TL ücret alınacaktır.)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRF (X-Işını Floresans) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "Yarı Kantitatif element analizi (Metal, Alaşım vb.)",
@@ -222,8 +203,7 @@
       "notes": "(Rapor istenilen durumlarda ilave 1100 TL ücret alınacaktır.)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "XRF (X-Işını Floresans) Analizleri",
-      "_isOv": false
+      "keyword_group": "XRF (X-Işını Floresans) Analizleri"
     },
     {
       "name": "TG/DTA Spektrumu (Analiz süresi: 0 – 1 saat)",
@@ -233,8 +213,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "DTA (Diferansiyel Termal Analiz)",
-      "_isOv": false
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "TG/DTA Spektrumu (Analiz süresi: 1 – 3 saat)",
@@ -244,8 +223,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "DTA (Diferansiyel Termal Analiz)",
-      "_isOv": false
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "TG/DTA Spektrumu (Analiz süresi: 3 – 7 saat)",
@@ -255,8 +233,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "DTA (Diferansiyel Termal Analiz)",
-      "_isOv": false
+      "keyword_group": "DTA (Diferansiyel Termal Analiz)"
     },
     {
       "name": "ICP-MS Numune analizi 1-10 element için",
@@ -266,8 +243,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "ICP-MS İlave element analizi için",
@@ -277,8 +253,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "ICP-MS Mikrodalga Çözme İşlemi",
@@ -288,8 +263,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "ICP-MS Çoklu Asit İle Çözme İşlemi",
@@ -299,8 +273,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "ICP-MS Değerli Metaller 1-10 Element (Au, Pd, Pt, Ag, Rh vb.)",
@@ -310,8 +283,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri",
-      "_isOv": false
+      "keyword_group": "ICP (İndüktif Eşleşmiş Plazma) Analizleri"
     },
     {
       "name": "FT-IR / FT-FIR Spektrumu",
@@ -321,8 +293,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "FT-IR Karakterizasyon (Spektrum - Kütüphane)",
@@ -332,8 +303,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "FTIR, Raman ve Optik Spektroskopi",
-      "_isOv": false
+      "keyword_group": "FTIR, Raman ve Optik Spektroskopi"
     },
     {
       "name": "1H (Proton) Spektrumu (Numune min. 20 mg)",
@@ -343,8 +313,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "D2O Değişimi",
@@ -354,8 +323,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "13C (Karbon)(Coupled, Decoupled) (Numune min. 50 mg)",
@@ -365,8 +333,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "1 D Spektrum: APT / DEPT (45, 90, 135)",
@@ -376,8 +343,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "2 D Spektrum: COSY/ NOESY/ HETCOR/ HMBC/ HMQC, 31P (Fosfor)",
@@ -387,8 +353,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Çözücü (D2O, CHCI3)",
@@ -398,8 +363,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Çözücü (DMSO, CD3OD)",
@@ -409,8 +373,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "NMR Analizleri",
-      "_isOv": false
+      "keyword_group": "NMR Analizleri"
     },
     {
       "name": "Tek noktalı BET",
@@ -420,8 +383,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri",
-      "_isOv": false
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "Çok noktalı BET Makro-Mezogözenek (2-50 nm) Analizi - Gözenek Boyutu",
@@ -431,8 +393,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri",
-      "_isOv": false
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "Çok noktalı BET Mikrogözenek (<2 nm) Analizi - Gözenek Boyutu",
@@ -442,8 +403,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri",
-      "_isOv": false
+      "keyword_group": "BET ve Yüzey Alanı (Porozimetre) Analizleri"
     },
     {
       "name": "Kafein, Naftalin, HMF analizi",
@@ -453,8 +413,7 @@
       "notes": "Vitamin analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kromatografi (HPLC, GC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Vitamin analizleri (her biri için)",
@@ -464,8 +423,7 @@
       "notes": "Vitamin analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kromatografi (HPLC, GC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Diğer Özel bileşenler için analizler (standart ve metot getirilecek)",
@@ -475,8 +433,7 @@
       "notes": "Vitamin analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kromatografi (HPLC, GC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Kromatografik Yöntem Geliştirme",
@@ -486,8 +443,7 @@
       "notes": "Vitamin analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kromatografi (HPLC, GC, GPC)",
-      "_isOv": false
+      "keyword_group": "Kromatografi (HPLC, GC, GPC)"
     },
     {
       "name": "Kalitatif Analiz Aroma Bileşikler (GC-MS kütüphane taraması)",
@@ -497,8 +453,7 @@
       "notes": "GC-MS analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "Kalitatif Analiz Uçucu Bileşikler (GC-MS kütüphane taraması)",
@@ -508,8 +463,7 @@
       "notes": "GC-MS analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "Kalitatif Analiz Fenolik Bileşikler(GC-MS kütüphane taraması)",
@@ -519,8 +473,7 @@
       "notes": "GC-MS analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "Kalitatif Analiz Yağ asitleri (GC-MS kütüphane taraması)",
@@ -530,8 +483,7 @@
       "notes": "GC-MS analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "Kalitatif Analiz Tam Spektrum Tarama (GC-MS kütüphane taraması)",
@@ -541,8 +493,7 @@
       "notes": "GC-MS analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "Esansiyel yağ bileşenleri/Yağ asitleri Komp % bağıl (GC-FID)",
@@ -552,8 +503,7 @@
       "notes": "GC-MS analizlerinde numune hazır olmalı ve uygun metot getirilmelidir.",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)",
-      "_isOv": false
+      "keyword_group": "Kütle Spektrometrisi (LC-MS, GC-MS)"
     },
     {
       "name": "Çekme, Basma, Üç Nokta Eğme (oda sıcaklığında)",
@@ -563,8 +513,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)",
-      "_isOv": false
+      "keyword_group": "Mekanik Testler (Çekme, Basma, Eğme)"
     },
     {
       "name": "Isıl Geçirgenlik Analizi",
@@ -574,8 +523,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Termal Analizler",
-      "_isOv": false
+      "keyword_group": "Termal Analizler"
     },
     {
       "name": "Hava Geçirgenlik Analizi",
@@ -585,8 +533,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Diğer Analiz Türleri",
-      "_isOv": false
+      "keyword_group": "Diğer Analiz Türleri"
     },
     {
       "name": "Gaz Piknometresi",
@@ -596,8 +543,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Yoğunluk ve Fiziksel Özellikler",
-      "_isOv": false
+      "keyword_group": "Yoğunluk ve Fiziksel Özellikler"
     },
     {
       "name": "Gaz Piknometresi (Numune Hazırlığı Gerektiren malzemeler)",
@@ -607,8 +553,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Yoğunluk ve Fiziksel Özellikler",
-      "_isOv": false
+      "keyword_group": "Yoğunluk ve Fiziksel Özellikler"
     },
     {
       "name": "Kesme",
@@ -618,8 +563,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Öğütme",
@@ -629,8 +573,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Kriyojenik Öğütme ( Tek seferde max. 2 g numune öğütülmektedir.)",
@@ -640,8 +583,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Presleme",
@@ -651,8 +593,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Platin potada numune hazırlık",
@@ -662,8 +603,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Bakalite alma",
@@ -673,8 +613,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Parlatma",
@@ -684,8 +623,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Altın veya karbon kaplama (Yalıtkan örnekler için) (50 bin büyütmeye kadar)",
@@ -695,8 +633,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)",
-      "_isOv": false
+      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
     {
       "name": "Yüksek Çözünürlüklü Platin Kaplama (50 bin ve üzeri büyütme için)",
@@ -706,8 +643,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)",
-      "_isOv": false
+      "keyword_group": "Kaplama İşlemleri (Altın, Karbon, Platin vb.)"
     },
     {
       "name": "Kritik noktada kurutma",
@@ -717,8 +653,7 @@
       "notes": "(12li)",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Kızdırma kaybı",
@@ -728,8 +663,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Metal Mikroskobu",
@@ -738,8 +672,7 @@
       "currency": "TRY",
       "unit": "saat",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Mikro Sertlik Ölçümü (Vickers, Knoop)",
@@ -749,8 +682,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Mikrosertlik ve Makrosertlik Testleri",
-      "_isOv": false
+      "keyword_group": "Mikrosertlik ve Makrosertlik Testleri"
     },
     {
       "name": "Mikro sertlik Dağılımı (Vickers, Knoop)",
@@ -760,8 +692,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Mikrosertlik ve Makrosertlik Testleri",
-      "_isOv": false
+      "keyword_group": "Mikrosertlik ve Makrosertlik Testleri"
     },
     {
       "name": "Liyofilizasyon (100 mL/24 saat)",
@@ -770,8 +701,7 @@
       "currency": "TRY",
       "unit": "mL/24 saat",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Titrimetrik Analizler (Tuz, Kuru madde vs.)",
@@ -780,8 +710,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)",
-      "_isOv": false
+      "keyword_group": "Genel Numune Hazırlama İşlemleri (Kesme, Öğütme, Çözme)"
     },
     {
       "name": "Ultra Saf Su",
@@ -790,8 +719,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Sıvı Azot, Saf Su",
-      "_isOv": false
+      "keyword_group": "Sıvı Azot, Saf Su"
     },
     {
       "name": "Sıvı Azot",
@@ -800,8 +728,7 @@
       "currency": "TRY",
       "unit": "numune",
       "notes": "",
-      "keyword_group": "Sıvı Azot, Saf Su",
-      "_isOv": false
+      "keyword_group": "Sıvı Azot, Saf Su"
     },
     {
       "name": "Akademik Raporlama",
@@ -811,8 +738,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     },
     {
       "name": "İlk 10 sayfadan sonra her 50 sayfa için",
@@ -822,8 +748,7 @@
       "notes": "",
       "currency": "TRY",
       "manual": true,
-      "keyword_group": "Eğitim, Danışmanlık ve Raporlama",
-      "_isOv": false
+      "keyword_group": "Eğitim, Danışmanlık ve Raporlama"
     }
   ]
 }
